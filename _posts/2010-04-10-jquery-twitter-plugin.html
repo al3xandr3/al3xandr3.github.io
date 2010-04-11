@@ -1,0 +1,113 @@
+--- 
+title: jQuery Twitter 'mini' plugin
+layout: post
+---
+
+
+
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Here's a little jQuery plugin for displaying a twitter feed into
+a web page.
+The goal was to put my latest 'tweets' on my blog, and also learn
+jQuery. 
+Ended up making a 'mini' jQuery plugin that can easily be added into
+any web page.
+</p>
+
+</div>
+
+<div class="outline-3" id="outline-container-1.1">
+<h3 id="sec-1.1">Demo: </h3>
+<div class="outline-text-3" id="text-1.1">
+
+
+<p>
+For the code:
+</p>
+
+
+<pre class="src src-Javascript">$(function() {
+  $('#tw').click(function() {
+    $('#tw').twitter({'user':'al3xandr3','count':2});
+  });
+});
+</pre>
+
+
+
+
+
+ <script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+ <script src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js" type="text/javascript"></script>
+ 
+ <div id="tw"><b>click me</b></div>
+ <script type="text/javascript">
+ $(function() {
+   $('#tw').click(function() {
+     $('#tw').twitter({'user':'al3xandr3','count':2});
+   });
+ });
+ </script>
+
+<p>
+The plugin is running on the sidebar of this blog under the
+'ON TWITTER' title.
+</p>
+</div>
+
+</div>
+
+<div class="outline-3" id="outline-container-1.2">
+<h3 id="sec-1.2">How It Works </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+<p>
+It makes an Ajax request to twitter that returns json data of the
+feed. That data is then read and injected into the selected html
+element(s).
+</p>
+<p>
+See in: 
+</p>
+
+
+<pre class="src src-Javascript">$.ajax({
+  url: <span style="color: #8b2252;">"http://twitter.com/status/user_timeline/"</span> + settings.user + 
+       <span style="color: #8b2252;">".json?count="</span>+ (settings.count+1) +<span style="color: #8b2252;">"&amp;callback=?"</span>,
+  dataType: 'json',
+  success: function (data) {
+  $.each(data, function (i, item) {
+            
+    //text
+    $this.hide().append(<span style="color: #8b2252;">"&lt;p id="</span> + item.id + <span style="color: #8b2252;">"&gt;"</span> + 
+                        replaceURLWithHTMLLinks(item.text) + 
+                        <span style="color: #8b2252;">"&amp;nbsp&amp;nbsp&lt;/p&gt;"</span>).fadeIn('slow');
+            
+    //date
+    if (typeof prettyDate(item.created_at) !== <span style="color: #8b2252;">"undefined"</span>) {
+      $(<span style="color: #8b2252;">"&lt;br&gt;"</span>).appendTo(<span style="color: #8b2252;">"#"</span> + item.id); //line break
+      $(<span style="color: #8b2252;">"&lt;a&gt;"</span> + prettyDate(item.created_at) + <span style="color: #8b2252;">"&lt;/a&gt;"</span>).attr( {
+        'href':   ('http://twitter.com/' + settings.user + 
+                      '/status/' + item.id),
+        'target': '_blank'
+      }).css(<span style="color: #8b2252;">"font-size"</span>, <span style="color: #8b2252;">"75%"</span>).appendTo(<span style="color: #8b2252;">"#"</span> + item.id);
+    }
+  });}
+});
+</pre>
+
+
+
+<p>
+jQuery is a very nice designed lib, simple and powerfull. Some say <a href="http://importantshock.wordpress.com/2009/01/18/jquery-is-a-monad/">its just like a functional programming Monad</a>.
+</p>
+<p>
+Full source code is available in github:
+<a href="http://github.com/al3xandr3/jquery-twitter-plugin">http://github.com/al3xandr3/jquery-twitter-plugin</a>
+</p>
+</div>
+</div>

@@ -1,9 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <title>al3xandr3</title>
-  </head>
-<body>
-  <h1>Al3xandr3</h1>
-</body>
-</html>
+---
+layout: index
+title: Al3xandr3 Lab
+---
+
+<h2>Pages</h2>
+<ul>
+  {% for post in site.posts %}
+   <li><span class="date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Blog Posts</h2>
+<ul>
+  {% for post in site.posts %}
+   <li><span class="date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
