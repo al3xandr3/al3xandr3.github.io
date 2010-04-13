@@ -4,7 +4,7 @@ layout: post
 ---
 
 
-
+<h2 id="sec-1">jQuery Twitter 'mini' plugin </h2>
 <div class="outline-text-2" id="text-1">
 
 
@@ -29,9 +29,9 @@ For the code:
 </p>
 
 
-<pre class="src src-Javascript">$(function() {
-  $('#tw').click(function() {
-    $('#tw').twitter({'user':'al3xandr3','count':2});
+<pre class="src src-javascript">$(<span style="color: #7f007f;">function</span>() {
+  $(<span style="color: #8b2252;">'#tw'</span>).click(<span style="color: #7f007f;">function</span>() {
+    $(<span style="color: #8b2252;">'#tw'</span>).twitter({<span style="color: #8b2252;">'user'</span>:<span style="color: #8b2252;">'al3xandr3'</span>,<span style="color: #8b2252;">'count'</span>:2});
   });
 });
 </pre>
@@ -105,6 +105,7 @@ See in:
 <p>
 jQuery is a very nice designed lib, simple and powerfull. Some say <a href="http://importantshock.wordpress.com/2009/01/18/jquery-is-a-monad/">its just like a functional programming Monad</a>.
 </p>
+
 <p>
 Full source code is available in github:
 <a href="http://github.com/al3xandr3/jquery-twitter-plugin">http://github.com/al3xandr3/jquery-twitter-plugin</a>

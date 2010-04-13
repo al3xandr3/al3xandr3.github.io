@@ -10,7 +10,7 @@ any web page.
 ** Demo:
 
 For the code:
-#+BEGIN_SRC Javascript
+#+BEGIN_SRC javascript
  $(function() {
    $('#tw').click(function() {
      $('#tw').twitter({'user':'al3xandr3','count':2});
@@ -72,6 +72,7 @@ $.ajax({
 
 jQuery is a very nice designed lib, simple and powerfull. Some say [[http://importantshock.wordpress.com/2009/01/18/jquery-is-a-monad/][its
 just like a functional programming Monad]].
+
 
 Full source code is available in github:
 [[http://github.com/al3xandr3/jquery-twitter-plugin]]

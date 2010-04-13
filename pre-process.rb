@@ -18,7 +18,8 @@ def process_post(post, layout)
   cats = (cats/'span').map { |i| i.inner_html }.map { |i| i.downcase }
 
   # Extract h2 title
-  h2 = (doc/'h2#sec-1').remove
+  #h2 = (doc/'h2#sec-1').remove
+  h2 = (doc/'h2#sec-1')
 
   # Extract timestamp
   #timestamp = (doc/'span.timestamp-wrapper').remove
