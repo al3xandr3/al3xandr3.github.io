@@ -42,7 +42,7 @@ Then I use the format-report.rb that apply's the final formatting to
 the report, for example: add my own header, add/remove columns, Dates,
 change names, calculate values, etc, etc... see example:
 
-#+BEGIN_SRC lisp
+#+BEGIN_SRC ruby
 # file: format-report.rb
 
 flines = File.open(ARGV[0]).readlines

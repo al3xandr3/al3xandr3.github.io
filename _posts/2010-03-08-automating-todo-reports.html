@@ -1,9 +1,4 @@
---- 
-title: Automating todo tasks reports with orgmode
-layout: post
----
-
-
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Automating todo tasks reports with orgmode </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -16,7 +11,7 @@ org-mode(<a href="http://orgmode.org/">see here whats orgmode all about</a>).
 
 </div>
 
-<div class="outline-3" id="outline-container-1.1">
+<div id="outline-container-1.1" class="outline-3">
 <h3 id="sec-1.1">(simplified) Work Flow </h3>
 <div class="outline-text-3" id="text-1.1">
 
@@ -42,7 +37,7 @@ Generate a report every week with the done tasks.
 
 </div>
 
-<div class="outline-3" id="outline-container-1.2">
+<div id="outline-container-1.2" class="outline-3">
 <h3 id="sec-1.2">Generating the Report </h3>
 <div class="outline-text-3" id="text-1.2">
 
@@ -86,25 +81,25 @@ change names, calculate values, etc, etc&hellip; see example:
 
 
 
-<pre class="src src-lisp"># file: format-report.rb
-
-flines = File.open(ARGV[0]).readlines
+<pre class="src src-ruby"><span style="color: #b22222;"># </span><span style="color: #b22222;">file: format-report.rb
+</span>
+flines = <span style="color: #228b22;">File</span>.open(<span style="color: #228b22;">ARGV</span>[0]).readlines
 
 column_map = { 
   <span style="color: #8b2252;">"from_name1"</span>  =&gt; <span style="color: #8b2252;">"to_name1"</span>, 
   <span style="color: #8b2252;">"from_name2"</span>  =&gt; <span style="color: #8b2252;">"to_name2"</span>,  
 }
 
-File.open( <span style="color: #8b2252;">"work.csv"</span>,<span style="color: #8b2252;">"w+"</span>) do |fl|  
+<span style="color: #228b22;">File</span>.open( <span style="color: #8b2252;">"work.csv"</span>,<span style="color: #8b2252;">"w+"</span>) <span style="color: #7f007f;">do</span> |fl|  
   fl.puts <span style="color: #8b2252;">"header1,header2,header3,header4"</span>
-  flines.each do |l|
+  flines.each <span style="color: #7f007f;">do</span> |l|
     a = l.split(<span style="color: #8b2252;">","</span>)
 
-    # Time, mapping-defined-in-column_map, original-column-2
-    fl.puts Time.now.strftime(<span style="color: #8b2252;">"%m/%d/%Y"</span>) + <span style="color: #8b2252;">","</span> + 
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">Time, mapping-defined-in-column_map, original-column-2
+</span>    fl.puts <span style="color: #228b22;">Time</span>.now.strftime(<span style="color: #8b2252;">"%m/%d/%Y"</span>) + <span style="color: #8b2252;">","</span> + 
             (column_map[a[1]] || a[1]) + <span style="color: #8b2252;">","</span> + a[2] <span style="color: #8b2252;">","</span> + a[3]
-  end
-end
+  <span style="color: #7f007f;">end</span>
+<span style="color: #7f007f;">end</span>
 </pre>
 
 
@@ -113,4 +108,5 @@ end
 And voila, i run this and an excel(my default .csv app) sheet opens up
 with the report of the week.
 </p></div>
+</div>
 </div>

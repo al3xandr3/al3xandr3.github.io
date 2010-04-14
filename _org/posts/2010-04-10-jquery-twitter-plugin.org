@@ -34,9 +34,6 @@ For the code:
  </script>
  #+END_HTML
 
-The plugin is running on the sidebar of this blog under the
-'ON TWITTER' title.
-
 ** How It Works
 
 It makes an Ajax request to twitter that returns json data of the
@@ -75,6 +72,5 @@ jQuery is a very nice designed lib, simple and powerfull. Some say [[http://impo
 just like a functional programming Monad]].
 
 
-Full source code is available in github:
+Full source code is available from github:
 [[http://github.com/al3xandr3/jquery-twitter-plugin]]
-

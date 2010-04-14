@@ -18,9 +18,9 @@ it using clojure and incanter.
 
 #+BEGIN_EXAMPLE
 REPEAT 100000
-	GENERATE 5 1,4 a
-	COUNT a =1 b 
-	SCORE b z
+  GENERATE 5 1,4 a
+  COUNT a =1 b 
+  SCORE b z
 END
 COUNT z >= 3 k
 DIVIDE k 100000 kk
@@ -40,13 +40,13 @@ probabilities described above.
 The category-count function is a helper function to count :miss
 and :hit's but its not absolutely needed.
 
-#+BEGIN_SRC lisp
+#+BEGIN_SRC clojure
 (use '(incanter core stats charts io))
 
 (defn category-count
     [aseq]
     "counts the category's from a given sequence, ex:
-     > (category-count '(:hit :hit :miss)) => {:miss 1, :hit 2}"
+     $ (category-count '(:hit :hit :miss)) => {:miss 1, :hit 2}"
     (into {} (let [dis (distinct aseq)]
     (for [item dis]
         {item (count (filter #(= item %) aseq))}))))
@@ -62,18 +62,17 @@ and :hit's but its not absolutely needed.
 
 [[/img/basketball-1throw.png]]
 
-Results make sense, its an 1/4(25%) of probabilities of making the
+Results make sense, its an 1/4 (25%) of probabilities of making the
 basket, so simulations seems to be working correctly.
 
 ** With 5 Throws
 
-Same logic, its the sample method from Incanter
-doing all the magic of picking randomly if each throw is a :miss or
-a :hit. Then test if number of hits is >= 3, identify it as an :ok
-and finally see the percentage of all :ok's from the total
-simulation.
+Same logic, its the sample method from Incanter doing all the magic of
+picking randomly if each throw is a :miss or a :hit. Then test if
+number of hits is >= 3, identify it as an :ok and finally see the
+percentage of all :ok's from the total simulation.
 
-#+BEGIN_SRC lisp
+#+BEGIN_SRC clojure
 (defn five-throws
     []
     (category-count (for [_ (range 100000)]  

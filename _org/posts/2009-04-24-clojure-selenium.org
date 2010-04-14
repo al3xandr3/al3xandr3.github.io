@@ -15,16 +15,15 @@ directly a browser and thus we can run Javascript.
 Selenium can be scripted from Java which matches very well with my
 wish to learn Clojure :)
 
-
 ** Solution
 
-Its not really a crawler in the sense that it does not go around
-automatically following all the links it finds, it actually gets the
-list of links to check from the site sitemap.xml.
+What i implemented is not really a crawler in the sense that it does
+not go around automatically following all the links it finds, it
+actually gets the list of links to check from the site sitemap.xml.
+But is not that hard to use this as a base for a crawler.
 
 As some sitemaps.xml are huge, i added also a little pick-a-sample
 function that randomly selects only a subset from all the sitemap.
-
 
 ** Code
 
@@ -33,9 +32,9 @@ could be improved.
 
 For Selenium, we need first to start the server, then the client, and
 then use the client to browse the pages. As is not very elegant to
-have a “start server” and “start client” on the top of the script and
-a “stop client” and “stop server” call at the end of the script, so
-i’ve wrapped it around a macro (one of the major strengths of Lisp
+have a start server and“start client on the top of the script and
+a“stop client and stop server call at the end of the script, i've
+wrapped those around a macro (one of the major strengths of Lisp
 like languages).
 
 The whole thing goes like this:
@@ -60,7 +59,6 @@ run this on Google site, its just an example, use it on your own site!
 For this to run you will need to have in your classpath a bunch of jar
 libs, this is how my lib folder looks like:
 
-
 #+BEGIN_EXAMPLE
 lib/
   clojure-contrib.jar
@@ -70,11 +68,12 @@ lib/
   selenium-server.jar
 #+END_EXAMPLE
 
-I called this app“coverager”
+I called this app“/coverager/
 
-Main Code: coverager.clj
+Code: 
 
 #+BEGIN_SRC clojure
+;;file: coverager.clj
 (ns coverager
   (:import (com.thoughtworks.selenium DefaultSelenium)
     (org.openqa.selenium.server SeleniumServer)
@@ -90,7 +89,7 @@ Main Code: coverager.clj
   `(let [server# (new SeleniumServer)]
     (.start server#)
     (let [~browser 
-            (new DefaultSelenium "localhost", 4444, "*firefox", "http://www.google.com/")]
+         (new DefaultSelenium "localhost", 4444, "*firefox", "http://www.google.com/")]
       (.start ~browser)
       (.setTimeout ~browser "100000")
       ~@body
@@ -110,7 +109,7 @@ Main Code: coverager.clj
 (defn check-pages [url-list]
   (with-selenium browser
     (binding [*out* (FileWriter. 
-                      (str "output/log_" (.format (SimpleDateFormat. "yyyy-MM-dd") (Date.)) ".csv"))]
+         (str "output/log_" (.format (SimpleDateFormat. "yyyy-MM-dd") (Date.)) ".csv"))]
       (doseq [a-url url-list]
         (check-a-page browser a-url)))))
 
@@ -131,9 +130,10 @@ Main Code: coverager.clj
 ;use: (process-sitemap *sitemap*)
 #+END_SRC
 
-And of course tests: coverager_test.clj
+And of course tests for it:
 
 #+BEGIN_SRC clojure
+;;file: coverager_test.clj
 (ns coverager_test
   (:use clojure.contrib.test-is)
   (:use coverager)
@@ -179,11 +179,14 @@ And of course tests: coverager_test.clj
 	(run-tests 'coverager_test))
 #+END_SRC
 
-
 ** Take away
 
-Clojure is great! Its my opinion that on the Lisp family of languages the code is more elegant and visually cleaner than the C family.
+Clojure is great! Its my opinion that on the Lisp family of languages
+the code is more elegant and visually cleaner than the C family.
 
-I don’t care much for working directly with the Java language, but working on the JVM with other languages like JRuby, Clojure, and harnessing all the vast amount of Java libs and infrastructure out there is a major major advantage.
+I don't care much for working directly with the Java language, but
+working on the JVM with other languages like JRuby, Clojure, and
+harnessing all the vast amount of Java libs and infrastructure out
+there is a MAJOR advantage.
 
 I suspect i will be spending more time with Clojure in future :)

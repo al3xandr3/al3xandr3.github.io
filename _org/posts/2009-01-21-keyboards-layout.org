@@ -1,5 +1,5 @@
 
-* Why are computer keyboards laid out the way they are?
+* Why my keyboard has a QWERTY layout?
 
 The most common keyboard layout in use today is called QWERTY, it
 takes its name from the first six characters seen in the far left of
@@ -7,7 +7,7 @@ the keyboard's top row of letters.
 
 [[/img/keyb.png]]
 
-** Why QWERTY? why is it layout this way?
+** Why QWERTY? why is it lad out this way?
 
 from Wikipedia:
 
@@ -39,39 +39,36 @@ the keyboard would make it more practical for you.
 
 For example, for this text i had to write the word WHY a lot ;) so if
 i had whyrtu instead of qwerty on my keyboard, would be an
-improvement...right? Well almost, not that easy, doing this change
-might make it harder for other frequent words i use. 
-
-So we require a more strict and more complete process, something like:
-  - counting all the most used words.
-  - decide criteria for best layout, figure out the major annoyances:
-  - many vertical movements, like jumping up and down on keys rows.
-  - many horizontal movements, can cause hitting 2 successive keys
-    with same finger is very inefficient.
+improvement...right? Maybe yes, but we have to take into
+consideration a few of other things also, for example:
+  - counting all the most used words. 
+  - minimize vertical movements, like jumping up and down on keys rows.
+  - minimize horizontal movements, can cause hitting 2 successive keys
   - frequent use of pinky.
   - etc... (you can make up your own)
-- Finally try and evaluate several keyboard layouts and variations.
 
-Imagining to do this by hand, like Dvorak and Sholes(for QWERTY)
-did, is a pain. Luckily we have computers :) and as a matter of fact
-someone already played around with this problem (which made think
-about this text in the first place).
+And then try out several keyboard layouts and variations.
+
+Imagining to do this by hand, like Dvorak and Sholes
+did for QWERTY is a pain. Luckily we have computers now and as a
+matter of fact someone already played around with this problem (which
+made think about all this subject in the first place).
 
 See here for experience: http://klausler.com/evolved.html, and also
 the final keyboard layout: http://klausler.com/evolved.pdf
 
 ** Your Own keyboard
 
-The right layout depends so much on the words you write more
-frequently, and is easy to see it can change very easily: 
-
+I'm not sure that there is 1 ultimate and perfect keyboard for
+everyone, because depends so much on the words you write more
+frequently, and:
 - different people use words in different ways.
 - different languages make for completely different words.
 - 15 years old person words are different from a 70 years old person
   words.
 - use of computer during working hours compared out-of-work working
   hours...
-- etc and so on...
+- etc...
 
 So even for you, an optimal keyboard layout would probably change over
 time.
@@ -79,24 +76,23 @@ time.
 But imagine a future intelligent computer that can be all the time
 analyzing what you write in the keyboard and can auto-adapt itself to
 give your own very optimal layout. Not too frequently, of course, you
-don' want your keyboard changing every day. But maybe every 5 years is
-not impossible to imagine...
+don' want your keyboard changing every day. But maybe every 2 years is
+not so impossible to imagine...
 
- Keyboards of the future should come with little blank displays that
- can be personalized with the key you want.
+Keyboards of the future should come with blank keys that
+can be personalized with the character you want.
 
- Every time you login(just by touching, with fingerprint id) into a
- different computer, your keyboard configuration is pulled from
- internet.
+How would this work is someone changes computer? every time you
+login(just by touching, with fingerprint id) into a different
+computer, your keyboard configuration is pulled from internet.
+
+Another idea, is to have full words on keys, like with your top 5 most
+used words.
 
 
- Maybe extra keys where each key is actually a full word, of your the
- top 10 most used words...
-
- Or have touch screens, and have a keyboard appear on a touch screen,
- A keyboard on a touch screen is whole new level of layout
- possibilities, we could make more frequent keys bigger than
- others... play with different  keyboard shapes that can adapt to each
- person real hands sizes for example... etc...
-
+Or have touch screens, and have a keyboard appear on a touch screen,
+A keyboard on a touch screen is whole new level of layout
+possibilities, we could make more frequent keys bigger than
+others... play with different keyboard shapes, that can adapt to each
+person real hands sizes for example... etc... etc...
 

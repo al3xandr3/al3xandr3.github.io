@@ -1,21 +1,16 @@
---- 
-title: Clojure test-is results in twitter
-layout: post
----
-
-
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Clojure test-is results in twitter </h2>
 <div class="outline-text-2" id="text-1">
 
 
 <p>
-Here's a way, using clojure, to get your tests results showing on
-twitter.
+Here's a way, using clojure, to have your test-is results posted on
+twitter automatically as they run.
 </p>
 <p>
 This is useful for example if you have regression tests that run
-automatically once a week(like i have) that then post the results in
-twitter.
+automatically in a remote machine, once a week(for example) and want
+to find a good way to see the results.
 </p>
 <p>
 Start by getting <i>jtwitter</i>, put it in your classphath and create:
@@ -76,17 +71,18 @@ Note that i just added added a line calling the twitter-update method.
 </p>
 <p>
 And thats it, now every time you run your tests, you will have the
-failures and errors twittered:
+failures and errors twittered
 </p>
 <p>
-<img src="/img/clj-twitter-alert.png" alt="/img/clj-twitter-alert.png" />
+<img src="/img/clj-twitter-alert.png"  alt="/img/clj-twitter-alert.png" />
 </p>
 <p>
 I've created a 2nd account on twitter where i post these automated
-messages. And have my clojure tests(regression tests actually) running
-by themselves and i just check twitter to see if all good.
+messages. And have my clojure tests(regression tests) running
+by themselves and i just check twitter to see if all is good.
 </p>
 <p>
-This little twitter-update method is very easy to use for any other
+This little twitter-update method is very easy to re-use for other
 alerts and automations.
 </p></div>
+</div>

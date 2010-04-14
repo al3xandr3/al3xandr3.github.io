@@ -1,9 +1,4 @@
---- 
-title: Clojure and Selenium
-layout: post
----
-
-
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Clojure and Selenium </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -11,7 +6,7 @@ layout: post
 
 </div>
 
-<div class="outline-3" id="outline-container-1.1">
+<div id="outline-container-1.1" class="outline-3">
 <h3 id="sec-1.1">Motivation </h3>
 <div class="outline-text-3" id="text-1.1">
 
@@ -32,31 +27,30 @@ directly a browser and thus we can run Javascript.
 Selenium can be scripted from Java which matches very well with my
 wish to learn Clojure :)
 </p>
-
 </div>
 
 </div>
 
-<div class="outline-3" id="outline-container-1.2">
+<div id="outline-container-1.2" class="outline-3">
 <h3 id="sec-1.2">Solution </h3>
 <div class="outline-text-3" id="text-1.2">
 
 
 <p>
-Its not really a crawler in the sense that it does not go around
-automatically following all the links it finds, it actually gets the
-list of links to check from the site sitemap.xml.
+What i implemented is not really a crawler in the sense that it does
+not go around automatically following all the links it finds, it
+actually gets the list of links to check from the site sitemap.xml.
+But is not that hard to use this as a base for a crawler.
 </p>
 <p>
 As some sitemaps.xml are huge, i added also a little pick-a-sample
 function that randomly selects only a subset from all the sitemap.
 </p>
-
 </div>
 
 </div>
 
-<div class="outline-3" id="outline-container-1.3">
+<div id="outline-container-1.3" class="outline-3">
 <h3 id="sec-1.3">Code </h3>
 <div class="outline-text-3" id="text-1.3">
 
@@ -68,9 +62,9 @@ could be improved.
 <p>
 For Selenium, we need first to start the server, then the client, and
 then use the client to browse the pages. As is not very elegant to
-have a “start server” and “start client” on the top of the script and
-a “stop client” and “stop server” call at the end of the script, so
-i’ve wrapped it around a macro (one of the major strengths of Lisp
+have a start server and“start client on the top of the script and
+a“stop client and stop server call at the end of the script, i've
+wrapped those around a macro (one of the major strengths of Lisp
 like languages).
 </p>
 <p>
@@ -104,7 +98,6 @@ libs, this is how my lib folder looks like:
 
 
 
-
 <pre class="example">lib/
   clojure-contrib.jar
   clojure.jar
@@ -116,15 +109,16 @@ libs, this is how my lib folder looks like:
 
 
 <p>
-I called this app“coverager”
+I called this app“/coverager/
 </p>
 <p>
-Main Code: coverager.clj
+Code: 
 </p>
 
 
 
-<pre class="src src-clojure">(<span style="color: #7f007f;">ns</span> coverager
+<pre class="src src-clojure"><span style="color: #b22222;">;;</span><span style="color: #b22222;">file: coverager.clj
+</span>(<span style="color: #7f007f;">ns</span> coverager
   (<span style="color: #7a378b;">:import</span> (com.thoughtworks.selenium DefaultSelenium)
     (org.openqa.selenium.server SeleniumServer)
       java.util.Date
@@ -139,7 +133,7 @@ Main Code: coverager.clj
   `(<span style="color: #7f007f;">let</span> [server# (new SeleniumServer)]
     (.start server#)
     (<span style="color: #7f007f;">let</span> [~browser 
-            (new DefaultSelenium <span style="color: #8b2252;">"localhost"</span>, 4444, <span style="color: #8b2252;">"*firefox"</span>, <span style="color: #8b2252;">"http://www.google.com/"</span>)]
+         (new DefaultSelenium <span style="color: #8b2252;">"localhost"</span>, 4444, <span style="color: #8b2252;">"*firefox"</span>, <span style="color: #8b2252;">"http://www.google.com/"</span>)]
       (.start ~browser)
       (.setTimeout ~browser <span style="color: #8b2252;">"100000"</span>)
       ~@body
@@ -159,7 +153,7 @@ Main Code: coverager.clj
 (<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">check-pages</span> [url-list]
   (with-selenium browser
     (<span style="color: #7f007f;">binding</span> [*out* (FileWriter. 
-                      (<span style="color: #7a378b;">str</span> <span style="color: #8b2252;">"output/log_"</span> (.format (SimpleDateFormat. <span style="color: #8b2252;">"yyyy-MM-dd"</span>) (Date.)) <span style="color: #8b2252;">".csv"</span>))]
+         (<span style="color: #7a378b;">str</span> <span style="color: #8b2252;">"output/log_"</span> (.format (SimpleDateFormat. <span style="color: #8b2252;">"yyyy-MM-dd"</span>) (Date.)) <span style="color: #8b2252;">".csv"</span>))]
       (<span style="color: #7f007f;">doseq</span> [a-url url-list]
         (check-a-page browser a-url)))))
 
@@ -183,12 +177,13 @@ Main Code: coverager.clj
 
 
 <p>
-And of course tests: coverager_test.clj
+And of course tests for it:
 </p>
 
 
 
-<pre class="src src-clojure">(<span style="color: #7f007f;">ns</span> coverager_test
+<pre class="src src-clojure"><span style="color: #b22222;">;;</span><span style="color: #b22222;">file: coverager_test.clj
+</span>(<span style="color: #7f007f;">ns</span> coverager_test
   (<span style="color: #7a378b;">:use</span> clojure.contrib.test-is)
   (<span style="color: #7a378b;">:use</span> coverager)
   (<span style="color: #7a378b;">:use</span> clojure.contrib.zip-filter.xml)
@@ -235,23 +230,27 @@ And of course tests: coverager_test.clj
 
 
 
-
 </div>
 
 </div>
 
-<div class="outline-3" id="outline-container-1.4">
+<div id="outline-container-1.4" class="outline-3">
 <h3 id="sec-1.4">Take away </h3>
 <div class="outline-text-3" id="text-1.4">
 
 
 <p>
-Clojure is great! Its my opinion that on the Lisp family of languages the code is more elegant and visually cleaner than the C family.
+Clojure is great! Its my opinion that on the Lisp family of languages
+the code is more elegant and visually cleaner than the C family.
 </p>
 <p>
-I don’t care much for working directly with the Java language, but working on the JVM with other languages like JRuby, Clojure, and harnessing all the vast amount of Java libs and infrastructure out there is a major major advantage.
+I don't care much for working directly with the Java language, but
+working on the JVM with other languages like JRuby, Clojure, and
+harnessing all the vast amount of Java libs and infrastructure out
+there is a MAJOR advantage.
 </p>
 <p>
 I suspect i will be spending more time with Clojure in future :)
 </p></div>
+</div>
 </div>

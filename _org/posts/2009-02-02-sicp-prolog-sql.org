@@ -3,11 +3,9 @@
  
 [[/img/tweakit.png]]
 
-from SICP lectures 8a & 8b.
-
-While watching these, one thing that striked me is that this logic
-programming seems very similar to kind of things we use SQL for, just
-better... more flexible.
+While watching the SICP lectures  8a & 8b, one thing that i realized
+is that this logic programming they mention seems to be very similar
+to kind of things we use SQL for, just better... a lot more flexible.
 
 *So why we do use SQL after all?*
 
@@ -15,8 +13,8 @@ After a bit of googling found this good article:
 http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod one of
 the references says:
 
-"...So if prolog(read AI) and SQL(DB) are so similar, Why is one so
-successful commercially and the other deemed A complete failure in
+"...So if Prolog(read AI) and SQL(DB) are so similar, Why is one so
+successful commercially and the other deemed a complete failure in
 terms of scalability?..."
 
 Databases implement powerful techniques to improve performance:
@@ -26,7 +24,7 @@ Databases implement powerful techniques to improve performance:
 
 Where as Prolog based systems have very few such techniques.
 
-*So does have SQL have everything needed?*
+*Is SQL that bad ? what is missing?*
 
 One of the most powerful features of Prolog is recursion.
 
