@@ -2,6 +2,6 @@
 layout: default
 ---
 
-<div id="page">
+<div id="{% if page.title == 'About' %}about{% else %}page{% endif %}">
 {{ content }}
 </div>

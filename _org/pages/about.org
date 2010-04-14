@@ -1,3 +1,13 @@
 * About
 
-I'm a Portuguese living and working in Estonia in IT
+#+ATTR_HTML: alt="al3xandr3" title="al3xandr3" align="none"
+[[/img/al3xandr3.png]]
+
+Alexandre Matos Martins.
+
+I'm a Portuguese living and working in Estonia in IT.
+
+** Contacts:
+- Skype: al3x.martins ::
+- [[http://www.linkedin.com/in/al3xandr3]] ::
+- [[http://twitter.com/al3xandr3]] ::

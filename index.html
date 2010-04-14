@@ -3,15 +3,14 @@ layout: default
 home: true
 ---
 
-<div class="writings span-10">
+<div class="writings span-13">
   <dl>
     {% for post in site.posts %}
     <dt>
       <a  class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-      <span class="post-date alt">{{ post.date | date_to_string }}</span>
     </dt>
     <dd>
-      <span>{{ post.description }}</span>
+      <span class="post-date alt">{{ post.date | date_to_string }}</span>
     </dd>
     {% endfor %}
   </dl>

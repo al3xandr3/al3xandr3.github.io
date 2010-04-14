@@ -29,7 +29,7 @@ body {
 }
 
 .footer-link {
-    font:1.7em/2 "Impact";
+    font:1.7em/2.5 "Impact";
     color:#808080;
     text-decoration:none;
     margin: 0.3em;
@@ -38,6 +38,10 @@ body {
 p + p {
     margin-top:0em;
     text-indent:0em;
+}
+
+dd {
+   margin-bottom:1em;   
 }
 
 /* INDEX */
@@ -63,4 +67,17 @@ p + p {
 /* POST */
 pre, code, tt {
     font:0.9em/1.5 'andale mono','lucida console',monospace;
+}
+
+#post h2 {
+    text-align:center;
+}
+
+#post {
+    width:640px;
+}
+
+/* PAGES */
+#about {
+    text-align:center;
 }
