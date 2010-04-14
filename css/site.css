@@ -1,4 +1,6 @@
 
+
+
 /* DEFAULT */
 
 .container  {
@@ -46,6 +48,7 @@ dd {
 
 /* INDEX */
 .writings {
+    margin-left:3em;
 }
 
 .twitter {
@@ -59,6 +62,7 @@ dd {
 
 .post-link {
     text-decoration:none;
+    color:#666666;
 }
 
 .sidebar {

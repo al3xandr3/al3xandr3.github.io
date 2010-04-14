@@ -1,0 +1,65 @@
+--- 
+title: Lem-E-Tweakit and Logic programming
+layout: post
+---
+
+
+<h2 id="sec-1">Lem-E-Tweakit and Logic programming </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+<img src="/img/tweakit.png" alt="/img/tweakit.png" />
+</p>
+<p>
+from SICP lectures 8a &amp; 8b.
+</p>
+<p>
+While watching these, one thing that striked me is that this logic
+programming seems very similar to kind of things we use SQL for, just
+better&hellip; more flexible.
+</p>
+<p>
+<b>So why we do use SQL after all?</b>
+</p>
+<p>
+After a bit of googling found this good article:
+<a href="http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod">http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod</a> one of
+the references says:
+</p>
+<p>
+"&hellip;So if prolog(read AI) and SQL(DB) are so similar, Why is one so
+successful commercially and the other deemed A complete failure in
+terms of scalability?&hellip;"
+</p>
+<p>
+Databases implement powerful techniques to improve performance:
+</p><ul>
+<li>
+Indexing
+</li>
+<li>
+Hashing
+</li>
+<li>
+Reordering goals to reduce backtracking
+</li>
+</ul>
+
+
+<p>
+Where as Prolog based systems have very few such techniques.
+</p>
+<p>
+<b>So does have SQL have everything needed?</b>
+</p>
+<p>
+One of the most powerful features of Prolog is recursion.
+</p>
+<p>
+SQL does not have recursion built into it. This is a severe
+Handicap. However there is a way to overcome this problem by invoking
+multiple SQL queries from a host language like C Or JAVA. SQL3 has
+begun supporting recursion.
+</p>
+</div>
