@@ -1,7 +1,10 @@
 
 /* DEFAULT */
-.container  {
-    width:670px;
+.alt {
+  color: #666;
+  font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+  font-style: italic;
+  font-weight: normal;
 }
 
 body {
@@ -32,11 +35,6 @@ body {
     color:#808080;
     text-decoration:none;
     margin: 0.3em;
-}
-
-p + p {
-    margin-top:0em;
-    text-indent:0em;
 }
 
 dd {

@@ -43,7 +43,7 @@ For the code:
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
  <script src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js" type="text/javascript"></script>
  
- <div class="margin-bottom:1em;" id="tw"><b>click me</b></div>
+ <div id="tw" style="margin-bottom:1.5em;"><b>click me</b></div>
  <script type="text/javascript">
  $(function() {
    $('#tw').click(function() {
@@ -73,28 +73,27 @@ See in:
 
 
 <pre class="src src-Javascript">$.ajax({
-  url: <span style="color: #8b2252;">"http://twitter.com/status/user_timeline/"</span> + settings.user + 
-       <span style="color: #8b2252;">".json?count="</span>+ (settings.count+1) +<span style="color: #8b2252;">"&amp;callback=?"</span>,
-  dataType: 'json',
-  success: function (data) {
-  $.each(data, function (i, item) {
+        url: <span style="color: #8b2252;">"http://twitter.com/status/user_timeline/"</span> + settings.user + 
+             <span style="color: #8b2252;">".json?count="</span>+ settings.count +<span style="color: #8b2252;">"&amp;callback=?"</span>,
+        dataType: 'json',
+        success: function (data) {
+          $this.html(<span style="color: #8b2252;">""</span>); //clean previous html
+          
+          $.each(data, function (i, item) {
             
-    //text
-    $this.hide().append(<span style="color: #8b2252;">"&lt;p id="</span> + item.id + <span style="color: #8b2252;">"&gt;"</span> + 
-                        replaceURLWithHTMLLinks(item.text) + 
-                        <span style="color: #8b2252;">"&amp;nbsp&amp;nbsp&lt;/p&gt;"</span>).fadeIn('slow');
-            
-    //date
-    if (typeof prettyDate(item.created_at) !== <span style="color: #8b2252;">"undefined"</span>) {
-      $(<span style="color: #8b2252;">"&lt;br&gt;"</span>).appendTo(<span style="color: #8b2252;">"#"</span> + item.id); //line break
-      $(<span style="color: #8b2252;">"&lt;a&gt;"</span> + prettyDate(item.created_at) + <span style="color: #8b2252;">"&lt;/a&gt;"</span>).attr( {
-        'href':   ('http://twitter.com/' + settings.user + 
-                      '/status/' + item.id),
-        'target': '_blank'
-      }).css(<span style="color: #8b2252;">"font-size"</span>, <span style="color: #8b2252;">"75%"</span>).appendTo(<span style="color: #8b2252;">"#"</span> + item.id);
-    }
-  });}
-});
+            //text
+            $this.append(<span style="color: #8b2252;">"&lt;p id="</span> + item.id + <span style="color: #8b2252;">"&gt;"</span> + 
+                         replaceURLWithHTMLLinks(item.text) + 
+                         <span style="color: #8b2252;">"&lt;/p&gt;"</span>);
+
+            //date
+            if (typeof prettyDate(item.created_at) !== <span style="color: #8b2252;">"undefined"</span>) {       
+              $(<span style="color: #8b2252;">"&lt;div&gt;&lt;a style='font-size: 80%;' href='http://twitter.com/"</span> +
+                settings.user + <span style="color: #8b2252;">"/status/"</span> + item.id + <span style="color: #8b2252;">"' target='_blank'&gt;"</span> +
+                prettyDate(item.created_at) + <span style="color: #8b2252;">"&lt;/a&gt;&lt;/div&gt;"</span>).appendTo(<span style="color: #8b2252;">"#"</span> + item.id);
+            }
+          });}
+      });
 </pre>
 
 

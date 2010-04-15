@@ -1,3 +1,4 @@
+
 * jQuery Twitter 'mini' plugin
 
 Here's a little jQuery plugin for displaying a twitter feed into
@@ -24,7 +25,7 @@ For the code:
  <script type="text/javascript"
  src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js"></script>
  
- <div id="tw" class="margin-bottom:1em;"><b>click me</b></div>
+ <div id="tw" style="margin-bottom:1.5em;"><b>click me</b></div>
  <script type="text/javascript">
  $(function() {
    $('#tw').click(function() {
@@ -44,28 +45,27 @@ See in:
 
 #+BEGIN_SRC Javascript
 $.ajax({
-  url: "http://twitter.com/status/user_timeline/" + settings.user + 
-       ".json?count="+ (settings.count+1) +"&callback=?",
-  dataType: 'json',
-  success: function (data) {
-  $.each(data, function (i, item) {
+	url: "http://twitter.com/status/user_timeline/" + settings.user + 
+             ".json?count="+ settings.count +"&callback=?",
+	dataType: 'json',
+	success: function (data) {
+	  $this.html(""); //clean previous html
+          
+	  $.each(data, function (i, item) {
             
-    //text
-    $this.hide().append("<p id=" + item.id + ">" + 
-                        replaceURLWithHTMLLinks(item.text) + 
-                        "&nbsp&nbsp</p>").fadeIn('slow');
-            
-    //date
-    if (typeof prettyDate(item.created_at) !== "undefined") {
-      $("<br>").appendTo("#" + item.id); //line break
-      $("<a>" + prettyDate(item.created_at) + "</a>").attr( {
-        'href':   ('http://twitter.com/' + settings.user + 
-	              '/status/' + item.id),
-        'target': '_blank'
-      }).css("font-size", "75%").appendTo("#" + item.id);
-    }
-  });}
-});
+            //text
+            $this.append("<p id=" + item.id + ">" + 
+			 replaceURLWithHTMLLinks(item.text) + 
+			 "</p>");
+
+            //date
+            if (typeof prettyDate(item.created_at) !== "undefined") {	    
+              $("<div><a style='font-size: 80%;' href='http://twitter.com/" +
+		settings.user + "/status/" + item.id + "' target='_blank'>" +
+		prettyDate(item.created_at) + "</a></div>").appendTo("#" + item.id);
+            }
+          });}
+      });
 #+END_SRC
 
 jQuery is a very nice designed lib, simple and powerfull. Some say [[http://importantshock.wordpress.com/2009/01/18/jquery-is-a-monad/][its
