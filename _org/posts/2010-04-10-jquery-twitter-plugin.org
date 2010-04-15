@@ -20,11 +20,11 @@ For the code:
 
  #+BEGIN_HTML
  <script type="text/javascript"
- src="http://code.jquery.com/jquery-latest.pack.js"></script>
+ src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
  <script type="text/javascript"
  src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js"></script>
  
- <div id="tw"><b>click me</b></div>
+ <div id="tw" class="margin-bottom:1em;"><b>click me</b></div>
  <script type="text/javascript">
  $(function() {
    $('#tw').click(function() {
