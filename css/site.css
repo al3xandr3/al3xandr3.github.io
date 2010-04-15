@@ -1,8 +1,5 @@
 
-
-
 /* DEFAULT */
-
 .container  {
     width:670px;
 }
@@ -78,7 +75,8 @@ pre, code, tt {
 }
 
 #post {
-    width:640px;
+    margin-left:4em;
+    width:41em;
 }
 
 /* PAGES */
