@@ -8,7 +8,7 @@
 }
 
 body {
-    font:0.9em/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font:1em/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
 }
 
 .header {
@@ -49,7 +49,7 @@ dd {
 .twitter {
     color:#808080;
     font-style:italic;
-    font-size: 90%
+    font-size: 85%
 }
 
 .post-date {
@@ -65,19 +65,18 @@ dd {
 
 /* POST */
 pre, code, tt {
-    font:0.9em/1.5 'andale mono','lucida console',monospace;
+    font:0.8em/1.5 'andale mono','lucida console',monospace;
     overflow:auto;
     background-color:#F8F8FF;
 }
 
 #post h2 {
-
     text-align:center;
 }
 
 #post {
-    margin-left:4em;
-    width:41em;
+    margin-left:3em;
+    width:37em;
 }
 
 /* PAGES */
