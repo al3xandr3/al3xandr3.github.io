@@ -10,9 +10,10 @@ layout: post
 
 <p>
 Here's a little jQuery plugin for displaying a twitter feed into
-a web page.
-The goal was to put my latest 'tweets' on my blog, and also learn
-jQuery. 
+a web page. The goal was to put my latest 'tweets' on my blog, and
+also learn jQuery. 
+</p>
+<p>
 Ended up making a 'mini' jQuery plugin that can easily be added into
 any web page.
 </p>
@@ -73,27 +74,27 @@ See in:
 
 
 <pre class="src src-Javascript">$.ajax({
-        url: <span style="color: #8b2252;">"http://twitter.com/status/user_timeline/"</span> + settings.user + 
-             <span style="color: #8b2252;">".json?count="</span>+ settings.count +<span style="color: #8b2252;">"&amp;callback=?"</span>,
-        dataType: 'json',
-        success: function (data) {
-          $this.html(<span style="color: #8b2252;">""</span>); //clean previous html
-          
-          $.each(data, function (i, item) {
-            
-            //text
-            $this.append(<span style="color: #8b2252;">"&lt;p id="</span> + item.id + <span style="color: #8b2252;">"&gt;"</span> + 
-                         replaceURLWithHTMLLinks(item.text) + 
-                         <span style="color: #8b2252;">"&lt;/p&gt;"</span>);
+  url: <span style="color: #8b2252;">"http://twitter.com/status/user_timeline/"</span> + settings.user + 
+       <span style="color: #8b2252;">".json?count="</span>+ settings.count +<span style="color: #8b2252;">"&amp;callback=?"</span>,
+  dataType: 'json',
+  success: function (data) {
+    $this.html(<span style="color: #8b2252;">""</span>); //clean previous html
+    
+    $.each(data, function (i, item) {
+      
+      //text
+      $this.append(<span style="color: #8b2252;">"&lt;p id="</span> + item.id + <span style="color: #8b2252;">"&gt;"</span> + 
+                   replaceURLWithHTMLLinks(item.text) + 
+                   <span style="color: #8b2252;">"&lt;/p&gt;"</span>);
 
-            //date
-            if (typeof prettyDate(item.created_at) !== <span style="color: #8b2252;">"undefined"</span>) {       
-              $(<span style="color: #8b2252;">"&lt;div&gt;&lt;a style='font-size: 80%;' href='http://twitter.com/"</span> +
-                settings.user + <span style="color: #8b2252;">"/status/"</span> + item.id + <span style="color: #8b2252;">"' target='_blank'&gt;"</span> +
-                prettyDate(item.created_at) + <span style="color: #8b2252;">"&lt;/a&gt;&lt;/div&gt;"</span>).appendTo(<span style="color: #8b2252;">"#"</span> + item.id);
-            }
-          });}
-      });
+      //date
+      if (typeof prettyDate(item.created_at) !== <span style="color: #8b2252;">"undefined"</span>) {       
+        $(<span style="color: #8b2252;">"&lt;div&gt;&lt;a style='font-size: 80%;' href='http://twitter.com/"</span> +
+          settings.user + <span style="color: #8b2252;">"/status/"</span> + item.id + <span style="color: #8b2252;">"' target='_blank'&gt;"</span> +
+          prettyDate(item.created_at) + <span style="color: #8b2252;">"&lt;/a&gt;&lt;/div&gt;"</span>).appendTo(<span style="color: #8b2252;">"#"</span> + item.id);
+      }
+    });}
+});
 </pre>
 
 
@@ -101,7 +102,6 @@ See in:
 <p>
 jQuery is a very nice designed lib, simple and powerfull. Some say <a href="http://importantshock.wordpress.com/2009/01/18/jquery-is-a-monad/">its just like a functional programming Monad</a>.
 </p>
-
 <p>
 Full source code is available from github:
 <a href="http://github.com/al3xandr3/jquery-twitter-plugin">http://github.com/al3xandr3/jquery-twitter-plugin</a>

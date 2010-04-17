@@ -146,7 +146,6 @@ Code:
       (.stop server#)))
 
 (<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">*js-eval*</span> <span style="color: #8b2252;">"this.browserbot.getCurrentWindow().document.title;"</span>)                                                                                    
-
 (<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">check-a-page</span> [a-browser a-url] 
   (<span style="color: #7f007f;">try</span> 
   (.open a-browser a-url)
@@ -163,8 +162,8 @@ Code:
         (check-a-page browser a-url)))))
 
 (<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">xml-to-zip</span> [url]
-        <span style="color: #8b2252;">"read xml url into a tree"</span>
-        (zip/xml-zip (xml/parse url)))
+  <span style="color: #8b2252;">"read xml url into a tree"</span>
+  (zip/xml-zip (xml/parse url)))
 
 (<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">pick-a-sample</span> [a-percentage a-list]
   <span style="color: #8b2252;">"picks a subset (a-)percentage of the total"</span>
@@ -230,7 +229,7 @@ And of course tests for it:
 </span>        (is (&lt; (<span style="color: #7a378b;">count</span> the-sample) 3))))
 
 (<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">run-them</span> []
-        (run-tests 'coverager_test))
+  (run-tests 'coverager_test))
 </pre>
 
 

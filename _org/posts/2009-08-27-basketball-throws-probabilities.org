@@ -44,17 +44,17 @@ and :hit's but its not absolutely needed.
 (use '(incanter core stats charts io))
 
 (defn category-count
-    [aseq]
-    "counts the category's from a given sequence, ex:
-     $ (category-count '(:hit :hit :miss)) => {:miss 1, :hit 2}"
-    (into {} (let [dis (distinct aseq)]
-    (for [item dis]
-        {item (count (filter #(= item %) aseq))}))))
+  [aseq]
+  "counts the category's from a given sequence, ex:
+   $ (category-count '(:hit :hit :miss)) => {:miss 1, :hit 2}"
+  (into {} (let [dis (distinct aseq)]
+  (for [item dis]
+      {item (count (filter #(= item %) aseq))}))))
 
 (def one-throw
-    (for [_ (range 100000)]  
-         ; does not matter if replacement is true or false
-         (sample [:hit :miss :miss :miss] :size 1 :replacement false)))
+  (for [_ (range 100000)]  
+    ; does not matter if replacement is true or false
+    (sample [:hit :miss :miss :miss] :size 1 :replacement false)))
 
 (def throws-count (category-count one-throw))
 (view (bar-chart (keys throws-count) (vals throws-count)))
@@ -74,14 +74,15 @@ percentage of all :ok's from the total simulation.
 
 #+BEGIN_SRC clojure
 (defn five-throws
-    []
-    (category-count (for [_ (range 100000)]  
-       (let [smp (sample [:hit :miss :miss :miss] :size 5 :replacement true)
-	  catg  (category-count smp)
-	  hits (:hit catg)]
-	  (if (and (not (nil? hits)) (>= hits 3))
-	    :ok
-	    :nok)))))
+  []
+  (category-count 
+    (for [_ (range 100000)]  
+      (let [smp (sample [:hit :miss :miss :miss] :size 5 :replacement true)
+            catg (category-count smp)
+            hits (:hit catg)]
+        (if (and (not (nil? hits)) (>= hits 3))
+          :ok
+          :nok)))))
 
 (double (/ (:ok (five-throws)) 100000))
 #+END_SRC

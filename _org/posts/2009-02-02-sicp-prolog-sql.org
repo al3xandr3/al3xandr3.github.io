@@ -24,12 +24,13 @@ Databases implement powerful techniques to improve performance:
 
 Where as Prolog based systems have very few such techniques.
 
-*Is SQL that bad ? what is missing?*
+*What is SQL missing?*
 
 One of the most powerful features of Prolog is recursion.
 
 SQL does not have recursion built into it. This is a severe
 Handicap. However there is a way to overcome this problem by invoking
-multiple SQL queries from a host language like C Or JAVA. SQL3 has
-begun supporting recursion.
+multiple SQL queries from a host language like C Or Java. 
+
+SQL3 has begun supporting recursion.
 

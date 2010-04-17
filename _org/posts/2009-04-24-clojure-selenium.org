@@ -97,7 +97,6 @@ Code:
       (.stop server#)))
 
 (def *js-eval* "this.browserbot.getCurrentWindow().document.title;")											
-
 (defn check-a-page [a-browser a-url] 
   (try 
   (.open a-browser a-url)
@@ -114,8 +113,8 @@ Code:
         (check-a-page browser a-url)))))
 
 (defn xml-to-zip [url]
-	"read xml url into a tree"
-	(zip/xml-zip (xml/parse url)))
+  "read xml url into a tree"
+  (zip/xml-zip (xml/parse url)))
 
 (defn pick-a-sample [a-percentage a-list]
   "picks a subset (a-)percentage of the total"
@@ -176,7 +175,7 @@ And of course tests for it:
 	(is (< (count the-sample) 3))))
 
 (defn run-them []
-	(run-tests 'coverager_test))
+  (run-tests 'coverager_test))
 #+END_SRC
 
 ** Take away
