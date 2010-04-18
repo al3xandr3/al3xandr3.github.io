@@ -16,7 +16,7 @@ body {
 }
 
 .header-title {
-    font: 3em/2.2 "Impact";
+    font: 6em/1.6 "Impact";
     color: #808080;
     text-decoration:none;
 }
@@ -38,12 +38,16 @@ body {
 }
 
 dd {
-   margin-bottom:1em;   
+   margin-bottom:0.6em;   
 }
 
 /* INDEX */
 .writings {
     margin-left:3em;
+}
+
+.writings a:focus, .writings a:hover {
+    color:#000099;
 }
 
 .twitter {
@@ -77,6 +81,7 @@ pre, code, tt {
 #post {
     margin-left:3em;
     width:37em;
+    text-align:justify;
 }
 
 /* PAGES */
