@@ -38,7 +38,7 @@ body {
 }
 
 dd {
-   margin-bottom:0.6em;   
+    margin-bottom:0.6em;   
 }
 
 /* INDEX */
@@ -47,7 +47,7 @@ dd {
 }
 
 .writings a:focus, .writings a:hover {
-    color:#000099;
+    color:#006699;
 }
 
 .twitter {
@@ -69,20 +69,21 @@ dd {
 }
 
 /* POST */
+#post {
+    font:0.9em/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
+    margin-left:3em;
+    width:37em;
+    text-align:justify;
+}
+
 pre, code, tt {
-    font:0.8em/1.5 'andale mono','lucida console',monospace;
+    font:0.9em/1.5 'andale mono','lucida console',monospace;
     overflow:auto;
     background-color:#F8F8FF;
 }
 
 #post h2 {
     text-align:center;
-}
-
-#post {
-    margin-left:3em;
-    width:37em;
-    text-align:justify;
 }
 
 /* PAGES */
