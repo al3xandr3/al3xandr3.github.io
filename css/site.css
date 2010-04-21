@@ -46,8 +46,13 @@ dd {
     margin-left:3em;
 }
 
-.writings a:focus, .writings a:hover {
+.writings a:focus, .writings a:hover, .tw-tittle a:focus, .tw-tittle a:hover {
     color:#006699;
+}
+
+.tw-tittle a {
+    text-decoration:none;
+    color:#666666;
 }
 
 .twitter {
