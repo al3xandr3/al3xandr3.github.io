@@ -18,7 +18,7 @@ home: true
 
 <div class="sidebar span-4 last">
   <!-- Twitter Plugin -->
-  <h3 class="alt tw-tittle">
+  <h3 class="alt tw-tittle" style="display:none;">
     <a href="http://twitter.com/al3xandr3" target="_blank">twitter</a>
   </h3>
   <div id="twitter" class="twitter"></div>  
@@ -27,7 +27,9 @@ home: true
   </script>
   <script type="text/javascript">
   $(function() {
-    $('#twitter').twitter({'user':'al3xandr3','count':3});
+    $('#twitter').twitter({'user':'al3xandr3','count':3}, function(el) {
+      $('.tw-tittle').show();
+    });  
   });
   </script> 
 </div>
