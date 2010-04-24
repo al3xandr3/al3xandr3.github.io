@@ -3,33 +3,13 @@ layout: default
 home: true
 ---
 
-<div class="writings span-11">
-  <dl>
+<div id="post-list">
+  <ul>
     {% for post in site.posts %}
-    <dt>
-      <a  class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-    </dt>
-    <dd>
-      <span class="post-date alt">{{ post.date | date_to_string }}</span>
-    </dd>
+    <li>
+      <a id="post-link" href="{{ post.url }}">{{ post.title }}</a>
+      <span id="post-date" class="alt">{{ post.date | date_to_string }}</span>
+    </li>
     {% endfor %}
   </dl>
-</div>
-
-<div class="sidebar span-4 last">
-  <!-- Twitter Plugin -->
-  <h3 class="alt tw-tittle" style="display:none;">
-    <a href="http://twitter.com/al3xandr3" target="_blank">twitter</a>
-  </h3>
-  <div id="twitter" class="twitter"></div>  
-  <script type="text/javascript"
-    src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js">
-  </script>
-  <script type="text/javascript">
-  $(function() {
-    $('#twitter').twitter({'user':'al3xandr3','count':3}, function(el) {
-      $('.tw-tittle').show();
-    });  
-  });
-  </script> 
-</div>
+ </div>

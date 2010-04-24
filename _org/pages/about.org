@@ -1,15 +1,23 @@
 * About
 
-#+ATTR_HTML: alt="al3xandr3" title="al3xandr3" align="none"
+#+ATTR_HTML: alt="al3xandr3" title="al3xandr3" align="center"
 [[/img/al3xandr3.png]]
 
-Alexandre Matos Martins.
+I'm Alexandre Matos Martins, a Portuguese living and working in
+Estonia in IT(since 2006).
 
-I'm a Portuguese living and working in Estonia in IT.
+I've graduated from the Portuguese [[http://www.ist.utl.pt/][Instituto Superior Técnico]] in
+Computer Science Engineering in 2005.
 
-** @
-- Skype: al3x.martins ::
-- [[http://www.linkedin.com/in/al3xandr3]] ::
-- [[http://twitter.com/al3xandr3]] ::
-- [[http://github.com/al3xandr3]] ::
-- old: [[http://alexandrenotebook.blogspot.com/]] ::
+** Whats this site about?
+
+It's about experiments of things that interest me, mostly geeky
+technical things that hopefully could be of use to others.
+
+** Were you can find me:
+
+- Skype: al3x.martins
+- [[http://www.linkedin.com/in/al3xandr3][linkedin]]
+- [[http://twitter.com/al3xandr3][twitter]]
+- [[http://github.com/al3xandr3][github]]
+- [[http://alexandrenotebook.blogspot.com/][old blog]]

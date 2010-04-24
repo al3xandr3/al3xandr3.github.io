@@ -1,5 +1,18 @@
 
-/* DEFAULT */
+body {
+    font-size:100%;
+}
+
+a {
+    color:#666666;
+    text-decoration:none;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+a:hover {
+    color:#006699;
+}
+
 .alt {
   color: #666;
   font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
@@ -7,78 +20,48 @@
   font-weight: normal;
 }
 
-body {
-    font:1em/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
+#header-title {
+    float:left;
+    margin-bottom:0.4em;
+    margin-top:0.4em;
+    font-weight: bold;
+    border-bottom: 0px;
 }
 
-.header {
-    text-align: center;
-}
-
-.header-title {
-    font: 6em/1.6 "Impact";
-    color: #808080;
-    text-decoration:none;
-}
-
-.footer {
-    text-align: center;
-    color:#DDDDDD;
-}
-
-.footer hr {
-    margin-bottom: 0em;
-}
-
-.footer-link {
-    font:1.7em/2.5 "Impact";
-    color:#808080;
-    text-decoration:none;
-    margin: 0.3em;
-}
-
-dd {
-    margin-bottom:0.6em;   
-}
-
-/* INDEX */
-.writings {
-    margin-left:3em;
-}
-
-.writings a:focus, .writings a:hover, .tw-tittle a:focus, .tw-tittle a:hover {
-    color:#006699;
-}
-
-.tw-tittle a {
-    text-decoration:none;
+#sidebar {
     color:#666666;
+    font-size: 85%;
 }
 
-.twitter {
+#twitter {
     color:#808080;
     font-style:italic;
-    font-size: 85%
 }
 
-.post-date {
+#post-list ul {
+    list-style:none outside none;
+}
+
+#post-list li {
+    margin-bottom:0.7em;
+}
+
+#post-link {
+    font-weight: bold;
+}
+
+#post-date {
     font-size:90%;
 }
 
-.post-link {
-    text-decoration:none;
-    color:#666666;
-}
-
-.sidebar {
-}
-
-/* POST */
 #post {
-    font:0.9em/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;
-    margin-left:3em;
-    width:37em;
+    font:1em/1.4 Georgia,serif;
     text-align:justify;
+}
+
+#post h2, #post h3, #post h4 {
+    font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+    text-align:left;
 }
 
 pre, code, tt {
@@ -87,11 +70,9 @@ pre, code, tt {
     background-color:#F8F8FF;
 }
 
-#post h2 {
+#footer {
     text-align:center;
-}
-
-/* PAGES */
-#about {
-    text-align:center;
+    color:#808080;
+    font-style:italic;
+    font-size: 85%;
 }
