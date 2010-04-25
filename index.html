@@ -7,8 +7,10 @@ home: true
   <ul>
     {% for post in site.posts %}
     <li>
-      <a id="post-link" href="{{ post.url }}">{{ post.title }}</a>
-      <span id="post-date" class="alt">{{ post.date | date_to_string }}</span>
+      <h4>
+        <a id="post-link" href="{{ post.url }}">{{ post.title }}</a>
+        <span id="post-date" class="alt">{{ post.date | date_to_string}}</span>
+      </h4>
     </li>
     {% endfor %}
   </dl>

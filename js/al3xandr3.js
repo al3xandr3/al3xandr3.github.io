@@ -44,6 +44,6 @@ $(function () {
   //AL3XANDR3.colorFooter(AL3XANDR3.themeColor3);
 
   //center images in posts
-  $("#post p img").parent().css("text-align", "center");
+  //$("#post p img").parent().css("text-align", "center");
 
 });

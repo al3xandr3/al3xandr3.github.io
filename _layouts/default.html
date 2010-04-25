@@ -51,22 +51,22 @@
     <div class="container">
 
       <div id="header" class="header span-21">
-	<h1><a href="/" id="header-title">{{ site.title }}</a></h1>
-	<hr>
+	<h1><a href="/" id="header-title">{{ site.title }}</a></h1>	
       </div>
+      <hr>
 
       <div id="content" class="span-15 colborder">
-        {{ content }}
+          {{ content }}
       </div>
       
       <div id="sidebar" class="span-5 last">
 	{% include search.html %}
-	<h3><a href="/pages/about.html">About</a></h3>
-	<h3><a href="http://feeds.feedburner.com/al3xandr3">Subscribe</a></h3>
+	<h4><a href="/pages/about.html">About</a></h4>
+	<h4><a href="http://feeds.feedburner.com/al3xandr3">Subscribe</a></h4>
 	<!-- Twitter Plugin -->
-	<h3 id="tw-tittle" class="alt" style="display:none;">
+	<h5 id="tw-tittle" style="display:none;">
   	  <a href="http://twitter.com/al3xandr3" target="_blank">on twitter</a>
-	</h3>
+	</h5>
         <div id="twitter" class=""></div>  
         <script type="text/javascript"
         src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js">
@@ -79,9 +79,9 @@
         });
         </script> 
       </div>
-      
+
+      <hr>
       <div id="footer" class="span-21">
-        <hr>
 	<span class="footer">&copy; 2010 {{ site.author }}</span>
       </div>
     </div>

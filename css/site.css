@@ -1,16 +1,28 @@
 
+.container {
+    width:830px;
+}
+
 body {
-    font-size:100%;
+    font-size:90%;
+    font-family: "Lucida Grande","Trebuchet MS","Bitstream Vera Sans",Verdana,Helvetica,sans-serif;
+
+}
+
+h1, h2, h3, h4 {
+    font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+    text-align:left;
 }
 
 a {
-    color:#666666;
+    color:#000000;
     text-decoration:none;
     border-bottom: 1px solid #EEEEEE;
 }
 
 a:hover {
     color:#006699;
+
 }
 
 .alt {
@@ -20,48 +32,41 @@ a:hover {
   font-weight: normal;
 }
 
+hr {
+    margin:0 0 0;
+}
+
 #header-title {
     float:left;
-    margin-bottom:0.4em;
-    margin-top:0.4em;
+    padding-bottom:0.4em;
+    padding-top:0.8em;
     font-weight: bold;
     border-bottom: 0px;
 }
 
+#content {
+    padding-top:2em;
+    padding-bottom:1.4em;
+}
+
 #sidebar {
     color:#666666;
-    font-size: 85%;
+    padding-top:2em;
 }
 
 #twitter {
     color:#808080;
     font-style:italic;
+    font-size:85%;
 }
 
 #post-list ul {
     list-style:none outside none;
-}
-
-#post-list li {
-    margin-bottom:0.7em;
-}
-
-#post-link {
-    font-weight: bold;
+    padding-left:1em;
 }
 
 #post-date {
-    font-size:90%;
-}
-
-#post {
-    font:1em/1.4 Georgia,serif;
-    text-align:justify;
-}
-
-#post h2, #post h3, #post h4 {
-    font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
-    text-align:left;
+    font-size:85%;
 }
 
 pre, code, tt {
@@ -72,7 +77,7 @@ pre, code, tt {
 
 #footer {
     text-align:center;
-    color:#808080;
     font-style:italic;
     font-size: 85%;
+    padding: 0.5em;
 }
