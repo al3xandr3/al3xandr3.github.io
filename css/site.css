@@ -35,22 +35,30 @@ hr {
     margin:0 0 0;
 }
 
+#header {
+    padding-bottom:1.2em;
+    padding-top:1.5em;
+}
 #header-title {
     float:left;
-    padding-bottom:0.4em;
-    padding-top:0.8em;
+    padding-bottom:0em;
+    padding-top: 0.2em;
     font-weight: bold;
     border-bottom: 0px;
+    font-size: 120%;
+}
+
+#search {
+    float:right;
 }
 
 #content {
-    padding-top:2em;
-    padding-bottom:1.4em;
+    padding-top:1em;
 }
 
 #sidebar {
     color:#666666;
-    padding-top:2em;
+    padding-top:1em;
     padding-left:0.7em;
 }
 
