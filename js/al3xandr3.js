@@ -20,15 +20,15 @@
 var AL3XANDR3 = {};
 
 AL3XANDR3.colorHeader = function (color) {
-  $(".header-title").spanifyText().children().filter(function (index) {
+  $("#header-title").spanifyText().children().filter(function (index) {
     return $(this).text() === '3';    
   }).css('color', color);
 };
 
-AL3XANDR3.colorFooter = function  (color) {
-  $(".footer-link").spanifyText();
-  $.each($(".footer-link"), function (k, v) {
-    $(v).children().filter(':first').css('color', color);
+AL3XANDR3.colorSidebar = function  (color) {
+  $("#sidebar h4 a").spanifyText();
+  $.each($("#sidebar h4 a"), function (k, v) {
+    $(v).children().filter(':nth(2)').css('color', color);
   });
 };
 
@@ -40,10 +40,10 @@ AL3XANDR3.themeColor3 = "#E38E24";
 $(function () {
 
   //Color Title Numbers
-  //AL3XANDR3.colorHeader(AL3XANDR3.themeColor3);
-  //AL3XANDR3.colorFooter(AL3XANDR3.themeColor3);
+  AL3XANDR3.colorHeader(AL3XANDR3.themeColor3);
+  AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);
 
   //center images in posts
-  //$("#post p img").parent().css("text-align", "center");
+  $("#post p img").parent().css("text-align", "center");
 
 });
