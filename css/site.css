@@ -8,7 +8,7 @@ body {
     font-family: "Lucida Grande","Trebuchet MS","Bitstream Vera Sans",Verdana,Helvetica,sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
     text-align:left;
 }
@@ -21,7 +21,7 @@ a {
 
 a:hover {
     color:#006699;
-
+    border-bottom:0px;
 }
 
 .alt {
@@ -39,6 +39,7 @@ hr {
     padding-bottom:1.2em;
     padding-top:1.5em;
 }
+
 #header-title {
     float:left;
     padding-bottom:0em;
@@ -46,6 +47,10 @@ hr {
     font-weight: bold;
     border-bottom: 0px;
     font-size: 120%;
+}
+
+#header-title:hover {
+    border-bottom: 1px solid #EEEEEE;
 }
 
 #search {

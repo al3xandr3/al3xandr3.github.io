@@ -3,15 +3,14 @@
 
 ** How it works:
 
-  1. You plugin the AB testing tool to your application and say:
-     optimize page A, on the measurable goal X (for example
-     downloads).
-
-  1. The Tool By Itself: creates new UI variation -> tests it ->
-     analyses results -> makes it default -> creates new UI variation
-     -> tests it -> etc... This goes ad eternum... Much like natural
-     evolution, keeps experimenting/mutating, until it finds the best
-     combinations.
+1. You plugin the AB testing tool to your application and say:
+   optimize page A, on the measurable goal X (for example
+   downloads).
+1. The Tool By Itself: creates new UI variation -> tests it ->
+   analyses results -> makes it default -> creates new UI variation
+   -> tests it -> etc... This goes ad eternum... Much like natural
+   evolution, keeps experimenting/mutating, until it finds the best
+   combinations.
 
 ** Details:
 
