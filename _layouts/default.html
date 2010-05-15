@@ -8,7 +8,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{% unless page.home %}{{ page.title }} - {% endunless %} {{ site.title }}</title>
     <meta name="author" content="{{ site.author }}" />
-    <meta name="description" content="{{ page.title }}" />
+    <meta name="description" content="{% if page.home %}{{ site.author }}{% endif %}{{ page.title }}" />
     <meta name="keywords" content="{{ site.keywords }}" />
     <meta name="robots" content="all,follow" />
     <meta name="google-site-verification" content="5FljcF-364B5I6-KW19BXYLGQEm23cqHJbVDzS7x6Os" />
