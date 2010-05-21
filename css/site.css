@@ -92,6 +92,7 @@ pre, code, tt {
     font:0.9em/1.5 'andale mono','lucida console',monospace;
     overflow:auto;
     background-color:#F8F8FF;
+    padding:0.5em;
 }
 
 #footer {
