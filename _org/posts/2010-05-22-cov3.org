@@ -17,7 +17,7 @@ It has 3 flavors of crawling:
 
 On each page the crawler visits it executes a bit of javascript code
 that we can define as a validation.
-These validations are usefull to test you site in an automated way,
+These validations are usefull to test your site in an automated way,
 say for example, you want to check:
 - if all pages contain meta tags
 - if all pages contain a title
