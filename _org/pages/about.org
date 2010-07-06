@@ -3,16 +3,21 @@
 #+ATTR_HTML: alt="al3xandr3" title="al3xandr3" align="center"
 [[/img/al3xandr3.png]]
 
-I'm Alexandre Matos Martins, a Portuguese living and working in
-Estonia in IT(since 2006).
+I'm Alexandre Matos Martins, a Portuguese living & working in
+Estonia.
+
+Am a Computer Science Engineer by education and have worked in different
+things in this area but all of them involving some coding :)
+My latest interests have been towards statistics, machine learning,
+data mining, AI and functional programming.
 
 #+ATTR_HTML: title="Curriculum Vitae" style="font-weight:bold;font-size:110%;"
-[[/img/AlexandreMartinsCV.pdf][Curriculum Vitae]]
+[[/img/AlexandreMartinsCV.pdf][Curriculum Vitae]] as of July 2010.
 
 ** Whats this site about?
 
-It's about experiments of things that interest me, mostly geeky
-technical things that hopefully could be of use to others.
+Thoughts and experiments of things that interest me, mostly geeky
+technical things that, who knows, migth even be of use to others.
 
 ** Were you can find me:
 
@@ -21,4 +26,3 @@ technical things that hopefully could be of use to others.
 - [[http://twitter.com/al3xandr3][twitter]]
 - [[http://github.com/al3xandr3][github]]
 - [[http://alexandrenotebook.blogspot.com/][old blog]]
-
