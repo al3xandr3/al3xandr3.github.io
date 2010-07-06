@@ -1,6 +1,6 @@
 --- 
-title: Probability simulation of basketball throws
 layout: post
+title: Probability simulation of basketball throws
 ---
 
 
@@ -69,21 +69,21 @@ and :hit's but its not absolutely needed.
 
 <pre class="src src-clojure">(use '(incanter core stats charts io))
 
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">category-count</span>
+(defn category-count
   [aseq]
   <span style="color: #8b2252;">"counts the category's from a given sequence, ex:
    $ (category-count '(:hit :hit :miss)) =&gt; {:miss 1, :hit 2}"</span>
-  (<span style="color: #7a378b;">into</span> {} (<span style="color: #7f007f;">let</span> [dis (<span style="color: #7a378b;">distinct</span> aseq)]
-  (<span style="color: #7f007f;">for</span> [item dis]
-      {item (<span style="color: #7a378b;">count</span> (<span style="color: #7a378b;">filter</span> #(= item %) aseq))}))))
+  (into {} (let [dis (distinct aseq)]
+  (for [item dis]
+      {item (count (filter #(= item %) aseq))}))))
 
-(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">one-throw</span>
-  (<span style="color: #7f007f;">for</span> [_ (<span style="color: #7a378b;">range</span> 100000)]  
-    <span style="color: #b22222;">; </span><span style="color: #b22222;">does not matter if replacement is true or false
-</span>    (sample [<span style="color: #7a378b;">:hit</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span>] <span style="color: #7a378b;">:size</span> 1 <span style="color: #7a378b;">:replacement</span> false)))
+(def one-throw
+  (for [_ (range 100000)]  
+    ; does not matter if replacement is true or false
+    (sample [:hit :miss :miss :miss] :size 1 :replacement false)))
 
-(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">throws-count</span> (category-count one-throw))
-(view (bar-chart (<span style="color: #7a378b;">keys</span> throws-count) (<span style="color: #7a378b;">vals</span> throws-count)))
+(def throws-count (category-count one-throw))
+(view (bar-chart (keys throws-count) (vals throws-count)))
 </pre>
 
 
@@ -113,18 +113,18 @@ percentage of all :ok's from the total simulation.
 
 
 
-<pre class="src src-clojure">(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">five-throws</span>
+<pre class="src src-clojure">(defn five-throws
   []
   (category-count 
-    (<span style="color: #7f007f;">for</span> [_ (<span style="color: #7a378b;">range</span> 100000)]  
-      (<span style="color: #7f007f;">let</span> [smp (sample [<span style="color: #7a378b;">:hit</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span>] <span style="color: #7a378b;">:size</span> 5 <span style="color: #7a378b;">:replacement</span> true)
+    (for [_ (range 100000)]  
+      (let [smp (sample [:hit :miss :miss :miss] :size 5 :replacement true)
             catg (category-count smp)
-            hits (<span style="color: #7a378b;">:hit</span> catg)]
-        (<span style="color: #7f007f;">if</span> (<span style="color: #7f007f;">and</span> (not (<span style="color: #7a378b;">nil?</span> hits)) (&gt;= hits 3))
-          <span style="color: #7a378b;">:ok</span>
-          <span style="color: #7a378b;">:nok</span>)))))
+            hits (:hit catg)]
+        (if (and (not (nil? hits)) (&gt;= hits 3))
+          :ok
+          :nok)))))
 
-(double (/ (<span style="color: #7a378b;">:ok</span> (five-throws)) 100000))
+(double (/ (:ok (five-throws)) 100000))
 </pre>
 
 

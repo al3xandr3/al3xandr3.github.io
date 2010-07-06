@@ -6,8 +6,8 @@
 I'm Alexandre Matos Martins, a Portuguese living and working in
 Estonia in IT(since 2006).
 
-I've graduated from the Portuguese [[http://www.ist.utl.pt/][Instituto Superior Técnico]] in
-Computer Science Engineering in 2005.
+#+ATTR_HTML: title="Curriculum Vitae" style="font-weight:bold;font-size:110%;"
+[[/img/AlexandreMartinsCV.pdf][Curriculum Vitae]]
 
 ** Whats this site about?
 
@@ -21,3 +21,4 @@ technical things that hopefully could be of use to others.
 - [[http://twitter.com/al3xandr3][twitter]]
 - [[http://github.com/al3xandr3][github]]
 - [[http://alexandrenotebook.blogspot.com/][old blog]]
+

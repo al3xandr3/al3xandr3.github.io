@@ -1,6 +1,6 @@
 --- 
-title: Clojure test-is results in twitter
 layout: post
+title: Clojure test-is results in twitter
 ---
 
 
@@ -23,10 +23,10 @@ Start by getting <i>jtwitter</i>, put it in your classphath and create:
 
 
 
-<pre class="src src-clojure">(<span style="color: #7f007f;">import</span> 'winterwell.jtwitter.Twitter)
+<pre class="src src-clojure">(import 'winterwell.jtwitter.Twitter)
 
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">twitter-update</span> [the_message]
-  (<span style="color: #7f007f;">let</span> [twitter (new Twitter <span style="color: #8b2252;">"username"</span> <span style="color: #8b2252;">"password"</span>)]
+(defn twitter-update [the_message]
+  (let [twitter (new Twitter <span style="color: #8b2252;">"username"</span> <span style="color: #8b2252;">"password"</span>)]
     (.updateStatus twitter the_message)))
 </pre>
 
@@ -46,11 +46,11 @@ Before:
 
 
 
-<pre class="src src-clojure">(<span style="color: #7f007f;">defmethod</span> <span style="color: #0000ff;">report</span> <span style="color: #7a378b;">:summary</span> [m]
+<pre class="src src-clojure">(defmethod report :summary [m]
   (with-test-out
-    (println <span style="color: #8b2252;">"\nRan"</span> (<span style="color: #7a378b;">:test</span> m) <span style="color: #8b2252;">"tests containing"</span>
-    (+ (<span style="color: #7a378b;">:pass</span> m) (<span style="color: #7a378b;">:fail</span> m) (<span style="color: #7a378b;">:error</span> m)) <span style="color: #8b2252;">"assertions."</span>)
-    (println (<span style="color: #7a378b;">:fail</span> m) <span style="color: #8b2252;">"failures,"</span> (<span style="color: #7a378b;">:error</span> m) <span style="color: #8b2252;">"errors."</span>)))
+    (println <span style="color: #8b2252;">"\nRan"</span> (:test m) <span style="color: #8b2252;">"tests containing"</span>
+    (+ (:pass m) (:fail m) (:error m)) <span style="color: #8b2252;">"assertions."</span>)
+    (println (:fail m) <span style="color: #8b2252;">"failures,"</span> (:error m) <span style="color: #8b2252;">"errors."</span>)))
 </pre>
 
 
@@ -61,12 +61,12 @@ After:
 
 
 
-<pre class="src src-clojure">(<span style="color: #7f007f;">defmethod</span> <span style="color: #0000ff;">report</span> <span style="color: #7a378b;">:summary</span> [m]
+<pre class="src src-clojure">(defmethod report :summary [m]
   (with-test-out
-    (twitter-update (<span style="color: #7a378b;">str</span> <span style="color: #8b2252;">"[coverager] "</span> (<span style="color: #7a378b;">:fail</span> m) <span style="color: #8b2252;">" failures, "</span> (<span style="color: #7a378b;">:error</span> m) <span style="color: #8b2252;">" errors."</span>))
-    (println <span style="color: #8b2252;">"\nRan"</span> (<span style="color: #7a378b;">:test</span> m) <span style="color: #8b2252;">"tests containing"</span>
-    (+ (<span style="color: #7a378b;">:pass</span> m) (<span style="color: #7a378b;">:fail</span> m) (<span style="color: #7a378b;">:error</span> m)) <span style="color: #8b2252;">"assertions."</span>)
-    (println (<span style="color: #7a378b;">:fail</span> m) <span style="color: #8b2252;">"failures,"</span> (<span style="color: #7a378b;">:error</span> m) <span style="color: #8b2252;">"errors."</span>)))
+    (twitter-update (str <span style="color: #8b2252;">"[coverager] "</span> (:fail m) <span style="color: #8b2252;">" failures, "</span> (:error m) <span style="color: #8b2252;">" errors."</span>))
+    (println <span style="color: #8b2252;">"\nRan"</span> (:test m) <span style="color: #8b2252;">"tests containing"</span>
+    (+ (:pass m) (:fail m) (:error m)) <span style="color: #8b2252;">"assertions."</span>)
+    (println (:fail m) <span style="color: #8b2252;">"failures,"</span> (:error m) <span style="color: #8b2252;">"errors."</span>)))
 </pre>
 
 

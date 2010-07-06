@@ -1,6 +1,6 @@
 --- 
-title: Clojure and Selenium
 layout: post
+title: Clojure and Selenium
 ---
 
 
@@ -122,22 +122,22 @@ Code:
 
 
 
-<pre class="src src-clojure"><span style="color: #b22222;">;;</span><span style="color: #b22222;">file: coverager.clj
-</span>(<span style="color: #7f007f;">ns</span> coverager
-  (<span style="color: #7a378b;">:import</span> (com.thoughtworks.selenium DefaultSelenium)
+<pre class="src src-clojure">;;file: coverager.clj
+(ns coverager
+  (:import (com.thoughtworks.selenium DefaultSelenium)
     (org.openqa.selenium.server SeleniumServer)
       java.util.Date
       (java.io FileWriter)
       (java.text SimpleDateFormat))
-  (<span style="color: #7a378b;">:use</span> clojure.contrib.zip-filter.xml)
-  (<span style="color: #7a378b;">:require</span> [clojure.zip <span style="color: #7a378b;">:as</span> zip]
-            [clojure.xml <span style="color: #7a378b;">:as</span> xml]))
+  (:use clojure.contrib.zip-filter.xml)
+  (:require [clojure.zip :as zip]
+            [clojure.xml :as xml]))
 
-(<span style="color: #7f007f;">defmacro</span> <span style="color: #0000ff;">with-selenium</span>
+(defmacro with-selenium
   [browser &amp; body]
-  `(<span style="color: #7f007f;">let</span> [server# (new SeleniumServer)]
+  `(let [server# (new SeleniumServer)]
     (.start server#)
-    (<span style="color: #7f007f;">let</span> [~browser 
+    (let [~browser 
          (new DefaultSelenium <span style="color: #8b2252;">"localhost"</span>, 4444, <span style="color: #8b2252;">"*firefox"</span>, <span style="color: #8b2252;">"http://www.google.com/"</span>)]
       (.start ~browser)
       (.setTimeout ~browser <span style="color: #8b2252;">"100000"</span>)
@@ -145,38 +145,38 @@ Code:
       (.stop ~browser))
       (.stop server#)))
 
-(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">*js-eval*</span> <span style="color: #8b2252;">"this.browserbot.getCurrentWindow().document.title;"</span>)                                                                                    
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">check-a-page</span> [a-browser a-url] 
-  (<span style="color: #7f007f;">try</span> 
+(def *js-eval* <span style="color: #8b2252;">"this.browserbot.getCurrentWindow().document.title;"</span>)                                                                                    
+(defn check-a-page [a-browser a-url] 
+  (try 
   (.open a-browser a-url)
-    (Thread/sleep 3000) <span style="color: #b22222;">; </span><span style="color: #b22222;">make a little timeout, to avoid overloading server
-</span>    (println (<span style="color: #7a378b;">str</span> a-url <span style="color: #8b2252;">","</span> (.getEval a-browser *js-eval*)))
-    (<span style="color: #7f007f;">catch</span> Exception e 
-    (println (<span style="color: #7a378b;">str</span> a-url <span style="color: #8b2252;">","</span> e)))))
+    (Thread/sleep 3000) ; make a little timeout, to avoid overloading server
+    (println (str a-url <span style="color: #8b2252;">","</span> (.getEval a-browser *js-eval*)))
+    (catch Exception e 
+    (println (str a-url <span style="color: #8b2252;">","</span> e)))))
 
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">check-pages</span> [url-list]
+(defn check-pages [url-list]
   (with-selenium browser
-    (<span style="color: #7f007f;">binding</span> [*out* (FileWriter. 
-         (<span style="color: #7a378b;">str</span> <span style="color: #8b2252;">"output/log_"</span> (.format (SimpleDateFormat. <span style="color: #8b2252;">"yyyy-MM-dd"</span>) (Date.)) <span style="color: #8b2252;">".csv"</span>))]
-      (<span style="color: #7f007f;">doseq</span> [a-url url-list]
+    (binding [*out* (FileWriter. 
+         (str <span style="color: #8b2252;">"output/log_"</span> (.format (SimpleDateFormat. <span style="color: #8b2252;">"yyyy-MM-dd"</span>) (Date.)) <span style="color: #8b2252;">".csv"</span>))]
+      (doseq [a-url url-list]
         (check-a-page browser a-url)))))
 
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">xml-to-zip</span> [url]
+(defn xml-to-zip [url]
   <span style="color: #8b2252;">"read xml url into a tree"</span>
   (zip/xml-zip (xml/parse url)))
 
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">pick-a-sample</span> [a-percentage a-list]
+(defn pick-a-sample [a-percentage a-list]
   <span style="color: #8b2252;">"picks a subset (a-)percentage of the total"</span>
-    (<span style="color: #7a378b;">filter</span> #(<span style="color: #7f007f;">if</span> (&gt; (rand) (- 1 (/ a-percentage 100))) %) a-list))
+    (filter #(if (&gt; (rand) (- 1 (/ a-percentage 100))) %) a-list))
 
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">process-sitemap</span> [sitemap-url]
-  (<span style="color: #7f007f;">let</span> [u-list (xml-&gt; (xml-to-zip sitemap-url) <span style="color: #7a378b;">:url</span> <span style="color: #7a378b;">:loc</span> text)]
+(defn process-sitemap [sitemap-url]
+  (let [u-list (xml-&gt; (xml-to-zip sitemap-url) :url :loc text)]
     (check-pages (pick-a-sample 1 u-list))))
 
-(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">*sitemap*</span> <span style="color: #8b2252;">"http://www.google.com/sitemap.xml"</span>)
+(def *sitemap* <span style="color: #8b2252;">"http://www.google.com/sitemap.xml"</span>)
 
-<span style="color: #b22222;">;</span><span style="color: #b22222;">use: (process-sitemap *sitemap*)
-</span></pre>
+;use: (process-sitemap *sitemap*)
+</pre>
 
 
 
@@ -186,20 +186,20 @@ And of course tests for it:
 
 
 
-<pre class="src src-clojure"><span style="color: #b22222;">;;</span><span style="color: #b22222;">file: coverager_test.clj
-</span>(<span style="color: #7f007f;">ns</span> coverager_test
-  (<span style="color: #7a378b;">:use</span> clojure.contrib.test-is)
-  (<span style="color: #7a378b;">:use</span> coverager)
-  (<span style="color: #7a378b;">:use</span> clojure.contrib.zip-filter.xml)
-  (<span style="color: #7a378b;">:require</span> [clojure.zip <span style="color: #7a378b;">:as</span> zip]
-            [clojure.xml <span style="color: #7a378b;">:as</span> xml]))
+<pre class="src src-clojure">;;file: coverager_test.clj
+(ns coverager_test
+  (:use clojure.contrib.test-is)
+  (:use coverager)
+  (:use clojure.contrib.zip-filter.xml)
+  (:require [clojure.zip :as zip]
+            [clojure.xml :as xml]))
 
-(<span style="color: #7f007f;">deftest</span> <span style="color: #0000ff;">browse-page</span>
+(deftest browse-page
   (with-selenium abrowser  
     (.open abrowser <span style="color: #8b2252;">"http://www.google.com/a/"</span>)
     (is (.startsWith (.getTitle abrowser) <span style="color: #8b2252;">"Google Apps"</span>))))
 
-(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">abit</span> <span style="color: #8b2252;">"&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+(def abit <span style="color: #8b2252;">"&lt;?xml version='1.0' encoding='UTF-8'?&gt;
 &lt;urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'&gt;
  &lt;url&gt;
   &lt;loc&gt;http://www.google.com/&lt;/loc&gt;
@@ -214,21 +214,21 @@ And of course tests for it:
 &lt;/urlset&gt;
 "</span>)
 
-(<span style="color: #7f007f;">deftest</span> <span style="color: #0000ff;">xml-process</span>
-  (<span style="color: #7f007f;">let</span> [res (xml-to-zip (org.xml.sax.InputSource. (java.io.StringReader. abit)))]
-    (<span style="color: #7f007f;">let</span> [lis (xml-&gt; res <span style="color: #7a378b;">:url</span> <span style="color: #7a378b;">:loc</span> text)]
-      (is (= (<span style="color: #7a378b;">first</span> lis) <span style="color: #8b2252;">"http://www.google.com/"</span>))
+(deftest xml-process
+  (let [res (xml-to-zip (org.xml.sax.InputSource. (java.io.StringReader. abit)))]
+    (let [lis (xml-&gt; res :url :loc text)]
+      (is (= (first lis) <span style="color: #8b2252;">"http://www.google.com/"</span>))
       (is (= (last lis) <span style="color: #8b2252;">"http://www.google.com/a"</span>)))))
 
-(<span style="color: #7f007f;">deftest</span> <span style="color: #0000ff;">on-picking-sample</span>
-  (<span style="color: #7f007f;">let</span> [the-sample (pick-a-sample 10 '(0 1 2 3 4 5 6 7 8 9))]
-    <span style="color: #b22222;">;</span><span style="color: #b22222;">not completely garanteed will take only 1, 
-</span>    <span style="color: #b22222;">;</span><span style="color: #b22222;">it should, on most cases but more important is
-</span>    <span style="color: #b22222;">;</span><span style="color: #b22222;">to picking up randomly a small subset from list
-</span>    <span style="color: #b22222;">;</span><span style="color: #b22222;">so less than 3 items is reasonable test
-</span>        (is (&lt; (<span style="color: #7a378b;">count</span> the-sample) 3))))
+(deftest on-picking-sample
+  (let [the-sample (pick-a-sample 10 '(0 1 2 3 4 5 6 7 8 9))]
+    ;not completely garanteed will take only 1, 
+    ;it should, on most cases but more important is
+    ;to picking up randomly a small subset from list
+    ;so less than 3 items is reasonable test
+        (is (&lt; (count the-sample) 3))))
 
-(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">run-them</span> []
+(defn run-them []
   (run-tests 'coverager_test))
 </pre>
 
