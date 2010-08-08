@@ -1,0 +1,36 @@
+
+* How to download videolectures.net videos with VLC
+
+Find the mms://... address for the video and use like this:
+
+#+BEGIN_SRC bash
+$ /Applications/VLC.app/Contents/MacOS/VLC -I rc mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv --sout ~/Desktop/information-theory.avi
+#+END_SRC
+
+if you are not on a Mac, then you need to change the paths to VLC
+binary and desktop.
+
+** More User Friendly
+
+Create a bash script:
+
+#+BEGIN_SRC bash
+# getvideolecture.sh 
+/Applications/VLC.app/Contents/MacOS/VLC -I rc $1 --sout ~/Desktop/$2.avi
+#+END_SRC
+
+Make it executable and reachable from everywhere:
+
+#+BEGIN_SRC bash
+$ chmod 711 getvideolecture.sh 
+$ ln -s getvideolecture.sh /usr/bin/getvideolecture
+#+END_SRC
+
+And use like:
+
+#+BEGIN_SRC bash
+$ getvideolecture mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv information-theory
+#+END_SRC
+
+The second argument is the name of the video that will be stored in
+desktop.

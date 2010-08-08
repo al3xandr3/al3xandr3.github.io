@@ -1,0 +1,92 @@
+--- 
+layout: post
+title: Clojure test-is results in twitter
+---
+
+
+<h2 id="sec-1">Clojure test-is results in twitter </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Here's a way, using clojure, to have your test-is results posted on
+twitter automatically as they run.
+</p>
+<p>
+This is useful for example if you have regression tests that run
+automatically in a remote machine, once a week(for example) and want
+to find a good way to see the results.
+</p>
+<p>
+Start by getting <i>jtwitter</i>, put it in your classphath and create:
+</p>
+
+
+
+<pre class="src src-clojure">(<span style="color: #7f007f;">import</span> 'winterwell.jtwitter.Twitter)
+
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">twitter-update</span> [the_message]
+  (<span style="color: #7f007f;">let</span> [twitter (new Twitter <span style="color: #8b2252;">"username"</span> <span style="color: #8b2252;">"password"</span>)]
+    (.updateStatus twitter the_message)))
+</pre>
+
+
+
+<p>
+Update "username" and "password" with your twitter login.
+</p>
+<p>
+Then hook it up to the /test-is'/library(test library in clojure):
+just overwrite the report summary method that by default prints out
+the summary of the executed tests.
+</p>
+<p>
+Before:
+</p>
+
+
+
+<pre class="src src-clojure">(<span style="color: #7f007f;">defmethod</span> <span style="color: #0000ff;">report</span> <span style="color: #7a378b;">:summary</span> [m]
+  (<span style="color: #228b22;">with-test-out</span>
+    (<span style="color: #7a378b;">println</span> <span style="color: #8b2252;">"\nRan"</span> (<span style="color: #7a378b;">:test</span> m) <span style="color: #8b2252;">"tests containing"</span>
+    (<span style="color: #7a378b;">+</span> (<span style="color: #7a378b;">:pass</span> m) (<span style="color: #7a378b;">:fail</span> m) (<span style="color: #7a378b;">:error</span> m)) <span style="color: #8b2252;">"assertions."</span>)
+    (<span style="color: #7a378b;">println</span> (<span style="color: #7a378b;">:fail</span> m) <span style="color: #8b2252;">"failures,"</span> (<span style="color: #7a378b;">:error</span> m) <span style="color: #8b2252;">"errors."</span>)))
+</pre>
+
+
+
+<p>
+After:
+</p>
+
+
+
+<pre class="src src-clojure">(<span style="color: #7f007f;">defmethod</span> <span style="color: #0000ff;">report</span> <span style="color: #7a378b;">:summary</span> [m]
+  (<span style="color: #228b22;">with-test-out</span>
+    (twitter-update (<span style="color: #7a378b;">str</span> <span style="color: #8b2252;">"[coverager] "</span> (<span style="color: #7a378b;">:fail</span> m) <span style="color: #8b2252;">" failures, "</span> (<span style="color: #7a378b;">:error</span> m) <span style="color: #8b2252;">" errors."</span>))
+    (<span style="color: #7a378b;">println</span> <span style="color: #8b2252;">"\nRan"</span> (<span style="color: #7a378b;">:test</span> m) <span style="color: #8b2252;">"tests containing"</span>
+    (<span style="color: #7a378b;">+</span> (<span style="color: #7a378b;">:pass</span> m) (<span style="color: #7a378b;">:fail</span> m) (<span style="color: #7a378b;">:error</span> m)) <span style="color: #8b2252;">"assertions."</span>)
+    (<span style="color: #7a378b;">println</span> (<span style="color: #7a378b;">:fail</span> m) <span style="color: #8b2252;">"failures,"</span> (<span style="color: #7a378b;">:error</span> m) <span style="color: #8b2252;">"errors."</span>)))
+</pre>
+
+
+
+<p>
+Note that i just added added a line calling the twitter-update method.
+</p>
+<p>
+And thats it, now every time you run your tests, you will have the
+failures and errors twittered
+</p>
+<p>
+<img src="/img/clj-twitter-alert.png" alt="/img/clj-twitter-alert.png" />
+</p>
+<p>
+I've created a 2nd account on twitter where i post these automated
+messages. And have my clojure tests(regression tests) running
+by themselves and i just check twitter to see if all is good.
+</p>
+<p>
+This little twitter-update method is very easy to re-use for other
+alerts and automations.
+</p></div>

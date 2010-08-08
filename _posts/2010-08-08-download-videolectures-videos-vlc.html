@@ -1,0 +1,73 @@
+--- 
+layout: post
+title: How to download videolectures.net videos with VLC
+---
+
+
+<h2 id="sec-1">How to download videolectures.net videos with VLC </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Find the mms://&hellip; address for the video and use like this:
+</p>
+
+
+
+<pre class="src src-bash">$ /Applications/VLC.app/Contents/MacOS/VLC -I rc mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv --sout ~/Desktop/information-theory.avi
+</pre>
+
+
+
+<p>
+if you are not on a Mac, then you need to change the paths to VLC
+binary and desktop.
+</p>
+
+</div>
+
+<div class="outline-3" id="outline-container-1_1">
+<h3 id="sec-1_1">More User Friendly </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+<p>
+Create a bash script:
+</p>
+
+
+
+<pre class="src src-bash"># getvideolecture.sh 
+/Applications/VLC.app/Contents/MacOS/VLC -I rc $1 --sout ~/Desktop/$2.avi
+</pre>
+
+
+
+<p>
+Make it executable and reachable from everywhere:
+</p>
+
+
+
+<pre class="src src-bash">$ chmod 711 getvideolecture.sh 
+$ ln -s getvideolecture.sh /usr/bin/getvideolecture
+</pre>
+
+
+
+<p>
+And use like:
+</p>
+
+
+
+<pre class="src src-bash">$ getvideolecture mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv information-theory
+</pre>
+
+
+
+<p>
+The second argument is the name of the video that will be stored in
+desktop.
+</p></div>
+</div>

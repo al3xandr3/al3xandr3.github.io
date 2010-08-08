@@ -1,5 +1,5 @@
 
-* UI Optimization(AB testing) Tools in the Future?
+* AB testing tools in the Future
 
 ** How it works:
 

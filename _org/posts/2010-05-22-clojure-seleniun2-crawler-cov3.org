@@ -1,5 +1,5 @@
 
-* cov3, Clojure and Selenium2 Reloaded
+* Clojure and Selenium2 Crawler - cov3
 
 Been playing around with selenium and clojure for a while, and now that
 selenium 2 is in beta ended up making a little web crawler library

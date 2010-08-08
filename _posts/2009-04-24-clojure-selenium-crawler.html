@@ -1,0 +1,259 @@
+--- 
+layout: post
+title: Clojure and Selenium
+---
+
+
+<h2 id="sec-1">Clojure and Selenium </h2>
+<div class="outline-text-2" id="text-1">
+
+
+
+</div>
+
+<div class="outline-3" id="outline-container-1_1">
+<h3 id="sec-1_1">Motivation </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+<p>
+I needed a kind of crawler to go around a list of pages, invoke some
+javascript and collect that output.
+</p>
+
+<p>
+Curl or a regular http lib’s don’t do the trick because i need to run
+javascript on each requested page. For that i can use Selenium,
+Selenium is a great framework to perform web testing, that uses
+directly a browser and thus we can run Javascript.
+</p>
+
+<p>
+Selenium can be scripted from Java which matches very well with my
+wish to learn Clojure :)
+</p>
+</div>
+
+</div>
+
+<div class="outline-3" id="outline-container-1_2">
+<h3 id="sec-1_2">Solution </h3>
+<div class="outline-text-3" id="text-1_2">
+
+
+<p>
+What i implemented is not really a crawler in the sense that it does
+not go around automatically following all the links it finds, it
+actually gets the list of links to check from the site sitemap.xml.
+But is not that hard to use this as a base for a crawler.
+</p>
+<p>
+As some sitemaps.xml are huge, i added also a little pick-a-sample
+function that randomly selects only a subset from all the sitemap.
+</p>
+</div>
+
+</div>
+
+<div class="outline-3" id="outline-container-1_3">
+<h3 id="sec-1_3">Code </h3>
+<div class="outline-text-3" id="text-1_3">
+
+
+<p>
+Im on the process of learning Clojure, so probably a lot of things
+could be improved.
+</p>
+<p>
+For Selenium, we need first to start the server, then the client, and
+then use the client to browse the pages. As is not very elegant to
+have a start server and“start client on the top of the script and
+a“stop client and stop server call at the end of the script, i've
+wrapped those around a macro (one of the major strengths of Lisp
+like languages).
+</p>
+<p>
+The whole thing goes like this:
+</p>
+<p>
+process-sitemap receives a sitemap, transforms it into a map(with
+xml-to-zip), collects the url links in it, then picks a sample from
+them(with pick-a-sample) and calls check-pages with them.
+</p>
+<p>
+check-pages gets a list of urls. It starts by using the macro, obtains
+a-browser from it, then iterates over the list of urls, calling
+check-a-page on each url(a-url). Note that at this point the standard
+output is redirected to a file, so i can log the results from
+check-a-page.
+</p>
+<p>
+check-a-page gets a-browser and a-url, so you can guess what it will
+do :)It opens that url in the browser, calls the javascript, and
+prints to standard output the return of the js call.
+</p>
+<p>
+Hope google does not mind to use their site as an example. But do not
+run this on Google site, its just an example, use it on your own site!
+</p>
+<p>
+For this to run you will need to have in your classpath a bunch of jar
+libs, this is how my lib folder looks like:
+</p>
+
+
+
+<pre class="example">lib/
+  clojure-contrib.jar
+  clojure.jar
+  jline-0.9.94.jar
+  selenium-java-client-driver.jar
+  selenium-server.jar
+</pre>
+
+
+
+<p>
+I called this app“/coverager/
+</p>
+<p>
+Code: 
+</p>
+
+
+
+<pre class="src src-clojure"><span style="color: #b22222;">;;</span><span style="color: #b22222;">file: coverager.clj
+</span>(<span style="color: #7f007f;">ns</span> coverager
+  (<span style="color: #7a378b;">:import</span> (com.thoughtworks.selenium DefaultSelenium)
+    (org.openqa.selenium.server SeleniumServer)
+      java.util.Date
+      (java.io FileWriter)
+      (java.text SimpleDateFormat))
+  (<span style="color: #7a378b;">:use</span> clojure.contrib.zip-filter.xml)
+  (<span style="color: #7a378b;">:require</span> [clojure.zip <span style="color: #7a378b;">:as</span> zip]
+            [clojure.xml <span style="color: #7a378b;">:as</span> xml]))
+
+(<span style="color: #7f007f;">defmacro</span> <span style="color: #0000ff;">with-selenium</span>
+  [browser &amp; body]
+  `(<span style="color: #7f007f;">let</span> [server# (new SeleniumServer)]
+    (.start server#)
+    (<span style="color: #7f007f;">let</span> [~browser 
+         (new DefaultSelenium <span style="color: #8b2252;">"localhost"</span>, 4444, <span style="color: #8b2252;">"*firefox"</span>, <span style="color: #8b2252;">"http://www.google.com/"</span>)]
+      (.start ~browser)
+      (.setTimeout ~browser <span style="color: #8b2252;">"100000"</span>)
+      ~@body
+      (.stop ~browser))
+      (.stop server#)))
+
+(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">*js-eval*</span> <span style="color: #8b2252;">"this.browserbot.getCurrentWindow().document.title;"</span>)                                                                                    
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">check-a-page</span> [a-browser a-url] 
+  (<span style="color: #7f007f;">try</span> 
+  (.open a-browser a-url)
+    (Thread/sleep 3000) <span style="color: #b22222;">; </span><span style="color: #b22222;">make a little timeout, to avoid overloading server
+</span>    (<span style="color: #7a378b;">println</span> (<span style="color: #7a378b;">str</span> a-url <span style="color: #8b2252;">","</span> (.getEval a-browser *js-eval*)))
+    (<span style="color: #7f007f;">catch</span> Exception e 
+    (<span style="color: #7a378b;">println</span> (<span style="color: #7a378b;">str</span> a-url <span style="color: #8b2252;">","</span> e)))))
+
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">check-pages</span> [url-list]
+  (with-selenium browser
+    (<span style="color: #7f007f;">binding</span> [*out* (FileWriter. 
+         (<span style="color: #7a378b;">str</span> <span style="color: #8b2252;">"output/log_"</span> (.format (SimpleDateFormat. <span style="color: #8b2252;">"yyyy-MM-dd"</span>) (Date.)) <span style="color: #8b2252;">".csv"</span>))]
+      (<span style="color: #7f007f;">doseq</span> [a-url url-list]
+        (check-a-page browser a-url)))))
+
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">xml-to-zip</span> [url]
+  <span style="color: #8b2252;">"read xml url into a tree"</span>
+  (zip/xml-zip (xml/parse url)))
+
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">pick-a-sample</span> [a-percentage a-list]
+  <span style="color: #8b2252;">"picks a subset (a-)percentage of the total"</span>
+    (<span style="color: #7a378b;">filter</span> #(<span style="color: #7f007f;">if</span> (<span style="color: #7a378b;">&gt;</span> (<span style="color: #7a378b;">rand</span>) (<span style="color: #7a378b;">-</span> 1 (<span style="color: #7a378b;">/</span> a-percentage 100))) %) a-list))
+
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">process-sitemap</span> [sitemap-url]
+  (<span style="color: #7f007f;">let</span> [u-list (xml-&gt; (xml-to-zip sitemap-url) <span style="color: #7a378b;">:url</span> <span style="color: #7a378b;">:loc</span> text)]
+    (check-pages (pick-a-sample 1 u-list))))
+
+(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">*sitemap*</span> <span style="color: #8b2252;">"http://www.google.com/sitemap.xml"</span>)
+
+<span style="color: #b22222;">;</span><span style="color: #b22222;">use: (process-sitemap *sitemap*)
+</span></pre>
+
+
+
+<p>
+And of course tests for it:
+</p>
+
+
+
+<pre class="src src-clojure"><span style="color: #b22222;">;;</span><span style="color: #b22222;">file: coverager_test.clj
+</span>(<span style="color: #7f007f;">ns</span> coverager_test
+  (<span style="color: #7a378b;">:use</span> clojure.contrib.test-is)
+  (<span style="color: #7a378b;">:use</span> coverager)
+  (<span style="color: #7a378b;">:use</span> clojure.contrib.zip-filter.xml)
+  (<span style="color: #7a378b;">:require</span> [clojure.zip <span style="color: #7a378b;">:as</span> zip]
+            [clojure.xml <span style="color: #7a378b;">:as</span> xml]))
+
+(<span style="color: #228b22;">deftest</span> browse-page
+  (with-selenium abrowser  
+    (.open abrowser <span style="color: #8b2252;">"http://www.google.com/a/"</span>)
+    (<span style="color: #228b22;">is</span> (.startsWith (.getTitle abrowser) <span style="color: #8b2252;">"Google Apps"</span>))))
+
+(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">abit</span> <span style="color: #8b2252;">"&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'&gt;
+ &lt;url&gt;
+  &lt;loc&gt;http://www.google.com/&lt;/loc&gt;
+  &lt;lastmod&gt;2009-04-03&lt;/lastmod&gt;
+  &lt;priority&gt;0.5000&lt;/priority&gt;
+ &lt;/url&gt;
+ &lt;url&gt;
+  &lt;loc&gt;http://www.google.com/a&lt;/loc&gt;
+  &lt;lastmod&gt;2009-04-03&lt;/lastmod&gt;
+  &lt;priority&gt;0.5000&lt;/priority&gt;
+ &lt;/url&gt;
+&lt;/urlset&gt;
+"</span>)
+
+(<span style="color: #228b22;">deftest</span> xml-process
+  (<span style="color: #7f007f;">let</span> [res (xml-to-zip (org.xml.sax.InputSource. (java.io.StringReader. abit)))]
+    (<span style="color: #7f007f;">let</span> [lis (xml-&gt; res <span style="color: #7a378b;">:url</span> <span style="color: #7a378b;">:loc</span> text)]
+      (<span style="color: #228b22;">is</span> (<span style="color: #7a378b;">=</span> (<span style="color: #7a378b;">first</span> lis) <span style="color: #8b2252;">"http://www.google.com/"</span>))
+      (<span style="color: #228b22;">is</span> (<span style="color: #7a378b;">=</span> (<span style="color: #7a378b;">last</span> lis) <span style="color: #8b2252;">"http://www.google.com/a"</span>)))))
+
+(<span style="color: #228b22;">deftest</span> on-picking-sample
+  (<span style="color: #7f007f;">let</span> [the-sample (pick-a-sample 10 '(0 1 2 3 4 5 6 7 8 9))]
+    <span style="color: #b22222;">;</span><span style="color: #b22222;">not completely garanteed will take only 1, 
+</span>    <span style="color: #b22222;">;</span><span style="color: #b22222;">it should, on most cases but more important is
+</span>    <span style="color: #b22222;">;</span><span style="color: #b22222;">to picking up randomly a small subset from list
+</span>    <span style="color: #b22222;">;</span><span style="color: #b22222;">so less than 3 items is reasonable test
+</span>        (<span style="color: #228b22;">is</span> (<span style="color: #7a378b;">&lt;</span> (<span style="color: #7a378b;">count</span> the-sample) 3))))
+
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">run-them</span> []
+  (<span style="color: #228b22;">run-tests</span> 'coverager_test))
+</pre>
+
+
+
+</div>
+
+</div>
+
+<div class="outline-3" id="outline-container-1_4">
+<h3 id="sec-1_4">Take away </h3>
+<div class="outline-text-3" id="text-1_4">
+
+
+<p>
+Clojure is great! Its my opinion that on the Lisp family of languages
+the code is more elegant and visually cleaner than the C family.
+</p>
+<p>
+I don't care much for working directly with the Java language, but
+working on the JVM with other languages like JRuby, Clojure, and
+harnessing all the vast amount of Java libs and infrastructure out
+there is a MAJOR advantage.
+</p>
+<p>
+I suspect i will be spending more time with Clojure in future :)
+</p></div>
+</div>

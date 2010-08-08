@@ -1,0 +1,136 @@
+--- 
+layout: post
+title: Probability simulation of basketball throws
+---
+
+
+<h2 id="sec-1">Probability simulation of basketball throws </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+A little probability simulation from the book <i>Resampling: The New Statistics</i>, using Clojure and Incanter.
+</p>
+<p>
+<i>Example 7-3:</i> What is the probability that a basketball player will
+score three or more baskets in five shots from a spot 30 feet from the
+basket, if on the average she succeeds with 25 percent of her shots
+from that spot?
+</p>
+<p>
+Three or More Successful Basketball Shots in Five Attempts, that is,
+a Two-Outcome Sampling with Unequally-Likely Outcomes, with
+Replacement, Binomial Experiment. 
+</p>
+<p>
+Lets start with the Resampling book code solution, and then implement
+it using clojure and incanter.
+</p>
+
+
+
+<pre class="example">REPEAT 100000
+  GENERATE 5 1,4 a
+  COUNT a =1 b 
+  SCORE b z
+END
+COUNT z &gt;= 3 k
+DIVIDE k 100000 kk
+PRINT kk
+</pre>
+
+
+
+<p>
+Now onto the clojure solution.
+</p>
+
+</div>
+
+<div class="outline-3" id="outline-container-1_1">
+<h3 id="sec-1_1">Starting simple, 1 throw </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+<p>
+Before going for the full thing I tried out first a simulation of just
+1 throw and visualized it. 
+</p>
+<p>
+It simulates 100 thousand times a basketball throw with the
+probabilities described above.
+</p>
+<p>
+The category-count function is a helper function to count :miss
+and :hit's but its not absolutely needed.
+</p>
+
+
+
+<pre class="src src-clojure">(<span style="color: #7a378b;">use</span> '(incanter core stats charts io))
+
+(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">category-count</span>
+  [aseq]
+  <span style="color: #8b2252;">"counts the category's from a given sequence, ex:
+   $ (category-count '(:hit :hit :miss)) =&gt; {:miss 1, :hit 2}"</span>
+  (<span style="color: #7a378b;">into</span> {} (<span style="color: #7f007f;">let</span> [dis (<span style="color: #7a378b;">distinct</span> aseq)]
+  (<span style="color: #7f007f;">for</span> [item dis]
+      {item (<span style="color: #7a378b;">count</span> (<span style="color: #7a378b;">filter</span> #(<span style="color: #7a378b;">=</span> item %) aseq))}))))
+
+(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">one-throw</span>
+  (<span style="color: #7f007f;">for</span> [_ (<span style="color: #7a378b;">range</span> 100000)]  
+    <span style="color: #b22222;">; </span><span style="color: #b22222;">does not matter if replacement is true or false
+</span>    (sample [<span style="color: #7a378b;">:hit</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span>] <span style="color: #7a378b;">:size</span> 1 <span style="color: #7a378b;">:replacement</span> false)))
+
+(<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">throws-count</span> (category-count one-throw))
+(view (bar-chart (<span style="color: #7a378b;">keys</span> throws-count) (<span style="color: #7a378b;">vals</span> throws-count)))
+</pre>
+
+
+
+<p>
+<img src="/img/basketball-1throw.png" alt="/img/basketball-1throw.png" />
+</p>
+<p>
+Results make sense, its an 1/4 (25%) of probabilities of making the
+basket, so simulations seems to be working correctly.
+</p>
+</div>
+
+</div>
+
+<div class="outline-3" id="outline-container-1_2">
+<h3 id="sec-1_2">With 5 Throws </h3>
+<div class="outline-text-3" id="text-1_2">
+
+
+<p>
+Same logic, its the sample method from Incanter doing all the magic of
+picking randomly if each throw is a :miss or a :hit. Then test if
+number of hits is &gt;= 3, identify it as an :ok and finally see the
+percentage of all :ok's from the total simulation.
+</p>
+
+
+
+<pre class="src src-clojure">(<span style="color: #7f007f;">defn</span> <span style="color: #0000ff;">five-throws</span>
+  []
+  (category-count 
+    (<span style="color: #7f007f;">for</span> [_ (<span style="color: #7a378b;">range</span> 100000)]  
+      (<span style="color: #7f007f;">let</span> [smp (sample [<span style="color: #7a378b;">:hit</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span> <span style="color: #7a378b;">:miss</span>] <span style="color: #7a378b;">:size</span> 5 <span style="color: #7a378b;">:replacement</span> true)
+            catg (category-count smp)
+            hits (<span style="color: #7a378b;">:hit</span> catg)]
+        (<span style="color: #7f007f;">if</span> (<span style="color: #7f007f;">and</span> (<span style="color: #7a378b;">not</span> (<span style="color: #7a378b;">nil?</span> hits)) (<span style="color: #7a378b;">&gt;=</span> hits 3))
+          <span style="color: #7a378b;">:ok</span>
+          <span style="color: #7a378b;">:nok</span>)))))
+
+(<span style="color: #7a378b;">double</span> (<span style="color: #7a378b;">/</span> (<span style="color: #7a378b;">:ok</span> (five-throws)) 100000))
+</pre>
+
+
+
+<p>
+Result is 0.10283, so there's only a ~10% chance of that basketball
+player making 3 or more baskets in a 5 throws sequence.
+</p></div>
+</div>
