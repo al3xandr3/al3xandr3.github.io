@@ -10,9 +10,7 @@ $ /Applications/VLC.app/Contents/MacOS/VLC -I rc mms://velblod2.ijs.si:80/2009/p
 if you are not on a Mac, then you need to change the paths to VLC
 binary and desktop.
 
-** More User Friendly
-
-Create a bash script:
+** Make a bash script from it:
 
 #+BEGIN_SRC bash
 # getvideolecture.sh 
