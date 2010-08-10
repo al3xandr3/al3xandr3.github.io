@@ -14,7 +14,7 @@ programming.
 #+ATTR_HTML: title="Curriculum Vitae" style="font-weight:bold;font-size:120%;"
 [[/img/AlexandreMartinsCV.pdf][Curriculum Vitae]] as of July 2010.
 
-** Were you can find me:
+** Find me:
 
 - Skype: al3x.martins
 - [[http://www.linkedin.com/in/al3xandr3][linkedin]]
