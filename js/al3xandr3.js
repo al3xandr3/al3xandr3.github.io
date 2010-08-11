@@ -26,8 +26,8 @@ AL3XANDR3.colorHeader = function (color) {
 };
 
 AL3XANDR3.colorSidebar = function  (color) {
-  $("#sidebar h4 a").spanifyText();
-  $.each($("#sidebar h4 a"), function (k, v) {
+  $("#sidebar h3 a").spanifyText();
+  $.each($("#sidebar h3 a"), function (k, v) {
     $(v).children().filter(':nth(2)').css('color', color);
   });
 };
