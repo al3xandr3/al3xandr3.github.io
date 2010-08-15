@@ -1,4 +1,3 @@
-
 * jQuery Twitter 'mini' plugin
 
 Here's a little jQuery plugin for displaying a twitter feed into

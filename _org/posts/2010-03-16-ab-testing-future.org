@@ -1,16 +1,17 @@
-
 * AB testing tools in the Future
+
+A view on how i think AB testing tools should/will work in the future.
 
 ** How it works:
 
 1. You plugin the AB testing tool to your application and say:
    optimize page A, on the measurable goal X (for example
    downloads).
-1. The Tool By Itself: creates new UI variation -> tests it ->
+1. The tool by itself: creates new UI variation -> tests it ->
    analyses results -> makes it default -> creates new UI variation
    -> tests it -> etc... This goes ad eternum... Much like natural
-   evolution, keeps experimenting/mutating, until it finds the best
-   combinations.
+   evolution, keeps experimenting/mutating, until it finds the UI that
+   works best for the defined goals.
 
 ** Details:
 
@@ -43,3 +44,4 @@
   perfect interface might need to be changing over time(? Don't
   assume, experiment and see if it works...).
   
+

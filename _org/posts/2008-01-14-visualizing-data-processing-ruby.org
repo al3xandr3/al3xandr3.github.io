@@ -1,7 +1,4 @@
-
 * Visualizing Data, with Processing and JRuby
-
-** Brief
 
 In order to learn a bit about data visualization and also learn about
 simple data warehousing, i've tried out a small experiment, where i

@@ -1,4 +1,4 @@
-* Automating todo tasks reports with orgmode
+* Automating todo tasks reports with orgmode 
 
 Here's the geek automation of the week, its for helping creating
 reports from my TODO tasks list when using the amazing emacs

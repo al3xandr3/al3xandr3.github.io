@@ -1,5 +1,5 @@
 
-* Probability simulation of basketball throws
+* Probability simulation of basketball throws 
 
 A little probability simulation from the book /Resampling: The New
 Statistics/, using Clojure and Incanter.

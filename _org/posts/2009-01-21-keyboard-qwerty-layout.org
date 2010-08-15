@@ -1,4 +1,3 @@
-
 * Why my keyboard has a QWERTY layout?
 
 The most common keyboard layout in use today is called QWERTY, it

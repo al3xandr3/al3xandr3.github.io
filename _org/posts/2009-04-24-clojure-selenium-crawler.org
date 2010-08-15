@@ -1,16 +1,12 @@
 * Clojure and Selenium
  
-** Motivation
-
 I needed a kind of crawler to go around a list of pages, invoke some
 javascript and collect that output.
-
 
 Curl or a regular http lib’s don’t do the trick because i need to run
 javascript on each requested page. For that i can use Selenium,
 Selenium is a great framework to perform web testing, that uses
 directly a browser and thus we can run Javascript.
-
 
 Selenium can be scripted from Java which matches very well with my
 wish to learn Clojure :)

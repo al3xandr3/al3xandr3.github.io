@@ -72,6 +72,9 @@ hr {
     padding-left:1em;
 }
 
+#tw-title {
+    margin-bottom:0.5em;
+}
 
 #twitter {
     color:#808080;
@@ -88,12 +91,25 @@ hr {
     font-size:85%;
 }
 
+#post-summary {
+    font-size:80%;
+    color:#666;
+    margin:0.5em;
+    line-height:1.5em;
+}
+
 pre, code, tt {
     font:0.9em/1.5 'andale mono','lucida console', monospace;
     overflow:auto;
     background-color:#F8F8FF;
     padding:0.25em 0.5em 0.5em !important;
     border:1px solid #DEDEDE;
+}
+
+#paginator {
+    text-align:center;
+    font-size: 85%;    
+    padding: 0.5em;
 }
 
 #footer {

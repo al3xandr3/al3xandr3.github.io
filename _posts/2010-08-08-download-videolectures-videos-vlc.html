@@ -4,12 +4,32 @@ title: How to download videolectures.net videos with VLC
 ---
 
 
-<h2 id="sec-1">How to download videolectures.net videos with VLC </h2>
+
 <div class="outline-text-2" id="text-1">
 
 
 <p>
-Find the mms://&hellip; address for the video and use like this:
+<a href="http://videolectures.net/">videolectures.net</a> has very good content but, no good way to download
+the videos(at least as of now), and sometimes you want to watch them
+offline, so here's a way to dowload them if you have VLC video player
+installed.
+This of course works for all videos that are streamed from
+an mms:// address and not only limited to videolectures ones.
+</p>
+<p>
+Btw, found same idea, but using mplayer instead, from
+<a href="http://measuringmeasures.blogspot.com/2009/12/downloading-from-videolecturesnet.html">bradfordcross here</a>.
+</p>
+
+</div>
+
+<div class="outline-3" id="outline-container-1_1">
+<h3 id="sec-1_1">How to </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+<p>
+Find the mms:// address for the video and use it like this example:
 </p>
 
 
@@ -23,14 +43,22 @@ Find the mms://&hellip; address for the video and use like this:
 if you are not on a Mac, then you need to change the paths to VLC
 binary and desktop.
 </p>
+</div>
 
 </div>
 
-<div class="outline-3" id="outline-container-1_1">
-<h3 id="sec-1_1">Make a bash script from it: </h3>
-<div class="outline-text-3" id="text-1_1">
+<div class="outline-3" id="outline-container-1_2">
+<h3 id="sec-1_2">Make a bash script from it </h3>
+<div class="outline-text-3" id="text-1_2">
 
 
+<p>
+Its annoying to write all of the above every time you want to download
+a video, so is worth to make a bash script from it.
+</p>
+<p>
+Create a new file, with content
+</p>
 
 
 
@@ -53,7 +81,7 @@ $ ln -s getvideolecture.sh /usr/bin/getvideolecture
 
 
 <p>
-And use like:
+And use like so:
 </p>
 
 

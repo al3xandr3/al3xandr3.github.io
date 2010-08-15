@@ -1,8 +1,7 @@
-
-* Clojure test-is results in twitter
+* Clojure test-is results in twitter 
  
-Here's a way, using clojure, to have your test-is results posted on
-twitter automatically as they run.
+Here's how you can have your your test-is results posted on twitter
+automatically as they run.
 
 This is useful for example if you have regression tests that run
 automatically in a remote machine, once a week(for example) and want

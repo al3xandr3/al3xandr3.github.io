@@ -5,13 +5,28 @@ home: true
 
 <div id="post-list">
   <ul>
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <li>
       <h4>
-        <a id="post-link" href="{{ post.url }}">{{ post.title }}</a>
+	<a id="post-link" href="{{ post.url }}">{{ post.title }}</a>
         <span id="post-date" class="alt">{{ post.date | date_to_string}}</span>
+	<div id="post-summary">{{post.content | strip_html | truncatewords: 30 }}</div>
       </h4>
     </li>
     {% endfor %}
   </dl>
  </div>
+
+<div id="paginator">
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}/index.html">&laquo; Previous</a>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/">&nbsp;Next&nbsp;&raquo;</a>
+    {% else %}
+    <a href="/page{{ paginator.previous_page }}/index.html">&nbsp;Next&nbsp;&raquo;</a>
+    {% endif %}
+  {% endif %}
+</div>

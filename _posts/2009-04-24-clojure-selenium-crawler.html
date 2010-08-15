@@ -4,41 +4,30 @@ title: Clojure and Selenium
 ---
 
 
-<h2 id="sec-1">Clojure and Selenium </h2>
+
 <div class="outline-text-2" id="text-1">
-
-
-
-</div>
-
-<div class="outline-3" id="outline-container-1_1">
-<h3 id="sec-1_1">Motivation </h3>
-<div class="outline-text-3" id="text-1_1">
 
 
 <p>
 I needed a kind of crawler to go around a list of pages, invoke some
 javascript and collect that output.
 </p>
-
 <p>
 Curl or a regular http lib’s don’t do the trick because i need to run
 javascript on each requested page. For that i can use Selenium,
 Selenium is a great framework to perform web testing, that uses
 directly a browser and thus we can run Javascript.
 </p>
-
 <p>
 Selenium can be scripted from Java which matches very well with my
 wish to learn Clojure :)
 </p>
-</div>
 
 </div>
 
-<div class="outline-3" id="outline-container-1_2">
-<h3 id="sec-1_2">Solution </h3>
-<div class="outline-text-3" id="text-1_2">
+<div class="outline-3" id="outline-container-1_1">
+<h3 id="sec-1_1">Solution </h3>
+<div class="outline-text-3" id="text-1_1">
 
 
 <p>
@@ -55,9 +44,9 @@ function that randomly selects only a subset from all the sitemap.
 
 </div>
 
-<div class="outline-3" id="outline-container-1_3">
-<h3 id="sec-1_3">Code </h3>
-<div class="outline-text-3" id="text-1_3">
+<div class="outline-3" id="outline-container-1_2">
+<h3 id="sec-1_2">Code </h3>
+<div class="outline-text-3" id="text-1_2">
 
 
 <p>
@@ -238,9 +227,9 @@ And of course tests for it:
 
 </div>
 
-<div class="outline-3" id="outline-container-1_4">
-<h3 id="sec-1_4">Take away </h3>
-<div class="outline-text-3" id="text-1_4">
+<div class="outline-3" id="outline-container-1_3">
+<h3 id="sec-1_3">Take away </h3>
+<div class="outline-text-3" id="text-1_3">
 
 
 <p>

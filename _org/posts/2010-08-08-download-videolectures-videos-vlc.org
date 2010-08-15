@@ -1,7 +1,18 @@
-
 * How to download videolectures.net videos with VLC
 
-Find the mms://... address for the video and use like this:
+[[http://videolectures.net/][videolectures.net]] has very good content but, no good way to download
+the videos(at least as of now), and sometimes you want to watch them
+offline, so here's a way to dowload them if you have VLC video player
+installed.
+This of course works for all videos that are streamed from
+an mms:// address and not only limited to videolectures ones.
+
+Btw, found same idea, but using mplayer instead, from
+[[http://measuringmeasures.blogspot.com/2009/12/downloading-from-videolecturesnet.html][bradfordcross here]].
+
+** How to
+
+Find the mms:// address for the video and use it like this example:
 
 #+BEGIN_SRC bash
 $ /Applications/VLC.app/Contents/MacOS/VLC -I rc mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv --sout ~/Desktop/information-theory.avi
@@ -10,7 +21,12 @@ $ /Applications/VLC.app/Contents/MacOS/VLC -I rc mms://velblod2.ijs.si:80/2009/p
 if you are not on a Mac, then you need to change the paths to VLC
 binary and desktop.
 
-** Make a bash script from it:
+** Make a bash script from it
+
+Its annoying to write all of the above every time you want to download
+a video, so is worth to make a bash script from it.
+
+Create a new file, with content
 
 #+BEGIN_SRC bash
 # getvideolecture.sh 
@@ -24,7 +40,7 @@ $ chmod 711 getvideolecture.sh
 $ ln -s getvideolecture.sh /usr/bin/getvideolecture
 #+END_SRC
 
-And use like:
+And use like so:
 
 #+BEGIN_SRC bash
 $ getvideolecture mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv information-theory

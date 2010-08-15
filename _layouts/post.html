@@ -2,8 +2,9 @@
 layout: default
 ---
 
+<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 <div id="post">
-  {{ content }}
+  {{ page.content }}
 </div>
 <div id="home"><h5><a href="/">«&nbsp;home</a></h5></div>
 {% include disqus.html %}

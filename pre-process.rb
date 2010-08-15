@@ -18,9 +18,10 @@ def process_post(post, layout)
   cats = (cats/'span').map { |i| i.inner_html }.map { |i| i.downcase }
 
   # Extract h2 title
-  #h2 = (doc/'h2#sec-1').remove
   h2 = (doc/'h2#sec-1')
-
+  #cleans the title from the post itself, so i can use as meta only
+  (doc/'h2#sec-1').remove
+  
   # Extract timestamp
   #timestamp = (doc/'span.timestamp-wrapper').remove
   #if timestamp
