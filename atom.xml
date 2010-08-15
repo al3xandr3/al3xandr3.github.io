@@ -5,7 +5,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>al3xandr3</title>
+ <title>{{ site.title }}</title>
  <link type="application/atom+xml" rel="self" href="http://domain/atom.xml"/>
  <link type="text/html" rel="alternate" href="http://domain/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
