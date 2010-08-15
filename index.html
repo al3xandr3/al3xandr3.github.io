@@ -19,14 +19,14 @@ home: true
 
 <div id="paginator">
   {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}/index.html">&laquo; Previous</a>
+    <a href="/page{{ paginator.next_page }}/index.html">&laquo;&nbsp;Older</a>
   {% endif %}
 
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-      <a href="/">&nbsp;Next&nbsp;&raquo;</a>
+      <a href="/">&nbsp;Newer&nbsp;&raquo;</a>
     {% else %}
-    <a href="/page{{ paginator.previous_page }}/index.html">&nbsp;Next&nbsp;&raquo;</a>
+    <a href="/page{{ paginator.previous_page }}/index.html">&nbsp;Newer&nbsp;&raquo;</a>
     {% endif %}
   {% endif %}
 </div>
