@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
-
+    
     <!-- META -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{% unless page.home %}{{ page.title }} - {% endunless %} {{ site.title }}</title>
@@ -14,10 +14,10 @@
     <meta name="google-site-verification" content="5FljcF-364B5I6-KW19BXYLGQEm23cqHJbVDzS7x6Os" />
     <link href="/atom.xml" rel="alternate" title="" type="application/atom+xml" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="/css/blueprint/screen.css"
-      type="text/css" media="screen, projection">
+          type="text/css" media="screen, projection">
     <link rel="stylesheet" href="/css/blueprint/print.css"
       type="text/css" media="print">
     <!--[if lt IE 8]>
@@ -47,45 +47,44 @@
   </head>
   <body>
     <div class="container">
-      <div id="header" class="header span-21">
-	<h1><a href="/" id="header-title">{{ site.title }}</a></h1>
-	<span id="search">
-	  {% include search.html %}
-	</span>
-      </div>
-      <hr>
 
-      <div id="content" class="span-14 colborder">
+      <div id="content" class="span-15">
+	<h1><a href="/" id="header-title">{{ site.title }}</a></h1>
+
           {{ content }}
+
       </div>
-      
-      <div id="sidebar" class="span-5 last">
-	<img src="/img/dice.png" id="logo" alt="{{ site.title }}"/>
+        
+      <div id="sidebar" class="span-5">
+
+        <img src="/img/dice.png" id="logo" alt="{{ site.title }}"/>
         <h3><a href="/pages/al3xandr3.html">About</a></h3>
         <h3><a href="http://feeds.feedburner.com/al3xandr3" target="_blank">RSS feed</a></h3>
+        <span id="search"> {% include search.html %} </span>
+
 	<!-- Twitter Plugin -->
         <h5 id="tw-title" style="display:none;">
   	  <a href="http://twitter.com/al3xandr3" target="_blank">on twitter</a>
 	</h5>
         <div id="twitter" class=""></div>  
         <script type="text/javascript"
-        src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js">
+                src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js">
         </script>
         <script type="text/javascript">
-        $(function() {
-          $('#twitter').twitter({'user':'al3xandr3','count':2}, function(el) {
-          $('#tw-title').show();
-          });  
-        });
+          $(function() {
+            $('#twitter').twitter({'user':'al3xandr3','count':3}, function(el) {
+              $('#tw-title').show();
+            });  
+          });
         </script> 
       </div>
-
-      <hr>
+     
+      <!--
       <div id="footer" class="span-21">
 	<span class="footer">&copy; 2010 {{ site.author }}</span>
       </div>
-    </div>
-    
+      !-->
+    </div>        
   </body>
 </html>
 

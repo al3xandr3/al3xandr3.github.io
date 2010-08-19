@@ -1,17 +1,23 @@
 
-.container {
-    width:830px;
-}
-
 body {
     font-size:90%;
-    font-family: "Lucida Grande","Trebuchet MS","Bitstream Vera Sans",Verdana,Helvetica,sans-serif;
+    background-color: #F3F5F3;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
-    text-align:left;
+#content {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+#sidebar {
+    padding-top: 35px;
+    padding-left: 25px;   
+}
+
 
 a {
     color:#000000;
@@ -28,22 +34,9 @@ a:hover {
   color: #666;
   font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
   font-style: italic;
-  font-weight: normal;
-}
-
-hr {
-    margin:0 0 0;
-}
-
-#header {
-    padding-bottom:1.2em;
-    padding-top:1.5em;
 }
 
 #header-title {
-    float:left;
-    padding-bottom:0em;
-    padding-top: 0.2em;
     font-weight: bold;
     border-bottom: 0px;
     font-size: 120%;
@@ -53,24 +46,6 @@ hr {
     border-bottom: 1px solid #EEEEEE;
 }
 
-#search {
-    float:right;
-    padding-right:2em;
-}
-
-#content {
-    padding-top:1em;
-}
-
-#sidebar {
-    color:#666666;
-    padding-top:1em;
-    padding-left:0.7em;
-}
-
-#logo {
-    padding-left:1em;
-}
 
 #twitter {
     color:#808080;
@@ -105,12 +80,5 @@ pre, code, tt {
 #paginator {
     text-align:center;
     font-size: 85%;    
-    padding: 0.5em;
-}
-
-#footer {
-    text-align:center;
-    font-style:italic;
-    font-size: 85%;
     padding: 0.5em;
 }
