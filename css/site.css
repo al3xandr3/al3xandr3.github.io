@@ -45,7 +45,7 @@ a:hover {
     font-weight: bold;
     border-bottom: 0px;
     font-size: 130%;
-    padding-left:20px;
+    margin-left:20px;
 }
 
 #header-title:hover {
