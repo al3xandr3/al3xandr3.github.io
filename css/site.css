@@ -1,5 +1,6 @@
 
 body {
+    background:url("/img/background.png") repeat scroll 0 0 #F3F3F3;
     font-size:90%;
     background-color: #F3F5F3;
 }
@@ -18,6 +19,9 @@ body {
     padding-left: 25px;   
 }
 
+#sidebar h3 {
+    letter-spacing: -.08em;
+}
 
 a {
     color:#000000;
@@ -37,9 +41,11 @@ a:hover {
 }
 
 #header-title {
+    letter-spacing: -.08em;
     font-weight: bold;
     border-bottom: 0px;
-    font-size: 120%;
+    font-size: 130%;
+    padding-left:20px;
 }
 
 #header-title:hover {
