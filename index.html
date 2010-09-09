@@ -18,7 +18,6 @@ home: true
  </div>
 
 <div id="paginator">
-  <h5>
   {% if paginator.previous_page %}
     <a id="paginator_navigate" href="/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}" >&laquo;&nbsp;Newer</a>
   {% endif %}
@@ -34,5 +33,4 @@ home: true
   {% if paginator.next_page %}
     <a id="paginator_navigate" href="/page{{ paginator.next_page }}/" >Older&nbsp;&raquo;</a>
   {% endif %}
-  </h5>
 </div>
