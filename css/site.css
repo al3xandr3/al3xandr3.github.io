@@ -86,11 +86,10 @@ pre, code, tt {
 
 #paginator {
     text-align:center;
-    font-size: 85%;    
+    font-size: 90%;    
     padding: 0.5em;
 }
 
-
-#paginator_page_of {
-    color:#808080;
+#paginator_current {
+   color: #E38E24;
 }
