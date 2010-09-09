@@ -18,15 +18,45 @@ home: true
  </div>
 
 <div id="paginator">
-  {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}/index.html">&laquo;&nbsp;Older</a>
+  <h5>
+  <span id="paginator_page_of">Page {{ paginator.page }} of {{ paginator.total_pages }}&nbsp;&nbsp;</span>
+
+  {% if paginator.page > 5 %}
+    <a href="/" id="paginator_first" title="first...">first...</a>
   {% endif %}
 
   {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="/">&nbsp;Newer&nbsp;&raquo;</a>
-    {% else %}
-    <a href="/page{{ paginator.previous_page }}/index.html">&nbsp;Newer&nbsp;&raquo;</a>
-    {% endif %}
+    <a href="/page{{ paginator.previous_page }}/" >&laquo;</a>
   {% endif %}
+
+  {% capture off_set %}
+    {% if paginator.page > 5 %}
+      {{ paginator.page | minus:5 }}
+    {% endif %}
+  {% endcapture %}
+    
+  {% for page in (1..paginator.total_pages) limit:10 offset:off_set %}
+    {% if page == paginator.page %}
+      <span id="paginator_current">{{ page }}</span>
+    {% else %}
+      <a href="/{%if page > 1 %}page{{ page }}/{% endif %}" class="page" title="{{ page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}/" >&raquo;</a>
+  {% endif %}
+
+  {% capture page_plus_5 %}
+    {% if paginator.page < 4 and paginator.total_pages > 9 %}0{% endif %}{{ paginator.page | plus:5 }}
+  {% endcapture %}
+  
+  {% capture page_total %}
+    {{ paginator.total_pages }}
+  {% endcapture %}
+  
+  {% if page_plus_5 < page_total %}
+    <a href="/page{{paginator.total_pages}}/" class="last" title="...last">...last</a>
+  {% endif %}
+  </h5>
 </div>

@@ -1,14 +1,15 @@
 
 body {
-    background:url("/img/background.png") repeat scroll 0 0 #F3F3F3;
+    background-color: #EDF1F3;
+//    background:url("/img/background.png") repeat scroll 0 0 #F3F3F3;
     font-size:90%;
     background-color: #F3F5F3;
 }
 
 #content {
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-    background-color: #FFFFFF;
+ //   border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #DEDEDE;
+ //   background-color: #FFFFFF;
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -30,7 +31,7 @@ a {
 }
 
 a:hover {
-    color:#006699;
+    color:#336699;
     border-bottom:0px;
 }
 
@@ -56,7 +57,7 @@ a:hover {
 #twitter {
     color:#808080;
     font-style:italic;
-    font-size:85%;
+    font-size:90%;
 }
 
 #post-list ul {
@@ -87,4 +88,9 @@ pre, code, tt {
     text-align:center;
     font-size: 85%;    
     padding: 0.5em;
+}
+
+
+#paginator_page_of {
+    color:#808080;
 }
