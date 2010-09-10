@@ -1,23 +1,16 @@
 
 body {
-    background-color: #EDF1F3;
-//    background:url("/img/background.png") repeat scroll 0 0 #F3F3F3;
     font-size:90%;
-    background-color: #F3F5F3;
+    background-color: #F9F9F4;
 }
 
 #content {
- //   border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #DEDEDE;
- //   background-color: #FFFFFF;
     padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: auto;    
 }
 
 #sidebar {
     padding-top: 35px;
-    padding-left: 25px;   
 }
 
 #sidebar h3 {
