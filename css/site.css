@@ -11,10 +11,16 @@ body {
 #content {
     padding-top: 50px;
     margin-left:20px;
+    margin-right:20px;
 }
 
 #sidebar {
     padding-top: 35px;
+}
+
+ul, ol {
+    margin:0 0em 1.5em 0;
+    padding-left:3.333em;
 }
 
 #sidebar h3 {
