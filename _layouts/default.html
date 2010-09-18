@@ -17,9 +17,9 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="/css/blueprint/screen.css"
-          type="text/css" media="screen, projection">
+          type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/css/blueprint/print.css"
-      type="text/css" media="print">
+      type="text/css" media="print" />
     <!--[if lt IE 8]>
       <link rel="stylesheet" href="/css/blueprint/ie.css"
         type="text/css" media="screen, projection">
@@ -48,43 +48,17 @@
   <body>
     <div class="container">
 
-      <div id="content" class="span-15">
-	<h1><a href="/" id="header-title">{{ site.title }}</a></h1>
-
-          {{ content }}
-
+      <div id="header">
+	<a href="/" id="header-title">{{ site.title }}</a>
+        <a href="/pages/al3xandr3.html" class="title-link">about</a>
+        <a href="javascript:void(0);" class="title-link" id="searchlnk">search</a>        
+        <a href="http://feeds.feedburner.com/al3xandr3" target="_blank" class="title-link">rss</a>
       </div>
-        
-      <div id="sidebar" class="span-5">
-
-        <img src="/img/dice.png" id="logo" alt="{{ site.title }}"/>
-        <h3><a href="/pages/al3xandr3.html">About</a></h3>
-        <h3><a href="http://feeds.feedburner.com/al3xandr3" target="_blank">RSS feed</a></h3>
-        <span id="search"> {% include search.html %} </span>
-
-	<!-- Twitter Plugin -->
-        <h5 id="tw-title" style="display:none;">
-  	  <a href="http://twitter.com/al3xandr3" target="_blank">on twitter</a>
-	</h5>
-        <div id="twitter" class=""></div>  
-        <script type="text/javascript"
-                src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js">
-        </script>
-        <script type="text/javascript">
-          $(function() {
-            $('#twitter').twitter({'user':'al3xandr3','count':2}, function(el) {
-              $('#tw-title').show();
-            });  
-          });
-        </script> 
-      </div>
-     
-      <!--
-      <div id="footer" class="span-21">
-	<span class="footer">&copy; 2010 {{ site.author }}</span>
-      </div>
-      !-->
-    </div>        
+      <div id="search" style="display: none;"> {% include search.html %}</div>
+      <div id="content">        
+        {{ content }}       
+      </div>        
+    </div>
   </body>
 </html>
 

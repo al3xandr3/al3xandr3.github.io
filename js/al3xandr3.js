@@ -41,9 +41,26 @@ $(function () {
 
   //Color Title Numbers
   AL3XANDR3.colorHeader(AL3XANDR3.themeColor3);
-  AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);
+  //AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);
 
   //center images in posts
   $("#post p img").parent().css("text-align", "center");
+
+ // [jump] to top
+  $('.jump').click(function () {
+    $('html, body').animate({scrollTop: 0}, 'slow');
+  }); 
+
+  // toggle [about]
+  $('#searchlnk').toggle(
+      function () {
+        $("#search").show(function () {
+          $('#search-input').focus();
+        });
+      },
+      function () { 
+        $("#search").css({"display": "none"});
+      }
+    );
 
 });

@@ -18,8 +18,6 @@ $(function() {
 
  #+BEGIN_HTML
  <script type="text/javascript"
- src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
- <script type="text/javascript"
  src="http://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js"></script>
  
  <div id="tw" style="margin-bottom:1.5em;"><b>click me</b></div>

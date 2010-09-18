@@ -1,17 +1,43 @@
 .container {
     margin:0 auto;
-    width:850px;
+    width:520px;
 }
 
 body {
-    font-size:90%;
-    background-color: #F9F9F4;
+    background-color: #F9F9F4;   
+    font-size: 80%;
 }
 
 #content {
-    padding-top: 50px;
-    margin-left:20px;
-    margin-right:20px;
+    padding-top:1px;
+    padding-left:1px;
+    margin-left:1px;
+    margin-top:1px;
+}
+
+#header {
+    padding:0.5em;
+    padding-top:4em;
+    margin-bottom:1em;
+}
+
+.title-link {
+    letter-spacing: -.08em;
+    margin-left: 1em;
+    border-bottom: 0 none;
+    font-size: 200%;
+}
+
+.title-link:hover {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+
+#header-title {
+    letter-spacing: -.08em;
+    font-weight: bold;    
+    border-bottom: 0 none;
+    font-size: 240%;
 }
 
 #sidebar {
@@ -48,41 +74,27 @@ h1 {
     letter-spacing:-2px;
 }
 
-
-#header-title {
-    letter-spacing: -.08em;
-    font-weight: bold;
-    border-bottom: 0px;
-    font-size: 130%;
-    margin-left:20px;
-}
-
-#header-title:hover {
-    border-bottom: 1px solid #EEEEEE;
-}
-
-
 #twitter {
     color:#808080;
     font-style:italic;
-    font-size:90%;
 }
 
 #post {
     text-align:justify;
+    font-size:110%;
 }
 
 #post-list ul {
     list-style:none outside none;
-    padding-left:1em;
+    padding-left:0em;
 }
 
 #post-date {
-    font-size:85%;
+    font-size:100%;
 }
 
 #post-summary {
-    font-size:80%;
+    font-size:90%;
     color:#666;
     margin:1em;
     line-height:1.5em;
@@ -99,8 +111,9 @@ pre, code, tt {
 
 #paginator {
     text-align:center;
-    font-size: 90%;    
-    padding: 0.5em;
+    font-size: 100%;    
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
 }
 
 #paginator_current {
