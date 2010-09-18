@@ -1,13 +1,11 @@
-* jQuery Twitter 'mini' plugin
+#+TITLE: jQuery Twitter 'mini' plugin
+#+HTML: <category> jquery twitter </category>
 
-Here's a little jQuery plugin for displaying a twitter feed into
-a web page. The goal was to put my latest 'tweets' on my blog, and
-also learn jQuery. 
+Here's a little jQuery plugin for displaying a twitter feed into a web page. The goal was to put my latest 'tweets' on my blog, and also learn jQuery. 
 
-Ended up making a 'mini' jQuery plugin that can easily be added into
-any web page.
+Ended up making a 'mini' jQuery plugin that can easily be added into any web page.
 
-** Demo:
+* Demo:
 
 For the code:
 #+BEGIN_SRC javascript
@@ -34,11 +32,9 @@ $(function() {
  </script>
  #+END_HTML
 
-** How It Works
+* How It Works
 
-It makes an Ajax request to twitter that returns json data of the
-feed. That data is then read and injected into the selected html
-element(s).
+It makes an Ajax request to twitter that returns json data of the feed. That data is then read and injected into the selected html element(s).
 
 See in: 
 
@@ -67,8 +63,6 @@ $.ajax({
 });
 #+END_SRC
 
-jQuery is a very nice designed lib, simple and powerfull. Some say [[http://importantshock.wordpress.com/2009/01/18/jquery-is-a-monad/][its
-just like a functional programming Monad]].
+jQuery is a very nice designed lib, simple and powerfull. Some say [[http://importantshock.wordpress.com/2009/01/18/jquery-is-a-monad/][its just like a functional programming Monad]].
 
-Full source code is available from github:
-[[http://github.com/al3xandr3/jquery-twitter-plugin]]
+Full source code is available from github: [[http://github.com/al3xandr3/jquery-twitter-plugin]]

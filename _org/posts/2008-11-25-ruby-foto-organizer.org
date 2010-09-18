@@ -1,13 +1,14 @@
-* Little 'ruby' photo organizer
+#+TITLE: Little 'ruby' photo organizer
+#+HTML: <category> ruby photo automation </category>
 
-Place this script in a folder full of pictures, run it, and it will
-organize the pictures into folders by the day they were taken.
+Place this script in a folder full of pictures, run it, and it will organize the pictures into folders by the day they were taken.
 
 #+BEGIN_EXAMPLE
 $ ruby photo_organizer.rb
 #+END_EXAMPLE
 
-Code:
+* Code:
+
 #+BEGIN_SRC Javascript
 #photo_organizer.rb
 require 'fileutils'

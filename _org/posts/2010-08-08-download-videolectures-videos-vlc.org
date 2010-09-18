@@ -1,16 +1,13 @@
-* How to download videolectures.net videos with VLC
+#+TITLE: How to download videolectures.net videos with VLC
+#+HTML: <category> automation shell </category>
 
-[[http://videolectures.net/][videolectures.net]] has very good content but, no good way to download
-the videos(at least as of now), and sometimes you want to watch them
-offline, so here's a way to dowload them if you have VLC video player
-installed.
-This of course works for all videos that are streamed from
-an mms:// address and not only limited to videolectures ones.
+[[http://videolectures.net/][videolectures.net]] has very good content but, no good way to download the videos(at least as of now), and sometimes you want to watch them offline, so here's a way to dowload them if you have VLC video player installed.
 
-Btw, found same idea, but using mplayer instead, from
-[[http://measuringmeasures.blogspot.com/2009/12/downloading-from-videolecturesnet.html][bradfordcross here]].
+This of course works for all videos that are streamed from an mms:// address and not only limited to videolectures ones.
 
-** How to
+Btw, found same idea, but using mplayer instead, from [[http://measuringmeasures.blogspot.com/2009/12/downloading-from-videolecturesnet.html][bradfordcross here]].
+
+* How to
 
 Find the mms:// address for the video and use it like this example:
 
@@ -18,13 +15,11 @@ Find the mms:// address for the video and use it like this example:
 $ /Applications/VLC.app/Contents/MacOS/VLC -I rc mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv --sout ~/Desktop/information-theory.avi
 #+END_SRC
 
-if you are not on a Mac, then you need to change the paths to VLC
-binary and desktop.
+If you are not on a Mac, then you need to change the paths to VLC binary and desktop.
 
-** Make a bash script from it
+* Make a bash script from it
 
-Its annoying to write all of the above every time you want to download
-a video, so is worth to make a bash script from it.
+Its annoying to write all of the above every time you want to download a video, so is worth to make a bash script from it.
 
 Create a new file, with content
 
@@ -46,5 +41,4 @@ And use like so:
 $ getvideolecture mms://velblod2.ijs.si:80/2009/pascal2/mlss09uk_cambridge/mackay_it/mlss09uk_mackay_it_01.wmv information-theory
 #+END_SRC
 
-The second argument is the name of the video that will be stored in
-desktop.
+The second argument is the name of the video that will be stored in desktop.

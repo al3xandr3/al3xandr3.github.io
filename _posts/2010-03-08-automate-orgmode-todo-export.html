@@ -1,24 +1,27 @@
 --- 
 layout: post
 title: Automating todo tasks reports with orgmode
+categories: 
+- org-mode
+- emacs
+- todo
+- automation
 ---
 
 
 
-<div class="outline-text-2" id="text-1">
+
+
+
 
 
 <p>
-Here's the geek automation of the week, its for helping creating
-reports from my TODO tasks list when using the amazing emacs
-org-mode(<a href="http://orgmode.org/">see here whats orgmode all about</a>).
+Here's the geek automation of the week, its for helping creating reports from my TODO tasks list when using the amazing emacs org-mode(<a href="http://orgmode.org/">see here whats orgmode all about</a>).
 </p>
 
-</div>
-
-<div class="outline-3" id="outline-container-1_1">
-<h3 id="sec-1_1">(simplified) Work Flow </h3>
-<div class="outline-text-3" id="text-1_1">
+<div class="outline-2" id="outline-container-1">
+<h2 id="sec-1">(simplified) Work Flow </h2>
+<div class="outline-text-2" id="text-1">
 
 
 <ol>
@@ -26,8 +29,7 @@ org-mode(<a href="http://orgmode.org/">see here whats orgmode all about</a>).
 I get a request, add it into my todo list queue, marking it as a TODO item.
 </li>
 <li>
-Work, work, work, guided by the todo listed tasks, balancing
-priority and effort and (..add your own reason here..).
+Work, work, work, guided by the todo listed tasks, balancing priority and effort and (..add your own reason here..).
 </li>
 <li>
 When finished, mark an item DONE.
@@ -42,14 +44,13 @@ Generate a report every week with the done tasks.
 
 </div>
 
-<div class="outline-3" id="outline-container-1_2">
-<h3 id="sec-1_2">Generating the Report </h3>
-<div class="outline-text-3" id="text-1_2">
+<div class="outline-2" id="outline-container-2">
+<h2 id="sec-2">Generating the Report </h2>
+<div class="outline-text-2" id="text-2">
 
 
 <p>
-(I use this setup on Mac, with some adaptations should also on Linux
-and Windows)
+(I use this setup on Mac, with some adaptations should also on Linux and Windows)
 </p>
 <p>
 Every week i then generate a report of the DONE Tasks, by running:
@@ -79,9 +80,7 @@ open work.csv
 See the comments "#" to understand what it does in each step.
 </p>
 <p>
-Then I use the format-report.rb that apply's the final formatting to
-the report, for example: add my own header, add/remove columns, Dates,
-change names, calculate values, etc, etc&hellip; see example:
+Then I use the format-report.rb that apply's the final formatting to the report, for example: add my own header, add/remove columns, Dates, change names, calculate values, etc, etc&hellip; see example:
 </p>
 
 
@@ -110,7 +109,7 @@ column_map = {
 
 
 <p>
-And voila, i run this and an excel(my default .csv app) sheet opens up
-with the report of the week.
+And voila, i run this and an excel(my default .csv app) sheet opens up with the report of the week.
 </p></div>
 </div>
+

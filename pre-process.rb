@@ -14,14 +14,13 @@ def process_post(post, layout)
 
   # Strip off everything outside the main div & extract categories
   doc = Hpricot(post)
-  cats = (doc/'span.tag').remove
-  cats = (cats/'span').map { |i| i.inner_html }.map { |i| i.downcase }
+  cats = (doc/'category').remove
+  cats = cats.inner_html.split(' ').map { |i| i.downcase }
 
   # Extract h2 title
-  h2 = (doc/'h2#sec-1')
+  h1 = (doc/'h1.title')
   #cleans the title from the post itself, so i can use as meta only
-  (doc/'h2#sec-1').remove
-  
+  (doc/'h1.title').remove
   # Extract timestamp
   #timestamp = (doc/'span.timestamp-wrapper').remove
   #if timestamp
@@ -42,15 +41,15 @@ def process_post(post, layout)
   #end
 
   # Extract the top outline
-  post = doc.search('div#outline-container-1').inner_html
-
+  post = doc.search('div#content').inner_html
+  
   # Extract footnotes, if any, and downgrade h2 to h3
   footnotes = doc.search('div#footnotes').inner_html.gsub("h2", "h3")
 
   # Extract metadata and insert yaml
   meta = {}
   meta['layout'] = layout
-  meta['title'] = h2.inner_html.gsub('&nbsp;', '').strip # insert h2 title
+  meta['title'] = h1.inner_html.gsub('&nbsp;', '').strip # insert h1 title
   meta['categories'] = cats unless cats.empty?
   #meta['date'] = date if date
 

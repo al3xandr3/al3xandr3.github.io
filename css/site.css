@@ -44,6 +44,11 @@ a:hover {
   font-style: italic;
 }
 
+h1 {
+    letter-spacing:-2px;
+}
+
+
 #header-title {
     letter-spacing: -.08em;
     font-weight: bold;
@@ -63,6 +68,10 @@ a:hover {
     font-size:90%;
 }
 
+#post {
+    text-align:justify;
+}
+
 #post-list ul {
     list-style:none outside none;
     padding-left:1em;
@@ -77,6 +86,7 @@ a:hover {
     color:#666;
     margin:1em;
     line-height:1.5em;
+    text-align:justify;
 }
 
 pre, code, tt {

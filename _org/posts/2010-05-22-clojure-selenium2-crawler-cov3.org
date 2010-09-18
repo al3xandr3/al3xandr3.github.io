@@ -1,23 +1,17 @@
-* Clojure and Selenium2 Crawler - cov3
+#+TITLE: Clojure and Selenium2 Crawler - cov3
+#+HTML: <category> clojure selenium crawler webanalytics automation </category>
 
-Have been playing around with selenium and clojure for a while, and
-now that selenium 2 is in beta ended up making a little web crawler
-library called cov3.
+Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3.
 
 [[/img/crawler.png]]
 
 It has 3 flavors of crawling:
-- the usual crawler, give him a url, and keeps on going until
-  he visits all of the linked pages (that point to same domain).
-- a sitemap crawler, give him a sitemap.xml and visits the urls
-  he finds in the sitemap.
-- a step crawler, give him a csv file with the list of urls(steps) to
-  visit.
+- the usual crawler, give him a url, and keeps on going until he visits all of the linked pages (that point to same domain).
+- a sitemap crawler, give him a sitemap.xml and visits the urls he finds in the sitemap.
+- a step crawler, give him a csv file with the list of urls(steps) to visit.
 
-On each page the crawler visits it executes a bit of javascript code
-that we can define as a validation.
-These validations are usefull to test your site in an automated way,
-say for example, you want to check:
+On each page the crawler visits it executes a bit of javascript code that we can define as a validation.
+These validations are usefull to test your site in an automated way, say for example, you want to check:
 - if all pages contain meta tags
 - if all pages contain a title
 - if you have web analytics tracking in all pages
@@ -26,10 +20,9 @@ say for example, you want to check:
   pages.
 - etc..
 
-Also allows to use, for the crawling, either Firefox, Internet
-Explorer(when on windows), Chrome or HtmlUnit(a GUI-Less browser).
+Also allows to use, for the crawling, either Firefox, Internet Explorer(when on windows), Chrome or HtmlUnit(a GUI-Less browser).
 
-** Usage
+* Usage
 
 #+BEGIN_SRC clojure
 (require '[cov3 :as cov3])
@@ -46,5 +39,4 @@ Explorer(when on windows), Chrome or HtmlUnit(a GUI-Less browser).
 (cov3/step-crawl :ff "data/steps.csv")
 #+END_SRC
 
-Is available from github:
-http://github.com/al3xandr3/cov3
+Is available from github: http://github.com/al3xandr3/cov3

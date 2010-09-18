@@ -1,21 +1,18 @@
-* Automating todo tasks reports with orgmode 
+#+TITLE: Automating todo tasks reports with orgmode 
+#+HTML: <category> org-mode emacs todo automation </category>
 
-Here's the geek automation of the week, its for helping creating
-reports from my TODO tasks list when using the amazing emacs
-org-mode([[http://orgmode.org/][see here whats orgmode all about]]).
+Here's the geek automation of the week, its for helping creating reports from my TODO tasks list when using the amazing emacs org-mode([[http://orgmode.org/][see here whats orgmode all about]]).
 
-** (simplified) Work Flow
+* (simplified) Work Flow
 
 1. I get a request, add it into my todo list queue, marking it as a TODO item.
-2. Work, work, work, guided by the todo listed tasks, balancing
-   priority and effort and (..add your own reason here..).
+2. Work, work, work, guided by the todo listed tasks, balancing priority and effort and (..add your own reason here..).
 3. When finished, mark an item DONE.
 4. Generate a report every week with the done tasks.
 
-** Generating the Report
+* Generating the Report
 
-(I use this setup on Mac, with some adaptations should also on Linux
-and Windows)
+(I use this setup on Mac, with some adaptations should also on Linux and Windows)
 
 Every week i then generate a report of the DONE Tasks, by running:
 
@@ -38,9 +35,7 @@ open work.csv
 
 See the comments "#" to understand what it does in each step.
 
-Then I use the format-report.rb that apply's the final formatting to
-the report, for example: add my own header, add/remove columns, Dates,
-change names, calculate values, etc, etc... see example:
+Then I use the format-report.rb that apply's the final formatting to the report, for example: add my own header, add/remove columns, Dates, change names, calculate values, etc, etc... see example:
 
 #+BEGIN_SRC ruby
 # file: format-report.rb
@@ -64,5 +59,4 @@ File.open( "work.csv","w+") do |fl|
 end
 #+END_SRC
 
-And voila, i run this and an excel(my default .csv app) sheet opens up
-with the report of the week.
+And voila, i run this and an excel(my default .csv app) sheet opens up with the report of the week.

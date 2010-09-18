@@ -1,17 +1,23 @@
 --- 
 layout: post
 title: Clojure and Selenium2 Crawler - cov3
+categories: 
+- clojure
+- selenium
+- crawler
+- webanalytics
+- automation
 ---
 
 
 
-<div class="outline-text-2" id="text-1">
+
+
+
 
 
 <p>
-Have been playing around with selenium and clojure for a while, and
-now that selenium 2 is in beta ended up making a little web crawler
-library called cov3.
+Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3.
 </p>
 <p>
 <img src="/img/crawler.png" alt="/img/crawler.png" />
@@ -20,25 +26,20 @@ library called cov3.
 It has 3 flavors of crawling:
 </p><ul>
 <li>
-the usual crawler, give him a url, and keeps on going until
-he visits all of the linked pages (that point to same domain).
+the usual crawler, give him a url, and keeps on going until he visits all of the linked pages (that point to same domain).
 </li>
 <li>
-a sitemap crawler, give him a sitemap.xml and visits the urls
-he finds in the sitemap.
+a sitemap crawler, give him a sitemap.xml and visits the urls he finds in the sitemap.
 </li>
 <li>
-a step crawler, give him a csv file with the list of urls(steps) to
-visit.
+a step crawler, give him a csv file with the list of urls(steps) to visit.
 </li>
 </ul>
 
 
 <p>
-On each page the crawler visits it executes a bit of javascript code
-that we can define as a validation.
-These validations are usefull to test your site in an automated way,
-say for example, you want to check:
+On each page the crawler visits it executes a bit of javascript code that we can define as a validation.
+These validations are usefull to test your site in an automated way, say for example, you want to check:
 </p><ul>
 <li>
 if all pages contain meta tags
@@ -63,15 +64,12 @@ etc..
 
 
 <p>
-Also allows to use, for the crawling, either Firefox, Internet
-Explorer(when on windows), Chrome or HtmlUnit(a GUI-Less browser).
+Also allows to use, for the crawling, either Firefox, Internet Explorer(when on windows), Chrome or HtmlUnit(a GUI-Less browser).
 </p>
 
-</div>
-
-<div class="outline-3" id="outline-container-1_1">
-<h3 id="sec-1_1">Usage </h3>
-<div class="outline-text-3" id="text-1_1">
+<div class="outline-2" id="outline-container-1">
+<h2 id="sec-1">Usage </h2>
+<div class="outline-text-2" id="text-1">
 
 
 
@@ -94,7 +92,7 @@ Explorer(when on windows), Chrome or HtmlUnit(a GUI-Less browser).
 
 
 <p>
-Is available from github:
-<a href="http://github.com/al3xandr3/cov3">http://github.com/al3xandr3/cov3</a>
+Is available from github: <a href="http://github.com/al3xandr3/cov3">http://github.com/al3xandr3/cov3</a>
 </p></div>
 </div>
+

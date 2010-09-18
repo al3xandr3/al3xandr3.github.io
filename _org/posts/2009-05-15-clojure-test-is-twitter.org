@@ -1,11 +1,9 @@
-* Clojure test-is results in twitter 
+#+TITLE: Clojure test-is results in twitter 
+#+HTML: <category> clojure twitter</category>
  
-Here's how you can have your your test-is results posted on twitter
-automatically as they run.
+Here's how you can have your your test-is results posted on twitter automatically as they run.
 
-This is useful for example if you have regression tests that run
-automatically in a remote machine, once a week(for example) and want
-to find a good way to see the results.
+This is useful for example if you have regression tests that run automatically in a remote machine, once a week(for example) and want to find a good way to see the results.
 
 Start by getting /jtwitter/, put it in your classphath and create:
 
@@ -19,9 +17,7 @@ Start by getting /jtwitter/, put it in your classphath and create:
 
 Update "username" and "password" with your twitter login.
 
-Then hook it up to the /test-is'/library(test library in clojure):
-just overwrite the report summary method that by default prints out
-the summary of the executed tests.
+Then hook it up to the /test-is'/library(test library in clojure): just overwrite the report summary method that by default prints out the summary of the executed tests.
 
 Before:
 
@@ -46,14 +42,10 @@ After:
 
 Note that i just added added a line calling the twitter-update method.
 
-And thats it, now every time you run your tests, you will have the
-failures and errors twittered
+And thats it, now every time you run your tests, you will have the failures and errors twittered:
 
 [[/img/clj-twitter-alert.png]]
 
-I've created a 2nd account on twitter where i post these automated
-messages. And have my clojure tests(regression tests) running
-by themselves and i just check twitter to see if all is good.
+I've created a 2nd account on twitter where i post these automated messages. And have my clojure tests(regression tests) running by themselves and i just check twitter to see if all is good.
 
-This little twitter-update method is very easy to re-use for other
-alerts and automations.
+This little twitter-update method is very easy to re-use for other alerts and automations.

@@ -1,33 +1,32 @@
 --- 
 layout: post
 title: Lem-E-Tweakit and Logic programming
+categories: 
+- sicp
+- sql
 ---
 
 
 
-<div class="outline-text-2" id="text-1">
+
+
+
 
 
 <p>
 <img src="/img/tweakit.png" alt="/img/tweakit.png" />
 </p>
 <p>
-While watching the SICP lectures  8a &amp; 8b, one thing that i realized
-is that this logic programming they mention seems to be very similar
-to kind of things we use SQL for, just better&hellip; a lot more flexible.
+While watching the SICP lectures  8a &amp; 8b, one thing that i realized is that this logic programming they mention seems to be very similar to kind of things we use SQL for, just better&hellip; a lot more flexible.
 </p>
 <p>
 <b>So why we do use SQL after all?</b>
 </p>
 <p>
-After a bit of googling found this good article:
-<a href="http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod">http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod</a> one of
-the references says:
+After a bit of googling found this good article: <a href="http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod">http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod</a> one of the references says:
 </p>
 <p>
-"&hellip;So if Prolog(read AI) and SQL(DB) are so similar, Why is one so
-successful commercially and the other deemed a complete failure in
-terms of scalability?&hellip;"
+"&hellip;So if Prolog(read AI) and SQL(DB) are so similar, Why is one so successful commercially and the other deemed a complete failure in terms of scalability?&hellip;"
 </p>
 <p>
 Databases implement powerful techniques to improve performance:
@@ -54,11 +53,6 @@ Where as Prolog based systems have very few such techniques.
 One of the most powerful features of Prolog is recursion.
 </p>
 <p>
-SQL does not have recursion built into it. This is a severe
-Handicap. However there is a way to overcome this problem by invoking
-multiple SQL queries from a host language like C Or Java. 
+SQL does not have recursion built into it. This is a severe Handicap. However there is a way to overcome this problem by invoking multiple SQL queries from a host language like C Or Java. SQL3 has begun supporting recursion.
 </p>
-<p>
-SQL3 has begun supporting recursion.
-</p>
-</div>
+
