@@ -39,6 +39,18 @@ AL3XANDR3.themeColor3 = "#E38E24";
 //On Document Ready
 $(function () {
 
+
+  $('#about-dialog').jqm({onShow: function (hash) { hash.w.css('opacity', 0.90).show(); }});
+  $('#about-lnk').click(function (ev) {
+    ev.preventDefault();
+    $.get('/pages/al3xandr3.html', function (data) {
+      var content = $(data).find('div#about').html();
+      $('#about-dialog').html("<a href='#' class='jqmClose'>Close</a><hr>");
+      $('#about-dialog').append(content);
+      $('#about-dialog').jqmShow();
+    });
+  });
+
   //Color Title Numbers
   AL3XANDR3.colorHeader(AL3XANDR3.themeColor3);
   //AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);

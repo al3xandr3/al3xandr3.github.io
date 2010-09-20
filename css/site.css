@@ -80,7 +80,6 @@ h1 {
 }
 
 #post {
-    text-align:justify;
     font-size:110%;
 }
 
@@ -98,7 +97,6 @@ h1 {
     color:#666;
     margin:1em;
     line-height:1.5em;
-    text-align:justify;
 }
 
 pre, code, tt {
