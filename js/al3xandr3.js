@@ -40,7 +40,7 @@ AL3XANDR3.themeColor3 = "#E38E24";
 $(function () {
 
 
-  $('#about-dialog').jqm({onShow: function (hash) { hash.w.css('opacity', 0.90).show(); }});
+  $('#about-dialog').jqm({onShow: function (hash) { hash.w.css('opacity', 0.94).show(); }});
   $('#about-lnk').click(function (ev) {
     ev.preventDefault();
     $.get('/pages/al3xandr3.html', function (data) {
