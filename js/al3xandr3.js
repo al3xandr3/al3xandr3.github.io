@@ -1,4 +1,4 @@
-/*global jQuery, $*/
+/*global jQuery, _gaq $*/
 /*jslint bitwise: true, browser: true, eqeqeq: true, immed: true, newcap: true, nomen: true, onevar: true, plusplus: true, white: true, widget: true, undef: true, indent: 2*/
 
 (function ($) {
@@ -40,14 +40,20 @@ AL3XANDR3.themeColor3 = "#E38E24";
 $(function () {
 
 
-  $('#about-dialog').jqm({onShow: function (hash) { hash.w.css('opacity', 0.94).show(); }});
   $('#about-lnk').click(function (ev) {
     ev.preventDefault();
+    $("<div id='about-dialog' class='jqmWindow'></div>").insertAfter('#header');
+    $('#about-dialog').jqm({onShow: function (hash) { 
+      hash.w.css('opacity', 0.92).show(); 
+    }});
     $.get('/pages/al3xandr3.html', function (data) {
       var content = $(data).find('div#about').html();
       $('#about-dialog').html("<a href='#' class='jqmClose'>Close</a><hr>");
       $('#about-dialog').append(content);
       $('#about-dialog').jqmShow();
+      if (typeof _gaq !== 'undefined') {
+        _gaq.push(['_trackEvent', 'About', 'Open']); 
+      }
     });
   });
 
