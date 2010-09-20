@@ -44,7 +44,7 @@ $(function () {
     ev.preventDefault();
     $("<div id='about-dialog' class='jqmWindow'></div>").insertAfter('#header');
     $('#about-dialog').jqm({onShow: function (hash) { 
-      hash.w.css('opacity', 0.92).show(); 
+      hash.w.css('opacity', 0.92).show('fast'); 
     }});
     $.get('/pages/al3xandr3.html', function (data) {
       var content = $(data).find('div#about').html();
