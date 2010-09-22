@@ -43,9 +43,16 @@ $(function () {
   $('#about-lnk').click(function (ev) {
     ev.preventDefault();
     $("<div id='about-dialog' class='jqmWindow'></div>").insertAfter('#header');
-    $('#about-dialog').jqm({onShow: function (hash) { 
-      hash.w.css('opacity', 0.92).show('fast'); 
-    }});
+    $('#about-dialog').jqm({
+      onShow: function (hash) { 
+        hash.w.css({"background-color": '#F9F9F4'}).fadeIn('2000'); 
+      }, 
+      onHide: function  (hash) { 
+        hash.w.fadeOut('2000', function () { 
+          hash.o.remove(); 
+        });
+      }
+    });
     $.get('/pages/al3xandr3.html', function (data) {
       var content = $(data).find('div#about').html();
       $('#about-dialog').html("<a href='#' class='jqmClose'>Close</a><hr>");
@@ -70,6 +77,7 @@ $(function () {
   }); 
 
   // toggle [about]
+  $("#search").hide();
   $('#searchlnk').toggle(
       function () {
         $("#search").show(function () {
@@ -77,7 +85,7 @@ $(function () {
         });
       },
       function () { 
-        $("#search").css({"display": "none"});
+        $("#search").hide("slow");
       }
     );
 
