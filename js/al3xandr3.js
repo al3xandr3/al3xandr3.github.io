@@ -77,7 +77,7 @@ $(function () {
   }); 
 
   // toggle [about]
-  $("#search").hide();
+  //$("#search").hide();
   $('#searchlnk').toggle(
       function () {
         $("#search").show(function () {
