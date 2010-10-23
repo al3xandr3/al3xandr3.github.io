@@ -191,11 +191,13 @@ ggplot(mydata, aes(x=date)) +  labs(x=NULL, y=NULL) +
 
 In the first half of the plot there is a drop in productivity, accompanied by an increase on distracting time.
 
-It also shows that close to the end(last couple of months) there's a tendency for increase in all categories.es
+It also shows that close to the end(last couple of months) there's a tendency for increase in all categories.
+
 * The Gear
 This post was also made to try out the [[http://orgmode.org/worg/org-contrib/babel/][OrgMode Babel]] mode that i've discovered recently, that allows for literate programming(mixing in same document live/executable code and text).
 
 This doc was written in (Aqua)Emacs using Orgmode. R as the statistics toolbox, loaded with the nice ggplot2 graphics package.
-This allows for a very smooth work flow for creating this type of documents.
+This allows for a very smooth work flow for creating this type of documents and it works very well :)
 
-And it works very well :)
+See [[http://github.com/al3xandr3/al3xandr3.github.com/raw/master/_org/posts/2010-10-20-monitoring-productivity-experiment.org][here how it looks in raw format]]
+
