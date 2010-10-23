@@ -62,12 +62,20 @@ $(function () {
         _gaq.push(['_trackEvent', 'About', 'Open']); 
       }
     });
+    
   });
 
   //Color Title Numbers
   AL3XANDR3.colorHeader(AL3XANDR3.themeColor3);
   //AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);
 
+  /* for images to show when in localhost */
+  if (location.host === "localhost:4000") {
+    $("img").attr('src', function () {
+      return this.src.replace("al3xandr3.github.com", "localhost:4000");
+    });
+  }
+  
   //center images in posts
   $("#post p img").parent().css("text-align", "center");
 
