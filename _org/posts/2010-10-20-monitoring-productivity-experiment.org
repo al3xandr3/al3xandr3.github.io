@@ -134,7 +134,7 @@ mean of x
  40.28846
 #+end_example
 
-Values are between [37.33372, 43.24320] fory 95% confidence. Which means that ~40 is a very good estimation of the average time.
+Values are between [37.33372, 43.24320] for 95% confidence. Which means that ~40 is a very good estimation of the average time.
 
 So thats close to *40 hours per week*, almost *6 hours per day* in computer. And this is in average for the whole year, that is, it includes weekends, vacations, holidays, etc...
 
