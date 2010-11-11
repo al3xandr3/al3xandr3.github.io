@@ -19,8 +19,9 @@
 #+LATEX_HEADER: \renewcommand{\headrulewidth}{0.4pt} 
 #+LATEX_HEADER: \renewcommand{\footrulewidth}{0.4pt}
 
-#+ATTR_HTML: alt="al3xandr3" title="al3xandr3"
-[[http://al3xandr3.github.com/img/al3xandr3.png]]
+#+begin_center
+#+LaTeX: \includegraphics{alex.png}
+#+end_center
 
 * Personal information
 
