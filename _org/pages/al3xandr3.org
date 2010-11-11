@@ -1,4 +1,5 @@
 #+TITLE: About
+#+OPTIONS: timestamp:nil
 #+HTML <categories> about </categories>
 
 #+ATTR_HTML: alt="al3xandr3" title="al3xandr3" align="center"
@@ -9,7 +10,7 @@ I'm Alexandre Matos Martins, a Portuguese living & working in Estonia.
 A computer science engineer by education with a passion for statistics, machine learning, data mining, AI and functional programming.
 
 #+ATTR_HTML: title="Curriculum Vitae" style="font-weight:bold;font-size:120%;"
-[[http://al3xandr3.github.com/pages/cv.html][Curriculum Vitae]] ([[http://al3xandr3.github.com/img/AlexandreMartinsCV.pdf][pdf format]]) as of November 2010
+[[http://al3xandr3.github.com/pages/cv.html][Curriculum Vitae]] ([[http://al3xandr3.github.com/img/AlexandreMartinsCV.pdf][pdf format]]) as of November 2010.
 
 * Find me:
 

@@ -16,8 +16,15 @@ layout: nil
 </url>
 
 <url>
+  <loc>http://al3xandr3.github.com/pages/cv.html</loc>
+  <lastmod>2010-11-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
   <loc>http://al3xandr3.github.com/pages/al3xandr3.html</loc>
-  <lastmod>2010-04-26T20:51:26+00:00</lastmod>
+  <lastmod>2010-11-11</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.90</priority>
 </url>
