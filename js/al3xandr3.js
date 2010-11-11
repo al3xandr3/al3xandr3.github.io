@@ -75,6 +75,13 @@ $(function () {
       return this.src.replace("al3xandr3.github.com", "localhost:4000");
     });
   }
+
+  /* for images to show when in localhost */
+  if (location.host === "localhost:4000") {
+    $("a").attr('href', function () {
+      return this.href.replace("al3xandr3.github.com", "localhost:4000");
+    });
+  }
   
   //center images in posts
   $("#post p img").parent().css("text-align", "center");
