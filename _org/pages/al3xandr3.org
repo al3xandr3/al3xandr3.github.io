@@ -2,7 +2,7 @@
 #+OPTIONS: timestamp:nil
 #+HTML <categories> about </categories>
 
-#+ATTR_HTML: alt="al3xandr3" title="al3xandr3" align="center"
+#+ATTR_HTML: alt="al3xandr3" title="al3xandr3"
 [[http://al3xandr3.github.com/img/al3xandr3.png]]
 
 I'm Alexandre Matos Martins, a Portuguese living & working in Estonia.
