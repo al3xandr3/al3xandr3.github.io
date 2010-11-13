@@ -72,10 +72,12 @@ $(function () {
   //CV fixes
   $("caption").css({"background-color": '#F9F9F4'});
 
-  $('table').find('td').filter(':nth-child(1)')
-    .css({"border-right-width": '1px'})
-    .css({"border-style": 'solid'})
-    .css({"border-color": 'grey'});
+  if (location.pathname === "/pages/cv.html") { 
+    $('table').find('td').filter(':nth-child(1)')
+      .css({"border-right-width": '1px'})
+      .css({"border-style": 'solid'})
+      .css({"border-color": 'grey'});
+  }
 
   /* for images to show when in localhost */
   if (location.host === "localhost:4000") {
