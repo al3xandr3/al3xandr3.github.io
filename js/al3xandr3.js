@@ -45,7 +45,7 @@ $(function () {
     $("<div id='about-dialog' class='jqmWindow'></div>").insertAfter('#header');
     $('#about-dialog').jqm({
       onShow: function (hash) { 
-        hash.w.css({"background-color": '#F9F9F4'}).fadeIn('2000'); 
+        hash.w.css({"background-color": 'white'}).fadeIn('2000'); 
       }, 
       onHide: function  (hash) { 
         hash.w.fadeOut('2000', function () { 
