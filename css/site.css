@@ -3,13 +3,13 @@
 }
 
 body {
-    background-color: #F4F4F2;  
+//    background-color: #F4F4F2;  
     font-size: 80%;
 }
 
 #main {
    border-left:1px solid #DDDDDD;
-   background-color: white;
+   background-color: #f4f4f2;
 }
 
 #content {
