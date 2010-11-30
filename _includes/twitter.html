@@ -1,0 +1,12 @@
+<h3><a href="http://twitter.com/al3xandr3" target="_blank" id="tw-title" style="display: none;">twitter</a></h3>
+<div id="twt" style="display: none;">
+  <script type="text/javascript" src="https://github.com/al3xandr3/jquery-twitter-plugin/raw/master/twitter.js"></script>
+  <script>
+  $(function() {     
+    $('#twt').twitter({'user':'al3xandr3','count':3}, function (e) {
+      $('#tw-title').show();
+      e.show();
+    });
+  });
+  </script>
+<div>
