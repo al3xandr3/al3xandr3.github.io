@@ -49,19 +49,30 @@
   </head>
   <body>
     <div class="container">
-
+    <div id="main" class="span-15 prepend-1 colborder">
       <div id="header">
-	<a href="/" id="header-title">{{ site.title }}</a>
-        <a href="/pages/al3xandr3.html" class="title-link" id="about-lnk">about</a>
-        <a href="javascript:void(0);" class="title-link" id="searchlnk">search</a>        
-        <a href="http://feeds.feedburner.com/al3xandr3" target="_blank" class="title-link">rss</a>
-      </div>
-      
+        <a href="/" id="header-title">{{ site.title }}</a>
+      </div>    
       <div id="search" style="display: none;"> {% include search.html %}</div>
       <div id="content">        
-        {{ content }}       
-      </div>        
+        {{ content }}
+      </div>
     </div>
+    
+    <div id="sidebar" class="span-6 last">
+      <img alt="al3xandr3 logo" src="http://al3xandr3.github.com/img/dice.png" title="al3xandr3 logo">
+      <br>
+      <a href="/pages/al3xandr3.html" class="title-link" id="about-link">about</a>
+      <br>
+      <a href="javascript:void(0);" class="title-link" id="search-link">search</a>        
+      <br>
+      <a href="http://feeds.feedburner.com/al3xandr3" target="_blank" class="title-link">rss</a>
+      <br>
+      <br>
+      {% include twitter.html %}
+   </div>
+    
+   </div>
   </body>
 </html>
 

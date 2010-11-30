@@ -26,8 +26,8 @@ AL3XANDR3.colorHeader = function (color) {
 };
 
 AL3XANDR3.colorSidebar = function  (color) {
-  $("#sidebar h3 a").spanifyText();
-  $.each($("#sidebar h3 a"), function (k, v) {
+  $("#sidebar a").spanifyText();
+  $.each($("#sidebar a"), function (k, v) {
     $(v).children().filter(':nth(2)').css('color', color);
   });
 };
@@ -40,7 +40,7 @@ AL3XANDR3.themeColor3 = "#E38E24";
 $(function () {
 
 
-  $('#about-lnk').click(function (ev) {
+  $('#about-link').click(function (ev) {
     ev.preventDefault();
     $("<div id='about-dialog' class='jqmWindow'></div>").insertAfter('#header');
     $('#about-dialog').jqm({
@@ -67,7 +67,7 @@ $(function () {
 
   //Color Title Numbers
   AL3XANDR3.colorHeader(AL3XANDR3.themeColor3);
-  //AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);
+  AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);
 
   //CV fixes
   $("caption").css({"background-color": '#F9F9F4'});
@@ -103,7 +103,7 @@ $(function () {
 
   // toggle [about]
   //$("#search").hide();
-  $('#searchlnk').toggle(
+  $('#search-link').toggle(
       function () {
         $("#search").show(function () {
           $('#search-input').focus();

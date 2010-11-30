@@ -1,11 +1,15 @@
-.container {
+.container {   
     margin:0 auto;
-    width:580px;
 }
 
 body {
-    background-color: #F9F9F4;   
+    background-color: #F4F4F2;  
     font-size: 80%;
+}
+
+#main {
+   border-left:1px solid #DDDDDD;
+   background-color: white;
 }
 
 #content {
@@ -23,7 +27,7 @@ body {
 
 .title-link {
     letter-spacing: -.08em;
-    margin-left: 1em;
+    margin-left: 0em;
     border-bottom: 0 none;
     font-size: 200%;
 }
