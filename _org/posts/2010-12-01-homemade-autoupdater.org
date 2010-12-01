@@ -24,7 +24,7 @@ rm -rf /tmp/emacsdownload
 
 * Chromium
 
-For Chromium on each build the download url changes, so we have to add extra logic for this, first it figures out the latest version and uses then that information for the download url, the rest is similar to the Aquamacs script.
+For Chromium on each build the download url changes, so we have to add extra logic for this, first it figures out the latest version and then uses that information for the download url, the rest is similar to the Aquamacs script.
 
 #+begin_src sh
 #!/bin/bash
