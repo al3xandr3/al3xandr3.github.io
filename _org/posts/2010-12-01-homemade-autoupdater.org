@@ -1,0 +1,45 @@
+#+TITLE: HomeMade Auto-Updater
+#+HTML: <category> mac commandline aquamacs chromium </category>
+#+OPTIONS: timestamp:nil
+
+Here's a script that i use frequently to update an application to the last version. It automates the process of downloading and installing the app.
+
+* Aquamacs
+
+Every day there's a new release of Aquamacs, its called the nightly build, made from the latest developed code. And is always available from the same url.
+
+So the script does the following: creates temporary folder for it, downloads the latest version, unpacks it, closes Aquamacs if running(so it can replace it), creates a backup version AquamacsOld.app (in case the new ones has troubles i can use the previous), copies the files to the applications folder and cleans up the temporary downloaded files.
+
+#+begin_src sh
+#!/bin/bash
+mkdir /tmp/emacsdownload && cd /tmp/emacsdownload
+curl http://braeburn.aquamacs.org/~dr/Aquamacs/24/Aquamacs-nightly.tar.bz2 -o /tmp/emacsdownload/aquamacs.tar.bz2
+tar xvjf /tmp/emacsdownload/aquamacs.tar.bz2
+killall -v Aquamacs #force close, be carefull might loose data
+rm -rf /Applications/AquamacsOld.app
+mv -f /Applications/Aquamacs.app /Applications/AquamacsOld.app
+cp -R /tmp/emacsdownload/Aquamacs.app /Applications
+rm -rf /tmp/emacsdownload
+#+end_src
+
+* Chromium
+
+For Chromium on each build the download url changes, so we have to add extra logic for this, first it figures out the latest version and uses then that information for the download url, the rest is similar to the Aquamacs script.
+
+#+begin_src sh
+#!/bin/bash
+CHROMEDIR="http://build.chromium.org/f/chromium/snapshots/chromium-rel-mac"
+mkdir /tmp/chromedownload && cd /tmp/chromedownload
+curl $CHROMEDIR/LATEST -o /tmp/chromedownload/LATEST --silent && LATEST=`cat /tmp/chromedownload/LATEST`
+curl $CHROMEDIR/$LATEST/chrome-mac.zip -o /tmp/chromedownload/chrome-mac.zip
+unzip -qq /tmp/chromedownload/chrome-mac.zip
+killall -v Chromium #force close, be carefull might loose data
+rm -rf /Applications/Chromium.app
+cp -R /tmp/chromedownload/chrome-mac/Chromium.app /Applications
+rm -rf /tmp/chromedownload
+#+end_src
+
+To automate it even further we could then add these scripts to some scheduling system, so they update automatically, like crontab.
+
+
+
