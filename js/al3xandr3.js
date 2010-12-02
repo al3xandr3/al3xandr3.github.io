@@ -73,8 +73,10 @@ $(function () {
   $("caption").css({"background-color": '#F9F9F4'});
 
   if (location.pathname === "/pages/cv.html") { 
+    $('table caption').css({"background-color": 'white'});
+    $('table tbody td').css({"background": 'none'});
     $('table').find('td').filter(':nth-child(1)')
-      .css({"border-right-width": '1px'})
+      .css({"border-right-width": '0px'})
       .css({"border-style": 'solid'})
       .css({"border-color": 'grey'});
   }
