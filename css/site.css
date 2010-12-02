@@ -1,15 +1,15 @@
 .container {   
     margin:0 auto;
+    background-color: #F4F4F2; 
+    border-right:1px solid #DDDDDD;
 }
 
 body {
-    background-color: #F6F6F1; 
     font-size: 80%;
 }
 
 #main {
    background-color: white;
-   border-left:1px solid #DDDDDD;
 }
 
 #content {
@@ -17,10 +17,10 @@ body {
     padding-left:1px;
     margin-left:1px;
     margin-top:1px;
+    min-height: 45em;
 }
 
 #header {
-    padding:0.5em;
     padding-top:2em;
     margin-bottom:1em;
 }
@@ -29,7 +29,7 @@ body {
     letter-spacing: -.08em;
     margin-left: 0em;
     border-bottom: 0 none;
-    font-size: 200%;
+    font-size: 210%;
 }
 
 .title-link:hover {
