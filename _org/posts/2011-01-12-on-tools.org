@@ -1,0 +1,35 @@
+#+TITLE: On Tools. Starring guitar pedals, cattle growing and math.
+#+HTML: <category> guitar math matlab audio </category>
+#+OPTIONS: timestamp:nil
+
+Bear with me during all the technical and guitar lingo, and keep reading as there's a point.
+
+
+* The Plan
+
+After few last weeks of obsessively investigating guitar gear, because of: "what to get this year for my bday?" i decided to change my guitar setup approach, so stop trying to mix "tube sound pureness" with "digital flexibility" all in one. And create 2 distinct setups, that focus on their strengths. A simple all analog-tube beautiful sounding real thing and then separately use pc guitar amps(that don't sound so real) but have all the flexibility in the world.
+In the process I removed all the digital pedals from the analog setup and ended up with only 1 analog effect, so i thought: maybe i should get now a couple more analog pedals, for more variety. Or even more special would be to build my own pedal that i could tweak and make unique... Sounds like a plan.
+
+* Do i need to Grow Cattle?
+
+After a little net browsing on DIY analog pedal building, figured out that an analog pedal is not really worth because i will just end up implement some schematic i find from net without the deep understanding of how it all really works and how to develop my own circuits. So maybe i could do instead a software guitar pedal simulation(on my 2nd setup), i can do programming so am in a better position to tweak it to create my own "circuits". Right? wrong! After looking at the mess that audio plugin programming is: incompatible platforms, buffers, headers, new api's to learn, c++ pointers and sharp edges, etc... and not so much about the musical details, I concluded is not really rewarding in the long term because most of the effort is on the wrong things... Is like wanting to make my own  quattro formaggi(4 cheese) pizza, without cheese, so i would need to learn how to grow cattle, get the milk and make the cheese. When what i really want, is play to around with the ingredients and types of cheese to create my own version of this pizza.
+
+
+* Finding Gold
+
+At some point landed on a page that described mathematical models of "amplifier tubes behavior" and thought, here's something interesting, modeling the behavior of a real tube sound quality sounds like a great idea for a guitar pedal simulation, lets implement this? But wait a minute, implementing it is actually just monkey work, i.e. nothing new about implementing a simple math formula in a programming language and besides most of the effort will unfortunately be around the the audio plugin programming(growing cattle). On top of that, even if i do it, it will actually only be running for a couple of years, because whenever there's a new audio plugin platform, or a new incompatible release of same platform, i would have to learn how to grow cattle again using a different cow brand.
+
+But look at the math work done here, first, modeling a tube is all about simulating pedal behavior(so is work focused on the right thing) and second the result of this work is a theoretical model that can be implemented in any computer simulation or even in a stand alone digital chip. So, unlike the audio plugin implementation, the math modeling work is truly platform independent and without expiration date, this is real gold.
+But again, just the Math by itself will not make my new guitar pedal.
+
+* Tools
+
+Then by accident discovered some guitar effects simulations made in Matlab, looked at the source code! Brilliant! Short and directly to the point. High level algorithm implementation of audio effects... Very little cattle growing required.
+Ok true, Matlab end product is not really suited for a production like guitar processing integrated with professional audio recording software, but is perfect for prototyping, experimenting with ideas, and try out the amplifier tube math modeling.
+Besides, Matlab is a tool that does a lot more besides audio processing, so the time invested in learning it can be leveraged/applied to many other fields. Thus, comparing Matlab vs audio plugin programming, the Matlab(for my purposes) is a much better Tool.
+
+If we think from tools point of view, actually Matlab, Math, Cattle Growing, audio plugin development are in fact all Tools used for an end goal. Thus, if i have to choose which Tool i should invest my time on, i should choose wisely, but at same time keep in mind that the Tool is still just a means to an end not the end itself(do keep an eye on the prize).
+
+And by the way, Tools are also very much intermingled with Profession/Trades. A Profession is very much defined by the set of Tools used. And a Profession is something that sticks to you for long time, so avoid picking tools/professions with short expiration dates.
+
+As promised, the point: Picking the right Tool is like picking the chicken of the golden eggs. The gold eggs alone will not make guitar pedals, but very much help keeping the cattle growing obligations to a minimum.
