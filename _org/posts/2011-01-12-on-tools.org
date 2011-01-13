@@ -19,9 +19,10 @@ At some point landed on a page that described mathematical models of "amplifier 
 
 But lets look at the Math modeling work, first, modeling a tube is all about simulating a real sound circuit behavior(so is focused on the right thing) and second the result of this work is a theoretical model that can be implemented in any computer simulation or even in a stand alone digital chip. So, unlike the audio plugin implementation, the math modeling work is truly platform independent and without expiration date, this is the real gold.
 
-* Tools
+* Making it Real
 
 But then again, just the Math by itself will not make my new guitar pedal, so we still need something else that will implement that theoretical model into some platform... 
 I continue to web surfing and by accident found some guitar effects simulations made in Matlab, looked at the source code... Brilliant! Short and directly to the point. High level algorithm implementation of audio effects... This will allow to try out the tubes math models i found before with little cattle growing obligations.
+Matlab of course has tradeoffs compared to use the audio plugin development, is not really suited for a production like final product but is perfect for creating a working prototype, that verifies that the theoretical idea really works, and later it can be made into a proper production like an audio vst plugin.
 
 So as promised, the point: Tools matter, because they can distract you from focusing on the right things. Some Cattle Growing is required, but try keep it to a minimum and focus instead on the gold.
