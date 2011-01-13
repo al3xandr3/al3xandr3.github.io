@@ -19,7 +19,6 @@ categories:
 Bear with me during all the technical and guitar lingo, and keep reading as there's a point.
 </p>
 
-
 <div class="outline-2" id="outline-container-1">
 <h2 id="sec-1">The Plan </h2>
 <div class="outline-text-2" id="text-1">
@@ -41,7 +40,6 @@ In the process I removed all the digital pedals from the analog setup and ended 
 <p>
 After a little net browsing on DIY analog pedal building, figured out that an analog pedal is not really worth because i will just end up implement some schematic i find from net without the deep understanding of how it all really works and how to develop my own circuits. So maybe i could do instead a software guitar pedal simulation(on my 2nd setup), i can do programming so am in a better position to tweak it to create my own "circuits". Right? wrong! After looking at the mess that audio plugin programming is: incompatible platforms, buffers, headers, new api's to learn, c++ pointers and sharp edges, etc&hellip; and not so much about the musical details, I concluded is not really rewarding in the long term because most of the effort is on the wrong things&hellip; Is like wanting to make my own  quattro formaggi(4 cheese) pizza, without cheese, so i would need to learn how to grow cattle, get the milk and make the cheese. When what i really want, is play to around with the ingredients and types of cheese to create my own version of this pizza.
 </p>
-
 </div>
 
 </div>
@@ -52,11 +50,10 @@ After a little net browsing on DIY analog pedal building, figured out that an an
 
 
 <p>
-At some point landed on a page that described mathematical models of "amplifier tubes behavior" and thought, here's something interesting, modeling the behavior of a real tube sound quality sounds like a great idea for a guitar pedal simulation, lets implement this? But wait a minute, implementing it is actually just monkey work, i.e. nothing new about implementing a simple math formula in a programming language and besides most of the effort will unfortunately be around the the audio plugin programming(growing cattle). On top of that, even if i do it, it will actually only be running for a couple of years, because whenever there's a new audio plugin platform, or a new incompatible release of same platform, i would have to learn how to grow cattle again using a different cow brand.
+At some point landed on a page that described mathematical models of "amplifier tubes behavior" and thought, here's something interesting, modeling the behavior of a real tube sound quality sounds like a great idea for a guitar pedal simulation, lets implement this? But wait a minute, implementing it is actually just monkey work, i.e. nothing new about implementing a simple math formula in a programming language and besides most of the effort will unfortunately be around the the audio plugin programming(growing cattle). And on top of that, even if i do it, it will only be running for a couple of years, because when a new audio plugin platform arrives, i will have to do it again&hellip;
 </p>
 <p>
-But look at the math work done here, first, modeling a tube is all about simulating pedal behavior(so is work focused on the right thing) and second the result of this work is a theoretical model that can be implemented in any computer simulation or even in a stand alone digital chip. So, unlike the audio plugin implementation, the math modeling work is truly platform independent and without expiration date, this is real gold.
-But again, just the Math by itself will not make my new guitar pedal.
+But lets look at the Math modeling work, first, modeling a tube is all about simulating a real sound circuit behavior(so is focused on the right thing) and second the result of this work is a theoretical model that can be implemented in any computer simulation or even in a stand alone digital chip. So, unlike the audio plugin implementation, the math modeling work is truly platform independent and without expiration date, this is the real gold.
 </p>
 </div>
 
@@ -68,18 +65,12 @@ But again, just the Math by itself will not make my new guitar pedal.
 
 
 <p>
-Then by accident discovered some guitar effects simulations made in Matlab, looked at the source code! Brilliant! Short and directly to the point. High level algorithm implementation of audio effects&hellip; Very little cattle growing required.
-Ok true, Matlab end product is not really suited for a production like guitar processing integrated with professional audio recording software, but is perfect for prototyping, experimenting with ideas, and try out the amplifier tube math modeling.
-Besides, Matlab is a tool that does a lot more besides audio processing, so the time invested in learning it can be leveraged/applied to many other fields. Thus, comparing Matlab vs audio plugin programming, the Matlab(for my purposes) is a much better Tool.
+But then again, just the Math by itself will not make my new guitar pedal, so we still need something else that will implement that theoretical model into some platform&hellip; 
+I continue to web surfing and by accident found some guitar effects simulations made in Matlab, looked at the source code&hellip; Brilliant! Short and directly to the point. High level algorithm implementation of audio effects&hellip; This will allow to try out the tubes math models i found before with little cattle growing obligations.
 </p>
 <p>
-If we think from tools point of view, actually Matlab, Math, Cattle Growing, audio plugin development are in fact all Tools used for an end goal. Thus, if i have to choose which Tool i should invest my time on, i should choose wisely, but at same time keep in mind that the Tool is still just a means to an end not the end itself(do keep an eye on the prize).
-</p>
-<p>
-And by the way, Tools are also very much intermingled with Profession/Trades. A Profession is very much defined by the set of Tools used. And a Profession is something that sticks to you for long time, so avoid picking tools/professions with short expiration dates.
-</p>
-<p>
-As promised, the point: Picking the right Tool is like picking the chicken of the golden eggs. The gold eggs alone will not make guitar pedals, but very much help keeping the cattle growing obligations to a minimum.
+So as promised, the point: Tools matter, because they can distract you from focusing on the right things. Some Cattle Growing is required, but try keep it to a minimum and focus instead on the gold.
 </p></div>
 </div>
-
+<div id="postamble">
+</div>
