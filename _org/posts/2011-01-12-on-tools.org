@@ -1,4 +1,4 @@
-#+TITLE: On Tools. Starring guitar pedals, cattle growing and math.
+#+TITLE: On Tools. Featuring guitar pedals, cattle growing and math.
 #+HTML: <category> guitar math matlab audio </category>
 #+OPTIONS: timestamp:nil
 
