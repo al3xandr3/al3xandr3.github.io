@@ -96,7 +96,7 @@ $(function () {
   }
   
   //center images in posts
-  $("#post p img").parent().css("text-align", "center");
+  //$("#post p img").parent().css("text-align", "center");
 
  // [jump] to top
   $('.jump').click(function () {
