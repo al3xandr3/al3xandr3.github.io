@@ -55,7 +55,7 @@ $(function () {
   }).addClass("alt");
 
   $("#post").css({
-    "font-size": "110%"
+    "font-size": "107%"
   });
 
   $("#footer").css({
