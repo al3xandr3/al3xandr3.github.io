@@ -25,8 +25,9 @@ $(function () {
   $("#title").css({
     "float": "left", 
     "font-size": "330%",
+    "letter-spacing": "-.08em",
     "border-bottom": "0px solid"
-  }).addClass("alt");
+  });
   
   $("ul").css({
     "list-style": "none outside none", 
