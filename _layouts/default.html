@@ -17,7 +17,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="/css/blueprint/screen.css"
-          type="text/css" media="screen, projection" />
+      type="text/css" media="screen, projection" />   
     <link rel="stylesheet" href="/css/blueprint/print.css"
       type="text/css" media="print" />
     <!--[if lt IE 8]>
@@ -28,9 +28,10 @@
        type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="/css/jqModal.css"
           type="text/css" media="screen, projection" />
+
     <!-- JS -->
     <script type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script type="text/javascript" src="/js/al3xandr3.js"></script>
     <script type="text/javascript" src="/js/jqModal.js"></script>
    
@@ -49,29 +50,39 @@
   </head>
   <body>
     <div class="container">
-    <div id="main" class="span-15 prepend-1 colborder">
-      <div id="header">
-        <a href="/" id="header-title">{{ site.title }}</a>
-      </div>    
-      <div id="search" style="display: none;"> {% include search.html %}</div>
-      <div id="content">        
-        {{ content }}
-      </div>
+
+    <div id="header" class="span-21 prepend-1">
+      <hr class="space">
+      <a href="/" id="title">{{ site.title }}</a>
+
+      <ul id="menu" style="float: right;">
+        <li><a href="/">home</a></li>
+        <li><a href="/pages/al3xandr3.html" id="about">about</a></li>
+        <li><a href="javascript:void(0);" id="search">search</a></li>
+        <li><a href="http://feeds.feedburner.com/al3xandr3" target="_blank">rss</a></li>
+      </ul>
+      
+      <hr>
     </div>
-    
-    <div id="sidebar" class="span-6 last">
-      <img alt="al3xandr3 logo" src="http://al3xandr3.github.com/img/dice.png" title="al3xandr3 logo">
-      <br>
-      <a href="/pages/al3xandr3.html" class="title-link" id="about-link">about</a>
-      <br>
-      <a href="javascript:void(0);" class="title-link" id="search-link">search</a>        
-      <br>
-      <a href="http://feeds.feedburner.com/al3xandr3" target="_blank" class="title-link">rss</a>
-      <br>
-      <br>
-      {% include twitter.html %}
-   </div>
-    
+      
+      <div id="main" class="span-15 prepend-1 colborder">
+        <div id="content">        
+          {{ content }}
+        </div>
+      </div>
+      
+      <div id="sidebar" class="span-6 last">
+        <div id="searchbox" style="display: none;">{% include search.html %}</div>
+        {% include twitter.html %}  
+      </div>
+
+      
+      <div id="footer" class="span-21 prepend-1">
+        <hr class="space">
+        <hr>
+        <p style="text-align: center;">  &copy; 2011 {{ site.title }}</p>
+      </div>
+      
    </div>
   </body>
 </html>

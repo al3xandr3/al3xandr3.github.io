@@ -1,51 +1,87 @@
 /*global jQuery, _gaq $*/
 /*jslint bitwise: true, browser: true, eqeqeq: true, immed: true, newcap: true, nomen: true, onevar: true, plusplus: true, white: true, widget: true, undef: true, indent: 2*/
 
-(function ($) {
-  $.fn.spanifyText = function () {   
-    return this.each(function () {
-      var $this = $(this), //holds a reference to the current element
-          new_txt = "";
-      
-      //iterates over each character of the text of the element
-      $.each($this.text(), function (key, value) {
-        new_txt += "<span>" + value + "</span>";
-      });
+var al3xandr3 = {};
 
-      $this.html(new_txt);
-    });
-  };
-}(jQuery));
-
-var AL3XANDR3 = {};
-
-AL3XANDR3.colorHeader = function (color) {
-  $("#header-title").spanifyText().children().filter(function (index) {
-    return $(this).text() === '3';    
-  }).css('color', color);
-};
-
-AL3XANDR3.colorSidebar = function  (color) {
-  $("#sidebar a").spanifyText();
-  $.each($("#sidebar a"), function (k, v) {
-    $(v).children().filter(':nth(2)').css('color', color);
-  });
-};
-
-AL3XANDR3.themeColor1 = "#F1DF27";
-AL3XANDR3.themeColor2 = "#F7D116";
-AL3XANDR3.themeColor3 = "#E38E24";
+al3xandr3.color1 = "#FFFFFF";
+al3xandr3.color2 = "#A66553";
+al3xandr3.color3 = "#E7E7E7";
+al3xandr3.color4 = "#819B4D";
 
 //On Document Ready
 $(function () {
 
+  //////CSS
+  $("a").hover(function () {
+    $(this).css('background-color', al3xandr3.color3);
+  }, function () {
+    $(this).css('background-color', al3xandr3.color1);
+  }).css({
+    "color": "#333",
+    "text-decoration": "none",
+    "border-bottom": "1px solid " + al3xandr3.color3
+  });
 
-  $('#about-link').click(function (ev) {
+  $("#title").css({
+    "float": "left", 
+    "font-size": "330%",
+    "border-bottom": "0px solid"
+  }).addClass("alt");
+  
+  $("ul").css({
+    "list-style": "none outside none", 
+    "padding-top": "1.5em"
+  });
+ 
+  $("#menu li").css({
+    "float": "left", 
+    "margin": "0 0.3em",
+    "font-size": "150%"
+  }).addClass("alt");
+
+  $("#menu li a").css({
+    "color": "#333",
+    "text-decoration": "none",
+    "border-bottom": "0px solid "
+  });
+
+  $("#content").css({
+    "font-family": "Geneva",
+  });
+
+  $("#post-list li #post-summary").css({   
+    "font-size": "120%",
+    "margin": "0.6em"
+  }).addClass("alt");
+
+  $("#post").css({
+    "font-size": "110%"
+  });
+
+  $("#footer").css({
+    "font-size": "110%"
+  }).addClass("alt");
+  ///////////////
+
+  //Search
+  $('#search').toggle(
+      function () {
+        $("#searchbox").show(function () {
+          $('#search-input').focus();
+        });
+      },
+      function () { 
+        $("#searchbox").hide("slow");
+      }
+    );
+
+  //About
+  $('#about').click(function (ev) {
     ev.preventDefault();
-    $("<div id='about-dialog' class='jqmWindow'></div>").insertAfter('#header');
-    $('#about-dialog').jqm({
+    $("<div id='aboutbox' class='jqmWindow'></div>").insertAfter('#header');
+    $('#aboutbox').jqm({
       onShow: function (hash) { 
-        hash.w.css({"background-color": 'white'}).fadeIn('2000'); 
+        hash.w.css({"background-color": al3xandr3.color1}).fadeIn('2000'); 
       }, 
       onHide: function  (hash) { 
         hash.w.fadeOut('2000', function () { 
@@ -55,65 +91,52 @@ $(function () {
     });
     $.get('/pages/al3xandr3.html', function (data) {
       var content = $(data).find('div#about').html();
-      $('#about-dialog').html("<a href='#' class='jqmClose'>Close</a><hr>");
-      $('#about-dialog').append(content);
-      $('#about-dialog').jqmShow();
+      $('#aboutbox').html("<a href='#' style='float: right;' class='jqmClose'>Close</a>");
+      $('#aboutbox').append(content);
+      $('#aboutbox').jqmShow();
       if (typeof _gaq !== 'undefined') {
         _gaq.push(['_trackEvent', 'About', 'Open']); 
       }
-    });
-    
+    });    
   });
+  
+ // Jump to Top
+  $('.jump').click(function () {
+    $('html, body').animate({scrollTop: 0}, 'slow');
+  }); 
 
-  //Color Title Numbers
-  AL3XANDR3.colorHeader(AL3XANDR3.themeColor3);
-  AL3XANDR3.colorSidebar(AL3XANDR3.themeColor3);
-
-  //CV fixes
-  $("caption").css({"background-color": '#F9F9F4'});
-
-  if (location.pathname === "/pages/cv.html") { 
-    $('table caption').css({"background-color": 'white'});
-    $('table tbody td').css({"background": 'none'});
-    $('table').find('td').filter(':nth-child(1)')
-      .css({"border-right-width": '0px'})
-      .css({"border-style": 'solid'})
-      .css({"border-color": 'grey'});
-  }
-
-  /* for images to show when in localhost */
+  /* for images in localhost */
   if (location.host === "localhost:4000") {
     $("img").attr('src', function () {
       return this.src.replace("al3xandr3.github.com", "localhost:4000");
     });
   }
 
-  /* for images to show when in localhost */
+  /* for links in localhost */
   if (location.host === "localhost:4000") {
     $("a").attr('href', function () {
       return this.href.replace("al3xandr3.github.com", "localhost:4000");
     });
   }
-  
-  //center images in posts
-  //$("#post p img").parent().css("text-align", "center");
 
- // [jump] to top
-  $('.jump').click(function () {
-    $('html, body').animate({scrollTop: 0}, 'slow');
-  }); 
+/*
+$("body").css({"background-color": "white"});
+ $(".container").css({"background-color": "white"});
+ $("#main").css({"background-color": "white"});
 
-  // toggle [about]
-  //$("#search").hide();
-  $('#search-link').toggle(
-      function () {
-        $("#search").show(function () {
-          $('#search-input').focus();
-        });
-      },
-      function () { 
-        $("#search").hide("slow");
-      }
-    );
+$(".title-link").css({"background-color": "#384470"});
+ $("#tw-title").css({"color": "#ADADAD"});
+ $("#header-title").css({"color": "#ADADAD"});
+$("#header-title").css({"font-size": "150%"});
+ $(".title-link").hover( function(){
+     $(this).css('background-color', '#38705B');
+  },
+  function(){
+     $(this).css('background-color', '#336699');
+  });
+ $(".colborder").css({"border-right": "0px solid #DDDDDD"});
+$("#twt").css({"color": "#38705B"});
+$("#sidebar").css({"padding-top": "105px"});
+*/
 
 });
