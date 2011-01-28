@@ -46,7 +46,7 @@ $(function () {
   });
 
   $("#content").css({
-    "font-family": "Geneva",
+    "font-family": "Geneva"
   });
 
   $("#post-list li #post-summary").css({   
@@ -61,6 +61,9 @@ $(function () {
   $("#footer").css({
     "font-size": "110%"
   }).addClass("alt");
+  
+  $("td").removeClass("left");
+ 
   ///////////////
 
   //Search
@@ -111,32 +114,11 @@ $(function () {
       return this.src.replace("al3xandr3.github.com", "localhost:4000");
     });
   }
-
+ 
   /* for links in localhost */
   if (location.host === "localhost:4000") {
     $("a").attr('href', function () {
       return this.href.replace("al3xandr3.github.com", "localhost:4000");
     });
   }
-
-/*
-$("body").css({"background-color": "white"});
- $(".container").css({"background-color": "white"});
- $("#main").css({"background-color": "white"});
-
-$(".title-link").css({"background-color": "#384470"});
- $("#tw-title").css({"color": "#ADADAD"});
- $("#header-title").css({"color": "#ADADAD"});
-$("#header-title").css({"font-size": "150%"});
- $(".title-link").hover( function(){
-     $(this).css('background-color', '#38705B');
-  },
-  function(){
-     $(this).css('background-color', '#336699');
-  });
- $(".colborder").css({"border-right": "0px solid #DDDDDD"});
-$("#twt").css({"color": "#38705B"});
-$("#sidebar").css({"padding-top": "105px"});
-*/
-
 });
