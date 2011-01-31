@@ -63,8 +63,11 @@ $(function () {
     "font-size": "110%"
   }).addClass("alt");
  
-  $("#twt").css({
-    "color": "#666666"
+  $("#sidebar").css({
+    "color": "#999999",
+    "border-left": "1px solid #DDDDDD",
+    "margin-left": "20px",
+    "padding-left": "15px"
   });
 
   $("td").removeClass("left");
