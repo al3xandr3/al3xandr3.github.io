@@ -62,7 +62,11 @@ $(function () {
   $("#footer").css({
     "font-size": "110%"
   }).addClass("alt");
-  
+ 
+  $("#twt").css({
+    "color": "#666666"
+  });
+
   $("td").removeClass("left");
  
   ///////////////
