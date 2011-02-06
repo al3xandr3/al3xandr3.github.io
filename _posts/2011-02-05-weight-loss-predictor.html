@@ -1,0 +1,274 @@
+--- 
+layout: post
+title: Weight Loss Predictor
+categories: 
+- r
+- health
+- weight
+- loss
+- predicting
+- monte
+- carlo
+- orgmode
+- babel
+---
+
+
+
+
+
+
+
+
+<p>
+Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
+</p>
+<p>
+Its an interesting book, because it has a good scientific approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results&hellip; Notice the similar principles of AB testing.
+</p>
+<p>
+This book couldn't have arrived in a better time as i just peeked my heaviest weight in a  long time, blame it on [insert favorite reason]&hellip; so, long story short and I am now on the 3rd week of the low-carb diet described in the book. 
+</p>
+<p>
+But of course, like with all diets, I'm quickly growing impatient of when i'm going to reach my goal so that i can relax(just a bit) the current strict diet, lets try to predict it.
+</p>
+
+<div class="outline-2" id="outline-container-1">
+<h2 id="sec-1">Data </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Have been tracking my weight using google spreadsheets, so i can get the data into R like so:
+</p>
+
+
+
+<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+</span>mydata <span style="color: #008b8b;">&lt;-</span> read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&amp;hl=en_GB&amp;single=true&amp;gid=3&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Create a new column with the proper date format
+</span>mydata$timestamp = as.Date(mydata$timestamp, format=<span style="color: #8b2252;">'%d/%m/%Y'</span>)
+</pre>
+
+
+
+
+
+</div>
+
+<div class="outline-3" id="outline-container-1_1">
+<h3 id="sec-1_1">Normality </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+<p>
+Normality is not really a requirement for this simulation, monte carlo methods are independent of the distribution, but lets anyway take a peek to see how the whole data looks like.
+</p>
+
+
+
+<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">include ggplot2
+</span><span style="color: #008b8b;">library</span>(ggplot2)
+
+<span style="color: #0000ff;">plotnorm</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (mydata, mycolname) {
+  pl <span style="color: #008b8b;">&lt;-</span> ggplot(data = mydata)
+  subvp <span style="color: #008b8b;">&lt;-</span> viewport(width=0.4, height=0.4, x=0.22, y=0.80)
+
+  his = pl + 
+        geom_histogram(aes_string(x=mycolname,y=<span style="color: #8b2252;">"..density.."</span>),alpha=0.2,binwidth=2) + 
+        geom_density(aes_string(x=mycolname)) + 
+        opts(title = names(mydata[mycolname]))
+
+  qqp = pl + 
+        geom_point(aes_string(sample=mycolname), stat=<span style="color: #8b2252;">"qq"</span>) + labs(x=<span style="color: #228b22;">NULL</span>, y=<span style="color: #228b22;">NULL</span>) + 
+        opts(title = <span style="color: #8b2252;">"QQ"</span>)
+
+  print(his)
+  print(qqp, vp = subvp)
+}
+
+plotnorm(mydata, <span style="color: #8b2252;">"kg"</span>)
+</pre>
+
+
+
+
+<p>
+<img src="http://al3xandr3.github.com/img/w-loss-normal.png" alt="http://al3xandr3.github.com/img/w-loss-normal.png" />
+</p>
+<p>
+Its close to normal distribution and says my weight has been mostly(in average) 80.5kg for the past 3 years.
+</p>
+</div>
+</div>
+
+</div>
+
+<div class="outline-2" id="outline-container-2">
+<h2 id="sec-2">Predicting the Future </h2>
+<div class="outline-text-2" id="text-2">
+
+
+<p>
+Now using Monte Carlo methods lets simulate the future based on the weight changes that happened since start of diet.
+</p>
+<p>
+It uses the weight changes by day, so we need to do some trickery to fill in the missing days so we get the changes for every single day. And the idea is if we have only day1=81 and day3=80, then we calculate that day2=80.5, because in 2 days we see a diference of 1, then per day is 0.5. 
+We can confirm(prove) that this calculated assumption is a good one, by later comparing the simulation on data with all days filled in against the same data with some removed days in the middle, and confirm that results are the same.
+</p>
+<p>
+So lets gets the full days with the delta:
+</p>
+
+
+
+<pre class="src src-R"><span style="color: #008b8b;">library</span>(zoo) <span style="color: #b22222;"># </span><span style="color: #b22222;">for the missing values interpolation
+</span>
+<span style="color: #0000ff;">fill.all.days</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (mydata, timecolname, valuecolname) {
+  dtrange = range(mydata[,timecolname])
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">create a data frame with every single day
+</span>  alldays = data.frame(tmp=seq(as.Date(dtrange[1]), as.Date(dtrange[2]), <span style="color: #8b2252;">"days"</span>))
+  colnames(alldays) <span style="color: #008b8b;">&lt;-</span> c(timecolname) <span style="color: #b22222;"># </span><span style="color: #b22222;">rename tmp to proper timecolname
+</span>  <span style="color: #b22222;"># </span><span style="color: #b22222;">add the existing values
+</span>  alldays = merge(alldays, mydata, by=timecolname, all=<span style="color: #228b22;">TRUE</span>)
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">fill in the missing ones
+</span>  alldays[,valuecolname] <span style="color: #008b8b;">&lt;-</span> na.approx(alldays[,valuecolname])
+  <span style="color: #7f007f;">return</span>(alldays)
+}
+
+<span style="color: #b22222;">#</span><span style="color: #b22222;">only weight from diet
+</span>dietdata = subset(mydata, timestamp &gt;= <span style="color: #8b2252;">"2011-01-17"</span>)
+lastweight = tail(dietdata$kg, n=1)
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">fill in missing days
+</span>dietalldays = fill.all.days(dietdata, <span style="color: #8b2252;">"timestamp"</span>, <span style="color: #8b2252;">"kg"</span>)
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">weight difference day by day
+</span>kgdelta <span style="color: #008b8b;">&lt;-</span> diff(dietalldays$kg)
+
+dietalldays$delta <span style="color: #008b8b;">&lt;-</span> c(0, kgdelta)
+dietalldays
+</pre>
+
+
+
+
+
+
+<pre class="example">
+    timestamp     kg  delta
+1  2011-01-17 84.000  0.000
+2  2011-01-18 83.100 -0.900
+3  2011-01-19 82.975 -0.125
+4  2011-01-20 82.850 -0.125
+5  2011-01-21 82.725 -0.125
+6  2011-01-22 82.600 -0.125
+7  2011-01-23 82.500 -0.100
+8  2011-01-24 82.900  0.400
+9  2011-01-25 81.900 -1.000
+10 2011-01-26 81.400 -0.500
+11 2011-01-27 81.300 -0.100
+12 2011-01-28 81.100 -0.200
+13 2011-01-29 81.000 -0.100
+14 2011-01-30 80.200 -0.800
+15 2011-01-31 79.400 -0.800
+16 2011-02-01 79.900  0.500
+17 2011-02-02 79.800 -0.100
+18 2011-02-03 79.500 -0.300
+19 2011-02-04 80.000  0.500
+20 2011-02-05 80.200  0.200
+21 2011-02-06 80.700  0.500
+</pre>
+
+
+
+<p>
+The big weight loss jump on row 9 and 10 were because of a nasty stomach virus, so when getting back to normality i got some weight back.
+</p>
+
+</div>
+
+<div class="outline-3" id="outline-container-2_1">
+<h3 id="sec-2_1">So, what is going to be my weight in a week? </h3>
+<div class="outline-text-3" id="text-2_1">
+
+
+
+
+
+<pre class="src src-R"><span style="color: #0000ff;">predict.weight.in.days</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span>(days, inicialweight, deltavector) {
+  weight = inicialweight
+  <span style="color: #7f007f;">for</span> (i <span style="color: #7f007f;">in</span> 1:days) {
+    weight = weight + sample(deltavector, 1, replace=<span style="color: #228b22;">TRUE</span>)
+  }
+  <span style="color: #7f007f;">return</span>(weight)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Simulate it 10k times
+</span>summary(replicate(10000, predict.weight.in.days(7, lastweight, kgdelta)))
+</pre>
+
+
+
+
+
+<pre class="example">
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  75.60   78.78   79.60   79.57   80.38   83.40
+</pre>
+
+
+<p>
+It says around ~79.6 in a week's time. Let see if that makes sense: its been now 3 weeks of diet, with a loss of 84-80.7=3.3, thus 1.1 per week, so 80.7-1.1 = 79.6 kg matches up, thus predictor is calculating correctly.
+</p>
+</div>
+
+</div>
+
+<div class="outline-3" id="outline-container-2_2">
+<h3 id="sec-2_2">And, when am i getting to 75kg? </h3>
+<div class="outline-text-3" id="text-2_2">
+
+
+
+
+
+<pre class="src src-R"><span style="color: #0000ff;">days.to.weight</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span>(weight, inicialweight, deltavector) {
+  target = inicialweight
+  days = 0
+  <span style="color: #7f007f;">while</span> (target &gt; weight) {
+    target = target + sample(deltavector, 1, replace=<span style="color: #228b22;">TRUE</span>)
+     days = days + 1
+     <span style="color: #7f007f;">if</span> (days &gt;= 1095) <span style="color: #b22222;"># </span><span style="color: #b22222;">if value too crazy just interrupt the loop
+</span>        <span style="color: #7f007f;">break</span>
+  }
+  <span style="color: #7f007f;">return</span>(days)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">Simulate it 10k times
+</span>summary(replicate(10000, days.to.weight(75, lastweight, kgdelta)))
+</pre>
+
+
+
+
+
+<pre class="example">
+
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   8.00   25.00   33.00   35.98   44.00  167.00
+</pre>
+
+
+<p>
+In a month + a week or so, IF i continue to lose weight at this speed.
+</p>
+<p>
+Weight loss is easier at the beginning of a diet, but i have now a better idea on what to expect, and better yet, i can re-run this code from time to time to re-calculate the predictions, that will automatically adapt to weight loss slow downs if/when they happen.
+</p></div>
+</div>
+</div>
+<div id="postamble">
+</div>

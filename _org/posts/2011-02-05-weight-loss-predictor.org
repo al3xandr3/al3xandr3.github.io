@@ -1,0 +1,179 @@
+#+TITLE: Weight Loss Predictor
+#+HTML: <category> R health weight loss predicting monte carlo orgmode babel </category>
+#+OPTIONS: timestamp:nil
+
+Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
+
+Its an interesting book, because it has a good scientific approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results... Notice the similar principles of AB testing.
+
+This book couldn't have arrived in a better time as i just peeked my heaviest weight in a  long time, blame it on [insert favorite reason]... so, long story short and I am now on the 3rd week of the low-carb diet described in the book. 
+
+But of course, like with all diets, I'm quickly growing impatient of when i'm going to reach my goal so that i can relax(just a bit) the current strict diet, lets try to predict it.
+
+* Data
+
+Have been tracking my weight using google spreadsheets, so i can get the data into R like so:
+
+#+begin_src R :session R :exports code  :results output
+
+# load the data
+mydata <- read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE)
+
+# Create a new column with the proper date format
+mydata$timestamp = as.Date(mydata$timestamp, format='%d/%m/%Y')
+#+end_src
+
+#+results:
+
+** Normality
+
+Normality is not really a requirement for this simulation, monte carlo methods are independent of the distribution, but lets anyway take a peek to see how the whole data looks like.
+
+#+begin_src R :session R  :file /my/al3xandr3.github.com/img/w-loss-normal.png
+
+# include ggplot2
+library(ggplot2)
+
+plotnorm <- function (mydata, mycolname) {
+  pl <- ggplot(data = mydata)
+  subvp <- viewport(width=0.4, height=0.4, x=0.22, y=0.80)
+
+  his = pl + 
+        geom_histogram(aes_string(x=mycolname,y="..density.."),alpha=0.2,binwidth=2) + 
+        geom_density(aes_string(x=mycolname)) + 
+        opts(title = names(mydata[mycolname]))
+
+  qqp = pl + 
+        geom_point(aes_string(sample=mycolname), stat="qq") + labs(x=NULL, y=NULL) + 
+        opts(title = "QQ")
+
+  print(his)
+  print(qqp, vp = subvp)
+}
+
+plotnorm(mydata, "kg")
+#+end_src
+
+#+results:
+[[file:/my/al3xandr3.github.com/img/w-loss-normal.png]]
+
+[[http://al3xandr3.github.com/img/w-loss-normal.png]]
+
+Its close to normal distribution and says my weight has been mostly(in average) 80.5kg for the past 3 years.
+
+* Predicting the Future
+
+Now using Monte Carlo methods lets simulate the future based on the weight changes that happened since start of diet.
+
+It uses the weight changes by day, so we need to do some trickery to fill in the missing days so we get the changes for every single day. And the idea is if we have only day1=81 and day3=80, then we calculate that day2=80.5, because in 2 days we see a diference of 1, then per day is 0.5. 
+We can confirm(prove) that this calculated assumption is a good one, by later comparing the simulation on data with all days filled in against the same data with some removed days in the middle, and confirm that results are the same.
+ 
+So lets gets the full days with the delta:
+
+#+begin_src R :session R :results output :exports both
+library(zoo) # for the missing values interpolation
+
+fill.all.days <- function (mydata, timecolname, valuecolname) {
+  dtrange = range(mydata[,timecolname])
+  # create a data frame with every single day
+  alldays = data.frame(tmp=seq(as.Date(dtrange[1]), as.Date(dtrange[2]), "days"))
+  colnames(alldays) <- c(timecolname) # rename tmp to proper timecolname
+  # add the existing values
+  alldays = merge(alldays, mydata, by=timecolname, all=TRUE)
+  # fill in the missing ones
+  alldays[,valuecolname] <- na.approx(alldays[,valuecolname])
+  return(alldays)
+}
+
+#only weight from diet
+dietdata = subset(mydata, timestamp >= "2011-01-17")
+lastweight = tail(dietdata$kg, n=1)
+
+# fill in missing days
+dietalldays = fill.all.days(dietdata, "timestamp", "kg")
+
+# weight difference day by day
+kgdelta <- diff(dietalldays$kg)
+
+dietalldays$delta <- c(0, kgdelta)
+dietalldays
+#+end_src
+
+#+results:
+#+begin_example
+
+    timestamp     kg  delta
+1  2011-01-17 84.000  0.000
+2  2011-01-18 83.100 -0.900
+3  2011-01-19 82.975 -0.125
+4  2011-01-20 82.850 -0.125
+5  2011-01-21 82.725 -0.125
+6  2011-01-22 82.600 -0.125
+7  2011-01-23 82.500 -0.100
+8  2011-01-24 82.900  0.400
+9  2011-01-25 81.900 -1.000
+10 2011-01-26 81.400 -0.500
+11 2011-01-27 81.300 -0.100
+12 2011-01-28 81.100 -0.200
+13 2011-01-29 81.000 -0.100
+14 2011-01-30 80.200 -0.800
+15 2011-01-31 79.400 -0.800
+16 2011-02-01 79.900  0.500
+17 2011-02-02 79.800 -0.100
+18 2011-02-03 79.500 -0.300
+19 2011-02-04 80.000  0.500
+20 2011-02-05 80.200  0.200
+21 2011-02-06 80.700  0.500
+#+end_example
+
+The big weight loss jump on row 9 and 10 were because of a nasty stomach virus, so when getting back to normality i got some weight back.
+
+** So, what is going to be my weight in a week?
+
+#+begin_src R :session R :results output :exports both
+predict.weight.in.days <- function(days, inicialweight, deltavector) {
+  weight = inicialweight
+  for (i in 1:days) {
+    weight = weight + sample(deltavector, 1, replace=TRUE)
+  }
+  return(weight)
+}
+
+# Simulate it 10k times
+summary(replicate(10000, predict.weight.in.days(7, lastweight, kgdelta)))
+#+end_src
+
+#+results:
+: 
+:    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+:   75.18   78.78   79.60   79.56   80.38   83.50
+
+It says around ~79.6 in a week's time. Let see if that makes sense: its been now 3 weeks of diet, with a loss of 84-80.7=3.3, thus 1.1 per week, so 80.7-1.1 = 79.6 kg matches up, thus predictor is calculating correctly.
+
+** And, when am i getting to 75kg?
+
+#+begin_src R :session R :results output :exports both
+days.to.weight <- function(weight, inicialweight, deltavector) {
+  target = inicialweight
+  days = 0
+  while (target > weight) {
+    target = target + sample(deltavector, 1, replace=TRUE)
+     days = days + 1
+     if (days >= 1095) # if value too crazy just interrupt the loop
+        break
+  }
+  return(days)
+}
+
+# Simulate it 10k times
+summary(replicate(10000, days.to.weight(75, lastweight, kgdelta)))
+#+end_src
+
+#+results:
+: 
+:    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+:    7.00   25.00   33.00   36.48   45.00  169.00
+
+In a month + a week or so, IF i continue to lose weight at this speed.
+
+Weight loss is easier at the beginning of a diet, but i have now a better idea on what to expect, and better yet, i can re-run this code from time to time to re-calculate the predictions, that will automatically adapt to weight loss slow downs if/when they happen.
