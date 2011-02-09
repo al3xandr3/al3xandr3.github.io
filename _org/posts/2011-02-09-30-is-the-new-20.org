@@ -1,10 +1,10 @@
-#+TITLE: 30 is the new 20, right ?
+#+TITLE: 30 is the new 20, right?
 #+HTML: <category> birthday </category>
 #+OPTIONS: timestamp:nil
 
 Well i surely hope so, as i just turned 30. 
 
-Turned the computer on today and was welcomed with many great wishes and kind words from my  Friends and Family, how cool is that? Thanks Everybody!
+Turned the computer on today and was welcomed with many great wishes and kind words from my  Family and Friend.
 
 [[http://al3xandr3.github.com/img/bday-saxeo.png]]
 
@@ -14,12 +14,16 @@ Turned the computer on today and was welcomed with many great wishes and kind wo
 * Facebok
 [[http://al3xandr3.github.com/img/bday-fb.png]]
 
-
-And to finish in style in the Email:
-
+* Email
 [[http://al3xandr3.github.com/img/bday-superbock.png]]
-
 (Portuguese Beer Company, wait what???) 
 
+And to finish in style, a reference from childhood, from my cousin:
 
+#+BEGIN_HTML
+<iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/B7UmUX68KtE" frameborder="0" allowfullscreen></iframe>
+<br>
+<br>
+#+END_HTML
 
+*How cool is that? Thanks Everybody!*
