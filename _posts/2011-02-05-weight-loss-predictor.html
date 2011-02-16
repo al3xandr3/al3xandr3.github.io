@@ -22,8 +22,7 @@ categories:
 
 <p>
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
-</p>
-<p>
+y
 Its an interesting book, because it has a scientific approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results&hellip; Notice the similar principles of AB testing.
 </p>
 <p>
@@ -45,7 +44,7 @@ Have been tracking my weight using google spreadsheets, so i can get the data in
 
 
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
-</span>mydata <span style="color: #008b8b;">&lt;-</span> read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&amp;hl=en_GB&amp;single=true&amp;gid=3&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&amp;hl=en_GB&amp;single=true&amp;gid=3&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Create a new column with the proper date format
 </span>mydata$timestamp = as.Date(mydata$timestamp, format=<span style="color: #8b2252;">'%d/%m/%Y'</span>)
@@ -71,9 +70,9 @@ Normality is not really a requirement for this simulation, monte carlo methods a
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">include ggplot2
 </span><span style="color: #008b8b;">library</span>(ggplot2)
 
-<span style="color: #0000ff;">gghist</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (mydata, mycolname) {
-  pl <span style="color: #008b8b;">&lt;-</span> ggplot(data = mydata)
-  subvp <span style="color: #008b8b;">&lt;-</span> viewport(width=0.35, height=0.35, x=0.84, y=0.84)
+gghist = <span style="color: #7f007f;">function</span> (mydata, mycolname) {
+  pl = ggplot(data = mydata)
+  subvp = viewport(width=0.35, height=0.35, x=0.84, y=0.84)
 
   his = pl + 
         geom_histogram(aes_string(x=mycolname,y=<span style="color: #8b2252;">"..density.."</span>),alpha=0.2) + 
@@ -121,22 +120,22 @@ The idea for filling in missing days is; if we have only day1=81 and day3=80, th
 We can confirm(prove) that this calculated assumption is a good one, by later comparing the simulation on data with all days filled in against the same data with some removed days in the middle, and confirm that results are the same.
 </p>
 <p>
-So lets gets the every day weight(kg) and its change(delta):
+So lets get the weight(kg) change(delta), for every day:
 </p>
 
 
 
 <pre class="src src-R"><span style="color: #008b8b;">library</span>(zoo) <span style="color: #b22222;"># </span><span style="color: #b22222;">for the missing values interpolation
 </span>
-<span style="color: #0000ff;">fill.all.days</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (mydata, timecolname, valuecolname) {
+fill.all.days = <span style="color: #7f007f;">function</span> (mydata, timecolname, valuecolname) {
   dtrange = range(mydata[,timecolname])
   <span style="color: #b22222;"># </span><span style="color: #b22222;">create a data frame with every single day
 </span>  alldays = data.frame(tmp=seq(as.Date(dtrange[1]), as.Date(dtrange[2]), <span style="color: #8b2252;">"days"</span>))
-  colnames(alldays) <span style="color: #008b8b;">&lt;-</span> c(timecolname) <span style="color: #b22222;"># </span><span style="color: #b22222;">rename tmp to proper timecolname
+  colnames(alldays) = c(timecolname) <span style="color: #b22222;"># </span><span style="color: #b22222;">rename tmp to proper timecolname
 </span>  <span style="color: #b22222;"># </span><span style="color: #b22222;">add the existing values
 </span>  alldays = merge(alldays, mydata, by=timecolname, all=<span style="color: #228b22;">TRUE</span>)
   <span style="color: #b22222;"># </span><span style="color: #b22222;">fill in the missing ones
-</span>  alldays[,valuecolname] <span style="color: #008b8b;">&lt;-</span> na.approx(alldays[,valuecolname])
+</span>  alldays[,valuecolname] = na.approx(alldays[,valuecolname])
   <span style="color: #7f007f;">return</span>(alldays)
 }
 
@@ -148,10 +147,12 @@ lastweight = tail(dietdata$kg, n=1)
 </span>dietalldays = fill.all.days(dietdata, <span style="color: #8b2252;">"timestamp"</span>, <span style="color: #8b2252;">"kg"</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">weight difference day by day
-</span>kgdelta <span style="color: #008b8b;">&lt;-</span> diff(dietalldays$kg)
+</span>kgdelta = diff(dietalldays$kg)
 
-dietalldays$delta <span style="color: #008b8b;">&lt;-</span> c(0, kgdelta)
-dietalldays
+dietalldays$delta = c(0, kgdelta)
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">print only the 10 last values
+</span>tail(dietalldays, 10)
 </pre>
 
 
@@ -160,49 +161,33 @@ dietalldays
 
 
 <pre class="example">
-    timestamp     kg  delta
-1  2011-01-17 84.000  0.000
-2  2011-01-18 83.100 -0.900
-3  2011-01-19 82.975 -0.125
-4  2011-01-20 82.850 -0.125
-5  2011-01-21 82.725 -0.125
-6  2011-01-22 82.600 -0.125
-7  2011-01-23 82.500 -0.100
-8  2011-01-24 82.900  0.400
-9  2011-01-25 81.900 -1.000
-10 2011-01-26 81.400 -0.500
-11 2011-01-27 81.300 -0.100
-12 2011-01-28 81.100 -0.200
-13 2011-01-29 81.000 -0.100
-14 2011-01-30 80.200 -0.800
-15 2011-01-31 79.400 -0.800
-16 2011-02-01 79.900  0.500
-17 2011-02-02 79.800 -0.100
-18 2011-02-03 79.500 -0.300
-19 2011-02-04 80.000  0.500
-20 2011-02-05 80.200  0.200
-21 2011-02-06 80.700  0.500
-22 2011-02-07 80.500 -0.200
-23 2011-02-08 80.000 -0.500
+    timestamp   kg delta
+22 2011-02-07 80.5  -0.2
+23 2011-02-08 80.0  -0.5
+24 2011-02-09 79.9  -0.1
+25 2011-02-10 79.5  -0.4
+26 2011-02-11 79.6   0.1
+27 2011-02-12 79.2  -0.4
+28 2011-02-13 79.9   0.7
+29 2011-02-14 80.1   0.2
+30 2011-02-15 79.1  -1.0
+31 2011-02-16 78.9  -0.2
 </pre>
 
 
 
-<p>
-The big weight loss on rows 9,10,11 was because of a nasty stomach virus, so when getting back to normality i got most of that weight back.
-</p>
 
 </div>
 
 <div class="outline-3" id="outline-container-2_1">
-<h3 id="sec-2_1">So, what is going to be my weight in a week? </h3>
+<h3 id="sec-2_1">So what is going to be my weight in a week? </h3>
 <div class="outline-text-3" id="text-2_1">
 
 
 
 
 
-<pre class="src src-R"><span style="color: #0000ff;">predict.weight.in.days</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span>(days, inicialweight, deltavector) {
+<pre class="src src-R">predict.weight.in.days = <span style="color: #7f007f;">function</span>(days, inicialweight, deltavector) {
   weight = inicialweight
   <span style="color: #7f007f;">for</span> (i <span style="color: #7f007f;">in</span> 1:days) {
     weight = weight + sample(deltavector, 1, replace=<span style="color: #228b22;">TRUE</span>)
@@ -223,7 +208,7 @@ summary(mcWeightWeek)
 <pre class="example">
 
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  74.57   77.95   78.77   78.72   79.52   82.88
+  73.60   76.90   77.70   77.71   78.53   82.10
 </pre>
 
 
@@ -247,14 +232,14 @@ Another good thing about monte carlo methods is that they give a distribution of
 </div>
 
 <div class="outline-3" id="outline-container-2_2">
-<h3 id="sec-2_2">And, when am i getting to 75kg? </h3>
+<h3 id="sec-2_2">And when am i getting to 75kg? </h3>
 <div class="outline-text-3" id="text-2_2">
 
 
 
 
 
-<pre class="src src-R"><span style="color: #0000ff;">days.to.weight</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span>(weight, inicialweight, deltavector) {
+<pre class="src src-R">days.to.weight = <span style="color: #7f007f;">function</span>(weight, inicialweight, deltavector) {
   target = inicialweight
   days = 0
   <span style="color: #7f007f;">while</span> (target &gt; weight) {
@@ -279,17 +264,30 @@ summary(mcDays75)
 <pre class="example">
 
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   6.00   20.00   27.00   29.05   35.00  116.00
+   4.00   15.00   22.00   24.67   31.00  161.00
 </pre>
 
 
 <p>
-And the distribution:
+And the cumulative distribution:
 </p>
 
 
 
-<pre class="src src-R">gghist(data.frame(days=mcDays75), <span style="color: #8b2252;">"days"</span>)
+<pre class="src src-R"><span style="color: #b22222;">#</span><span style="color: #b22222;">Add dates to it, from today's date + x days
+</span>days75 = sort(Sys.Date() + mcDays75)
+<span style="color: #b22222;"># </span><span style="color: #b22222;">get the ecdf values into a dataframe
+</span>days75.ecdf = summarize(data.frame(days=days75), days = unique(days), 
+                        ecdf = ecdf(days)(unique(days)))
+<span style="color: #b22222;"># </span><span style="color: #b22222;">the point where its 85% sure i'll reach goal
+</span>prob85 = head(days75.ecdf[days75.ecdf$ecdf&gt;0.85,],1)
+<span style="color: #b22222;"># </span><span style="color: #b22222;">plot
+</span>ggplot(days75.ecdf, aes(days, ecdf)) + geom_step() +
+       ylab(<span style="color: #8b2252;">"probability"</span>) + 
+       geom_point(aes(x = prob85$days, y = prob85$ecdf)) +
+       geom_text(aes(x = prob85$days, y = prob85$ecdf, 
+                    label = paste(<span style="color: #8b2252;">"85% sure will reach goal on"</span>, prob85$days)), 
+                     hjust=-0.04)
 </pre>
 
 
@@ -299,13 +297,23 @@ And the distribution:
 <img src="http://al3xandr3.github.com/img/w-loss-75.png" alt="http://al3xandr3.github.com/img/w-loss-75.png" />
 </p>
 <p>
-Interesting, its more a Poison distribution then a Normal one.
-</p>
-<p>
 Also note that, weight loss is faster at the beginning of a diet, it tends to slow down over time, so to keep the predictions valid we need to continue record the weight and re-run the predictions from time to time.
 </p>
 <p>
 But as you see the slow carb diet seems to work, even without exercise. Tim's book is great, focusing on the smallest things possible for the bigger results(=efficiency).
+</p>
+</div>
+
+</div>
+
+<div class="outline-3" id="outline-container-2_3">
+<h3 id="sec-2_3">References </h3>
+<div class="outline-text-3" id="text-2_3">
+
+
+<p>
+Hard drive occupation prediction with R: 
+<a href="http://lpenz.github.com/articles/df0pred-1/index.html">part 1</a> and <a href="http://lpenz.github.com/articles/df0pred-2/index.html">part 2</a>, and thanks to Leandro Penz on the feedback.
 </p></div>
 </div>
 </div>

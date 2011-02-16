@@ -3,7 +3,7 @@
 #+OPTIONS: timestamp:nil
 
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
-
+y
 Its an interesting book, because it has a scientific approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results... Notice the similar principles of AB testing.
 
 This book couldn't have arrived in a better time as i just peeked my heaviest weight in a  long time, blame it on [insert favorite reason]... so, long story short and I am now on the 3rd week of the low-carb diet described in the book. 
@@ -17,7 +17,7 @@ Have been tracking my weight using google spreadsheets, so i can get the data in
 #+begin_src R :session R :exports code  :results output
 
 # load the data
-mydata <- read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE)
+mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE)
 
 # Create a new column with the proper date format
 mydata$timestamp = as.Date(mydata$timestamp, format='%d/%m/%Y')
@@ -34,9 +34,9 @@ Normality is not really a requirement for this simulation, monte carlo methods a
 # include ggplot2
 library(ggplot2)
 
-gghist <- function (mydata, mycolname) {
-  pl <- ggplot(data = mydata)
-  subvp <- viewport(width=0.35, height=0.35, x=0.84, y=0.84)
+gghist = function (mydata, mycolname) {
+  pl = ggplot(data = mydata)
+  subvp = viewport(width=0.35, height=0.35, x=0.84, y=0.84)
 
   his = pl + 
         geom_histogram(aes_string(x=mycolname,y="..density.."),alpha=0.2) + 
@@ -70,20 +70,20 @@ The idea for filling in missing days is; if we have only day1=81 and day3=80, th
 
 We can confirm(prove) that this calculated assumption is a good one, by later comparing the simulation on data with all days filled in against the same data with some removed days in the middle, and confirm that results are the same.
  
-So lets gets the every day weight(kg) and its change(delta):
+So lets get the weight(kg) change(delta), for every day:
 
 #+begin_src R :session R :results output :exports both
 library(zoo) # for the missing values interpolation
 
-fill.all.days <- function (mydata, timecolname, valuecolname) {
+fill.all.days = function (mydata, timecolname, valuecolname) {
   dtrange = range(mydata[,timecolname])
   # create a data frame with every single day
   alldays = data.frame(tmp=seq(as.Date(dtrange[1]), as.Date(dtrange[2]), "days"))
-  colnames(alldays) <- c(timecolname) # rename tmp to proper timecolname
+  colnames(alldays) = c(timecolname) # rename tmp to proper timecolname
   # add the existing values
   alldays = merge(alldays, mydata, by=timecolname, all=TRUE)
   # fill in the missing ones
-  alldays[,valuecolname] <- na.approx(alldays[,valuecolname])
+  alldays[,valuecolname] = na.approx(alldays[,valuecolname])
   return(alldays)
 }
 
@@ -95,47 +95,34 @@ lastweight = tail(dietdata$kg, n=1)
 dietalldays = fill.all.days(dietdata, "timestamp", "kg")
 
 # weight difference day by day
-kgdelta <- diff(dietalldays$kg)
+kgdelta = diff(dietalldays$kg)
 
-dietalldays$delta <- c(0, kgdelta)
-dietalldays
+dietalldays$delta = c(0, kgdelta)
+
+# print only the 10 last values
+tail(dietalldays, 10)
 #+end_src
 
 #+results:
 #+begin_example
 
-    timestamp     kg  delta
-1  2011-01-17 84.000  0.000
-2  2011-01-18 83.100 -0.900
-3  2011-01-19 82.975 -0.125
-4  2011-01-20 82.850 -0.125
-5  2011-01-21 82.725 -0.125
-6  2011-01-22 82.600 -0.125
-7  2011-01-23 82.500 -0.100
-8  2011-01-24 82.900  0.400
-9  2011-01-25 81.900 -1.000
-10 2011-01-26 81.400 -0.500
-11 2011-01-27 81.300 -0.100
-12 2011-01-28 81.100 -0.200
-13 2011-01-29 81.000 -0.100
-14 2011-01-30 80.200 -0.800
-15 2011-01-31 79.400 -0.800
-16 2011-02-01 79.900  0.500
-17 2011-02-02 79.800 -0.100
-18 2011-02-03 79.500 -0.300
-19 2011-02-04 80.000  0.500
-20 2011-02-05 80.200  0.200
-21 2011-02-06 80.700  0.500
-22 2011-02-07 80.500 -0.200
-23 2011-02-08 80.000 -0.500
+    timestamp   kg delta
+22 2011-02-07 80.5  -0.2
+23 2011-02-08 80.0  -0.5
+24 2011-02-09 79.9  -0.1
+25 2011-02-10 79.5  -0.4
+26 2011-02-11 79.6   0.1
+27 2011-02-12 79.2  -0.4
+28 2011-02-13 79.9   0.7
+29 2011-02-14 80.1   0.2
+30 2011-02-15 79.1  -1.0
+31 2011-02-16 78.9  -0.2
 #+end_example
 
-The big weight loss on rows 9,10,11 was because of a nasty stomach virus, so when getting back to normality i got most of that weight back.
-
-** So, what is going to be my weight in a week?
+** So what is going to be my weight in a week?
 
 #+begin_src R :session R :results output :exports both
-predict.weight.in.days <- function(days, inicialweight, deltavector) {
+predict.weight.in.days = function(days, inicialweight, deltavector) {
   weight = inicialweight
   for (i in 1:days) {
     weight = weight + sample(deltavector, 1, replace=TRUE)
@@ -152,7 +139,7 @@ summary(mcWeightWeek)
 #+results:
 : 
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:   74.20   77.95   78.70   78.71   79.48   82.68
+:   72.98   76.90   77.70   77.69   78.48   81.88
 
 Another good thing about monte carlo methods is that they give a distribution of the prediction, so its possible to get a feeling of how certain the average is; either very certain with a big central peak, or not that certain when the graph is flatter and all over the place:
 
@@ -165,10 +152,10 @@ gghist(data.frame(kg=mcWeightWeek), "kg")
 
 [[http://al3xandr3.github.com/img/w-loss-week.png]]
 
-** And, when am i getting to 75kg?
+** And when am i getting to 75kg?
 
 #+begin_src R :session R :results output :exports both
-days.to.weight <- function(weight, inicialweight, deltavector) {
+days.to.weight = function(weight, inicialweight, deltavector) {
   target = inicialweight
   days = 0
   while (target > weight) {
@@ -189,12 +176,25 @@ summary(mcDays75)
 #+results:
 : 
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:    7.00   20.00   27.00   29.22   36.00  129.00
+:    4.00   16.00   22.00   24.97   31.00  120.00
 
-And the distribution:
+And the cumulative distribution:
 
 #+begin_src R :session R  :file /my/al3xandr3.github.com/img/w-loss-75.png
-gghist(data.frame(days=mcDays75), "days")
+#Add dates to it, from today's date + x days
+days75 = sort(Sys.Date() + mcDays75)
+# get the ecdf values into a dataframe
+days75.ecdf = summarize(data.frame(days=days75), days = unique(days), 
+                        ecdf = ecdf(days)(unique(days)))
+# the point where its 85% sure i'll reach goal
+prob85 = head(days75.ecdf[days75.ecdf$ecdf>0.85,],1)
+# plot
+ggplot(days75.ecdf, aes(days, ecdf)) + geom_step() +
+       ylab("probability") + 
+       geom_point(aes(x = prob85$days, y = prob85$ecdf)) +
+       geom_text(aes(x = prob85$days, y = prob85$ecdf, 
+                    label = paste("85% sure will reach goal on", prob85$days)), 
+                     hjust=-0.04)
 #+end_src
 
 #+results:
@@ -202,8 +202,11 @@ gghist(data.frame(days=mcDays75), "days")
 
 [[http://al3xandr3.github.com/img/w-loss-75.png]]
 
-Interesting, its more a Poison distribution then a Normal one.
-
 Also note that, weight loss is faster at the beginning of a diet, it tends to slow down over time, so to keep the predictions valid we need to continue record the weight and re-run the predictions from time to time.
 
 But as you see the slow carb diet seems to work, even without exercise. Tim's book is great, focusing on the smallest things possible for the bigger results(=efficiency).
+
+** References
+
+Hard drive occupation prediction with R: 
+[[http://lpenz.github.com/articles/df0pred-1/index.html][part 1]] and [[http://lpenz.github.com/articles/df0pred-2/index.html][part 2]], and thanks to Leandro Penz on the feedback.
