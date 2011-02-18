@@ -71,7 +71,6 @@ $(function () {
   });
 
   $("td").removeClass("left");
- 
   ///////////////
 
   //Search

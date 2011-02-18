@@ -15,7 +15,6 @@ But of course, like with all diets, I'm quickly growing impatient of when i'm go
 Have been tracking my weight using google spreadsheets, so i can get the data into R like so:
 
 #+begin_src R :session R :exports code  :results output
-
 # load the data
 mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE)
 
@@ -29,7 +28,7 @@ mydata$timestamp = as.Date(mydata$timestamp, format='%d/%m/%Y')
 
 Normality is not really a requirement for this simulation, monte carlo methods are independent of the distribution, but lets have a look of how the weight is distributed for the past 3 years.
 
-#+begin_src R :session R  :file /my/al3xandr3.github.com/img/w-loss-normal.png
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-normal.png
 
 # include ggplot2
 library(ggplot2)
@@ -73,15 +72,18 @@ We can confirm(prove) that this calculated assumption is a good one, by later co
 So lets get the weight(kg) change(delta), for every day:
 
 #+begin_src R :session R :results output :exports both
-library(zoo) # for the missing values interpolation
+library(zoo) # for missing values interpolation
 
 fill.all.days = function (mydata, timecolname, valuecolname) {
   dtrange = range(mydata[,timecolname])
+
   # create a data frame with every single day
   alldays = data.frame(tmp=seq(as.Date(dtrange[1]), as.Date(dtrange[2]), "days"))
   colnames(alldays) = c(timecolname) # rename tmp to proper timecolname
+
   # add the existing values
   alldays = merge(alldays, mydata, by=timecolname, all=TRUE)
+
   # fill in the missing ones
   alldays[,valuecolname] = na.approx(alldays[,valuecolname])
   return(alldays)
@@ -94,9 +96,8 @@ lastweight = tail(dietdata$kg, n=1)
 # fill in missing days
 dietalldays = fill.all.days(dietdata, "timestamp", "kg")
 
-# weight difference day by day
+# get difference day by day into data frame
 kgdelta = diff(dietalldays$kg)
-
 dietalldays$delta = c(0, kgdelta)
 
 # print only the 10 last values
@@ -143,7 +144,7 @@ summary(mcWeightWeek)
 
 Another good thing about monte carlo methods is that they give a distribution of the prediction, so its possible to get a feeling of how certain the average is; either very certain with a big central peak, or not that certain when the graph is flatter and all over the place:
 
-#+begin_src R :session R  :file /my/al3xandr3.github.com/img/w-loss-week.png
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-week.png
 gghist(data.frame(kg=mcWeightWeek), "kg")
 #+end_src
 
@@ -180,29 +181,33 @@ summary(mcDays75)
 
 And the cumulative distribution:
 
-#+begin_src R :session R  :file /my/al3xandr3.github.com/img/w-loss-75.png
-#Add dates to it, from today's date + x days
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-85.png
+# add dates to it, from today's date + #days
 days75 = sort(Sys.Date() + mcDays75)
+
 # get the ecdf values into a dataframe
 days75.ecdf = summarize(data.frame(days=days75), days = unique(days), 
                         ecdf = ecdf(days)(unique(days)))
-# the point where its 85% sure i'll reach goal
+
+# date where its 85% sure i'll reach goal
 prob85 = head(days75.ecdf[days75.ecdf$ecdf>0.85,],1)
+
 # plot
 ggplot(days75.ecdf, aes(days, ecdf)) + geom_step() +
        ylab("probability") + 
        geom_point(aes(x = prob85$days, y = prob85$ecdf)) +
        geom_text(aes(x = prob85$days, y = prob85$ecdf, 
-                    label = paste("85% sure will reach goal on", prob85$days)), 
+                    label = paste("85% sure to reach goal on",
+                            format(prob85$days, "%a, %d %b %Y"))), 
                      hjust=-0.04)
 #+end_src
 
 #+results:
-[[file:/my/al3xandr3.github.com/img/w-loss-75.png]]
+[[file:/my/al3xandr3.github.com/img/w-loss-85.png]]
 
-[[http://al3xandr3.github.com/img/w-loss-75.png]]
+[[http://al3xandr3.github.com/img/w-loss-85.png]]
 
-Also note that, weight loss is faster at the beginning of a diet, it tends to slow down over time, so to keep the predictions valid we need to continue record the weight and re-run the predictions from time to time.
+Also note that, weight loss is faster at the beginning of a diet, it tends to slow down over time, so to keep the predictions valid we need to continue record the weight and re-run the predictions frequently.
 
 But as you see the slow carb diet seems to work, even without exercise. Tim's book is great, focusing on the smallest things possible for the bigger results(=efficiency).
 
