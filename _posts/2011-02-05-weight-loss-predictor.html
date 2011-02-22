@@ -29,7 +29,7 @@ Its an interesting book, because it has a scientific approach, it doesn't just s
 This book couldn't have arrived in a better time as i just peeked my heaviest weight in a  long time, blame it on [insert favorite reason]&hellip; so, long story short and I am now on the 3rd week of the low-carb diet described in the book. 
 </p>
 <p>
-But of course, like with all diets, I'm quickly growing impatient of when i'm going to reach my goals, so lets use R and monte carlo simulations to generate predictions and understand better what to expect.
+But of course, like with all diets, I'm quickly growing impatient of when i'm going to reach my goal (<a href="http://www.wolframalpha.com/input/?i=body+mass+index&amp;a=*C.body+mass+index-_*Formula.dflt-&amp;a=*FS-_**BodyMassIndex.BMI-.*BodyMassIndex.H-.*BodyMassIndex.W--&amp;f3=74+kg&amp;f=BodyMassIndex.W_74+kg&amp;f4=176+cm&amp;f=BodyMassIndex.H_176+cm&amp;a=*FVarOpt.1-_**-.***BodyMassIndex.S---.*--">of adequate BMI</a>), so lets use R and monte carlo simulations to generate predictions and understand better what to expect.
 </p>
 
 <div class="outline-2" id="outline-container-1">
@@ -161,16 +161,16 @@ dietalldays$delta = c(0, kgdelta)
 
 
 <pre class="example">    timestamp   kg delta
-24 2011-02-09 79.9  -0.1
-25 2011-02-10 79.5  -0.4
-26 2011-02-11 79.6   0.1
-27 2011-02-12 79.2  -0.4
 28 2011-02-13 79.9   0.7
 29 2011-02-14 80.1   0.2
 30 2011-02-15 79.1  -1.0
 31 2011-02-16 78.9  -0.2
 32 2011-02-17 78.5  -0.4
 33 2011-02-18 78.2  -0.3
+34 2011-02-19 78.0  -0.2
+35 2011-02-20 78.6   0.6
+36 2011-02-21 78.7   0.1
+37 2011-02-22 78.2  -0.5
 </pre>
 
 
@@ -204,7 +204,7 @@ summary(mcWeightWeek)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  72.97   76.15   76.95   76.93   77.70   81.40
+  73.00   76.28   77.07   77.06   77.82   81.68
 </pre>
 
 
@@ -228,7 +228,7 @@ Another good thing about monte carlo methods is that they give a distribution of
 </div>
 
 <div class="outline-3" id="outline-container-2_2">
-<h3 id="sec-2_2">And when am i getting to 75kg? </h3>
+<h3 id="sec-2_2">And when am i getting to 74kg? </h3>
 <div class="outline-text-3" id="text-2_2">
 
 
@@ -248,16 +248,16 @@ Another good thing about monte carlo methods is that they give a distribution of
 }
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">simulate it 10k times
-</span>mcDays75 = replicate(10000, days.to.weight(75, lastweight, kgdelta))
+</span>mcDays74 = replicate(10000, days.to.weight(74, lastweight, kgdelta))
 
-summary(mcDays75)
+summary(mcDays74)
 </pre>
 
 
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   4.00   12.00   17.00   19.24   24.00  132.00
+   5.00   18.00   25.00   27.88   34.00  139.00
 </pre>
 
 
@@ -268,21 +268,21 @@ And the cumulative distribution:
 
 
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">add dates to it, from today's date + #days
-</span>days75 = sort(Sys.Date() + mcDays75)
+</span>days74 = sort(Sys.Date() + mcDays74)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">get the ecdf values into a dataframe
-</span>days75.ecdf = summarize(data.frame(days=days75), days = unique(days), 
+</span>days74.ecdf = summarize(data.frame(days=days74), days = unique(days), 
                         ecdf = ecdf(days)(unique(days)))
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">date where its 85% sure i'll reach goal
-</span>prob85 = head(days75.ecdf[days75.ecdf$ecdf&gt;0.85,],1)
+</span>prob85 = head(days74.ecdf[days74.ecdf$ecdf&gt;0.85,],1)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">plot
-</span>ggplot(days75.ecdf, aes(days, ecdf)) + geom_step() +
+</span>ggplot(days74.ecdf, aes(days, ecdf)) + geom_step() +
        ylab(<span style="color: #8b2252;">"probability"</span>) + 
        geom_point(aes(x = prob85$days, y = prob85$ecdf)) +
        geom_text(aes(x = prob85$days, y = prob85$ecdf, 
-                    label = paste(<span style="color: #8b2252;">"85% sure to reach goal on"</span>,
+                    label = paste(<span style="color: #8b2252;">"85% sure to be 74kg on"</span>,
                             format(prob85$days, <span style="color: #8b2252;">"%a, %d %b %Y"</span>))), 
                      hjust=-0.04)
 </pre>
@@ -291,7 +291,7 @@ And the cumulative distribution:
 
 
 <p>
-<img src="http://al3xandr3.github.com/img/w-loss-85.png" alt="http://al3xandr3.github.com/img/w-loss-85.png" />
+<img src="http://al3xandr3.github.com/img/w-loss-74.png" alt="http://al3xandr3.github.com/img/w-loss-74.png" />
 </p>
 <p>
 Also note that, weight loss is faster at the beginning of a diet, it tends to slow down over time, so to keep the predictions valid we need to continue record the weight and re-run the predictions frequently.
