@@ -45,18 +45,14 @@ $(function () {
     "text-decoration": "none",
     "border-bottom": "0px solid "
   });
-
-//  $("#content").css({
-//    "font-family": "Geneva"
-//  });
-
+  
   $("#post-list li #post-summary").css({   
     "font-size": "120%",
     "margin": "0.6em"
   }).addClass("alt");
 
   $("#post").css({
-    "font-size": "107%"
+    "font-size": "112%"
   });
 
   $("#footer").css({
