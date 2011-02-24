@@ -45,14 +45,18 @@ $(function () {
     "text-decoration": "none",
     "border-bottom": "0px solid "
   });
-  
+
+  $("#content").css({
+    "font-family": "Verdana"
+  });
+
   $("#post-list li #post-summary").css({   
     "font-size": "120%",
     "margin": "0.6em"
   }).addClass("alt");
 
   $("#post").css({
-    "font-size": "112%"
+    "font-size": "107%"
   });
 
   $("#footer").css({
