@@ -1,0 +1,163 @@
+#+TITLE: Machine Learning Ex2 - Linear Regression
+#+HTML: <category> machinelearning ml linear regression </category>
+#+OPTIONS: timestamp:nil
+
+Andrew Ng has posted introductory machine learning lessons on the [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][OpenClassRoom]] site. I've followed the first set and will here try to solve [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex2/ex2.html][Exercise 2]].
+
+The goal of exercise is to build a Linear Regression implementation. I will use R.
+
+#+INCLUDE: /my/setup/mathjax.org
+
+The point of linear regression is to come up with a mathematical function that represents the data as best as possible, we will do that by fitting a straight line to the observed data.
+
+This modeling will allow us, for example, to make predictions on new data.
+
+For example, the data we are using are boys ages and their heights, so when we have a mathematical model we can then, given a new age, predict what is the height.
+
+* Data
+
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/ml-ex2-data.png
+# load the data
+mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydDB4N3MxM0tENlk3UElnZ013cW1iM3c&hl=en_GB&single=true&gid=0&output=csv", header = TRUE)
+
+# include ggplot2
+library(ggplot2)
+
+ex2plot = ggplot(mydata, aes(x, y)) + geom_point() + 
+       ylab('Height in meters') +
+       xlab('Age in years')
+#+end_src
+
+#+results:
+[[file:/my/al3xandr3.github.com/img/ml-ex2-data.png]]
+
+[[http://al3xandr3.github.com/img/ml-ex2-data.png]]
+
+* Theory
+
+The final result we will end up with is an equation of a line, that we call the hypothesis, lets have a look at how that looks like.
+
+Assuming $x_0 = 1$:
+
+\[
+h_\theta(x) = \theta_0 x_0 + \theta_1 x_1 + \theta_2 x_2 + ...
+\]
+
+That can be summarized by (last is in Matrix notation):
+
+\[
+h_\theta(x) = \sum_{i=0}^n \theta_i x_i = \theta^T x
+\]
+
+Matrix representation is useful because has good support in software tools.
+
+To get our line well fitted with the data, we want to have the line closest to observed data points as possible, thus we can define a cost function that returns the difference of the real data($y^{(i)}$) vs our line($h_\theta(x^{(i)}$):
+
+\[
+J(\theta) = \frac{1}{2} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2
+\]
+
+$i$ is each data example we have and $m$ is their total.
+
+This way we have a metric to check if we are getting closer or not.
+
+So given $J(\theta)$, we now have the goal of finding the smaller values possible out of it, and in fact thats exactly what the [[http://mathworld.wolfram.com/MethodofSteepestDescent.html][gradient descent algorithm does]]; starting in a inicial guess it iterates to smaller and smaller values of a given function by following the [[http://www.wolframalpha.com/input/?i=Plot%5B{x^2%2C+2+x}%2C+{x%2C+0%2C+2.2}%5D][direction of the derivative]]. 
+Thus we get a formula to update the $x$ (direction) given a function we want to minimize(in this case the cost function $J$), in general form looks like 
+$x_i := x_{i-1} - \epsilon f^' (x_{i-1})$
+
+Applying to our case:
+
+\[
+\theta_j := \theta_j - \alpha \frac{\delta}{\delta \theta_j} J(\theta)
+\]
+
+And doing a bit of calculus on derivatives we get:
+
+\[
+\theta_j := \theta_j - \alpha \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}
+\]
+
+where $\alpha$ defines the size of the convergence of $\theta$.
+
+Next step is to apply it.
+
+* Implementation (1st iteration)
+
+#+begin_src R :session R :results output :exports both
+alpha = 0.07
+m = length(mydata$x)
+theta = c(0,0)
+x = mydata$x
+y = mydata$y 
+delta = function(x,y,th,m) {
+  sum = 0
+  for (i in 1:m) {
+    sum = sum + (((t(th) %*% c(1,x[i])) - y[i]) * c(1,x[i]))
+  }
+  return (sum)
+}
+
+# 1 iteration
+print(theta - alpha * 1/m * delta(x,y,theta,m))
+#+end_src
+
+#+results:
+: [1] 0.07452802 0.38002167
+
+Note that I am using a cycle for the Sum.
+
+* Matrix only Implementation (2nd iteration)
+
+After having a peek at the [[http://openclassroom.stanford.edu/MainFolder/courses/MachineLearning/exercises/ex2materials/ex2.m][solution]], updated with full on matrix calculations(so can remove the cycle for the sum):
+
+\[
+\theta := \theta - \alpha \frac{1}{m} x^T (h_\theta(x) - y)
+\]
+
+#+begin_src R :session R :results output :exports both
+alpha = 0.07
+m = length(mydata$x)
+theta = matrix(c(0,0), nrow=1)
+x = matrix(c(rep(1,m), mydata$x), ncol=2)
+y = matrix(mydata$y, ncol=1)
+delta = function(x,y,th) {
+  delta = (t(x) %*% ((x %*% t(th)) - y))
+  return(t(delta))
+}
+
+# 1 iteration
+print(theta - alpha * 1/m * delta(x,y,theta))
+#+end_src
+
+#+results:
+:            [,1]      [,2]
+: [1,] 0.07452802 0.3800217
+
+* Running until Convergence
+
+#+begin_src R :session R :results output :exports both
+for (i in 1:1500) {
+  theta = theta - alpha * 1/m * delta(x,y,theta)
+}
+print(theta)
+#+end_src
+
+#+results:
+:           [,1]       [,2]
+: [1,] 0.7501504 0.06388338
+
+** Fitted line
+
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/ml-ex2-fit.png
+ex2plot + geom_abline(intercept=theta[1], slope=theta[2])
+#+end_src
+
+#+results:
+[[file:/my/al3xandr3.github.com/img/ml-ex2-fit.png]]
+
+[[http://al3xandr3.github.com/img/ml-ex2-fit.png]]
+
+* References
+- [[http://www.math.umaine.edu/~hiebeler/comp/matlabR.html][MATLAB / R Reference, by David Hiebeler]]
+- [[ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf][Short Math Guide for LaTex(.pdf)]]
+- [[http://wims.unice.fr/wims/en_tool~linear~matmult.en.html][matrix multiplier tool]]
