@@ -46,9 +46,9 @@ $(function () {
     "border-bottom": "0px solid "
   });
 
-  $("#content").css({
-    "font-family": "Geneva"
-  });
+//  $("#content").css({
+//    "font-family": "Geneva"
+//  });
 
   $("#post-list li #post-summary").css({   
     "font-size": "120%",
