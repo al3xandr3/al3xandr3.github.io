@@ -15,10 +15,10 @@ categories:
 
 
 <p>
-Andrew Ng has posted introductory machine learning lessons on the <a href="http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning">OpenClassRoom</a> site. I've followed the first set and will here try to solve <a href="http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html">Exercise 2</a>.
+Andrew Ng has posted introductory machine learning lessons on the <a href="http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning">OpenClassRoom</a> site. I've watched the first set and will here solve <a href="http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html">Exercise 2</a>.
 </p>
 <p>
-The goal of exercise is to build a Linear Regression implementation. I will use R.
+The exercise is to build a linear regression implementation, I'll use R.
 </p>
 
 
@@ -61,13 +61,10 @@ The goal of exercise is to build a Linear Regression implementation. I will use 
 
 
 <p>
-The point of linear regression is to come up with a mathematical function that represents the data as best as possible, we will do that by fitting a straight line to the observed data.
+The point of linear regression is to come up with a mathematical function(model) that represents the data as best as possible, that is done by fitting a straight line to the observed data. This model will then allow us to make predictions on new data.
 </p>
 <p>
-This modeling will allow us, for example, to make predictions on new data.
-</p>
-<p>
-For example, the data we are using are boys ages and their heights, so when we have a mathematical model we can then, given a new age, predict what is the height.
+For example, the data we use here are boys ages and their corresponding heights, so when we get the mathematical model we will be able to guess the boys height from his age.
 </p>
 
 <div class="outline-2" id="outline-container-1">
@@ -105,7 +102,7 @@ ex2plot = ggplot(mydata, aes(x, y)) + geom_point() +
 
 
 <p>
-The final result we will end up with is an equation of a line, that we call the hypothesis, lets have a look at how that looks like.
+The model we will get at the end is a line that fits the data, is defined like so:
 </p>
 <p>
 Assuming \(x_0 = 1\):
@@ -117,7 +114,7 @@ h_\theta(x) = \theta_0 x_0 + \theta_1 x_1 + \theta_2 x_2 + ...
 \]
 
 <p>
-That can be summarized by (last is in Matrix notation):
+That can be summarized by (last is matrix notation):
 </p>
 
 
@@ -129,7 +126,7 @@ h_\theta(x) = \sum_{i=0}^n \theta_i x_i = \theta^T x
 Matrix representation is useful because has good support in software tools.
 </p>
 <p>
-To get our line well fitted with the data, we want to have the line closest to observed data points as possible, thus we can define a cost function that returns the difference of the real data(\(y^{(i)}\)) vs our line(\(h_\theta(x^{(i)}\)):
+Goal is to get the line closest to observed data points as possible, thus we can define a cost function that returns the difference of the real data vs myModel:
 </p>
 
 
@@ -137,17 +134,23 @@ To get our line well fitted with the data, we want to have the line closest to o
 J(\theta) = \frac{1}{2} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2
 \]
 
-\(i\) is each data example we have and \(m\) is their total.
-
 <p>
-This way we have a metric to check if we are getting closer or not.
+where \(i\) is each data example we have and \(m\) is their total.
 </p>
 <p>
-So given \(J(\theta)\), we now have the goal of finding the smaller values possible out of it, and in fact thats exactly what the <a href="http://mathworld.wolfram.com/MethodofSteepestDescent.html">gradient descent algorithm does</a>; starting in a inicial guess it iterates to smaller and smaller values of a given function by following the <a href="http://www.wolframalpha.com/input/?i=Plot[{x^2,+2+x},+{x,+0,+2.2}]">direction of the derivative</a>. 
-Thus we get a formula to update the \(x\) (direction) given a function we want to minimize(in this case the cost function \(J\)), in general form looks like 
-\(x_i := x_{i-1} - \epsilon f^' (x_{i-1})\)
+With J we now have a metric to check if the hypotheses line is getting closer to data points or not.
+</p>
+<p>
+Next step is to find the smaller cost as possible from J, and in fact thats exactly what the <a href="http://mathworld.wolfram.com/MethodofSteepestDescent.html">gradient descent algorithm does</a>: starting with an inicial guess it iterates to smaller and smaller values of a given function by following the <a href="http://www.wolframalpha.com/input/?i=Plot[{x^2,+2+x},+{x,+0,+2.2}]">direction of the derivative</a>:
+</p>
 
-Applying to our case:
+
+\[
+x_i := x_{i-1} - \epsilon f^' (x_{i-1})
+\]
+
+<p>
+Applying to our J:
 </p>
 
 
@@ -165,17 +168,17 @@ And doing a bit of calculus on derivatives we get:
 \]
 
 <p>
-where \(\alpha\) defines the size of the convergence of \(\theta\).
+Where \(\alpha\) defines the size of steps of the convergence to \(\theta\).
 </p>
 <p>
-Next step is to apply it.
+Now lets check if all this math really works.
 </p>
 </div>
 
 </div>
 
 <div class="outline-2" id="outline-container-3">
-<h2 id="sec-3">Implementation (1st iteration) </h2>
+<h2 id="sec-3">Implementation - take 1 </h2>
 <div class="outline-text-2" id="text-3">
 
 
@@ -196,7 +199,7 @@ delta = <span style="color: #7f007f;">function</span>(x,y,th,m) {
 }
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">1 iteration
-</span>print(theta - alpha * 1/m * delta(x,y,theta,m))
+</span>theta - alpha * 1/m * delta(x,y,theta,m)
 </pre>
 
 
@@ -206,26 +209,28 @@ delta = <span style="color: #7f007f;">function</span>(x,y,th,m) {
 </pre>
 
 
-<p>
-Note that I am using a cycle for the Sum.
-</p>
 </div>
 
 </div>
 
 <div class="outline-2" id="outline-container-4">
-<h2 id="sec-4">Matrix only Implementation (2nd iteration) </h2>
+<h2 id="sec-4">Implementation - take 2 </h2>
 <div class="outline-text-2" id="text-4">
 
 
 <p>
-After having a peek at the <a href="http://openclassroom.stanford.edu/MainFolder/courses/MachineLearning/exercises/ex2materials/ex2.m">solution</a>, updated with full on matrix calculations(so can remove the cycle for the sum):
+After having a peek at the <a href="http://openclassroom.stanford.edu/MainFolder/courses/MachineLearning/exercises/ex2materials/ex2.m">Matlab solution</a>, i learned that is possible to replace the sum in the equation with a transpose matrix multiplication(like done with the line equation):
 </p>
 
 
 \[
 \theta := \theta - \alpha \frac{1}{m} x^T (h_\theta(x) - y)
 \]
+
+<p>
+So we can get a full matrix implementation:
+</p>
+
 
 
 <pre class="src src-R">alpha = 0.07
@@ -239,30 +244,36 @@ delta = <span style="color: #7f007f;">function</span>(x,y,th) {
 }
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">1 iteration
-</span>print(theta - alpha * 1/m * delta(x,y,theta))
+</span>theta - alpha * 1/m * delta(x,y,theta)
 </pre>
 
 
 
-:            [,1]      [,2]
-: [1,] 0.07452802 0.3800217
+<pre class="example">
+           [,1]      [,2]
+[1,] 0.07452802 0.3800217
+</pre>
+
 
 </div>
 
 </div>
 
 <div class="outline-2" id="outline-container-5">
-<h2 id="sec-5">Running until Convergence </h2>
+<h2 id="sec-5">The Model </h2>
 <div class="outline-text-2" id="text-5">
 
 
+<p>
+First we run several iterations, until convergence:
+</p>
 
 
 
 <pre class="src src-R"><span style="color: #7f007f;">for</span> (i <span style="color: #7f007f;">in</span> 1:1500) {
   theta = theta - alpha * 1/m * delta(x,y,theta)
 }
-print(theta)
+theta
 </pre>
 
 
@@ -273,14 +284,9 @@ print(theta)
 </pre>
 
 
-
-</div>
-
-<div class="outline-3" id="outline-container-5_1">
-<h3 id="sec-5_1">Fitted line </h3>
-<div class="outline-text-3" id="text-5_1">
-
-
+<p>
+And finally we see how well the line(model) fits the data:
+</p>
 
 
 
@@ -293,23 +299,24 @@ print(theta)
 <p>
 <img src="http://al3xandr3.github.com/img/ml-ex2-fit.png" alt="http://al3xandr3.github.com/img/ml-ex2-fit.png" />
 </p>
-</div>
-</div>
+
 
 </div>
 
-<div class="outline-2" id="outline-container-6">
-<h2 id="sec-6">References </h2>
-<div class="outline-text-2" id="text-6">
+<div class="outline-4" id="outline-container-5_1">
+<h4 id="sec-5_1">References </h4>
+<div class="outline-text-4" id="text-5_1">
+
 
 <ul>
 <li><a href="http://www.math.umaine.edu/~hiebeler/comp/matlabR.html">MATLAB / R Reference, by David Hiebeler</a>
 </li>
 <li><a href="ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf">Short Math Guide for LaTex(.pdf)</a>
 </li>
-<li><a href="http://wims.unice.fr/wims/en_tool~linear~matmult.en.html">matrix multiplier tool</a>
+<li><a href="http://wims.unice.fr/wims/en_tool~linear~matmult.en.html">Matrix multiplier tool</a>
 </li>
 </ul>
+</div>
 </div>
 </div>
 
