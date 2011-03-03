@@ -8,7 +8,7 @@ Its an interesting book, because it has a scientific approach, it doesn't just s
 
 This book couldn't have arrived in a better time as i just peeked my heaviest weight in a  long time, blame it on [insert favorite reason]... so, long story short and I am now on the 3rd week of the low-carb diet described in the book. 
 
-But of course, like with all diets, I'm quickly growing impatient of when i'm going to reach my goal ([[http://www.wolframalpha.com/input/?i=body+mass+index&a=*C.body+mass+index-_*Formula.dflt-&a=*FS-_**BodyMassIndex.BMI-.*BodyMassIndex.H-.*BodyMassIndex.W--&f3=74+kg&f=BodyMassIndex.W_74+kg&f4=176+cm&f=BodyMassIndex.H_176+cm&a=*FVarOpt.1-_**-.***BodyMassIndex.S---.*--][of adequate BMI]]), so lets use R and monte carlo simulations to generate predictions and understand better what to expect.
+But of course, like with all diets, I'm quickly growing impatient of when i'm going to reach my goal ([[http://www.wolframalpha.com/input/?i=body+mass+index&a=*C.body+mass+index-_*Formula.dflt-&a=*FS-_**BodyMassIndex.BMI-.*BodyMassIndex.H-.*BodyMassIndex.W--&f3=75+kg&x=11&y=4&f=BodyMassIndex.W_75+kg&f4=176+cm&f=BodyMassIndex.H_176+cm&a=*FVarOpt.1-_**-.***BodyMassIndex.S---.*--][of adequate BMI]]), so lets use R and monte carlo simulations to generate predictions and understand better what to expect.
 
 * Data
 
@@ -153,7 +153,7 @@ gghist(data.frame(kg=mcWeightWeek), "kg")
 
 [[http://al3xandr3.github.com/img/w-loss-week.png]]
 
-** And when am i getting to 74kg?
+** And when am i getting to 75kg?
 
 #+begin_src R :session R :results output :exports both
 days.to.weight = function(weight, inicialweight, deltavector) {
@@ -169,9 +169,9 @@ days.to.weight = function(weight, inicialweight, deltavector) {
 }
 
 # simulate it 10k times
-mcDays74 = replicate(10000, days.to.weight(74, lastweight, kgdelta))
+mcDays75 = replicate(10000, days.to.weight(75, lastweight, kgdelta))
 
-summary(mcDays74)
+summary(mcDays75)
 #+end_src
 
 #+results:
@@ -181,31 +181,31 @@ summary(mcDays74)
 
 And the cumulative distribution:
 
-#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-74.png
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-75.png
 # add dates to it, from today's date + #days
-days74 = sort(Sys.Date() + mcDays74)
+days75 = sort(Sys.Date() + mcDays75)
 
 # get the ecdf values into a dataframe
-days74.ecdf = summarize(data.frame(days=days74), days = unique(days), 
+days75.ecdf = summarize(data.frame(days=days75), days = unique(days), 
                         ecdf = ecdf(days)(unique(days)))
 
 # date where its 85% sure i'll reach goal
-prob85 = head(days74.ecdf[days74.ecdf$ecdf>0.85,],1)
+prob85 = head(days75.ecdf[days75.ecdf$ecdf>0.85,],1)
 
 # plot
-ggplot(days74.ecdf, aes(days, ecdf)) + geom_step() +
+ggplot(days75.ecdf, aes(days, ecdf)) + geom_step() +
        ylab("probability") + 
        geom_point(aes(x = prob85$days, y = prob85$ecdf)) +
        geom_text(aes(x = prob85$days, y = prob85$ecdf, 
-                    label = paste("85% sure to be 74kg on",
+                    label = paste("85% sure to be 75kg on",
                             format(prob85$days, "%a, %d %b %Y"))), 
                      hjust=-0.04)
 #+end_src
 
 #+results:
-[[file:/my/al3xandr3.github.com/img/w-loss-74.png]]
+[[file:/my/al3xandr3.github.com/img/w-loss-75.png]]
 
-[[http://al3xandr3.github.com/img/w-loss-74.png]]
+[[http://al3xandr3.github.com/img/w-loss-75.png]]
 
 Also note that, weight loss is faster at the beginning of a diet, it tends to slow down over time, so to keep the predictions valid we need to continue record the weight and re-run the predictions frequently.
 
