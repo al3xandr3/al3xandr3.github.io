@@ -131,7 +131,7 @@ Goal is to get the line closest to observed data points as possible, thus we can
 
 
 \[
-J(\theta) = \frac{1}{2} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2
+J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2
 \]
 
 <p>
@@ -224,7 +224,7 @@ After having a peek at the <a href="http://openclassroom.stanford.edu/MainFolder
 
 
 \[
-\theta := \theta - \alpha \frac{1}{m} x^T (h_\theta(x) - y)
+\theta := \theta - \alpha \frac{1}{m} x^T (x\theta^T - y)
 \]
 
 <p>
