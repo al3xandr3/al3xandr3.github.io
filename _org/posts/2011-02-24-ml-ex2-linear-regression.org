@@ -1,4 +1,4 @@
-#+TITLE: Machine Learning Ex2 - linear regression i
+#+TITLE: Machine Learning Ex2 - linear regression
 #+HTML: <category> machinelearning ml linear regression </category>
 #+OPTIONS: timestamp:nil
 
