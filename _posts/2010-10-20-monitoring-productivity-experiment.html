@@ -14,7 +14,6 @@ categories:
 
 
 
-
 <p>
 <a href="http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/"><img src="http://al3xandr3.github.com/img/prod-intro.jpeg" /></a>
 </p>
@@ -110,6 +109,7 @@ print(qqp, vp = subvp)
 
 
 
+
 <pre class="src src-R">his = pl + 
       geom_histogram(aes(x=productive,y=..density..),alpha=0.2,binwidth=2) + 
       geom_density(aes(x=productive)) + opts(title=<span style="color: #8b2252;">"Productive"</span>)
@@ -170,8 +170,6 @@ And we could even cut off those loose ends(by excluding data), for even a more p
 
 
 
-
-
 <pre class="example">
 0.239155251141553
 </pre>
@@ -199,10 +197,7 @@ print(ttest)
 
 
 
-
-
 <pre class="example">
-
         One Sample t-test
 
 data:  mydata$total 
@@ -255,8 +250,6 @@ So thats close to <b>40 hours per week</b>, almost <b>6 hours per day</b> in com
 
 
 
-
-
 <pre class="example">
                 total productive distracting
 total       1.0000000  0.8719531   0.6884407
@@ -268,16 +261,14 @@ distracting 0.6884407  0.4027419   1.0000000
 <p>
 Total and Productive time seem to be strongly correlated, what it means? there's 2 ways to look at it:
 </p><ol>
-<li>
-increasing productive time the total goes up.
+<li>increasing productive time the total goes up.
 </li>
-<li>
-increasing total time the productive goes up.
-
+<li>increasing total time the productive goes up.
 </li>
 </ol>
 
-<p>So, 1. is obvious and not interesting, but could 2. be true? 
+<p>
+So, 1. is obvious and not interesting, but could 2. be true? 
 </p>
 <p>
 Well, if we compare productive vs distracting, we see that productive(0.872) has a stronger correlation to total time than distracting(0.688). And because increasing distracting time will always increase the total(in exactly the same way as productivity will, as 1.) then it means that increasing the total is more likely to increase productivity time then the distracting time.
@@ -311,7 +302,7 @@ Well, if we compare productive vs distracting, we see that productive(0.872) has
 <img src="http://al3xandr3.github.com/img/prod-trend.png" alt="http://al3xandr3.github.com/img/prod-trend.png" />
 </p>
 <p>
-The big drop towards the end is a 2 week vacation, where i barely used computer.
+ The big drop towards the end is a 2 week vacation, where i barely used computer.
 </p>
 <p>
 In the first half of the plot there is a drop in productivity, accompanied by an increase on distracting time.
@@ -338,4 +329,6 @@ See <a href="http://github.com/al3xandr3/al3xandr3.github.com/raw/master/_org/po
 </p>
 </div>
 </div>
+<div id="postamble">
 
+</div>

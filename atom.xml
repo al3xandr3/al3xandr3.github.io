@@ -21,6 +21,8 @@ layout: nil
    <link href="http://al3xandr3.github.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://al3xandr3.github.com{{ post.id }}</id>
+   {% for cat in post.categories %}<category term="{{cat}}" label="{{cat}}" />
+   {% endfor %}
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
