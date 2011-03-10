@@ -14,7 +14,7 @@ But of course, like with all diets, I'm quickly growing impatient of when i'm go
 
 Have been tracking my weight using google spreadsheets, so i can get the data into R like so:
 
-#+begin_src R :session R :exports code  :results output
+#+begin_src R :session R :exports code :results output
 # load the data
 mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE)
 

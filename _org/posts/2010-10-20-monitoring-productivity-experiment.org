@@ -45,7 +45,7 @@ subvp <- viewport(width=0.4, height=0.4, x=0.22, y=0.80)
 
 #+results:
 
-#+begin_src R :session R :file /my/al3xandr3.github.com/img/prod-hist-total.png
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/prod-hist-total.png
 his = pl + 
       geom_histogram(aes(x=total,y=..density..),alpha=0.2,binwidth=2) + 
       geom_density(aes(x=total)) + 
@@ -58,11 +58,12 @@ print(qqp, vp = subvp)
 #+end_src
 
 #+results:
-[[file:/my/al3xandr3.github.com/img/prod-hist.png]]
+[[file:/my/al3xandr3.github.com/img/prod-hist-total.png]]
 
 [[http://al3xandr3.github.com/img/prod-hist-total.png]]
 
-#+begin_src R :session R :file /my/al3xandr3.github.com/img/prod-hist-prod.png
+
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/prod-hist-prod.png
 his = pl + 
       geom_histogram(aes(x=productive,y=..density..),alpha=0.2,binwidth=2) + 
       geom_density(aes(x=productive)) + opts(title="Productive")
@@ -79,7 +80,7 @@ print(qqp, vp = subvp)
 
 [[http://al3xandr3.github.com/img/prod-hist-prod.png]]
 
-#+begin_src R :session R :file /my/al3xandr3.github.com/img/prod-hist-dist.png
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/prod-hist-dist.png
 his = pl + 
       geom_histogram(aes(x=distracting,y=..density..),alpha=0.2,binwidth=2) + 
       geom_density(aes(x=distracting)) + opts(title = "Distracting")
@@ -113,7 +114,7 @@ Almost *1/4(~25%) of the whole year* in front of computer. Wow!
 
 * How many hours per day?
 
-#+begin_src R :session R :results output :exports both
+#+begin_src R :session R :results graphics :results output :exports both
 ttest <- t.test(mydata$total, conf.level = 0.95)
 print(ttest)
 #+end_src
@@ -142,7 +143,7 @@ So thats close to *40 hours per week*, almost *6 hours per day* in computer. And
 
 * Searching for Correlations
 
-#+begin_src R :session R :file /my/al3xandr3.github.com/img/prod-corr.png :exports code
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/prod-corr.png :exports code
 plotmatrix(mydata[2:4]) + geom_smooth(method="lm")
 #+end_src
 
@@ -171,7 +172,7 @@ Well, if we compare productive vs distracting, we see that productive(0.872) has
 
 * Trends
 
-#+begin_src R :session R :file /my/al3xandr3.github.com/img/prod-trend.png
+#+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/prod-trend.png
 ggplot(mydata, aes(x=date)) +  labs(x=NULL, y=NULL) + 
   opts(legend.position="bottom") +
   geom_line(aes(y = total, colour="total")) +
