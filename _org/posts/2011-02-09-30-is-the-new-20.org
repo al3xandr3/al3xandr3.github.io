@@ -1,5 +1,5 @@
 #+TITLE: 30 is the new 20, right?
-#+HTML: <category> birthday </category>
+#+HTML: <category> </category>
 #+OPTIONS: timestamp:nil
 
 Well i surely hope so, as i just turned 30. 

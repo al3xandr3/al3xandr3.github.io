@@ -1,5 +1,5 @@
 #+TITLE: Little 'ruby' photo organizer
-#+HTML: <category> ruby photo automation </category>
+#+HTML: <category> ruby photo automations </category>
 
 Place this script in a folder full of pictures, run it, and it will organize the pictures into folders by the day they were taken.
 

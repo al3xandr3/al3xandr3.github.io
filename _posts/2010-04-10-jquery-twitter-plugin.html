@@ -4,8 +4,8 @@ title: jQuery Twitter 'mini' plugin
 categories: 
 - jquery
 - twitter
+- javascript
 ---
-
 
 
 
@@ -76,9 +76,9 @@ See in:
   dataType: 'json',
   success: function (data) {
     $this.html(<span style="color: #8b2252;">""</span>); //clean previous html
-
+    
     $.each(data, function (i, item) {
-
+      
       //text
       $this.append(<span style="color: #8b2252;">"&lt;p id="</span> + item.id + <span style="color: #8b2252;">"&gt;"</span> + 
                    replaceURLWithHTMLLinks(item.text) + 
@@ -103,4 +103,6 @@ jQuery is a very nice designed lib, simple and powerfull. Some say <a href="http
 Full source code is available from github: <a href="http://github.com/al3xandr3/jquery-twitter-plugin">http://github.com/al3xandr3/jquery-twitter-plugin</a>
 </p></div>
 </div>
+<div id="postamble">
 
+</div>

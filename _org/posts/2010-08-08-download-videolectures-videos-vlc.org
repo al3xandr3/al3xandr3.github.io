@@ -1,5 +1,5 @@
 #+TITLE: How to download videolectures.net videos with VLC
-#+HTML: <category> automation shell </category>
+#+HTML: <category> automations </category>
 #+OPTIONS: timestamp:nil
 
 [[http://videolectures.net/][videolectures.net]] has very good content but, no good way to download the videos(at least as of now), and sometimes you want to watch them offline, so here's a way to dowload them if you have VLC video player installed.

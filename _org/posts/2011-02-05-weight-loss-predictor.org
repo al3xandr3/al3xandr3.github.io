@@ -1,5 +1,5 @@
 #+TITLE: Weight Loss Predictor
-#+HTML: <category> R health weight loss predicting monte carlo orgmode babel </category>
+#+HTML: <category> R health montecarlo org-mode statistics </category>
 #+OPTIONS: timestamp:nil
 
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
@@ -14,15 +14,26 @@ But of course, like with all diets, I'm quickly growing impatient of when i'm go
 
 Have been tracking my weight using google spreadsheets, so i can get the data into R like so:
 
-#+begin_src R :session R :exports code :results output
+#+begin_src R :session R :results output :exports both
 # load the data
-mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE)
+mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE, na.strings = "#VALUE!") 
+
+# remove NA's
+mydata = na.omit(mydata)
 
 # Create a new column with the proper date format
 mydata$timestamp = as.Date(mydata$timestamp, format='%d/%m/%Y')
+
+tail(mydata, 5)
 #+end_src
 
 #+results:
+:      timestamp   kg delta       day
+: 142 2011-03-06 77.2   0.3    Sunday
+: 143 2011-03-07 77.3   0.1    Monday
+: 144 2011-03-08 76.9  -0.4   Tuesday
+: 145 2011-03-09 76.4  -0.5 Wednesday
+: 146 2011-03-11 76.1  -0.3    Friday
 
 ** Normality
 
@@ -101,24 +112,16 @@ kgdelta = diff(dietalldays$kg)
 dietalldays$delta = c(0, kgdelta)
 
 # print only the 10 last values
-tail(dietalldays, 10)
+tail(dietalldays, 5)
 #+end_src
 
 #+results:
-#+begin_example
-
-    timestamp   kg delta
-22 2011-02-07 80.5  -0.2
-23 2011-02-08 80.0  -0.5
-24 2011-02-09 79.9  -0.1
-25 2011-02-10 79.5  -0.4
-26 2011-02-11 79.6   0.1
-27 2011-02-12 79.2  -0.4
-28 2011-02-13 79.9   0.7
-29 2011-02-14 80.1   0.2
-30 2011-02-15 79.1  -1.0
-31 2011-02-16 78.9  -0.2
-#+end_example
+:     timestamp    kg delta       day
+: 50 2011-03-07 77.30  0.10    Monday
+: 51 2011-03-08 76.90 -0.40   Tuesday
+: 52 2011-03-09 76.40 -0.50 Wednesday
+: 53 2011-03-10 76.25 -0.15      <NA>
+: 54 2011-03-11 76.10 -0.15    Friday
 
 ** So what is going to be my weight in a week?
 
@@ -138,9 +141,8 @@ summary(mcWeightWeek)
 #+end_src
 
 #+results:
-: 
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:   72.98   76.90   77.70   77.69   78.48   81.88
+:   71.60   74.35   75.05   75.05   75.75   79.25
 
 Another good thing about monte carlo methods is that they give a distribution of the prediction, so its possible to get a feeling of how certain the average is; either very certain with a big central peak, or not that certain when the graph is flatter and all over the place:
 
@@ -175,9 +177,8 @@ summary(mcDays75)
 #+end_src
 
 #+results:
-: 
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:    4.00   16.00   22.00   24.97   31.00  120.00
+:   2.000   4.000   7.000   9.109  11.000  87.000
 
 And the cumulative distribution:
 

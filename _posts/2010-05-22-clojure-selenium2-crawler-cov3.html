@@ -1,14 +1,12 @@
 --- 
 layout: post
-title: Clojure and Selenium2 Crawler - cov3
+title: Clojure and Selenium cov3 - part ii
 categories: 
 - clojure
 - selenium
-- crawler
-- webanalytics
-- automation
+- automations
+- webcrawler
 ---
-
 
 
 
@@ -20,48 +18,37 @@ categories:
 Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3.
 </p>
 <p>
-<img src="/img/crawler.png" alt="/img/crawler.png" />
+<img src="http://al3xandr3.github.com/img/crawler.png" alt="http://al3xandr3.github.com/img/crawler.png" />
 </p>
 <p>
 It has 3 flavors of crawling:
 </p><ul>
-<li>
-the usual crawler, give him a url, and keeps on going until he visits all of the linked pages (that point to same domain).
+<li>the usual crawler, give him a url, and keeps on going until he visits all of the linked pages (that point to same domain).
 </li>
-<li>
-a sitemap crawler, give him a sitemap.xml and visits the urls he finds in the sitemap.
+<li>a sitemap crawler, give him a sitemap.xml and visits the urls he finds in the sitemap.
 </li>
-<li>
-a step crawler, give him a csv file with the list of urls(steps) to visit.
+<li>a step crawler, give him a csv file with the list of urls(steps) to visit.
 </li>
 </ul>
-
 
 <p>
 On each page the crawler visits it executes a bit of javascript code that we can define as a validation.
 These validations are usefull to test your site in an automated way, say for example, you want to check:
 </p><ul>
-<li>
-if all pages contain meta tags
+<li>if all pages contain meta tags
 </li>
-<li>
-if all pages contain a title
+<li>if all pages contain a title
 </li>
-<li>
-if you have web analytics tracking in all pages
+<li>if you have web analytics tracking in all pages
 </li>
-<li>
-find out what links are broken
+<li>find out what links are broken
 </li>
-<li>
-test your own javascript in an automated way in all
-pages.
+<li>test your own javascript in an automated way in all
+  pages.
 </li>
-<li>
-etc..
+<li>etc..
 </li>
 </ul>
-
 
 <p>
 Also allows to use, for the crawling, either Firefox, Internet Explorer(when on windows), Chrome or HtmlUnit(a GUI-Less browser).
@@ -95,4 +82,6 @@ Also allows to use, for the crawling, either Firefox, Internet Explorer(when on 
 Is available from github: <a href="http://github.com/al3xandr3/cov3">http://github.com/al3xandr3/cov3</a>
 </p></div>
 </div>
+<div id="postamble">
 
+</div>

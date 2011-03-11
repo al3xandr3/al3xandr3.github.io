@@ -1,5 +1,5 @@
 #+TITLE: Machine Learning Ex2 - linear regression
-#+HTML: <category>R machinelearning ml linear regression</category>
+#+HTML: <category>R machinelearning regressionanalysis statistics</category>
 #+OPTIONS: timestamp:nil
 
 Andrew Ng has posted introductory machine learning lessons on the [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][OpenClassRoom]] site. I've watched the first set and will here solve [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex2/ex2.html][Exercise 2]].

@@ -44,7 +44,7 @@ Note that i just added added a line calling the twitter-update method.
 
 And thats it, now every time you run your tests, you will have the failures and errors twittered:
 
-[[/img/clj-twitter-alert.png]]
+[[http://al3xandr3.github.com/img/clj-twitter-alert.png]]
 
 I've created a 2nd account on twitter where i post these automated messages. And have my clojure tests(regression tests) running by themselves and i just check twitter to see if all is good.
 

@@ -1,7 +1,7 @@
 #+TITLE: Lem-E-Tweakit and Logic programming
-#+HTML: <category> sicp sql </category>
+#+HTML: <category> sicp sql prolog </category>
  
-[[/img/tweakit.png]]
+[[http://al3xandr3.github.com/img/tweakit.png]]
 
 While watching the SICP lectures  8a & 8b, one thing that i realized is that this logic programming they mention seems to be very similar to kind of things we use SQL for, just better... a lot more flexible.
 
