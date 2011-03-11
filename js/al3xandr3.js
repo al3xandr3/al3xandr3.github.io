@@ -49,7 +49,11 @@ $(function () {
   $("#content").css({
     "font-family": "Verdana"
   });
-
+  
+  $("#tags #tag").css({
+    "color": "#999999",
+  });
+  
   $("#post-list li #post-summary").css({   
     "font-size": "120%",
     "margin": "0.6em"

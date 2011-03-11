@@ -1,5 +1,5 @@
 #+TITLE: Monitoring Productivity Experiment
-#+HTML: <category> emacs orgmode babel R </category>
+#+HTML: <category> emacs org-mode R statistics </category>
 
 [[http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/][http://al3xandr3.github.com/img/prod-intro.jpeg]]
 

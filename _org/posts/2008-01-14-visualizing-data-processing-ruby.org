@@ -1,11 +1,11 @@
 #+TITLE: Visualizing Data, with Processing and JRuby
-#+HTML: <category> processing ruby statistics </category>
+#+HTML: <category> processing ruby </category>
 
 In order to learn a bit about data visualization and also learn about simple data warehousing, i've tried out a small experiment, where i set out to build an small app for visualizing data.
 
 I planned the following:
 
-[[/img/vis-mmap.png]]
+[[http://al3xandr3.github.com/img/vis-mmap.png]]
 
 The goal is to create a visualization to show the amount of vegetarians around the world.
 
@@ -36,7 +36,7 @@ Dimensions:
 
 Next Step is to build the warehouse, for this is used a plain database where i created 3 tables:
 
-[[/img/vis-dw.png]]
+[[http://al3xandr3.github.com/img/vis-dw.png]]
 
 *Dimension Country:*
 
@@ -83,12 +83,11 @@ Made some stuff clickable:
 
 And here's what it looks like:
 
-[[/img/vis-visual.png]]
+[[http://al3xandr3.github.com/img/vis-visual.png]]
 
 When Zoomed in, and showing Portugal stats on the bottom:
 
-[[/img/vis-visual-zoom.png]]
-
+[[http://al3xandr3.github.com/img/vis-visual-zoom.png]]
 
 Ended up with 584 lines of code, with a big chunk of repeated code, on the visualization part.
 

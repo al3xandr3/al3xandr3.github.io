@@ -1,5 +1,5 @@
 #+TITLE: Clojure and Selenium
-#+HTML: <category> clojure selenium automation </category>
+#+HTML: <category> clojure selenium automations webcrawler </category>
 
 I needed a kind of crawler to go around a list of pages, invoke some javascript and collect that output.
 

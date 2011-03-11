@@ -1,9 +1,9 @@
-#+TITLE: Clojure and Selenium2 Crawler - cov3
-#+HTML: <category> clojure selenium crawler webanalytics automation </category>
+#+TITLE: Clojure and Selenium cov3 - part ii
+#+HTML: <category> clojure selenium automations webcrawler</category>
 
 Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3.
 
-[[/img/crawler.png]]
+[[http://al3xandr3.github.com/img/crawler.png]]
 
 It has 3 flavors of crawling:
 - the usual crawler, give him a url, and keeps on going until he visits all of the linked pages (that point to same domain).

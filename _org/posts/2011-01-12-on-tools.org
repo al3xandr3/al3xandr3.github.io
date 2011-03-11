@@ -1,5 +1,5 @@
 #+TITLE: On Tools. Featuring guitar pedals, cattle growing and math.
-#+HTML: <category> guitar math matlab audio </category>
+#+HTML: <category> mathematics matlab guitar </category>
 #+OPTIONS: timestamp:nil
 
 Bear with me during all the technical and guitar lingo, and keep reading as there's a point.

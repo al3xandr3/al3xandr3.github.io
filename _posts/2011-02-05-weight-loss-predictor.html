@@ -4,13 +4,9 @@ title: Weight Loss Predictor
 categories: 
 - r
 - health
-- weight
-- loss
-- predicting
-- monte
-- carlo
-- orgmode
-- babel
+- montecarlo
+- org-mode
+- statistics
 ---
 
 
@@ -44,13 +40,27 @@ Have been tracking my weight using google spreadsheets, so i can get the data in
 
 
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
-</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&amp;hl=en_GB&amp;single=true&amp;gid=3&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&amp;hl=en_GB&amp;single=true&amp;gid=3&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>, na.strings = <span style="color: #8b2252;">"#VALUE!"</span>) 
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">remove NA's
+</span>mydata = na.omit(mydata)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Create a new column with the proper date format
 </span>mydata$timestamp = as.Date(mydata$timestamp, format=<span style="color: #8b2252;">'%d/%m/%Y'</span>)
+
+tail(mydata, 5)
 </pre>
 
 
+
+<pre class="example">
+     timestamp   kg delta       day
+142 2011-03-06 77.2   0.3    Sunday
+143 2011-03-07 77.3   0.1    Monday
+144 2011-03-08 76.9  -0.4   Tuesday
+145 2011-03-09 76.4  -0.5 Wednesday
+146 2011-03-11 76.1  -0.3    Friday
+</pre>
 
 
 
@@ -154,25 +164,19 @@ lastweight = tail(dietdata$kg, n=1)
 dietalldays$delta = c(0, kgdelta)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">print only the 10 last values
-</span>tail(dietalldays, 10)
+</span>tail(dietalldays, 5)
 </pre>
 
 
 
-
-<pre class="example">    timestamp   kg delta       day
-43 2011-02-28 77.5  -0.1    Monday
-44 2011-03-01 77.5   0.0   Tuesday
-45 2011-03-02 77.5   0.0 Wednesday
-46 2011-03-03 77.3  -0.2  Thursday
-47 2011-03-04 77.3   0.0    Friday
-48 2011-03-05 76.9  -0.4  Saturday
-49 2011-03-06 77.2   0.3    Sunday
-50 2011-03-07 77.3   0.1    Monday
-51 2011-03-08 76.9  -0.4   Tuesday
-52 2011-03-09 76.4  -0.5 Wednesday
+<pre class="example">
+    timestamp    kg delta       day
+50 2011-03-07 77.30  0.10    Monday
+51 2011-03-08 76.90 -0.40   Tuesday
+52 2011-03-09 76.40 -0.50 Wednesday
+53 2011-03-10 76.25 -0.15      &lt;NA&gt;
+54 2011-03-11 76.10 -0.15    Friday
 </pre>
-
 
 
 
@@ -204,7 +208,7 @@ summary(mcWeightWeek)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  71.50   74.68   75.38   75.37   76.10   79.00
+  70.80   74.35   75.05   75.05   75.75   78.80
 </pre>
 
 
@@ -257,7 +261,7 @@ summary(mcDays75)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-   2.00    5.00    9.00   11.19   14.00  143.00
+  2.000   4.000   7.000   9.073  11.000  82.000
 </pre>
 
 

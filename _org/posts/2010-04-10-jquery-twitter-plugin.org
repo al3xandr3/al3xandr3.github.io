@@ -1,5 +1,5 @@
 #+TITLE: jQuery Twitter 'mini' plugin
-#+HTML: <category> jquery twitter </category>
+#+HTML: <category> jquery twitter javascript </category>
 
 Here's a little jQuery plugin for displaying a twitter feed into a web page. The goal was to put my latest 'tweets' on my blog, and also learn jQuery. 
 

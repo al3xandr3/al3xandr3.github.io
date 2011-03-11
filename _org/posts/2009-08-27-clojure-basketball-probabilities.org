@@ -1,5 +1,5 @@
 #+TITLE: Probability simulation of basketball throws 
-#+HTML: <category> probability clojure incanter </category>
+#+HTML: <category> statistics montecarlo clojure incanter </category>
 
 A little probability simulation from the book /Resampling: The New Statistics/, using Clojure and Incanter.
 
@@ -50,7 +50,7 @@ The category-count function is a helper function to count :miss and :hit's but i
 (view (bar-chart (keys throws-count) (vals throws-count)))
 #+END_SRC
 
-[[/img/basketball-1throw.png]]
+[[http://al3xandr3.github.com/img/basketball-1throw.png]]
 
 Results make sense, its an 1/4 (25%) of probabilities of making the basket, so simulations seems to be working correctly.
 
