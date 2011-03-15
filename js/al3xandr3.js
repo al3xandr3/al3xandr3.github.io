@@ -63,6 +63,10 @@ $(function () {
     "font-size": "107%"
   });
 
+  $("#category-list").css({
+    "font-size": "107%"
+  });
+
   $("#footer").css({
     "font-size": "110%"
   }).addClass("alt");
