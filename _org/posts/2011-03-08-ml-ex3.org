@@ -1,4 +1,4 @@
-#+TITLE: Machine Learning Ex3 - multivariate linear regression
+#+TITLE: Machine Learning Ex3 - Multivariate Linear Regression
 #+HTML: <category>R machinelearning regressionanalysis statistics</category>
 #+OPTIONS: timestamp:nil
 
