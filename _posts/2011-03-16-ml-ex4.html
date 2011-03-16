@@ -96,7 +96,7 @@ legend(<span style="color: #8b2252;">"bottomright"</span>, c(<span style="color:
 </div>
 
 <div class="outline-2" id="outline-container-2">
-<h2 id="sec-2">A bit of theory </h2>
+<h2 id="sec-2">A Bit of Theory </h2>
 <div class="outline-text-2" id="text-2">
 
 
@@ -273,16 +273,16 @@ print((1 - g(c(1, 20, 80) %*% th))* 100)
 
 
 <p>
-To visualize the fit, an important remark is that: \(P(y=1 | x ;\theta) = 0.5\) that means, when \(\theta^T x = 0\), so:
+To visualize the fit, an important remark is that: \(P(y=1 | x ;\theta) = 0.5\) that happens when \(\theta^T x = 0\), so:
 </p>
 
 
 
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">when ax0 + bx2 + cx3 = 0 is the middle(decision boundary line),
-</span><span style="color: #b22222;"># </span><span style="color: #b22222;">so given x1 from sample data, solving to x2, we get
+</span><span style="color: #b22222;"># </span><span style="color: #b22222;">so given x1 from sample data, solving to x2, we get:
 </span>x2 = (-1/th[3,]) * ((th[2,] * x1) + th[1,])
 
-<span style="color: #b22222;"># </span><span style="color: #b22222;">get 2 points
+<span style="color: #b22222;"># </span><span style="color: #b22222;">get 2 points (that will define a line)
 </span>x1 = c(min(x[,2]), max(x[,2]))
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">plot
