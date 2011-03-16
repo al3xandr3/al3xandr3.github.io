@@ -7,35 +7,40 @@ plot(mydata$test1[mydata$admitted == 0], mydata$test2[mydata$admitted == 0], xla
 points(mydata$test1[mydata$admitted == 1], mydata$test2[mydata$admitted == 1], col="blue", pch=2)
 legend("bottomright", c("not admitted", "admitted"), pch=c(1, 2), col=c("red", "blue") )
 
-# sigmoid function
+# sigmoid
 g = function (z) {
   return (1 / (1 + exp(-z) ))
 } # plot(g(c(1,2,3,4,5,6)))
 
+# hypothesis 
 h = function (x,th) {
   return( g(x %*% th) )
 } # h(x,th)
 
-# cost function
+# cost
 J = function (x,y,th,m) {
   return( 1/m * sum(-y * log(h(x,th)) - (1 - y) * log(1 - h(x,th))) )
 } # J(x,y,th,m)
 
-# derivative of J 
+# derivative of J (gradient)
 grad = function (x,y,th,m) {
   return( 1/m * t(x) %*% (h(x,th) - y))
 } # grad(x,y,th,m)
 
+# Hessian
 H = function (x,y,th,m) {
   return (1/m * t(x) %*% x * diag(h(x,th)) * diag(1 - h(x,th)))
 } # H(x,y,th,m)
 
+# setup variables
 j = array(0,c(10,1))
 m = length(mydata$test1)
 x = matrix(c(rep(1,m), mydata$test1, mydata$test2), ncol=3)
 y = matrix(mydata$admitted, ncol=1)
 th = matrix(0,3)
 
+# iterate until convergence
+# note that the newton's method converges fast
 for (i in 1:10) {
   j[i] = J(x,y,th,m)
   th = th - solve(H(x,y,th,m)) %*% grad(x,y,th,m) 

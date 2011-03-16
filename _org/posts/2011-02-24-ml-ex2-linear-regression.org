@@ -1,4 +1,5 @@
-#+TITLE: Machine Learning Ex2 - linear regression
+#+TITLE: Machine Learning Ex2 - Linear Regression
+
 #+HTML: <category>R machinelearning regressionanalysis statistics</category>
 #+OPTIONS: timestamp:nil
 
