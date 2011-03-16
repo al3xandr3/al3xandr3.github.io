@@ -30,7 +30,7 @@ legend("bottomright", c("not admitted", "admitted"), pch=c(1, 2), col=c("red", "
 
 [[http://al3xandr3.github.com/img/ml-ex4-plotdata.png]]
 
-* A bit of theory
+* A Bit of Theory
 
 Most of the ideas explored in linear regression apply in same way, first we define what the hypothesis equation looks like(the mathematical representation of this knowledge). 
 It originates from the line equation, but has now evolved into a new equation that returns values between [0,1] suited for binary classification. That is, we made up an equation that given test1 value and test2 value, will return the probability that the student will be admitted(y=1) into college:
