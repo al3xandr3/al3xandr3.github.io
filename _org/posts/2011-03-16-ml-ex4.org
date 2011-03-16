@@ -4,10 +4,10 @@
 
 [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex4/ex4.html][Exercise 4]] is all about using Newton's Method to implement logistic regression on a classification problem.
 
-For all this to make sense i suggest having a look at [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][Andre Ng machine learning lectures]] on [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][openclassroom]].
+For all this to make sense i suggest having a look at [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][Andrew Ng machine learning lectures]] on [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][openclassroom]].
 
 We start with a dataset representing 40 students who were admitted to college and 40 students who were not admitted, and their corresponding grades for 2 exams.
-"/Your mission, should you decide to accept it/" is to build a binary classification model that estimates college admission chances based on a student's scores on two exams(test1 and test2).
+/Your mission, should you decide to accept it/ is to build a binary classification model that estimates college admission chances based on a student's scores on two exams(test1 and test2).
 
 #+INCLUDE: /my/setup/mathjax.org
 
@@ -49,7 +49,7 @@ Now we need to find the $\theta$ parameters for getting a working hypothesis equ
 To help with that search we define a cost equation, that for a given $\theta$ returns how far off we are compared to the sample data.
 
 \[
-J(\theta) = \frac{1}{m} \sum_{i=1}^m ( -y log(h_\theta(x)) - (1 - y) log(1- h_\theta(x)) ) 
+J(\theta) = \frac{1}{m} \sum_{i=1}^m ((-y)log(h_\theta(x)) - (1 - y) log(1- h_\theta(x)) ) 
 \]
 
 The lower the cost the better(closer to real data we get). Thus, the goal becomes to minimize the cost.
@@ -69,7 +69,6 @@ And the gradient and Hessian are defined like so(in vectorized versions):
 \[
 H = \frac{1}{m} \sum_{i=1}^m [h_\theta(x) (1 - h_\theta(x)) x^T x]
 \]
-
 
 * Implementation
 
@@ -183,7 +182,7 @@ legend("bottomright", c("not admitted", "admitted"), pch=c(1, 2), col=c("red", "
 
 [[http://al3xandr3.github.com/img/ml-ex4-fit.png]]
 
-Beautiful :)
+Beautiful.
 
 
 *** Notes & References:
