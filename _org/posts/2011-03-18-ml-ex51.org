@@ -25,6 +25,8 @@ plot(mydata)
 
 [[http://al3xandr3.github.com/img/ml-ex51-data.png]]
 
+* Theory
+
 We will fit a 5th order polynomial, so the hypothesis is:
 
 \[
@@ -38,7 +40,7 @@ The idea of the regularization is to blunt the fit a bit, i.e. loosen up the tig
 For that we define the cost function like so:
 
 \[
-J(\theta) = \frac{1}{2m} [\sum_{i=1}^m ((h_\theta(x^{(i)}) - y^{(i)})^2) + \lambda \sum_{i=1}^m \theta^2]
+J(\theta) = \frac{1}{2m} [\sum_{i=1}^m ((h_\theta(x^{(i)}) - y^{(i)})^2) + \lambda \sum_{i=1}^n \theta^2]
 \]
 
 The Lambda is called the regularization parameter.
