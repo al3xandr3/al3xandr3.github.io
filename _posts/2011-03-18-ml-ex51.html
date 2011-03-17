@@ -1,0 +1,198 @@
+--- 
+layout: post
+title: Machine Learning Ex5.1 - Linear Regression Regularization
+categories: 
+- r
+- machinelearning
+- regressionanalysis
+- statistics
+---
+
+
+
+
+
+
+
+<p>
+<a href="http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex4/ex4.html">Exercise 5.1</a> Improves the Linear Regression implementation done in <a href="http://al3xandr3.github.com/2011/03/08/ml-ex3.html">Exercise 3</a> by adding a regularization parameter that reduces the problem of over-fitting. 
+</p>
+<p>
+Over-fitting occurs especially when fitting a high-order polynomial, that we will try to do here.
+</p>
+
+
+<script src="http://www.mathjax.org/mathjax/MathJax.js" type="text/javascript">
+    MathJax.Hub.Config({
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "left",
+        displayIndent: "2em",
+ 
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+</script>
+
+
+
+<div class="outline-2" id="outline-container-1">
+<h2 id="sec-1">Data </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Here's the points we will make a model from:
+</p>
+
+
+
+<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">linear regression
+</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?hl=en_GB&amp;hl=en_GB&amp;key=0AnypY27pPCJydGhtbUlZekVUQTc0dm5QaXp1YWpSY3c&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">view data
+</span>plot(mydata)
+</pre>
+
+
+
+
+<p>
+<img src="http://al3xandr3.github.com/img/ml-ex51-data.png" alt="http://al3xandr3.github.com/img/ml-ex51-data.png" />
+</p>
+<p>
+We will fit a 5th order polynomial, so the hypothesis is:
+</p>
+
+
+\[
+h_\theta(x) = \theta_0 x_0 + \theta_1 x_1 + \theta_2 x_2^2 + \theta_3 x_3^3 + \theta_4 x_4^4 + \theta_5 x_5^5
+\]
+
+<p>
+With \(x_0 = 1\)
+</p>
+<p>
+The idea of the regularization is to blunt the fit a bit, i.e. loosen up the tight fit.
+</p>
+<p>
+For that we define the cost function like so:
+</p>
+
+
+\[
+J(\theta) = \frac{1}{2m} [\sum_{i=1}^m ((h_\theta(x^{(i)}) - y^{(i)})^2) + \lambda \sum_{i=1}^m \theta^2]
+\]
+
+<p>
+The Lambda is called the regularization parameter.
+</p>
+<p>
+The regularization parameter added at the end will influence the exact cost values on all parameters.
+This will reflect in the search for the \(\theta\) parameters and consequently loosen up the tight fit.
+</p>
+<p>
+After some math that is not shown here, the <b>normal equations</b> with the regularization parameter added, become:
+</p>
+
+
+\[
+\theta =  (X^T X + \lambda \begin{bmatrix}
+       0 & & & \\ & 1 & & \\ & & ... & \\ & & & 1
+     \end{bmatrix}
+     )^{-1} (X^T y)
+\]
+
+</div>
+
+</div>
+
+<div class="outline-2" id="outline-container-2">
+<h2 id="sec-2">Implementation </h2>
+<div class="outline-text-2" id="text-2">
+
+
+<p>
+We will try 3 different lambda values to see how it influences the fit. Starting with \(\lambda=0\) where we can see the fit without the regularization parameter.
+</p>
+
+
+
+<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">setup variables
+</span>m = length(mydata$x) <span style="color: #b22222;"># </span><span style="color: #b22222;">samples
+</span>x = matrix(c(rep(1,m), mydata$x, mydata$x^2, mydata$x^3, mydata$x^4, mydata$x^5), ncol=6)
+n = ncol(x) <span style="color: #b22222;"># </span><span style="color: #b22222;">features
+</span>y = matrix(mydata$y, ncol=1)
+lambda = c(0,1,10)
+d = diag(1,n,n)
+d[1,1] = 0
+th = array(0,c(n,length(lambda)))
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">apply normal equations for each of the lambda's
+</span><span style="color: #7f007f;">for</span> (i <span style="color: #7f007f;">in</span> 1:length(lambda)) {
+  th[,i] = solve(t(x) %*% x + (lambda[i] * d)) %*% (t(x) %*% y)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">plot
+</span>plot(mydata)
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">lets create many points
+</span>nwx = seq(-1, 1, len=50);
+x = matrix(c(rep(1,length(nwx)), nwx, nwx^2, nwx^3, nwx^4, nwx^5), ncol=6)
+lines(nwx, x %*% th[,1], col=<span style="color: #8b2252;">"blue"</span>, lty=2)
+lines(nwx, x %*% th[,2], col=<span style="color: #8b2252;">"red"</span>, lty=2)
+lines(nwx, x %*% th[,3], col=<span style="color: #8b2252;">"green3"</span>, lty=2)
+legend(<span style="color: #8b2252;">"topright"</span>, c(expression(lambda==0), expression(lambda==1),expression(lambda==10)), lty=2,col=c(<span style="color: #8b2252;">"blue"</span>, <span style="color: #8b2252;">"red"</span>, <span style="color: #8b2252;">"green3"</span>), bty=<span style="color: #8b2252;">"n"</span>)
+</pre>
+
+
+
+
+<p>
+<img src="http://al3xandr3.github.com/img/ml-ex51-regularized.png" alt="http://al3xandr3.github.com/img/ml-ex51-regularized.png" />
+</p>
+<p>
+With the \(\lambda=0\) the fit is very tight to the original points (the blue line) but as we increase lambda, the model gets less tight(more generalized) and thus avoiding over-fitting.
+</p>
+
+</div>
+
+<div class="outline-3" id="outline-container-2_1">
+<h3 id="sec-2_1">References: </h3>
+<div class="outline-text-3" id="text-2_1">
+
+<ul>
+<li><a href="http://al3xandr3.github.com/2011/03/08/ml-ex3.html">Exercise3, original Linear Regression implementation</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble">
+
+</div>
