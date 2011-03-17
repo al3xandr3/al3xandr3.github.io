@@ -85,6 +85,15 @@ Here's the points we will make a model from:
 <p>
 <img src="http://al3xandr3.github.com/img/ml-ex51-data.png" alt="http://al3xandr3.github.com/img/ml-ex51-data.png" />
 </p>
+</div>
+
+</div>
+
+<div class="outline-2" id="outline-container-2">
+<h2 id="sec-2">Theory </h2>
+<div class="outline-text-2" id="text-2">
+
+
 <p>
 We will fit a 5th order polynomial, so the hypothesis is:
 </p>
@@ -106,7 +115,7 @@ For that we define the cost function like so:
 
 
 \[
-J(\theta) = \frac{1}{2m} [\sum_{i=1}^m ((h_\theta(x^{(i)}) - y^{(i)})^2) + \lambda \sum_{i=1}^m \theta^2]
+J(\theta) = \frac{1}{2m} [\sum_{i=1}^m ((h_\theta(x^{(i)}) - y^{(i)})^2) + \lambda \sum_{i=1}^n \theta^2]
 \]
 
 <p>
@@ -132,9 +141,9 @@ After some math that is not shown here, the <b>normal equations</b> with the reg
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
-<h2 id="sec-2">Implementation </h2>
-<div class="outline-text-2" id="text-2">
+<div class="outline-2" id="outline-container-3">
+<h2 id="sec-3">Implementation </h2>
+<div class="outline-text-2" id="text-3">
 
 
 <p>
@@ -182,9 +191,9 @@ With the \(\lambda=0\) the fit is very tight to the original points (the blue li
 
 </div>
 
-<div class="outline-3" id="outline-container-2_1">
-<h3 id="sec-2_1">References: </h3>
-<div class="outline-text-3" id="text-2_1">
+<div class="outline-3" id="outline-container-3_1">
+<h3 id="sec-3_1">References: </h3>
+<div class="outline-text-3" id="text-3_1">
 
 <ul>
 <li><a href="http://al3xandr3.github.com/2011/03/08/ml-ex3.html">Exercise3, original Linear Regression implementation</a>
