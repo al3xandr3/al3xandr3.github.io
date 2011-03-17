@@ -1,4 +1,4 @@
-#+TITLE: Machine Learning Ex5.1 - Linear Regression Regularization
+#+TITLE: Machine Learning Ex5.1 - Regularized Linear Regression
 #+HTML: <category>R machinelearning regressionanalysis statistics</category>
 #+OPTIONS: timestamp:nil
 
