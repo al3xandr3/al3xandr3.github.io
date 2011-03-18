@@ -5,7 +5,7 @@ mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydHZPN2pFb
 # plot the data
 plot(mydata$u[mydata$y == 0], mydata$v[mydata$y == 0],, xlab="u", ylab="v")
 points(mydata$u[mydata$y == 1], mydata$v[mydata$y == 1], col="blue", pch=3)
-legend("topright", c("y=0","y=1"), pch=c(1, 3), col=c("black", "blue") )
+legend("topright", c("y=0","y=1"), pch=c(1, 3), col=c("black", "blue"), bty="n")
 
 # sigmoid function
 g = function (z) {
