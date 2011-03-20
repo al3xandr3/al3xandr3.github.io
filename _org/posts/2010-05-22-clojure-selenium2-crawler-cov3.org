@@ -1,5 +1,5 @@
 #+TITLE: Clojure and Selenium cov3 - part ii
-#+HTML: <category> clojure selenium automations webcrawler</category>
+#+HTML: <category> clojure selenium automations webcrawler </category>
 
 Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3.
 

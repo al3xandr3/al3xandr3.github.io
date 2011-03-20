@@ -1,6 +1,5 @@
 #+TITLE: HomeMade Auto-Updater
-#+HTML: <category> mac emacs automations </category>
-#+OPTIONS: timestamp:nil
+#+HTML: <category> emacs automations </category>
 
 Here's a script that i use frequently to update an application to the last version. It automates the process of downloading and installing the app.
 

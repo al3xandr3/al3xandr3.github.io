@@ -1,5 +1,5 @@
 #+TITLE: Probability simulation of basketball throws 
-#+HTML: <category> statistics montecarlo clojure incanter </category>
+#+HTML: <category> statistics montecarlo clojure </category>
 
 A little probability simulation from the book /Resampling: The New Statistics/, using Clojure and Incanter.
 

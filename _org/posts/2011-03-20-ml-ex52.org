@@ -1,6 +1,5 @@
 #+TITLE: Machine Learning Ex5.2 - Regularized Logistic Regression
-#+HTML: <category>R machinelearning regressionanalysis statistics</category>
-#+OPTIONS: timestamp:nil
+#+HTML: <category> R machinelearning statistics </category>
 
 [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex5/ex5.html][Exercise 5.2]] Improves the Logistic Regression implementation done in [[http://al3xandr3.github.com/2011/03/16/ml-ex4.html][Exercise 4]] by adding a regularization parameter that reduces the problem of over-fitting. We will be using Newton's Method.
 
@@ -204,4 +203,4 @@ legend("topright",  c(expression(lambda==0), expression(lambda==1),expression(la
 
 [[http://al3xandr3.github.com/img/ml-ex52-fit.png]]
 
-See that the black one is the more tightly fit to the points $\lambda=0$, and as we increase Lambda values it becomes more loose(and generalized).
+See that the black one is the more tightly fit to the crosses $\lambda=0$, and as we increase Lambda values it becomes more loose(and more generalized).

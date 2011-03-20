@@ -1,6 +1,5 @@
 #+TITLE: Machine Learning Ex3 - Multivariate Linear Regression
-#+HTML: <category>R machinelearning regressionanalysis statistics</category>
-#+OPTIONS: timestamp:nil
+#+HTML: <category> R machinelearning statistics </category>
 
 [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex3/ex3.html][Exercise 3]] is about multivariate linear regression. First part is about finding a good learning rate (alpha) and 2nd part is about implementing linear regression using normal equations instead of the gradient descent algorithm.
 
