@@ -25,7 +25,7 @@ legend("topright", c("y=0","y=1"), pch=c(1, 3), col=c("black", "blue"), bty="n")
 
 [[http://al3xandr3.github.com/img/ml-ex52-data.png]]
 
-The idea is to create a mathematical model, that separates the circles from the crosses in the plot above. And that will then allow to predict, for a new u and v value, the probability of being a cross.
+The idea is to create a mathematical model, that separates the circles from the crosses in the plot above. And that will then allow to predict, for a new u and v value, the probability of it being a cross.
 
 * Theory
 
