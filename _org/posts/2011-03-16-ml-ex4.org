@@ -1,7 +1,7 @@
-#+TITLE: Machine Learning Ex4 - Logistic Regression and Newton's Method
+#+TITLE: Machine Learning Ex4 - Logistic Regression
 #+HTML: <category> R machinelearning statistics </category>
 
-[[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex4/ex4.html][Exercise 4]] is all about using Newton's Method to implement logistic regression on a classification problem.
+[[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex4/ex4.html][Exercise 4]] is all about implementing Logistic Regression using Newton's Method, on a classification problem.
 
 For all this to make sense i suggest having a look at [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][Andrew Ng machine learning lectures]] on [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][openclassroom]].
 
