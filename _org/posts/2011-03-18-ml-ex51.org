@@ -1,8 +1,7 @@
 #+TITLE: Machine Learning Ex5.1 - Regularized Linear Regression
-#+HTML: <category>R machinelearning regressionanalysis statistics</category>
-#+OPTIONS: timestamp:nil
+#+HTML: <category> R machinelearning statistics </category>
 
-[[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex4/ex4.html][Exercise 5.1]] Improves the Linear Regression implementation done in [[http://al3xandr3.github.com/2011/03/08/ml-ex3.html][Exercise 3]] by adding a regularization parameter that reduces the problem of over-fitting. 
+[[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex5/ex5.html][Exercise 5.1]] Improves the Linear Regression implementation done in [[http://al3xandr3.github.com/2011/03/08/ml-ex3.html][Exercise 3]] by adding a regularization parameter that reduces the problem of over-fitting. 
 
 Over-fitting occurs especially when fitting a high-order polynomial, that we will try to do here.
 

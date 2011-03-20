@@ -1,5 +1,5 @@
-#+TITLE: Automating todo tasks reports with orgmode 
-#+HTML: <category> org-mode emacs automations </category>
+#+TITLE: Automating todo tasks reports with org-mode 
+#+HTML: <category> org-mode emacs automations ruby </category>
 
 Here's the geek automation of the week, its for helping creating reports from my TODO tasks list when using the amazing emacs org-mode([[http://orgmode.org/][see here whats orgmode all about]]).
 

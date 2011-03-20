@@ -1,5 +1,5 @@
 #+TITLE: Visualizing Data, with Processing and JRuby
-#+HTML: <category> processing ruby </category>
+#+HTML: <category> processing ruby statistics </category>
 
 In order to learn a bit about data visualization and also learn about simple data warehousing, i've tried out a small experiment, where i set out to build an small app for visualizing data.
 
