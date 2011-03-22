@@ -18,7 +18,7 @@ var al3xandr3 = {};
 al3xandr3.color1 = "#FFFFFF";
 al3xandr3.color2 = "#819B4D";
 al3xandr3.color3 = "#E7E7E7";
-al3xandr3.color4 = "#FF7000";
+al3xandr3.color4 = "#E42217";
 
 //On Document Ready
 $(function () {
