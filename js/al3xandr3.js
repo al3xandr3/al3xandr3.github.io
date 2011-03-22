@@ -1,12 +1,24 @@
 /*global jQuery, _gaq $*/
 /*jslint bitwise: true, browser: true, eqeqeq: true, immed: true, newcap: true, nomen: true, onevar: true, plusplus: true, white: true, widget: true, undef: true, indent: 2*/
 
+(function ($) {
+  $.fn.spanify = function (str, aclass) {
+    var regex = new RegExp(str, "gi");    
+    return this.each(function () {
+        this.innerHTML = this.innerHTML
+            .replace(regex, function (matched) { 
+              return "<span class=\"" + aclass + "\">" + matched + "</span>"; 
+            });
+      });
+  };
+}(jQuery));
+
 var al3xandr3 = {};
 
 al3xandr3.color1 = "#FFFFFF";
-al3xandr3.color2 = "#A66553";
+al3xandr3.color2 = "#819B4D";
 al3xandr3.color3 = "#E7E7E7";
-al3xandr3.color4 = "#819B4D";
+al3xandr3.color4 = "#FF7000";
 
 //On Document Ready
 $(function () {
@@ -27,8 +39,10 @@ $(function () {
     "font-size": "400%",
     "letter-spacing": "-.08em",
     "border-bottom": "0px solid"
-  });
+  }).spanify("3", "titlenumbers");
   
+  $(".titlenumbers").addClass("alt").css('color', al3xandr3.color4);
+
   $("ul").css({
     "list-style": "none outside none", 
     "padding-top": "1.5em"
@@ -44,7 +58,9 @@ $(function () {
     "color": "#333",
     "text-decoration": "none",
     "border-bottom": "0px solid "
-  });
+  }).spanify("[muc]", "lnkletters");
+  
+  $(".lnkletters").css('color', al3xandr3.color4);
 
   $("#content").css({
     "font-family": "Verdana"
