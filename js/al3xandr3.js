@@ -33,13 +33,13 @@ $(function () {
     "list-style": "none outside none", 
     "padding-top": "1.5em"
   });
- 
+
   $("#menu li").css({
     "float": "left", 
-    "margin": "0 0.25em",
+    "margin": "0.5em 0.25em",
     "font-size": "160%"
   }).addClass("alt");
-
+ 
   $("#menu li a").css({
     "color": "#333",
     "text-decoration": "none",
@@ -51,7 +51,7 @@ $(function () {
   });
   
   $("#tags #tag").css({
-    "color": "#999999",
+    "color": "#999999"
   });
   
   $("#post-list li #post-summary").css({   
