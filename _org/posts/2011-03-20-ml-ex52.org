@@ -203,4 +203,4 @@ legend("topright",  c(expression(lambda==0), expression(lambda==1),expression(la
 
 [[http://al3xandr3.github.com/img/ml-ex52-fit.png]]
 
-See that the black one is the more tightly fit to the crosses $\lambda=0$, and as we increase Lambda values it becomes more loose(and more generalized).
+See that the black line ($\lambda=0$) is the more tightly fit to the crosses points spread, and as we increase the lambda values it becomes more loose(and more generalized).
