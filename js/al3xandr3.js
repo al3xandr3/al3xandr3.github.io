@@ -1,5 +1,5 @@
+/*jslint bitwise: true, browser: true, eqeqeq: true, immed: true, newcap: true, nomen: true, onevar: true, plusplus: true, white: true, widget: true, undef: true, indent: 2, nomen: false*/
 /*global jQuery, _gaq $*/
-/*jslint bitwise: true, browser: true, eqeqeq: true, immed: true, newcap: true, nomen: true, onevar: true, plusplus: true, white: true, widget: true, undef: true, indent: 2*/
 
 (function ($) {
   $.fn.spanify = function (str, aclass) {
@@ -95,6 +95,10 @@ $(function () {
   });
 
   $("td").removeClass("left");
+  
+  $("#tags a").css({
+    "border-bottom": "none"
+  });
   ///////////////
 
   //Search
