@@ -24,7 +24,7 @@ $(function () {
 
   $("#title").css({
     "float": "left", 
-    "font-size": "330%",
+    "font-size": "400%",
     "letter-spacing": "-.08em",
     "border-bottom": "0px solid"
   });
@@ -36,8 +36,8 @@ $(function () {
  
   $("#menu li").css({
     "float": "left", 
-    "margin": "0 0.3em",
-    "font-size": "150%"
+    "margin": "0 0.25em",
+    "font-size": "160%"
   }).addClass("alt");
 
   $("#menu li a").css({
