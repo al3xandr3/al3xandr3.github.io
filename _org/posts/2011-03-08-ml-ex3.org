@@ -3,6 +3,8 @@
 
 [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex3/ex3.html][Exercise 3]] is about multivariate linear regression. First part is about finding a good learning rate (alpha) and 2nd part is about implementing linear regression using normal equations instead of the gradient descent algorithm.
 
+With implementation in R.
+
 #+INCLUDE: /my/setup/mathjax.org
 
 * Data
@@ -202,4 +204,4 @@ Normal equations are more direct but also more costly than gradient descent to r
 *** References
 - [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][OpenClassroom Machine Learning]]
 - [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex3/ex3.html][Exercise 3: Multivariate Linear Regression]]
-
+- Thanks to Andrew Ng and [[http://openclassroom.stanford.edu/MainFolder/HomePage.php][OpenClassRoom]] for the great lessons. 

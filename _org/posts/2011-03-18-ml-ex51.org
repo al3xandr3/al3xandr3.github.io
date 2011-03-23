@@ -5,6 +5,8 @@
 
 Over-fitting occurs especially when fitting a high-order polynomial, that we will try to do here.
 
+With implementation in R.
+
 #+INCLUDE: /my/setup/mathjax.org
 
 * Data
@@ -25,7 +27,7 @@ plot(mydata)
 [[http://al3xandr3.github.com/img/ml-ex51-data.png]]
 
 * Theory
-
+;
 We will fit a 5th order polynomial, so the hypothesis is:
 
 \[
@@ -97,3 +99,4 @@ With the $\lambda=0$ the fit is very tight to the original points (the blue line
 
 ** References:
 - [[http://al3xandr3.github.com/2011/03/08/ml-ex3.html][Exercise3, original Linear Regression implementation]]
+- Thanks to Andrew Ng and [[http://openclassroom.stanford.edu/MainFolder/HomePage.php][OpenClassRoom]] for the great lessons. 
