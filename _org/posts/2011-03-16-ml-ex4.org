@@ -8,6 +8,8 @@ For all this to make sense i suggest having a look at [[http://openclassroom.sta
 We start with a dataset representing 40 students who were admitted to college and 40 students who were not admitted, and their corresponding grades for 2 exams.
 /Your mission, should you decide to accept it/ is to build a binary classification model that estimates college admission chances based on a student's scores on two exams(test1 and test2).
 
+With implementation in R.
+
 #+INCLUDE: /my/setup/mathjax.org
 
 * Plot the Data
@@ -183,9 +185,9 @@ legend("bottomright", c("not admitted", "admitted"), pch=c(1, 2), col=c("red", "
 
 Beautiful.
 
-
 *** Notes & References:
 
 - Thanks for Tal Galili patience in adding my half-baked blog into the [[http://www.r-bloggers.com/][R-bloggers.com]] list. [[http://www.r-bloggers.com/][Go have a peek, R-bloggers]] is a great source of R information.
 - [[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex4/ex4.html][Exercise 4 here]]
 - [[http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning][Lectures here]]
+- Thanks to Andrew Ng and [[http://openclassroom.stanford.edu/MainFolder/HomePage.php][OpenClassRoom]] for the great lessons. 

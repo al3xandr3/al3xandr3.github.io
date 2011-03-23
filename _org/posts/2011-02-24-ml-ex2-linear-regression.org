@@ -160,7 +160,8 @@ ex2plot + geom_abline(intercept=theta[1], slope=theta[2])
 
 
 *** References
-
 - [[http://www.math.umaine.edu/~hiebeler/comp/matlabR.html][MATLAB / R Reference, by David Hiebeler]]
 - [[ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf][Short Math Guide for LaTex(.pdf)]]
 - [[http://wims.unice.fr/wims/en_tool~linear~matmult.en.html][Matrix multiplier tool]]
+- Thanks to Andrew Ng and [[http://openclassroom.stanford.edu/MainFolder/HomePage.php][OpenClassRoom]] for the great lessons. 
+
