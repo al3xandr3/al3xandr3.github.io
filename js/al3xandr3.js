@@ -66,10 +66,14 @@ $(function () {
     "font-family": "Verdana"
   });
   
-  $("#tags #tag").css({
+  $("#cloud #tag").css({
     "color": "#999999"
   });
   
+  $("#cloud a").css({
+    "border-bottom": "none"
+  });
+
   $("#post-list li #post-summary").css({   
     "font-size": "120%",
     "margin": "0.6em"
@@ -95,10 +99,11 @@ $(function () {
   });
 
   $("td").removeClass("left");
-  
-  $("#tags a").css({
-    "border-bottom": "none"
-  });
+
+  $("#paginator_current")
+    .addClass("alt")
+    .css('color', al3xandr3.color4)
+    .css("font-size", "140%");
   ///////////////
 
   //Search

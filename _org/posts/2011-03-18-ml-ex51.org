@@ -98,5 +98,5 @@ legend("topright", c(expression(lambda==0), expression(lambda==1),expression(lam
 With the $\lambda=0$ the fit is very tight to the original points (the blue line) but as we increase lambda, the model gets less tight(more generalized) and thus avoiding over-fitting.
 
 ** References:
-- [[http://al3xandr3.github.com/2011/03/08/ml-ex3.html][Exercise3, original Linear Regression implementation]]
+- [[http://al3xandr3.github.com/2011/03/08/ml-ex3.html][Exercise 3, original Linear Regression implementation]]
 - Thanks to Andrew Ng and [[http://openclassroom.stanford.edu/MainFolder/HomePage.php][OpenClassRoom]] for the great lessons. 
