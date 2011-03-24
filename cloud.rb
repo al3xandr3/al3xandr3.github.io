@@ -2,14 +2,14 @@ require 'rubygems'
 require 'jekyll'
 include Jekyll::Filters  
 
-puts "Generating tag cloud..."
+puts "generating cloud..."
 
 options = Jekyll.configuration({'source' => "/my/al3xandr3.github.com/"})
 site = Jekyll::Site.new(options)
 site.read_posts('')
 
-html = "<h3 id=\"title-tags\">tags</h3>"
-html << "<div id=\"tags\">"
+html = "<h3 id=\"title-cloud\">tags</h3>"
+html << "<div id=\"cloud\">"
 
 site.categories.sort.each do |category, posts|
   s = posts.count
@@ -18,7 +18,7 @@ site.categories.sort.each do |category, posts|
 end
 
 html << "</div>"
-File.open('/my/al3xandr3.github.com/_includes/tags.html', 'w+') do |file|
+File.open('/my/al3xandr3.github.com/_includes/cloud.html', 'w+') do |file|
   file.puts html
 end
 

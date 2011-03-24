@@ -2,7 +2,7 @@ require 'rubygems'
 require 'jekyll'
 include Jekyll::Filters
 
-puts "Generating tags..."  
+puts "generating tags..."  
 
 options = Jekyll.configuration({'source' => "/my/al3xandr3.github.com/"})
 site = Jekyll::Site.new(options)
