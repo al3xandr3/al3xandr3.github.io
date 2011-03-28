@@ -42,7 +42,7 @@ Have been tracking my weight using google spreadsheets, so i can get the data in
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
 </span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&amp;hl=en_GB&amp;single=true&amp;gid=3&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>, na.strings = <span style="color: #8b2252;">"#VALUE!"</span>) 
 
-<span style="color: #b22222;"># </span><span style="color: #b22222;">remove NA's
+<span style="color: #b22222;"># </span><span style="color: #b22222;">re - Something in Javascript? move NA's
 </span>mydata = na.omit(mydata)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Create a new column with the proper date format
@@ -54,12 +54,12 @@ tail(mydata, 5)
 
 
 <pre class="example">
-     timestamp   kg delta       day
-151 2011-03-16 75.6   0.2 Wednesday
-152 2011-03-17 75.5  -0.1  Thursday
-153 2011-03-18 75.6   0.1    Friday
-154 2011-03-19 76.1   0.5  Saturday
-155 2011-03-20 76.0  -0.1    Sunday
+     timestamp   kg delta      day
+159 2011-03-24 75.1  -0.4 Thursday
+160 2011-03-25 74.9  -0.2   Friday
+161 2011-03-26 74.7  -0.2 Saturday
+162 2011-03-27 74.7   0.0   Sunday
+163 2011-03-28 75.0   0.3   Monday
 </pre>
 
 
@@ -107,7 +107,8 @@ gghist(mydata, <span style="color: #8b2252;">"kg"</span>)
 <img src="http://al3xandr3.github.com/img/w-loss-normal.png" alt="http://al3xandr3.github.com/img/w-loss-normal.png" />
 </p>
 <p>
-Its close to normal distribution and says my weight has been mostly(in average) 80.5kg.
+Could probably extract 3 different normal distributions from the above plot. But overall is nor far off from the normal distribution.
+Before diet, for the past 4 years, my weight has been mostly(in average) 80.5kg, going up a lot in the last 6 months or so.
 </p>
 </div>
 </div>
@@ -170,12 +171,12 @@ dietalldays$delta = c(0, kgdelta)
 
 
 <pre class="example">
-    timestamp   kg delta       day
-59 2011-03-16 75.6   0.2 Wednesday
-60 2011-03-17 75.5  -0.1  Thursday
-61 2011-03-18 75.6   0.1    Friday
-62 2011-03-19 76.1   0.5  Saturday
-63 2011-03-20 76.0  -0.1    Sunday
+    timestamp   kg delta      day
+67 2011-03-24 75.1  -0.4 Thursday
+68 2011-03-25 74.9  -0.2   Friday
+69 2011-03-26 74.7  -0.2 Saturday
+70 2011-03-27 74.7   0.0   Sunday
+71 2011-03-28 75.0   0.3   Monday
 </pre>
 
 
@@ -208,7 +209,7 @@ summary(mcWeightWeek)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  70.50   74.42   75.10   75.10   75.78   78.70
+  70.20   73.40   74.10   74.10   74.77   78.10
 </pre>
 
 
@@ -261,7 +262,7 @@ summary(mcDays75)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  1.000   4.000   7.000   9.641  12.000 119.000
+      0       0       0       0       0       0
 </pre>
 
 
@@ -304,20 +305,41 @@ Also note that, weight loss is faster at the beginning of a diet, it tends to sl
 But as you see the slow carb diet seems to work, even without exercise. Tim's book is great, focusing on the smallest things possible for the bigger results(=efficiency).
 </p>
 </div>
+</div>
 
 </div>
 
-<div class="outline-3" id="outline-container-2_3">
-<h3 id="sec-2_3">References </h3>
-<div class="outline-text-3" id="text-2_3">
+<div class="outline-2" id="outline-container-3">
+<h2 id="sec-3"><i>Results Update</i> </h2>
+<div class="outline-text-2" id="text-3">
 
 
 <p>
-Hard drive occupation prediction with R: 
-<a href="http://lpenz.github.com/articles/df0pred-1/index.html">part 1</a> and <a href="http://lpenz.github.com/articles/df0pred-2/index.html">part 2</a>, and thanks to Leandro Penz on the feedback.
-</p></div>
-</div>
-</div>
-<div id="postamble">
+Got to 75.0kg on 25 March!!!! Thats 67 days (aprox. 9 weeks) for a 9kg loss, thus aprox. 1kg per week. Which is within the recommended(0.9kg per week) weight loss recommendations. Thus am now within normal <a href="http://www.wolframalpha.com/input/?i=bmi+75kg+1.76m">BMI values</a>.
+</p>
+<p>
+Regarding the diet itself i have to mention that a key food were lentils, that replaced all pasta, potato and rice, and became the main food. Around the 77kg, where i plateau'd the weight for a while, i relaxed the strict low carb diet and adopted some ideas from the <a href="http://www.southbeachdiet.com/sbd/publicsite/index.aspx">South Beach Diet</a>, that allows to add other things in moderation and makes a distinction between good and bad carbs, also stopped the binging(over-eating) 1 day per week.
+This diet was done without any gym or sports, it was all about the food, will soon start to add some sport into the equation and see.
+</p>
+<p>
+The predictor was surprisingly good, even with little data on the beginning of diet. With time there'a tendency to slow down, that is expected, so maybe adding a weight giving more importance to the most recent measures could improve accuracy in weight loss prediction with monte carlo methods.
+</p>
 
 </div>
+
+<div class="outline-3" id="outline-container-3_1">
+<h3 id="sec-3_1">References </h3>
+<div class="outline-text-3" id="text-3_1">
+
+
+<ul>
+<li>Hard drive occupation prediction with R: <a href="http://lpenz.github.com/articles/df0pred-1/index.html">part 1</a> and <a href="http://lpenz.github.com/articles/df0pred-2/index.html">part 2</a>, and thanks to Leandro Penz on the feedback.
+</li>
+<li>Big thanks for Tim's book and Ze's gift, on jumpstarting this experiment!
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
