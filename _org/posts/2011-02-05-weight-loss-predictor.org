@@ -17,7 +17,7 @@ Have been tracking my weight using google spreadsheets, so i can get the data in
 # load the data
 mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE, na.strings = "#VALUE!") 
 
-# remove NA's
+# re - Something in Javascript? move NA's
 mydata = na.omit(mydata)
 
 # Create a new column with the proper date format
@@ -27,12 +27,12 @@ tail(mydata, 5)
 #+end_src
 
 #+results:
-:      timestamp   kg delta       day
-: 142 2011-03-06 77.2   0.3    Sunday
-: 143 2011-03-07 77.3   0.1    Monday
-: 144 2011-03-08 76.9  -0.4   Tuesday
-: 145 2011-03-09 76.4  -0.5 Wednesday
-: 146 2011-03-11 76.1  -0.3    Friday
+:      timestamp   kg delta      day
+: 159 2011-03-24 75.1  -0.4 Thursday
+: 160 2011-03-25 74.9  -0.2   Friday
+: 161 2011-03-26 74.7  -0.2 Saturday
+: 162 2011-03-27 74.7   0.0   Sunday
+: 163 2011-03-28 75.0   0.3   Monday
 
 ** Normality
 
@@ -68,7 +68,8 @@ gghist(mydata, "kg")
 
 [[http://al3xandr3.github.com/img/w-loss-normal.png]]
 
-Its close to normal distribution and says my weight has been mostly(in average) 80.5kg.
+Could probably extract 3 different normal distributions from the above plot. But overall is nor far off from the normal distribution.
+Before diet, for the past 4 years, my weight has been mostly(in average) 80.5kg, going up a lot in the last 6 months or so.
 
 * Predicting the Future
 
@@ -115,12 +116,12 @@ tail(dietalldays, 5)
 #+end_src
 
 #+results:
-:     timestamp    kg delta       day
-: 50 2011-03-07 77.30  0.10    Monday
-: 51 2011-03-08 76.90 -0.40   Tuesday
-: 52 2011-03-09 76.40 -0.50 Wednesday
-: 53 2011-03-10 76.25 -0.15      <NA>
-: 54 2011-03-11 76.10 -0.15    Friday
+:     timestamp   kg delta      day
+: 67 2011-03-24 75.1  -0.4 Thursday
+: 68 2011-03-25 74.9  -0.2   Friday
+: 69 2011-03-26 74.7  -0.2 Saturday
+: 70 2011-03-27 74.7   0.0   Sunday
+: 71 2011-03-28 75.0   0.3   Monday
 
 ** So what is going to be my weight in a week?
 
@@ -141,7 +142,7 @@ summary(mcWeightWeek)
 
 #+results:
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:   71.60   74.35   75.05   75.05   75.75   79.25
+:   69.90   73.47   74.10   74.11   74.77   78.30
 
 Another good thing about monte carlo methods is that they give a distribution of the prediction, so its possible to get a feeling of how certain the average is; either very certain with a big central peak, or not that certain when the graph is flatter and all over the place:
 
@@ -177,7 +178,7 @@ summary(mcDays75)
 
 #+results:
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:   2.000   4.000   7.000   9.109  11.000  87.000
+:       0       0       0       0       0       0
 
 And the cumulative distribution:
 
@@ -211,7 +212,16 @@ Also note that, weight loss is faster at the beginning of a diet, it tends to sl
 
 But as you see the slow carb diet seems to work, even without exercise. Tim's book is great, focusing on the smallest things possible for the bigger results(=efficiency).
 
+* /Results Update/
+
+Got to 75.0kg on 25 March!!!! Thats 67 days (aprox. 9 weeks) for a 9kg loss, thus aprox. 1kg per week. Which is within the recommended(0.9kg per week) weight loss recommendations. Thus am now within normal [[http://www.wolframalpha.com/input/?i=bmi+75kg+1.76m][BMI values]].
+
+Regarding the diet itself i have to mention that a key food were lentils, that replaced all pasta, potato and rice, and became the main food. Around the 77kg, where i plateau'd the weight for a while, i relaxed the strict low carb diet and adopted some ideas from the [[http://www.southbeachdiet.com/sbd/publicsite/index.aspx][South Beach Diet]], that allows to add other things in moderation and makes a distinction between good and bad carbs, also stopped the binging(over-eating) 1 day per week.
+This diet was done without any gym or sports, it was all about the food, will soon start to add some sport into the equation and see.
+
+The predictor was surprisingly good, even with little data on the beginning of diet. With time there'a tendency to slow down, that is expected, so maybe adding a weight giving more importance to the most recent measures could improve accuracy in weight loss prediction with monte carlo methods.
+
 ** References
 
-Hard drive occupation prediction with R: 
-[[http://lpenz.github.com/articles/df0pred-1/index.html][part 1]] and [[http://lpenz.github.com/articles/df0pred-2/index.html][part 2]], and thanks to Leandro Penz on the feedback.
+- Hard drive occupation prediction with R: [[http://lpenz.github.com/articles/df0pred-1/index.html][part 1]] and [[http://lpenz.github.com/articles/df0pred-2/index.html][part 2]], and thanks to Leandro Penz on the feedback.
+- Big thanks for Tim's book and Ze's gift, on jumpstarting this experiment!
