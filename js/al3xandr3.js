@@ -74,10 +74,26 @@ $(function () {
     "border-bottom": "none"
   });
 
-  $("#post-list li #post-summary").css({   
-    "font-size": "120%",
-    "margin": "0.6em"
+  $("#post-list li").css({   
+    "margin-bottom": "2em",
+  });
+
+  $("#post-list li .post-details").css({   
+    "margin": "0.6em",
+  });
+
+  $("#post-list li .post-details .post-summary").css({   
+    "font-size": "140%",
+    "padding-bottom": "0.3em"
   }).addClass("alt");
+
+  $(".post-date, .post-cat").css({
+    "color": "#999999"
+  });
+
+  $(".post-date").css({
+    "font-size": "95%"
+  });
 
   $("#post").css({
     "font-size": "107%"
