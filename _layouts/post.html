@@ -6,7 +6,19 @@ layout: default
 <div id="post">
   {{ page.content }}
 </div>
-<a class="jump slide-left" title="Click to jump to the top of the page" href="javascript:void(0);">Top</a>
-<span id="tosep">|</span> 
-<a class="" title="Click to go back to home page" href="/">Home</a>
+
+<br>
+<span id="post-nav">
+  <a class="jump slide-left" title="Click to jump to the top of the page" href="javascript:void(0);">Top</a>
+  <span id="tosep">|</span> 
+  <a class="" title="Click to go back to home page" href="/">Home</a>
+</span>
+<span id="post-details">
+  <span class="post-date">{{page.date | date_to_string}}</span>
+  -
+  {% for cat in page.categories %}
+    <a class="post-cat" href="/tags/{{cat}}.html" id="tag">{{cat}}</a>
+  {% endfor %}
+</span>
+
 {% include disqus.html %}

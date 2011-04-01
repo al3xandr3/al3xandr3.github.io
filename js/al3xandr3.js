@@ -75,11 +75,11 @@ $(function () {
   });
 
   $("#post-list li").css({   
-    "margin-bottom": "2em",
+    "margin-bottom": "2em"
   });
 
   $("#post-list li .post-details").css({   
-    "margin": "0.6em",
+    "margin": "0.6em"
   });
 
   $("#post-list li .post-details .post-summary").css({   
@@ -97,6 +97,10 @@ $(function () {
 
   $("#post").css({
     "font-size": "107%"
+  });
+
+  $("#post-details").css({
+    "float": "right"
   });
 
   $("#category-list").css({
@@ -122,7 +126,7 @@ $(function () {
     .css("font-size", "180%");
 
   $("#tosep")
-    .css('color', '#DDDDDD')
+    .css('color', '#DDDDDD');
   ///////////////
 
   //Search
