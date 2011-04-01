@@ -10,7 +10,7 @@ home: true
       <h4><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h4>
       <div class="post-details">        
         <div class="post-summary">{{post.content | strip_html | truncatewords: 30}}</div>
-        <span class="post-date">{{post.date | date_to_string}}</span>
+        <span class="post-date">{{post.date | date_to_string}}</span>        
         {% for cat in post.categories %}
           <a class="post-cat" href="/tags/{{cat}}.html" id="tag">{{cat}}</a>
         {% endfor %}
