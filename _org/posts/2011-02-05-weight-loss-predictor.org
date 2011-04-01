@@ -1,5 +1,5 @@
 #+TITLE: Weight Loss Predictor
-#+HTML: <category> R health montecarlo org-mode statistics </category>
+#+HTML: <category> R health montecarlo statistics </category>
 
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
 
