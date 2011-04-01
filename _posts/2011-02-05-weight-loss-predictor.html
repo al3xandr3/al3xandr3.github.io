@@ -54,12 +54,12 @@ tail(mydata, 5)
 
 
 <pre class="example">
-     timestamp   kg delta      day
-159 2011-03-24 75.1  -0.4 Thursday
-160 2011-03-25 74.9  -0.2   Friday
-161 2011-03-26 74.7  -0.2 Saturday
-162 2011-03-27 74.7   0.0   Sunday
-163 2011-03-28 75.0   0.3   Monday
+     timestamp   kg delta       day
+163 2011-03-28 75.0   0.3    Monday
+164 2011-03-29 74.9  -0.1   Tuesday
+165 2011-03-30 74.9   0.0 Wednesday
+166 2011-03-31 75.0   0.1  Thursday
+167 2011-04-01 74.8  -0.2    Friday
 </pre>
 
 
@@ -67,12 +67,12 @@ tail(mydata, 5)
 </div>
 
 <div class="outline-3" id="outline-container-1_1">
-<h3 id="sec-1_1">Normality </h3>
+<h3 id="sec-1_1">Past Years weight </h3>
 <div class="outline-text-3" id="text-1_1">
 
 
 <p>
-Normality is not really a requirement for this simulation, monte carlo methods are independent of the distribution, but lets have a look of how the weight is distributed for the past 3 years.
+Lets have a look at the weight fluctuations over the past 3,5 years(before diet).
 </p>
 
 
@@ -80,24 +80,8 @@ Normality is not really a requirement for this simulation, monte carlo methods a
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">include ggplot2
 </span><span style="color: #008b8b;">library</span>(ggplot2)
 
-gghist = <span style="color: #7f007f;">function</span> (mydata, mycolname) {
-  pl = ggplot(data = mydata)
-  subvp = viewport(width=0.35, height=0.35, x=0.84, y=0.84)
-
-  his = pl + 
-        geom_histogram(aes_string(x=mycolname,y=<span style="color: #8b2252;">"..density.."</span>),alpha=0.2) + 
-        geom_density(aes_string(x=mycolname)) + 
-        opts(title = names(mydata[mycolname]))
-
-  qqp = pl + 
-        geom_point(aes_string(sample=mycolname), stat=<span style="color: #8b2252;">"qq"</span>) + labs(x=<span style="color: #228b22;">NULL</span>, y=<span style="color: #228b22;">NULL</span>) + 
-        opts(title = <span style="color: #8b2252;">"QQ"</span>)
-
-  print(his)
-  print(qqp, vp = subvp)
-}
-
-gghist(mydata, <span style="color: #8b2252;">"kg"</span>)
+beforediet = subset(mydata, timestamp &lt; <span style="color: #8b2252;">"2011-01-18"</span>)
+ggplot(beforediet, aes(x=timestamp, y=kg)) + geom_point() + geom_smooth() 
 </pre>
 
 
@@ -107,8 +91,8 @@ gghist(mydata, <span style="color: #8b2252;">"kg"</span>)
 <img src="http://al3xandr3.github.com/img/w-loss-normal.png" alt="http://al3xandr3.github.com/img/w-loss-normal.png" />
 </p>
 <p>
-Could probably extract 3 different normal distributions from the above plot. But overall is nor far off from the normal distribution.
-Before diet, for the past 4 years, my weight has been mostly(in average) 80.5kg, going up a lot in the last 6 months or so.
+Weight has been mostly(in average) 80.5kg, but in 2nd half of 2010 we see a big jump.
+Also note that middle of year(summer here) appears to be where jumps in weight happen.
 </p>
 </div>
 </div>
@@ -125,7 +109,7 @@ Now using Monte Carlo methods lets simulate the future based on the weight chang
 </p>
 <p>
 Because its going to use weight changes by day we need to do some trickery to fill in the missing days and calculate the changes for every single day. 
-The idea for filling in missing days is; if we have only day1=81 and day3=80, then we calculate that day2=80.5, because in 2 days we see a diference of 1, then per day is 0.5. 
+The idea for filling in missing days is: if we have only day1=81 and day3=80, then we calculate that day2=80.5, because in 2 days we see a diference of 1, then per day is 0.5. 
 </p>
 <p>
 We can confirm(prove) that this calculated assumption is a good one, by later comparing the simulation on data with all days filled in against the same data with some removed days in the middle, and confirm that results are the same.
@@ -171,12 +155,12 @@ dietalldays$delta = c(0, kgdelta)
 
 
 <pre class="example">
-    timestamp   kg delta      day
-67 2011-03-24 75.1  -0.4 Thursday
-68 2011-03-25 74.9  -0.2   Friday
-69 2011-03-26 74.7  -0.2 Saturday
-70 2011-03-27 74.7   0.0   Sunday
-71 2011-03-28 75.0   0.3   Monday
+    timestamp   kg delta       day
+71 2011-03-28 75.0   0.3    Monday
+72 2011-03-29 74.9  -0.1   Tuesday
+73 2011-03-30 74.9   0.0 Wednesday
+74 2011-03-31 75.0   0.1  Thursday
+75 2011-04-01 74.8  -0.2    Friday
 </pre>
 
 
@@ -209,7 +193,7 @@ summary(mcWeightWeek)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  70.20   73.40   74.10   74.10   74.77   78.10
+  70.18   73.30   73.90   73.92   74.55   77.30
 </pre>
 
 
@@ -219,7 +203,24 @@ Another good thing about monte carlo methods is that they give a distribution of
 
 
 
-<pre class="src src-R">gghist(data.frame(kg=mcWeightWeek), <span style="color: #8b2252;">"kg"</span>)
+<pre class="src src-R">gghist = <span style="color: #7f007f;">function</span>(mydata, mycolname) {
+  pl = ggplot(data = mydata)
+  subvp = viewport(width=0.35, height=0.35, x=0.84, y=0.84)
+
+  his = pl + 
+        geom_histogram(aes_string(x=mycolname,y=<span style="color: #8b2252;">"..density.."</span>),alpha=0.2) + 
+        geom_density(aes_string(x=mycolname)) + 
+        opts(title = names(mydata[mycolname]))
+
+  qqp = pl + 
+        geom_point(aes_string(sample=mycolname), stat=<span style="color: #8b2252;">"qq"</span>) + labs(x=<span style="color: #228b22;">NULL</span>, y=<span style="color: #228b22;">NULL</span>) + 
+        opts(title = <span style="color: #8b2252;">"QQ"</span>)
+
+  print(his)
+  print(qqp, vp = subvp)
+}
+
+gghist(data.frame(kg=mcWeightWeek), <span style="color: #8b2252;">"kg"</span>)
 </pre>
 
 
@@ -304,13 +305,14 @@ Also note that, weight loss is faster at the beginning of a diet, it tends to sl
 <p>
 But as you see the slow carb diet seems to work, even without exercise. Tim's book is great, focusing on the smallest things possible for the bigger results(=efficiency).
 </p>
+
 </div>
 </div>
 
 </div>
 
 <div class="outline-2" id="outline-container-3">
-<h2 id="sec-3"><i>Results Update</i> </h2>
+<h2 id="sec-3"><i>Update</i> </h2>
 <div class="outline-text-2" id="text-3">
 
 
