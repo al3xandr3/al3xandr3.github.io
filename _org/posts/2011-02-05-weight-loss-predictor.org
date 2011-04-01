@@ -27,40 +27,23 @@ tail(mydata, 5)
 #+end_src
 
 #+results:
-:      timestamp   kg delta      day
-: 159 2011-03-24 75.1  -0.4 Thursday
-: 160 2011-03-25 74.9  -0.2   Friday
-: 161 2011-03-26 74.7  -0.2 Saturday
-: 162 2011-03-27 74.7   0.0   Sunday
-: 163 2011-03-28 75.0   0.3   Monday
+:      timestamp   kg delta       day
+: 163 2011-03-28 75.0   0.3    Monday
+: 164 2011-03-29 74.9  -0.1   Tuesday
+: 165 2011-03-30 74.9   0.0 Wednesday
+: 166 2011-03-31 75.0   0.1  Thursday
+: 167 2011-04-01 74.8  -0.2    Friday
 
-** Normality
+** Past Years weight
 
-Normality is not really a requirement for this simulation, monte carlo methods are independent of the distribution, but lets have a look of how the weight is distributed for the past 3 years.
+Lets have a look at the weight fluctuations over the past 3,5 years(before diet).
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-normal.png
-
 # include ggplot2
 library(ggplot2)
 
-gghist = function (mydata, mycolname) {
-  pl = ggplot(data = mydata)
-  subvp = viewport(width=0.35, height=0.35, x=0.84, y=0.84)
-
-  his = pl + 
-        geom_histogram(aes_string(x=mycolname,y="..density.."),alpha=0.2) + 
-        geom_density(aes_string(x=mycolname)) + 
-        opts(title = names(mydata[mycolname]))
-
-  qqp = pl + 
-        geom_point(aes_string(sample=mycolname), stat="qq") + labs(x=NULL, y=NULL) + 
-        opts(title = "QQ")
-
-  print(his)
-  print(qqp, vp = subvp)
-}
-
-gghist(mydata, "kg")
+beforediet = subset(mydata, timestamp < "2011-01-18")
+ggplot(beforediet, aes(x=timestamp, y=kg)) + geom_point() + geom_smooth() 
 #+end_src
 
 #+results:
@@ -68,15 +51,15 @@ gghist(mydata, "kg")
 
 [[http://al3xandr3.github.com/img/w-loss-normal.png]]
 
-Could probably extract 3 different normal distributions from the above plot. But overall is nor far off from the normal distribution.
-Before diet, for the past 4 years, my weight has been mostly(in average) 80.5kg, going up a lot in the last 6 months or so.
+Weight has been mostly(in average) 80.5kg, but in 2nd half of 2010 we see a big jump.
+Also note that middle of year(summer here) appears to be where jumps in weight happen.
 
 * Predicting the Future
 
 Now using Monte Carlo methods lets simulate the future based on the weight changes that happened since start of diet.
 
 Because its going to use weight changes by day we need to do some trickery to fill in the missing days and calculate the changes for every single day. 
-The idea for filling in missing days is; if we have only day1=81 and day3=80, then we calculate that day2=80.5, because in 2 days we see a diference of 1, then per day is 0.5. 
+The idea for filling in missing days is: if we have only day1=81 and day3=80, then we calculate that day2=80.5, because in 2 days we see a diference of 1, then per day is 0.5. 
 
 We can confirm(prove) that this calculated assumption is a good one, by later comparing the simulation on data with all days filled in against the same data with some removed days in the middle, and confirm that results are the same.
  
@@ -147,6 +130,23 @@ summary(mcWeightWeek)
 Another good thing about monte carlo methods is that they give a distribution of the prediction, so its possible to get a feeling of how certain the average is; either very certain with a big central peak, or not that certain when the graph is flatter and all over the place:
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-week.png
+gghist = function(mydata, mycolname) {
+  pl = ggplot(data = mydata)
+  subvp = viewport(width=0.35, height=0.35, x=0.84, y=0.84)
+
+  his = pl + 
+        geom_histogram(aes_string(x=mycolname,y="..density.."),alpha=0.2) + 
+        geom_density(aes_string(x=mycolname)) + 
+        opts(title = names(mydata[mycolname]))
+
+  qqp = pl + 
+        geom_point(aes_string(sample=mycolname), stat="qq") + labs(x=NULL, y=NULL) + 
+        opts(title = "QQ")
+
+  print(his)
+  print(qqp, vp = subvp)
+}
+
 gghist(data.frame(kg=mcWeightWeek), "kg")
 #+end_src
 
@@ -212,7 +212,8 @@ Also note that, weight loss is faster at the beginning of a diet, it tends to sl
 
 But as you see the slow carb diet seems to work, even without exercise. Tim's book is great, focusing on the smallest things possible for the bigger results(=efficiency).
 
-* /Results Update/
+
+* /Update/
 
 Got to 75.0kg on 25 March!!!! Thats 67 days (aprox. 9 weeks) for a 9kg loss, thus aprox. 1kg per week. Which is within the recommended(0.9kg per week) weight loss recommendations. Thus am now within normal [[http://www.wolframalpha.com/input/?i=bmi+75kg+1.76m][BMI values]].
 

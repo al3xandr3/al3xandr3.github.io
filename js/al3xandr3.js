@@ -103,7 +103,10 @@ $(function () {
   $("#paginator_current")
     .addClass("alt")
     .css('color', al3xandr3.color4)
-    .css("font-size", "140%");
+    .css("font-size", "180%");
+
+  $("#tosep")
+    .css('color', '#DDDDDD')
   ///////////////
 
   //Search
