@@ -36,7 +36,7 @@ $(function () {
 
   $("#title").css({
     "float": "left", 
-    "font-size": "400%",
+    "font-size": "460%",
     "letter-spacing": "-.08em",
     "border-bottom": "0px solid"
   }).spanify("3", "titlenumbers");
