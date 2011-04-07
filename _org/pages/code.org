@@ -1,0 +1,19 @@
+#+TITLE: Code
+#+HTML <categories>code</categories>
+
+** jQuery Twitter 'mini’ plugin
+
+A jQuery plugin to display a twitter feed on a web page(blog for example). The twitter api feed, i found, has an annoying particularity of not always returning the number of tweets requested, so i added a feature that until it gets the right amount of messages it keeps on fetching. Thats useful when you plan to fill a web page with exactly 3 messages.
+Also added a "time ago" date calculations based of john resig [[http://ejohn.org/blog/javascript-pretty-date/][code]], with an added local timezone shift.
+/Tools: javascript, jquery./
+
+April 2010, [[http://al3xandr3.github.com/2010/04/10/jquery-twitter-plugin.html][web]], [[https://github.com/al3xandr3/jquery-twitter-plugin][*code*]]
+
+
+
+** cov3 - Web Crawler Tester
+
+A clojure, selenium based web crawler with a couple of variations that i found useful. Cov3 crawls pages with the intention of executing (javascript)tests/validations on each of the pages it opens. The original idea of a web crawler is that given an initial page it keeps on following all links it finds in the same domain until all pages are visited. I added a couple of variations: Given a sitemap.xml it randomly samples part of it(useful for big sitemaps) and follows those urls executing some test. And another option is a csv file, with the urls and tests to execute on each.
+/Tools: clojure, java, selenium./
+
+May 2010, [[http://al3xandr3.github.com/2010/05/22/clojure-selenium2-crawler-cov3.html][web]], [[https://github.com/al3xandr3/cov3][*code*]]

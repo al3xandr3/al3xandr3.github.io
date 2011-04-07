@@ -47,11 +47,11 @@ $(function () {
     "font-size": "200%",
     "color": "#999999",
     "margin-top": "1.4em",
-    "margin-left": "1em",
-    "letter-spacing": "-.08em"
+    "margin-left": "0.4em",
+    "letter-spacing": "-.06em"
   });
   
-  $("ul").css({
+  $("ul#menu, #post-list ul").css({
     "list-style": "none outside none", 
     "padding-top": "1.5em"
   });
@@ -62,15 +62,15 @@ $(function () {
 
   $("#menu li").css({
     "float": "left", 
-    "margin": "0em 0.5em",
+    "margin": "0em 0.5em"
   }).addClass("alt");
  
   $("#menu li a").css({
     "color": "#333",
     "text-decoration": "none",
     "border-bottom": "0px solid ",
-    "font-size": "160%"
-  }).spanify("[muc]", "lnkletters");
+    "font-size": "165%"
+  }).spanify("[or]", "lnkletters");
   
   $(".lnkletters").css('color', al3xandr3.color4);
 
@@ -108,11 +108,16 @@ $(function () {
   });
 
   $("#post").css({
-    "font-size": "107%"
+    "font-size": "107%",
+    "line-height": "1.7em"
   });
 
   $("#post-details").css({
     "float": "right"
+  });
+
+  $("#page p").css({
+    "line-height": "1.7em"
   });
 
   $("#category-list").css({
