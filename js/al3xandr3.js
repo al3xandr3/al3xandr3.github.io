@@ -40,24 +40,36 @@ $(function () {
     "letter-spacing": "-.08em",
     "border-bottom": "0px solid"
   }).spanify("3", "titlenumbers");
-  
   $(".titlenumbers").addClass("alt").css('color', al3xandr3.color4);
 
+  $("#subtitle").css({
+    "float": "left", 
+    "font-size": "200%",
+    "color": "#999999",
+    "margin-top": "1.4em",
+    "margin-left": "1em",
+    "letter-spacing": "-.08em"
+  });
+  
   $("ul").css({
     "list-style": "none outside none", 
     "padding-top": "1.5em"
   });
 
+  $("#menu").css({
+    "padding-top": "3.1em"
+  });
+
   $("#menu li").css({
     "float": "left", 
-    "margin": "0.5em 0.25em",
-    "font-size": "160%"
+    "margin": "0em 0.5em",
   }).addClass("alt");
  
   $("#menu li a").css({
     "color": "#333",
     "text-decoration": "none",
-    "border-bottom": "0px solid "
+    "border-bottom": "0px solid ",
+    "font-size": "160%"
   }).spanify("[muc]", "lnkletters");
   
   $(".lnkletters").css('color', al3xandr3.color4);
