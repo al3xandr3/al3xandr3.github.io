@@ -1,5 +1,4 @@
 #+TITLE: About
-#+OPTIONS: timestamp:nil
 #+HTML <categories> about </categories>
 
 #+ATTR_HTML: alt="al3xandr3" title="al3xandr3"
