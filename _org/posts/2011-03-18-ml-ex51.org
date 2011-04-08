@@ -27,7 +27,7 @@ plot(mydata)
 [[http://al3xandr3.github.com/img/ml-ex51-data.png]]
 
 * Theory
-;
+
 We will fit a 5th order polynomial, so the hypothesis is:
 
 \[
