@@ -48,7 +48,7 @@ $(function () {
     "color": "#999999",
     "margin-top": "1.4em",
     "margin-left": "0.4em",
-    "letter-spacing": "-.06em"
+    "letter-spacing": "-.04em"
   });
   
   $("ul#menu, #post-list ul").css({
