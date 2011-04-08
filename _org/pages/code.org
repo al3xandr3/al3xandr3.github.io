@@ -3,7 +3,7 @@
 
 ** Linear & Logistic Regression 
 
-These are a collection of exercises from OpenClassRoom machine learning classes. But serve as a good reference in translating math into code and in using matrix calculations in R. A next step could be building them into a reusable library. /Tool: R/
+A collection of exercises from the OpenClassRoom machine learning classes. Serve as a reference in implementing linear and logistic regression with some added debugging features. /Tool: R/
 - linear regression: [[http://al3xandr3.github.com/2011/02/24/ml-ex2-linear-regression.html][web]], [[https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml2.r][code]]
 - multivariate linear regression: [[http://al3xandr3.github.com/2011/03/08/ml-ex3.html][web]], [[https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml3.r][code]]
 - logistic regression and Newton's method: [[http://al3xandr3.github.com/2011/03/16/ml-ex4.html][web]], [[https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml4.r][code]]
@@ -16,8 +16,8 @@ These are a collection of exercises from OpenClassRoom machine learning classes.
 
 ** jQuery Twitter 'mini’ plugin
 
-A jQuery plugin to display a twitter feed on a web page(blog for example). The twitter api feed, i found, has an annoying particularity of not always returning the number of tweets requested, so i added a feature that until it gets the right amount of messages it keeps on fetching. Thats useful when you plan to fill a web page with exactly 3 messages.
-Also added a "time ago" date calculations based of john resig [[http://ejohn.org/blog/javascript-pretty-date/][code]], with an added local timezone shift.
+A jQuery plugin to display a twitter feed on a web page(blog for example). The twitter api feed, i found, has an annoying particularity of not always returning the requested number of tweets, so i added a feature that until it gets the right amount of messages it keeps on fetching. Thats useful when you want to fill a web page space with exactly 3 messages.
+Also included a "time ago" date calculations based of john resig [[http://ejohn.org/blog/javascript-pretty-date/][code]], with an added local timezone shift.
 /Tools: javascript, jquery/
 
 [[http://al3xandr3.github.com/2010/04/10/jquery-twitter-plugin.html][web]], [[https://github.com/al3xandr3/jquery-twitter-plugin][*code*]], /April 2010/
