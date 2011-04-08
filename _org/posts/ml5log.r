@@ -1,5 +1,7 @@
 
-# load the data
+# Regularized logistic regression
+
+# load data
 mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydHZPN2pFbkZGd1RKeU81OFY3ZHJldWc&output=csv", header = TRUE)
 
 # plot the data
@@ -9,7 +11,7 @@ legend("topright", c("y=0","y=1"), pch=c(1, 3), col=c("black", "blue"), bty="n")
 
 # sigmoid function
 g = function (z) {
-  return (1 / (1 + exp(-z) ))
+  return (1 / (1 + exp(-z)))
 } # plot(g(c(1,2,3,4,5,6)), type="l")
 
 # build hight order feature vector
@@ -23,24 +25,26 @@ hi.features = function (f1,f2,deg) {
   }
   return(ma)
 } # hi.features(c(1,2), c(3,4),2)
-# creates: 1 u v u^2 uv v^2
+# creates: 1 u v u^2 uv v^2 ...
 
+# hypothesis
 h = function (x,th) {
-  return( g(x %*% th) )
+  return(g(x %*% th))
 } # h(x,th)
 
 # derivative of J 
 grad = function (x,y,th,m,la) {
   G = (la/m * th)
   G[1,] = 0
-  return( (1/m * t(x) %*% (h(x,th) - y)) +  G)
+  return((1/m * t(x) %*% (h(x,th) - y)) +  G)
 } # grad(x,y,th,m,la)
 
+# hessian
 H = function (x,y,th,m,la) {
   n = length(th)
   L = la/m * diag(n)
   L[1,] = 0
-  return ( (1/m * t(x) %*% x * diag(h(x,th)) * diag(1 - h(x,th))) + L )
+  return((1/m * t(x) %*% x * diag(h(x,th)) * diag(1 - h(x,th))) + L)
 } # H(x,y,th,m,la)
 
 # cost function
@@ -85,6 +89,7 @@ for (i in 1:15) {
 }
 
 # calculate the decision boundary line
+# by creating many points
 u = seq(-1, 1.2, len=200);
 v = seq(-1, 1.2, len=200);
 z0 = matrix(0, length(u), length(v))
@@ -101,11 +106,11 @@ for (i in 1:length(u)) {
 # plots
 contour(u,v,z0,nlev = 0, xlab="u", ylab="v", nlevels=0, col="black",lty=2)
 contour(u,v,z1,nlev = 0, xlab="u", ylab="v", nlevels=0, col="red",lty=2, add=TRUE)
-contour(u,v,z10,nlev = 0, xlab="u", ylab="v", nlevels=0, col="green4",lty=2, add=TRUE)
+contour(u,v,z10,nlev = 0, xlab="u", ylab="v", nlevels=0, col="green3",lty=2, add=TRUE)
 points(mydata$u[mydata$y == 0], mydata$v[mydata$y == 0])
 points(mydata$u[mydata$y == 1], mydata$v[mydata$y == 1], col="blue", pch=3)
-legend("topright",  c(expression(lambda==0), expression(lambda==1),expression(lambda==10)), lty=1, col=c("black", "red","green4"),bty="n" )
+legend("topright",  c(expression(lambda==0), expression(lambda==1),expression(lambda==10)), lty=1, col=c("black", "red","green3"),bty="n" )
 
 # References:
-# http://research.stowers-institute.org/efg/R/Color/Chart/
-# http://openclassroom.stanford.edu/MainFolder/courses/MachineLearning/exercises/ex5materials/ex5Log.
+# http://al3xandr3.github.com/2011/03/20/ml-ex52.html
+# http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex5/ex5.html

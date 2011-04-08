@@ -69,8 +69,7 @@ Here's how the data we want to fit, looks like:
 
 
 
-<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">linear regression
-</span><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
 </span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydHZPN2pFbkZGd1RKeU81OFY3ZHJldWc&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">plot the data
@@ -285,7 +284,7 @@ Finally calculate the decision boundary line and visualize it:
 
 
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">calculate the decision boundary line
-</span><span style="color: #b22222;"># </span><span style="color: #b22222;">create many points
+</span><span style="color: #b22222;"># </span><span style="color: #b22222;">by creating many points
 </span>u = seq(-1, 1.2, len=200);
 v = seq(-1, 1.2, len=200);
 z0 = matrix(0, length(u), length(v))
