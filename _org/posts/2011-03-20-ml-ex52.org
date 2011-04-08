@@ -12,7 +12,6 @@ Here's how the data we want to fit, looks like:
 #+INCLUDE: /my/setup/mathjax.org
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/ml-ex52-data.png
-# linear regression
 # load the data
 mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydHZPN2pFbkZGd1RKeU81OFY3ZHJldWc&output=csv", header = TRUE)
 
@@ -179,7 +178,7 @@ Finally calculate the decision boundary line and visualize it:
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/ml-ex52-fit.png
 # calculate the decision boundary line
-# create many points
+# by creating many points
 u = seq(-1, 1.2, len=200);
 v = seq(-1, 1.2, len=200);
 z0 = matrix(0, length(u), length(v))
