@@ -3,7 +3,7 @@
 
 ** Linear & Logistic Regression 
 
-A collection of exercises from the OpenClassRoom machine learning classes. Serve as a reference in implementing linear and logistic regression with some added debugging features. /Tool: R/
+A collection of exercises from the OpenClassRoom machine learning classes. Serve as a reference in implementing linear and logistic regression with some added debugging features. /Tools: R/
 - linear regression: [[http://al3xandr3.github.com/2011/02/24/ml-ex2-linear-regression.html][web]], [[https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml2.r][code]]
 - multivariate linear regression: [[http://al3xandr3.github.com/2011/03/08/ml-ex3.html][web]], [[https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml3.r][code]]
 - logistic regression and Newton's method: [[http://al3xandr3.github.com/2011/03/16/ml-ex4.html][web]], [[https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml4.r][code]]
@@ -11,6 +11,15 @@ A collection of exercises from the OpenClassRoom machine learning classes. Serve
 - regularized logistic regression: [[http://al3xandr3.github.com/2011/03/20/ml-ex52.html][web]], [[https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml5log.r][code]]
 
 /March 2011/
+
+-------------------------------
+
+** cov3 - Web Crawler Tester
+
+A clojure, selenium based web crawler with a couple of variations that i found useful. Cov3 crawls pages with the intention of executing (javascript)tests/validations on each of the pages it opens. The original idea of a web crawler is that given an initial page it keeps on following all links it finds in the same domain until all pages are visited. I added a couple of variations: Given a sitemap.xml it randomly samples part of it(useful for big sitemaps) and follows those urls executing some test. And another option is a csv file, with the urls and tests to execute on each.
+/Tools: clojure, selenium/
+
+[[http://al3xandr3.github.com/2010/05/22/clojure-selenium2-crawler-cov3.html][web]], [[https://github.com/al3xandr3/cov3][*code*]], /May 2010/
 
 -------------------------------
 
@@ -24,9 +33,10 @@ Also included a "time ago" date calculations based of john resig [[http://ejohn.
 
 -------------------------------
 
-** cov3 - Web Crawler Tester
+** The Daily Extract
 
-A clojure, selenium based web crawler with a couple of variations that i found useful. Cov3 crawls pages with the intention of executing (javascript)tests/validations on each of the pages it opens. The original idea of a web crawler is that given an initial page it keeps on following all links it finds in the same domain until all pages are visited. I added a couple of variations: Given a sitemap.xml it randomly samples part of it(useful for big sitemaps) and follows those urls executing some test. And another option is a csv file, with the urls and tests to execute on each.
-/Tools: clojure, java, selenium/
+Scripts that automate the process of aggregating data in a database, extracting it, outputting results into csv files and sending them over by sftp. Very feature rich: task list queue, full logging, email reports, sql templating, sftp support, extract volume validation, unit testing. And with a strong convention over configuration theme. /Tools: ruby, jruby/
 
-[[http://al3xandr3.github.com/2010/05/22/clojure-selenium2-crawler-cov3.html][web]], [[https://github.com/al3xandr3/cov3][*code*]], /May 2010/
+In Aug 2009 i did a somewhat similar 2nd version of the daily extract, but this time using clojure, with added features: web front end for task queue manipulation, statistics on extracted volumes and sqlite for storing the task list queue and statistics over time. /Tools: clojure/
+
+[[https://github.com/al3xandr3/daily-extract][*code*]], /2007&2009/
