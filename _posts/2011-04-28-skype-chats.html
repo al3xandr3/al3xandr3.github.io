@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Who Chats the Most ?
+title: Who Chats the Most?
 categories: 
 - ruby
 - statistics
@@ -15,11 +15,12 @@ categories:
 <p>
 From my Skype chat history, a visualization of the counts of chats by (anonymized)author.
 </p>
-<p>
-<img src="http://al3xandr3.github.com/img/skypechats.png" alt="http://al3xandr3.github.com/img/skypechats.png" />
-</p>
 
-<div id="outline-container-1" class="outline-3">
+
+<embed width="600" height="1000" pluginspage="http://www.adobe.com/svg/viewer/install/" type="image/svg+xml" src="http://al3xandr3.github.com/img/contacts.svg">
+
+
+</embed><div id="outline-container-1" class="outline-3">
 <h3 id="sec-1">Code </h3>
 <div class="outline-text-3" id="text-1">
 
@@ -36,7 +37,7 @@ contacts={}
 </span>db = <span style="color: #228b22;">SQLite3</span>::<span style="color: #228b22;">Database</span>.new(<span style="color: #8b2252;">"[skype-folder]/main.db"</span>)
 db.execute(<span style="color: #8b2252;">"SELECT author, count(author) FROM Messages GROUP BY author ORDER BY count(author) DESC"</span> ) <span style="color: #7f007f;">do</span> |author, count|
   <span style="color: #b22222;">#</span><span style="color: #b22222;">contacts[author]=count # real ones
-</span>  contacts[author.split(<span style="color: #8b2252;">''</span>).sample(3).join]=count <span style="color: #b22222;"># </span><span style="color: #b22222;">Anonymized
+</span>  contacts[author.split(<span style="color: #8b2252;">''</span>).sample(3).join]=count <span style="color: #7f007f;">if</span> count&gt;60 <span style="color: #b22222;"># </span><span style="color: #b22222;">Anonymized
 </span><span style="color: #7f007f;">end</span>
 
 cs=pv.<span style="color: #228b22;">Colors</span>.category20()
