@@ -1,9 +1,11 @@
-#+TITLE: Who Chats the Most ?
+#+TITLE: Who Chats the Most?
 #+HTML: <category> ruby statistics </category>
 
 From my Skype chat history, a visualization of the counts of chats by (anonymized)author.
 
-[[http://al3xandr3.github.com/img/skypechats.png]]
+#+BEGIN_HTML
+<embed width="600" height="1000" pluginspage="http://www.adobe.com/svg/viewer/install/" type="image/svg+xml" src="http://al3xandr3.github.com/img/contacts.svg">
+#+END_HTML
 
 ** Code
 
@@ -17,7 +19,7 @@ contacts={}
 db = SQLite3::Database.new("[skype-folder]/main.db")
 db.execute("SELECT author, count(author) FROM Messages GROUP BY author ORDER BY count(author) DESC" ) do |author, count|
   #contacts[author]=count # real ones
-  contacts[author.split('').sample(3).join]=count # Anonymized
+  contacts[author.split('').sample(3).join]=count if count>60 # Anonymized
 end
 
 cs=pv.Colors.category20()
