@@ -1,0 +1,75 @@
+--- 
+layout: post
+title: Who Chats the Most ?
+categories: 
+- ruby
+- statistics
+---
+
+
+
+
+
+
+
+<p>
+From my Skype chat history, a visualization of the counts of chats by (anonymized)author.
+</p>
+<p>
+<img src="http://al3xandr3.github.com/img/skypechats.png" alt="http://al3xandr3.github.com/img/skypechats.png" />
+</p>
+
+<div id="outline-container-1" class="outline-3">
+<h3 id="sec-1">Code </h3>
+<div class="outline-text-3" id="text-1">
+
+
+
+
+
+<pre class="src src-ruby">require <span style="color: #8b2252;">'sqlite3'</span>
+require <span style="color: #8b2252;">'rubyvis'</span>
+
+contacts={}
+  
+<span style="color: #b22222;"># </span><span style="color: #b22222;">count
+</span>db = <span style="color: #228b22;">SQLite3</span>::<span style="color: #228b22;">Database</span>.new(<span style="color: #8b2252;">"[skype-folder]/main.db"</span>)
+db.execute(<span style="color: #8b2252;">"SELECT author, count(author) FROM Messages GROUP BY author ORDER BY count(author) DESC"</span> ) <span style="color: #7f007f;">do</span> |author, count|
+  <span style="color: #b22222;">#</span><span style="color: #b22222;">contacts[author]=count # real ones
+</span>  contacts[author.split(<span style="color: #8b2252;">''</span>).sample(3).join]=count <span style="color: #b22222;"># </span><span style="color: #b22222;">Anonymized
+</span><span style="color: #7f007f;">end</span>
+
+cs=pv.<span style="color: #228b22;">Colors</span>.category20()
+format=<span style="color: #228b22;">Rubyvis</span>::<span style="color: #228b22;">Format</span>.number
+color = pv.<span style="color: #228b22;">Colors</span>.category20
+nodes = pv.dom(contacts).root(<span style="color: #8b2252;">"rubyvis"</span>).nodes
+
+vis = pv.<span style="color: #228b22;">Panel</span>.new()
+    .width(600)
+    .height(1000)
+
+treemap = vis.add(<span style="color: #228b22;">Rubyvis</span>::<span style="color: #228b22;">Layout</span>::<span style="color: #228b22;">Treemap</span>).
+  nodes(nodes).
+  mode(<span style="color: #8b2252;">"squarify"</span>).
+  round(<span style="color: #a0522d;">true</span>)
+
+treemap.leaf.add(<span style="color: #228b22;">Rubyvis</span>::<span style="color: #228b22;">Panel</span>).
+  fill_style(lambda{ |d| cs.scale(d) }).
+  stroke_style(<span style="color: #8b2252;">"#fff"</span>).
+  line_width(1).
+  antialias(<span style="color: #a0522d;">true</span>).
+  title(lambda {|d| d.node_name + <span style="color: #8b2252;">" "</span> + format.format(d.node_value)})
+
+treemap.node_label.add(<span style="color: #228b22;">Rubyvis</span>::<span style="color: #228b22;">Label</span>).
+  text_style(lambda {|d| pv.rgb(0, 0, 0, 1)}).
+  font(lambda{|d| v=d.node_value/90; (v&lt;=8)? <span style="color: #8b2252;">"#8px sans-serif"</span> : <span style="color: #8b2252;">"</span><span style="color: #a0522d;">#{v}</span><span style="color: #8b2252;">px sans-serif"</span>})
+vis.render
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">saves an svg
+</span><span style="color: #228b22;">File</span>.open(<span style="color: #8b2252;">"contacts.svg"</span>, <span style="color: #8b2252;">"w+"</span>).write vis.to_svg
+</pre>
+
+
+</div>
+</div>
+
