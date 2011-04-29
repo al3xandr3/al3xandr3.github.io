@@ -7,14 +7,15 @@ title: Code
 
 
 
-<div class="outline-3" id="outline-container-1">
+<div id="outline-container-1" class="outline-3">
 <h3 id="sec-1">Linear &amp; Logistic Regression </h3>
 <div class="outline-text-3" id="text-1">
 
 
 <p>
-A collection of exercises from the OpenClassRoom machine learning classes. Serve as a reference in implementing linear and logistic regression with some added debugging features. <i>Tools: R</i>
-</p><ul>
+A collection of exercises from the OpenClassRoom machine learning classes. Serve as a reference in implementing linear and logistic regression with some added debugging features. 
+</p>
+<ul>
 <li>linear regression: <a href="http://al3xandr3.github.com/2011/02/24/ml-ex2-linear-regression.html">web</a>, <a href="https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml2.r">code</a>
 </li>
 <li>multivariate linear regression: <a href="http://al3xandr3.github.com/2011/03/08/ml-ex3.html">web</a>, <a href="https://github.com/al3xandr3/al3xandr3.github.com/blob/master/_org/posts/ml3.r">code</a>
@@ -27,7 +28,10 @@ A collection of exercises from the OpenClassRoom machine learning classes. Serve
 </li>
 </ul>
 
-<p><i>March 2011</i>
+<p><i>Tools: R</i>
+</p>
+<p>
+<i>March 2011</i>
 </p>
 
 <hr />
@@ -36,13 +40,15 @@ A collection of exercises from the OpenClassRoom machine learning classes. Serve
 
 </div>
 
-<div class="outline-3" id="outline-container-2">
+<div id="outline-container-2" class="outline-3">
 <h3 id="sec-2">cov3 - Web Crawler Tester </h3>
 <div class="outline-text-3" id="text-2">
 
 
 <p>
 A clojure, selenium based web crawler with a couple of variations that i found useful. Cov3 crawls pages with the intention of executing (javascript)tests/validations on each of the pages it opens. The original idea of a web crawler is that given an initial page it keeps on following all links it finds in the same domain until all pages are visited. I added a couple of variations: Given a sitemap.xml it randomly samples part of it(useful for big sitemaps) and follows those urls executing some test. And another option is a csv file, with the urls and tests to execute on each.
+</p>
+<p>
 <i>Tools: clojure, selenium</i>
 </p>
 <p>
@@ -55,7 +61,7 @@ A clojure, selenium based web crawler with a couple of variations that i found u
 
 </div>
 
-<div class="outline-3" id="outline-container-3">
+<div id="outline-container-3" class="outline-3">
 <h3 id="sec-3">jQuery Twitter 'mini’ plugin </h3>
 <div class="outline-text-3" id="text-3">
 
@@ -63,6 +69,8 @@ A clojure, selenium based web crawler with a couple of variations that i found u
 <p>
 A jQuery plugin to display a twitter feed on a web page(blog for example). The twitter api feed, i found, has an annoying particularity of not always returning the requested number of tweets, so i added a feature that until it gets the right amount of messages it keeps on fetching. Thats useful when you want to fill a web page space with exactly 3 messages.
 Also included a "time ago" date calculations based of john resig <a href="http://ejohn.org/blog/javascript-pretty-date/">code</a>, with an added local timezone shift.
+</p>
+<p>
 <i>Tools: javascript, jquery</i>
 </p>
 <p>
@@ -75,16 +83,22 @@ Also included a "time ago" date calculations based of john resig <a href="http:/
 
 </div>
 
-<div class="outline-3" id="outline-container-4">
+<div id="outline-container-4" class="outline-3">
 <h3 id="sec-4">The Daily Extract </h3>
 <div class="outline-text-3" id="text-4">
 
 
 <p>
-Scripts that automate the process of aggregating data in a database, extracting it, outputting results into csv files and sending them over by sftp. Very feature rich: task list queue, full logging, email reports, sql templating, sftp support, extract volume validation, unit testing. And with a strong convention over configuration theme. <i>Tools: ruby, jruby</i>
+Scripts that automate the process of aggregating data in a database, extracting it, outputting results into csv files and sending them over by sftp. Very feature rich: task list queue, full logging, email reports, sql templating, sftp support, extract volume validation, unit testing. And with a strong convention over configuration theme. 
 </p>
 <p>
-In Aug 2009 i did a somewhat similar 2nd version of the daily extract, but this time using clojure, with added features: web front end for task queue manipulation, statistics on extracted volumes and sqlite for storing the task list queue and statistics over time. <i>Tools: clojure</i>
+<i>Tools: ruby, jruby</i>
+</p>
+<p>
+In Aug 2009 i did a somewhat similar 2nd version of the daily extract, but this time using clojure, with added features: web front end for task queue manipulation, statistics on extracted volumes and sqlite for storing the task list queue and statistics over time. 
+</p>
+<p>
+<i>Tools: clojure</i>
 </p>
 <p>
 <a href="https://github.com/al3xandr3/daily-extract"><b>code</b></a>, <i>2007&amp;2009</i>
