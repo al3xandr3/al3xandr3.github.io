@@ -44,16 +44,16 @@ $(function () {
 
   $("#subtitle").css({
     "float": "left", 
-    "font-size": "200%",
+    "font-size": "160%",
     "color": "#999999",
-    "margin-top": "1.4em",
+    "margin-top": "2em",
     "margin-left": "0.4em",
     "letter-spacing": "-.04em"
   });
   
   $("ul#menu, #post-list ul").css({
-    "list-style": "none outside none", 
-    "padding-top": "1.5em"
+    "list-style": "none outside none" 
+//  "padding-top": "1.5em"
   });
 
   $("#menu").css({
@@ -79,7 +79,7 @@ $(function () {
   });
   
   $("#cloud #tag").css({
-    "color": "#999999"
+    "color": "#666666"
   });
   
   $("#cloud a").css({
@@ -91,13 +91,20 @@ $(function () {
   });
 
   $("#post-list li .post-details").css({   
-    "margin": "0.6em"
+    "margin": "1em"
   });
 
-  $("#post-list li .post-details .post-summary").css({   
-    "font-size": "140%",
+//  $("#post-list li .post-details .post-summary").css({   
+//    "font-size": "140%",
+//    "padding-bottom": "0.3em"
+//  }).addClass("alt");
+
+  $("#post-list li .post-details .post-summary").css({
+    "font-size": "107%",
+    "color": "#666666",
+    "line-height": "1.7em",
     "padding-bottom": "0.3em"
-  }).addClass("alt");
+  });
 
   $(".post-date, .post-cat").css({
     "color": "#999999"
@@ -129,8 +136,8 @@ $(function () {
   }).addClass("alt");
  
   $("#sidebar").css({
-    "color": "#999999",
-    "border-left": "1px solid #DDDDDD",
+    "color": "#666666",
+    //"border-left": "1px solid #DDDDDD",
     "margin-left": "20px",
     "padding-left": "15px"
   });
