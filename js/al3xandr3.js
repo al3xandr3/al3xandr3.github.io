@@ -91,7 +91,10 @@ $(function () {
   });
 
   $("#post-list li .post-details").css({   
-    "margin": "1em"
+    "margin-top": "1em",
+    "margin-left": "1em",
+    "margin-bottom": "1em",
+    "margin-right": "0em"
   });
 
 //  $("#post-list li .post-details .post-summary").css({   
