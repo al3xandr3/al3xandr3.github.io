@@ -15,15 +15,24 @@
 
 var al3xandr3 = {};
 
-al3xandr3.color1 = "#FFFFFF";
+al3xandr3.color1 = "#F4F4F4";
 al3xandr3.color2 = "#819B4D";
 al3xandr3.color3 = "#E7E7E7";
 al3xandr3.color4 = "#E42217";
+//al3xandr3.back = "#F4F4F4";
+
 
 //On Document Ready
 $(function () {
 
   //////CSS
+
+  $("body").css({
+    "background": "url('/img/background2.png') repeat scroll 0 0 " + 
+      al3xandr3.color1,
+    "color": "#333333"
+  });
+
   $("a").hover(function () {
     $(this).css('background-color', al3xandr3.color3);
   }, function () {
@@ -110,7 +119,7 @@ $(function () {
   });
 
   $(".post-date, .post-cat").css({
-    "color": "#999999"
+    "color": "#666666"
   });
 
   $(".post-date").css({
