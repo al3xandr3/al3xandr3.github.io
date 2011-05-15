@@ -106,10 +106,8 @@ $(function () {
     "margin-right": "-1em"
   });
 
-//  $("#post-list li .post-details .post-summary").css({   
-//    "font-size": "140%",
-//    "padding-bottom": "0.3em"
-//  }).addClass("alt");
+  $("img").css({"border": "1px solid #DEDEDE"});
+
 
   $("#post-list li .post-details .post-summary").css({
     "font-size": "107%",
