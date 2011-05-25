@@ -1,0 +1,130 @@
+#+TITLE: Dashboarding
+#+HTML: <category> ruby statistics </category>
+
+An important part of being data driven is to have a daily feedback on data, here's a couple of "automated" dashboards i've built recently:
+
+[[http://al3xandr3.github.com/img/dash2.png]]
+
+[[http://al3xandr3.github.com/img/dash1.png]]
+
+Many things can be added, more metrics, more UP DOWN indicators quantifying the change of last day/week/month, plotting the data of 6 months ago or a year ago for direct comparison of historical values. More relative change plots, like the [[http://vis.stanford.edu/protovis/ex/index-chart.html][protovis index-chart]] are very useful, even when they are not dynamic, like the one i have on the dashboard above.
+
+Also useful would be confidence intervals asserting how sure are the changes, checking that they are not just by random chance. And of course, next step is to add fits to data, either regression line, monte carlo, etc... that smooth out all the variation in graphs to better understand the overal tendency and also allow to predict the next day/week/month values.
+
+** Tools & Code
+
+The dashboards update automatically from scheduled cron jobs. Some data sources update every 15 mins, others once per day.
+
+Its coded in ruby, that aggregates data from different places, and then outputs an html file with the full dashboard.
+Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with some useful user interaction functionalities.
+
+Code needs a cleanup, so am not posting it fully here, but a few bits, all in ruby:
+
+*Getting RescueTime Data*
+
+#+begin_src ruby
+require 'open-uri'
+require 'date'
+
+key = "yourownkey"
+
+res = {} 
+open("https://www.rescuetime.com/anapi/data?key=#{key}&perspective=interval&format=csv&resolution_time=day&restrict_kind=activity") do |f|
+  i=0    
+  f.each do |l|    
+    unless i==0
+      t, sec, some, app, cat, prod = l.split(",")
+      res[:week] += sec.to_i
+      res[:day] += sec.to_i if Date.parse(t).day == Date.today.day
+    end
+    i+= 1
+  end
+end
+
+print res
+#+end_src
+
+*Getting Google Spreadsheets Data*
+
+#+begin_src ruby
+require 'gdata/client'  
+require 'gdata/http'  
+require 'gdata/auth'
+require 'open-uri'
+require 'date'
+
+client = GData::Client::Spreadsheets.new
+client.clientlogin('yourmail@gmail.com', "yourpass")
+key = "yourspreadsheetkey"
+test = client.get("http://spreadsheets.google.com/feeds/download/spreadsheets/Export?key=#{key}&fmcmd&exportFormat=csv")
+values = []
+i=0
+test.body.each_line do |l|
+  t,w,co,wa,h = l.gsub("\n","").split(',')
+  unless i==0
+    values << [Date.parse(t), w.to_f, wa.to_f, h.to_f] 
+  end
+  i+=1
+end
+
+print values
+#+end_src
+
+#+results:
+
+*Getting imap mail attachments*
+
+#+begin_src ruby
+require 'net/imap'
+require 'date'
+
+opts[:inbox]   ||= "Inbox"
+opts[:search]  ||= ["SINCE", "8-Aug-2007"]
+opts[:attach]  ||= ["CSV"]
+opts[:savedir] ||= "."
+
+imap = Net::IMAP.new('mail.server.com', :port => 993, :ssl => true)
+imap.login('yourmail@server.com', 'yourpassw')    
+imap.select(opts[:inbox])
+imap.search(opts[:search]).each do |uid|
+  msg = imap.fetch(uid, ["ENVELOPE","UID","BODY"])[0]
+  body = msg.attr["BODY"]
+  date = Date.parse(msg.attr["ENVELOPE"].date)
+  i = 1
+  while body.parts[i] != nil
+    type = body.parts[i].subtype
+    encoding = body.parts[i].encoding
+    name = body.parts[i].param["NAME"] || date.to_s
+    i+=1
+    attachment = imap.fetch(uid, "BODY[#{i}]")[0].attr["BODY[#{i}]"]
+    p "#{name}, #{type}, #{encoding}"
+    if opts[:attach].include? type and not attachment.nil?
+      File.open(opts[:savedir] + name,'wb+') do |f|
+        if encoding == "BASE64"
+          f.write(attachment.unpack('m')[0])
+        else
+          f.write(attachment)
+        end          
+      end
+    end
+  end  
+end 
+#+end_src
+
+*Posting html to a confluence wiki*
+
+#+begin_src ruby
+require 'xmlrpc/client'
+
+user = "username"
+pass = "password"
+area = "area"
+page_name="page"
+content = "<h1>Big Header</h1>"
+confluence = XMLRPC::Client
+      .new2("https://#{user}:#{pass}@confluence.server.com/rpc/xmlrpc")
+      .proxy("confluence1")
+page = confluence.getPage("", area, page_name)
+page["content"] = "{html}#{content}{html}"
+confluence.storePage("", page)
+#+end_src
