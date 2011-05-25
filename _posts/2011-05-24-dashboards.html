@@ -1,0 +1,175 @@
+--- 
+layout: post
+title: Dashboarding
+categories: 
+- ruby
+- statistics
+---
+
+
+
+
+
+
+
+<p>
+An important part of being data driven is to have a daily feedback on data, here's a couple of "automated" dashboards i've built recently:
+</p>
+<p>
+<img src="http://al3xandr3.github.com/img/dash2.png" alt="http://al3xandr3.github.com/img/dash2.png" />
+</p>
+<p>
+<img src="http://al3xandr3.github.com/img/dash1.png" alt="http://al3xandr3.github.com/img/dash1.png" />
+</p>
+<p>
+Many things can be added, more metrics, more UP DOWN indicators quantifying the change of last day/week/month, plotting the data of 6 months ago or a year ago for direct comparison of historical values. More relative change plots, like the <a href="http://vis.stanford.edu/protovis/ex/index-chart.html">protovis index-chart</a> are very useful, even when they are not dynamic, like the one i have on the dashboard above.
+</p>
+<p>
+Also useful would be confidence intervals asserting how sure are the changes, checking that they are not just by random chance. And of course, next step is to add fits to data, either regression line, monte carlo, etc&hellip; that smooth out all the variation in graphs to better understand the overal tendency and also allow to predict the next day/week/month values.
+</p>
+
+<div id="outline-container-1" class="outline-3">
+<h3 id="sec-1">Tools &amp; Code </h3>
+<div class="outline-text-3" id="text-1">
+
+
+<p>
+The dashboards update automatically from scheduled cron jobs. Some data sources update every 15 mins, others once per day.
+</p>
+<p>
+Its coded in ruby, that aggregates data from different places, and then outputs an html file with the full dashboard.
+Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with some useful user interaction functionalities.
+</p>
+<p>
+Code needs a cleanup, so am not posting it fully here, but a few bits, all in ruby:
+</p>
+<p>
+<b>Getting RescueTime Data</b>
+</p>
+
+
+
+<pre class="src src-ruby">require <span style="color: #8b2252;">'open-uri'</span>
+require <span style="color: #8b2252;">'date'</span>
+
+key = <span style="color: #8b2252;">"yourownkey"</span>
+
+res = {} 
+open(<span style="color: #8b2252;">"https://www.rescuetime.com/anapi/data?key=</span><span style="color: #a0522d;">#{key}</span><span style="color: #8b2252;">&amp;perspective=interval&amp;format=csv&amp;resolution_time=day&amp;restrict_kind=activity"</span>) <span style="color: #7f007f;">do</span> |f|
+  i=0    
+  f.each <span style="color: #7f007f;">do</span> |l|    
+    <span style="color: #7f007f;">unless</span> i==0
+      t, sec, some, app, cat, prod = l.split(<span style="color: #8b2252;">","</span>)
+      res[<span style="color: #008b8b;">:week</span>] += sec.to_i
+      res[<span style="color: #008b8b;">:day</span>] += sec.to_i <span style="color: #7f007f;">if</span> <span style="color: #228b22;">Date</span>.parse(t).day == <span style="color: #228b22;">Date</span>.today.day
+    <span style="color: #7f007f;">end</span>
+    i+= 1
+  <span style="color: #7f007f;">end</span>
+<span style="color: #7f007f;">end</span>
+
+print res
+</pre>
+
+
+
+<p>
+<b>Getting Google Spreadsheets Data</b>
+</p>
+
+
+
+<pre class="src src-ruby">require <span style="color: #8b2252;">'gdata/client'</span>  
+require <span style="color: #8b2252;">'gdata/http'</span>  
+require <span style="color: #8b2252;">'gdata/auth'</span>
+require <span style="color: #8b2252;">'open-uri'</span>
+require <span style="color: #8b2252;">'date'</span>
+
+client = <span style="color: #228b22;">GData</span>::<span style="color: #228b22;">Client</span>::<span style="color: #228b22;">Spreadsheets</span>.new
+client.clientlogin(<span style="color: #8b2252;">'yourmail@gmail.com'</span>, <span style="color: #8b2252;">"yourpass"</span>)
+key = <span style="color: #8b2252;">"yourspreadsheetkey"</span>
+test = client.get(<span style="color: #8b2252;">"http://spreadsheets.google.com/feeds/download/spreadsheets/Export?key=</span><span style="color: #a0522d;">#{key}</span><span style="color: #8b2252;">&amp;fmcmd&amp;exportFormat=csv"</span>)
+values = []
+i=0
+test.body.each_line <span style="color: #7f007f;">do</span> |l|
+  t,w,co,wa,h = l.gsub(<span style="color: #8b2252;">"\n"</span>,<span style="color: #8b2252;">""</span>).split(<span style="color: #8b2252;">','</span>)
+  <span style="color: #7f007f;">unless</span> i==0
+    values &lt;&lt; [<span style="color: #228b22;">Date</span>.parse(t), w.to_f, wa.to_f, h.to_f] 
+  <span style="color: #7f007f;">end</span>
+  i+=1
+<span style="color: #7f007f;">end</span>
+
+print values
+</pre>
+
+
+
+
+<p>
+<b>Getting imap mail attachments</b>
+</p>
+
+
+
+<pre class="src src-ruby">require <span style="color: #8b2252;">'net/imap'</span>
+require <span style="color: #8b2252;">'date'</span>
+
+opts[<span style="color: #008b8b;">:inbox</span>]   ||= <span style="color: #8b2252;">"Inbox"</span>
+opts[<span style="color: #008b8b;">:search</span>]  ||= [<span style="color: #8b2252;">"SINCE"</span>, <span style="color: #8b2252;">"8-Aug-2007"</span>]
+opts[<span style="color: #008b8b;">:attach</span>]  ||= [<span style="color: #8b2252;">"CSV"</span>]
+opts[<span style="color: #008b8b;">:savedir</span>] ||= <span style="color: #8b2252;">"."</span>
+
+imap = <span style="color: #228b22;">Net</span>::<span style="color: #228b22;">IMAP</span>.new(<span style="color: #8b2252;">'mail.server.com'</span>, <span style="color: #008b8b;">:port</span> =&gt; 993, <span style="color: #008b8b;">:ssl</span> =&gt; <span style="color: #a0522d;">true</span>)
+imap.login(<span style="color: #8b2252;">'yourmail@server.com'</span>, <span style="color: #8b2252;">'yourpassw'</span>)    
+imap.select(opts[<span style="color: #008b8b;">:inbox</span>])
+imap.search(opts[<span style="color: #008b8b;">:search</span>]).each <span style="color: #7f007f;">do</span> |uid|
+  msg = imap.fetch(uid, [<span style="color: #8b2252;">"ENVELOPE"</span>,<span style="color: #8b2252;">"UID"</span>,<span style="color: #8b2252;">"BODY"</span>])[0]
+  body = msg.attr[<span style="color: #8b2252;">"BODY"</span>]
+  date = <span style="color: #228b22;">Date</span>.parse(msg.attr[<span style="color: #8b2252;">"ENVELOPE"</span>].date)
+  i = 1
+  <span style="color: #7f007f;">while</span> body.parts[i] != <span style="color: #a0522d;">nil</span>
+    type = body.parts[i].subtype
+    encoding = body.parts[i].encoding
+    name = body.parts[i].param[<span style="color: #8b2252;">"NAME"</span>] || date.to_s
+    i+=1
+    attachment = imap.fetch(uid, <span style="color: #8b2252;">"BODY[</span><span style="color: #a0522d;">#{i}</span><span style="color: #8b2252;">]"</span>)[0].attr[<span style="color: #8b2252;">"BODY[</span><span style="color: #a0522d;">#{i}</span><span style="color: #8b2252;">]"</span>]
+    p <span style="color: #8b2252;">"</span><span style="color: #a0522d;">#{name}</span><span style="color: #8b2252;">, </span><span style="color: #a0522d;">#{type}</span><span style="color: #8b2252;">, </span><span style="color: #a0522d;">#{encoding}</span><span style="color: #8b2252;">"</span>
+    <span style="color: #7f007f;">if</span> opts[<span style="color: #008b8b;">:attach</span>].include? type <span style="color: #7f007f;">and</span> <span style="color: #7f007f;">not</span> attachment.nil?
+      <span style="color: #228b22;">File</span>.open(opts[<span style="color: #008b8b;">:savedir</span>] + name,<span style="color: #8b2252;">'wb+'</span>) <span style="color: #7f007f;">do</span> |f|
+        <span style="color: #7f007f;">if</span> encoding == <span style="color: #8b2252;">"BASE64"</span>
+          f.write(attachment.unpack(<span style="color: #8b2252;">'m'</span>)[0])
+        <span style="color: #7f007f;">else</span>
+          f.write(attachment)
+        <span style="color: #7f007f;">end</span>          
+      <span style="color: #7f007f;">end</span>
+    <span style="color: #7f007f;">end</span>
+  <span style="color: #7f007f;">end</span>  
+<span style="color: #7f007f;">end</span> 
+</pre>
+
+
+
+<p>
+<b>Posting html to a confluence wiki</b>
+</p>
+
+
+
+<pre class="src src-ruby">require <span style="color: #8b2252;">'xmlrpc/client'</span>
+
+user = <span style="color: #8b2252;">"username"</span>
+pass = <span style="color: #8b2252;">"password"</span>
+area = <span style="color: #8b2252;">"area"</span>
+page_name=<span style="color: #8b2252;">"page"</span>
+content = <span style="color: #8b2252;">"&lt;h1&gt;Big Header&lt;/h1&gt;"</span>
+confluence = <span style="color: #228b22;">XMLRPC</span>::<span style="color: #228b22;">Client</span>
+      .new2(<span style="color: #8b2252;">"https://</span><span style="color: #a0522d;">#{user}</span><span style="color: #8b2252;">:</span><span style="color: #a0522d;">#{pass}</span><span style="color: #8b2252;">@confluence.server.com/rpc/xmlrpc"</span>)
+      .proxy(<span style="color: #8b2252;">"confluence1"</span>)
+page = confluence.getPage(<span style="color: #8b2252;">""</span>, area, page_name)
+page[<span style="color: #8b2252;">"content"</span>] = <span style="color: #8b2252;">"{html}</span><span style="color: #a0522d;">#{content}</span><span style="color: #8b2252;">{html}"</span>
+confluence.storePage(<span style="color: #8b2252;">""</span>, page)
+</pre>
+
+
+</div>
+</div>
+
