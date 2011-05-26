@@ -22,11 +22,22 @@ An important part of being data driven is to have a daily feedback on data, here
 <img src="http://al3xandr3.github.com/img/dash1.png" alt="http://al3xandr3.github.com/img/dash1.png" />
 </p>
 <p>
-Many things can be added, more metrics, more UP DOWN indicators quantifying the change of last day/week/month, plotting the data of 6 months ago or a year ago for direct comparison of historical values. More relative change plots, like the <a href="http://vis.stanford.edu/protovis/ex/index-chart.html">protovis index-chart</a> are very useful, even when they are not dynamic, like the one i have on the dashboard above.
-</p>
-<p>
-Also useful would be confidence intervals asserting how sure are the changes, checking that they are not just by random chance. And of course, next step is to add fits to data, either regression line, monte carlo, etc&hellip; that smooth out all the variation in graphs to better understand the overal tendency and also allow to predict the next day/week/month values.
-</p>
+Its the first iteration, where mostly all data is displayed as is, next iteration could enrich the data further with: 
+</p><ul>
+<li>UP DOWN values quantifying the change of last day/week/month, 
+</li>
+<li>Plotting the data of this week/month exactly a year ago for direct comparison could be also interesting.
+</li>
+<li>More relative change plots, like the <a href="http://vis.stanford.edu/protovis/ex/index-chart.html">protovis index-chart</a> are very useful, even when they are not dynamic, have one on the dashboard above.
+</li>
+<li>Confidence intervals asserting how sure are the changes, checking that they are not just by random chance. 
+</li>
+<li>Fits to data, like regression line that smooths out all the variation in graphs and shows better the overal tendency, plus allows to make predictions on next day/week/month values.
+</li>
+<li>and more&hellip;
+</li>
+</ul>
+
 
 <div id="outline-container-1" class="outline-3">
 <h3 id="sec-1">Tools &amp; Code </h3>
@@ -38,7 +49,7 @@ The dashboards update automatically from scheduled cron jobs. Some data sources 
 </p>
 <p>
 Its coded in ruby, that aggregates data from different places, and then outputs an html file with the full dashboard.
-Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with some useful user interaction functionalities.
+Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with useful user interaction features.
 </p>
 <p>
 Code needs a cleanup, so am not posting it fully here, but a few bits, all in ruby:
