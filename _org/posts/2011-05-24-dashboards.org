@@ -7,16 +7,20 @@ An important part of being data driven is to have a daily feedback on data, here
 
 [[http://al3xandr3.github.com/img/dash1.png]]
 
-Many things can be added, more metrics, more UP DOWN indicators quantifying the change of last day/week/month, plotting the data of 6 months ago or a year ago for direct comparison of historical values. More relative change plots, like the [[http://vis.stanford.edu/protovis/ex/index-chart.html][protovis index-chart]] are very useful, even when they are not dynamic, like the one i have on the dashboard above.
-
-Also useful would be confidence intervals asserting how sure are the changes, checking that they are not just by random chance. And of course, next step is to add fits to data, either regression line, monte carlo, etc... that smooth out all the variation in graphs to better understand the overal tendency and also allow to predict the next day/week/month values.
+Its the first iteration, where mostly all data is displayed as is, next iteration could enrich the data further with: 
+ - UP DOWN values quantifying the change of last day/week/month, 
+ - Plotting the data of this week/month exactly a year ago for direct comparison could be also interesting.
+ - More relative change plots, like the [[http://vis.stanford.edu/protovis/ex/index-chart.html][protovis index-chart]] are very useful, even when they are not dynamic, have one on the dashboard above.
+ - Confidence intervals asserting how sure are the changes, checking that they are not just by random chance. 
+ - Fits to data, like regression line that smooths out all the variation in graphs and shows better the overal tendency, plus allows to make predictions on next day/week/month values.
+ - and more...
 
 ** Tools & Code
 
 The dashboards update automatically from scheduled cron jobs. Some data sources update every 15 mins, others once per day.
 
 Its coded in ruby, that aggregates data from different places, and then outputs an html file with the full dashboard.
-Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with some useful user interaction functionalities.
+Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with useful user interaction features.
 
 Code needs a cleanup, so am not posting it fully here, but a few bits, all in ruby:
 
