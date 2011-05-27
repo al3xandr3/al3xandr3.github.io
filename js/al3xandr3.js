@@ -110,7 +110,7 @@ $(function () {
 
 
   $("#post-list li .post-details .post-summary").css({
-    "font-size": "107%",
+    "font-size": "100%",
     "color": "#666666",
     "line-height": "1.7em",
     "padding-bottom": "0.3em"
