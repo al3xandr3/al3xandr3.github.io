@@ -71,7 +71,7 @@ $(function () {
 
   $("#menu li").css({
     "float": "left", 
-    "margin": "0em 0.5em"
+    "margin": "0em 0.7em"
   }).addClass("alt");
  
   $("#menu li a").css({
@@ -147,9 +147,7 @@ $(function () {
  
   $("#sidebar").css({
     "color": "#666666",
-    //"border-left": "1px solid #DDDDDD",
-    "margin-left": "20px",
-    "padding-left": "15px"
+    "padding-left": "20px"
   });
 
   $("td").removeClass("left");
