@@ -2,23 +2,32 @@
 layout: default
 ---
 
-<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-<div id="post">
-  {{ page.content }}
-</div>
+<div class="post">
+  
+  <div class="content-page">
+    <div class="text-post"></div>
+      <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
 
-<br>
-<span id="post-nav">
-  <a class="jump slide-left" title="Click to jump to the top of the page" href="javascript:void(0);">Top</a>
-  <span id="tosep">|</span> 
-  <a class="" title="Click to go back to home page" href="/">Home</a>
-</span>
-<span id="post-details">
-  <span class="post-date">{{page.date | date_to_string}}</span>
-  -
-  {% for cat in page.categories %}
+      <div class="description" id="post-content">    
+        {{ page.content }}
+        <p style="float:right"><i>{{page.date | date_to_string}}</i></p>
+      </div>
+    </div>
+    
+
+    <span id="post-details" style="float:right;font-size:1.2em;">
+    <p class="tags" >
+    {% for cat in page.categories %}
     <a class="post-cat" href="/tags/{{cat}}.html" id="tag">{{cat}}</a>
-  {% endfor %}
-</span>
-
+    {% endfor %}
+    </p>
+    </span>
+    
+    <span id="post-nav" style="font-size: 1.3em; line-height: 2.5em;">
+    <a class="jump slide-left" title="top of the page" href="javascript:void(0);">Top</a>
+    <span id="tosep" style="color:#DDDDDD;">|</span> 
+    <a class="" title="Click to go back to home page" href="/">Home</a>
+    </span>
+    </div>
+    
 {% include disqus.html %}

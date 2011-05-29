@@ -1,90 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
+<head>
     
-    <!-- META -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{% unless page.home %}{{ page.title }} - {% endunless %} {{ site.title }}</title>
-    <meta name="author" content="{{ site.author }}" />
-    <meta name="description" content="{% if page.home %}{{ site.author }}{% endif %}{{ page.title }}" />
-    <meta name="keywords" content="{{ site.keywords }}" />
-    <meta name="robots" content="all,follow" />
-    <meta name="google-site-verification" content="5FljcF-364B5I6-KW19BXYLGQEm23cqHJbVDzS7x6Os" />
-    <link href="/atom.xml" rel="alternate" title="" type="application/atom+xml" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/blueprint/screen.css"
-      type="text/css" media="screen, projection" />   
-    <link rel="stylesheet" href="/css/blueprint/print.css"
-      type="text/css" media="print" />
-    <!--[if lt IE 8]>
-      <link rel="stylesheet" href="/css/blueprint/ie.css"
-        type="text/css" media="screen, projection">
-    <![endif]-->
-    <link rel="stylesheet" href="/css/site.css"
-       type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="/css/jqModal.css"
-          type="text/css" media="screen, projection" />
+<!-- META -->
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>{% unless page.home %}{{ page.title }} - {% endunless %} {{ site.title }}</title>
+<meta name="author" content="{{ site.author }}" />
+<meta name="description" content="{% if page.home %}{{ site.author }}{% endif %}{{ page.title }}" />
+<meta name="keywords" content="{{ site.keywords }}" />
+<meta name="robots" content="all,follow" />
+<meta name="google-site-verification" content="5FljcF-364B5I6-KW19BXYLGQEm23cqHJbVDzS7x6Os" />
+<link href="/atom.xml" rel="alternate" title="" type="application/atom+xml" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 
-    <!-- JS -->
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/al3xandr3.js"></script>
-    <script type="text/javascript" src="/js/jqModal.js"></script>
-   
-    <!-- Google Analytics Asynchronous tracking -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-91402-14']);
-      _gaq.push(['_trackPageview']);
-     
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = 'http://www'  + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head>
-  <body>
-    <div class="container">
+<!-- CSS -->
+<link rel="stylesheet" href="/css/blueprint/screen.css"
+type="text/css" media="screen, projection" />   
+<link rel="stylesheet" href="/css/blueprint/print.css"
+type="text/css" media="print" />
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="/css/blueprint/ie.css"
+type="text/css" media="screen, projection">
+<![endif]-->
+<link rel="stylesheet" href="/css/site.css"
+type="text/css" media="screen, projection" />
+<link rel="stylesheet" href="/css/jqModal.css"
+type="text/css" media="screen, projection" />
 
-    <div id="header" class="span-21 prepend-1">
-      <hr class="space">
-      <a href="/" id="title">{{site.title}}</a>
+<!-- JS -->
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/al3xandr3.js"></script>
 
-      <ul id="menu" style="float: right;">
-        <li><a href="/pages/code.html">code</a></li>
-        <li><a href="/pages/al3xandr3.html" id="about">about</a></li>
-        <li><a href="javascript:void(0);" id="search">search</a></li>
-        <li><a href="http://feeds.feedburner.com/al3xandr3" target="_blank">rss</a></li>
-      </ul>
-      
-      <hr>
-    </div>
-      
-      <div id="main" class="span-15 prepend-1">
-        <div id="content">        
-          {{ content }}
-        </div>
-      </div>
-      
-      <div id="sidebar" class="span-5 last">
-        <div id="searchbox" style="display: none;">{% include search.html %}</div>
-        {% include cloud.html %}
-        <hr class="space">
-        {% include twitter.html %}
-      </div>
+<!-- Google Analytics Asynchronous tracking -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-91402-14']);
+_gaq.push(['_trackPageview']);
 
-      
-      <div id="footer" class="span-21 prepend-1">
-        <hr class="space">
-        <hr>
-        <p style="text-align: center;">  &copy; 2011 {{ site.title }}</p>
-      </div>
-      
-   </div>
-  </body>
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = 'http://www'  + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+<body>
+
+<div class="patt">
+<div id="container">
+  
+<div id="header">
+  <h1><a href="/" id="title" title="{{site.title}}">Al3xandr3</a></h1>
+  <ul id="nav">
+    <li><a href="/pages/code.html">code</a></li>
+    <li><a href="http://feeds.feedburner.com/al3xandr3" target="_blank">rss</a></li>
+  </ul>
+</div>
+
+		
+<div id="contents">
+  {{ content }}
+</div>
+
+
+<div id="footer">
+  <div class="description">
+    <h2>About</h2>
+    <img class="portrait" src="http://al3xandr3.github.com/img/al3xandr3.png" />
+    <p>A computer science engineer by education with a passion for Data. <span id="contacts">Find me: <a href="skype:al3x.martins?userinfo">skype</a> <a href="http://www.linkedin.com/in/al3xandr3">linkedin</a> <a href="http://twitter.com/al3xandr3">twitter</a> <a href="http://github.com/al3xandr3">github</a></span></p>
+  </div>
+  <div class="follow">
+    <h2>Tags</h2>
+    <p class="tags">
+    {% include cloud.html %}
+    </p>
+  </div>
+
+  <div class="search">
+    <h2>Search</h2>
+    {% include search.html %}
+  </div>
+  
+  <div class="description" id="twitter">
+    <h2>Twitter</h2>
+    <p>
+    {% include twitter.html %}
+    </p>
+  </div>
+
+  <p class="footer">
+    al3xandr3
+  </p>
+
+</div>
+</div>
+
+</div>
+
+</body>
 </html>
 

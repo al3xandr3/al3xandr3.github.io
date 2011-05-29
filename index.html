@@ -3,26 +3,39 @@ layout: default
 home: true
 ---
 
-<div id="post-list">
-  <ul>
-    {% for post in paginator.posts %}
-    <li>
-      <h4><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h4>
-      <div class="post-details">        
-        <div class="post-summary">{{post.content | strip_html | truncatewords: 30}}</div>
-        <span class="post-date">{{post.date | date_to_string}}</span>        
-        {% for cat in post.categories %}
-          <a class="post-cat" href="/tags/{{cat}}.html" id="tag">{{cat}}</a>
-        {% endfor %}
-      </div>     
-    </li>
-    {% endfor %}
-  </dl>
- </div>
+{% for post in paginator.posts %}
+<div class="post">
+  
+  <div class="content">
+    <div class="quote-post"></div>
+      <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+      <div class="description">
+        <p>
+        {{post.content | strip_html | truncatewords: 30}}
+        </p>
+      </div>
+    </div>
+  
 
-<div id="paginator" style="text-align: center;">
+  <div class="sidebar"> 
+    <ul>	            				
+      <li class="date"><h2>{{post.date | date_to_string}}</h2></li>
+      <li class="permalink"><a href="{{ post.url }}">Read</a></li>
+    </ul>
+    <p class="tags">
+    {% for cat in post.categories %}
+      <a class="post-cat" href="/tags/{{cat}}.html" id="tag">{{cat}}</a>
+    {% endfor %}
+    </p>
+  </div>
+</div>
+{% endfor %}
+
+<div class="post">
+<div style="text-transform:lowercase;" class="footer-nav clearfix">
+<div id="paginator" style="text-align: center;font-size: 1.3em; line-height: 4em;">
   {% if paginator.previous_page %}
-    <a id="paginator_navigate" href="/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}" >&laquo;&nbsp;Newer</a>
+    <a id="paginator_navigate" class="previous-page" href="/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}" >&laquo;&nbsp;Newer</a>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -34,6 +47,8 @@ home: true
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a id="paginator_navigate" href="/page{{ paginator.next_page }}/" >Older&nbsp;&raquo;</a>
+    <a id="paginator_navigate" class="next-page"  href="/page{{ paginator.next_page }}/" >Older&nbsp;&raquo;</a>
   {% endif %}
+</div>
+</div>
 </div>

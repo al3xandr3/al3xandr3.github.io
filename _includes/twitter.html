@@ -1,9 +1,8 @@
-<h3><a href="http://twitter.com/al3xandr3" target="_blank" id="tw-title" style="display: none;">twitter</a></h3>
 <div id="twt" style="display: none;">
   <script type="text/javascript" src="/js/twitter.js"></script>
   <script>
   $(function() {     
-    $('#twt').twitter({'user':'al3xandr3','count':3}, function (e) {
+    $('#twt').twitter({'user':'al3xandr3','count':2}, function (e) {
       $('#tw-title').show();
       e.show();
       $("#twt p").css({
@@ -11,16 +10,7 @@
       });
       $("#twt").css({
         "line-height": "1.5em",
-      });
-      $("#twt a").hover(function () {
-        $(this).css('background-color', al3xandr3.color3);
-      }, function () {
-        $(this).css('background-color', al3xandr3.color1);
-      }).css({
-        "color": "#333",
-        "text-decoration": "none",
-        "border-bottom": "1px solid " + al3xandr3.color3
-      });
+      });     
     });
   });
   </script>
