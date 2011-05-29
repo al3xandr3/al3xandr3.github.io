@@ -28,6 +28,7 @@ $(function () {
 
   //hide discuss ugly link
   $(".dsq-brlink").hide();
+  $(".dsq-item-trackback").hide();
 
   // Jump to Top
   $('.jump').click(function () {
