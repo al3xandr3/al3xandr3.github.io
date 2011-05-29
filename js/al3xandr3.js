@@ -25,7 +25,10 @@ $(function () {
   // CSS
 //  $("#title").spanify("3", "titlenumbers");
 //  $(".titlenumbers").css('color', al3xandr3.color1);
-  
+
+  //hide discuss ugly link
+  $(".dsq-brlink").hide();
+
   // Jump to Top
   $('.jump').click(function () {
     $('html, body').animate({scrollTop: 0}, 'slow');
