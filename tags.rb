@@ -11,7 +11,7 @@ site.categories.sort.each do |category, posts|
   html = ''
   html << <<-HTML
 ---
-layout: default
+layout: page
 title: Posts on "#{category}"
 ---
     <h1 id="#{category}">Posts on "#{category}"</h1>
