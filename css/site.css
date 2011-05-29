@@ -615,3 +615,9 @@ a.next-page {
 *:first-child+html .clearfix {
 	zoom: 1;
 }
+
+
+
+.dsq-item-trackback, .dsq-brlink {
+    display: hidden;
+}
