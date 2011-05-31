@@ -18,7 +18,7 @@ A second popular layout is called Dvorak, designed in the 1930's and it tries to
 
 "...the introduction of the electric typewriter in the 1930s made typist fatigue more of a problem, leading to increased interest in the Dvorak layout..."
 
-But even the Dvorak layout is already some years old, so is the *typist fatigue* the same as now? Do we write, for example, the same things as in 1930's? 
+But even the Dvorak layout is already some years old, so is the *typist fatigue* the same as now? Do we write, for example, the same words as in 1930's? I think not...
 
 * Is there a better layout?
 
@@ -29,7 +29,7 @@ For example, for this text i had to write the word WHY a lot ;) so if i had whyr
   - key combinations that minimizes vertical finger, because jumping from 1st to 3rd row, is less efficient than a jump from 1st to 2nd row.
   - what key combinations minimizes horizontal finger movements?
   - frequent use of pinky, should be minimized, related to the above horizontal and vertical long movements.
-  - etc... (you can make up your own)
+  - etc... (many other heuristics)
 
 And then try out several keyboard layouts and variations.
 
@@ -40,7 +40,7 @@ See here for experience: http://klausler.com/evolved.html, and also the final ke
 
 * Your Own keyboard
 
-I'm not sure that there is THE ultimate and perfect keyboard for everyone, because:
+I'm not sure that there is the ONE perfect keyboard for everyone, because:
 - different people use different words.
 - different languages use different words.
 - 15 years old person words are different from a 70 years old person words.
@@ -53,9 +53,9 @@ But imagine a future intelligent computer that can be all the time analyzing wha
 
 Keyboards of the future should come with blank keys that can be personalized with the character you want.
 
-*How would this work is someone changes computer*? The keyboard profile, could be fetched from internet when you login to computer.
+*How would this work if someone changes computer*? The keyboard profile, could be fetched from internet when you login to computer.
 
 Another idea, is to have full words on keys, like with your top 5 most used words.
 
-*Touch screens* with a touch screen there's a whole new level of layout possibilities, we could make more frequent keys bigger than others... play with different keyboard shapes, that can adapt to each person real hands sizes for example... etc... etc...
+*Touch screens* with a touch screen there's a whole new level of layout possibilities, we could make more frequent keys bigger than others for example, play with different keyboard shapes, that can adapt to each person real hands sizes for example, etc...
 
