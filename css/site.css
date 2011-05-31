@@ -215,6 +215,7 @@ position:relative;
 //    margin-bottom:24px;
     margin:15px;
     position:relative;
+    text-align: justify;
 }
 
 #paginator_current {
