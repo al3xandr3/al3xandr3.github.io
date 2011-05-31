@@ -212,7 +212,8 @@ position:relative;
 #post-content {
     font-size: 14px;
     line-height:22px;
-    margin-bottom:24px;
+//    margin-bottom:24px;
+    margin:15px;
     position:relative;
 }
 
