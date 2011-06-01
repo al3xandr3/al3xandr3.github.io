@@ -181,6 +181,108 @@ confluence.storePage(<span style="color: #8b2252;">""</span>, page)
 </pre>
 
 
-</div>
+
+
+
+<p>
+<b>Generating a chart</b>
+</p>
+
+
+
+<pre class="src src-ruby">require <span style="color: #8b2252;">'erb'</span>
+require <span style="color: #8b2252;">'date'</span>
+
+<span style="color: #7f007f;">def</span> <span style="color: #0000ff;">line</span> arg={}
+
+  arg[<span style="color: #008b8b;">:height</span>] = arg[<span style="color: #008b8b;">:height</span>] || <span style="color: #8b2252;">""</span>
+  arg[<span style="color: #008b8b;">:width</span>] = arg[<span style="color: #008b8b;">:width</span>] || <span style="color: #8b2252;">""</span>
+
+  line_chart = %{
+    &lt;div id=<span style="color: #8b2252;">"&lt;%= arg[:name] %&gt;"</span> style=<span style="color: #8b2252;">"height:&lt;%= arg[:height] %&gt;px;width:&lt;%= arg[:width] %&gt;px;"</span>&gt;&lt;/div&gt;
+    &lt;script type=<span style="color: #8b2252;">"text/javascript"</span>&gt;
+     var month = new <span style="color: #228b22;">Array</span>(<span style="color: #8b2252;">"Jan"</span>,<span style="color: #8b2252;">"Feb"</span>,<span style="color: #8b2252;">"Mar"</span>,<span style="color: #8b2252;">"Apr"</span>,<span style="color: #8b2252;">"May"</span>,<span style="color: #8b2252;">"Jun"</span>,
+                           <span style="color: #8b2252;">"Jul"</span>,<span style="color: #8b2252;">"Aug"</span>,<span style="color: #8b2252;">"Sept"</span>,<span style="color: #8b2252;">"Oct"</span>,<span style="color: #8b2252;">"Nov"</span>,<span style="color: #8b2252;">"Dec"</span>);
+     var chart;
+     $(document).ready(function() {
+     chart = new <span style="color: #228b22;">Highcharts</span>.<span style="color: #228b22;">Chart</span>({
+        <span style="color: #008b8b;">chart</span>: {
+           <span style="color: #008b8b;">renderTo</span>: <span style="color: #8b2252;">'&lt;%= arg[:name] %&gt;'</span>,
+           <span style="color: #008b8b;">defaultSeriesType</span>: <span style="color: #8b2252;">'line'</span>,
+           <span style="color: #008b8b;">marginRight</span>: 40,
+           <span style="color: #008b8b;">marginBottom</span>: 40
+        },
+        <span style="color: #008b8b;">credits</span>:{
+          <span style="color: #008b8b;">enabled:false</span>
+        },
+        <span style="color: #008b8b;">plotOptions</span>: {
+           <span style="color: #008b8b;">line</span>: {
+              <span style="color: #008b8b;">dataLabels</span>: {
+                 <span style="color: #008b8b;">enabled</span>: &lt;%= arg[<span style="color: #008b8b;">:data_labels</span>] || <span style="color: #a0522d;">false</span> %&gt;
+              }
+           }
+        },
+        <span style="color: #008b8b;">title</span>: {
+           <span style="color: #008b8b;">text</span>: <span style="color: #8b2252;">'&lt;%= arg[:name] %&gt;'</span>,
+           <span style="color: #008b8b;">x</span>: -20 //center
+        },
+        <span style="color: #008b8b;">subtitle</span>: {
+           <span style="color: #008b8b;">text</span>: <span style="color: #8b2252;">'&lt;%= arg[:subtitle] %&gt;'</span>,
+           <span style="color: #008b8b;">x</span>: -20
+        },
+        <span style="color: #008b8b;">xAxis</span>: {
+           <span style="color: #008b8b;">type</span>: <span style="color: #8b2252;">"datetime"</span>,
+           <span style="color: #008b8b;">title</span>: {
+              <span style="color: #008b8b;">text</span>: <span style="color: #8b2252;">'&lt;%= arg[:xlabel] %&gt;'</span>
+           },
+        },
+        <span style="color: #008b8b;">yAxis</span>: {
+           <span style="color: #008b8b;">min</span>: &lt;%= arg[<span style="color: #008b8b;">:ymin</span>] || 0 %&gt;,
+           <span style="color: #008b8b;">title</span>: {
+              <span style="color: #008b8b;">text</span>: <span style="color: #8b2252;">'&lt;%= arg[:ylabel] %&gt;'</span>
+           },
+        },
+        <span style="color: #008b8b;">tooltip</span>: {
+           <span style="color: #008b8b;">formatter</span>: function() {
+             <span style="color: #7f007f;">return</span> (new <span style="color: #228b22;">Date</span>(this.x)).getDate() + <span style="color: #8b2252;">' '</span> +   
+                    month[(new <span style="color: #228b22;">Date</span>(this.x)).getMonth()] + 
+                     <span style="color: #8b2252;">': '</span>+ this.y;
+           }
+        },
+        <span style="color: #008b8b;">legend</span>: {
+           <span style="color: #008b8b;">layout</span>: <span style="color: #8b2252;">'vertical'</span>,
+           <span style="color: #008b8b;">align</span>: <span style="color: #8b2252;">'right'</span>,
+           <span style="color: #008b8b;">verticalAlign</span>: <span style="color: #8b2252;">'top'</span>,
+           <span style="color: #008b8b;">x</span>: 0,
+           <span style="color: #008b8b;">y</span>: 0,
+           <span style="color: #008b8b;">borderWidth</span>: 2
+        },
+        <span style="color: #008b8b;">series</span>: [{
+           <span style="color: #008b8b;">pointInterval</span>: 24 * 3600 * 1000,
+           <span style="color: #008b8b;">pointStart</span>: &lt;%= arg[<span style="color: #008b8b;">:start_time</span>] %&gt;,
+           <span style="color: #008b8b;">name</span>: <span style="color: #8b2252;">'&lt;%= arg[:name] %&gt;'</span>,
+           <span style="color: #008b8b;">data</span>: &lt;%= arg[<span style="color: #008b8b;">:values</span>] %&gt;
+        }]
+       });
+      });
+    &lt;/script&gt;
+    }
+  <span style="color: #228b22;">ERB</span>.new(line_chart).result(binding)
+<span style="color: #7f007f;">end</span>
+
+c = line(<span style="color: #008b8b;">:name</span> =&gt; <span style="color: #8b2252;">"My Fancy Chart"</span>,
+     <span style="color: #008b8b;">:subtitle</span> =&gt; <span style="color: #8b2252;">"subtitle"</span>,
+     <span style="color: #008b8b;">:xlabel</span> =&gt; <span style="color: #8b2252;">"y label"</span>,
+     <span style="color: #008b8b;">:ylabel</span> =&gt; <span style="color: #8b2252;">"y label"</span>,
+     <span style="color: #008b8b;">:start_time</span> =&gt; (<span style="color: #228b22;">Date</span>.today-7).to_time.to_i * 1000, 
+     <span style="color: #008b8b;">:values</span> =&gt; [12.2, 13.3, 11.1, 15.5])
+print c
+</pre>
+
+
+
+<p>
+Output the javascript and html of a chart.
+</p></div>
 </div>
 
