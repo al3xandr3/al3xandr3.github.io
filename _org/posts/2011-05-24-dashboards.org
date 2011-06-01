@@ -135,7 +135,7 @@ confluence.storePage("", page)
 
 
 
-*Generating a chart*
+*Creating a chart*
 
 #+begin_src ruby
 require 'erb'
