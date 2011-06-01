@@ -132,3 +132,99 @@ page = confluence.getPage("", area, page_name)
 page["content"] = "{html}#{content}{html}"
 confluence.storePage("", page)
 #+end_src
+
+
+
+*Generating a chart*
+
+#+begin_src ruby
+require 'erb'
+require 'date'
+
+def line arg={}
+
+  arg[:height] = arg[:height] || ""
+  arg[:width] = arg[:width] || ""
+
+  line_chart = %{
+    <div id="<%= arg[:name] %>" style="height:<%= arg[:height] %>px;width:<%= arg[:width] %>px;"></div>
+    <script type="text/javascript">
+     var month = new Array("Jan","Feb","Mar","Apr","May","Jun",
+                           "Jul","Aug","Sept","Oct","Nov","Dec");
+     var chart;
+     $(document).ready(function() {
+     chart = new Highcharts.Chart({
+        chart: {
+           renderTo: '<%= arg[:name] %>',
+           defaultSeriesType: 'line',
+           marginRight: 40,
+           marginBottom: 40
+        },
+        credits:{
+          enabled:false
+        },
+        plotOptions: {
+           line: {
+              dataLabels: {
+                 enabled: <%= arg[:data_labels] || false %>
+              }
+           }
+        },
+        title: {
+           text: '<%= arg[:name] %>',
+           x: -20 //center
+        },
+        subtitle: {
+           text: '<%= arg[:subtitle] %>',
+           x: -20
+        },
+        xAxis: {
+           type: "datetime",
+           title: {
+              text: '<%= arg[:xlabel] %>'
+           },
+        },
+        yAxis: {
+           min: <%= arg[:ymin] || 0 %>,
+           title: {
+              text: '<%= arg[:ylabel] %>'
+           },
+        },
+        tooltip: {
+           formatter: function() {
+             return (new Date(this.x)).getDate() + ' ' +   
+                    month[(new Date(this.x)).getMonth()] + 
+                     ': '+ this.y;
+           }
+        },
+        legend: {
+           layout: 'vertical',
+           align: 'right',
+           verticalAlign: 'top',
+           x: 0,
+           y: 0,
+           borderWidth: 2
+        },
+        series: [{
+           pointInterval: 24 * 3600 * 1000,
+           pointStart: <%= arg[:start_time] %>,
+           name: '<%= arg[:name] %>',
+           data: <%= arg[:values] %>
+        }]
+       });
+      });
+    </script>
+    }
+  ERB.new(line_chart).result(binding)
+end
+
+c = line(:name => "My Fancy Chart",
+     :subtitle => "subtitle",
+     :xlabel => "y label",
+     :ylabel => "y label",
+     :start_time => (Date.today-7).to_time.to_i * 1000, 
+     :values => [12.2, 13.3, 11.1, 15.5])
+print c
+#+end_src
+
+Output the javascript and html of a chart.
