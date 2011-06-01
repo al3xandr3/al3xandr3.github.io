@@ -135,7 +135,7 @@ confluence.storePage("", page)
 
 
 
-*Creating a chart*
+*Creating a highcharts JS chart*
 
 #+begin_src ruby
 require 'erb'
@@ -227,4 +227,3 @@ c = line(:name => "My Fancy Chart",
 print c
 #+end_src
 
-Outputs the javascript and html of a chart.
