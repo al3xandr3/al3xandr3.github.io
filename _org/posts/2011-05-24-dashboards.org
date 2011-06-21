@@ -1,6 +1,8 @@
 #+TITLE: Dashboarding
 #+HTML: <category> ruby statistics </category>
 
+/Updated 22 June 2011:/ Placed on github the code i'm using to build dashboards in ruby, find it here: https://github.com/al3xandr3/Dashboard
+
 An important part of being data driven is to have a daily feedback on data, here's a couple of "automated" dashboards i've built recently:
 
 [[http://al3xandr3.github.com/img/dash2.png]]
