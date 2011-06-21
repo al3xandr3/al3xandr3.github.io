@@ -23,7 +23,7 @@ A collection of exercises from the OpenClassRoom machine learning classes. Serve
 
 -------------------------------
 
-** cov3 - Web Crawler Tester
+** cov3 - Custom Web Crawler
 
 A clojure, selenium based web crawler with a couple of variations that i found useful. Cov3 crawls pages with the intention of executing (javascript)tests/validations on each of the pages it opens. The original idea of a web crawler is that given an initial page it keeps on following all links it finds in the same domain until all pages are visited. I added a couple of variations: Given a sitemap.xml it randomly samples part of it(useful for big sitemaps) and follows those urls executing some test. And another option is a csv file, with the urls and tests to execute on each.
 
