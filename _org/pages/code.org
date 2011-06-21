@@ -31,7 +31,7 @@ A clojure, selenium based web crawler with a couple of variations that i found u
 
 -------------------------------
 
-** jQuery Twitter "mini" plugin
+** jQuery Twitter 'mini' plugin
 
 A jQuery plugin to display a twitter feed on a web page(blog for example). The twitter api feed, i found, has an annoying particularity of not always returning the requested number of tweets, so i added a feature that until it gets the right amount of messages it keeps on fetching. Thats useful when you want to fill a web page space with exactly 3 messages.
 Also included a "time ago" date calculations based of john resig [[http://ejohn.org/blog/javascript-pretty-date/][code]], with an added local timezone shift.
