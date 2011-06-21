@@ -1,6 +1,14 @@
 #+TITLE: Code
 #+HTML <categories>code</categories>
 
+** Dashboard Builder
+
+A framework for building up html interactive dashboards. Contains implementation of both simple & multivariate regression for visualizing trends, fetching email attachments/content as data sources, also allows for posting the html dashboard output onto a confluence wiki page.
+
+[[https://github.com/al3xandr3/Dashboard][*code*]] - [[http://al3xandr3.github.com/2011/05/24/dashboards.html][web]] - /June 2011/ - Tools: Ruby, Javascript, Html
+
+-------------------------------
+
 ** Linear & Logistic Regression 
 
 A collection of exercises from the OpenClassRoom machine learning classes. Serve as a reference in implementing linear and logistic regression with some added debugging features in R.
