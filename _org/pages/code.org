@@ -3,7 +3,7 @@
 
 ** Dashboard Builder
 
-A framework for building up interactive html dashboards in ruby. Contains implementation of both simple & multivariate regression for visualizing trends, fetching email attachments/content as data sources, also allows for posting the end result onto a confluence wiki page.
+A framework for building up interactive html dashboards in ruby. Contains implementation of both simple & multivariate regression for visualizing trends, supports fetching email attachments/content as data sources,  allows for posting the end result onto a confluence wiki page. 
 
 [[https://github.com/al3xandr3/Dashboard][*code*]] - [[http://al3xandr3.github.com/2011/05/24/dashboards.html][web]] - /June 2011/ - Tools: Ruby, Javascript, Html
 
