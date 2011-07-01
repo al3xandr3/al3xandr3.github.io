@@ -1,8 +1,6 @@
 #+TITLE: Dashboarding
 #+HTML: <category> ruby statistics </category>
 
-/Updated 22 June 2011:/ Placed on github the ruby code i'm using to build the html dashboards, find it here: https://github.com/al3xandr3/Dashboard.
-
 An important part of being data driven is to have a daily feedback on data, here's a couple of "automated" dashboards i've built recently:
 
 [[http://al3xandr3.github.com/img/dash2.png]]
@@ -18,6 +16,8 @@ Its the first iteration, where mostly all data is displayed as is, next iteratio
  - and more...
 
 ** Tools & Code
+
+/Update 22 June 2011:/ Placed on github the ruby code i'm using to build the html dashboards, find it here: https://github.com/al3xandr3/Dashboard
 
 The dashboards update automatically from scheduled cron jobs. Some data sources update every 15 mins, others once per day.
 
