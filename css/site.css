@@ -343,13 +343,13 @@ padding: 0;
 }
 #footer .description {
 	float:left;
-	padding-bottom:1.2em;
+	padding-bottom:2.8em;
 	width:29em;
 }
 #footer .follow {
 	float: right;
 	margin-left: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 	width: 280px;
 }
 #footer .footer {
@@ -362,9 +362,9 @@ padding: 0;
 	background: url("http://al3xandr3.github.com/img/li-border.png") repeat-x scroll top left transparent;
 }
 #footer .search {
-	float: left;
+	float: right;
 	padding-bottom: 30px;
-	width: 290px;
+	width: 280px;
 }
 #footer .search input[type="text"] {
 	background: url("http://al3xandr3.github.com/img/input_bg.gif") repeat-x scroll center top #FFFFFF;
