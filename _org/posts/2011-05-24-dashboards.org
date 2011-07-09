@@ -7,21 +7,20 @@ An important part of being data driven is to have a daily feedback on data, here
 
 [[http://al3xandr3.github.com/img/dash1.png]]
 
-Its the first iteration, where mostly all data is displayed as is, next iteration could enrich the data further with: 
- - UP DOWN values quantifying the change of last day/week/month, 
- - Plotting the data of this week/month exactly a year ago for direct comparison could be also interesting.
- - More relative change plots, like the [[http://vis.stanford.edu/protovis/ex/index-chart.html][protovis index-chart]] are very useful, even when they are not dynamic, I have one on the dashboard above.
- - Confidence intervals asserting how sure are the changes, checking that they are not just by random chance. 
- - Fits to data, like regression line that smooths out all the variation in graphs and shows better the overal tendency, plus allows to make predictions on next day/week/month values.
- - and more...
+Its the first iteration, where mostly all data is displayed as is, next iteration could enrich the data further with:
+ - Adding the data of a year/6months ago for direct comparison could be interesting.
+ - Fits to data, like a regression line that shows the overal tendency, plus allows to make predictions on next day/week/month values.
+ - More of relative change plots, like the [[http://vis.stanford.edu/protovis/ex/index-chart.html][protovis index-chart]] are very useful.
+ - Confidence intervals pointing out that the changes are unlikely to be by chance.
+ - etc...
 
 ** Tools & Code
 
-Coded in ruby, it aggregates data from different sources, and then outputs to an html file with the full dashboard.
+Coded in ruby, it aggregates data from different sources, and based on an html template it generates html with the full dashboard. Its fully automated, and i make it run on daily basis using a cron job.
 
-Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with useful user interaction features.
+Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and allows user interaction.
 
-Placed on github the code i use as the base to build the dashboards, find it here: https://github.com/al3xandr3/Dashboard
+I placed on github the code i use as the base to build the dashboards, find it here: https://github.com/al3xandr3/Dashboard
 
 A few bits:
 
