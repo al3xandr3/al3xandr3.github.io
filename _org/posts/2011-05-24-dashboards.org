@@ -17,14 +17,14 @@ Its the first iteration, where mostly all data is displayed as is, next iteratio
 
 ** Tools & Code
 
-/Update 22 June 2011:/ Placed on github the ruby code i'm using to build the html dashboards, find it here: https://github.com/al3xandr3/Dashboard
+Placed on github the ruby code i'm using to build the html dashboards, find it here: https://github.com/al3xandr3/Dashboard
 
 The dashboards update automatically from scheduled cron jobs. Some data sources update every 15 mins, others once per day.
 
 Its coded in ruby, that aggregates data from different places, and then outputs an html file with the full dashboard.
 Uses highcharts as the javascript charting engine, which i can only say good things about, very nice looking and with useful user interaction features.
 
-Code needs a cleanup, so am not posting it fully here, but a few bits, all in ruby:
+A few bits, in ruby:
 
 *Getting RescueTime Data*
 
