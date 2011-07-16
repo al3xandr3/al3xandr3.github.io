@@ -6,6 +6,9 @@ categories:
 - health
 - montecarlo
 - statistics
+intro: "\n\
+  <img src=\"http://al3xandr3.github.com/img/diet.jpeg\" alt=\"http://al3xandr3.github.com/img/diet.jpeg\" />\n\
+  Got for 2010 Xmas a very cool book called the \"4 Hour Body\"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.\n"
 ---
 
 
@@ -15,6 +18,7 @@ categories:
 
 
 <p>
+<img src="http://al3xandr3.github.com/img/diet.jpeg" alt="http://al3xandr3.github.com/img/diet.jpeg" />
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
 </p>
 <p>
@@ -27,7 +31,7 @@ This book couldn't have arrived in a better time as i just peeked my heaviest we
 But of course, like with all diets, I'm quickly growing impatient of when i'm going to reach my goal (<a href="http://www.wolframalpha.com/input/?i=body+mass+index&amp;a=*C.body+mass+index-_*Formula.dflt-&amp;a=*FS-_**BodyMassIndex.BMI-.*BodyMassIndex.H-.*BodyMassIndex.W--&amp;f3=75+kg&amp;x=11&amp;y=4&amp;f=BodyMassIndex.W_75+kg&amp;f4=176+cm&amp;f=BodyMassIndex.H_176+cm&amp;a=*FVarOpt.1-_**-.***BodyMassIndex.S---.*--">of adequate BMI</a>), so lets use R and monte carlo simulations to generate predictions and understand better what to expect.
 </p>
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Data </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -38,34 +42,55 @@ Have been tracking my weight using google spreadsheets, so i can get the data in
 
 
 
-<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
-</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&amp;hl=en_GB&amp;single=true&amp;gid=3&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>, na.strings = <span style="color: #8b2252;">"#VALUE!"</span>) 
+<pre class="src src-R"><span style="color: #0000ff;">google.spreadsheet</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (key) {
+  <span style="color: #008b8b;">library</span>(RCurl)
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">ssl validation off
+</span>  ssl.verifypeer <span style="color: #008b8b;">&lt;-</span> <span style="color: #228b22;">FALSE</span>
 
-<span style="color: #b22222;"># </span><span style="color: #b22222;">re - Something in Javascript? move NA's
-</span>mydata = na.omit(mydata)
+  tt <span style="color: #008b8b;">&lt;-</span> getForm(<span style="color: #8b2252;">"https://spreadsheets.google.com/spreadsheet/pub"</span>, 
+                hl =<span style="color: #8b2252;">"en_GB"</span>,
+                key = key, 
+                single = <span style="color: #8b2252;">"true"</span>, gid =<span style="color: #8b2252;">"0"</span>, 
+                output = <span style="color: #8b2252;">"csv"</span>, 
+                .opts = list(followlocation = <span style="color: #228b22;">TRUE</span>, verbose = <span style="color: #228b22;">TRUE</span>)) 
+
+  read.csv(textConnection(tt), header = <span style="color: #228b22;">TRUE</span>)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+</span>mydata = google.spreadsheet(<span style="color: #8b2252;">"0AnypY27pPCJydEstZnVOeHYycjVWWktjbHpvS1NRMUE"</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Create a new column with the proper date format
 </span>mydata$timestamp = as.Date(mydata$timestamp, format=<span style="color: #8b2252;">'%d/%m/%Y'</span>)
+</pre>
 
-tail(mydata, 5)
+
+
+<p>
+The last 5 measurements:
+</p>
+
+
+
+<pre class="src src-R">tail(mydata, 5)
 </pre>
 
 
 
 <pre class="example">
-     timestamp   kg delta       day
-163 2011-03-28 75.0   0.3    Monday
-164 2011-03-29 74.9  -0.1   Tuesday
-165 2011-03-30 74.9   0.0 Wednesday
-166 2011-03-31 75.0   0.1  Thursday
-167 2011-04-01 74.8  -0.2    Friday
+     timestamp   kg
+140 2011-03-04 77.3
+141 2011-03-05 76.9
+142 2011-03-06 77.2
+143 2011-03-07 77.3
+144 2011-03-08 76.9
 </pre>
 
 
 
 </div>
 
-<div class="outline-3" id="outline-container-1_1">
+<div id="outline-container-1_1" class="outline-3">
 <h3 id="sec-1_1">Past Years weight </h3>
 <div class="outline-text-3" id="text-1_1">
 
@@ -98,7 +123,7 @@ Also note that middle of year(summer here) appears to be where jumps in weight h
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">Predicting the Future </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -154,19 +179,19 @@ dietalldays$delta = c(0, kgdelta)
 
 
 <pre class="example">
-    timestamp   kg delta       day
-71 2011-03-28 75.0   0.3    Monday
-72 2011-03-29 74.9  -0.1   Tuesday
-73 2011-03-30 74.9   0.0 Wednesday
-74 2011-03-31 75.0   0.1  Thursday
-75 2011-04-01 74.8  -0.2    Friday
+    timestamp   kg delta
+47 2011-03-04 77.3   0.0
+48 2011-03-05 76.9  -0.4
+49 2011-03-06 77.2   0.3
+50 2011-03-07 77.3   0.1
+51 2011-03-08 76.9  -0.4
 </pre>
 
 
 
 </div>
 
-<div class="outline-3" id="outline-container-2_1">
+<div id="outline-container-2_1" class="outline-3">
 <h3 id="sec-2_1">So what is going to be my weight in a week? </h3>
 <div class="outline-text-3" id="text-2_1">
 
@@ -192,7 +217,7 @@ summary(mcWeightWeek)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-  70.20   73.30   73.90   73.92   74.57   77.60
+   71.8    75.2    75.9    75.9    76.6    79.7
 </pre>
 
 
@@ -232,7 +257,7 @@ gghist(data.frame(kg=mcWeightWeek), <span style="color: #8b2252;">"kg"</span>)
 
 </div>
 
-<div class="outline-3" id="outline-container-2_2">
+<div id="outline-container-2_2" class="outline-3">
 <h3 id="sec-2_2">And when am i getting to 75kg? </h3>
 <div class="outline-text-3" id="text-2_2">
 
@@ -262,7 +287,7 @@ summary(mcDays75)
 
 <pre class="example">
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-      0       0       0       0       0       0
+   2.00    8.00   12.00   15.36   19.25  102.00
 </pre>
 
 
@@ -273,22 +298,22 @@ And the cumulative distribution:
 
 
 <pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">add dates to it, from today's date + #days
-</span>days75 = sort(Sys.Date() + mcDays75)
+</span>days75 = sort(tail(mydata$timestamp, 1) + mcDays75)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">get the ecdf values into a dataframe
 </span>days75.ecdf = summarize(data.frame(days=days75), days = unique(days), 
                         ecdf = ecdf(days)(unique(days)))
 
-<span style="color: #b22222;"># </span><span style="color: #b22222;">date where its 85% sure i'll reach goal
-</span>prob85 = head(days75.ecdf[days75.ecdf$ecdf&gt;0.85,],1)
+<span style="color: #b22222;"># </span><span style="color: #b22222;">date where its 80% sure i'll reach goal
+</span>prob80 = head(days75.ecdf[days75.ecdf$ecdf&gt;0.80,],1)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">plot
 </span>ggplot(days75.ecdf, aes(days, ecdf)) + geom_step() +
        ylab(<span style="color: #8b2252;">"probability"</span>) + 
-       geom_point(aes(x = prob85$days, y = prob85$ecdf)) +
-       geom_text(aes(x = prob85$days, y = prob85$ecdf, 
-                    label = paste(<span style="color: #8b2252;">"85% sure to be 75kg on"</span>,
-                            format(prob85$days, <span style="color: #8b2252;">"%a, %d %b %Y"</span>))), 
+       geom_point(aes(x = prob80$days, y = prob80$ecdf)) +
+       geom_text(aes(x = prob80$days, y = prob80$ecdf, 
+                    label = paste(<span style="color: #8b2252;">"80% sure to be 75kg on"</span>,
+                            format(prob80$days, <span style="color: #8b2252;">"%a, %d %b %Y"</span>))), 
                      hjust=-0.04)
 </pre>
 
@@ -310,7 +335,7 @@ But as you see the slow carb diet seems to work, even without exercise. Tim's bo
 
 </div>
 
-<div class="outline-2" id="outline-container-3">
+<div id="outline-container-3" class="outline-2">
 <h2 id="sec-3"><i>Update</i> </h2>
 <div class="outline-text-2" id="text-3">
 
@@ -328,7 +353,7 @@ The predictor was surprisingly good, even with little data on the beginning of d
 
 </div>
 
-<div class="outline-3" id="outline-container-3_1">
+<div id="outline-container-3_1" class="outline-3">
 <h3 id="sec-3_1">References </h3>
 <div class="outline-text-3" id="text-3_1">
 

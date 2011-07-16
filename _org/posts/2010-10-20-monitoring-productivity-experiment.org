@@ -2,7 +2,6 @@
 #+HTML: <category> emacs org-mode R statistics </category>
 
 [[http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/][http://al3xandr3.github.com/img/prod-intro.jpeg]]
-
 For over a year now, i've been collecting how much time i spend in computer and how much of it is actually used in creative/productive activities.
 
 By productive activity i mean that the time spent in text editor(emacs), terminal, excel or a database client is likely to be more creative/productive than the time spent in youtube, twitter, reading rss feeds, IM Chatting or replying Email. In average.
@@ -23,8 +22,23 @@ thus, total = productive + distracting + neutral
 I'll look here at a full year(52 weeks worth of data).
 
 #+begin_src R :session R :exports code  :results output
+google.spreadsheet <- function (key) {
+  library(RCurl)
+  # ssl validation off
+  ssl.verifypeer <- FALSE
+
+  tt <- getForm("https://spreadsheets.google.com/spreadsheet/pub", 
+                hl ="en_GB",
+                key = key, 
+                single = "true", gid ="0", 
+                output = "csv", 
+                .opts = list(followlocation = TRUE, verbose = TRUE)) 
+
+  read.csv(textConnection(tt), header = TRUE)
+}
+
 # load the data
-mydata <- read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydGNCcDhIVVRyZ1ZMWnBTbjBQbmJ0WVE&hl=en_GB&single=true&gid=0&output=csv", header = TRUE)
+mydata = google.spreadsheet("0AnypY27pPCJydGNCcDhIVVRyZ1ZMWnBTbjBQbmJ0WVE")
 
 # Create a new column with the proper date format
 mydata$date = as.Date(mydata$date, format='%d/%m/%Y')

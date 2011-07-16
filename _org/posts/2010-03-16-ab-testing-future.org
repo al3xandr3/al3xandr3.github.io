@@ -1,7 +1,7 @@
 #+TITLE: AB testing tools in the Future
 #+HTML: <category> abtesting </category>
 
-A view on how i think AB testing tools should/will work in the future.
+A view on AB testing tools of the future.
 
 * How it works:
 

@@ -5,6 +5,8 @@ categories:
 - r
 - machinelearning
 - statistics
+intro: "\n\
+  <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex5/ex5.html\">Exercise 5.2</a> Improves the Logistic Regression implementation done in <a href=\"http://al3xandr3.github.com/2011/03/16/ml-ex4.html\">Exercise 4</a> by adding a regularization parameter that reduces the problem of over-fitting. We will be using Newton's Method.\n"
 ---
 
 
@@ -20,7 +22,7 @@ categories:
 With implementation in R.
 </p>
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Data </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -30,7 +32,7 @@ Here's how the data we want to fit, looks like:
 </p>
 
 
-<script src="http://www.mathjax.org/mathjax/MathJax.js" type="text/javascript">
+<script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
     MathJax.Hub.Config({
             jax: ["input/TeX", "output/HTML-CSS"],
         extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
@@ -69,8 +71,23 @@ Here's how the data we want to fit, looks like:
 
 
 
-<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
-</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydHZPN2pFbkZGd1RKeU81OFY3ZHJldWc&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+<pre class="src src-R"><span style="color: #0000ff;">google.spreadsheet</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (key) {
+  <span style="color: #008b8b;">library</span>(RCurl)
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">ssl validation off
+</span>  ssl.verifypeer <span style="color: #008b8b;">&lt;-</span> <span style="color: #228b22;">FALSE</span>
+
+  tt <span style="color: #008b8b;">&lt;-</span> getForm(<span style="color: #8b2252;">"https://spreadsheets.google.com/spreadsheet/pub"</span>, 
+                hl =<span style="color: #8b2252;">"en_GB"</span>,
+                key = key, 
+                single = <span style="color: #8b2252;">"true"</span>, gid =<span style="color: #8b2252;">"0"</span>, 
+                output = <span style="color: #8b2252;">"csv"</span>, 
+                .opts = list(followlocation = <span style="color: #228b22;">TRUE</span>, verbose = <span style="color: #228b22;">TRUE</span>)) 
+
+  read.csv(textConnection(tt), header = <span style="color: #228b22;">TRUE</span>)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+</span>mydata = google.spreadsheet(<span style="color: #8b2252;">"0AnypY27pPCJydHZPN2pFbkZGd1RKeU81OFY3ZHJldWc"</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">plot the data
 </span>plot(mydata$u[mydata$y == 0], mydata$v[mydata$y == 0],, xlab=<span style="color: #8b2252;">"u"</span>, ylab=<span style="color: #8b2252;">"v"</span>)
@@ -91,7 +108,7 @@ The idea of "fitting" is to create a mathematical model, that will separate the 
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">Theory </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -147,7 +164,7 @@ H = \frac{1}{m} \sum_{i=1}^m [h_\theta(x) (1 - h_\theta(x)) x^T x] + \frac{\lamb
 
 </div>
 
-<div class="outline-2" id="outline-container-3">
+<div id="outline-container-3" class="outline-2">
 <h2 id="sec-3">Implementation </h2>
 <div class="outline-text-2" id="text-3">
 
@@ -320,7 +337,7 @@ See that the black line (\(\lambda=0\)) is the more tightly fit to the crosses, 
 
 </div>
 
-<div class="outline-4" id="outline-container-3_1">
+<div id="outline-container-3_1" class="outline-4">
 <h4 id="sec-3_1">References </h4>
 <div class="outline-text-4" id="text-3_1">
 

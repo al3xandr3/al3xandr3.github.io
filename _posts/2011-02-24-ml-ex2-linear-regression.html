@@ -5,6 +5,8 @@ categories:
 - r
 - machinelearning
 - statistics
+intro: "\n\
+  Andrew Ng has posted introductory machine learning lessons on the <a href=\"http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning\">OpenClassRoom</a> site. I've watched the first set and will here solve <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html\">Exercise 2</a>.\n"
 ---
 
 
@@ -21,7 +23,7 @@ The exercise is to build a linear regression implementation, I'll use R.
 </p>
 
 
-<script src="http://www.mathjax.org/mathjax/MathJax.js" type="text/javascript">
+<script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
     MathJax.Hub.Config({
             jax: ["input/TeX", "output/HTML-CSS"],
         extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
@@ -66,7 +68,7 @@ The point of linear regression is to come up with a mathematical function(model)
 For example, the data we use here are boys ages and their corresponding heights, so when we get the mathematical model we will be able to guess the boys height from his age.
 </p>
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Data </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -74,8 +76,23 @@ For example, the data we use here are boys ages and their corresponding heights,
 
 
 
-<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
-</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydDB4N3MxM0tENlk3UElnZ013cW1iM3c&amp;hl=en_GB&amp;single=true&amp;gid=0&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+<pre class="src src-R"><span style="color: #0000ff;">google.spreadsheet</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (key) {
+  <span style="color: #008b8b;">library</span>(RCurl)
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">ssl validation off
+</span>  ssl.verifypeer <span style="color: #008b8b;">&lt;-</span> <span style="color: #228b22;">FALSE</span>
+
+  tt <span style="color: #008b8b;">&lt;-</span> getForm(<span style="color: #8b2252;">"https://spreadsheets.google.com/spreadsheet/pub"</span>, 
+                hl =<span style="color: #8b2252;">"en_GB"</span>,
+                key = key, 
+                single = <span style="color: #8b2252;">"true"</span>, gid =<span style="color: #8b2252;">"0"</span>, 
+                output = <span style="color: #8b2252;">"csv"</span>, 
+                .opts = list(followlocation = <span style="color: #228b22;">TRUE</span>, verbose = <span style="color: #228b22;">TRUE</span>)) 
+
+  read.csv(textConnection(tt), header = <span style="color: #228b22;">TRUE</span>)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+</span>mydata = google.spreadsheet(<span style="color: #8b2252;">"0AnypY27pPCJydDB4N3MxM0tENlk3UElnZ013cW1iM3c"</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">include ggplot2
 </span><span style="color: #008b8b;">library</span>(ggplot2)
@@ -95,7 +112,7 @@ ex2plot = ggplot(mydata, aes(x, y)) + geom_point() +
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">Theory </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -176,7 +193,7 @@ Now lets check if all this math really works.
 
 </div>
 
-<div class="outline-2" id="outline-container-3">
+<div id="outline-container-3" class="outline-2">
 <h2 id="sec-3">Implementation - take 1 </h2>
 <div class="outline-text-2" id="text-3">
 
@@ -204,6 +221,8 @@ delta = <span style="color: #7f007f;">function</span>(x,y,th,m) {
 
 
 <pre class="example">
+null device 
+          1
 [1] 0.07452802 0.38002167
 </pre>
 
@@ -212,7 +231,7 @@ delta = <span style="color: #7f007f;">function</span>(x,y,th,m) {
 
 </div>
 
-<div class="outline-2" id="outline-container-4">
+<div id="outline-container-4" class="outline-2">
 <h2 id="sec-4">Implementation - take 2 </h2>
 <div class="outline-text-2" id="text-4">
 
@@ -258,7 +277,7 @@ delta = <span style="color: #7f007f;">function</span>(x,y,th) {
 
 </div>
 
-<div class="outline-2" id="outline-container-5">
+<div id="outline-container-5" class="outline-2">
 <h2 id="sec-5">The Model </h2>
 <div class="outline-text-2" id="text-5">
 
@@ -302,7 +321,7 @@ And finally we see how well the line(model) fits the data:
 
 </div>
 
-<div class="outline-4" id="outline-container-5_1">
+<div id="outline-container-5_1" class="outline-4">
 <h4 id="sec-5_1">References </h4>
 <div class="outline-text-4" id="text-5_1">
 

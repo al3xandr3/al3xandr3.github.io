@@ -1,7 +1,9 @@
 #+TITLE: How to download videolectures.net videos with VLC
 #+HTML: <category> automations </category>
 
-[[http://videolectures.net/][videolectures.net]] has very good content but, no good way to download the videos(at least as of now), and sometimes you want to watch them offline, so here's a way to dowload them if you have VLC video player installed.
+[[http://videolectures.net/][videolectures.net]] has very good content but, no good way to download the videos(at least as of now).
+
+And oftentimes you want to watch them offline, so here's a way to dowload them if you have VLC video player installed.
 
 This of course works for all videos that are streamed from an mms:// address and not only the videolectures ones.
 

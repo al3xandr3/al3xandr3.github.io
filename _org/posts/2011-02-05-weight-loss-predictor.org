@@ -1,6 +1,7 @@
 #+TITLE: Weight Loss Predictor
 #+HTML: <category> R health montecarlo statistics </category>
 
+[[http://al3xandr3.github.com/img/diet.jpeg]]
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
 
 Its an interesting book, because it has a scientific approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results... Notice the similar principles of AB testing.
@@ -13,26 +14,42 @@ But of course, like with all diets, I'm quickly growing impatient of when i'm go
 
 Have been tracking my weight using google spreadsheets, so i can get the data into R like so:
 
-#+begin_src R :session R :results output :exports both
-# load the data
-mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydEwzYWxYWG1CcEpPLVQySTRrWml4OEE&hl=en_GB&single=true&gid=3&output=csv", header = TRUE, na.strings = "#VALUE!") 
+#+begin_src R :session R :results output :exports code
+google.spreadsheet <- function (key) {
+  library(RCurl)
+  # ssl validation off
+  ssl.verifypeer <- FALSE
 
-# re - Something in Javascript? move NA's
-mydata = na.omit(mydata)
+  tt <- getForm("https://spreadsheets.google.com/spreadsheet/pub", 
+                hl ="en_GB",
+                key = key, 
+                single = "true", gid ="0", 
+                output = "csv", 
+                .opts = list(followlocation = TRUE, verbose = TRUE)) 
+
+  read.csv(textConnection(tt), header = TRUE)
+}
+
+# load the data
+mydata = google.spreadsheet("0AnypY27pPCJydEstZnVOeHYycjVWWktjbHpvS1NRMUE")
 
 # Create a new column with the proper date format
 mydata$timestamp = as.Date(mydata$timestamp, format='%d/%m/%Y')
+#+end_src
 
+The last 5 measurements:
+
+#+begin_src R :session R :results output :exports both
 tail(mydata, 5)
 #+end_src
 
 #+results:
-:      timestamp   kg delta       day
-: 163 2011-03-28 75.0   0.3    Monday
-: 164 2011-03-29 74.9  -0.1   Tuesday
-: 165 2011-03-30 74.9   0.0 Wednesday
-: 166 2011-03-31 75.0   0.1  Thursday
-: 167 2011-04-01 74.8  -0.2    Friday
+:      timestamp   kg
+: 140 2011-03-04 77.3
+: 141 2011-03-05 76.9
+: 142 2011-03-06 77.2
+: 143 2011-03-07 77.3
+: 144 2011-03-08 76.9
 
 ** Past Years weight
 
@@ -99,12 +116,12 @@ tail(dietalldays, 5)
 #+end_src
 
 #+results:
-:     timestamp   kg delta      day
-: 67 2011-03-24 75.1  -0.4 Thursday
-: 68 2011-03-25 74.9  -0.2   Friday
-: 69 2011-03-26 74.7  -0.2 Saturday
-: 70 2011-03-27 74.7   0.0   Sunday
-: 71 2011-03-28 75.0   0.3   Monday
+:     timestamp   kg delta
+: 47 2011-03-04 77.3   0.0
+: 48 2011-03-05 76.9  -0.4
+: 49 2011-03-06 77.2   0.3
+: 50 2011-03-07 77.3   0.1
+: 51 2011-03-08 76.9  -0.4
 
 ** So what is going to be my weight in a week?
 
@@ -125,7 +142,7 @@ summary(mcWeightWeek)
 
 #+results:
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:   69.90   73.47   74.10   74.11   74.77   78.30
+:   72.10   75.18   75.90   75.91   76.62   79.80
 
 Another good thing about monte carlo methods is that they give a distribution of the prediction, so its possible to get a feeling of how certain the average is; either very certain with a big central peak, or not that certain when the graph is flatter and all over the place:
 
@@ -178,28 +195,28 @@ summary(mcDays75)
 
 #+results:
 :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-:       0       0       0       0       0       0
+:    2.00    8.00   12.00   15.11   19.00  110.00
 
 And the cumulative distribution:
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/w-loss-75.png
 # add dates to it, from today's date + #days
-days75 = sort(Sys.Date() + mcDays75)
+days75 = sort(tail(mydata$timestamp, 1) + mcDays75)
 
 # get the ecdf values into a dataframe
 days75.ecdf = summarize(data.frame(days=days75), days = unique(days), 
                         ecdf = ecdf(days)(unique(days)))
 
-# date where its 85% sure i'll reach goal
-prob85 = head(days75.ecdf[days75.ecdf$ecdf>0.85,],1)
+# date where its 80% sure i'll reach goal
+prob80 = head(days75.ecdf[days75.ecdf$ecdf>0.80,],1)
 
 # plot
 ggplot(days75.ecdf, aes(days, ecdf)) + geom_step() +
        ylab("probability") + 
-       geom_point(aes(x = prob85$days, y = prob85$ecdf)) +
-       geom_text(aes(x = prob85$days, y = prob85$ecdf, 
-                    label = paste("85% sure to be 75kg on",
-                            format(prob85$days, "%a, %d %b %Y"))), 
+       geom_point(aes(x = prob80$days, y = prob80$ecdf)) +
+       geom_text(aes(x = prob80$days, y = prob80$ecdf, 
+                    label = paste("80% sure to be 75kg on",
+                            format(prob80$days, "%a, %d %b %Y"))), 
                      hjust=-0.04)
 #+end_src
 

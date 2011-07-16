@@ -1,7 +1,7 @@
 #+TITLE: Machine Learning Ex3 - Multivariate Linear Regression
 #+HTML: <category> R machinelearning statistics </category>
 
-[[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex3/ex3.html][Exercise 3]] is about multivariate linear regression. First part is about finding a good learning rate (alpha) and 2nd part is about implementing linear regression using normal equations instead of the gradient descent algorithm.
+[[http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex3/ex3.html][Exercise 3]] is about multivariate linear regression. Start by finding a good learning rate (alpha) and then implement linear regression using the normal equations instead of the gradient descent algorithm.
 
 With implementation in R.
 
@@ -10,20 +10,25 @@ With implementation in R.
 * Data
 
 As usual hosted in google docs:
-#+begin_src R :session R :results output :exports both
-mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydExfUzdtVXZuUWphM19vdVBidnFFSWc&output=csv", header = TRUE)
+#+begin_src R :session R :results output :exports code
+google.spreadsheet <- function (key) {
+  library(RCurl)
+  # ssl validation off
+  ssl.verifypeer <- FALSE
 
-# show last 5 rows
-tail(mydata, 5)
+  tt <- getForm("https://spreadsheets.google.com/spreadsheet/pub", 
+                hl ="en_GB",
+                key = key, 
+                single = "true", gid ="0", 
+                output = "csv", 
+                .opts = list(followlocation = TRUE, verbose = TRUE)) 
+
+  read.csv(textConnection(tt), header = TRUE)
+}
+
+# load the data
+mydata = google.spreadsheet("0AnypY27pPCJydExfUzdtVXZuUWphM19vdVBidnFFSWc")
 #+end_src
-
-#+results:
-:    area bedrooms  price
-: 43 2567        4 314000
-: 44 1200        3 299000
-: 45  852        2 179900
-: 46 1852        4 299900
-: 47 1203        3 239500
 
 ** Feature Scaling
 

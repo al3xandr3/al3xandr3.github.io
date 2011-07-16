@@ -1,9 +1,7 @@
 #+TITLE: Big Brother Google
 #+HTML: <category> google </category>
 
-*(A)Tipical Day?*
-
-Its morning, you get to your computer, go check the gmail, ah there's some some news fotos on web picasa from a friend, lets check them out... 
+*(A)Tipical Day?*: Its morning, you get to your computer, go check the gmail, ah there's some some news fotos on web picasa from a friend, lets check them out... 
 
 Then, whats new today? lets check some rss feeds from the google reader and by the way, how is the real world doing? lets check the google news, humm this is interesting, lets do some browsing on it. Open google search ... 
 

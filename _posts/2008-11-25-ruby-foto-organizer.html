@@ -5,6 +5,8 @@ categories:
 - ruby
 - photo
 - automations
+intro: "\n\
+  Place this script in a folder full of pictures, run it, and it will organize the pictures into folders by the day they were taken.\n"
 ---
 
 
@@ -25,7 +27,7 @@ Place this script in a folder full of pictures, run it, and it will organize the
 
 
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Code: </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -57,6 +59,4 @@ Dir.foreach(<span style="color: #8b2252;">"."</span>) { |x| FileUtils.mv(x, file
 
 </div>
 </div>
-<div id="postamble">
 
-</div>
