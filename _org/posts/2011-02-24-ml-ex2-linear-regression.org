@@ -14,8 +14,23 @@ For example, the data we use here are boys ages and their corresponding heights,
 * Data
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/ml-ex2-data.png
+google.spreadsheet <- function (key) {
+  library(RCurl)
+  # ssl validation off
+  ssl.verifypeer <- FALSE
+
+  tt <- getForm("https://spreadsheets.google.com/spreadsheet/pub", 
+                hl ="en_GB",
+                key = key, 
+                single = "true", gid ="0", 
+                output = "csv", 
+                .opts = list(followlocation = TRUE, verbose = TRUE)) 
+
+  read.csv(textConnection(tt), header = TRUE)
+}
+
 # load the data
-mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydDB4N3MxM0tENlk3UElnZ013cW1iM3c&hl=en_GB&single=true&gid=0&output=csv", header = TRUE)
+mydata = google.spreadsheet("0AnypY27pPCJydDB4N3MxM0tENlk3UElnZ013cW1iM3c")
 
 # include ggplot2
 library(ggplot2)

@@ -5,6 +5,8 @@ categories:
 - r
 - machinelearning
 - statistics
+intro: "\n\
+  <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex4/ex4.html\">Exercise 4</a> is all about implementing Logistic Regression using Newton's Method, on a classification problem.\n"
 ---
 
 
@@ -28,7 +30,7 @@ With implementation in R.
 </p>
 
 
-<script src="http://www.mathjax.org/mathjax/MathJax.js" type="text/javascript">
+<script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
     MathJax.Hub.Config({
             jax: ["input/TeX", "output/HTML-CSS"],
         extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
@@ -67,7 +69,7 @@ With implementation in R.
 
 
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Plot the Data </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -78,8 +80,23 @@ We start by looking at the data.
 
 
 
-<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">reading data
-</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydC1vRVEzM1VJQnNneFo5dWNzR1F5Umc&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+<pre class="src src-R"><span style="color: #0000ff;">google.spreadsheet</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (key) {
+  <span style="color: #008b8b;">library</span>(RCurl)
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">ssl validation off
+</span>  ssl.verifypeer <span style="color: #008b8b;">&lt;-</span> <span style="color: #228b22;">FALSE</span>
+
+  tt <span style="color: #008b8b;">&lt;-</span> getForm(<span style="color: #8b2252;">"https://spreadsheets.google.com/spreadsheet/pub"</span>, 
+                hl =<span style="color: #8b2252;">"en_GB"</span>,
+                key = key, 
+                single = <span style="color: #8b2252;">"true"</span>, gid =<span style="color: #8b2252;">"0"</span>, 
+                output = <span style="color: #8b2252;">"csv"</span>, 
+                .opts = list(followlocation = <span style="color: #228b22;">TRUE</span>, verbose = <span style="color: #228b22;">TRUE</span>)) 
+
+  read.csv(textConnection(tt), header = <span style="color: #228b22;">TRUE</span>)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+</span>mydata = google.spreadsheet(<span style="color: #8b2252;">"0AnypY27pPCJydC1vRVEzM1VJQnNneFo5dWNzR1F5Umc"</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">plots
 </span>plot(mydata$test1[mydata$admitted == 0], mydata$test2[mydata$admitted == 0], xlab=<span style="color: #8b2252;">"test1"</span>, ylab=<span style="color: #8b2252;">"test2"</span>, , col=<span style="color: #8b2252;">"red"</span>)
@@ -97,7 +114,7 @@ legend(<span style="color: #8b2252;">"bottomright"</span>, c(<span style="color:
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">A Bit of Theory </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -160,7 +177,7 @@ H = \frac{1}{m} \sum_{i=1}^m [h_\theta(x) (1 - h_\theta(x)) x^T x]
 
 </div>
 
-<div class="outline-2" id="outline-container-3">
+<div id="outline-container-3" class="outline-2">
 <h2 id="sec-3">Implementation </h2>
 <div class="outline-text-2" id="text-3">
 
@@ -260,7 +277,9 @@ print((1 - g(c(1, 20, 80) %*% th))* 100)
 
 
 
-<pre class="example">
+
+<pre class="example">null device 
+          1
 [1] "1."
             [,1]
 [1,] -16.4469479
@@ -270,6 +289,7 @@ print((1 - g(c(1, 20, 80) %*% th))* 100)
          [,1]
 [1,] 64.24722
 </pre>
+
 
 
 
@@ -305,13 +325,13 @@ Beautiful.
 
 </div>
 
-<div class="outline-4" id="outline-container-3_1">
+<div id="outline-container-3_1" class="outline-4">
 <h4 id="sec-3_1">Notes &amp; References: </h4>
 <div class="outline-text-4" id="text-3_1">
 
 
 <ul>
-<li>Thanks for Tal Galili patience in adding my half-baked blog into the <a href="http://www.r-bloggers.com/">R-bloggers.com</a> list. <a href="http://www.r-bloggers.com/">Go have a peek, R-bloggers</a> is a great source of R information.
+<li>Thanks for Tal Galili patience in adding my blog into the <a href="http://www.r-bloggers.com/">R-bloggers.com</a> list. <a href="http://www.r-bloggers.com/">Go have a peek, R-bloggers</a> is a great source of R information.
 </li>
 <li><a href="http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex4/ex4.html">Exercise 4 here</a>
 </li>

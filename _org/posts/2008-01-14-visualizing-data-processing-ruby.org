@@ -1,13 +1,12 @@
 #+TITLE: Visualizing Data, with Processing and JRuby
 #+HTML: <category> processing ruby statistics </category>
 
-In order to learn a bit about data visualization and also learn about simple data warehousing, i've tried out a small experiment, where i set out to build an small app for visualizing data.
+Here's a data visualization experiment including a mini data warehouse, to visualize the amount of vegetarians around the word.
+[[http://al3xandr3.github.com/img/vis-visual.png]]
 
 I planned the following:
 
 [[http://al3xandr3.github.com/img/vis-mmap.png]]
-
-The goal is to create a visualization to show the amount of vegetarians around the world.
 
 It goes like this, imagine looking at world map, with each country showing the number of vegetarians, you should be able to zoom in to europe for example, to see which country leads vegetarian eating or zoom out and see the whole world picture, click on a specific country and see the statistics for that country for a full month, or choose a particular day of month to visualize the whole world on that day. Also is desired map like navigation, were is possible to drag the map around, zoom in and out.
 

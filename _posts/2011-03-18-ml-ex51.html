@@ -5,6 +5,8 @@ categories:
 - r
 - machinelearning
 - statistics
+intro: "\n\
+  <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex5/ex5.html\">Exercise 5.1</a> Improves the Linear Regression implementation done in <a href=\"http://al3xandr3.github.com/2011/03/08/ml-ex3.html\">Exercise 3</a> by adding a regularization parameter that reduces the problem of over-fitting. \n"
 ---
 
 
@@ -24,7 +26,7 @@ With implementation in R.
 </p>
 
 
-<script src="http://www.mathjax.org/mathjax/MathJax.js" type="text/javascript">
+<script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
     MathJax.Hub.Config({
             jax: ["input/TeX", "output/HTML-CSS"],
         extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
@@ -63,7 +65,7 @@ With implementation in R.
 
 
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Data </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -74,8 +76,23 @@ Here's the points we will make a model from:
 
 
 
-<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">linear regression
-</span>mydata = read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?hl=en_GB&amp;hl=en_GB&amp;key=0AnypY27pPCJydGhtbUlZekVUQTc0dm5QaXp1YWpSY3c&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+<pre class="src src-R"><span style="color: #0000ff;">google.spreadsheet</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (key) {
+  <span style="color: #008b8b;">library</span>(RCurl)
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">ssl validation off
+</span>  ssl.verifypeer <span style="color: #008b8b;">&lt;-</span> <span style="color: #228b22;">FALSE</span>
+
+  tt <span style="color: #008b8b;">&lt;-</span> getForm(<span style="color: #8b2252;">"https://spreadsheets.google.com/spreadsheet/pub"</span>, 
+                hl =<span style="color: #8b2252;">"en_GB"</span>,
+                key = key, 
+                single = <span style="color: #8b2252;">"true"</span>, gid =<span style="color: #8b2252;">"0"</span>, 
+                output = <span style="color: #8b2252;">"csv"</span>, 
+                .opts = list(followlocation = <span style="color: #228b22;">TRUE</span>, verbose = <span style="color: #228b22;">TRUE</span>)) 
+
+  read.csv(textConnection(tt), header = <span style="color: #228b22;">TRUE</span>)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+</span>mydata = google.spreadsheet(<span style="color: #8b2252;">"0AnypY27pPCJydGhtbUlZekVUQTc0dm5QaXp1YWpSY3c"</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">view data
 </span>plot(mydata)
@@ -91,7 +108,7 @@ Here's the points we will make a model from:
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">Theory </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -143,7 +160,7 @@ After some math that is not shown here, the <b>normal equations</b> with the reg
 
 </div>
 
-<div class="outline-2" id="outline-container-3">
+<div id="outline-container-3" class="outline-2">
 <h2 id="sec-3">Implementation </h2>
 <div class="outline-text-2" id="text-3">
 
@@ -193,7 +210,7 @@ With the \(\lambda=0\) the fit is very tight to the original points (the blue li
 
 </div>
 
-<div class="outline-3" id="outline-container-3_1">
+<div id="outline-container-3_1" class="outline-3">
 <h3 id="sec-3_1">References: </h3>
 <div class="outline-text-3" id="text-3_1">
 

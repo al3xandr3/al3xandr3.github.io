@@ -12,8 +12,23 @@ Here's how the data we want to fit, looks like:
 #+INCLUDE: /my/setup/mathjax.org
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/ml-ex52-data.png
+google.spreadsheet <- function (key) {
+  library(RCurl)
+  # ssl validation off
+  ssl.verifypeer <- FALSE
+
+  tt <- getForm("https://spreadsheets.google.com/spreadsheet/pub", 
+                hl ="en_GB",
+                key = key, 
+                single = "true", gid ="0", 
+                output = "csv", 
+                .opts = list(followlocation = TRUE, verbose = TRUE)) 
+
+  read.csv(textConnection(tt), header = TRUE)
+}
+
 # load the data
-mydata = read.csv("http://spreadsheets.google.com/pub?key=0AnypY27pPCJydHZPN2pFbkZGd1RKeU81OFY3ZHJldWc&output=csv", header = TRUE)
+mydata = google.spreadsheet("0AnypY27pPCJydHZPN2pFbkZGd1RKeU81OFY3ZHJldWc")
 
 # plot the data
 plot(mydata$u[mydata$y == 0], mydata$v[mydata$y == 0],, xlab="u", ylab="v")
@@ -68,7 +83,7 @@ H = \frac{1}{m} \sum_{i=1}^m [h_\theta(x) (1 - h_\theta(x)) x^T x] + \frac{\lamb
 
 Lets first define the functions above, with the added generalization parameter:
 
-#+begin_src R :session R :results output :exports both
+#+begin_src R :session R :results output :exports code
 # sigmoid function
 g = function (z) {
   return (1 / (1 + exp(-z)))
@@ -120,7 +135,7 @@ J = function (x,y,th,m,la) {
 
 Now we can make it iterate until convergence, first for $\lambda=1$
 
-#+begin_src R :session R :results output :exports both
+#+begin_src R :session R :results output :exports code
 # setup variables
 m = length(mydata$u) # samples
 x = hi.features(mydata$u, mydata$v,6)
@@ -156,7 +171,7 @@ Converging well and fast, as is typical from Newton's method.
 
 And now we make it iterate for $\lambda=0$ and $\lambda=10$ for comparing fits later:
 
-#+begin_src R :session R :results output :exports both
+#+begin_src R :session R :results output :exports code
 # lambda = 0
 th0 = matrix(0,n)
 la = 0

@@ -6,6 +6,8 @@ categories:
 - selenium
 - automations
 - webcrawler
+intro: "\n\
+  I needed a kind of crawler to go around a list of pages, invoke some javascript(tests) and collect the output.\n"
 ---
 
 
@@ -15,7 +17,7 @@ categories:
 
 
 <p>
-I needed a kind of crawler to go around a list of pages, invoke some javascript and collect that output.
+I needed a kind of crawler to go around a list of pages, invoke some javascript(tests) and collect the output.
 </p>
 <p>
 Curl or a regular http lib’s don’t do the trick because i need to run javascript on each requested page. For that i can use Selenium, Selenium is a great framework to perform web testing, that uses directly a browser and thus we can run Javascript.
@@ -24,7 +26,7 @@ Curl or a regular http lib’s don’t do the trick because i need to run javasc
 Selenium can be scripted from Java which matches very well with my wish to learn Clojure :)
 </p>
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Solution </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -39,7 +41,7 @@ As some sitemaps.xml are huge, i added also a little pick-a-sample function that
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">Code </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -206,7 +208,7 @@ And of course tests for it:
 
 </div>
 
-<div class="outline-2" id="outline-container-3">
+<div id="outline-container-3" class="outline-2">
 <h2 id="sec-3">Take away </h2>
 <div class="outline-text-2" id="text-3">
 
@@ -221,6 +223,4 @@ I don't care much for working directly with the Java language, but working on th
 I suspect i will be spending more time with Clojure in future :)
 </p></div>
 </div>
-<div id="postamble">
 
-</div>

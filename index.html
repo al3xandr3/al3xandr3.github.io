@@ -11,11 +11,11 @@ home: true
       <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
       <div class="description">
         <p>
-        {{post.content | strip_html | truncatewords: 30}}
+        {{post.intro}}
         </p>
       </div>
     </div>
-  
+ 
 
   <div class="sidebar"> 
     <ul>	            				

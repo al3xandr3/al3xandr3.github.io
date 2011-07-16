@@ -5,6 +5,8 @@ categories:
 - statistics
 - montecarlo
 - clojure
+intro: "\n\
+  A little probability simulation from the book <i>Resampling: The New Statistics</i>, using Clojure and Incanter.\n"
 ---
 
 
@@ -44,7 +46,7 @@ PRINT kk
 Now onto the clojure solution.
 </p>
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Starting simple, 1 throw </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -92,7 +94,7 @@ Results make sense, its an 1/4 (25%) of probabilities of making the basket, so s
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">With 5 Throws </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -123,6 +125,4 @@ Same logic, its the sample method from Incanter doing all the magic of picking r
 Result is 0.10283, so there's only a ~10% chance of that basketball player making 3 or more baskets in a 5 throws sequence.
 </p></div>
 </div>
-<div id="postamble">
 
-</div>

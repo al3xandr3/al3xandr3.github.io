@@ -14,8 +14,23 @@ With implementation in R.
 Here's the points we will make a model from:
 
 #+begin_src R :session R :results graphics :file /my/al3xandr3.github.com/img/ml-ex51-data.png
-# linear regression
-mydata = read.csv("http://spreadsheets.google.com/pub?hl=en_GB&hl=en_GB&key=0AnypY27pPCJydGhtbUlZekVUQTc0dm5QaXp1YWpSY3c&output=csv", header = TRUE)
+google.spreadsheet <- function (key) {
+  library(RCurl)
+  # ssl validation off
+  ssl.verifypeer <- FALSE
+
+  tt <- getForm("https://spreadsheets.google.com/spreadsheet/pub", 
+                hl ="en_GB",
+                key = key, 
+                single = "true", gid ="0", 
+                output = "csv", 
+                .opts = list(followlocation = TRUE, verbose = TRUE)) 
+
+  read.csv(textConnection(tt), header = TRUE)
+}
+
+# load the data
+mydata = google.spreadsheet("0AnypY27pPCJydGhtbUlZekVUQTc0dm5QaXp1YWpSY3c")
 
 # view data
 plot(mydata)

@@ -330,10 +330,17 @@ width: 600px;
 box-shadow: 0 0 2px #CCC;
 }
 
-
 .post .description {
 margin-top:2em;
 padding: 15px 15px 15px 0;
+}
+
+.post .content .description img {
+    width: 380px;
+}
+
+.post .description img {
+    padding: 15px 0px 15px 0px;
 }
 .description + .description {
 margin-top:0;

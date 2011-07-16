@@ -6,6 +6,9 @@ categories:
 - org-mode
 - r
 - statistics
+intro: "\n\
+  <a href=\"http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/\"><img src=\"http://al3xandr3.github.com/img/prod-intro.jpeg\" alt=\"prod-intro.jpeg\" /></a>\n\
+  For over a year now, i've been collecting how much time i spend in computer and how much of it is actually used in creative/productive activities.\n"
 ---
 
 
@@ -15,9 +18,7 @@ categories:
 
 
 <p>
-<a href="http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/"><img src="http://al3xandr3.github.com/img/prod-intro.jpeg" /></a>
-</p>
-<p>
+<a href="http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/"><img src="http://al3xandr3.github.com/img/prod-intro.jpeg" alt="prod-intro.jpeg" /></a>
 For over a year now, i've been collecting how much time i spend in computer and how much of it is actually used in creative/productive activities.
 </p>
 <p>
@@ -27,7 +28,7 @@ By productive activity i mean that the time spent in text editor(emacs), termina
 This is overly simplified, but  the tools i'm using work specially well for this, including automatic data collection without the need for manual data entry.
 </p>
 
-<div class="outline-2" id="outline-container-1">
+<div id="outline-container-1" class="outline-2">
 <h2 id="sec-1">Tracking Time </h2>
 <div class="outline-text-2" id="text-1">
 
@@ -38,7 +39,7 @@ RescueTime like any other app, can have its hiccups, and i've noticed a couple o
 
 </div>
 
-<div class="outline-2" id="outline-container-2">
+<div id="outline-container-2" class="outline-2">
 <h2 id="sec-2">Data </h2>
 <div class="outline-text-2" id="text-2">
 
@@ -56,8 +57,23 @@ I'll look here at a full year(52 weeks worth of data).
 
 
 
-<pre class="src src-R"><span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
-</span>mydata <span style="color: #008b8b;">&lt;-</span> read.csv(<span style="color: #8b2252;">"http://spreadsheets.google.com/pub?key=0AnypY27pPCJydGNCcDhIVVRyZ1ZMWnBTbjBQbmJ0WVE&amp;hl=en_GB&amp;single=true&amp;gid=0&amp;output=csv"</span>, header = <span style="color: #228b22;">TRUE</span>)
+<pre class="src src-R"><span style="color: #0000ff;">google.spreadsheet</span> <span style="color: #008b8b;">&lt;-</span> <span style="color: #7f007f;">function</span> (key) {
+  <span style="color: #008b8b;">library</span>(RCurl)
+  <span style="color: #b22222;"># </span><span style="color: #b22222;">ssl validation off
+</span>  ssl.verifypeer <span style="color: #008b8b;">&lt;-</span> <span style="color: #228b22;">FALSE</span>
+
+  tt <span style="color: #008b8b;">&lt;-</span> getForm(<span style="color: #8b2252;">"https://spreadsheets.google.com/spreadsheet/pub"</span>, 
+                hl =<span style="color: #8b2252;">"en_GB"</span>,
+                key = key, 
+                single = <span style="color: #8b2252;">"true"</span>, gid =<span style="color: #8b2252;">"0"</span>, 
+                output = <span style="color: #8b2252;">"csv"</span>, 
+                .opts = list(followlocation = <span style="color: #228b22;">TRUE</span>, verbose = <span style="color: #228b22;">TRUE</span>)) 
+
+  read.csv(textConnection(tt), header = <span style="color: #228b22;">TRUE</span>)
+}
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">load the data
+</span>mydata = google.spreadsheet(<span style="color: #8b2252;">"0AnypY27pPCJydGNCcDhIVVRyZ1ZMWnBTbjBQbmJ0WVE"</span>)
 
 <span style="color: #b22222;"># </span><span style="color: #b22222;">Create a new column with the proper date format
 </span>mydata$date = as.Date(mydata$date, format=<span style="color: #8b2252;">'%d/%m/%Y'</span>)
@@ -72,7 +88,7 @@ I'll look here at a full year(52 weeks worth of data).
 
 </div>
 
-<div class="outline-3" id="outline-container-2_1">
+<div id="outline-container-2_1" class="outline-3">
 <h3 id="sec-2_1">How is data distributed (Looking for normality) </h3>
 <div class="outline-text-3" id="text-2_1">
 
@@ -157,7 +173,7 @@ And we could even cut off those loose ends(by excluding data), for even a more p
 
 </div>
 
-<div class="outline-2" id="outline-container-3">
+<div id="outline-container-3" class="outline-2">
 <h2 id="sec-3">How many hours spent in computer? </h2>
 <div class="outline-text-2" id="text-3">
 
@@ -170,10 +186,6 @@ And we could even cut off those loose ends(by excluding data), for even a more p
 
 
 
-<pre class="example">
-0.239155251141553
-</pre>
-
 
 <p>
 Almost <b>1/4(~25%) of the whole year</b> in front of computer. Wow!
@@ -182,7 +194,7 @@ Almost <b>1/4(~25%) of the whole year</b> in front of computer. Wow!
 
 </div>
 
-<div class="outline-2" id="outline-container-4">
+<div id="outline-container-4" class="outline-2">
 <h2 id="sec-4">How many hours per day? </h2>
 <div class="outline-text-2" id="text-4">
 
@@ -197,7 +209,10 @@ print(ttest)
 
 
 
-<pre class="example">
+<pre class="example">null device 
+          1
+[1] 0.2391553
+ 
         One Sample t-test
 
 data:  mydata$total 
@@ -225,7 +240,7 @@ So thats close to <b>40 hours per week</b>, almost <b>6 hours per day</b> in com
 
 </div>
 
-<div class="outline-2" id="outline-container-5">
+<div id="outline-container-5" class="outline-2">
 <h2 id="sec-5">Searching for Correlations </h2>
 <div class="outline-text-2" id="text-5">
 
@@ -251,6 +266,8 @@ So thats close to <b>40 hours per week</b>, almost <b>6 hours per day</b> in com
 
 
 <pre class="example">
+null device 
+          1
                 total productive distracting
 total       1.0000000  0.8719531   0.6884407
 productive  0.8719531  1.0000000   0.4027419
@@ -267,8 +284,7 @@ Total and Productive time seem to be strongly correlated, what it means? there's
 </li>
 </ol>
 
-<p>
-So, 1. is obvious and not interesting, but could 2. be true? 
+<p>So, 1. is obvious and not interesting, but could 2. be true? 
 </p>
 <p>
 Well, if we compare productive vs distracting, we see that productive(0.872) has a stronger correlation to total time than distracting(0.688). And because increasing distracting time will always increase the total(in exactly the same way as productivity will, as 1.) then it means that increasing the total is more likely to increase productivity time then the distracting time.
@@ -277,7 +293,7 @@ Well, if we compare productive vs distracting, we see that productive(0.872) has
 
 </div>
 
-<div class="outline-2" id="outline-container-6">
+<div id="outline-container-6" class="outline-2">
 <h2 id="sec-6">Trends </h2>
 <div class="outline-text-2" id="text-6">
 
@@ -314,7 +330,7 @@ It also shows that close to the end(last couple of months) there's a tendency fo
 
 </div>
 
-<div class="outline-2" id="outline-container-7">
+<div id="outline-container-7" class="outline-2">
 <h2 id="sec-7">The Gear </h2>
 <div class="outline-text-2" id="text-7">
 
@@ -329,6 +345,4 @@ See <a href="http://github.com/al3xandr3/al3xandr3.github.com/raw/master/_org/po
 </p>
 </div>
 </div>
-<div id="postamble">
 
-</div>
