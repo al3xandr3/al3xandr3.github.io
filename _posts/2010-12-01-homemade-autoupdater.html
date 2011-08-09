@@ -18,26 +18,35 @@ intro: "\n\
 Here's a script that i use frequently to update an application to the last version. It automates the process of downloading and installing the app.
 </p>
 
-<div id="outline-container-1" class="outline-2">
-<h2 id="sec-1">Aquamacs </h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-1" class="outline-3">
+<h3 id="sec-1">Aquamacs </h3>
+<div class="outline-text-3" id="text-1">
 
 
 <p>
 Every day there's a new release of Aquamacs, its called the nightly build, made from the latest developed code. And is always available from the same url.
 </p>
 <p>
-So the script does the following: creates temporary folder for it, downloads the latest version, unpacks it, closes Aquamacs if running(so it can replace it), creates a backup version AquamacsOld.app (in case the new ones has troubles i can use the previous), copies the files to the applications folder and cleans up the temporary downloaded files.
+So the script does the following: creates temporary folder for it, downloads the latest version, unpacks it, requests to close Aquamacs if running(so it can replace it), creates a backup version AquamacsOld.app (in case the new ones has troubles i can use the previous), copies the files to the applications folder and cleans up the temporary downloaded files.
 </p>
 
 
 
 <pre class="src src-sh"><span style="color: #b22222;">#</span><span style="color: #b22222;">!/bin/</span><span style="color: #7f007f;">bash</span><span style="color: #b22222;">
-</span>mkdir /tmp/emacsdownload &amp;&amp; <span style="color: #7a378b;">cd</span> /tmp/emacsdownload
+</span>mkdir /tmp/emacsdownload &amp;&amp; <span style="color: #483d8b;">cd</span> /tmp/emacsdownload
 curl http://braeburn.aquamacs.org/~dr/Aquamacs/24/Aquamacs-nightly.tar.bz2 -o /tmp/emacsdownload/aquamacs.tar.bz2
 tar xvjf /tmp/emacsdownload/aquamacs.tar.bz2
-killall -v Aquamacs <span style="color: #b22222;">#</span><span style="color: #b22222;">force close, be carefull might loose data
-</span>rm -rf /Applications/AquamacsOld.app
+<span style="color: #a0522d;">RUN</span>=<span style="color: #ff00ff;">`ps -ef | grep Aquamacs | grep -v grep`</span>
+<span style="color: #7f007f;">if</span> [ -n <span style="color: #8b2252;">"$RUN"</span> ]; <span style="color: #7f007f;">then</span>
+  <span style="color: #a0522d;">x</span>=<span style="color: #ff00ff;">`/usr/bin/osascript &lt;&lt;EOT
+    tell application "Finder"
+      activate
+      set myReply to button returned of (display dialog "Please close Aquamacs to update" default button 2 buttons {"No", "Ok"})
+    end tell
+EOT`</span>
+  <span style="color: #7f007f;">if</span> [[ $<span style="color: #a0522d;">x</span> = <span style="color: #8b2252;">"No"</span> ]]; <span style="color: #7f007f;">then exit</span>; <span style="color: #7f007f;">fi</span>
+<span style="color: #7f007f;">fi</span>
+rm -rf /Applications/AquamacsOld.app
 mv -f /Applications/Aquamacs.app /Applications/AquamacsOld.app
 cp -R /tmp/emacsdownload/Aquamacs.app /Applications
 rm -rf /tmp/emacsdownload
@@ -49,9 +58,9 @@ rm -rf /tmp/emacsdownload
 
 </div>
 
-<div id="outline-container-2" class="outline-2">
-<h2 id="sec-2">Chromium </h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-2" class="outline-3">
+<h3 id="sec-2">Chromium </h3>
+<div class="outline-text-3" id="text-2">
 
 
 <p>
@@ -61,24 +70,50 @@ For Chromium on each build the download url changes, so we have to add extra log
 
 
 <pre class="src src-sh"><span style="color: #b22222;">#</span><span style="color: #b22222;">!/bin/</span><span style="color: #7f007f;">bash</span><span style="color: #b22222;">
-</span><span style="color: #a0522d;">CHROMEDIR</span>=<span style="color: #8b2252;">"http://build.chromium.org/f/chromium/snapshots/chromium-rel-mac"</span>
-mkdir /tmp/chromedownload &amp;&amp; <span style="color: #7a378b;">cd</span> /tmp/chromedownload
+</span><span style="color: #a0522d;">CHROMEDIR</span>=<span style="color: #8b2252;">"http://build.chromium.org/f/chromium/snapshots/Mac/"</span>
+mkdir /tmp/chromedownload &amp;&amp; <span style="color: #483d8b;">cd</span> /tmp/chromedownload
 curl $<span style="color: #a0522d;">CHROMEDIR</span>/LATEST -o /tmp/chromedownload/LATEST --silent &amp;&amp; <span style="color: #a0522d;">LATEST</span>=<span style="color: #ff00ff;">`cat /tmp/chromedownload/LATEST`</span>
 curl $<span style="color: #a0522d;">CHROMEDIR</span>/$<span style="color: #a0522d;">LATEST</span>/chrome-mac.zip -o /tmp/chromedownload/chrome-mac.zip
 unzip -qq /tmp/chromedownload/chrome-mac.zip
-killall -v Chromium <span style="color: #b22222;">#</span><span style="color: #b22222;">force close, be carefull might loose data
-</span>rm -rf /Applications/Chromium.app
+<span style="color: #a0522d;">RUN</span>=<span style="color: #ff00ff;">`ps -ef | grep Chromium | grep -v grep`</span>
+<span style="color: #7f007f;">if</span> [ -n <span style="color: #8b2252;">"$RUN"</span> ]; <span style="color: #7f007f;">then</span>
+  <span style="color: #a0522d;">x</span>=<span style="color: #ff00ff;">`/usr/bin/osascript &lt;&lt;EOT
+    tell application "Finder"
+      activate
+      set myReply to button returned of (display dialog "Please close Chromium to update" default button 2 buttons {"No", "Ok"})
+    end tell
+EOT`</span>
+  <span style="color: #7f007f;">if</span> [[ $<span style="color: #a0522d;">x</span> = <span style="color: #8b2252;">"No"</span> ]]; <span style="color: #7f007f;">then exit</span>; <span style="color: #7f007f;">fi</span>
+<span style="color: #7f007f;">fi</span>
+rm -rf /Applications/Chromium.app
 cp -R /tmp/chromedownload/chrome-mac/Chromium.app /Applications
 rm -rf /tmp/chromedownload
 </pre>
 
 
 
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-3">
+<h3 id="sec-3">Automate it </h3>
+<div class="outline-text-3" id="text-3">
+
+
 <p>
-To automate it even further we could then add these scripts to some scheduling system, so they update automatically, like crontab.
+To automate we can add it into a cron job like so:
 </p>
 
 
-</div>
+
+<pre class="src src-sh">01      11      *       *       *       update-chromium
+</pre>
+
+
+
+<p>
+That runs every day at 11h01
+</p></div>
 </div>
 

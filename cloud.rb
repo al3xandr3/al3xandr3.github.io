@@ -4,7 +4,7 @@ include Jekyll::Filters
 
 puts "generating cloud..."
 
-options = Jekyll.configuration({'source' => "/my/al3xandr3.github.com/"})
+options = Jekyll.configuration({'source' => "/my/proj/al3xandr3.github.com/"})
 site = Jekyll::Site.new(options)
 site.read_posts('')
 
@@ -16,7 +16,7 @@ site.categories.sort.each do |category, posts|
   html << "<a href=\"/tags/#{category}.html\" id=\"tag\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
 end
 
-File.open('/my/al3xandr3.github.com/_includes/cloud.html', 'w+') do |file|
+File.open('/my/proj/al3xandr3.github.com/_includes/cloud.html', 'w+') do |file|
   file.puts html
 end
 
