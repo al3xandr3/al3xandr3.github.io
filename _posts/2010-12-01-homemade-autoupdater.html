@@ -34,8 +34,8 @@ So the script does the following: creates temporary folder for it, downloads the
 
 <pre class="src src-sh"><span style="color: #b22222;">#</span><span style="color: #b22222;">!/bin/</span><span style="color: #7f007f;">bash</span><span style="color: #b22222;">
 </span>mkdir /tmp/emacsdownload &amp;&amp; <span style="color: #483d8b;">cd</span> /tmp/emacsdownload
-curl http://braeburn.aquamacs.org/~dr/Aquamacs/24/Aquamacs-nightly.tar.bz2 -o /tmp/emacsdownload/aquamacs.tar.bz2
-tar xvjf /tmp/emacsdownload/aquamacs.tar.bz2
+curl http://braeburn.aquamacs.org/~dr/Aquamacs/24/Aquamacs-nightly.tar.bz2 --silent -o /tmp/emacsdownload/aquamacs.tar.bz2
+tar xjf /tmp/emacsdownload/aquamacs.tar.bz2
 <span style="color: #a0522d;">RUN</span>=<span style="color: #ff00ff;">`ps -ef | grep Aquamacs | grep -v grep`</span>
 <span style="color: #7f007f;">if</span> [ -n <span style="color: #8b2252;">"$RUN"</span> ]; <span style="color: #7f007f;">then</span>
   <span style="color: #a0522d;">x</span>=<span style="color: #ff00ff;">`/usr/bin/osascript &lt;&lt;EOT
@@ -73,7 +73,7 @@ For Chromium on each build the download url changes, so we have to add extra log
 </span><span style="color: #a0522d;">CHROMEDIR</span>=<span style="color: #8b2252;">"http://build.chromium.org/f/chromium/snapshots/Mac/"</span>
 mkdir /tmp/chromedownload &amp;&amp; <span style="color: #483d8b;">cd</span> /tmp/chromedownload
 curl $<span style="color: #a0522d;">CHROMEDIR</span>/LATEST -o /tmp/chromedownload/LATEST --silent &amp;&amp; <span style="color: #a0522d;">LATEST</span>=<span style="color: #ff00ff;">`cat /tmp/chromedownload/LATEST`</span>
-curl $<span style="color: #a0522d;">CHROMEDIR</span>/$<span style="color: #a0522d;">LATEST</span>/chrome-mac.zip -o /tmp/chromedownload/chrome-mac.zip
+curl $<span style="color: #a0522d;">CHROMEDIR</span>/$<span style="color: #a0522d;">LATEST</span>/chrome-mac.zip --silent -o /tmp/chromedownload/chrome-mac.zip
 unzip -qq /tmp/chromedownload/chrome-mac.zip
 <span style="color: #a0522d;">RUN</span>=<span style="color: #ff00ff;">`ps -ef | grep Chromium | grep -v grep`</span>
 <span style="color: #7f007f;">if</span> [ -n <span style="color: #8b2252;">"$RUN"</span> ]; <span style="color: #7f007f;">then</span>
