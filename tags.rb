@@ -4,7 +4,7 @@ include Jekyll::Filters
 
 puts "generating tags..."  
 
-options = Jekyll.configuration({'source' => "/my/al3xandr3.github.com/"})
+options = Jekyll.configuration({'source' => "/my/proj/al3xandr3.github.com/"})
 site = Jekyll::Site.new(options)
 site.read_posts('')
 site.categories.sort.each do |category, posts|
@@ -34,7 +34,7 @@ HTML
     html << '</br><a href="http://www.r-bloggers.com/" class="alt" style="font-size: 140%; ">If you\'r into R, a good source of R related news is R-bloggers</a>'
   end
 
-  File.open("/my/al3xandr3.github.com/tags/#{category}.html", 'w+') do |file|
+  File.open("/my/proj/al3xandr3.github.com/tags/#{category}.html", 'w+') do |file|
     file.puts html
   end
 end
