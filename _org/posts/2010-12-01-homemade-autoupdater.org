@@ -12,8 +12,8 @@ So the script does the following: creates temporary folder for it, downloads the
 #+begin_src sh
 #!/bin/bash
 mkdir /tmp/emacsdownload && cd /tmp/emacsdownload
-curl http://braeburn.aquamacs.org/~dr/Aquamacs/24/Aquamacs-nightly.tar.bz2 -o /tmp/emacsdownload/aquamacs.tar.bz2
-tar xvjf /tmp/emacsdownload/aquamacs.tar.bz2
+curl http://braeburn.aquamacs.org/~dr/Aquamacs/24/Aquamacs-nightly.tar.bz2 --silent -o /tmp/emacsdownload/aquamacs.tar.bz2
+tar xjf /tmp/emacsdownload/aquamacs.tar.bz2
 RUN=`ps -ef | grep Aquamacs | grep -v grep`
 if [ -n "$RUN" ]; then
   x=`/usr/bin/osascript <<EOT
@@ -39,7 +39,7 @@ For Chromium on each build the download url changes, so we have to add extra log
 CHROMEDIR="http://build.chromium.org/f/chromium/snapshots/Mac/"
 mkdir /tmp/chromedownload && cd /tmp/chromedownload
 curl $CHROMEDIR/LATEST -o /tmp/chromedownload/LATEST --silent && LATEST=`cat /tmp/chromedownload/LATEST`
-curl $CHROMEDIR/$LATEST/chrome-mac.zip -o /tmp/chromedownload/chrome-mac.zip
+curl $CHROMEDIR/$LATEST/chrome-mac.zip --silent -o /tmp/chromedownload/chrome-mac.zip
 unzip -qq /tmp/chromedownload/chrome-mac.zip
 RUN=`ps -ef | grep Chromium | grep -v grep`
 if [ -n "$RUN" ]; then
