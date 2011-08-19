@@ -5,7 +5,7 @@ categories:
 - ruby
 - statistics
 intro: "\n\
-  From my Skype chat history, a visualization of the counts of chats by (anonymized)author.\n<img src=\"http://localhost:4000/img/contacts.png\" alt=\"http://al3xandr3.github.com/img/contacts.png\">"
+  From my Skype chat history, a visualization of the counts of chats by (anonymized)author.\n<img src=\"http://al3xandr3.github.com/img/contacts.png\" alt=\"contacs.png">"
 ---
 
 From my Skype chat history, a visualization of the counts of chats by
