@@ -22,11 +22,11 @@ A collection of exercises from the OpenClassRoom machine learning classes.
 Serve as a reference in implementing linear and logistic regression with some
 added debugging features in R.
 
-  * linear regression: [web][3], [code][4]
-  * multivariate linear regression: [web][5], [code][6]
-  * logistic regression and Newton's method: [web][7], [code][8]
-  * regularized linear regression: [web][9], [code][10]
-  * regularized logistic regression: [web][11], [code][12]
+ * linear regression: [web][3]
+ * multivariate linear regression: [web][5]
+ * logistic regression and Newton's method: [web][7]
+ * regularized linear regression: [web][9]
+ * regularized logistic regression: [web][11]
 
 _March 2011_ - Tools: R
 
