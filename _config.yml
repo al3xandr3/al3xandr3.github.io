@@ -1,5 +1,12 @@
 permalink: /:year/:month/:day/:title.html
-pygments: false
+pygments: true
+auto:     true
+markdown: maruku
+maruku:
+  use_tex:   false
+  use_divs:  false
+  png_dir:   images/latex/
+  png_url:   /images/latex/
 exclude:
   - pre-process.rb
 author: al3xandr3
