@@ -14,7 +14,6 @@ From my Skype chat history, a visualization of the counts of chats by
 ![http://al3xandr3.github.com/img/contacts.png][1]
 
 
-
 ### Code
 
     
