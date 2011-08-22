@@ -127,7 +127,7 @@ to data points or not.
 
 Next step is to find the smaller cost as possible from J, and in fact thats
 exactly what the [gradient descent algorithm does][4]: starting with an
-inicial guess it iterates to smaller and smaller values of a given function by
+initial guess it iterates to smaller and smaller values of a given function by
 following the [direction of the derivative][5]:
 
 <script type="math/tex; mode=display">
@@ -168,10 +168,7 @@ Now lets check if all this math really works.
     
     # 1 iteration
     theta - alpha * 1/m * delta(x,y,theta,m)
-    
-    
-    
-    null device 
+           
               1
     [1] 0.07452802 0.38002167
     
