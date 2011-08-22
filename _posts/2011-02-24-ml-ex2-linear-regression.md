@@ -6,7 +6,7 @@ categories:
 - machinelearning
 - statistics
 intro: "\n\
-  Andrew Ng has posted introductory machine learning lessons on the <a href=\"http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning\">OpenClassRoom</a> site. I've watched the first set and will here solve <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html\">Exercise 2</a>.\n"
+  Andrew Ng has posted introductory machine learning lessons on the <a href=\"http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning\">OpenClassRoom</a> site. I've watched the first set and will here solve <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html\">Exercise 2</a>.<img src='http://al3xandr3.github.com/img/ml-ex2-fit.png' alt='ml-ex2-fit.png'>"
 ---
 
 <script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
@@ -146,7 +146,7 @@ And doing a bit of calculus on derivatives we get:
 \theta_j := \theta_j - \alpha \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}
 </script>
 
-Where alpha defines the size of steps of the convergence to \(\theta\).
+Where alpha defines the size of steps of the convergence to \\(\\theta\\).
 
 Now lets check if all this math really works.
 

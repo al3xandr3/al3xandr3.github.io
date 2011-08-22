@@ -69,10 +69,10 @@ Me: Entertain me!
 
 Google: Do you want to?
 
-  * play a Joe Satriani cd. 
-  * watch Seinfeld episode. 
-  * Check out a chocolate cake recipe 
-  * Buy a chocolate cake 
+ * play a Joe Satriani cd. 
+ * watch Seinfeld episode. 
+ * Check out a chocolate cake recipe 
+ * Buy a chocolate cake 
 
 Me: What is my favorite color, movie, drink?
 
