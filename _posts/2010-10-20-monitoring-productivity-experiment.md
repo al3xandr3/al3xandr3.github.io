@@ -139,9 +139,7 @@ Almost **1/4(~25%) of the whole year** in front of computer. Wow!
     
     ttest <- t.test(mydata$total, conf.level = 0.95)
     print(ttest)
-    
-    
-    null device 
+             
               1
     [1] 0.2391553
      
@@ -181,11 +179,7 @@ lower.
 
     
     cor(mydata[2:4])
-    
-    
-    
-    null device 
-              1
+            
                     total productive distracting
     total       1.0000000  0.8719531   0.6884407
     productive  0.8719531  1.0000000   0.4027419
@@ -240,8 +234,6 @@ This doc was written in (Aqua)Emacs using Orgmode. R as the statistics
 toolbox, loaded with the nice ggplot2 graphics package. This allows for a very
 smooth work flow for creating this type of documents and it works very well :)
 
-See [here how it looks in raw format][10]
-
    [1]: http://al3xandr3.github.com/img/prod-intro.jpeg
    [2]: http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/
    [3]: https://www.rescuetime.com/
@@ -251,5 +243,4 @@ See [here how it looks in raw format][10]
    [7]: http://al3xandr3.github.com/img/prod-corr.png
    [8]: http://al3xandr3.github.com/img/prod-trend.png
    [9]: http://orgmode.org/worg/org-contrib/babel/
-   [10]: http://github.com/al3xandr3/al3xandr3.github.com/raw/master/_org/posts/2010-10-20-monitoring-productivity-experiment.org
 
