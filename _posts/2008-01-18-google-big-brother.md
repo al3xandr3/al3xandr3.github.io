@@ -61,9 +61,9 @@ Me: Show me what's new today!
 
 Google(all the news you are interested about):
 
-  * Video of the new MacBook Air 
-  * Ruby 1.9 released 
-  * News on Skype new version for mac 
+ * Video of the new MacBook Air 
+ * Ruby 1.9 released 
+ * News on Skype new version for mac 
 
 Me: Entertain me!
 

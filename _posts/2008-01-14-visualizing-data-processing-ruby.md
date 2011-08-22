@@ -46,12 +46,12 @@ So in an warehouse fashion lets choose the facts and dimensions:
 
 Facts:
 
-  * number of vegetarians. 
+ * number of vegetarians. 
 
 Dimensions:
 
-  * Time. 
-  * Localization(country). 
+ * Time. 
+ * Localization(country). 
 
 _facts:_ are generally numeric data that captures specific values.
 
@@ -114,10 +114,10 @@ obtained and the interface updated accordingly.
 
 Application was divided into different drawing components:
 
-  * Show World Data, its the opening scenario, showing the whole world for a 1 month's period. 
-  * Show Country, used showing a specific country stats. 
-  * Show Stats, a strip at bottom showing a graph of the number of vegetarians per day, over a month's perdiod. 
-  * Show Buttons, button used to control zoom, reset, etc…
+ * Show World Data, its the opening scenario, showing the whole world for a 1 month's period. 
+ * Show Country, used showing a specific country stats. 
+ * Show Stats, a strip at bottom showing a graph of the number of vegetarians per day, over a month's perdiod. 
+ * Show Buttons, button used to control zoom, reset, etc…
 
 (Probably a refactoring will reduce the Show World Map and the Show Country
 into a single Drawing component, has a lot of repeated code.)
@@ -127,9 +127,9 @@ class the inherits from Processing.Sketch.
 
 Made some stuff clickable:
 
-  * country codes, displayed on top of the countries, so the user has the possibility to filter and see stats on bottom of a single country. This is done by identifying which country coordinates is closer to the mouse coordinates. 
+ * country codes, displayed on top of the countries, so the user has the possibility to filter and see stats on bottom of a single country. This is done by identifying which country coordinates is closer to the mouse coordinates. 
 
-  * Also on the bottom, the stats strip has on the x axis the possibility to click on the day of the month, so the user can select a particular day and that will update the world visualization, showing the numbers of the number of vegetarians for a given day for all the world. 
+ * Also on the bottom, the stats strip has on the x axis the possibility to click on the day of the month, so the user can select a particular day and that will update the world visualization, showing the numbers of the number of vegetarians for a given day for all the world. 
 
 And here's what it looks like:
 
