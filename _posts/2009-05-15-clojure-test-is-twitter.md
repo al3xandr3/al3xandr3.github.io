@@ -8,7 +8,6 @@ intro: " \n\
   Here's how you can have your your test-is results posted on twitter automatically as they run.\n"
 ---
 
-
 Here's how you can have your your test-is results posted on twitter
 automatically as they run.
 
