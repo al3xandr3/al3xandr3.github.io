@@ -27,12 +27,12 @@ On each page the crawler visits it executes a bit of javascript code that we
 can define as a validation. These validations are usefull to test your site in
 an automated way, say for example, you want to check:
 
-  * if all pages contain meta tags 
-  * if all pages contain a title 
-  * if you have web analytics tracking in all pages 
-  * find out what links are broken 
-  * test your own javascript in an automated way in all pages. 
-  * etc.. 
+ * if all pages contain meta tags 
+ * if all pages contain a title 
+ * if you have web analytics tracking in all pages 
+ * find out what links are broken 
+ * test your own javascript in an automated way in all pages. 
+ * etc.. 
 
 Also allows to use, for the crawling, either Firefox, Internet Explorer(when
 on windows), Chrome or HtmlUnit(a GUI-Less browser).

@@ -26,9 +26,9 @@ scalability?…"
 
 Databases implement powerful techniques to improve performance:
 
-  * Indexing 
-  * Hashing 
-  * Reordering goals to reduce backtracking 
+ * Indexing 
+ * Hashing 
+ * Reordering goals to reduce backtracking 
 
 Where as Prolog based systems have very few such techniques.
 

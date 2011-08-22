@@ -44,11 +44,11 @@ For example, for this text i had to write the word WHY a lot ;) so if i had
 whyrtu instead of qwerty on my keyboard, would be an improvement…right? Maybe
 yes, but there's other things to take into account, for example:
 
-  * counting ALL of the most used words (not only the why). 
-  * key combinations that minimizes vertical finger, because jumping from 1st to 3rd row, is less efficient than a jump from 1st to 2nd row. 
-  * what key combinations minimizes horizontal finger movements? 
-  * frequent use of pinky, should be minimized, related to the above horizontal and vertical long movements. 
-  * etc… (many other heuristics) 
+ * counting ALL of the most used words (not only the why). 
+ * key combinations that minimizes vertical finger, because jumping from 1st to 3rd row, is less efficient than a jump from 1st to 2nd row. 
+ * what key combinations minimizes horizontal finger movements? 
+ * frequent use of pinky, should be minimized, related to the above horizontal and vertical long movements. 
+ * etc… (many other heuristics) 
 
 And then try out several keyboard layouts and variations.
 
@@ -64,11 +64,11 @@ final keyboard layout: http://klausler.com/evolved.pdf
 
 I'm not sure that there is the ONE perfect keyboard for everyone, because:
 
-  * different people use different words. 
-  * different languages use different words. 
-  * 15 years old person words are different from a 70 years old person words. 
-  * use of computer during working hours compared out-of-work working hours…
-  * etc…
+ * different people use different words. 
+ * different languages use different words. 
+ * 15 years old person words are different from a 70 years old person words. 
+ * use of computer during working hours compared out-of-work working hours…
+ * etc…
 
 So even for you, an optimal keyboard layout would probably change over time.
 

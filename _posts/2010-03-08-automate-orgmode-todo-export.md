@@ -16,10 +16,10 @@ orgmode all about][1]).
 
 ## (simplified) Work Flow
 
-  1. I get a request, add it into my todo list queue, marking it as a TODO item. 
-  2. Work, work, work, guided by the todo listed tasks, balancing priority and effort and (..add your own reason here..). 
-  3. When finished, mark an item DONE. 
-  4. Generate a report every week with the done tasks. 
+ 1. I get a request, add it into my todo list queue, marking it as a TODO item. 
+ 2. Work, work, work, guided by the todo listed tasks, balancing priority and effort and (..add your own reason here..). 
+ 3. When finished, mark an item DONE. 
+ 4. Generate a report every week with the done tasks. 
 
 ## Generating the Report
 
