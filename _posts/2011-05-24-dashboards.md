@@ -17,11 +17,11 @@ here's a couple of "automated" dashboards i've built recently:
 Its the first iteration, where mostly all data is displayed as is, next
 iteration could enrich the data further with:
 
-  * Adding the data of a year/6months ago for direct comparison could be interesting. 
-  * Fits to data, like a regression line that shows the overal tendency, plus allows to make predictions on next day/week/month values. 
-  * More of relative change plots, like the [protovis index-chart][3] are very useful. 
-  * Confidence intervals pointing out that the changes are unlikely to be by chance. 
-  * etc…
+ * Adding the data of a year/6months ago for direct comparison could be interesting. 
+ * Fits to data, like a regression line that shows the overal tendency, plus allows to make predictions on next day/week/month values. 
+ * More of relative change plots, like the [protovis index-chart][3] are very useful. 
+ * Confidence intervals pointing out that the changes are unlikely to be by chance. 
+ * etc…
 
 ### Tools & Code
 
