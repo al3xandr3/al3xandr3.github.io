@@ -23,7 +23,7 @@ medical research this is the most likely explanation for these results… Notice
 the similar principles of AB testing.
 
 This book couldn't have arrived in a better time as i just peeked my heaviest
-weight in a long time, blame it on [insert favorite reason]… so, long story
+weight in a long time, blame it on \[insert favorite reason\]… so, long story
 short and I am now on the 3rd week of the low-carb diet described in the book.
 
 But of course, like with all diets, I'm quickly growing impatient of when i'm

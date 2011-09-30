@@ -155,7 +155,7 @@ Almost **1/4(~25%) of the whole year** in front of computer. Wow!
      40.28846
     
 
-Values are between [37.33372, 43.24320] for 95% confidence. Which means that
+Values are between \[37.33372, 43.24320\] for 95% confidence. Which means that
 ~40 is a very good estimation of the average time.
 
 So thats close to **40 hours per week**, almost **6 hours per day** in
