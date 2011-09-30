@@ -23,7 +23,7 @@ Like so:
 
 Instructions [here](http://gthing.net/enable-growl-log-and-show-it-in-geektool).
 
-And then I left my skype signed in for a few weeks, while I was on vacations. (not the most energy efficient approach i recognize...).
+And then I left my skype signed in for a few weeks, while I was on vacations. (not the best energy saving approach i know...)
 
 ### Parsing data
 
@@ -70,10 +70,10 @@ Read the log file and create a semicolon separated file:
     
 ![Random Person](http://al3xandr3.github.com/img/others_random_person.png)        
 
- - 10-Sept is Saturday and 11-Sept is Sunday, thus skype offline on weekend
+ - 10-Sep is Saturday and 11-Sep is Sunday, means skype was off on the weekend
  - start of workday between 9h-11h
- - leaving workday between 18h-19h
- - offline after working hours, except on night of Monday 05-Sept
+ - end of workday between 18h-19h
+ - skype is offline after working hours, except on night of Monday 05-Sep
 
 ### Online Activity Patterns
 
@@ -136,9 +136,9 @@ We can try counting the amount of sign-in's/sign-out's changes per day, means pe
     
 ![What day most active?](http://al3xandr3.github.com/img/others_day_activity.png)
 
-As the above could be biased in a number of ways lets use another way to measure it,  if the results match then original estimate should be accurate.
+As the above could be biased in a number of ways lets use another way to measure it and if the results match then original estimate should be ok.
 
-For example, another approach is to measure the total working hours for each day, like so:
+For example, way to go about it is to sum up the total working hours for each day:
 
     d = sqldf("select user, 
                       day, 
