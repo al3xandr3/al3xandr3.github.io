@@ -172,3 +172,5 @@ Almost same results, great.
 Thus **Tuesday** is the day people spend more time in computer, and in decreasing order:
 
 **Tuesday > Wednesday > Monday > Friday > Thursday > (Saturday or Sunday)**
+
+On productivity this means that **Tuesday** is the most productive day, while **Thursday** is the least.
