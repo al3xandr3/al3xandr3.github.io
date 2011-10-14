@@ -31,13 +31,12 @@ Features:
 		> Table.query "select user, sex from tbl"
 		[["bob", "male"], ["eve", "female"]]
 
- - by naming the query(at the end) create a new table:
+ - by naming the query(value at the end) create a new table:
 
 		> Table.new ["user", "value"], [["bob", 3], ["eve", 1]], "tbl"
 		> tbl2 = Table.query "select sum(value) as total from tbl", "tbl2"
 		> tbl2.total
 		[4]
-
 
  - direct access to db driver when needed:
 
