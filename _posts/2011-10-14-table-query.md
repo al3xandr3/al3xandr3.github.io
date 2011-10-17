@@ -17,7 +17,7 @@ Leverages the power of sql for data analyses inside ruby with a minimal API:
 	[[4]]
 
 Features:
- - infers the data type (numeric vs text)
+ - automatically infers the data type (numeric vs text)
  - shortcut to get a column
 
 		> tbl = Table.new ["user", "value"], [["bob", 3], ["eve", 1]], "tbl"
@@ -44,7 +44,6 @@ Features:
 		> Table.with_db {|db| db.execute("update tbl set value=5 where user='eve'") }
 		> Table.query "select sum(value) from age"
 		[[8]]
-
 
  - persists in file table.db
 
