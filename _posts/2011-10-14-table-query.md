@@ -4,7 +4,7 @@ title: Table.query
 categories: 
 - ruby
 - statistics
-intro: "small ruby class inspired by R's sqldf"
+intro: "<img alt='table-query' src='http://localhost:4000/img/table-query.png'> A small ruby class inspired by R's sqldf"
 ---
 
 A small ruby class inspired by R's [sqldf](http://code.google.com/p/sqldf/)
