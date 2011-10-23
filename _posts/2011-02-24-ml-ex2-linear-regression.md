@@ -98,7 +98,7 @@ boys height from his age.
 The model we will get at the end is a line that fits the data, is defined like
 so:
 
-Assuming x_0 = 1:
+Setting \\(x_0 = 1\\):
 
 <script type="math/tex; mode=display">
 h_\theta(x) = \theta_0 x_0 + \theta_1 x_1 + \theta_2 x_2 + ...
@@ -137,7 +137,7 @@ x_i := x_{i-1} - \epsilon f^' (x_{i-1})
 Applying to our J:
 
 <script type="math/tex; mode=display">
-\theta_j := \theta_j - \alpha \frac{\delta}{\delta \theta_j} J(\theta
+\theta_j := \theta_j - \alpha \frac{\delta}{\delta \theta_j} J(\theta)
 </script>
 
 And doing a bit of calculus on derivatives we get:
