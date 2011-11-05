@@ -1,12 +1,12 @@
 site.css/* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 
-html, body, br, hr, div, span, a, object, 
-iframe, ul, ol, dl, li, dt, dd, h1, h2, h3, 
-h4, h5, h6, blockquote, q, address, small, big, 
-cite, dfn, ins, del, i, em, b, strong, sup, sub, 
-strike, pre, code, samp, kbd, var, tt, form, 
-fieldset, legend, label, input, textarea, 
+html, body, br, hr, div, span, a, object,
+iframe, ul, ol, dl, li, dt, dd, h1, h2, h3,
+h4, h5, h6, blockquote, q, address, small, big,
+cite, dfn, ins, del, i, em, b, strong, sup, sub,
+strike, pre, code, samp, kbd, var, tt, form,
+fieldset, legend, label, input, textarea,
 option, .nobox {
 	font-size: 100%;
 	margin: 0;
@@ -28,7 +28,7 @@ i, em, cite, dfn, ins { font-style:italic; }
 del, code, samp, kbd, var { font-style:inherit; }
 del { text-decoration:line-through;}
 ins { text-decoration:none; }
-abbr, acronym { 
+abbr, acronym {
 	border:0 none;
 	cursor:help;
 	text-decoration:none;
@@ -151,8 +151,8 @@ pre {
 	width: 690px;
 	position: relative;
 }
-#header { 
-	padding: 30px 0px; 
+#header {
+	padding: 30px 0px;
 	}
 	#header h1 {
 		font-size: 4em;
@@ -203,19 +203,20 @@ position: relative;
 margin-bottom: 60px;
 }
 .content p {
-    font-size: 14px;
-line-height:22px;
-margin-bottom:24px;
-position:relative;
+  font-size: 15px;
+  line-height:22px;
+  font-weight: 300;
+  margin-bottom:24px;
+  position:relative;
 }
 
 #post-content {
-    font-size: 14px;
-    line-height:22px;
-//    margin-bottom:24px;
-    margin:15px;
-    position:relative;
-    text-align: justify;
+  font-size: 15px;
+  line-height:22px;
+  font-weight: 300;
+  margin:15px;
+  position:relative;
+  text-align: justify;
 }
 
 #paginator_current {
@@ -346,19 +347,24 @@ padding: 15px 15px 15px 0;
 margin-top:0;
 }
 #footer {
-padding: 0;
+  padding: 0;
 }
+
 #footer .description {
 	float:left;
 	padding-bottom:2.8em;
 	width:29em;
+  font-weight: 300;
+  font-size: 12px;
 }
+
 #footer .follow {
 	float: right;
 	margin-left: 30px;
 	padding-bottom: 0px;
 	width: 280px;
 }
+
 #footer .footer {
 	clear:both;
 	margin-bottom:0px;
