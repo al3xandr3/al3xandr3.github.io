@@ -9,6 +9,7 @@ task :server do
   system "jekyll --server"
 end
 
+# > rake ci msg="message"
 desc "commit"
 task :ci do
   system "ruby tags.rb"
