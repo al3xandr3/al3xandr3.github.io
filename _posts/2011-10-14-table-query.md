@@ -4,10 +4,12 @@ title: Table.query
 categories: 
 - ruby
 - statistics
-intro: "<img alt='table-query' src='http://al3xandr3.github.com/img/table-query.png'> A small ruby class inspired by R's sqldf"
+intro: "<img alt='table-query' src='http://al3xandr3.github.com/img/table-query.png'> A small ruby class inspired by R's sqldf<p><em>Use Case:</em> Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc…</p>"
 ---
 
 A small ruby class inspired by R's [sqldf](http://code.google.com/p/sqldf/)
+
+*Use Case:* Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc...
 
 Leverages the power of sql for data analyses inside ruby with a minimal API:
 
@@ -211,4 +213,5 @@ Features:
         end
 
       end
-    end
+    end 
+
