@@ -4,12 +4,12 @@ title: Table.query
 categories: 
 - ruby
 - statistics
-intro: "<img alt='table-query' src='http://al3xandr3.github.com/img/table-query.png'> A small ruby class inspired by R's sqldf<p><em>Use Case:</em> Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc…</p>"
+intro: "<img alt='table-query' src='http://al3xandr3.github.com/img/table-query.png'> A small ruby class inspired by R's <strong>sqldf</strong><p><strong>Use Case:</strong> Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc…</p>"
 ---
 
-A small ruby class inspired by R's [sqldf](http://code.google.com/p/sqldf/)
+A small ruby class inspired by R's [**sqldf**](http://code.google.com/p/sqldf/)
 
-*Use Case:* Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc...
+**Use Case:** Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc...
 
 Leverages the power of sql for data analyses inside ruby with a minimal API:
 
@@ -47,7 +47,7 @@ Features:
 		> Table.query "select sum(value) from age"
 		[[8]]
 
- - persists in file table.db
+ - persists in file table.db thus also means is then accessible by other tools; R, Excel, Java, etc...
 
  - small :)
  
