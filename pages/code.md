@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Code
-intro: "\n\
-  A framework for building up interactive html dashboards in ruby. Contains implementation of both simple &amp; multivariate regression for visualizing trends, supports fetching email attachments/content as data sources,  allows for posting the end result onto a confluence wiki page. \n"
+intro: "al3xandr3 Code"
 ---
 
 ### Dashboard Builder
