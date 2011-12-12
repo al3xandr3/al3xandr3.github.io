@@ -4,6 +4,8 @@ title: Twitter Quotes
 intro: "Quotes from Twitter"
 ---
 
+![Quotes Cloud](http://al3xandr3.github.com/img/quotes_cloud.png)        
+
 ### 2011
 
 > we can't really see all the variables - its called randomness
