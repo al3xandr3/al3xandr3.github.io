@@ -8,6 +8,9 @@ intro: "Quotes from Twitter"
 
 ### 2011
 
+> Think we don't realize yet how much of flying blind we do at the moment compared to the data driven future in health education business etc
+{: title="13/12/2011"}
+
 > we can't really see all the variables - its called randomness
 {: title="10/12/2011"}
 
