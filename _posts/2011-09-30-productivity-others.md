@@ -5,6 +5,7 @@ categories:
 - ruby
 - r
 - statistics
+- data
 intro: "In previous Monitoring Productivity Experiment <a href='http://al3xandr3.github.com/2010/10/20/monitoring-productivity-experiment.html'>post</a> I looked into the hours I spent in computer, now will look into the hours <strong>Others</strong> spend in computer, which is far more interesting :) <img alt='Daily Activity' src='http://al3xandr3.github.com/img/others_daily_activity.png' />"
 ---
 

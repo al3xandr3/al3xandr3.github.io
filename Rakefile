@@ -19,7 +19,7 @@ task :server do
 
   system "ruby tags.rb"
   system "ruby cloud.rb"
-  system "jekyll --server"
+  system "jekyll --server & open http://localhost:4000/"
 end
 
 # > rake ci msg="message"

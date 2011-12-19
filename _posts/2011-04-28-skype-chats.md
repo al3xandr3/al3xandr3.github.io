@@ -4,6 +4,7 @@ title: Who Chats the Most?
 categories: 
 - ruby
 - statistics
+- data
 intro: "\n\
   From my Skype chat history, a visualization of the counts of chats by (anonymized)author.\n<img src=\"http://al3xandr3.github.com/img/contacts.png\" alt='contacs.png'>"
 ---

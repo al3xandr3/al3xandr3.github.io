@@ -6,6 +6,7 @@ categories:
 - health
 - montecarlo
 - statistics
+- data
 intro: "\n\
   <img src=\"http://al3xandr3.github.com/img/diet.jpeg\" alt=\"http://al3xandr3.github.com/img/diet.jpeg\" />\n\
   Got for 2010 Xmas a very cool book called the \"4 Hour Body\"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.\n"
