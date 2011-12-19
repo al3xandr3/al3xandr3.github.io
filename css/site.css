@@ -633,3 +633,7 @@ a.next-page {
 *:first-child+html .clearfix {
   zoom: 1;
 }
+
+h4 {
+  font-size: 1.2em;
+}

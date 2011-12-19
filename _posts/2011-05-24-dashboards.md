@@ -4,6 +4,7 @@ title: Dashboarding
 categories: 
 - ruby
 - statistics
+- data
 intro: "An important part of being data driven is to have a daily feedback on data, here's a couple of \"automated\" dashboards i've built recently:\n\
   <img src=\"http://al3xandr3.github.com/img/dash2.png\" alt=\"http://al3xandr3.github.com/img/dash2.png\"/>"
 ---
@@ -18,7 +19,7 @@ Its the first iteration, where mostly all data is displayed as is, next
 iteration could enrich the data further with:
 
  * Adding the data of a year/6months ago for direct comparison could be interesting. 
- * Fits to data, like a regression line that shows the overal tendency, plus allows to make predictions on next day/week/month values. 
+ * Fits to data, like a regression line that shows the overall tendency, plus allows to make predictions on next day/week/month values. 
  * More of relative change plots, like the [protovis index-chart][3] are very useful. 
  * Confidence intervals pointing out that the changes are unlikely to be by chance. 
  * etc…

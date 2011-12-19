@@ -5,6 +5,7 @@ categories:
 - processing
 - ruby
 - statistics
+- data
 intro: "\n\
   Here's a data visualization experiment including a mini data warehouse, to visualize the amount of vegetarians around the word.\n\
   <img src=\"http://al3xandr3.github.com/img/vis-visual.png\" alt=\"http://al3xandr3.github.com/img/vis-visual.png\" />\n"
