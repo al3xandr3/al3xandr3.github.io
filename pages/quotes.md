@@ -8,7 +8,7 @@ intro: "Quotes from Twitter"
 
 ### 2011
 
-> data,data, data! a semantic web use case on christmas: [al3xandr3.github.com](http://al3xandr3.github.com/2011/12/18/data.html)
+> data,data, data! a semantic web use case on xmas: [al3xandr3.github.com](http://al3xandr3.github.com/2011/12/18/data.html)
 {: title="21/12/2011"}
 
 > Think we don't realize yet how much of flying blind we do at the moment compared to the data driven future in health education business etc
