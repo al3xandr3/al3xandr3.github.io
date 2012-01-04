@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<div class="post">
+<div class="post" about="{{page.url}}">
   
   <div class="content-page">
     <div class="text-post"></div>
-      <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+      <h3><a href="{{ page.url }}" property="dc:title">{{ page.title }}</a></h3>
 
       <div class="description" id="post-content">    
         {{ content }}
-        <p style="float:right"><i>{{page.date | date_to_string}}</i></p>
+        <p style="float:right"><i><span property="dc:date" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</span> - <span property="dc:creator">al3xandr3</span></i></p>
       </div>
     </div>
     
@@ -18,7 +18,7 @@ layout: default
     <span id="post-details" style="float:right;font-size:1.2em;margin-right:29px">
     <p class="tags" >
     {% for cat in page.categories %}
-    <a class="post-cat" href="/tags/{{cat}}.html" id="tag">{{cat}}</a>
+    <a class="post-cat" href="/tags/{{cat}}.html" id="tag" property="dc:subject">{{cat}}</a>
     {% endfor %}
     </p>
     </span>
