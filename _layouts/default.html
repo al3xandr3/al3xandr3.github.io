@@ -78,21 +78,22 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 
 <div id="footer">
-  <div class="description" about="http://rdf.freebase.com/rdf/m.0hn_w5d" typeof="foaf:Person" property="foaf:name" content="Alexandre Matos Martins">
+  <div class="description" about="http://rdf.freebase.com/rdf/m.0hn_w5d#me" typeof="foaf:Person" property="foaf:name" content="Alexandre Matos Martins">
     <h2>About</h2>
      <span rel="foaf:img"><img class="portrait" alt="al3xandr3" src="http://al3xandr3.github.com/img/al3xandr3.png" /></span>
 
     <p>
-    <span property="foaf:interest">A software engineer with a passion for Data. </span><span id="contacts">Find me on: 
+    <span property="foaf:interest">A software engineer with a passion for Data. </span>
+    <span id="contacts">Find me on: 
       <a rel="foaf:skypeID" href="skype:al3x.martins?userinfo">skype</a> 
       <a rel="foaf:OnlineAccount" href="http://www.linkedin.com/in/al3xandr3">linkedin</a> 
       <a rel="foaf:OnlineAccount" href="http://twitter.com/al3xandr3">twitter</a> 
       <a rel="foaf:OnlineAccount" href="http://github.com/al3xandr3">github</a> 
       <a rel="foaf:OnlineAccount" href="http://www.freebase.com/view/m/0hn_w5d">freebase</a>
     </span>
-    </br>
-     aka <i><span property="foaf:nick">al3xandr3</span></i>
-    </br>
+    <br />
+    <i>aka <span property="foaf:nick">al3xandr3</span></i>
+    <br />
     <strong><span property="foaf:creator">Alexandre Matos Martins</span></strong></p>
 	
   </div>
@@ -105,9 +106,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
   <div class="description" id="twitter">
     <h2 id="tw-title" style="display: none">Twitter</h2>
-    <p>
     {% include twitter.html %}
-    </p>
   </div>
 
   <div class="search">
