@@ -10,24 +10,24 @@ layout: default
 
       <div class="description" id="post-content">    
         {{ content }}
-        <p style="float:right"><i><span property="dc:date" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</span> - <span property="dc:creator">al3xandr3</span></i></p>
+        <p style="float:right"><i><span property="dc:date" content="{{page.date}}">{{page.date|date_to_string}}</span></p>
       </div>
     </div>
     
 
-    <span id="post-details" style="float:right;font-size:1.2em;margin-right:29px">
-    <p class="tags" >
-    {% for cat in page.categories %}
-    <a class="post-cat" href="/tags/{{cat}}.html" id="tag" property="dc:subject">{{cat}}</a>
-    {% endfor %}
-    </p>
-    </span>
-    
-    <span id="post-nav" style="font-size: 1.3em; line-height: 2.5em;">
-    <a class="jump slide-left" title="top of the page" href="javascript:void(0);">Top</a>
-    <span id="tosep" style="color:#DDDDDD;">|</span> 
-    <a class="" title="Click to go back to home page" href="/">Home</a>
-    </span>
-    </div>
+  <span id="post-details" style="float:right;font-size:1.2em;margin-right:29px">
+  <p class="tags" >
+  {% for cat in page.categories %}
+  <a class="post-cat" href="/tags/{{cat}}.html" rel="dc:subject">{{cat}}</a>
+  {% endfor %}
+  </p>
+  </span>
+  
+  <span id="post-nav" style="font-size: 1.3em; line-height: 2.5em;">
+  <a class="jump slide-left" title="top of the page" href="javascript:void(0);">Top</a>
+  <span id="tosep" style="color:#DDDDDD;">|</span> 
+  <a class="" title="Click to go back to home page" href="/">Home</a>
+  </span>
+</div>
     
 {% include disqus.html %}

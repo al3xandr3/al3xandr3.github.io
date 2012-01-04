@@ -6,7 +6,7 @@ categories:
 - machinelearning
 - statistics
 intro: "\n\
-  Andrew Ng has posted introductory machine learning lessons on the <a href=\"http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning\">OpenClassRoom</a> site. I've watched the first set and will here solve <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html\">Exercise 2</a>.<img src='http://al3xandr3.github.com/img/ml-ex2-fit.png' alt='ml-ex2-fit.png'>"
+  Andrew Ng has posted introductory machine learning lessons on the <a href=\"http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning\">OpenClassRoom</a> site. I've watched the first set and will here solve <a href=\"http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html\">Exercise 2</a>.<img src='http://al3xandr3.github.com/img/ml-ex2-fit.png' alt='ml-ex2-fit.png' />"
 ---
 
 <script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
