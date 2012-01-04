@@ -4,21 +4,21 @@ home: true
 ---
 
 {% for post in paginator.posts %}
-<div class="post">
+<div class="post" about="{{post.url}}">
   
   <div class="content">
     <div class="quote-post"></div>
-      <h3><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3><a class="post-link" rel="foaf:homepage" href="{{post.url}}">{{ post.title }}</a></h3>
       <div class="description">
-        <p>
+        <p property="dc:description">
         {{post.intro}}
         </p>
       </div>
     </div>
- 
+
 
   <div class="sidebar"> 
-    <ul>	            				
+    <ul>
       <li class="date"><h2>{{post.date | date_to_string}}</h2></li>
       <li class="permalink"><a href="{{ post.url }}">Read</a></li>
     </ul>
@@ -35,7 +35,7 @@ home: true
 <div style="text-transform:lowercase;" class="footer-nav clearfix">
 <div id="paginator" style="text-align: center;font-size: 1.3em; line-height: 4em;">
   {% if paginator.previous_page %}
-    <a id="paginator_navigate" class="previous-page" href="/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}" >&laquo;&nbsp;Newer</a>
+    <a id="paginator_navigate" class="previous-page" rel="prev" href="/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}" >&laquo;&nbsp;Newer</a>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -47,7 +47,7 @@ home: true
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a id="paginator_navigate" class="next-page"  href="/page{{ paginator.next_page }}/" >Older&nbsp;&raquo;</a>
+    <a id="paginator_navigate" class="next-page" rel="next" href="/page{{ paginator.next_page }}/" >Older&nbsp;&raquo;</a>
   {% endif %}
 </div>
 </div>
