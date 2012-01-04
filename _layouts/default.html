@@ -2,25 +2,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
     "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" 
-      xml:lang="en"
+<html xmlns="http://www.w3.org/1999/xhtml"       
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
       xmlns:dc="http://purl.org/dc/elements/1.1/"
-      version="XHTML+RDFa 1.0">
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xmlns:cc="http://creativecommons.org/ns#"
+      version="XHTML+RDFa 1.0" xml:lang="en">
+
 <head>
     
 <!-- META -->
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="application/xhtml+xml" />
 <title>{% unless page.home %}{{ page.title }} - {% endunless %} {{ site.title }}</title>
 <base href="{{site.url}}" />
-<meta name="author" property="dc:creator" content="{{ site.author }}" />
+<meta name="title" property="dc:title foaf:primaryTopic" content="{{ site.title }}" />
+<meta name="author" property="dc:creator" content="Alexandre Matos Martins" />
 <meta name="description" content="{% if page.home %}{{ site.author }}{% endif %}{{ page.title }}" />
 <meta name="keywords" content="{{ site.keywords }}" />
 <meta name="robots" content="all,follow" />
 <meta name="google-site-verification" content="5FljcF-364B5I6-KW19BXYLGQEm23cqHJbVDzS7x6Os" />
 <link href="/atom.xml" rel="alternate" title="" type="application/atom+xml" />
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-<link rel="foaf:primaryTopic" href="{{site.url}}/#me" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 
 <!-- CSS -->
 <link rel="stylesheet" href="/css/blueprint/screen.css"
@@ -56,10 +60,10 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <body>
 
 <div class="patt">
-<div id="container" about="{{site.url}}">
+<div id="container">
   
 <div id="header">
-  <h1><a href="/" id="title" property="foaf:Title" title="{{site.title}}">Al3xandr3</a></h1>
+  <h1><a href="/" id="title" title="{{site.title}}">Al3xandr3</a></h1>
   <ul id="nav">
     <li><a href="/pages/quotes.html">quotes</a></li>
     <li><a href="/pages/code.html">code</a></li>
@@ -74,11 +78,22 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 
 <div id="footer">
-  <div class="description" about="{{site.url}}/#me">
+  <div class="description" about="http://rdf.freebase.com/rdf/m.0hn_w5d" typeof="foaf:Person" property="foaf:name" content="Alexandre Matos Martins">
     <h2>About</h2>
-    <img class="portrait" rel="foaf:img" src="http://al3xandr3.github.com/img/al3xandr3.png" />
+     <span rel="foaf:img"><img class="portrait" alt="al3xandr3" src="http://al3xandr3.github.com/img/al3xandr3.png" /></span>
 
-    <p><span property="foaf:interest">A software engineer with a passion for Data. </span><span id="contacts">Find me on: <a rel="foaf:skypeID" href="skype:al3x.martins?userinfo">skype</a> <a rel="foaf:OnlineAccount" href="http://www.linkedin.com/in/al3xandr3">linkedin</a> <a rel="foaf:OnlineAccount" href="http://twitter.com/al3xandr3">twitter</a> <a rel="foaf:OnlineAccount" href="http://github.com/al3xandr3">github</a> <a rel="foaf:OnlineAccount" href="http://www.freebase.com/view/m/0hn_w5d">freebase</a><br> aka <i><span property="foaf:nick">al3xandr3</span></i><br><strong><span property="foaf:creator">Alexandre Matos Martins</span></strong></p>
+    <p>
+    <span property="foaf:interest">A software engineer with a passion for Data. </span><span id="contacts">Find me on: 
+      <a rel="foaf:skypeID" href="skype:al3x.martins?userinfo">skype</a> 
+      <a rel="foaf:OnlineAccount" href="http://www.linkedin.com/in/al3xandr3">linkedin</a> 
+      <a rel="foaf:OnlineAccount" href="http://twitter.com/al3xandr3">twitter</a> 
+      <a rel="foaf:OnlineAccount" href="http://github.com/al3xandr3">github</a> 
+      <a rel="foaf:OnlineAccount" href="http://www.freebase.com/view/m/0hn_w5d">freebase</a>
+    </span>
+    </br>
+     aka <i><span property="foaf:nick">al3xandr3</span></i>
+    </br>
+    <strong><span property="foaf:creator">Alexandre Matos Martins</span></strong></p>
 	
   </div>
   <div class="follow">

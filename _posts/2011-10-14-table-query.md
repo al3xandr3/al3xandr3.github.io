@@ -5,7 +5,7 @@ categories:
 - ruby
 - statistics
 - data
-intro: "<img alt='table-query' src='http://al3xandr3.github.com/img/table-query.png'> A small ruby class inspired by R's <strong>sqldf</strong><p><strong>Use Case:</strong> Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc…</p>"
+intro: "<img alt='table-query' src='http://al3xandr3.github.com/img/table-query.png'/> A small ruby class inspired by R's <strong>sqldf</strong><p><strong>Use Case:</strong> Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc…</p>"
 ---
 
 A small ruby class inspired by R's [**sqldf**](http://code.google.com/p/sqldf/)

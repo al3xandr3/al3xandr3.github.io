@@ -10,7 +10,7 @@ home: true
     <div class="quote-post"></div>
       <h3><a class="post-link" rel="foaf:homepage" href="{{post.url}}">{{ post.title }}</a></h3>
       <div class="description">
-        <p property="dc:description">
+        <p>
         {{post.intro}}
         </p>
       </div>
@@ -24,7 +24,7 @@ home: true
     </ul>
     <p class="tags">
     {% for cat in post.categories %}
-      <a class="post-cat" href="/tags/{{cat}}.html" id="tag">{{cat}}</a>
+      <a class="post-cat" href="/tags/{{cat}}.html">{{cat}}</a>
     {% endfor %}
     </p>
   </div>
