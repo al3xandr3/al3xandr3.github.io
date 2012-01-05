@@ -5,11 +5,15 @@ intro: "Quotes from Twitter"
 ---
 
 ![Quotes Cloud](http://al3xandr3.github.com/img/quotes_cloud.png)        
+### 2012
+
+> tagged up my blog with rdfa, im now officially linked to the #semanticweb, the root page semantics: [sparql.org/sparql?query=s](http://www.sparql.org/sparql?query=select+%3Fsubject+%3Fpredicate+%3Fobject+%0D%0AFROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%3E%0D%0Awhere+%7B+%3Fsubject+%3Fpredicate+%3Fobject+.+%7D%0D%0A&default-graph-uri=&stylesheet=%2Fxml-to-html.xsl&output=csv&force-accept=text%2Fplain)
+{: title="05/01/2012" }
 
 ### 2011
 
-> data,data, data! a semantic web use case on xmas: [al3xandr3.github.com](http://al3xandr3.github.com/2011/12/18/data.html)
-{: title="21/12/2011"}
+> data,data, data! a #semanticweb use case on xmas: [al3xandr3.github.com](http://al3xandr3.github.com/2011/12/18/data.html)
+{: title="21/12/2011" }
 
 > Think we don't realize yet how much of flying blind we do at the moment compared to the data driven future in health education business etc
 {: title="13/12/2011"}
@@ -47,7 +51,7 @@ intro: "Quotes from Twitter"
 > doing #agile without agile tools is like doing kung fu with sumo wrestlers. All you get is bad kung fu
 {: title="18/10/2011"}
 
-> just read the programming semantic web, wow this is big! like the esperanto for data schema's. Triples all the way down! #semanticweb
+> just read the programming #semanticweb, wow this is big! like the esperanto for data schema's. Triples all the way down!
 {: title="29/08/2011"}
 
 > the Unix Way: [http://bit.ly/qeA0lK](http://bit.ly/qeA0lK) lovelly Nine Precepts
