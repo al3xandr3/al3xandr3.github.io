@@ -161,13 +161,13 @@ Values are between \[37.33372, 43.24320\] for 95% confidence. Which means that
 
 So thats close to **40 hours per week**, almost **6 hours per day** in
 computer. And this is in average for the whole year, that is, it includes
-weekends, vacations, holidays, etc…
+weekends, vacations, holidays, etc...
 
 _Note:_ during the (8h)work day we are not 100% of the time active in
 computer, from my own data, RescueTime says that for a full hour in front of
 computer without interruptions, it captures in average 45min of activity. So,
 from a 8h working day you get already only 6h of active computer time, if you
-then add in the meetings, breaks, ocasional discussions, etc… that value goes
+then add in the meetings, breaks, ocasional discussions, etc... that value goes
 lower.
 
 ## Searching for Correlations

@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: HomeMade Auto-Updater
+title: Homemade Auto-Updater
 categories: 
 - emacs
 - automations
