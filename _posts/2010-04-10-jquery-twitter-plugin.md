@@ -22,12 +22,18 @@ For the code:
     
     $(function() {
       $('#tw').click(function() {
-        $('#tw').twitter({'user':'al3xandr3','count':2});
+        $('#tw').twitter({'user':'al3xandr3','count':1});
       });
     });
     
-
-**click me**
+<script type="text/javascript">
+$(function() {
+  $('#tw').click(function() {
+    $('#tw').twitter({'user':'al3xandr3','count':1});
+  });
+});
+</script>
+<p id="tw"><strong>click me</strong></p>
 
 ## How It Works
 

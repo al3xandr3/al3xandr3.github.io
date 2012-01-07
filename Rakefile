@@ -10,7 +10,7 @@ task :server do
   # twitter cloud  
   out = []
   File.open("./pages/quotes.md").each_line do |l|
-   out << l.gsub("\n", "").gsub("\>", "") if l =~ /^>/
+   out << l.gsub("\n", "").gsub("<p property='dcterms:description'>", "") if l =~ /^<p property='dcterms:description'>/
   end
   fl = File.open("./quotes_temp.txt", "w+")
   fl.write(out)

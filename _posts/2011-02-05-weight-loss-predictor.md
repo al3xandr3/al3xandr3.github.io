@@ -284,7 +284,7 @@ improve accuracy in weight loss prediction with monte carlo methods.
 ### References
 
  * Hard drive occupation prediction with R: [part 1][8] and [part 2][9], and thanks to Leandro Penz on the feedback. 
- * Big thanks for Tim's book and Ze's gift, on jumpstarting this experiment! 
+ * Big thanks for Jose and Tim, on jumpstarting this experiment! 
 
    [1]: http://al3xandr3.github.com/img/diet.jpeg
    [2]: http://www.wolframalpha.com/input/?i=body+mass+index&a=*C.body+mass+index-_*Formula.dflt-&a=*FS-_**BodyMassIndex.BMI-.*BodyMassIndex.H-.*BodyMassIndex.W--&f3=75+kg&x=11&y=4&f=BodyMassIndex.W_75+kg&f4=176+cm&f=BodyMassIndex.H_176+cm&a=*FVarOpt.1-_**-.***BodyMassIndex.S---.*--

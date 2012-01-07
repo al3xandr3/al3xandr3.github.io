@@ -14,7 +14,7 @@ A view on AB testing tools of the future.
 ## How it works:
 
  1. You plugin the AB testing tool to your application and say: optimize page A, on the measurable goal X (for example downloads). 
- 2. The tool by itself: creates new UI variation -> tests it -> analyses results -> makes it default -> creates new UI variation -> tests it -> etc… This goes ad eternum… Much like natural evolution, keeps experimenting/mutating, until it finds the UI that works best for the defined goals. 
+ 2. The tool by itself: creates new UI variation -> tests it -> analyses results -> makes it default -> creates new UI variation -> tests it -> etc... This goes ad eternum... Much like natural evolution, keeps experimenting/mutating, until it finds the UI that works best for the defined goals. 
 
 ## Details:
 
@@ -24,4 +24,4 @@ A view on AB testing tools of the future.
 
  * **Page Flow**: Tool should optimize not only the page itself, but also navigation along pages, customizing content depending on the flow For example, forward the user to a different page, depending on the keyword used in a search engine when arriving at the website. 
 
- * **Personalized UI**: What works for user A might not work for B. A 16 years old likes different things than a 50 years old. Even for a unique user, his tastes changes over over time: winter vs summer, week vs weekend, working hours vs non-working hours etc… So the perfect interface might need to be changing over time(? Don't assume, experiment and see if it works…). 
+ * **Personalized UI**: What works for user A might not work for B. A 16 years old likes different things than a 50 years old. Even for a unique user, his tastes changes over over time: winter vs summer, week vs weekend, working hours vs non-working hours etc... So the perfect interface might need to be changing over time(? Don't assume, experiment and see if it works...). 

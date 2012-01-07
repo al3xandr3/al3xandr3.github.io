@@ -13,16 +13,16 @@ intro: " \n\
 ![http://al3xandr3.github.com/img/tweakit.png][1] While watching the SICP
 lectures 8a & 8b, one thing that i realized is that this logic programming
 they mention seems to be very similar to kind of things we use SQL for, just
-better… a lot more flexible.
+better... a lot more flexible.
 
 **So why we do use SQL after all?**
 
 After a bit of googling found this good article: [http://search.cpan.org/dist
 /AI-Prolog/lib/AI/Prolog/Article.pod][2] one of the references says:
 
-"…So if Prolog(read AI) and SQL(DB) are so similar, Why is one so successful
+"...So if Prolog(read AI) and SQL(DB) are so similar, Why is one so successful
 commercially and the other deemed a complete failure in terms of
-scalability?…"
+scalability?..."
 
 Databases implement powerful techniques to improve performance:
 

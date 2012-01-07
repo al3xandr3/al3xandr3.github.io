@@ -4,6 +4,22 @@ title: Code
 intro: "al3xandr3's Code"
 ---
 
+### R Utils
+
+collection of my R util scripts.
+
+[code](https://github.com/al3xandr3/r) - _January 2012_ - Tools: R
+
+* * *
+
+### Ruby Utils
+
+collection of my ruby util scripts.
+
+[code](https://github.com/al3xandr3/ruby) - _January 2012_ - Tools: ruby
+
+* * *
+
 ### Dashboard Builder
 
 A framework for building up interactive html dashboards in ruby. Contains
@@ -11,7 +27,7 @@ implementation of both simple & multivariate regression for visualizing
 trends, supports fetching email attachments/content as data sources, allows
 for posting the end result onto a confluence wiki page.
 
-[**code**][1] - [web][2] - _June 2011_ - Tools: ruby, javascript, html
+[code][1] - [web][2] - _June 2011_ - Tools: ruby, javascript, html
 
 * * *
 
@@ -42,7 +58,7 @@ variations: Given a sitemap.xml it randomly samples part of it(useful for big
 sitemaps) and follows those urls executing some test. And another option is a
 csv file, with the urls and tests to execute on each.
 
-[**code**][13] - [web][14] - _May 2010_ - Tools: clojure, selenium
+[code][13] - [web][14] - _May 2010_ - Tools: clojure, selenium
 
 * * *
 
@@ -56,7 +72,7 @@ want to fill a web page space with exactly 3 messages. Also included a "time
 ago" date calculations based of john resig [code][15], with an added local
 timezone shift.
 
-[**code**][16] - [web][17] - _April 2010_ - Tools: javascript, jquery
+[code][16] - [web][17] - _April 2010_ - Tools: javascript, jquery
 
 * * *
 
@@ -73,7 +89,7 @@ this time using clojure, with added features: web front end for task queue
 manipulation, statistics on extracted volumes and sqlite for storing the task
 list queue and statistics over time.
 
-[**code**][18] - _2007&2009_ - Tools: ruby, jruby, clojure
+[code][18] - _2007&2009_ - Tools: ruby, jruby, clojure
 
    [1]: https://github.com/al3xandr3/Dashboard
    [2]: http://al3xandr3.github.com/2011/05/24/dashboards.html

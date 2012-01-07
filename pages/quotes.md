@@ -4,215 +4,285 @@ title: Twitter Quotes
 intro: "Quotes from Twitter"
 ---
 
-![Quotes Cloud](http://al3xandr3.github.com/img/quotes_cloud.png)        
+![Quotes Cloud](http://al3xandr3.github.com/img/quotes_cloud.png)
+
 ### 2012
 
-> tagged up my blog with rdfa, im now officially linked to the #semanticweb, the root page semantics: [sparql.org/sparql?query=s](http://www.sparql.org/sparql?query=select+%3Fsubject+%3Fpredicate+%3Fobject+%0D%0AFROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%3E%0D%0Awhere+%7B+%3Fsubject+%3Fpredicate+%3Fobject+.+%7D%0D%0A&default-graph-uri=&stylesheet=%2Fxml-to-html.xsl&output=csv&force-accept=text%2Fplain)
-{: title="05/01/2012" }
+<blockquote about="{{page.url}}#2012-01-05" property="dcterms:date" datatype="xsd:date" content="2012-01-05">
+<p property='dcterms:description'>tagged up my blog with rdfa, im now officially linked to the #semanticweb, homepage semantics: <a href="http://www.sparql.org/sparql?query=select+%3Fsubject+%3Fpredicate+%3Fobject+%0D%0AFROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%3E%0D%0Awhere+%7B+%3Fsubject+%3Fpredicate+%3Fobject+.+%7D%0D%0A&amp;default-graph-uri=&amp;stylesheet=%2Fxml-to-html.xsl&amp;output=csv&amp;force-accept=text%2Fplain">sparql.org/sparql?query=s</a>
+</p></blockquote>
 
 ### 2011
 
-> data,data, data! a #semanticweb use case on xmas: [al3xandr3.github.com](http://al3xandr3.github.com/2011/12/18/data.html)
-{: title="21/12/2011" }
+<blockquote about="{{page.url}}#2011-12-21" property="dcterms:date" datatype="xsd:date" content="2011-12-21">
+<p property='dcterms:description'>data,data, data! a #semanticweb use case on xmas: <a href='http://al3xandr3.github.com/2011/12/18/data.html'>al3xandr3.github.com</a>
+</p></blockquote>
 
-> Think we don't realize yet how much of flying blind we do at the moment compared to the data driven future in health education business etc
-{: title="13/12/2011"}
+<blockquote about="{{page.url}}#2011-12-13b" property="dcterms:date" datatype="xsd:date" content="2011-12-13">
+<p property='dcterms:description'>Think we don't realize yet how much of flying blind we do at the moment compared to the data driven future in health education business etc
+</p></blockquote>
 
-> we can't really see all the variables - its called randomness
-{: title="10/12/2011"}
+<blockquote about="{{page.url}}#2011-12-10" property="dcterms:date" datatype="xsd:date" content="2011-12-10">
+<p property='dcterms:description'>we can't really see all the variables - its called randomness
+</p></blockquote>
 
-> should use natural evolution learnings in digital world: version 1.0 is rarely any good, most things wont work failfast, competition matters 
-{: title="10/12/2011"}
+<blockquote about="{{page.url}}#2011-12-10d" property="dcterms:date" datatype="xsd:date" content="2011-12-10">
+<p property='dcterms:description'>should use natural evolution learnings in digital world: version 1.0 is rarely any good, most things wont work failfast, competition matters 
+</p></blockquote>
 
-> natural evolution is more than just a bit of textbook we have to memorize in school it actually shows up again and again
-{: title="10/12/2011"}
+<blockquote about="{{page.url}}#2011-12-10c" property="dcterms:date" datatype="xsd:date" content="2011-12-10">
+<p property='dcterms:description'>natural evolution is more than just a bit of textbook we have to memorize in school it actually shows up again and again
+</p></blockquote>
 
-> so many technologies came, go, change and evolve... is like watching a fast forward natural evolution of the digital world
-{: title="10/12/2011"}
+<blockquote about="{{page.url}}#2011-12-10b" property="dcterms:date" datatype="xsd:date" content="2011-12-10">
+<p property='dcterms:description'>so many technologies came, go, change and evolve... is like watching a fast forward natural evolution of the digital world
+</p></blockquote>
 
-> speed not always better, an iphone game is better released earlier than later but i wont hurry up the design of #ruby, good things take time
-{: title="08/12/2011"}
+<blockquote about="{{page.url}}#2011-12-08b" property="dcterms:date" datatype="xsd:date" content="2011-12-08">
+<p property='dcterms:description'>speed not always better, an iphone game is better released earlier than later but i wont hurry up the design of #ruby, good things take time
+</p></blockquote>
 
-> how fast is an #agile snail? Faster than a non-agile snail but not as fast as the naturally agile hummingbird #tools
-{: title="08/12/2011"}
+<blockquote about="{{page.url}}#2011-12-08" property="dcterms:date" datatype="xsd:date" content="2011-12-08">
+<p property='dcterms:description'>how fast is an #agile snail? Faster than a non-agile snail but not as fast as the naturally agile hummingbird #tools
+</p></blockquote>
 
-> the 2012 reviewed edition of the 9 Unix precepts adds: #10 REST API(on Cloud) is the new shell & #11 JSON is the new plain text. 1st 9 [http://bit.ly/9JS5CY](http://bit.ly/9JS5CY)
-{: title="07/12/2011"}
+<blockquote about="{{page.url}}#2011-12-07" property="dcterms:date" datatype="xsd:date" content="2011-12-07">
+<p property='dcterms:description'>the 2012 reviewed edition of the 9 Unix precepts adds: #10 REST API(on Cloud) is the new shell & #11 JSON is the new plain text. 1st 9 <a href='http://bit.ly/9JS5CY'>http://bit.ly/9JS5CY</a>
+</p></blockquote>
 
-> scalability demands decoupling
-{: title="22/10/2011"}
+<blockquote about="{{page.url}}#2011-10-22" property="dcterms:date" datatype="xsd:date" content="2011-10-22">
+<p property='dcterms:description'>scalability demands decoupling
+</p></blockquote>
 
-> API design is like user experience(UX) design for programmers Should also use optimization techniques: track usage, ab testing, user testing
-{: title="21/10/2011"}
+<blockquote about="{{page.url}}#2011-10-21" property="dcterms:date" datatype="xsd:date" content="2011-10-21">
+<p property='dcterms:description'>API design is like user experience(UX) design for programmers Should also use optimization techniques: track usage, ab testing, user testing
+</p></blockquote>
 
-> don't underestimate beauty, it sounds shallow but weighs in heavily
-{: title="18/10/2011"}
+<blockquote about="{{page.url}}#2011-10-18" property="dcterms:date" datatype="xsd:date" content="2011-10-18">
+<p property='dcterms:description'>don't underestimate beauty, it sounds shallow but weighs in heavily
+</p></blockquote>
 
-> doing #agile without agile tools is like doing kung fu with sumo wrestlers. All you get is bad kung fu
-{: title="18/10/2011"}
+<blockquote about="{{page.url}}#2011-10-18b" property="dcterms:date" datatype="xsd:date" content="2011-10-18">
+<p property='dcterms:description'>doing #agile without agile tools is like doing kung fu with sumo wrestlers. All you get is bad kung fu
+</p></blockquote>
 
-> just read the programming #semanticweb, wow this is big! like the esperanto for data schema's. Triples all the way down!
-{: title="29/08/2011"}
+<blockquote about="{{page.url}}#2011-08-29" property="dcterms:date" datatype="xsd:date" content="2011-08-29">
+<p property='dcterms:description'>just read the programming #semanticweb, wow this is big! like the esperanto for data schema's. Triples all the way down!
+</p></blockquote>
 
-> the Unix Way: [http://bit.ly/qeA0lK](http://bit.ly/qeA0lK) lovelly Nine Precepts
-{: title="16/08/2011"}
+<blockquote about="{{page.url}}#2011-08-16" property="dcterms:date" datatype="xsd:date" content="2011-08-16">
+<p property='dcterms:description'>the Unix Way: <a href='http://bit.ly/qeA0lK'>http://bit.ly/qeA0lK</a> lovelly Nine Precepts
+</p></blockquote>
 
-> LOOL, pyruby: [http://bit.ly/jeuFzt](http://bit.ly/jeuFzt) allows to write ruby code inside python scripts. then i looked at the source code: [http://bit.ly/jopDAl](http://bit.ly/jopDAl)
-{: title="15/08/2011"}
+<blockquote about="{{page.url}}#2011-08-15" property="dcterms:date" datatype="xsd:date" content="2011-08-15">
+<p property='dcterms:description'>LOOL, pyruby: <a href='http://bit.ly/jeuFzt'>http://bit.ly/jeuFzt</a> allows to write ruby code inside python scripts. then i looked at the source code: <a href='http://bit.ly/jopDAl'>http://bit.ly/jopDAl</a>
+</p></blockquote>
 
-> revisiting old code(2-3y old) some cool bits but a lot of overcomplicated stuff. step 1: create unit tests, step 2: delete key full-on
-{: title="05/08/2011"}
+<blockquote about="{{page.url}}#2011-08-05" property="dcterms:date" datatype="xsd:date" content="2011-08-05">
+<p property='dcterms:description'>revisiting old code(2-3y old) some cool bits but a lot of overcomplicated stuff. step 1: create unit tests, step 2: delete key full-on
+</p></blockquote>
 
-> "gambling is a tax on bad math" - i read somewhere
-{: title="04/08/2011"}
+<blockquote about="{{page.url}}#2011-08-04" property="dcterms:date" datatype="xsd:date" content="2011-08-04">
+<p property='dcterms:description'>"gambling is a tax on bad math" - i read somewhere
+</p></blockquote>
 
-> friday localized joke - @Safin: inventei 1 smiley, queres ver? @Alex: mostra @Safin: .) o sorriso de Camões
-{: title="17/07/2011"}
+<blockquote about="{{page.url}}#2011-07-17" property="dcterms:date" datatype="xsd:date" content="2011-07-17">
+<p property='dcterms:description'>friday localized joke - @Safin: inventei 1 smiley, queres ver? @Alex: mostra @Safin: .) o sorriso de Camoes
+</p></blockquote>
 
-> Why hasn't #naturalselection made the mosquito noiseless? It would be so much more sucessfull
-{: title="17/07/2011"}
+<blockquote about="{{page.url}}#2011-07-17b" property="dcterms:date" datatype="xsd:date" content="2011-07-17">
+<p property='dcterms:description'>Why hasn't #naturalselection made the mosquito noiseless? It would be so much more sucessfull
+</p></blockquote>
 
-> less is more: the delete key should be the biggest on the keyboard
-{: title="20/05/2011"}
+<blockquote about="{{page.url}}#2011-05-20" property="dcterms:date" datatype="xsd:date" content="2011-05-20">
+<p property='dcterms:description'>less is more: the delete key should be the biggest on the keyboard
+</p></blockquote>
 
-> Term Life Insurance and Death Probability, Understanding an insurance company's sense of my chances: [http://bit.ly/iPWw4D](http://bit.ly/iPWw4D) from Khan
-{: title="18/05/2011"}
+<blockquote about="{{page.url}}#2011-05-18" property="dcterms:date" datatype="xsd:date" content="2011-05-18">
+<p property='dcterms:description'>Term Life Insurance and Death Probability, Understanding an insurance company's sense of my chances: <a href='http://bit.ly/iPWw4D'>http://bit.ly/iPWw4D</a> from Khan
+</p></blockquote>
 
-> new favorite site KhanAcademy: [http://bit.ly/dxdfom](http://bit.ly/dxdfom) with theory(videos) + practice. Enables a data driven teaching. School 2.0 ?
-{: title="21/04/2011"}
+<blockquote about="{{page.url}}#2011-04-21" property="dcterms:date" datatype="xsd:date" content="2011-04-21">
+<p property='dcterms:description'>new favorite site KhanAcademy: <a href='http://bit.ly/dxdfom'>http://bit.ly/dxdfom</a> with theory(videos) + practice. Enables a data driven teaching. School 2.0 ?
+</p></blockquote>
 
-> Today a full on exercise in API design, keeping backward compatibility, keeping code clean, smaller simpler API and loads of unit tests
-{: title="20/04/2011"}
+<blockquote about="{{page.url}}#2011-04-20" property="dcterms:date" datatype="xsd:date" content="2011-04-20">
+<p property='dcterms:description'>Today a full on exercise in API design, keeping backward compatibility, keeping code clean, smaller simpler API and loads of unit tests
+</p></blockquote>
 
-> just discovered emacs flymake, v. nice, this could even allow for a custom lint tool to be used by all developers with emacs on same proj
-{: title="19/04/2011"}
+<blockquote about="{{page.url}}#2011-04-19" property="dcterms:date" datatype="xsd:date" content="2011-04-19">
+<p property='dcterms:description'>just discovered emacs flymake, v. nice, this could even allow for a custom lint tool to be used by all developers with emacs on same proj
+</p></blockquote>
 
-> just realized i'm a "data driven humanoid"
-{: title="07/04/2011"}
+<blockquote about="{{page.url}}#2011-04-07" property="dcterms:date" datatype="xsd:date" content="2011-04-07">
+<p property='dcterms:description'>just realized i'm a "data driven humanoid"
+</p></blockquote>
 
-> CoffeeScript is like a cleaner javascript, ruby & python influenced, talk: [http://vimeo.com/20836767](http://vimeo.com/20836767), underscore.coffee: [http://bit.ly/fFNOxG](http://bit.ly/fFNOxG)
-{: title="04/04/2011"}
+<blockquote about="{{page.url}}#2011-04-04" property="dcterms:date" datatype="xsd:date" content="2011-04-04">
+<p property='dcterms:description'>CoffeeScript is like a cleaner javascript, ruby &amp; python influenced, talk: <a href='http://vimeo.com/20836767'>http://vimeo.com/20836767</a>, underscore.coffee: <a href='http://bit.ly/fFNOxG'>http://bit.ly/fFNOxG</a>
+</p></blockquote>
 
-> Little Riki(mini me) is now 1 year old, doing already some steps, has 3 teeth and says a couple of words(estonian only)
-{: title="02/04/2011"}
+<blockquote about="{{page.url}}#2011-04-02" property="dcterms:date" datatype="xsd:date" content="2011-04-02">
+<p property='dcterms:description'>Little Riki(mini me) is now 1 year old, doing already some steps, has 3 teeth and says a couple of words(estonian only)
+</p></blockquote>
 
-> seems i'm kinda hot right now [http://plixi.com/p/86836348](http://plixi.com/p/86836348)
-{: title="25/03/2011"}
+<blockquote about="{{page.url}}#2011-03-25" property="dcterms:date" datatype="xsd:date" content="2011-03-25">
+<p property='dcterms:description'>seems i'm kinda hot right now <a href='http://plixi.com/p/86836348'>http://plixi.com/p/86836348</a>
+</p></blockquote>
 
-> we don't memorize all things equally, we assign different fade away weights based on importance. Facts a google search away, fade quicker
-{: title="25/03/2011"}
+<blockquote about="{{page.url}}#2011-03-25b" property="dcterms:date" datatype="xsd:date" content="2011-03-25">
+<p property='dcterms:description'>we don't memorize all things equally, we assign different fade away weights based on importance. Facts a google search away, fade quicker
+</p></blockquote>
 
-> Adaptive Web Sites [http://bit.ly/dHwDbQ](http://bit.ly/dHwDbQ), thats the right direction and in fact applies to all Human–devices interactions [http://bit.ly/g8PUdC](http://bit.ly/g8PUdC)
-{: title="17/03/2011"}
+<blockquote about="{{page.url}}#2011-03-17" property="dcterms:date" datatype="xsd:date" content="2011-03-17">
+<p property='dcterms:description'>Adaptive Web Sites <a href='http://bit.ly/dHwDbQ'>http://bit.ly/dHwDbQ</a>, thats the right direction and in fact applies to all Human–devices interactions <a href='http://bit.ly/g8PUdC'>http://bit.ly/g8PUdC</a>
+</p></blockquote>
 
-> stomach flu, no traveling for me today
-{: title="10/03/2011"}
+<blockquote about="{{page.url}}#2011-03-10" property="dcterms:date" datatype="xsd:date" content="2011-03-10">
+<p property='dcterms:description'>stomach flu, no traveling for me today
+</p></blockquote>
 
-> unfortunately calm, soft & nice personality doesn't work well most of times in biz.. gotta watch more Sopranos, and learn some Tony's moves
-{: title="10/03/2011"}
+<blockquote about="{{page.url}}#2011-03-10b" property="dcterms:date" datatype="xsd:date" content="2011-03-10">
+<p property='dcterms:description'>unfortunately calm, soft & nice personality doesn't work well most of times in biz.. gotta watch more Sopranos, and learn some Tony's moves
+</p></blockquote>
 
-> RT @patio11 Minor heresy: "Reverse a linked list" doesn't test ability, it tests for cultural fit in a programming community which likes pointers
-{: title="21/02/2011"}
+<blockquote about="{{page.url}}#2011-02-21" property="dcterms:date" datatype="xsd:date" content="2011-02-21">
+<p property='dcterms:description'>RT @patio11 Minor heresy: "Reverse a linked list" doesn't test ability, it tests for cultural fit in a programming community which likes pointers
+</p></blockquote>
 
-> scrum looks funny, one guy calling out ticket numbers then people raising up point cards for estimations. Just missing someone say BINGO!
-{: title="18/02/2011"}
+<blockquote about="{{page.url}}#2011-02-18" property="dcterms:date" datatype="xsd:date" content="2011-02-18">
+<p property='dcterms:description'>scrum looks funny, one guy calling out ticket numbers then people raising up point cards for estimations. Just missing someone say BINGO!
+</p></blockquote>
 
-> refactoring done, lessons learned: functional programming allows more flexible and shorter code, unit testing saves your ass many times.
-{: title="18/02/2011"}
+<blockquote about="{{page.url}}#2011-02-18b" property="dcterms:date" datatype="xsd:date" content="2011-02-18">
+<p property='dcterms:description'>refactoring done, lessons learned: functional programming allows more flexible and shorter code, unit testing saves your ass many times.
+</p></blockquote>
 
-> working on a web analytics tracking javascript api today, thriving for simpler, smaller, more flexible api w/ a bit of functional magic
-{: title="15/02/2011"}
+<blockquote about="{{page.url}}#2011-02-15" property="dcterms:date" datatype="xsd:date" content="2011-02-15">
+<p property='dcterms:description'>working on a web analytics tracking javascript api today, thriving for simpler, smaller, more flexible api w/ a bit of functional magic
+</p></blockquote>
 
-> 30 is the new 20, right?:  Well i surely hope so, as i just turned 30
-{: title="09/02/2011"}
+<blockquote about="{{page.url}}#2011-02-09" property="dcterms:date" datatype="xsd:date" content="2011-02-09">
+<p property='dcterms:description'>30 is the new 20, right?:  Well i surely hope so, as i just turned 30
+</p></blockquote>
 
-> Weight Loss Predictor:  Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written ... [http://bit.ly/fugcNE](http://bit.ly/fugcNE)
-{: title="06/02/2011"}
+<blockquote about="{{page.url}}#2011-02-06" property="dcterms:date" datatype="xsd:date" content="2011-02-06">
+<p property='dcterms:description'>Weight Loss Predictor:  Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written... <a href='http://bit.ly/fugcNE'>http://bit.ly/fugcNE</a>
+</p></blockquote>
 
-> when you find out that your shirt is inside out while already at the office, then FYI most likely you are not a morning person
-{: title="02/02/2011"}
+<blockquote about="{{page.url}}#2011-02-02" property="dcterms:date" datatype="xsd:date" content="2011-02-02">
+<p property='dcterms:description'>when you find out that your shirt is inside out while already at the office, then FYI most likely you are not a morning person
+</p></blockquote>
 
-> keep forgetting to slow down, avoid multitasking and keep it simple. so stopping for a minute to write a tweet and remind it.
-{: title="25/01/2011"}
+<blockquote about="{{page.url}}#2011-01-25" property="dcterms:date" datatype="xsd:date" content="2011-01-25">
+<p property='dcterms:description'>keep forgetting to slow down, avoid multitasking and keep it simple. so stopping for a minute to write a tweet and remind it.
+</p></blockquote>
 
 ### 2010
 
-> wonder if rounded number birthday years make for more action packed years. Hope not my 30th bday is coming up next year...
-{: title="31/12/2010"}
+<blockquote about="{{page.url}}#2010-12-31b" property="dcterms:date" datatype="xsd:date" content="2010-12-31">
+<p property='dcterms:description'>I wonder if rounded number birthday years make for more action packed years. Hope not my 30th bday is coming up next year...
+</p></blockquote>
 
-> very action packed year, hope 2011 will be easier on me. Wonder if rounded number(10,15,20) years make for more action packed ones...
-{: title="31/12/2010"}
+<blockquote about="{{page.url}}#2010-12-31" property="dcterms:date" datatype="xsd:date" content="2010-12-31">
+<p property='dcterms:description'>very action packed year, hope 2011 will be easier on me. Wonder if rounded number(10,15,20) years make for more action packed ones...
+</p></blockquote>
 
-> note1: weather has its own agenda and it does now follows the homo sapiens calendar. note2: you shall not ignore weather forecasts
-{: title="27/12/2010"}
+<blockquote about="{{page.url}}#2010-12-27" property="dcterms:date" datatype="xsd:date" content="2010-12-27">
+<p property='dcterms:description'>note1: weather has its own agenda and it does now follows the homo sapiens calendar. note2: you shall not ignore weather forecasts
+</p></blockquote>
 
-> really nice to meet up with interesting people
-{: title="23/12/2010"}
+<blockquote about="{{page.url}}#2010-12-23" property="dcterms:date" datatype="xsd:date" content="2010-12-23">
+<p property='dcterms:description'>really nice to meet up with interesting people
+</p></blockquote>
 
-> wonder if tina turner was aware of the marketing pov when making the "simply the best" song. Its perfect for promoting her Best Of albums
-{: title="22/12/2010"}
+<blockquote about="{{page.url}}#2010-12-23b" property="dcterms:date" datatype="xsd:date" content="2010-12-23">
+<p property='dcterms:description'>wonder if tina turner was aware of the marketing pov when making the "simply the best" song. Its perfect for promoting her Best Of albums
+</p></blockquote>
 
-> avoid car door dents, by parking between 2 much more expensive cars than your own #safeparkingrules
-{: title="22/12/2010"}
+<blockquote about="{{page.url}}#2010-12-22" property="dcterms:date" datatype="xsd:date" content="2010-12-22">
+<p property='dcterms:description'>avoid car door dents, by parking between 2 much more expensive cars than your own #safeparkingrules
+</p></blockquote>
 
-> On the way home saw a guy in the street eating an ice-cream... It's -10 degrees outside... Weirdo
-{: title="02/12/2010"}
+<blockquote about="{{page.url}}#2010-12-02" property="dcterms:date" datatype="xsd:date" content="2010-12-02">
+<p property='dcterms:description'>On the way home saw a guy in the street eating an ice-cream... It's -10 degrees outside... Weirdo
+</p></blockquote>
 
-> Geekiness of the day by Safin: if(!kill) fat++; its a Portuguese saying :)
-{: title="30/11/2010"}
+<blockquote about="{{page.url}}#2010-11-30" property="dcterms:date" datatype="xsd:date" content="2010-11-30">
+<p property='dcterms:description'>Geekiness of the day by Safin: if(!kill) fat++; its a Portuguese saying :)
+</p></blockquote>
 
-> RT @brunomlopes hey, @al3xandr3, you just pushed me into learning R with http://bit.ly/drGolW . any recommended books?
-{: title="26/10/2010"}
+<blockquote about="{{page.url}}#2010-10-26" property="dcterms:date" datatype="xsd:date" content="2010-10-26">
+<p property='dcterms:description'>RT @brunomlopes hey, @al3xandr3, you just pushed me into learning R with <a href="http://bit.ly/drGolW">http://bit.ly/drGolW</a>. any recommended books?
+</p></blockquote>
 
-> got stopped by police yesterday and, to my surprise they asked: "Why were you driving so slow?" - say Whaaat? that i didn't expect...
-{: title="19/09/2010"}
+<blockquote about="{{page.url}}#2010-09-19" property="dcterms:date" datatype="xsd:date" content="2010-09-19">
+<p property='dcterms:description'>got stopped by police yesterday and, to my surprise they asked: "Why were you driving so slow?" - say Whaaat? that i didn't expect...
+</p></blockquote>
 
-> AB testing productivity, going on a information diet: no rss feeds, less of twitter, more of emacs. (Rescue)Time will tell.
-{: title="17/08/2010"}
+<blockquote about="{{page.url}}#2010-08-17" property="dcterms:date" datatype="xsd:date" content="2010-08-17">
+<p property='dcterms:description'>AB testing productivity, going on a information diet: no rss feeds, less of twitter, more of emacs. (Rescue)Time will tell.
+</p></blockquote>
 
-> 30+ years old text editor that keeps on amazing me [http://vimeo.com/13158054](http://vimeo.com/13158054), talk about good software design... #emacs
-{: title="02/08/2010"}
+<blockquote about="{{page.url}}#2010-08-02" property="dcterms:date" datatype="xsd:date" content="2010-08-02">
+<p property='dcterms:description'>30+ years old text editor that keeps on amazing me [http://vimeo.com/13158054](http://vimeo.com/13158054), talk about good software design... #emacs
+</p></blockquote>
 
-> Just finished reading the lady tasting tea. Loved it, it's almost like an historical novel about statistics. Many many usefull insights.
-{: title="17/07/2010"}
+<blockquote about="{{page.url}}#2010-07-18" property="dcterms:date" datatype="xsd:date" content="2010-07-18">
+<p property='dcterms:description'>Hocus Pocus at work, madness pure madness
+</p></blockquote>
 
-> Hocus Pocus at work, madness pure madness
-{: title="05/07/2010"}
+<blockquote about="{{page.url}}#2010-07-17" property="dcterms:date" datatype="xsd:date" content="2010-07-17">
+<p property='dcterms:description'>Just finished reading the lady tasting tea. Loved it, it's almost like an historical novel about statistics. Many many usefull insights.
+</p></blockquote>
 
-> gotta love those slime messages: Connected Alexandre. This could be the beginning of a beautiful program! #clojure
-{: title="25/05/2010"}
+<blockquote about="{{page.url}}#2010-05-25" property="dcterms:date" datatype="xsd:date" content="2010-05-25">
+<p property='dcterms:description'>gotta love those slime messages: Connected Alexandre. This could be the beginning of a beautiful program! #clojure
+</p></blockquote>
 
-> new blog: [http://al3xandr3.github.com/](http://al3xandr3.github.com/) is a better platform for writing longer texts, minimalist design.
-{: title="15/04/2010"}
+<blockquote about="{{page.url}}#2010-04-15" property="dcterms:date" datatype="xsd:date" content="2010-04-15">
+<p property='dcterms:description'>new blog: <a href='http://al3xandr3.github.com/'>http://al3xandr3.github.com/</a> is a better platform for writing longer texts, minimalist design.
+</p></blockquote>
 
-> Emacs(aquamacs distribution) is now my main development tool. For a few months now. And I just can't live without org-mode anymore... :)
-{: title="21/01/2010"}
+<blockquote about="{{page.url}}#2010-01-21" property="dcterms:date" datatype="xsd:date" content="2010-01-21">
+<p property='dcterms:description'>Emacs(aquamacs distribution) is now my main development tool. For a few months now. And I just can't live without org-mode anymore... :)
+</p></blockquote>
 
 ### 2009
 
-> Functional Programming lectures by Erik Meijer: Very much enjoying these lectures
-{: title="26/11/2009"}
+<blockquote about="{{page.url}}#2009-11-26" property="dcterms:date" datatype="xsd:date" content="2009-11-26">
+<p property='dcterms:description'>Functional Programming lectures by Erik Meijer: Very much enjoying these lectures
+</p></blockquote>
 
-> Functional: Here's a few articles by Slava (on www.defmacro.org) that i enjoyed reading:.. [http://bit.ly/2OpTe0](http://bit.ly/2OpTe0)
-{: title="13/11/2009"}
+<blockquote about="{{page.url}}#2009-11-13" property="dcterms:date" datatype="xsd:date" content="2009-11-13">
+<p property='dcterms:description'>Functional: Here's a few articles by Slava (on www.defmacro.org) that i enjoyed reading:.. <a href='http://bit.ly/2OpTe0'>http://bit.ly/2OpTe0</a>
+</p></blockquote>
 
-> Sneeky lazy evaluations in Clojure, making me chase my own tail.
-{: title="05/10/2009"}
+<blockquote about="{{page.url}}#2009-10-05" property="dcterms:date" datatype="xsd:date" content="2009-10-05">
+<p property='dcterms:description'>Sneeky lazy evaluations in Clojure, making me chase my own tail.
+</p></blockquote>
 
-> As Björk would say: Its all so peaceful and quiet until you open the MAIL, bam boom, you blow a fuse and the sky up above is caving in
-{: title="24/07/2009"}
+<blockquote about="{{page.url}}#2009-07-24" property="dcterms:date" datatype="xsd:date" content="2009-07-24">
+<p property='dcterms:description'>As Bjork would say: Its all so peaceful and quiet until you open the MAIL, bam boom, you blow a fuse and the sky up above is caving in
+</p></blockquote>
 
-> simpler, lighter, faster, cleaner, cheaper, leaner, lesser.
-{: title="24/07/2009"}
+<blockquote about="{{page.url}}#2009-07-24b" property="dcterms:date" datatype="xsd:date" content="2009-07-24">
+<p property='dcterms:description'>simpler, lighter, faster, cleaner, cheaper, leaner, lesser.
+</p></blockquote>
 
-> cat ownership tip: be sure to pay attention to what your cat brings back into the house. You might find yourself with a couple of new pets.
-{: title="20/07/2009"}
+<blockquote about="{{page.url}}#2009-07-20" property="dcterms:date" datatype="xsd:date" content="2009-07-20">
+<p property='dcterms:description'>cat ownership tip: be sure to pay attention to what your cat brings back into the house. You might find yourself with a couple of new pets.
+</p></blockquote>
 
-> Sun went on vacations. Please inform his manager that Rain is not proper replacement. Rain temperament is just not suited for Sun's tasks.
-{: title="07/07/2009"}
+<blockquote about="{{page.url}}#2009-07-07" property="dcterms:date" datatype="xsd:date" content="2009-07-07">
+<p property='dcterms:description'>Sun went on vacations. Please inform his manager that Rain is not proper replacement. Rain temperament is just not suited for Sun's tasks.
+</p></blockquote>
 
-> very geeky: done my first Clojure macro! Soon(a couple of days) will show up in blog.
-{: title="22/04/2009"}
+<blockquote about="{{page.url}}#2009-04-22" property="dcterms:date" datatype="xsd:date" content="2009-04-22">
+<p property='dcterms:description'>very geeky: done my first Clojure macro! Soon(a couple of days) will show up in blog.
+</p></blockquote>
 
-> watching SICP lecture 6b. streams & their sneeky delays
-{: title="27/01/2009"}
+<blockquote about="{{page.url}}#2009-01-27" property="dcterms:date" datatype="xsd:date" content="2009-01-27">
+<p property='dcterms:description'>watching SICP lecture 6b. streams & their sneeky delays
+</p></blockquote>
+

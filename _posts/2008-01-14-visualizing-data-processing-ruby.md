@@ -77,14 +77,14 @@ used for the visualization.
 
 Things like continent, population, capital, are can be used later for
 summarizing data for continent, for showing ratio of number of vegetarians for
-total of population, number of vegetarians for square meter, etc, etc… think
-of the possibilities… :)
+total of population, number of vegetarians for square meter, etc, etc... think
+of the possibilities... :)
 
 **Dimension Time:**
 
 Made the finest granularity detail as a day. Then from a day, we can
 calculate, day, month, year, day of week, weekday?, day in year, day in month,
-quarter, week day name, etc etc…
+quarter, week day name, etc etc...
 
 What is this useful for? Well imagine you want to see number of vegetarians on
 wendenesday's compared to monday's, or the same for quarters, or months, maybe
@@ -94,7 +94,7 @@ getting close to summer months, the number of veggies might go up a bit ?
 
 With the basic schema laid-out, its time for data collection. I used the
 ActiveRecord part of the rails framework, using jruby. Its not the first time
-i've used ActiveRecord as standalone and i like it a lot… simplifies data
+i've used ActiveRecord as standalone and i like it a lot... simplifies data
 access hugely, and because its all inside ruby, i get the added bonus of doing
 some calculations that would be much harder in pure sql. These collected and
 calculated values are then inserted into a local mySql using the schema above:
@@ -102,7 +102,7 @@ factvegetarian, dimdate and dimcountry.
 
 I've collected values for a whole month.
 
-Resulted in 225 lines of code for the warehouse part code, with some comments…
+Resulted in 225 lines of code for the warehouse part code, with some comments...
 but no repeated code.
 
 ## part ii, Building a Visualizer
@@ -118,7 +118,7 @@ Application was divided into different drawing components:
  * Show World Data, its the opening scenario, showing the whole world for a 1 month's period. 
  * Show Country, used showing a specific country stats. 
  * Show Stats, a strip at bottom showing a graph of the number of vegetarians per day, over a month's perdiod. 
- * Show Buttons, button used to control zoom, reset, etc…
+ * Show Buttons, button used to control zoom, reset, etc...
 
 (Probably a refactoring will reduce the Show World Map and the Show Country
 into a single Drawing component, has a lot of repeated code.)
@@ -151,8 +151,8 @@ Using jruby was mostly a nice experience, there are a couple of things to
 learn at first, for example on how to include java libraries, no biggie, but I
 had also a type conversion issue when i tried to refactor the code at some
 point, i guess its because of the java type's, that jruby guys hide and
-convert automatically … but most likelly its because of my inexperience with
-jruby…
+convert automatically ... but most likelly its because of my inexperience with
+jruby...
 
 I've used version 1.0 of jruby, i think is a great work that jruby guys have
 done, making accessible to ruby community all the millions of java libraries

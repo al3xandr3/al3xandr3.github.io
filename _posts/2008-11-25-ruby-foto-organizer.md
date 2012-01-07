@@ -19,23 +19,36 @@ the pictures into folders by the day they were taken.
 ## Code:
 
     
-    #photo_organizer.rb
+    # filename: photo_organizer.rb
+    #!/usr/bin/env ruby
+
     require 'fileutils'
+    require 'exifr'
     
-    def fileShortDate(fich)    
-      dt = File.mtime(fich)
-      dt.strftime("%Y%m%d")
+    def picDate(file)
+      begin 
+        ex = EXIFR::TIFF.new(file) || EXIFR::JPEG.new(file)
+        (ex.date_time).strftime "%Y%m%d" if ex.exif?
+      rescue
+        File.mtime(file).strftime "%Y%m%d"
+      end
     end
     
-    def isImagem(fich)
-        File.extname(fich).upcase == ".JPG" or File.extname(fich).upcase == ".PNG" or 
-        File.extname(fich).upcase == ".AVI" or File.extname(fich).upcase == ".WAV"
+    def isPic?(file)
+      [".JPG",".JPEG",".PNG",".AVI",".WAV",".NEF",".MOV",".TIFF"]
+        .include? File.extname(file).upcase
     end
     
-    print "Creating dirs "
-    Dir.foreach(".") { |x|  Dir.mkdir(fileShortDate(x)) and print(".") if (isImagem(x)) unless File.directory?(fileShortDate(x)) }
+    print "Creating dirs"
+    Dir.foreach(".") do |f|
+      dt = picDate f 
+      Dir.mkdir d and print '.' if isPic? f unless File.directory? dt
+    end
     
-    print "\nCopying pics "
-    Dir.foreach(".") { |x| FileUtils.mv(x, fileShortDate(x)+'/'+x) and print(".") if (isImagem(x)) }
+    print "\nMoving pics"
+    Dir.foreach(".") do |f| 
+      FileUtils.mv(f, picDate(f)+'/'+f) and print '.' if isPic? f
+    end
+    puts
     
 
