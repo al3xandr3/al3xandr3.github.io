@@ -9,7 +9,7 @@ intro: "Quotes from Twitter"
 ### 2012
 
 <blockquote about="{{page.url}}#2012-01-05" property="dcterms:date" datatype="xsd:date" content="2012-01-05">
-<p property='dcterms:description'>tagged up my blog with rdfa, im now officially linked to the #semanticweb, homepage semantics: <a href="http://www.sparql.org/sparql?query=select+%3Fsubject+%3Fpredicate+%3Fobject+%0D%0AFROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%3E%0D%0Awhere+%7B+%3Fsubject+%3Fpredicate+%3Fobject+.+%7D%0D%0A&amp;default-graph-uri=&amp;stylesheet=%2Fxml-to-html.xsl&amp;output=csv&amp;force-accept=text%2Fplain">sparql.org/sparql?query=s</a>
+<p property='dcterms:description'>tagged up my blog with rdfa, im now officially linked to the #semanticweb, the homepage semantics: <a href="http://www.sparql.org/sparql?query=select+%3Fsubject+%3Fpredicate+%3Fobject+%0D%0AFROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%3E%0D%0Awhere+%7B+%3Fsubject+%3Fpredicate+%3Fobject+.+%7D%0D%0A&amp;default-graph-uri=&amp;stylesheet=%2Fxml-to-html.xsl&amp;output=csv&amp;force-accept=text%2Fplain">sparql.org/sparql?query=s</a>
 </p></blockquote>
 
 ### 2011
