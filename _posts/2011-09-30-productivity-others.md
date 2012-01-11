@@ -24,7 +24,7 @@ Like so:
 
 Instructions [here](http://gthing.net/enable-growl-log-and-show-it-in-geektool).
 
-And then I left my skype signed in for a few weeks, while I was on vacations. (not the best energy saving approach i know...)
+And then I left my skype signed in for a few weeks, while I was on vacations.
 
 ### Parsing data
 

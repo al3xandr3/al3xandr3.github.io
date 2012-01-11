@@ -8,6 +8,15 @@ intro: "Quotes from Twitter"
 
 ### 2012
 
+
+<blockquote about="{{page.url}}#2012-01-11" property="dcterms:date" datatype="xsd:date" content="2012-01-11">
+<p property='dcterms:description'>RDFa augments web pages as standalone data repositories that #semanticweb can understand, doubling as normal web pages, imagine web scraping done right
+</p></blockquote>
+
+<blockquote about="{{page.url}}#2012-01-10" property="dcterms:date" datatype="xsd:date" content="2012-01-10">
+<p property='dcterms:description'>Sharing data, in an agreed upon format, is an incentive for re-use and disincentive for wasteful duplication. #semanticweb
+</p></blockquote>
+
 <blockquote about="{{page.url}}#2012-01-05" property="dcterms:date" datatype="xsd:date" content="2012-01-05">
 <p property='dcterms:description'>tagged up my blog with rdfa, im now officially linked to the #semanticweb, the homepage semantics: <a href="http://www.sparql.org/sparql?query=select+%3Fsubject+%3Fpredicate+%3Fobject+%0D%0AFROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%3E%0D%0Awhere+%7B+%3Fsubject+%3Fpredicate+%3Fobject+.+%7D%0D%0A&amp;default-graph-uri=&amp;stylesheet=%2Fxml-to-html.xsl&amp;output=csv&amp;force-accept=text%2Fplain">sparql.org/sparql?query=s</a>
 </p></blockquote>
@@ -15,7 +24,7 @@ intro: "Quotes from Twitter"
 ### 2011
 
 <blockquote about="{{page.url}}#2011-12-21" property="dcterms:date" datatype="xsd:date" content="2011-12-21">
-<p property='dcterms:description'>data,data, data! a #semanticweb use case on xmas: <a href='http://al3xandr3.github.com/2011/12/18/data.html'>al3xandr3.github.com</a>
+<p property='dcterms:description'>data,data,data! a #semanticweb use case on Xmas: <a href='http://al3xandr3.github.com/2011/12/18/data.html'>al3xandr3.github.com</a>
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2011-12-13b" property="dcterms:date" datatype="xsd:date" content="2011-12-13">

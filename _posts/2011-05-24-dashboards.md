@@ -5,12 +5,12 @@ categories:
 - ruby
 - statistics
 - data
-intro: "An important part of being data driven is to have a daily feedback on data, here's a couple of \"automated\" dashboards i've built recently:\n\
+intro: "An important part of being data driven is to have a daily feedback on data, here's a couple of <strong>automated dashboards</strong> i've built recently:
   <img src=\"http://al3xandr3.github.com/img/dash2.png\" alt=\"http://al3xandr3.github.com/img/dash2.png\"/>"
 ---
 
 An important part of being data driven is to have a daily feedback on data,
-here's a couple of "automated" dashboards i've built recently:
+here's a couple of **automated dashboards** i've built recently:
 ![http://al3xandr3.github.com/img/dash2.png][1]
 
 ![http://al3xandr3.github.com/img/dash1.png][2]
