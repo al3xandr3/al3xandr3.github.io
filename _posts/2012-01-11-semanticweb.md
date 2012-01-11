@@ -197,7 +197,7 @@ $.ajax({
 });
 </script>
 
-Today is <strong><span id="today"></span></strong>, so is <strong><span id="today-prob"></span>%</strong> likely that I'll tweet.
+Today is <strong><span id="today"></span></strong>, so <strong><span id="today-prob"></span>%</strong> likely that I'll tweet.
 
 <br />
 #### References
