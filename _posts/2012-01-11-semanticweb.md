@@ -93,7 +93,7 @@ So we can use the following sparql query, to show the date and how many quotes o
 
 <a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fdate+%28count%28%3Fsubject%29+AS+%3Ftotal%29%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2Fpages%2Fquotes.html%3E%0D%0A++++WHERE+%7B+%0D%0A++++++%3Fsubject+dcterms%3Adate+%3Fdate+.%0D%0A++++%7D%0D%0A++++GROUP+BY+%3Fdate%0D%0A++++ORDER+BY+%3Fdate&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">try it out!</a>
 
-Then for each of those dates i get the day of the week and sum up the number of quotes per day of the week.
+Then for i get the day of the week for each of those dates and sum up the number of quotes per day of the week.
 
 With that I can calculate the probability(the expected value) for each day of the week, and can then just lookup the probability for today.
 
@@ -168,12 +168,11 @@ $.ajax({
         .attr("width", 40)
         .attr("fill", "#2d578b");
 
-    chart.selectAll("text")
+    chart.selectAll("text.bars")
         .data(data)
       .enter().append("text")
-        .attr("x", function(d, i) { return x(i) + 40 - 11; })
+        .attr("x", function(d, i) { return x(i) + 20; })
         .attr("y", function(d) { return h - y(d.value) + 3; })
-        .attr("dx", -40/2)
         .attr("dy", "1.2em")
         .attr("text-anchor", "middle")
         .text(function(d) { return d.value;})
@@ -182,11 +181,10 @@ $.ajax({
     chart.selectAll("text.xAxis")
         .data(data)
       .enter().append("text")
-        .attr("x", function(d,i) { return x(i) + 40-9; })
+        .attr("x", function(d,i) { return x(i) + 20; })
         .attr("y", h)
-        .attr("dx", -40/2)
         .attr("text-anchor", "middle")
-        .attr("style", "font-size: 12; font-family: Helvetica, sans-serif")
+        .attr("style", "font-size: 12 important!; font-family: Helvetica, sans-serif")
         .text(function(d) { return d.day;})
         .attr("transform", "translate(0, 18)")
         .attr("class", "xAxis");
