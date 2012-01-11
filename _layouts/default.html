@@ -15,6 +15,7 @@
 <title>{% unless page.home %}{{ page.title }} - {% endunless %} {{ site.title }}</title>
 <base href="{{site.url}}" />
 <meta name="title" property="dcterms:title foaf:primaryTopic" content="{{site.title}}" />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf" />
 <meta rel="dcterms:creator" href="http://al3xandr3.github.com/#me" />
 <meta name="author" content="Alexandre Matos Martins" />
 <meta name="description" content="{% if page.home %}{{ site.author }}{% endif %}{{ page.title }}" />
@@ -76,7 +77,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 
 <div id="footer">
-  <div class="description" about="http://al3xandr3.github.com/#me" typeof="foaf:Person" property="foaf:nick" content="al3xandr3">
+  <div class="description" about="http://al3xandr3.github.com/#me" typeof="foaf:Person" property="rdfs:seeAlso" content="http://al3xandr3.github.com/foaf.rdf">
     <h2>About</h2>
      <span rel="foaf:img"><img class="portrait" alt="al3xandr3" src="http://al3xandr3.github.com/img/al3xandr3.png" /></span>
 
@@ -87,11 +88,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       <a rel="foaf:OnlineAccount" href="http://www.linkedin.com/in/al3xandr3">linkedin</a> 
       <a rel="foaf:OnlineAccount" href="http://twitter.com/al3xandr3">twitter</a> 
       <a rel="foaf:OnlineAccount" href="http://github.com/al3xandr3">github</a> 
-      <a rel="foaf:OnlineAccount foaf:page" href="http://www.freebase.com/view/m/0hn_w5d">freebase</a>
+      <a rel="foaf:OnlineAccount" href="http://www.freebase.com/view/m/0hn_w5d">freebase</a>
     </span>
     <br />
     <br />
-    <strong><span property="foaf:name">Alexandre Matos Martins</span></strong></p>
+    <strong><span property="foaf:name"><span property="foaf:nick" content="al3xandr3">Alexandre</span> Matos Martins</span></strong></p>
 	
   </div>
   <div class="follow">
