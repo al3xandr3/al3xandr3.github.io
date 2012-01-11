@@ -5,12 +5,11 @@ categories:
 - ruby
 - statistics
 - data
-intro: "\n\
-  From my Skype chat history, a visualization of the counts of chats by (anonymized)author.\n<img src=\"http://al3xandr3.github.com/img/contacts.png\" alt='contacs.png' />"
+intro: "From my Skype chat history, a visualization of the counts of chats by (anonymised) author.<br /><img src=\"http://al3xandr3.github.com/img/contacts.png\" alt='contacs.png' />"
 ---
 
 From my Skype chat history, a visualization of the counts of chats by
-(anonymized)author.
+(anonymised) author.
 
 ![http://al3xandr3.github.com/img/contacts.png][1]
 
