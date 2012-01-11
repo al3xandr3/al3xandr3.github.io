@@ -23,7 +23,7 @@ With this, can already use the semantic web query language, called SPARQL, to in
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     SELECT ?property ?value
     FROM <http://al3xandr3.github.com/foaf.rdf>
-    where { 
+    WHERE { 
       ?me foaf:name "Alexandre Matos Martins" .
       ?me ?property ?value .
     }
@@ -197,7 +197,7 @@ $.ajax({
 });
 </script>
 
-Today is <strong><span id="today"></span></strong>, so its <strong><span id="today-prob"></span>%</strong> likely that I'll tweet.
+Today is <strong><span id="today"></span></strong>, so is <strong><span id="today-prob"></span>%</strong> likely that I'll tweet.
 
 <br />
 #### References
