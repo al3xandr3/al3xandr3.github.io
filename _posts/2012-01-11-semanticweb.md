@@ -76,11 +76,11 @@ Note that this is a live search, i.e. whenever i add a new topic(subject) into t
 
 Why is all this data useful? well for a more futuristic good use case check the [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html).
 
-But, in the meanwhile we can already play around with more mundane things, for example, predicting how likely it is that, i will write a twitter quote today.
+But in the meanwhile, we can already play around with more mundane things, for example, predicting how likely it is that, i will write a twitter quote today.
 
 I collected a few of my twitter quotes on the [quotes page](http://al3xandr3.github.com/pages/quotes.html) and each quote there has an rdfa date on it.
 
-So we can use the following sparql query, to show the date and how many quotes on each date I've wrote:
+So we can use the following sparql query, to fetch from that page, the dates and how many quotes, on each date, I've wrote:
 
     PREFIX  dcterms: <http://purl.org/dc/terms/>
     SELECT ?date (count(?subject) AS ?total)
@@ -93,9 +93,9 @@ So we can use the following sparql query, to show the date and how many quotes o
 
 <a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fdate+%28count%28%3Fsubject%29+AS+%3Ftotal%29%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2Fpages%2Fquotes.html%3E%0D%0A++++WHERE+%7B+%0D%0A++++++%3Fsubject+dcterms%3Adate+%3Fdate+.%0D%0A++++%7D%0D%0A++++GROUP+BY+%3Fdate%0D%0A++++ORDER+BY+%3Fdate&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">try it out!</a>
 
-Then for i get the day of the week for each of those dates and sum up the number of quotes per day of the week.
+Then i see the day-of-the-week for each of those dates and sum up the number of quotes per day of the week.
 
-With that I can calculate the probability(the expected value) for each day of the week, and can then just lookup the probability for today.
+Having this, I can calculate the probability(the expected value) for each day, and can then just lookup the probability for today.
 
 For a full (a)live data experience this is implemented in javascript that fetches the live data when this page is opened.
 
