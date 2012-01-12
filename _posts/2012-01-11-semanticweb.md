@@ -137,7 +137,7 @@ $.ajax({
       per_day[day] += parseInt(v.total.value);
     });
 
-    // charting & stats
+    // plot & stats
     $.each(per_day, function(k, v) { 
       // setup for plot
       data.push({day: k, value: v});
@@ -197,9 +197,10 @@ $.ajax({
 });
 </script>
 
-Today is <strong><span id="today"></span></strong>, so <strong><span id="today-prob"></span>%</strong> likely that I'll tweet.
+Today is <strong><span id="today"></span></strong>, so is <strong><span id="today-prob"></span>%</strong> likely that I'll tweet.
 
 <br />
+
 #### References
 
 - [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html)
