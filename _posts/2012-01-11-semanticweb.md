@@ -76,9 +76,9 @@ Note that this is a live search, i.e. whenever i add a new topic(subject) into t
 
 Why is all this data useful? well for a more futuristic good use case check the [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html).
 
-But in the meanwhile, we can already play around with more mundane things, for example, predicting how likely it is that, i will write a twitter quote today.
+But in the meanwhile, we can already play around with more mundane things, for example, predicting how likely it is, that i will write a twitter quote today.
 
-I collected a few of my twitter quotes on the [quotes page](http://al3xandr3.github.com/pages/quotes.html) and each quote there has an rdfa date on it.
+I collected a few of my twitter quotes on the [quotes page](http://al3xandr3.github.com/pages/quotes.html) and each quote has an rdfa date on it.
 
 So we can use the following sparql query, to fetch from that page, the dates and how many quotes, on each date, I've wrote:
 
