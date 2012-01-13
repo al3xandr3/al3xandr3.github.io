@@ -123,7 +123,7 @@ var count = "                                  \
   ORDER BY ?date                  \
   ", 
   day, per_day={"Mon":0,"Tue":0,"Wed":0,"Thu":0,"Fri":0,"Sat":0,"Sun":0},
-  data=[], 
+  data=[],
   total_tw=0, today_tw=0;
 
 $.ajax({
@@ -133,7 +133,7 @@ $.ajax({
 
     // group per day-of-week
     $.each(d.results.bindings, function(i, v) { 
-      day = (new Date.parseExact(v.date.value, "yyyy-mm-dd")).toString("ddd");
+      day = (new Date.parse(v.date.value)).toString("ddd");
       per_day[day] += parseInt(v.total.value);
     });
 
