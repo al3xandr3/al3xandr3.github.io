@@ -2,10 +2,10 @@
 layout: post
 title: AB testing tools in the Future
 categories: 
-- abtesting
-- data
-intro: "\n\
-  A view on AB testing tools of the future.\n"
+  - data
+  - abtesting
+  - idea
+intro: "A view on AB testing tools of the future."
 ---
 
 

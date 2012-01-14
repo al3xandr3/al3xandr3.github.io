@@ -2,10 +2,9 @@
 layout: post
 title: Clojure test-is results in twitter
 categories: 
-- clojure
-- twitter
-intro: " \n\
-  Here's how you can have your your test-is results posted on twitter automatically as they run.\n"
+  - automation
+  - clojure
+intro: "Here's how you can have your your test-is results posted on twitter automatically as they run."
 ---
 
 Here's how you can have your your test-is results posted on twitter

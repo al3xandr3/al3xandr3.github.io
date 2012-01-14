@@ -2,12 +2,10 @@
 layout: post
 title: Clojure and Selenium cov3 - part ii
 categories: 
-- clojure
-- selenium
-- automations
-- webcrawler
-intro: "\n\
-  Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3.\n"
+  - automation
+  - clojure
+  - webcrawler
+intro: "Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3."
 ---
 
 

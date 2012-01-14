@@ -2,12 +2,10 @@
 layout: post
 title: Clojure and Selenium
 categories: 
-- clojure
-- selenium
-- automations
-- webcrawler
-intro: "\n\
-  I needed a kind of crawler to go around a list of pages, invoke some javascript(tests) and collect the output.\n"
+  - automation
+  - clojure
+  - webcrawler
+intro: "I needed a kind of crawler to go around a list of pages, invoke some javascript(tests) and collect the output."
 ---
 
 I needed a kind of crawler to go around a list of pages, invoke some javascript(tests) and collect the output.

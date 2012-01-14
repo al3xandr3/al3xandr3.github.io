@@ -1,12 +1,13 @@
 --- 
 layout: post
-title: How to get onto the Semantic Web
+title: How to get into the Semantic Web
 categories: 
-  - semanticweb
   - data
-  - statistics
+  - semanticweb
   - javascript
-  - sparql
+  - statistics
+  - visualization
+  - SPARQL
 intro: "<img alt='SemanticWebQuotes' src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/><br /><strong>Practical examples</strong> on <i>Getting in There</i>, <i>Adding the Site</i> and <i>Using It</i>."
 ---
 
@@ -35,7 +36,7 @@ With this, can already use the semantic web query language, called SPARQL, to in
 
 How many times have you filled in your personal profile information on web sites? Google+, Facebook, YouTube, Yahoo!, MSN, Blogspot, Amazon, Twitter, LinkedIn, Flickr, Tumblr, Ebay, mySpace, hi5!, etc... How many times more we need to do it again?
 
-The semantic web is about sharing data in an agreed upon format, so that the data can be easily linked-to and (re)used. Thus, once my profile is on the semantic web any new site that I sign-up for, can just read-in this data instead of asking to fill it in.
+The semantic web is about sharing data in an agreed upon format, so that the data can be easily linked-to and (re)used. Thus, once my profile is on the semantic web any new site that I sign-up for, can just read-in this data instead of asking me to fill it in.
 
 > Sharing data, in an agreed upon format, is an incentive for re-use and disincentive for wasteful duplication. Choose #semanticweb.
 
@@ -66,7 +67,7 @@ With the rdfa tags added to the site is now possible to use semantic web tools t
 
 <a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fsubject+%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2F%3E%0D%0A++++WHERE+%7B%0D%0A+++++%3Chttp%3A%2F%2Fal3xandr3.github.com%3E+%3Fpredicate+%3Fsubject+.+%0D%0A+++++%3Fs+dcterms%3Asubject+%3Fsubject+.%0D%0A++++%7D&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">run on sparql.org &rarr;</a>
 
-Note that this is a live search, i.e. whenever i add a new topic(subject) into the tag cloud of the site, re-running the query above will show the new added topics.
+Note that this is a live search, i.e. whenever i add a new topic(subject) into the tag cloud of the site, re-running the query above will show the new topics also.
 
 
 > RDFa augments web pages as standalone data repositories that #semanticweb can understand, doubling as normal web pages, imagine web scraping done right.
@@ -76,11 +77,11 @@ Note that this is a live search, i.e. whenever i add a new topic(subject) into t
 
 Why is all this data useful? well for a more futuristic good use case check the [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html).
 
-But in the meanwhile, we can already play around with more mundane things, for example, predicting how likely it is, that i will write a twitter quote today.
+But in the meanwhile, we can already play around with more mundane things, for example, predicting how likely is it, that i will write a twitter quote for any given day.
 
 I collected a few of my twitter quotes on the [quotes page](http://al3xandr3.github.com/pages/quotes.html) and each quote has an rdfa date on it.
 
-So we can use the following sparql query, to fetch from that page, the dates and how many quotes, on each date, I've wrote:
+So we can use the following sparql query to fetch directly from the quotes page, the dates and how many quotes, on each date, I've wrote:
 
     PREFIX  dcterms: <http://purl.org/dc/terms/>
     SELECT ?date (count(?subject) AS ?total)
@@ -95,11 +96,11 @@ So we can use the following sparql query, to fetch from that page, the dates and
 
 Then i see the day-of-the-week for each of those dates and sum up the number of quotes per day of the week.
 
-Having this, I can calculate the probability(the expected value) for each day, and can then just lookup the probability for today.
+Having this, I can calculate the probability(the expected value) for each day, and can then just lookup the probability for any given day.
 
-For a full (a)live data experience this is implemented in javascript that fetches the live data when this page is opened.
+For a full (a)live data experience this is implemented in javascript that fetches the data when this page is opened.
 
-I use jquery .ajax to go fetch the data of the sparql query defined above, do some data manipulation, plot it using [d3.js](http://mbostock.github.com/d3/), and finally output the prediction for today.
+I use jquery .ajax to go fetch the data of the sparql query defined above, do some data manipulation, plot it using [d3.js](http://mbostock.github.com/d3/), and finally output the prediction.
 
 Look at the source code of this page, to see how it works.
 

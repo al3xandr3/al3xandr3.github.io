@@ -2,11 +2,9 @@
 layout: post
 title: Little 'ruby' photo organizer
 categories: 
-- ruby
-- photo
-- automations
-intro: "\n\
-  Place this script in a folder full of pictures, run it, and it will organize the pictures into folders by the day they were taken.\n"
+  - automation
+  - ruby
+intro: "Place this script in a folder full of pictures, run it, and it will <strong>organize the pictures</strong> into folders by the day they were taken."
 ---
 
 Place this script in a folder full of pictures, run it, and it will organize
