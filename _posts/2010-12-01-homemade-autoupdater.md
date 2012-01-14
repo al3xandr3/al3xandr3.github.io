@@ -2,10 +2,9 @@
 layout: post
 title: Homemade Auto-Updater
 categories: 
-- emacs
-- automations
-intro: "\n\
-  Here's a script that i use frequently to update an application to the last version. It automates the process of downloading and installing the app.\n"
+  - automation
+  - emacs
+intro: "Here's a script that i use frequently to update an application to the last version. It automates the process of downloading and installing the app."
 ---
 
 

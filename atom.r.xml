@@ -15,7 +15,7 @@ layout: nil
    <email>al3xandr3@gmail.com</email>
  </author>
 
- {% for post in site.categories.r %}
+ {% for post in site.categories.R %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://al3xandr3.github.com{{ post.url }}"/>

@@ -2,10 +2,8 @@
 layout: post
 title: jQuery Twitter 'mini' plugin
 categories: 
-- twitter
-- javascript
-intro: "\n\
-  Here's a little jQuery plugin for displaying a twitter feed into a web page. \n"
+  - javascript
+intro: "Here's a little jQuery plugin for displaying a twitter feed into a web page."
 ---
 
 Here's a little jQuery plugin for displaying a twitter feed into a web page.

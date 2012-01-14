@@ -2,14 +2,13 @@
 layout: post
 title: Monitoring Productivity Experiment
 categories: 
-- emacs
-- org-mode
-- r
-- statistics
-- data
-intro: "\n\
-  <a href=\"http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/\"><img src=\"http://al3xandr3.github.com/img/prod-intro.jpeg\" alt=\"prod-intro.jpeg\" /></a>\n\
-  For over a year now, i've been collecting how much time i spend in computer and how much of it is actually used in creative/productive activities.\n"
+  - data
+  - productivity
+  - statistics
+  - visualization
+  - emacs
+  - R
+intro: "<img src='http://al3xandr3.github.com/img/prod-intro.jpeg' alt='prod-intro.jpeg' />For over a year now, i've been collecting how much time i spend in computer and how much of it is actually used in creative/productive activities.\n"
 ---
 
 

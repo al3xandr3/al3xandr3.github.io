@@ -3,6 +3,6 @@ auto: true
 markdown: rdiscount
 author: al3xandr3
 title: al3xandr3
-keywords: programming, probabilities, machine learning, alexandre martins, al3xandr3
+keywords: programming, data, machine learning, alexandre martins, al3xandr3
 url: http://al3xandr3.github.com
 paginate: 6

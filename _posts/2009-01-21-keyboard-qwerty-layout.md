@@ -2,12 +2,10 @@
 layout: post
 title: Why my keyboard has a QWERTY layout?
 categories: 
-- abtesting
-- keyboard
-- data
-intro: "\n\
-  The most common keyboard layout in use today is called QWERTY, it takes its name from the first six characters seen in the far left of the keyboard's top row of letters.\n\
-  <img src=\"http://al3xandr3.github.com/img/keyb.png\" alt=\"http://al3xandr3.github.com/img/keyb.png\" />\n"
+  - abtesting
+  - keyboard
+  - idea
+intro: "The most common keyboard layout in use today is called QWERTY, it takes its name from the first six characters seen in the far left of the keyboard's top row of letters. <img src='http://al3xandr3.github.com/img/keyb.png' alt='http://al3xandr3.github.com/img/keyb.png' />"
 ---
 
 The most common keyboard layout in use today is called QWERTY, it takes its

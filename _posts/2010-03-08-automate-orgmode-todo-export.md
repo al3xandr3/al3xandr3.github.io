@@ -2,12 +2,10 @@
 layout: post
 title: Automating todo tasks reports with org-mode
 categories: 
-- org-mode
-- emacs
-- automations
-- ruby
-intro: "\n\
-  Here's the geek automation of the week, its for helping creating reports from my TODO tasks list when using the amazing emacs org-mode(<a href=\"http://orgmode.org/\">see here whats orgmode all about</a>).\n"
+  - automation
+  - ruby
+  - emacs
+intro: "Here's the geek automation of the week, its for helping creating reports from my TODO tasks list when using the amazing emacs org-mode(<a href=\"http://orgmode.org/\">see here whats orgmode all about</a>)."
 ---
 
 Here's the geek automation of the week, its for helping creating reports from

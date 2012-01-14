@@ -1,12 +1,11 @@
 --- 
 layout: post
 title: Probability simulation of basketball throws
-categories: 
-- statistics
-- montecarlo
-- clojure
-intro: "\n\
-  A little probability simulation from the book <i>Resampling: The New Statistics</i>, using Clojure and Incanter.\n"
+categories:
+  - montecarlo
+  - statistics
+  - clojure
+intro: "A little probability simulation from the book <i>Resampling: The New Statistics</i>, using Clojure and Incanter."
 ---
 
 A little probability simulation from the book _Resampling: The New
