@@ -28,7 +28,7 @@ With this, can already use the semantic web query language, called SPARQL, to in
       ?me ?property ?value .
     }
 
-<a href="http://www.sparql.org/sparql?query=++++PREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0A++++SELECT+%3Fproperty+%3Fvalue%0D%0A++++FROM+%3Chttp%3A%2F%2Fal3xandr3.github.com%2Ffoaf.rdf%3E%0D%0A++++where+%7B+%0D%0A++++++%3Fme+foaf%3Aname+%22Alexandre+Matos+Martins%22+.%0D%0A++++++%3Fme+%3Fproperty+%3Fvalue+.%0D%0A++++%7D&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">try it out!</a>
+<a href="http://www.sparql.org/sparql?query=++++PREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0A++++SELECT+%3Fproperty+%3Fvalue%0D%0A++++FROM+%3Chttp%3A%2F%2Fal3xandr3.github.com%2Ffoaf.rdf%3E%0D%0A++++where+%7B+%0D%0A++++++%3Fme+foaf%3Aname+%22Alexandre+Matos+Martins%22+.%0D%0A++++++%3Fme+%3Fproperty+%3Fvalue+.%0D%0A++++%7D&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">run on sparql.org &rarr;</a>
 
 
 **Why Another Online Profile?**
@@ -64,7 +64,7 @@ With the rdfa tags added to the site is now possible to use semantic web tools t
      ?s dcterms:subject ?subject .
     }
 
-<a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fsubject+%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2F%3E%0D%0A++++WHERE+%7B%0D%0A+++++%3Chttp%3A%2F%2Fal3xandr3.github.com%3E+%3Fpredicate+%3Fsubject+.+%0D%0A+++++%3Fs+dcterms%3Asubject+%3Fsubject+.%0D%0A++++%7D&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">try it out!</a>
+<a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fsubject+%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2F%3E%0D%0A++++WHERE+%7B%0D%0A+++++%3Chttp%3A%2F%2Fal3xandr3.github.com%3E+%3Fpredicate+%3Fsubject+.+%0D%0A+++++%3Fs+dcterms%3Asubject+%3Fsubject+.%0D%0A++++%7D&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">run on sparql.org &rarr;</a>
 
 Note that this is a live search, i.e. whenever i add a new topic(subject) into the tag cloud of the site, re-running the query above will show the new added topics.
 
@@ -91,7 +91,7 @@ So we can use the following sparql query, to fetch from that page, the dates and
     GROUP BY ?date
     ORDER BY ?date
 
-<a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fdate+%28count%28%3Fsubject%29+AS+%3Ftotal%29%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2Fpages%2Fquotes.html%3E%0D%0A++++WHERE+%7B+%0D%0A++++++%3Fsubject+dcterms%3Adate+%3Fdate+.%0D%0A++++%7D%0D%0A++++GROUP+BY+%3Fdate%0D%0A++++ORDER+BY+%3Fdate&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">try it out!</a>
+<a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fdate+%28count%28%3Fsubject%29+AS+%3Ftotal%29%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2Fpages%2Fquotes.html%3E%0D%0A++++WHERE+%7B+%0D%0A++++++%3Fsubject+dcterms%3Adate+%3Fdate+.%0D%0A++++%7D%0D%0A++++GROUP+BY+%3Fdate%0D%0A++++ORDER+BY+%3Fdate&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">run on sparql.org &rarr;</a>
 
 Then i see the day-of-the-week for each of those dates and sum up the number of quotes per day of the week.
 
@@ -101,7 +101,7 @@ For a full (a)live data experience this is implemented in javascript that fetche
 
 I use jquery .ajax to go fetch the data of the sparql query defined above, do some data manipulation, plot it using [d3.js](http://mbostock.github.com/d3/), and finally output the prediction for today.
 
-Look at the source code of this page, to see how is all done.
+Look at the source code of this page, to see how it works.
 
 #### Quotes per day of the week:
 
@@ -110,7 +110,7 @@ Look at the source code of this page, to see how is all done.
 <script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
 <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
 
-<div id="chart"></div>
+<div id="chart"><img alt='SemanticWebQuotes' id="backup" src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/></div>
 <script type="text/javascript">
 var count = "                                  \
   PREFIX  dcterms: <http://purl.org/dc/terms/> \
@@ -149,6 +149,11 @@ $.ajax({
       }
     });
     
+    // we have data, static backup
+    if (per_day["Thu"] !== 0) {
+      $('#backup').remove();
+    }
+
     var w = 420,
     h = 200,
     x = d3.scale.linear().domain([0, data.length]).range([0, w]),
@@ -189,15 +194,17 @@ $.ajax({
         .attr("transform", "translate(0, 18)")
         .attr("class", "xAxis");
 
-    // Today Probability
-    $('#today').text(Date.today().toString("dddd"));
-    $('#today-prob').text(Math.round(today_tw/total_tw*100));
-
+    // Prediction Text
+    $('#prediction').text("Today is <strong>" + 
+                        Date.today().toString("dddd") + 
+                        "</strong>, so is <strong>" +
+                        Math.round(today_tw/total_tw*100) +
+                        "%</strong> likely that I'll tweet.");
   }
 });
 </script>
 
-Today is <strong><span id="today"></span></strong>, so is <strong><span id="today-prob"></span>%</strong> likely that I'll tweet.
+<span id="prediction">For example on <strong>Thursday</strong> is <strong>21%</strong> likelly that I'll tweet.</span>
 
 <br />
 

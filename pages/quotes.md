@@ -9,7 +9,7 @@ intro: "Quotes from Twitter"
 ### 2012
 
 <blockquote about="{{page.url}}#2012-01-13" property="dcterms:date" datatype="xsd:date" content="2012-01-13">
-<p property='dcterms:description'>my js api's lately get 2 arguments: hash & optional function. A hash for flexible variables, function for arbitrary execution. Hardly deprecates
+<p property='dcterms:description'>my js api's lately get 2 arguments: hash & optional function. A hash for flexible variables, function for arbitrary execution. It hardly deprecates
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-11" property="dcterms:date" datatype="xsd:date" content="2012-01-11">
