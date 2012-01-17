@@ -196,7 +196,7 @@ $.ajax({
         .attr("class", "xAxis");
 
     // Prediction Text
-    $('#prediction').text("Today is <strong>" + 
+    $('#prediction').html("Today is <strong>" + 
                         Date.today().toString("dddd") + 
                         "</strong>, so is <strong>" +
                         Math.round(today_tw/total_tw*100) +
