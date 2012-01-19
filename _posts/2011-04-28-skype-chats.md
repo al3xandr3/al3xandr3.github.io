@@ -6,7 +6,7 @@ categories:
   - visualization
   - statistics
   - ruby
-intro: "From my Skype chat history, a visualization of the counts of chats by (anonymised) author.<br /><img src=\"http://al3xandr3.github.com/img/contacts.png\" alt='contacs.png' />"
+intro: "From my <strong>Skype chat history</strong>, a visualization of the counts of chats by (anonymised) author.<br /><img src=\"http://al3xandr3.github.com/img/contacts.png\" alt='contacs.png' />"
 ---
 
 From my Skype chat history, a visualization of the counts of chats by
