@@ -8,7 +8,7 @@ categories:
   - statistics
   - visualization
   - SPARQL
-intro: "<img alt='SemanticWebQuotes' src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/><br /><strong>Practical examples</strong> on <i>Getting in There</i>, <i>Adding the Site</i> and <i>Using It</i>."
+intro: "<img alt='SemanticWebQuotes' src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/><br /><strong>Practical examples</strong> on <i>getting in there</i>, <i>adding the site</i> and <i>using it</i>"
 ---
 
 Practical examples on how to get onto the semantic web and on using it. 
