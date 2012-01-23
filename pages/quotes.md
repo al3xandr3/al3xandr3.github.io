@@ -8,6 +8,10 @@ intro: "Quotes from Twitter"
 
 ### 2012
 
+<blockquote about="{{page.url}}#2012-01-23" property="dcterms:date" datatype="xsd:date" content="2012-01-23">
+<p property='dcterms:description'>evolution says that the best fit end up doing better and more widespread, so if you find yourself being very unique and different, beware
+</p></blockquote>
+
 <blockquote about="{{page.url}}#2012-01-13" property="dcterms:date" datatype="xsd:date" content="2012-01-13">
 <p property='dcterms:description'>my js api's lately get 2 arguments: hash & optional function. A hash for flexible variables, function for arbitrary execution. It hardly deprecates
 </p></blockquote>
