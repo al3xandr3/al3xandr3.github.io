@@ -19,11 +19,10 @@ task :server do
 
   system "ruby tags.rb"
   system "ruby cloud.rb"
-  system "open http://localhost:4000/"
   system "jekyll --server"
 end
 
-# > rake ci msg="message"
+# rake ci msg="message"
 desc "commit"
 task :ci do
   message = ENV['msg'] || "update"
