@@ -8,6 +8,14 @@ intro: "Quotes from Twitter"
 
 ### 2012
 
+<blockquote about="{{page.url}}#2012-02-13" property="dcterms:date" datatype="xsd:date" content="2012-02-13">
+<p property='dcterms:description'>being an ace isnt just be able to solve every problem you are given, equaly important is to know which problems are not worth tackling
+</p></blockquote>
+
+<blockquote about="{{page.url}}#2012-02-13" property="dcterms:date" datatype="xsd:date" content="2012-02-13">
+<p property='dcterms:description'>if stuff seems obvious and people around you keep missing it, then likelly you lack imagination (& fail to see other possibilities)
+</p></blockquote>
+
 <blockquote about="{{page.url}}#2012-01-23" property="dcterms:date" datatype="xsd:date" content="2012-01-23">
 <p property='dcterms:description'>evolution says that the best fit end up doing better and more widespread, so if you find yourself being very unique and different, beware
 </p></blockquote>
