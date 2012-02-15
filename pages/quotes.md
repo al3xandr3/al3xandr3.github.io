@@ -8,12 +8,17 @@ intro: "Quotes from Twitter"
 
 ### 2012
 
+<blockquote about="{{page.url}}#2012-02-15" property="dcterms:date" datatype="xsd:date" content="2012-02-15">
+<p property='dcterms:description'>scary that so much is driven by make-believe metrics... likely because choosing good metrics is hard, needs whole pic view, good common sense, evolutionary curation
+</p></blockquote>
+
+
 <blockquote about="{{page.url}}#2012-02-13" property="dcterms:date" datatype="xsd:date" content="2012-02-13">
 <p property='dcterms:description'>being an ace isnt just be able to solve every problem you are given, equaly important is to know which problems are not worth tackling
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-02-13" property="dcterms:date" datatype="xsd:date" content="2012-02-13">
-<p property='dcterms:description'>if stuff seems obvious and people around you keep missing it, then likelly you lack imagination (& fail to see other possibilities)
+<p property='dcterms:description'>if stuff seems obvious and people around you keep missing it, then likelly you lack imagination (& fail to see the other possibilities)
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-23" property="dcterms:date" datatype="xsd:date" content="2012-01-23">
