@@ -9,7 +9,7 @@ intro: "Quotes from Twitter"
 ### 2012
 
 <blockquote about="{{page.url}}#2012-02-15" property="dcterms:date" datatype="xsd:date" content="2012-02-15">
-<p property='dcterms:description'>scary that so much is driven by make-believe metrics... likely because choosing good metrics is hard, needs whole pic view, good common sense, evolutionary curation
+<p property='dcterms:description'><a href='http://www.youtube.com/watch?v=n77BfxnVlyc'>12 nature design ideas video</a> - humankind is as graceful as a hippo dancing ballet when it comes to building sustainable stuff
 </p></blockquote>
 
 
