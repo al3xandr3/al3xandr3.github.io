@@ -1,4 +1,4 @@
-site.css/* http://meyerweb.com/eric/tools/css/reset/ */
+/* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
 
 html, body, br, hr, div, span, a, object,
@@ -8,7 +8,7 @@ cite, dfn, ins, del, i, em, b, strong, sup, sub,
 strike, pre, code, samp, kbd, var, tt, form,
 fieldset, legend, label, input, textarea,
 option, .nobox {
-  font-size: 100%;
+  /*font-size: 100%;*/
   margin: 0;
   outline: 0 none;
   padding: 0;
@@ -632,8 +632,4 @@ a.next-page {
 * html .clearfix,
 *:first-child+html .clearfix {
   zoom: 1;
-}
-
-h4 {
-  font-size: 1.2em;
 }
