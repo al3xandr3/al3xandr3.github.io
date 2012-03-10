@@ -26,6 +26,6 @@ end
 desc "commit"
 task :ci do
   message = ENV['msg'] || "update"
-  system "git commit -a -m '#{message}'"
+  system "git commit -a -m \"#{message}\""
   system "git push"
 end
