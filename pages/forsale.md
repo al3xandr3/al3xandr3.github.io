@@ -47,9 +47,9 @@ Bought in 2008, only used at home and not very often, almost as new
 
 ![me-30](http://www.roland.co.jp/products/boss/image/ME-30/ME-30.jpg)
 
-Oldie, but great sounding unit
+Oldie, but great sounding unit, try it out!
 
-[youtube](http://www.youtube.com/results?search_query=boss+me-30)
+[youtube](http://www.youtube.com/results?search_query=boss+me-30) / [manual](ftp://ftp.roland.co.uk/productsupport/ME-30/01_ME-30_OM.pdf)
 
 #### **35 EUR**
 
@@ -101,3 +101,8 @@ Not used, still in original box
 #### **10 EUR**
 
 <br/><br/><br/>
+
+### Contact me:
+
+ - mail: al3xandr3@gmail.com
+ - skype: al3x.martins
