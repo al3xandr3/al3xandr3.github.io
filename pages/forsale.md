@@ -116,6 +116,26 @@ Not used, still in original box
 
 <br/><br/><br/>
 
+## Yamaha Short Cymbal Boom/Arm 
+
+![yamaha](http://images.miretail.com/products/full/Yamaha/633543993002616988.jpg)
+
+Model: CH750
+
+#### **30 EUR**
+
+<br/><br/><br/>
+
+## Audio Cables
+
+<br/>
+
+2x Guitar Cable, Stereo, 1/4" plug, 2m - **6 EUR**
+
+2x Guitar Cable, Stereo, 1/4" plug, 4m - **9 EUR**
+
+<br/><br/>
+
 ### Contact me:
 
  - mail: al3xandr3@gmail.com
