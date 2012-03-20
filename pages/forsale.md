@@ -4,6 +4,20 @@ title: For Sale
 intro: "for sale"
 ---
 
+## Orange Tiny Terror
+
+![tt](http://www.orangeamps.com/wp-content/uploads/2010/06/tiny-terror-d.jpg)
+
+All valve, 15 watt portable guitar head. Featuring a unique two stage pre-amp which has a massive tonal range using just three controls. When driven, this little amp has almost as much gain as most four stage lead channels!
+
+Bought in 2008, only used at home and not very often. Includes Gig bag, and still with original box.
+
+[official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/results?search_query=orange+tiny+terror)
+
+#### *<strike>395 EUR(new)</strike>* **330 EUR**
+
+<br/><br/><br/>
+
 ## PRS Santana SE Vintage Cherry
 
 ![prs](http://farm6.static.flickr.com/5287/5281926702_7f98d6ac99.jpg)
@@ -43,7 +57,7 @@ Bought in 2008, only used at home and not very often, almost as new
 
 <br/><br/><br/>
 
-## Boss ME-30 multi-effects unit
+##  <font color="red">[*SOLD*] </font> <strike>Boss ME-30 multi-effects unit</strike>
 
 ![me-30](http://www.roland.co.jp/products/boss/image/ME-30/ME-30.jpg)
 
