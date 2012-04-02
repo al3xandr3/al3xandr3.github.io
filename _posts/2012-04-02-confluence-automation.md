@@ -67,15 +67,13 @@ Or as a ruby lib, like so:
         f = File.open(file, "rb")  # don't forget the 'b' for binary
         f.read.each_byte {|byte| data << byte }
         f.close
-        
+
         confluence.addAttachment(token, pa['id'], attachment, XMLRPC::Base64.new(data))
-      end
-    
+      end 
     end
     
     
     if __FILE__ == $0
-    
       if ARGV[0] == "post"
         if ARGV.size != 7
           puts '$ ruby confluence.rb post "{html}<h1>Hello Confluence</h1>{html}" "page" "space" "username" "password" "confluence.my.com"'
@@ -84,15 +82,13 @@ Or as a ruby lib, like so:
         end
       end
     
-    
       if ARGV[0] == "attach"
         if ARGV.size != 8
           puts '$ ruby confluence.rb attach file.pdf "application/pdf" "page" "space" "username" "password" "confluence.my.com"'
         else
           Confluence.attach ARGV[1], ARGV[2], ARGV[3], ARGV[4], ARGV[5], ARGV[6], ARGV[7]
         end
-      end
-    
+      end    
     end
     
 
