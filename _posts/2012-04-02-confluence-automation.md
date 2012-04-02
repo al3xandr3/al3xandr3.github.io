@@ -84,7 +84,7 @@ Or as a ruby lib, like so:
         if ARGV.size != 7
           puts '$ ruby confluence.rb post "{html}<h1>Hello Confluence</h1>{html}" "page" "space" "username" "password" "confluence.my.com"'
         else
-          Confluence.post ARGV[1], ARGV[2], ARGV[3], ARGV[4], ARGV[5],    ARGV[6]
+          Confluence.post ARGV[1], ARGV[2], ARGV[3], ARGV[4], ARGV[5], ARGV[6]
         end
       end
     
