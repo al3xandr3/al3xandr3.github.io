@@ -13,7 +13,7 @@ Posting it here in case is usefull for someone else
 
 I developed it on windows and with ruby 1.9.3 on Windows
 
-Can be used as a standalone like so:
+Can be used as a standalone, like so:
 
     # for content:
     $ ruby confluence.rb post "{html}<h1>Hello Confluence</h1>{html}" "page" "space" "username" "password" "confluence.my.com"
@@ -22,7 +22,7 @@ Can be used as a standalone like so:
     $ ruby confluence.rb attach file.pdf "application/pdf" "page" "space" "username" "password" "confluence.my.com"
 
 
-Or as a ruby lib:
+Or as a ruby lib, like so:
 
     require 'confluence'
     
@@ -32,19 +32,17 @@ Or as a ruby lib:
     # for attachments:
     Confluence.attach "report.pdf", "application/pdf", "page", "space", "user", "pass", "confluence.my.com"
 
-### Code
-
-    
+### Code 
 
     module Confluence
       require 'xmlrpc/client'
       extend self
     
-      # Confluence.post "{html}<h1>Hello Confluence</h1>{html}",    "page", "space", "user", "pass", "confluence.my.com"
+      # Confluence.post "{html}<h1>Hello Confluence</h1>{html}", "page", "space", "user", "pass", "confluence.my.com"
       def post content, page, space, user, pass, server
-        confluence = XMLRPC::Client.new2(   "https://#{user}:#{pass}@#{server}/rpc/xmlrpc")
+        confluence = XMLRPC::Client.new2("https://#{user}:#{pass}@#{server}/rpc/xmlrpc")
         # disable certificate check    
-        confluence.instance_variable_get(:@http).instance_variable_set(   :@verify_mode, OpenSSL::SSL::VERIFY_NONE)
+        confluence.instance_variable_get(:@http).instance_variable_set(:@verify_mode, OpenSSL::SSL::VERIFY_NONE)
         # shortcut
         confluence = confluence.proxy("confluence1")
     
@@ -53,11 +51,11 @@ Or as a ruby lib:
         confluence.storePage("", pa)
       end
     
-      # Confluence.attach "report.pdf", "application/pdf", "page",    "space", "user", "pass", "confluence.my.com"
+      # Confluence.attach "report.pdf", "application/pdf", "page", "space", "user", "pass", "confluence.my.com"
       def attach file, type, page, space, user, pass, server
-        server = XMLRPC::Client.new2(   "https://#{user}:#{pass}@#{server}/rpc/xmlrpc")
+        server = XMLRPC::Client.new2("https://#{user}:#{pass}@#{server}/rpc/xmlrpc")
         # disable certificate check    
-        server.instance_variable_get(:@http).instance_variable_set(   :@verify_mode, OpenSSL::SSL::VERIFY_NONE)
+        server.instance_variable_get(:@http).instance_variable_set(:@verify_mode, OpenSSL::SSL::VERIFY_NONE)
         # shortcut
         confluence = server.proxy("confluence1")
     
@@ -74,7 +72,7 @@ Or as a ruby lib:
         f.read.each_byte {|byte| data << byte }
         f.close
         
-        confluence.addAttachment(token, pa['id'], attachment,     XMLRPC::Base64.new(data))
+        confluence.addAttachment(token, pa['id'], attachment, XMLRPC::Base64.new(data))
       end
     
     end
