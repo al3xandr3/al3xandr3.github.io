@@ -4,10 +4,10 @@ title: Confluence wiki Automation
 categories: 
   - ruby
   - automation
-intro: "Script to <strong>automate</strong> updating content of a confluence wiki, both page content and attachments. Can be used as standalone or as a (ruby)lib."
+intro: "Script to <strong>automate</strong> updating content of a confluence wiki, both page content and attachments. Can be used as standalone or as a (ruby)lib"
 ---
 
-Here's a script that i use to automate updating an Confluence wiki content. Posting it here in case is usefull for someone else. I developed it on windows and with ruby 1.9.3 on Windows.
+Here's a script that i use to automate updating an Confluence wiki content. Posting it here in case is usefull for someone else. I developed it on Windows7 and with ruby 1.9.3.
 
 Can be used as a standalone, like so:
 
