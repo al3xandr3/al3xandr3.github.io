@@ -23,8 +23,10 @@ al3xandr3.color3 = "#E7E7E7";
 $(function () {
 
   // CSS
-//  $("#title").spanify("3", "titlenumbers");
-//  $(".titlenumbers").css('color', al3xandr3.color1);
+  //  $("#title").spanify("3", "titlenumbers");
+  //  $(".titlenumbers").css('color', al3xandr3.color1);
+  $('pre').addClass("prettyprint");
+  prettyPrint();
 
   //hide discuss ugly link
   $(".dsq-brlink").hide();
@@ -33,7 +35,7 @@ $(function () {
   // Jump to Top
   $('.jump').click(function () {
     $('html, body').animate({scrollTop: 0}, 'slow');
-  }); 
+  });
 
   /* for images in localhost */
   if (location.host === "localhost:4000") {

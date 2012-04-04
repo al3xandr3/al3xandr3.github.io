@@ -8,10 +8,13 @@ intro: "Quotes from Twitter"
 
 ### 2012
 
+<blockquote about="{{page.url}}#2012-04-03" property="dcterms:date" datatype="xsd:date" content="2012-04-03">
+<p property='dcterms:description'>lifespan of technologies is getting shorter and shorter and it takes time to master anything(10y?) => We condemned to be forever newbies?
+</p></blockquote>
+
 <blockquote about="{{page.url}}#2012-02-15" property="dcterms:date" datatype="xsd:date" content="2012-02-15">
 <p property='dcterms:description'><a href='http://www.youtube.com/watch?v=n77BfxnVlyc'>12 nature design ideas video</a> - humankind is as graceful as a hippo dancing ballet when it comes to building sustainable stuff
 </p></blockquote>
-
 
 <blockquote about="{{page.url}}#2012-02-13" property="dcterms:date" datatype="xsd:date" content="2012-02-13">
 <p property='dcterms:description'>being an ace isnt just be able to solve every problem you are given, equaly important is to know which problems are not worth tackling

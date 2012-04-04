@@ -144,7 +144,7 @@ code, pre {
   padding: 0;
 }
 pre {
-  border: 1px solid #DDDDDD;
+  border: 1px solid #DDDDDD !important;
 }
 #container {
   margin: 0 auto;
