@@ -9,7 +9,7 @@ intro: "Quotes from Twitter"
 ### 2012
 
 <blockquote about="{{page.url}}#2012-04-03" property="dcterms:date" datatype="xsd:date" content="2012-04-03">
-<p property='dcterms:description'>lifespan of technologies is getting shorter and shorter and it takes time to master anything(10y?) => We condemned to be forever newbies?
+<p property='dcterms:description'>lifespan of technologies is getting shorter and shorter. To master anything takes time(10y?) => We condemned to be forever newbies?
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-02-15" property="dcterms:date" datatype="xsd:date" content="2012-02-15">
