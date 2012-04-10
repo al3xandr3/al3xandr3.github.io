@@ -257,6 +257,8 @@ pre, code, tt {
     font: 0.9em/1.5 'andale mono','lucida console', monospace;
     overflow: auto;
     padding: 0.25em 0.5em 0.5em !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 #contents .post:first-child {
