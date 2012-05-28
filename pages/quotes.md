@@ -8,6 +8,10 @@ intro: "Quotes from Twitter"
 
 ### 2012
 
+<blockquote about="{{page.url}}#2012-05-28" property="dcterms:date" datatype="xsd:date" content="2012-05-28">
+<p property='dcterms:description'>you can't manage what you don't measure
+</p></blockquote>
+
 <blockquote about="{{page.url}}#2012-04-03" property="dcterms:date" datatype="xsd:date" content="2012-04-03">
 <p property='dcterms:description'>lifespan of technologies is getting shorter and shorter. To master anything takes time(10y?) => We condemned to be forever newbies?
 </p></blockquote>
