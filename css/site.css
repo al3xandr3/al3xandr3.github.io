@@ -183,7 +183,7 @@ padding-right:25em;
 #nav li a {
   background: #cccccc;
   -moz-border-radius: 5px 1px 5px 5px;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: 5px 1px 5px 5px;
   color: #008BBF;
   text-decoration: none;
   padding: 5px 10px;
@@ -318,8 +318,8 @@ margin-right:23.5em;
 min-height:7.2em;
 padding: 30px;
 width: 400px;
--moz-box-shadow: 0 0 4px #CCC;
--webkit-box-shadow: 0 0 4px #CCC;
+-moz-box-shadow: 0 0 5px #CCC;
+-webkit-box-shadow: 0 0 5px #CCC;
 box-shadow: 0 0 4px #CCC;
 }
 
@@ -329,8 +329,8 @@ margin-right:23.5em;
 min-height:7.2em;
 padding: 30px;
 width: 600px;
--moz-box-shadow: 0 0 4px #CCC;
--webkit-box-shadow: 0 0 4px #CCC;
+-moz-box-shadow: 0 0 5px #CCC;
+-webkit-box-shadow: 0 0 5px #CCC;
 box-shadow: 0 0 4px #CCC;
 }
 
