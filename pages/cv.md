@@ -21,14 +21,14 @@ intro: "Curriculum Vitae"
 
 > Developer / Data Analyst
 
-### Specialties
+#### Specialties
 - Digital Marketing Tracking and Analysis
 - Web Analytics (Omniture, Google Analytics, Coremetrics)
 - Web Site Optimization A/B testing (Test&Target, Optimizely)
 - Data Analysis
 - Programming (Web Developer, Data ETL, Data Dashboards)
 
-### Achievements
+#### Achievements
 - Tracking code that is used by 8 Million users daily(and growing)
 - Contributing for, a more data driven organization
 
