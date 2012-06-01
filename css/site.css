@@ -120,7 +120,7 @@ table {
 /* - - CLEAR FLOTS END - - */
 
 body {
-  /*background: #EEEEEE url("http://al3xandr3.github.com/img/bg.png") repeat;*/
+  background-image: url("http://al3xandr3.github.com/img/bgnoise.png") repeat;
   background: #EEEEEE;
   color: #333333;
   font-size: 62.5%;
