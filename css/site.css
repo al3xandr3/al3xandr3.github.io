@@ -120,8 +120,11 @@ table {
 /* - - CLEAR FLOTS END - - */
 
 body {
-  background-image: url("http://al3xandr3.github.com/img/bgnoise.gif") repeat;
-  background: #EEEEEE;
+  background-image: url("http://al3xandr3.github.com/img/bgnoise.gif");
+  background-attachment: fixed;
+  background-color: #EEEEEE;
+  background-position: left 40px;
+  background-repeat: repeat;
   color: #333333;
   font-size: 62.5%;
   font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
