@@ -74,7 +74,7 @@ end
 
 # http://code.google.com/p/wkhtmltopdf/
 desc "pdf"
-task :pdf do
+task :pdf => [:html] do
   system "wkhtmltopdf cv.html cv.pdf"
 end
 

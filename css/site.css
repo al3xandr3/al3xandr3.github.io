@@ -246,6 +246,11 @@ margin-bottom: 60px;
     color: #555555;
     text-decoration: none;
 }
+
+#contacts a {
+    font-weight: bold;
+}
+
 #paginator a:hover, .tags a:hover, #twt a:hover, #post-nav a:hover, #contacts a:hover {
     color: #008BBF;
 }

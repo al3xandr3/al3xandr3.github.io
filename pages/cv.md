@@ -28,10 +28,9 @@ intro: "Curriculum Vitae"
 
 ## Work experience
 
-### October 2006 - Now (5,5 years)
-
+| Dates | **October 2006 - Now (5 years & 7 months)**
+|-----------:|:-------------------------------------------
 | Employer   | **Skype division, Microsoft**
-|-----------:|:-------------------------------------------              
 | Occupation | Product Marketing Manager, Analytics (2006-2011)
 | Contact    | http://www.skype.com 
 | References | [Daniel Jay](http://uk.linkedin.com/in/danjay), [David Lengen](http://www.linkedin.com/in/davidlengen), [Giles Bodger](http://uk.linkedin.com/pub/giles-bodger/13/b2a/2a4) 
@@ -44,10 +43,9 @@ intro: "Curriculum Vitae"
 - Worked on many other digital marketing technical tasks, including: automating marketing email, affiliate tracking & sales validations, web site performance analysis and SEO activities.
 
 
-### August 2005 - October 2006 (1 year and 2 months)
-
-| Employer   | **GFI Portugal**
+| Dates | **August 2005 - October 2006 (1 year & 2 months)**
 |-----------:|:---------------------------
+| Employer   | **GFI Portugal**
 | Occupation | Software Developer 
 | Contact    | http://www.gfi.pt/ 
 | References | [Antonio Vieira](http://pt.linkedin.com/in/tozevv), [Benjamim Ferreira](http://pt.linkedin.com/pub/benjamim-ferreira/1/835/295)
@@ -60,20 +58,20 @@ Migration of a CRM application from Oracle Forms to MS Windows Forms:
 - Coordinating between Indian development team(Kumaran) and the Portuguese acceptance tests team.
 - Developer Tools, including: implementing the continuous integration server, developing regression testing, maintaining the code version repository(svn), automating the daily progress report (Excel & MS Access).
 
-### November 2004 - May 2005 (7 months)
 
-| Employer   | **Instituto Superior Tecnico, Portugal**
+| Dates | **November 2004 - May 2005 (7 months)**
 |-----------:|:----------------------------------------
+| Employer   | **Instituto Superior Tecnico, Portugal**
 | Occupation | Software Developer 
 | Contact    | http://www.ist.utl.pt
                                      
 #### Main activities and responsibilities
 - Development of a Java flow chart user interface for a digital circuit software simulator used in the *Computer's (Internal) Architecture* course of IST University.
 
-### February 2003 - August 2003 (6 months)
 
+| Dates | **February 2003 - August 2003 (6 months)**
+|-----------:|:---------------------------
 | Employer   | **DevNet, Portugal**
-|-----------:|:-------------------------
 | Occupation | Software Developer
 | Contact    | http://www.devnet.pt
 
@@ -98,19 +96,17 @@ Extending a content management system (C# .net web) targeted for portuguese scho
 
 | Programming languages | Ruby, JavaScript, SQL, R, HTML, CSS, C#, Java, C, C++, PHP, Clojure
 |-----------:|:------------------------------
-| Data Tools | Excel, SQL, R, Omniture Discover
+| Data Tools | Excel, SQL, R, Omniture Discover, MS Reporting Services
 | Web Analytics & A/B Testing | Omniture SiteCatalyst, Omniture Test&Target, Omniture Discover, Google Analytics, VisualWebSiteOptimizer, Coremetrics
 | Databases | MS Sql Server, Postgres, SqLite, MySql, Oracle
-| Technologies | MS .NET, JVM, Ruby on Rails, MS Reporting Services
-| Methodologies | Agile methodologies, code version control, regression testing, continuous integration
+| Methodologies | Agile methodologies(scrum), code version control(svn, git), regression testing, continuous integration
 | Github Account | [https://github.com/al3xandr3/](https://github.com/al3xandr3/) 
 
 ## Personal skills and competences
 
 | Languages | Portuguese (mother tongue), English (fluent), French (basic), Spanish (basic), Estonian (basic)
 |-----------:|:---------------------------
-| Social skills | Have worked(& lived) in multi-cultural environments, especially from October 2006, when moved to Estonia
-| Organizational skills | Coordinating web analytics tracking implementation across all Skype web properties
-| | Bridging between an Indian dev team and a Portuguese acceptance testing team, while working in GFI Portugal
+| Social skills | Have worked(& lived) abroad in multi-cultural environments 
+| Organizational skills | Coordinating web analytics tracking implementation across Skype web properties
+| | Intermediating an Indian dev team and a Portuguese acceptance team, when at GFI 
 | Driving licence | European driving license, Category B
-| Website| [http://al3xandr3.github.com/](http://al3xandr3.github.com/)
