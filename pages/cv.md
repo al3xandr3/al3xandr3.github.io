@@ -11,26 +11,20 @@ intro: "Curriculum Vitae"
 | Name           | **Alexandre Matos Martins**
 |---------------:|:---------------------------
 | Address        | Estonia
-| Telephone      | (+372) 58216745            
-| Email          | al3xandr3@gmail.com        
-| Nationality    | Portuguese                 
-| Date of birth  | 09 February 1981           
-| Gender         | Male                       
+| Email          | al3xandr3@gmail.com
+| Nationality    | Portuguese
+| Date of birth  | 09 February 1981
+| Gender         | Male
+| Website   		 | [http://al3xandr3.github.com/](http://al3xandr3.github.com/)
 
 ### Occupational field
 
 > Developer / Data Analyst
 
-#### Specialties
-- Digital Marketing Tracking and Analysis
-- Web Analytics (Omniture, Google Analytics, Coremetrics)
-- Web Site Optimization A/B testing (Test&Target, Optimizely)
-- Data Analysis
-- Programming (Web Developer, Data ETL, Data Dashboards)
-
-#### Achievements
-- Tracking code that is used by 8 Million users daily(and growing)
-- Contributing for, a more data driven organization
+### Specialties
+- Digital Marketing Tracking & Data Analysis
+- Web Analytics & A/B Testing (Omniture, Google Analytics)
+- Developer (Web Developer, Data Dashboards, Data ETL / Automations)
 
 ## Work experience
 
@@ -43,11 +37,11 @@ intro: "Curriculum Vitae"
 | References | [Daniel Jay](http://uk.linkedin.com/in/danjay), [David Lengen](http://www.linkedin.com/in/davidlengen), [Giles Bodger](http://uk.linkedin.com/pub/giles-bodger/13/b2a/2a4) 
 
 #### Main activities and responsibilities
-- Data Analysis on digital marketing channels performance and web site performance
+- Data Analysis on digital marketing channels performance & web site performance.
 - Responsible for a very large web analytics implementation, in the fast changing, high volume traffic of skype.com and all its web properties. Key for measuring Skype's digital marketing activities and web sites performance.
-- Developed A/B testing optimizations on skype.com. Including optimizations on user flows for improving downloads & sales conversion, as well as page optimizations on copy, design, banners for improving click through rates.
+- Developed A/B testing optimizations on skype.com. Including optimizations on user flows for improving downloads & sales conversion, as well as page optimizations on copy, design and banners for improving click through rates.
 - Developed in-house custom tracking solutions for measuring new users acquisition by marketing channel. Key for optimizing natural search, paid search campaigns and marketing campaigns in general.
-- Worked on many other digital marketing technical tasks, including: automating marketing email campaigns, affiliate tracking, affiliate orders validations, web site performance analysis and SEO activities.
+- Worked on many other digital marketing technical tasks, including: automating marketing email, affiliate tracking & sales validations, web site performance analysis and SEO activities.
 
 
 ### August 2005 - October 2006 (1 year and 2 months)
@@ -64,7 +58,7 @@ Migration of a CRM application from Oracle Forms to MS Windows Forms:
 
 - C# .NET Windows Forms software development, mainly focused on the application's core framework.
 - Coordinating between Indian development team(Kumaran) and the Portuguese acceptance tests team.
-- Developer Tools Tasks, including: implementing the continuous integration server, developing regression testing, maintaining the code version repository(svn), automating the daily report dashboard (Excel & MS Access).
+- Developer Tools, including: implementing the continuous integration server, developing regression testing, maintaining the code version repository(svn), automating the daily progress report (Excel & MS Access).
 
 ### November 2004 - May 2005 (7 months)
 
@@ -74,17 +68,17 @@ Migration of a CRM application from Oracle Forms to MS Windows Forms:
 | Contact    | http://www.ist.utl.pt
                                      
 #### Main activities and responsibilities
-- Development of a Java flow chart style user interface for a digital circuit software simulator used in the *Computer's (Internal) Architecture* course of IST University.
+- Development of a Java flow chart user interface for a digital circuit software simulator used in the *Computer's (Internal) Architecture* course of IST University.
 
 ### February 2003 - August 2003 (6 months)
 
-| Employer   | **DevNet**
+| Employer   | **DevNet, Portugal**
 |-----------:|:-------------------------
 | Occupation | Software Developer
 | Contact    | http://www.devnet.pt
 
 #### Main activities and responsibilities:
-Development of a C# .NET Windows application to send bulk marketing  SMS's, integrated with MS Outlook.
+- Development of a C# .NET Windows application to send bulk marketing SMS messages, integrated with MS Outlook.
 
 ## Education and training
 
@@ -93,31 +87,30 @@ Development of a C# .NET Windows application to send bulk marketing  SMS's, inte
 | School     | Instituto Superior Tecnico, Portugal
 | Title awarded | Computer Science Engineer, 5 years degree
 | Contact    | http://www.ist.utl.pt/
-| Level      | 14, 1(worst)-20(best)
 
 #### Principal subjects / skills covered
-Software Engineering, Databases, Artificial Intelligence, Probabilities, Statistics, Maths, Physics, Data Mining, Computer Networks, Object Oriented Programming, Computer Graphics, Interface Design and Usability, Knowledge Representation,.
+Software Engineering, Databases, Artificial Intelligence, Calculus, Probabilities, Statistics, Linear Algebra, Physics, Data Mining, Computer Networks, Object Oriented Programming, Computer Graphics, Interface Design and Usability, Knowledge Representation.
 
 #### Final Thesis
-Extending a content management system (C# .net web) targeted for portuguese schools. Where the main task was integrating a reporting engine (Microsoft Reporting Services with SQL Server) and developing a set of default reports: students progression indicator, exam results per school / per course / per teacher, trends over time, etc...
+Extending a content management system (C# .net web) targeted for portuguese schools. The main task was integrating a reporting engine (Microsoft Reporting Services with SQL Server) and developing a set of automated default reports: students progression indicator, exam results per school / per course / per teacher, trends over time, etc...
 
 ## Computer skills and competences
 
-| Operating systems | Windows, MacOSX, Linux
-|-----------:|:------------------------------
 | Programming languages | Ruby, JavaScript, SQL, R, HTML, CSS, C#, Java, C, C++, PHP, Clojure
-| Data Tools | Excel, Omniture Discover, SQL, R
+|-----------:|:------------------------------
+| Data Tools | Excel, SQL, R, Omniture Discover
+| Web Analytics & A/B Testing | Omniture SiteCatalyst, Omniture Test&Target, Omniture Discover, Google Analytics, VisualWebSiteOptimizer, Coremetrics
 | Databases | MS Sql Server, Postgres, SqLite, MySql, Oracle
-| Web Analytics | Omniture Site Catalyst, Omniture Test&Target, Omniture Discover, Google Analytics, Coremetrics
 | Technologies | MS .NET, JVM, Ruby on Rails, MS Reporting Services
-| Methodologies & Techniques | Agile methodologies, code version control, regression testing, continuous integration
+| Methodologies | Agile methodologies, code version control, regression testing, continuous integration
+| Github Account | [https://github.com/al3xandr3/](https://github.com/al3xandr3/) 
 
 ## Personal skills and competences
 
 | Languages | Portuguese (mother tongue), English (fluent), French (basic), Spanish (basic), Estonian (basic)
 |-----------:|:---------------------------
-| Social skills | Have worked(& lived) in multi-cultural environments, especially since October 2006, when moved to Estonia
-| Organizational skills | Coordinating web analytics tracking implementation across the Skype web applications
+| Social skills | Have worked(& lived) in multi-cultural environments, especially from October 2006, when moved to Estonia
+| Organizational skills | Coordinating web analytics tracking implementation across all Skype web properties
 | | Bridging between an Indian dev team and a Portuguese acceptance testing team, while working in GFI Portugal
 | Driving licence | European driving license, Category B
 | Website| [http://al3xandr3.github.com/](http://al3xandr3.github.com/)
