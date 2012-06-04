@@ -82,7 +82,7 @@ Migration of a CRM application from Oracle Forms to MS Windows Forms:
 
 | Dates      | **September 1999 - July 2005**
 |-----------:|:-------------------------------
-| School     | Instituto Superior Tecnico, Portugal
+| School     | **Instituto Superior Tecnico, Portugal**
 | Title awarded | Computer Science Engineer, 5 years degree
 | Contact    | http://www.ist.utl.pt/
 
@@ -107,6 +107,5 @@ Extending a content management system (C# .net web) targeted for portuguese scho
 | Languages | Portuguese (mother tongue), English (fluent), French (basic), Spanish (basic), Estonian (basic)
 |-----------:|:---------------------------
 | Social skills | Have worked(& lived) abroad in multi-cultural environments 
-| Organizational skills | Coordinating web analytics tracking implementation across Skype web properties
-| | Intermediating an Indian dev team and a Portuguese acceptance team, when at GFI 
+| Organizational skills | Coordinating web analytics tracking implementation across Skype web properties <br /> Intermediating an Indian dev team and a Portuguese acceptance team, when at GFI
 | Driving licence | European driving license, Category B
