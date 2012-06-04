@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Clojure and Selenium cov3 - part ii
+title: Clojure and Selenium part ii - cov3
 categories: 
   - automation
   - clojure
