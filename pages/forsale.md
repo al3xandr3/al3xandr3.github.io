@@ -30,7 +30,7 @@ Great guitar. With original PRS gig bag.
 
 <br/><br/><br/>
 
-## Line6 M9 Stomp Box
+## <font color="red">[*SOLD*] </font> <strike> Line6 M9 Stomp Box </strike>
 
 ![m9](http://www.musicencyclopedia2004.com/eng/lessonsreviews/line6_m9_stompbox_modeler.jpg)
 
