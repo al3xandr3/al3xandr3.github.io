@@ -4,7 +4,6 @@ require 'rake'
 desc 'default'
 task :default => :html
 
-# http://code.google.com/p/wkhtmltopdf/
 desc "html"
 task :html do
 

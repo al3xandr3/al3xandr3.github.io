@@ -100,7 +100,7 @@ Extending a content management system (C# .net web) targeted for portuguese scho
 | Web Analytics & A/B Testing | Omniture SiteCatalyst, Omniture Test&Target, Omniture Discover, Google Analytics, VisualWebSiteOptimizer, Coremetrics
 | Databases | MS Sql Server, Postgres, SqLite, MySql, Oracle
 | Methodologies | Agile methodologies(scrum), code version control(svn, git), regression testing, continuous integration
-| Github Account | [https://github.com/al3xandr3/](https://github.com/al3xandr3/) 
+| Github Developer Account | [https://github.com/al3xandr3/](https://github.com/al3xandr3/) 
 
 ## Personal skills and competences
 
