@@ -1,6 +1,6 @@
 ---
 layout: page
-title: For Sale
+title: For Sale - Big Giveaway
 intro: "for sale"
 ---
 
@@ -12,9 +12,9 @@ All valve, 15 watt portable guitar head. Featuring a unique two stage pre-amp wh
 
 Bought in 2008, only used at home and not very often. Includes Gig bag, and still with original box.
 
-[official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/results?search_query=orange+tiny+terror)
+[official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/watch?v=9MpZoWsFlJQ)
 
-#### *<strike>395 EUR(new)</strike>* **330 EUR**
+#### [*<strike>420€(new)</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm) **295€<font color="red"> (-30%)</font>** 
 
 <br/><br/><br/>
 
@@ -26,7 +26,7 @@ The guitar that launched the PRS SE line, a classic solid mahogany guitar with a
 
 Great guitar. With original PRS gig bag.
 
-#### *<strike>650 EUR(new)</strike>* **470 EUR**
+#### *<strike>650€(new)</strike>* **450€<font color="red"> (-30%)</font>**
 
 <br/><br/><br/>
 
@@ -38,7 +38,7 @@ Bought in 2010, only used at home and not very often, almost as new
 
 [official site](http://line6.com/m9/) / [youtube](http://www.youtube.com/results?search_query=line6+m9)
 
-#### *<strike>385 EUR(new)</strike>* **290 EUR**
+#### *<strike>385€(new)</strike>* **250€<font color="red"> (-35%)</font>**
 
 <br/><br/><br/>
 
@@ -53,7 +53,7 @@ Bought in 2008, only used at home and not very often, almost as new
 [official site](http://www.framus.de/modules/produkte/produkt.php?submenuID=14172&katID=11076&cl=EN) / [youtube](www.youtube.com/results?search_query=Framus+FR212)
 
 
-#### *<strike>398 EUR(new)</strike>* **290 EUR**
+#### *<strike>[409€(new)](http://www.thomann.de/de/framus_fr212_cb.htm)</strike>* **246€<font color="red"> (-40% !!!)</font>**
 
 <br/><br/><br/>
 
@@ -65,7 +65,7 @@ Oldie, but great sounding unit, try it out!
 
 [youtube](http://www.youtube.com/results?search_query=boss+me-30) / [manual](ftp://ftp.roland.co.uk/productsupport/ME-30/01_ME-30_OM.pdf)
 
-#### **35 EUR**
+#### **35€**
 
 <br/><br/><br/>
 
@@ -78,7 +78,7 @@ Oldie, but great sounding unit, try it out!
 
 [official site](http://line6.com/pod20/) / [youtube](http://www.youtube.com/results?search_query=line+6+pod+2)
 
-#### **70 EUR**
+#### **70€**
 
 <br/><br/><br/>
 
@@ -90,7 +90,7 @@ Oldie, but great sounding unit, try it out!
 
 [official site](http://www.behringer.com/EN/Products/DD600.aspx) / [youtube](http://www.youtube.com/results?search_query=dd600+behringer)
 
-#### *<strike>38 EUR(new)</strike>* **25 EUR**
+#### *<strike>[39€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>* **25€<font color="red"> (-36%)</font>**
 
 <br/><br/><br/>
 
@@ -98,9 +98,9 @@ Oldie, but great sounding unit, try it out!
 
 ![tapco](http://www.dv247.com/assets/products/32398_p.jpg)
 
-From 2008, rarely used. 10-channel Compact Mixer with 2 Mono Mic/Line Inputs, 4 Stereo Inputs, and 1 Aux Send. 2x 48v Phantom Power for professional-level condenser microphones.
+Bought in 2008, rarelly used. 10-channel Compact Mixer with 2 Mono Mic/Line Inputs, 4 Stereo Inputs, and 1 Aux Send. 2x 48v Phantom Power for professional-level condenser microphones.
 
-#### *<strike>58 EUR(new)</strike>* **40 EUR**
+#### *<strike>58€(new)</strike>* **35€<font color="red"> (-40%)</font>**
 
 <br/><br/><br/>
 
@@ -112,7 +112,7 @@ Not used, still in original box
 
 [official site](http://www.trendnet.com/products/proddetail.asp?prod=515_TE100-S50g&cat=114)
 
-#### **10 EUR**
+#### **10€**
 
 <br/><br/><br/>
 
@@ -122,17 +122,14 @@ Not used, still in original box
 
 Model: CH750
 
-#### **30 EUR**
+#### **30€**
 
 <br/><br/><br/>
 
 ## Audio Cables
 
-<br/>
-
-2x Guitar Cable, Stereo, 1/4" plug, 2m - **6 EUR**
-
-2x Guitar Cable, Stereo, 1/4" plug, 4m - **9 EUR**
+ - 2x Guitar Cable, Stereo, 1/4" plug, 2m - **6€**
+ - 2x Guitar Cable, Stereo, 1/4" plug, 4m - **9€**
 
 <br/><br/>
 
