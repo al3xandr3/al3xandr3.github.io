@@ -83,6 +83,10 @@ d3.layout.cloud().size([600, 400])
 
 ### 2012
 
+<blockquote about="{{page.url}}#2012-06-28" property="dcterms:date" datatype="xsd:date" content="2012-06-28">
+<p property='dcterms:description'>our brains adapt to what we expose them to. Culture, habits over long periods of time physically change the brain - worth being selective
+</p></blockquote>
+
 <blockquote about="{{page.url}}#2012-06-27" property="dcterms:date" datatype="xsd:date" content="2012-06-27">
 <p property='dcterms:description'>is node.js the new rails? aka "the" platform for agile web dev. javascript has advantage, most widespread language interpreter(ever)? - the browser
 </p></blockquote>
