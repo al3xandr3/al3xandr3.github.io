@@ -62,7 +62,7 @@ draw = (words)->
       .attr("width", 600)
       .attr("height", 400)
     .append("g")
-      .attr("transform", "translate(250,200)")
+      .attr("transform", "translate(260,200)")
     .selectAll("text")
       .data(words)
 
