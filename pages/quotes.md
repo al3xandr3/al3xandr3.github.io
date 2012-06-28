@@ -116,7 +116,7 @@ d3.layout.cloud().size([600, 400])
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-13" property="dcterms:date" datatype="xsd:date" content="2012-01-13">
-<p property='dcterms:description'>my js api's lately get 2 arguments: hash & optional function. A hash for flexible variables, function for arbitrary execution. It hardly deprecates
+<p property='dcterms:description'>my js api's lately get 2 arguments: object & optional function. A object for flexible variables, function for arbitrary execution. It hardly deprecates
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-11" property="dcterms:date" datatype="xsd:date" content="2012-01-11">
@@ -404,5 +404,6 @@ d3.layout.cloud().size([600, 400])
 <blockquote about="{{page.url}}#2009-01-27" property="dcterms:date" datatype="xsd:date" content="2009-01-27">
 <p property='dcterms:description'>watching SICP lecture 6b. streams & their sneeky delays
 </p></blockquote>
+
 
 
