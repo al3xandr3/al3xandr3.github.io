@@ -11,7 +11,6 @@ intro: "Quotes from Twitter"
 <script type="text/javascript" src="http://coffeescript.org/extras/coffee-script.js"></script>
 
 <script type="text/coffeescript">
-
 word_counter =
 
   _ignore: /^(i|im|me|my|myself|we|us|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|whose|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|will|would|should|can|could|ought|i'm|you're|he's|she's|it's|we're|they're|i've|you've|we've|they've|i'd|you'd|he'd|she'd|we'd|they'd|i'll|you'll|he'll|she'll|we'll|they'll|isn't|aren't|wasn't|weren't|hasn't|haven't|hadn't|doesn't|don't|dont|didn't|won't|wouldn't|shan't|shouldn't|can't|cant|cannot|couldn't|mustn't|let's|that's|who's|what's|here's|there's|when's|where's|why's|how's|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|upon|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|say|says|said|shall|just|[0-9]+)$/
@@ -84,6 +83,14 @@ d3.layout.cloud().size([600, 400])
 
 ### 2012
 
+<blockquote about="{{page.url}}#2012-06-28" property="dcterms:date" datatype="xsd:date" content="2012-06-28">
+<p property='dcterms:description'>our brains adapt to what we expose them to. Culture, habits over long periods of time physically change the brain - worth being selective
+</p></blockquote>
+
+<blockquote about="{{page.url}}#2012-06-27" property="dcterms:date" datatype="xsd:date" content="2012-06-27">
+<p property='dcterms:description'>is node.js the new rails? aka "the" platform for agile web dev. javascript has advantage, most widespread language interpreter(ever)? - the browser
+</p></blockquote>
+
 <blockquote about="{{page.url}}#2012-05-28" property="dcterms:date" datatype="xsd:date" content="2012-05-28">
 <p property='dcterms:description'>you can't manage what you can't measure
 </p></blockquote>
@@ -105,11 +112,11 @@ d3.layout.cloud().size([600, 400])
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-23" property="dcterms:date" datatype="xsd:date" content="2012-01-23">
-<p property='dcterms:description'>evolution says that the best fit end up doing better and more widespread, so if you find yourself being very unique and different, beware
+<p property='dcterms:description'>evolution says that the ones best fit end up doing better and more widespread, so if you find yourself being very unique and different, beware
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-13" property="dcterms:date" datatype="xsd:date" content="2012-01-13">
-<p property='dcterms:description'>my js api's lately get 2 arguments: hash & optional function. A hash for flexible variables, function for arbitrary execution. It hardly deprecates
+<p property='dcterms:description'>my js api's lately get 2 arguments: object & optional function. A object for flexible variables, function for arbitrary execution. It hardly deprecates
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-11" property="dcterms:date" datatype="xsd:date" content="2012-01-11">
@@ -397,4 +404,6 @@ d3.layout.cloud().size([600, 400])
 <blockquote about="{{page.url}}#2009-01-27" property="dcterms:date" datatype="xsd:date" content="2009-01-27">
 <p property='dcterms:description'>watching SICP lecture 6b. streams & their sneeky delays
 </p></blockquote>
+
+
 
