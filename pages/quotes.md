@@ -112,7 +112,7 @@ d3.layout.cloud().size([600, 400])
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-23" property="dcterms:date" datatype="xsd:date" content="2012-01-23">
-<p property='dcterms:description'>evolution says that the best fit end up doing better and more widespread, so if you find yourself being very unique and different, beware
+<p property='dcterms:description'>evolution says that the ones best fit end up doing better and more widespread, so if you find yourself being very unique and different, beware
 </p></blockquote>
 
 <blockquote about="{{page.url}}#2012-01-13" property="dcterms:date" datatype="xsd:date" content="2012-01-13">
@@ -404,4 +404,5 @@ d3.layout.cloud().size([600, 400])
 <blockquote about="{{page.url}}#2009-01-27" property="dcterms:date" datatype="xsd:date" content="2009-01-27">
 <p property='dcterms:description'>watching SICP lecture 6b. streams & their sneeky delays
 </p></blockquote>
+
 
