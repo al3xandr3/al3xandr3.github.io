@@ -94,7 +94,7 @@ Oldie, but great sounding unit, try it out!
 
 <br/><br/><br/>
 
-## Tapco MIX 100 Ultra-Compact Mixer
+## <font color="red">[*SOLD*] </font> <strike>Tapco MIX 100 Ultra-Compact Mixer</strike>
 
 ![tapco](http://www.dv247.com/assets/products/32398_p.jpg)
 
