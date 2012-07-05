@@ -13,7 +13,7 @@ intro: "<img alt='SemanticWebQuotes' src='http://al3xandr3.github.com/img/semant
 
 Practical examples on how to get onto the semantic web and on using it. 
 
-### Getting in There
+## Getting in There
 
 Start by creating a semantic web personal online profile using the Friend-Of-A-Friend (FOAF) vocabulary. The FOAF has became the standard for personal profiles on the semantic web, and as the name implies, it also lets you link to people you know.
 
@@ -38,24 +38,43 @@ How many times have you filled in your personal profile information on web sites
 
 The semantic web is about sharing data in an agreed upon format, so that the data can be easily linked-to and (re)used. Thus, once my profile is on the semantic web any new site that I sign-up for, can just read-in this data instead of asking me to fill it in.
 
-> Sharing data, in an agreed upon format, is an incentive for re-use and disincentive for wasteful duplication. Choose #semanticweb.
+> Sharing data, in an agreed upon format, is an incentive for re-use and disincentive for wasteful duplication - #semanticweb
 
 
-### Adding the Site
+
+## Adding the Site
 
 Next step is to add the web site onto the semantic web. 
 
 Augmenting a web site content with semantic data, facilitates data sharing, essentially web pages became little standalone data repositories that can be understood by the semantic web tools.
 
-The way to do it is simple enough; add (invisible)html tags into the existing web pages that specify (the semantics)meaning of the html elements. 
+The way to do it is simple enough; add (invisible)html properties into the existing web pages that specify (the semantics)meaning of the html elements. 
 
 These extra html tags, that add meaning to web pages, are defined in a microformat called RDFa, quoting [Wikipedia](http://en.wikipedia.org/wiki/RDFa):
 
 > RDFa defines how to embed RDF subject-predicate-object expressions within XHTML documents, it also enables the extraction of RDF model triples by compliant user agents.
 
-For example in the **About** section of this site, I added some rdfa tags saying that all that section is about Me and that "Alexandre Matos Martins" is my name and that I am of type Person, and that the Twitter link is one of my OnlineAccounts, etc...
+For example, on the **About** section of my site, we can define rdfa tags saying "Alexandre Matos Martins" is my name and that I am of type Person, a link to my my foaf profile and my online accounts like Twitter and Skype:
 
-With the rdfa tags added to the site is now possible to use semantic web tools to query website data. For example: find the topics(subjects) of the site (the _Tags_ cloud):
+  Html:
+
+    <h2>About</h2>
+    <div about="http://al3xandr3.github.com/#me" typeof="foaf:Person" property="rdfs:seeAlso" content="http://al3xandr3.github.com/foaf.rdf">
+      <a rel="foaf:OnlineAccount" href="http://twitter.com/al3xandr3">twitter</a>
+      <a rel="foaf:skypeID" href="skype:al3x.martins?userinfo">skype</a>
+    </div>
+
+With the rdfa tags on the site is then possible to use generic semantic web tools to query website data.
+
+For example, to find the topics of a site(whats the site about), just aument the html list of topics of the site with rdfa tags, like so:
+
+  Html:
+
+    <a rel="dcterms:subject" href="/tags/SPARQL.html">SPARQL</a>
+    <a rel="dcterms:subject" href="/tags/data.html">data</a>
+    <a rel="dcterms:subject" href="/tags/abtesting.html">abtesting</a>
+
+  This allows, to Query It:
 
     PREFIX dcterms: <http://purl.org/dc/terms/>
     SELECT ?subject 
@@ -67,13 +86,11 @@ With the rdfa tags added to the site is now possible to use semantic web tools t
 
 <a href="http://www.sparql.org/sparql?query=++++PREFIX++dcterms%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0D%0A++++SELECT+%3Fsubject+%0D%0A++++FROM+%3Chttp%3A%2F%2Fwww.w3.org%2F2007%2F08%2FpyRdfa%2Fextract%3Furi%3Dhttp%3A%2F%2Fal3xandr3.github.com%2F%3E%0D%0A++++WHERE+%7B%0D%0A+++++%3Chttp%3A%2F%2Fal3xandr3.github.com%3E+%3Fpredicate+%3Fsubject+.+%0D%0A+++++%3Fs+dcterms%3Asubject+%3Fsubject+.%0D%0A++++%7D&default-graph-uri=&output=xml&stylesheet=%2Fxml-to-html.xsl" target="_blank">run on sparql.org &rarr;</a>
 
-Note that this is a live search, i.e. whenever i add a new topic(subject) into the tag cloud of the site, re-running the query above will show the new topics also.
+
+> RDFa augments web pages as standalone data repositories that #semanticweb can understand, doubling as normal web pages, is like web scraping done right
 
 
-> RDFa augments web pages as standalone data repositories that #semanticweb can understand, doubling as normal web pages, imagine web scraping done right.
-
-
-### Using It
+## Using It
 
 Why is all this data useful? well for a more futuristic good use case check the [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html).
 
@@ -81,9 +98,21 @@ But in the meanwhile, we can already play around with more mundane things, for e
 
 I collected a few of my twitter quotes on the [quotes page](http://al3xandr3.github.com/pages/quotes.html) and each quote has an rdfa date on it.
 
+  Html:
+
+    <blockquote about="{{page.url}}#2011-12-21" property="dcterms:date" datatype="xsd:date" content="2011-12-21">
+    <p property='dcterms:description'>data,data,data! a #semanticweb use case on Xmas: <a href='http://al3xandr3.github.com/2011/12/18/data.html'>al3xandr3.github.com</a>
+    </p></blockquote>
+
+    <blockquote about="{{page.url}}#2012-01-10" property="dcterms:date" datatype="xsd:date" content="2012-01-10">
+    <p property='dcterms:description'>Sharing data, in an agreed upon format, is an incentive for re-use and disincentive for wasteful duplication. #semanticweb
+    </p></blockquote>
+
+    etc...
+
 So we can use the following sparql query to fetch directly from the quotes page, the dates and how many quotes, on each date, I've wrote:
 
-    PREFIX  dcterms: <http://purl.org/dc/terms/>
+    PREFIX dcterms: <http://purl.org/dc/terms/>
     SELECT ?date (count(?subject) AS ?total)
     FROM <http://www.w3.org/2007/08/pyRdfa/extract?uri=http://al3xandr3.github.com/pages/quotes.html>
     WHERE { 
@@ -104,7 +133,7 @@ I use jquery .ajax to go fetch the data of the sparql query defined above, do so
 
 Look at the source code of this page, to see how it works.
 
-#### Quotes per day of the week:
+### Quotes per day of the week:
 
 <br />
 <br />
