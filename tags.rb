@@ -7,12 +7,12 @@ puts "generating tags..."
 options = Jekyll.configuration({'source' => "./"})
 site = Jekyll::Site.new(options)
 site.read_posts('')
-site.categories.sort.each do |category, posts|
+site.tags.each do |tag, posts|
   html = ''
   html << <<-HTML
 ---
 layout: page
-title: Posts on "#{category}"
+title: Tag "#{tag}"
 ---
 
 HTML
@@ -30,11 +30,11 @@ HTML
   end
   html << '</div></ul>'
 
-  if category == 'R'
+  if tag == 'R'
     html << '<br/>If you\'r into R,  <a href="http://www.r-bloggers.com/" class="alt">R-bloggers</a> is a good source of R news'
   end
 
-  File.open("./tags/#{category}.html", 'w+') do |file|
+  File.open("./tags/#{tag}.html", 'w+') do |file|
     file.puts html
   end
 end

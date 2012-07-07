@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Monitoring Productivity Experiment
-categories: 
+category: data
+tags:
   - data
   - productivity
   - statistics
@@ -11,8 +12,9 @@ categories:
 intro: "<img src='http://al3xandr3.github.com/img/prod-intro.jpeg' alt='prod-intro.jpeg' />For over a year now, i've been collecting how much time i spend in computer and how much of it is actually used in creative/productive activities.\n"
 ---
 
+[![prod-intro.jpeg][1]][2] 
 
-[![prod-intro.jpeg][1]][2] For over a year now, i've been collecting how much
+For over a year now, i've been collecting how much
 time i spend in computer and how much of it is actually used in
 creative/productive activities.
 

@@ -2,19 +2,13 @@
 layout: default
 ---
 
-<div class="post">  
-<div class="content-page">
-  <div class="link-post"></div>
-  <h3><a href="{{ page.url }}" property="dcterms:title">{{ page.title }}</a></h3>
-  <div class="description"  id="post-content">        
-  <div id="{% if page.title == 'About' %}about{% else %}page{% endif %}">
-    {{ content }}
-  </div>
-  </div>
-  </div>
-  
-  <span id="post-nav" style="font-size: 1.3em; line-height: 2.5em;">
-    <a class="jump slide-left" title="top of the page" href="javascript:void(0);">Top</a>
-    <span id="tosep" style="color:#DDDDDD;">|</span> 
-    <a class="" title="Click to go back to home page" href="/">Home</a>
-    </span>
+<article>
+  <section>
+  <h1>{{page.title}}</h1>
+  {{ content }}
+  </section>
+</article>
+
+<aside>
+  <p>{{page.sidebar}}</p>
+</aside> 

@@ -1,5 +1,6 @@
-/*jslint bitwise: true, browser: true, eqeqeq: true, immed: true, newcap: true, nomen: true, onevar: true, plusplus: true, white: true, widget: true, undef: true, indent: 2, nomen: false*/
-/*global jQuery, _gaq $*/
+/* Author:
+  Alexandre Martins
+*/
 
 (function ($) {
   $.fn.spanify = function (str, aclass) {
@@ -12,12 +13,6 @@
       });
   };
 }(jQuery));
-
-var al3xandr3 = {};
-
-al3xandr3.color1 = "#008BBF";
-al3xandr3.color2 = "#008BBF";
-al3xandr3.color3 = "#E7E7E7";
 
 //On Document Ready
 $(function () {

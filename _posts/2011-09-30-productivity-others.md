@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Monitoring Productivity II - the Others
-categories: 
+category: data
+tags:
   - data
   - productivity
   - statistics

@@ -1,134 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-    "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"       
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:dcterms="http://purl.org/dc/terms/"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-      version="XHTML+RDFa 1.0" xml:lang="en">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<!-- META -->
-<meta http-equiv="content-type" content="application/xhtml+xml" />
-<title>{{page.title}}</title>
-<base href="{{site.url}}" />
-<meta name="title" property="dcterms:title foaf:primaryTopic" content="{{site.title}}" />
-<link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf" />
-<meta rel="dcterms:creator" href="http://al3xandr3.github.com/#me" />
-<meta name="author" content="Alexandre Matos Martins" />
-<meta name="description" content="{% if page.home %}{{ site.author }}{% endif %}{{ page.title }}" />
-<meta name="keywords" content="{{ site.keywords }}" />
-<meta name="robots" content="all,follow" />
-<meta name="google-site-verification" content="5FljcF-364B5I6-KW19BXYLGQEm23cqHJbVDzS7x6Os" />
-<link href="/atom.xml" rel="alternate" title="" type="application/atom+xml" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  <title>{{page.title}}</title>
+  <meta name="author" content="Alexandre Matos Martins" />
+  <meta name="description" content="{% if page.home %}{{ site.author }}{% endif %}{{ page.title }}" />
+  <link href="/atom.xml" rel="alternate" title="" type="application/atom+xml" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 
-<!-- CSS -->
-<link rel="stylesheet" href="/css/blueprint/screen.css"
-type="text/css" media="screen, projection" />   
-<link rel="stylesheet" href="/css/blueprint/print.css"
-type="text/css" media="print" />
-<!--[if lt IE 8]>
-<link rel="stylesheet" href="/css/blueprint/ie.css"
-type="text/css" media="screen, projection">
-<![endif]-->
-<link rel="stylesheet" href="/css/site.css"
-type="text/css" media="screen, projection" />
-<link rel="stylesheet" href="/css/jqModal.css"
-type="text/css" media="screen, projection" />
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div id="header-container">
+    <header class="wrapper clearfix">
+      <h1 id="title">Al3xandr3</h1>
+      <nav>
+        <ul>
+          <li><a href="/" style="background: #199900">home</a></li>
+          <li><a href="/pages/quotes.html" style="background: #F5B401">quotes</a></li>
+          <li><a href="/pages/code.html" style="background: #AF1D00">code</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div id="main-container">
+    <div id="main" class="wrapper clearfix">      
+        {{ content }}     
+    </div> <!-- #main -->
+  </div> <!-- #main-container -->
+
+<div id="about-container">
+  <div class="wrapper">
+
+    <div id="side" class="clearfix">
+    <h2>Search</h2>
+    {% include search.html %}
+    </div>
+            
+    <article>
+    <h2>About</h2>
+    <img class="portrait" alt="al3xandr3" src="http://al3xandr3.github.com/img/al3xandr3.png" />
+    <strong>Alexandre Matos Martins</strong><br />
+    <span>Developer / Data Analyst</span><br />
+    <a href="/pages/cv.html">Curriculum Vitae</a>
+    <br />
+    <a href="http://twitter.com/al3xandr3">twitter</a>
+    <a href="http://github.com/al3xandr3">github</a>
+    <a href="http://www.linkedin.com/in/al3xandr3">linkedin</a>
+    <a href="skype:al3x.martins?userinfo">skype</a>
+    <br><br>
+    <h2 id="tw-title" style="display: none;">Twitter</h2>
+    <div id="twitter" style="display: none;"></div>
+    </article>
+
+  </div> <!-- wrapper -->
+</div> <!-- about-container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- Twitter -->
+{% include twitter.html %}
 
 <!-- Prettify -->
 <link href="/css/prettify.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="/js/prettify.js"></script>
+<script type="text/javascript" src="/js/libs/prettify.js"></script>
 
-<!-- JS -->
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/al3xandr3.js"></script>
-
-<!-- Google Analytics Asynchronous tracking -->
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-91402-14']);
-_gaq.push(['_setSiteSpeedSampleRate', 100]);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = 'http://www'  + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+<script src="/js/script.js"></script>
+<script>
+  var _gaq=[['_setAccount','UA-91402-14'],['_setSiteSpeedSampleRate', 100],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-</head>
-<body>
-
-<div class="patt">
-<div id="container">
-  
-<div id="header">
-  <h1><a href="/" id="title" title="{{site.title}}">Al3xandr3</a></h1>
-  <ul id="nav">
-    <li><a href="/pages/quotes.html">quotes</a></li>
-    <li><a href="/pages/code.html">code</a></li>
-    <li><a href="http://feeds.feedburner.com/al3xandr3" target="_blank">rss</a></li>
-  </ul>
-</div>
-
-		
-<div id="contents">
-  {{ content }}
-</div>
-
-
-<div id="footer">
-  <div class="description" about="http://al3xandr3.github.com/#me" typeof="foaf:Person" property="rdfs:seeAlso" content="http://al3xandr3.github.com/foaf.rdf">
-    <h2>About</h2>
-     <span rel="foaf:img"><img class="portrait" alt="al3xandr3" src="http://al3xandr3.github.com/img/al3xandr3.png" /></span>
-
-    <p>
-
-    <strong><span property="foaf:name"><span property="foaf:nick" content="al3xandr3">Alexandre</span> Matos Martins</span></strong><br />
-    <span property="foaf:interest">Developer / Data Analyst</span><br />
-    <a href="/pages/cv.html">Curriculum Vitae</a>
-    <br />
-    <br />      
-    <span id="contacts">Find Me:
-      <a rel="foaf:OnlineAccount" href="http://twitter.com/al3xandr3">twitter</a>
-      <a rel="foaf:OnlineAccount" href="http://github.com/al3xandr3">github</a>
-      <a rel="foaf:OnlineAccount" href="http://www.linkedin.com/in/al3xandr3">linkedin</a>
-      <a rel="foaf:skypeID" href="skype:al3x.martins?userinfo">skype</a>
-    </span>
-
-    </p>
-	
-  </div>
-  <div class="follow">
-    <h2>Tags</h2>
-    <p class="tags">
-    {% include cloud.html %}
-    </p>
-  </div>
-
-  <div class="description" id="twitter">
-    <h2 id="tw-title" style="display: none">Twitter</h2>
-    {% include twitter.html %}
-  </div>
-
-  <div class="search">
-    <h2>Search</h2>
-    {% include search.html %}
-  </div>
-    
-  <p class="footer">
-    <strong>al3xandr3</strong>
-  </p>
-
-</div>
-</div>
-
-</div>
 
 </body>
 </html>
-

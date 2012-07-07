@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Big Brother Google
-categories:
+category: data
+tags:
   - data
 intro: "<b>(A)Tipical Day?</b>: Its morning, you get to your computer, go check the gmail, ah there's some some news fotos on web picasa from a friend, lets check them out&hellip; \n"
 ---

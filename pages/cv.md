@@ -2,6 +2,7 @@
 layout: page
 title: Curriculum Vitae
 intro: "Curriculum Vitae"
+sidebar: "<h4>my <a href='http://www.linkedin.com/in/al3xandr3'>linkedin</a> account</h4>"
 ---
 
 <link rel="stylesheet" href="http://al3xandr3.github.com/css/cv.css" type="text/css" media="screen, projection" />

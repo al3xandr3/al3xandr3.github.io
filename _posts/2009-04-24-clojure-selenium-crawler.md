@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Clojure and Selenium
-categories: 
+category: code
+tags:
   - automation
   - clojure
   - webcrawler

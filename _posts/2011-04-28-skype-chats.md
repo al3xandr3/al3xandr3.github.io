@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Who Chats the Most?
-categories: 
+category: visualization
+tags:
   - data
   - visualization
   - statistics

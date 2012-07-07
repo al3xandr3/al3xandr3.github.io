@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Dashboarding
-categories: 
+category: code
+tags:
   - data
   - visualization
   - ruby
