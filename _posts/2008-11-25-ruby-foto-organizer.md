@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Little 'ruby' photo organizer
-categories: 
+category: code
+tags:
   - automation
   - ruby
 intro: "Place this script in a folder full of pictures, run it, and it will <strong>organize the pictures</strong> into folders by the day they were taken."

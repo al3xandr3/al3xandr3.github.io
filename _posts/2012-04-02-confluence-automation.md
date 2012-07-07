@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Confluence wiki Automation
-categories: 
+category: code
+tags:
   - ruby
   - automation
 intro: "Script to <strong>automate</strong> updating content of a confluence wiki, both page content and attachments. Can be used as standalone or as a (ruby)lib"

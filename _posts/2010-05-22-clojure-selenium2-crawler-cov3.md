@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Clojure and Selenium part ii - cov3
-categories: 
+category: code
+tags:
   - automation
   - clojure
   - webcrawler

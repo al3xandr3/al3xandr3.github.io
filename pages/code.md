@@ -2,25 +2,24 @@
 layout: page
 title: Code
 intro: "al3xandr3's Code"
+sidebar: "<h4>my <a href='https://github.com/al3xandr3/'>github</a> account</h4>"
 ---
 
-### R Utils
+## R Utils
 
 collection of my R util scripts.
 
 [code](https://github.com/al3xandr3/r) - _January 2012_ - Tools: R
 
-* * *
-
-### Ruby Utils
+<br/>
+## Ruby Utils
 
 collection of my ruby util scripts.
 
 [code](https://github.com/al3xandr3/ruby) - _January 2012_ - Tools: ruby
 
-* * *
-
-### Dashboard Builder
+<br/>
+## Dashboard Builder
 
 A framework for building up interactive html dashboards in ruby. Contains
 implementation of both simple & multivariate regression for visualizing
@@ -29,9 +28,8 @@ for posting the end result onto a confluence wiki page.
 
 [code][1] - [web][2] - _June 2011_ - Tools: ruby, javascript, html
 
-* * *
-
-### Linear & Logistic Regression
+<br/>
+## Linear & Logistic Regression
 
 A collection of exercises from the OpenClassRoom machine learning classes.
 Serve as a reference in implementing linear and logistic regression with some
@@ -45,9 +43,8 @@ added debugging features in R.
 
 _March 2011_ - Tools: R
 
-* * *
-
-### cov3 - Custom Web Crawler
+<br/>
+## cov3 - Custom Web Crawler
 
 A clojure, selenium based web crawler with a couple of variations that i found
 useful. Cov3 crawls pages with the intention of executing
@@ -60,9 +57,8 @@ csv file, with the urls and tests to execute on each.
 
 [code][13] - [web][14] - _May 2010_ - Tools: clojure, selenium
 
-* * *
-
-### jQuery Twitter 'mini' plugin
+<br/>
+## jQuery Twitter 'mini' plugin
 
 A jQuery plugin to display a twitter feed on a web page(blog for example). The
 twitter api feed, i found, has an annoying particularity of not always
@@ -74,9 +70,9 @@ timezone shift.
 
 [code][16] - [web][17] - _April 2010_ - Tools: javascript, jquery
 
-* * *
 
-### The Daily Extract
+<br/>
+## The Daily Extract
 
 Scripts that automate the process of aggregating data in a database,
 extracting it, outputting results into csv files and sending them over by

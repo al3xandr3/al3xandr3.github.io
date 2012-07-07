@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Visualizing Data, with Processing and JRuby
-categories: 
+category: data
+tags: 
   - data
   - visualization
   - statistics

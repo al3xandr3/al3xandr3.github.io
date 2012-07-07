@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: How to download videolectures.net videos with VLC
-categories: 
+category: other
+tags:
   - automation
 intro: "<a href=\"http://videolectures.net/\">videolectures.net</a> has very good content but, no good way to download the videos(at least as of now)."
 ---

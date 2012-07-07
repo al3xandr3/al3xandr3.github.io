@@ -1,17 +1,10 @@
-<div id="twt" style="display: none;">
+
   <script type="text/javascript" src="/js/twitter.js"></script>
   <script type="text/javascript">
   $(function() {     
-    $('#twt').twitter({'user':'al3xandr3','count':3}, function (e) {
+    $('#twitter').twitter({'user':'al3xandr3','count':3}, function (e) {
       $('#tw-title').show();
       e.show();
-      $("#twt p").css({
-        "margin": "0 0 0.7em",
-      });
-      $("#twt").css({
-        "line-height": "1.5em",
-      });     
     });
   });
   </script>
-</div>

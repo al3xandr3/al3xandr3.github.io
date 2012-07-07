@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Probability simulation of basketball throws
-categories:
+category: statistics
+tags:
   - montecarlo
   - statistics
   - clojure

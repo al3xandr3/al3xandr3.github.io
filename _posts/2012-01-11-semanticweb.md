@@ -1,13 +1,14 @@
 --- 
 layout: post
 title: How to get into the Semantic Web
-categories: 
+category: data
+tags:
   - data
   - semanticweb
   - javascript
   - statistics
   - visualization
-  - SPARQL
+  - sparql
 intro: "<img alt='SemanticWebQuotes' src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/><br /><strong>Practical examples</strong> on <i>getting in there</i>, <i>adding the site</i> and <i>using it</i>"
 ---
 

@@ -2,6 +2,7 @@
 layout: page
 title: For Sale - Big Giveaway
 intro: "for sale"
+sidebar: "<h3>Contact</h3>email <a href='mailto:al3xandr3@gmail.com?Subject=For%20Sale'>al3xandr3@gmail.com</a><br>skype <a href='skype:al3x.martins?userinfo'>al3x.martins</a>
 ---
 
 ## Orange Tiny Terror
@@ -16,7 +17,7 @@ Bought in 2008, only used at home and not very often. Includes Gig bag, and stil
 
 #### [*<strike>420€(new)</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm) **295€<font color="red"> (-30%)</font>** 
 
-<br/><br/><br/>
+<br/><br/>
 
 ## PRS Santana SE Vintage Cherry
 
@@ -28,7 +29,7 @@ Great guitar. With original PRS gig bag.
 
 #### *<strike>650€(new)</strike>* **450€<font color="red"> (-30%)</font>**
 
-<br/><br/><br/>
+<br/><br/>
 
 ## <font color="red">[*SOLD*] </font> <strike> Line6 M9 Stomp Box </strike>
 
@@ -40,7 +41,7 @@ Bought in 2010, only used at home and not very often, almost as new
 
 #### *<strike>385€(new)</strike>* **250€<font color="red"> (-35%)</font>**
 
-<br/><br/><br/>
+<br/><br/>
 
 ## Framus FR212 CB
 
@@ -55,7 +56,7 @@ Bought in 2008, only used at home and not very often, almost as new
 
 #### *<strike>[409€(new)](http://www.thomann.de/de/framus_fr212_cb.htm)</strike>* **246€<font color="red"> (-40% !!!)</font>**
 
-<br/><br/><br/>
+<br/><br/>
 
 ##  <font color="red">[*SOLD*] </font> <strike>Boss ME-30 multi-effects unit</strike>
 
@@ -67,7 +68,7 @@ Oldie, but great sounding unit, try it out!
 
 #### **35€**
 
-<br/><br/><br/>
+<br/><br/>
 
 
 ## Line6 POD2.0
@@ -80,7 +81,7 @@ Oldie, but great sounding unit, try it out!
 
 #### **70€**
 
-<br/><br/><br/>
+<br/><br/>
 
 ## Behringer DD600 delay pedal
 
@@ -92,7 +93,7 @@ Oldie, but great sounding unit, try it out!
 
 #### *<strike>[39€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>* **25€<font color="red"> (-36%)</font>**
 
-<br/><br/><br/>
+<br/><br/>
 
 ## <font color="red">[*SOLD*] </font> <strike>Tapco MIX 100 Ultra-Compact Mixer</strike>
 
@@ -102,7 +103,7 @@ Bought in 2008, rarelly used. 10-channel Compact Mixer with 2 Mono Mic/Line Inpu
 
 #### *<strike>58€(new)</strike>* **35€<font color="red"> (-40%)</font>**
 
-<br/><br/><br/>
+<br/><br/>
 
 ## 5-Port 10/100Mbps Ethernet Switch
 
@@ -114,7 +115,7 @@ Not used, still in original box
 
 #### **10€**
 
-<br/><br/><br/>
+<br/><br/>
 
 ## Yamaha Short Cymbal Boom/Arm 
 
@@ -124,7 +125,7 @@ Model: CH750
 
 #### **30€**
 
-<br/><br/><br/>
+<br/><br/>
 
 ## Audio Cables
 

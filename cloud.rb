@@ -10,10 +10,10 @@ site.read_posts('')
 
 html = ""
 
-site.categories.sort.each do |category, posts|
+site.tags.sort.each do |tag, posts|
   s = posts.count
-  font_size = 10 + (s*1.2);
-  html << "<a rel=\"dcterms:subject\" href=\"/tags/#{category}.html\" title=\"Postings tagged #{category}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{category}</a> "
+  font_size = 16 + (s*1.2);
+  html << "<a href=\"/tags/#{tag}.html\" title=\"Posts tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\">#{tag}</a> "
 end
 
 File.open('./_includes/cloud.html', 'w+') do |file|

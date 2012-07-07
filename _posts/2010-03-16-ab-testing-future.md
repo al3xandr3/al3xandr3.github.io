@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: AB testing tools in the Future
-categories: 
+category: abtesting
+tags:
   - data
   - abtesting
   - idea

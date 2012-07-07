@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: Lem-E-Tweakit and Logic programming
-categories:
+category: other
+tags:
   - SQL
 intro: "<img src='http://al3xandr3.github.com/img/tweakit.png' alt='http://al3xandr3.github.com/img/tweakit.png' />While watching the SICP lectures  8a &amp; 8b, one thing that i realized is that this logic programming they mention seems to be very similar to kind of things we use SQL for, just better&hellip; a lot more flexible."
 ---

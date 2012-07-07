@@ -1,7 +1,8 @@
 --- 
 layout: post
 title: jQuery Twitter 'mini' plugin
-categories: 
+category: code
+tags:
   - javascript
 intro: "Here's a little jQuery plugin for displaying a twitter feed into a web page."
 ---
@@ -16,7 +17,6 @@ page.
 ## Demo:
 
 For the code:
-
     
     $(function() {
       $('#tw').click(function() {
