@@ -24,7 +24,7 @@ HTML
 
         <li>
           <a href="#{post.url}">#{post_data['title']}</a>
-          <span id="post-date" class="alt">#{ post.date.strftime('%d %b %Y') }</span>
+          <span id="post-date" style="font-size: 90%">#{ post.date.strftime('%d %b %Y') }</span>
        </li>
       HTML
   end
