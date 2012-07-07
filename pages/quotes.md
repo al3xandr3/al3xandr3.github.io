@@ -60,7 +60,7 @@ draw = (words)->
       .attr("width", "100%")
       .attr("heigth", "100%")
     .append("g")
-      .attr("transform", "translate(165,275)")
+      .attr("transform", "translate(125,240)")
     .selectAll("text")
       .data(words)
 
@@ -72,7 +72,7 @@ draw = (words)->
       .style("fill", (d)-> fill(d.text.toLowerCase()) )
 
 d3.layout.cloud()
-  .size([400, 650])
+  .size([290, 450])
   .words(data)
   .rotate( -> 0 )
   .padding(1)
