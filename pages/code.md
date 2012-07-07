@@ -5,20 +5,6 @@ intro: "al3xandr3's Code"
 sidebar: "<h4>my <a href='https://github.com/al3xandr3/'>github</a> account</h4>"
 ---
 
-## R Utils
-
-collection of my R util scripts.
-
-[code](https://github.com/al3xandr3/r) - _January 2012_ - Tools: R
-
-<br/>
-## Ruby Utils
-
-collection of my ruby util scripts.
-
-[code](https://github.com/al3xandr3/ruby) - _January 2012_ - Tools: ruby
-
-<br/>
 ## Dashboard Builder
 
 A framework for building up interactive html dashboards in ruby. Contains
@@ -86,6 +72,7 @@ manipulation, statistics on extracted volumes and sqlite for storing the task
 list queue and statistics over time.
 
 [code][18] - _2007&2009_ - Tools: ruby, jruby, clojure
+
 
    [1]: https://github.com/al3xandr3/Dashboard
    [2]: http://al3xandr3.github.com/2011/05/24/dashboards.html
