@@ -8,7 +8,6 @@ tags:
   - javascript
   - statistics
   - visualization
-  - sparql
 intro: "<img alt='SemanticWebQuotes' src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/><br /><strong>Practical examples</strong> on <i>getting in there</i>, <i>adding the site</i> and <i>using it</i>"
 ---
 
