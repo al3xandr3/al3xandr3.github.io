@@ -7,7 +7,9 @@ tags:
 intro: "<img src='http://al3xandr3.github.com/img/tweakit.png' alt='http://al3xandr3.github.com/img/tweakit.png' />While watching the SICP lectures  8a &amp; 8b, one thing that i realized is that this logic programming they mention seems to be very similar to kind of things we use SQL for, just better&hellip; a lot more flexible."
 ---
 
-![http://al3xandr3.github.com/img/tweakit.png][1] While watching the SICP
+![http://al3xandr3.github.com/img/tweakit.png][1] 
+
+While watching the SICP
 lectures 8a & 8b, one thing that i realized is that this logic programming
 they mention seems to be very similar to kind of things we use SQL for, just
 better... ie. a lot more flexible.

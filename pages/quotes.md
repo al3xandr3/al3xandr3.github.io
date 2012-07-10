@@ -85,6 +85,14 @@ d3.layout.cloud()
 
 ## 2012
 
+<blockquote data-day="2012-07-10">
+Following the herd provides shelter, who wants to be alone facing the hungry lion? But it can also limit your gains, you find water, everybody drinks
+</blockquote>
+
+<blockquote data-day="2012-07-10">
+Following the herd implies regression towards the mean(of the herd), both for gain and losses. strategy: join a herd better than you, but for ultimate rewards: you'll need to go alone
+</blockquote>
+
 <blockquote data-day="2012-06-28">our brains adapt to what we expose them to. Culture, habits over long periods of time physically change the brain - worth being selective</blockquote>
 
 <blockquote data-day="2012-06-27">is node.js the new rails? aka "the" platform for agile web dev. javascript has advantage, most widespread language interpreter(ever)? - the browser</blockquote>
