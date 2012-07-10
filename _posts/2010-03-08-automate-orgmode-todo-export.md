@@ -6,7 +6,7 @@ tags:
   - automation
   - ruby
   - emacs
-intro: "Here's the geek automation of the week, its for helping creating reports from my TODO tasks list when using the amazing emacs org-mode(<a href=\"http://orgmode.org/\">see here whats orgmode all about</a>)."
+intro: "Automating reports from my (emacs org-mode)TODO list"
 ---
 
 Here's the geek automation of the week, its for helping creating reports from

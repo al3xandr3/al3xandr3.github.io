@@ -6,7 +6,7 @@ tags:
   - abtesting
   - keyboard
   - idea
-intro: "The most common keyboard layout in use today is called QWERTY, it takes its name from the first six characters seen in the far left of the keyboard's top row of letters. <img src='http://al3xandr3.github.com/img/keyb.png' alt='http://al3xandr3.github.com/img/keyb.png' />"
+intro: "Keyboard layout design and optimization ideas"
 ---
 
 ![http://al3xandr3.github.com/img/keyb.png][1]

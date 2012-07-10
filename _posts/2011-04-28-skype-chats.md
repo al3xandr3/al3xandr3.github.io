@@ -7,16 +7,16 @@ tags:
   - visualization
   - statistics
   - ruby
-intro: "From my <strong>Skype chat history</strong>, a visualization of the counts of chats by (anonymised) author.<br /><img src=\"http://al3xandr3.github.com/img/contacts.png\" alt='contacs.png' />"
+intro: "From my Skype chat history, a visualization of the counts of chats by (anonymised) user"
 ---
 
 From my Skype chat history, a visualization of the counts of chats by
-(anonymised) author.
+(anonymised) user.
 
 ![http://al3xandr3.github.com/img/contacts.png][1]
 
 
-### Code
+## Code
 
     
     require 'sqlite3'

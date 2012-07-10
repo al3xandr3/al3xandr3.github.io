@@ -1,11 +1,11 @@
 --- 
 layout: post
-title: Confluence wiki Automation
+title: Confluence automation
 category: code
 tags:
   - ruby
   - automation
-intro: "Script to <strong>automate</strong> updating content of a confluence wiki, both page content and attachments. Can be used as standalone or as a (ruby)lib"
+intro: "Script to automate updating content of a confluence wiki, both page content and page attachments"
 ---
 
 Here's a script that i use to automate updating an Confluence wiki content. Posting it here in case is usefull for someone else. I developed it on Windows7 and with ruby 1.9.3.
@@ -29,7 +29,7 @@ Or as a ruby lib, like so:
     # for attachments:
     Confluence.attach "report.pdf", "application/pdf", "page", "space", "user", "pass", "confluence.my.com"
 
-### Code 
+## Code 
 
     module Confluence
       require 'xmlrpc/client'

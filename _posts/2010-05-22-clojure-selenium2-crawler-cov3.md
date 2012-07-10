@@ -6,9 +6,8 @@ tags:
   - automation
   - clojure
   - webcrawler
-intro: "Have been playing around with selenium and clojure for a while, and now that selenium 2 is in beta ended up making a little web crawler library called cov3."
+intro: "A selenium 2 based web crawler library called cov3, in clojure"
 ---
-
 
 Have been playing around with selenium and clojure for a while, and now that
 selenium 2 is in beta ended up making a little web crawler library called

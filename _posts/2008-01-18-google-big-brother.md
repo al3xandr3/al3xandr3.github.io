@@ -4,7 +4,7 @@ title: Big Brother Google
 category: data
 tags:
   - data
-intro: "<b>(A)Tipical Day?</b>: Its morning, you get to your computer, go check the gmail, ah there's some some news fotos on web picasa from a friend, lets check them out&hellip; \n"
+intro: "Google, data nirvana and grandmother's birthday"
 ---
 
 **(A)Tipical Day?**: Its morning, you get to your computer, go check the gmail, ah there's some some news fotos on web picasa from a friend, lets check them out...

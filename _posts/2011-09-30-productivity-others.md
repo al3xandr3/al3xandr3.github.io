@@ -9,12 +9,12 @@ tags:
   - visualization
   - ruby
   - R
-intro: "In previous Monitoring Productivity Experiment <a href='http://al3xandr3.github.com/2010/10/20/monitoring-productivity-experiment.html'>post</a> I looked into the hours I spent in computer, now I will look into the <strong>hours others spend in computer</strong>, which is far more interesting<img alt='Daily Activity' src='http://al3xandr3.github.com/img/others_daily_activity.png' />"
+intro: "In previous Monitoring Productivity Experiment I looked into the hours I spent in computer, now I look into the hours others spend in computer, which is far more interesting"
 ---
 
-In previous Monitoring Productivity Experiment [post](http://al3xandr3.github.com/2010/10/20/monitoring-productivity-experiment.html) I looked into the hours I spent in computer, now will look into the hours **Others** spend in computer, which is far more interesting :) To find things like what day people spend more time on computer, how many hours they work, and general activity patterns.
+In previous Monitoring Productivity Experiment [post](http://al3xandr3.github.com/2010/10/20/monitoring-productivity-experiment.html) I looked into the hours I spent in computer, now I look into the hours **Others** spend in computer, which is far more interesting :) To find things like what day people spend more time on computer, how many hours they work, and general activity patterns.
 
-### Collecting data
+## Collecting data
 
 In osx, is possible to use growl to display a message when a skype user signs in. So I configured growl to log the sign-in's and sign-out's of my skype contacts.
 
@@ -29,7 +29,7 @@ Instructions [here](http://gthing.net/enable-growl-log-and-show-it-in-geektool).
 
 And then I left my skype signed in for a few weeks, while I was on vacations.
 
-### Parsing data
+## Parsing data
 
 Read the log file and create a semicolon separated file:
 
@@ -44,7 +44,7 @@ Read the log file and create a semicolon separated file:
       end
     end
 
-### Load it into R
+## Load it into R
 
     data = read.csv("/my/proj/skype-growl/log.csv", sep=";", header=TRUE)
 
@@ -61,7 +61,7 @@ Read the log file and create a semicolon separated file:
 
 27 days of data.
     
-### The sign-in's and sign-out's of a random person
+## The sign-in's and sign-out's of a random person
 
     randomperson = sqldf("select user from data group by random() limit 1")
 
@@ -73,13 +73,12 @@ Read the log file and create a semicolon separated file:
     ggplot(data=d, aes(y=time, x=date)) + geom_point(aes(color=status), alpha=0.6) +  scale_x_datetime(major = "1 days") + scale_y_datetime(major = "1 hours")
     
 ![Random Person](http://al3xandr3.github.com/img/others_random_person.png)        
-
  - 10-Sep is Saturday and 11-Sep is Sunday, means skype was off on the weekend
  - start of workday between 9h-11h
  - end of workday between 18h-19h
  - skype is offline after working hours, except on night of Monday 05-Sep
 
-### Online Activity Patterns
+## Online Activity Patterns
 
 Plotting all sign-in's and sign-out's over each weekday we can get a feeling for overall online activity:
 
@@ -96,7 +95,7 @@ Plotting all sign-in's and sign-out's over each weekday we can get a feeling for
  - On weekends computer gets more use later in the day
 
 
-### How many hours people work?
+## How many hours people work?
 
 More tricky to accurately measure but we can have a guess:
  - assuming that people are working during working hours of workdays
@@ -128,7 +127,7 @@ Workday total hours are mostly between 6 and 12 hours, most common being the 8.5
 
 
 
-### Which day people spend more time in computer?
+## Which day people spend more time in computer?
 
 We can try counting the amount of sign-in's/sign-out's changes per day, means people are more likely to be in computer.
 

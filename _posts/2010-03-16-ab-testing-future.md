@@ -6,7 +6,7 @@ tags:
   - data
   - abtesting
   - idea
-intro: "A view on AB testing tools of the future."
+intro: "A view on AB testing tools of the future"
 ---
 
 

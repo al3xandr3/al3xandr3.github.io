@@ -1,22 +1,20 @@
 --- 
 layout: post
-title: Little 'ruby' photo organizer
+title: Photo organizer
 category: code
 tags:
   - automation
   - ruby
-intro: "Place this script in a folder full of pictures, run it, and it will <strong>organize the pictures</strong> into folders by the day they were taken."
+intro: "Script to organize pictures into folders by the day they were taken"
 ---
 
 Place this script in a folder full of pictures, run it, and it will organize
 the pictures into folders by the day they were taken.
 
-    
     $ ruby photo_organizer.rb
     
 
 ## Code:
-
     
     # filename: photo_organizer.rb
     #!/usr/bin/env ruby

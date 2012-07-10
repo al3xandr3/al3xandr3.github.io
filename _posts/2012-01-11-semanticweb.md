@@ -8,7 +8,7 @@ tags:
   - javascript
   - statistics
   - visualization
-intro: "<img alt='SemanticWebQuotes' src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/><br /><strong>Practical examples</strong> on <i>getting in there</i>, <i>adding the site</i> and <i>using it</i>"
+intro: "Practical examples on tagging up a site with RDFa tags, then extract and use the semantic web data"
 ---
 
 Practical examples on how to get onto the semantic web and on using it. 

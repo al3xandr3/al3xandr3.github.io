@@ -1,14 +1,13 @@
 --- 
 layout: post
 title: Visualizing Data, with Processing and JRuby
-category: data
+category: visualization
 tags: 
   - data
   - visualization
   - statistics
   - ruby
-intro: "Here's a data visualization experiment including a mini data warehouse, to visualize the amount of vegetarians around the word.
-  <img src='http://al3xandr3.github.com/img/vis-visual.png' alt='http://al3xandr3.github.com/img/vis-visual.png' />"
+intro: "A data visualization experiment, including a mini data warehouse, to visualize amount of vegetarians around the word"
 ---
 
 Here's a data visualization experiment including a mini data warehouse, to
@@ -31,7 +30,7 @@ On the technical side, as i was interested in using Processing framework and
 because I am a ruby addict, this turned out to be a good excuse to play with
 jruby.
 
-## part i, Aggregating Data
+## Part 1 - Aggregating Data
 
 Normally this process involves a lot of work, but i had a shortcut, i was able
 to collect clean data from another database. I'm interested in the table with
@@ -105,7 +104,7 @@ I've collected values for a whole month.
 Resulted in 225 lines of code for the warehouse part code, with some comments...
 but no repeated code.
 
-## part ii, Building a Visualizer
+## Part 2 - Building a Visualizer
 
 The visualizer is a cycle that refreshes the interface, on each cycle the
 database is queried, with a set of filters, like view, date, country. The
@@ -159,19 +158,15 @@ done, making accessible to ruby community all the millions of java libraries
 out there. But of course don't expect to do 100% ruby code like you do with
 old ruby, sometimes there's some java lurking out of the jruby box.
 
-## the Good
+### the Good
 
-Well, its very cool to be able to use ruby for Drawing. Gives power that
-regular ruby does not have. Exists huge amount of libraries, to use with it.
-Connection to Java is indeed very powerful.
+Well, its very cool to be able to use ruby for Drawing. Gives power that regular ruby does not have. Exists huge amount of libraries, to use with it. Connection to Java is indeed very powerful.
 
-## the Bad
+### the Bad
 
-Visualizations are hard to get right, and ended up of having code repeated and
-all over the place. Why? Well partly because im a newbie in jRuby, but partly
-because Processing seems to fit better for small Sketch visualizations.
+Visualizations are hard, ended up with a lot of repeated code repeated and all over the place. Why? Well partly because im a newbie in jRuby, but partly because Processing seems to fit better for small Sketch visualizations.
 
-## Ideas
+### Ideas
 
 Is it possible to do a little architecture around it?, to make it a bit
 better, isolating all drawing stuff.
@@ -180,7 +175,7 @@ better, isolating all drawing stuff.
 
 Processing is great, has also huge potential, had a couple of troubles with 1
 or 2 plugins i tried, but i end up using base distribution and that works and
-feels 100%. I look forward to do more stuff with it, its fun!
+feels 100%. I look forward to do more stuff with it, it is fun!
 
    [1]: http://al3xandr3.github.com/img/vis-visual.png
    [2]: http://al3xandr3.github.com/img/vis-mmap.png

@@ -9,7 +9,7 @@ tags:
   - visualization
   - emacs
   - R
-intro: "<img src='http://al3xandr3.github.com/img/prod-intro.jpeg' alt='prod-intro.jpeg' />For over a year now, i've been collecting how much time i spend in computer and how much of it is actually used in creative/productive activities.\n"
+intro: "Looking at time spent in computer and how much of it is actually productive"
 ---
 
 [![prod-intro.jpeg][1]][2] 
@@ -74,13 +74,11 @@ I'll look here at a full year(52 weeks worth of data).
     library(ggplot2)
     
 
-### How is data distributed (Looking for normality)
-
+## How is data distributed
     
     pl <- ggplot(data = mydata)
     #subplot viewport
     subvp <- viewport(width=0.4, height=0.4, x=0.22, y=0.80)
-    
     
     his = pl + 
           geom_histogram(aes(x=total,y=..density..),alpha=0.2,binwidth=2) + 
@@ -180,8 +178,7 @@ lower.
 ![http://al3xandr3.github.com/img/prod-corr.png][7]
 
     
-    cor(mydata[2:4])
-            
+    cor(mydata[2:4])        
                     total productive distracting
     total       1.0000000  0.8719531   0.6884407
     productive  0.8719531  1.0000000   0.4027419
@@ -203,7 +200,6 @@ way as productivity will, as 1.) then it means that increasing the total is
 more likely to increase productivity time then the distracting time.
 
 ## Trends
-
     
     ggplot(mydata, aes(x=date)) +  labs(x=NULL, y=NULL) + 
       opts(legend.position="bottom") +

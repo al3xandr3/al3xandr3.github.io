@@ -6,7 +6,7 @@ tags:
   - automation
   - clojure
   - webcrawler
-intro: "I needed a kind of crawler to go around a list of pages, invoke some javascript(tests) and collect the output."
+intro: "I needed a crawler to go around a list of pages, invoke some javascript(tests) and collect the output"
 ---
 
 I needed a kind of crawler to go around a list of pages, invoke some javascript(tests) and collect the output.

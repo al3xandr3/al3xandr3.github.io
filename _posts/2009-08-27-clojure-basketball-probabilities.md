@@ -6,7 +6,7 @@ tags:
   - montecarlo
   - statistics
   - clojure
-intro: "A little probability simulation from the book <i>Resampling: The New Statistics</i>, using Clojure and Incanter."
+intro: "A probability simulation from the book Resampling: The New Statistics, using Clojure and Incanter"
 ---
 
 A little probability simulation from the book _Resampling: The New

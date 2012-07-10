@@ -5,7 +5,7 @@ category: code
 tags:
   - automation
   - clojure
-intro: "Here's how you can have your your test-is results posted on twitter automatically as they run."
+intro: "Have your clojure test-is results posted on twitter automatically as they run"
 ---
 
 Here's how you can have your your test-is results posted on twitter

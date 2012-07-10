@@ -10,18 +10,17 @@ tags:
   - dashboard
   - javascript
   - statistics
-intro: "An important part of being data driven is to have a daily feedback on data, here's a couple of <strong>automated dashboards</strong> i've built recently:
-  <img src=\"http://al3xandr3.github.com/img/dash2.png\" alt=\"http://al3xandr3.github.com/img/dash2.png\"/>"
+intro: "An important part of being data driven is to have a daily feedback on data, here's a couple of automated dashboards i've built recently"
 ---
 
 An important part of being data driven is to have a daily feedback on data,
 here's a couple of **automated dashboards** i've built recently:
+
 ![http://al3xandr3.github.com/img/dash2.png][1]
 
 ![http://al3xandr3.github.com/img/dash1.png][2]
 
-Its the first iteration, where mostly all data is displayed as is, next
-iteration could enrich the data further with:
+In these most of the data is displayed as is, next iteration could enrich the data further with:
 
  * Adding the data of a year/6months ago for direct comparison could be interesting. 
  * Fits to data, like a regression line that shows the overall tendency, plus allows to make predictions on next day/week/month values. 
@@ -29,7 +28,7 @@ iteration could enrich the data further with:
  * Confidence intervals pointing out that the changes are unlikely to be by chance. 
  * etc…
 
-### Tools & Code
+## Tools & Code
 
 Coded in ruby, it aggregates data from different sources, and based on an html
 template it generates html with the full dashboard. Its fully automated, and i

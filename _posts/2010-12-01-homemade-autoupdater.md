@@ -5,14 +5,14 @@ category: code
 tags:
   - automation
   - emacs
-intro: "Here's a script that i use frequently to update an application to the last version. It automates the process of downloading and installing the app."
+intro: "Script to update an application to the last version. It automates the process of downloading and installing the app"
 ---
 
 
 Here's a script that i use frequently to update an application to the last
 version. It automates the process of downloading and installing the app.
 
-### Aquamacs
+## Aquamacs
 
 Every day there's a new release of Aquamacs, its called the nightly build,
 made from the latest developed code. And is always available from the same
@@ -45,7 +45,7 @@ applications folder and cleans up the temporary downloaded files.
     rm -rf /tmp/emacsdownload
     
 
-### Chromium
+## Chromium
 
 For Chromium on each build the download url changes, so we have to add extra
 logic for this, first it figures out the latest version and then uses that

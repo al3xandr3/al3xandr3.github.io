@@ -9,27 +9,22 @@ tags:
   - montecarlo
   - statistics
   - visualization
-intro: "<img src='http://al3xandr3.github.com/img/diet.jpeg' alt='http://al3xandr3.github.com/img/diet.jpeg' />Got for 2010 Xmas a very cool book called the <strong>4 Hour Body</strong>(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week."
+intro: "Diet and Predicting when I am going to be healthy"
 ---
 
-![http://al3xandr3.github.com/img/diet.jpeg][1] Got for 2010 Xmas a very cool
+![http://al3xandr3.github.com/img/diet.jpeg][1] 
+
+Got for 2010 Xmas a very cool
 book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who
 write a previous favorite of mine about productivity, the 4 hour work week.
 
-Its an interesting book, because it has a scientific approach, it doesn't just
-say do this do that and you'll be healthy, it actually says: I(Tim Ferriss)
-have tried this, exactly with these steps, during this time, this is how i
-measured, these are the results i got and by looking at most up-to-date
-medical research this is the most likely explanation for these results… Notice
-the similar principles of AB testing.
+I like the book's approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results… Notice the similar principles of AB testing, as in, try things out and measure results, and see if they work for you.
 
-This book couldn't have arrived in a better time as i just peeked my heaviest
-weight in a long time, blame it on \[insert favorite reason\]… so, long story
-short and I am now on the 3rd week of the low-carb diet described in the book.
+Also, this book couldn't have arrived in a better time as i just peeked my heaviest weight in a long time, blame it on \[insert favorite reason\]… so, long story short and I am now on the 3rd week of the low-carb diet described in the book.
 
 But of course, like with all diets, I'm quickly growing impatient of when i'm
-going to reach my goal ([of adequate BMI][2]), so lets use R and monte carlo
-simulations to generate predictions and understand better what to expect.
+going to reach my goal [of adequate BMI][2], so lets use R and monte carlo
+simulations to generate predictions.
 
 ## Data
 
@@ -64,8 +59,6 @@ The last 5 measurements:
     
     tail(mydata, 5)
     
-    
-    
          timestamp   kg
     140 2011-03-04 77.3
     141 2011-03-05 76.9
@@ -74,7 +67,7 @@ The last 5 measurements:
     144 2011-03-08 76.9
     
 
-### Past Years weight
+## Past Years weight
 
 Lets have a look at the weight fluctuations over the past 3,5 years(before
 diet).
@@ -98,15 +91,8 @@ in weight happen.
 Now using Monte Carlo methods lets simulate the future based on the weight
 changes that happened since start of diet.
 
-Because its going to use weight changes by day we need to do some trickery to
-fill in the missing days and calculate the changes for every single day. The
-idea for filling in missing days is: if we have only day1=81 and day3=80, then
-we calculate that day2=80.5, because in 2 days we see a diference of 1, then
-per day is 0.5.
+First we need to do some trickery to fill in the missing days and calculate the changes for every single day. The idea for filling in missing days is to interpolate between the known days and fill in the missing values. Eg: day1=81 and day3=80, we set day2=80.5.
 
-We can confirm(prove) that this calculated assumption is a good one, by later
-comparing the simulation on data with all days filled in against the same data
-with some removed days in the middle, and confirm that results are the same.
 
 So lets get the weight(kg) change(delta), for every day:
 
@@ -140,9 +126,7 @@ So lets get the weight(kg) change(delta), for every day:
     dietalldays$delta = c(0, kgdelta)
     
     # print only the 10 last values
-    tail(dietalldays, 5)
-    
-    
+    tail(dietalldays, 5)    
     
         timestamp   kg delta
     47 2011-03-04 77.3   0.0
@@ -152,8 +136,7 @@ So lets get the weight(kg) change(delta), for every day:
     51 2011-03-08 76.9  -0.4
     
 
-### So what is going to be my weight in a week?
-
+## What is going to be my weight in a week?
     
     predict.weight.in.days = function(days, inicialweight, deltavector) {
       weight = inicialweight
@@ -166,19 +149,15 @@ So lets get the weight(kg) change(delta), for every day:
     # simulate it 10k times
     mcWeightWeek = replicate(10000, predict.weight.in.days(7, lastweight, kgdelta))
     
-    summary(mcWeightWeek)
-    
-    
+    summary(mcWeightWeek)   
     
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
        71.8    75.2    75.9    75.9    76.6    79.7
     
 
 Another good thing about monte carlo methods is that they give a distribution
-of the prediction, so its possible to get a feeling of how certain the average
-is; either very certain with a big central peak, or not that certain when the
-graph is flatter and all over the place:
-
+of the prediction, so is possible to get a feeling of how sure the average
+is, by comparing it with a expected normal distribution:
     
     gghist = function(mydata, mycolname) {
       pl = ggplot(data = mydata)
@@ -202,8 +181,7 @@ graph is flatter and all over the place:
 
 ![http://al3xandr3.github.com/img/w-loss-week.png][4]
 
-### And when am i getting to 75kg?
-
+## And when am i getting to 75kg?
     
     days.to.weight = function(weight, inicialweight, deltavector) {
       target = inicialweight
@@ -221,7 +199,6 @@ graph is flatter and all over the place:
     mcDays75 = replicate(10000, days.to.weight(75, lastweight, kgdelta))
     
     summary(mcDays75)
-    
     
     
        Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -263,23 +240,9 @@ results(=efficiency).
 
 ## _Update_
 
-Got to 75.0kg on 25 March!!!! Thats 67 days (aprox. 9 weeks) for a 9kg loss,
+Got to 75.0kg on 25 March. Thats 67 days (aprox. 9 weeks) for a 9kg loss,
 thus aprox. 1kg per week. Which is within the recommended(0.9kg per week)
 weight loss recommendations. Thus am now within normal [BMI values][6].
-
-Regarding the diet itself i have to mention that a key food were lentils, that
-replaced all pasta, potato and rice, and became the main food. Around the
-77kg, where i plateau'd the weight for a while, i relaxed the strict low carb
-diet and adopted some ideas from the [South Beach Diet][7], that allows to add
-other things in moderation and makes a distinction between good and bad carbs,
-also stopped the binging(over-eating) 1 day per week. This diet was done
-without any gym or sports, it was all about the food, will soon start to add
-some sport into the equation and see.
-
-The predictor was surprisingly good, even with little data on the beginning of
-diet. With time there'a tendency to slow down, that is expected, so maybe
-adding a weight giving more importance to the most recent measures could
-improve accuracy in weight loss prediction with monte carlo methods.
 
 ### References
 

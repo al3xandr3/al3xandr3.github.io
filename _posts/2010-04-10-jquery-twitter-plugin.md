@@ -4,7 +4,7 @@ title: jQuery Twitter 'mini' plugin
 category: code
 tags:
   - javascript
-intro: "Here's a little jQuery plugin for displaying a twitter feed into a web page."
+intro: "A jQuery plugin for displaying a twitter feed into a web page"
 ---
 
 Here's a little jQuery plugin for displaying a twitter feed into a web page.
@@ -20,18 +20,20 @@ For the code:
     
     $(function() {
       $('#tw').click(function() {
-        $('#tw').twitter({'user':'al3xandr3','count':1});
+        $('#tw').twitter({'user':'al3xandr3','count':2});
       });
     });
     
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/twitter.js"></script>
 <script type="text/javascript">
 $(function() {
-  $('#tw').click(function() {
-    $('#tw').twitter({'user':'al3xandr3','count':1});
+  $('#tw2').click(function() {
+    $('#tw2').twitter({'user':'al3xandr3','count':2});
   });
 });
 </script>
-<p id="tw"><strong>click me</strong></p>
+<p id="tw2"><button>click me</button></p>
 
 ## How It Works
 
@@ -39,7 +41,6 @@ It makes an Ajax request to twitter that returns json data of the feed. That
 data is then read and injected into the selected html element(s).
 
 See in:
-
     
     $.ajax({
       url: "http://twitter.com/status/user_timeline/" + settings.user + 

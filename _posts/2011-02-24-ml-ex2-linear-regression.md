@@ -5,11 +5,7 @@ category: statistics
 tags:
   - machinelearning
   - R
-  - statisticscategory: SQL
-tags:
-  - machinelearning
-  - R
-intro: "Andrew Ng has posted introductory machine learning lessons on the <a href='http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning'>OpenClassRoom</a> site. I've watched the first set and will here solve <a href='http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex2/ex2.html'>Exercise 2</a>.<img src='http://al3xandr3.github.com/img/ml-ex2-fit.png' alt='ml-ex2-fit.png' />"
+intro: "Implementation using gradient descent"
 ---
 
 <script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
@@ -219,8 +215,6 @@ First we run several iterations, until convergence:
       theta = theta - alpha * 1/m * delta(x,y,theta)
     }
     theta
-    
-    
     
               [,1]       [,2]
     [1,] 0.7501504 0.06388338
