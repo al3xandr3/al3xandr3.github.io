@@ -2,7 +2,7 @@
 layout: page
 title: For Sale - Big Giveaway
 intro: "for sale"
-sidebar: "<h3>Contact</h3>email <a href='mailto:al3xandr3@gmail.com?Subject=For%20Sale'>al3xandr3@gmail.com</a><br>skype <a href='skype:al3x.martins?userinfo'>al3x.martins</a>
+sidebar: "<h3>Contact</h3>email <a href='mailto:al3xandr3@gmail.com?Subject=For%20Sale'>al3xandr3@gmail.com</a><br>skype <a href='skype:al3x.martins?userinfo'>al3x.martins</a>"
 ---
 
 ## Orange Tiny Terror
@@ -71,7 +71,7 @@ Oldie, but great sounding unit, try it out!
 <br/><br/>
 
 
-## Line6 POD2.0
+##  <font color="red">[*SOLD*] </font> <strike>Line6 POD2.0</strike>
 
 ![pod2](http://www.musiciansbuy.com/mmMBCOM/images/Line6_pod20.jpg)
 
@@ -79,7 +79,7 @@ Oldie, but great sounding unit, try it out!
 
 [official site](http://line6.com/pod20/) / [youtube](http://www.youtube.com/results?search_query=line+6+pod+2)
 
-#### **70€**
+#### **60€**
 
 <br/><br/>
 

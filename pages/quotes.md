@@ -257,5 +257,3 @@ Following the herd implies regression towards the mean(of the herd), both for ga
 
 <blockquote data-day="2009-01-27">watching SICP lecture 6b. streams & their sneeky delays</blockquote>
 
-
-

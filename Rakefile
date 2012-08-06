@@ -6,9 +6,9 @@ task :default => :server
 
 desc "server"
 task :server do
-
   system "ruby tags.rb"
   system "ruby cloud.rb"
+  system "launchy http://localhost:4000/"
   system "jekyll --server"
 end
 
