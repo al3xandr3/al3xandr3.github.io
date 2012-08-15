@@ -15,7 +15,7 @@ Bought in 2008, only used at home and not very often. Includes Gig bag, and stil
 
 [official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/watch?v=9MpZoWsFlJQ)
 
-#### [*<strike>420€(new)</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm) **295€<font color="red"> (-30%)</font>** 
+#### [*<strike>420€(new)</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm) **270€<font color="red"> (-35% !!!)</font>** 
 
 <br/><br/>
 
@@ -43,7 +43,7 @@ Bought in 2010, only used at home and not very often, almost as new
 
 <br/><br/>
 
-## Framus FR212 CB
+## <font color="red">[*SOLD*] </font> <strike> Framus FR212 CB </strike>
 
 ![framus](http://images.thomann.de/pics/prod/179559.jpg)
 
@@ -54,7 +54,7 @@ Bought in 2008, only used at home and not very often, almost as new
 [official site](http://www.framus.de/modules/produkte/produkt.php?submenuID=14172&katID=11076&cl=EN) / [youtube](www.youtube.com/results?search_query=Framus+FR212)
 
 
-#### *<strike>[409€(new)](http://www.thomann.de/de/framus_fr212_cb.htm)</strike>* **246€<font color="red"> (-40% !!!)</font>**
+#### *<strike>[409€(new)](http://www.thomann.de/de/framus_fr212_cb.htm)</strike>* **215€<font color="red"> (-47%)</font>**
 
 <br/><br/>
 
@@ -87,7 +87,12 @@ Oldie, but great sounding unit, try it out!
 
 ![DD600](http://www.americanmusical.com/ItemImages/Large/78578.jpg)
 
-24-bit high-resolution stereo delay/echo/panning with delay time up to 2sec. Bought in 2008, rarely used is as new.
+- 24-bit high-resolution 
+- stereo delay/echo/panning
+- delay time up to 2sec
+- 11 different modes
+
+Rarely used is as new.
 
 [official site](http://www.behringer.com/EN/Products/DD600.aspx) / [youtube](http://www.youtube.com/results?search_query=dd600+behringer)
 

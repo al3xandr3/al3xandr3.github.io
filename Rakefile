@@ -1,6 +1,9 @@
 
 require 'rake'
 
+# Ctrl-C
+Signal.trap('INT') { abort("\n") }
+
 desc 'Default: Server'
 task :default => :server
 
