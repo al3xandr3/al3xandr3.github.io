@@ -2,7 +2,7 @@
 layout: page
 title: Curriculum Vitae
 intro: "Curriculum Vitae"
-sidebar: "<h4>my <a href='http://www.linkedin.com/in/al3xandr3'>linkedin</a> account</h4>"
+sidebar: "<h4><a href='http://www.linkedin.com/in/al3xandr3'>linkedin</a> account</h4>"
 ---
 
 <link rel="stylesheet" href="http://al3xandr3.github.com/css/cv.css" type="text/css" media="screen, projection" />
@@ -101,7 +101,7 @@ Extending a content management system (C# .net web) targeted for portuguese scho
 | Web Analytics & A/B Testing | Omniture SiteCatalyst, Omniture Test&Target, Omniture Discover, Google Analytics, VisualWebSiteOptimizer, Coremetrics
 | Databases | MS Sql Server, Postgres, SqLite, MySql, Oracle
 | Methodologies | Agile methodologies(scrum), code version control(svn, git), regression testing, continuous integration
-| Github Developer Account | [https://github.com/al3xandr3/](https://github.com/al3xandr3/) 
+| Github | [https://github.com/al3xandr3/](https://github.com/al3xandr3/) 
 
 ## Personal skills and competences
 
