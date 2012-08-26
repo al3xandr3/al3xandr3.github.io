@@ -73,7 +73,7 @@ td { vertical-align: top; }
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body{ font:16px/26px Segoe UI, Helvetica Neue, Helvetica, Arial; }
+body{ font:17px/26px Segoe UI, Helvetica Neue, Helvetica, Arial; }
 
 .wrapper{
 	width:90%;
@@ -135,12 +135,13 @@ nav a:hover{
 }
 
 #main article h1{
+	margin-top: 0.6em;
 	font-size:2em;
 }
 
 #main aside{
 	color:#222;
-	padding:.9em 1% 10px;
+	padding:.0em 1% 10px;
 }
 
 /* ===============
@@ -208,9 +209,18 @@ blockquote {
 	padding-left: 1em;
 }
 
+code, pre, tt {
+	font-family: "Consolas", "Liberation Mono", Courier, monospace !important;
+}
+
 pre.prettyprint {
-	border: none !important;
-	font-size: 90% !important;
+	background-color: #F8F8F8;
+	border: 1px solid #CCC !important;
+	padding: 6px 10px !important;
+	font-size: 15px !important;
+	line-height: 19px !important;
+	overflow: auto !important;
+	border-radius: 3px;
 }
 
 /* =============================================================================
