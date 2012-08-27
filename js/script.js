@@ -23,11 +23,7 @@ $(function () {
   $('pre').addClass("prettyprint");
   prettyPrint();
 
-  //hide discuss ugly link
-  $(".dsq-brlink").hide();
-  $(".dsq-item-trackback").hide();
-
-  $('#title').click(function(){document.location="/";});
+  $('#title').click(function(){ document.location="/";} );
 
   // Jump to Top
   $('.jump').click(function () {
