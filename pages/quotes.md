@@ -85,6 +85,10 @@ d3.layout.cloud()
 
 ## 2012
 
+<blockquote data-day="2012-08-29">
+simplicity is key for scalability
+</blockquote>
+
 <blockquote data-day="2012-07-10">
 Following the herd provides shelter, who wants to be alone facing the hungry lion? But it can also limit your gains, you find water, everybody drinks
 </blockquote>
