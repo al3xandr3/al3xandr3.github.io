@@ -5,7 +5,7 @@ intro: "for sale"
 sidebar: "<h3>Contact</h3>email <a href='mailto:al3xandr3@gmail.com?Subject=For%20Sale'>al3xandr3@gmail.com</a><br>skype <a href='skype:al3x.martins?userinfo'>al3x.martins</a><h3>Music</h3><a href='https://soundcloud.com/al3x-andr3'>soundcloud</a><br><a href='http://www.youtube.com/user/alexandrenotebook/videos'>youtube</a><br>"
 ---
 
-## Orange Tiny Terror **<font color="red">(-30% !!!)</font>**
+## Orange Tiny Terror
 
 ![tt](http://www.orangeamps.com/wp-content/uploads/2010/06/tiny-terror-d.jpg)
 
@@ -19,7 +19,7 @@ Bought in 2008, only used at home and not very often. Includes Gig bag, and stil
 
 <br/><br/>
 
-## Behringer DD600 delay pedal **<font color="red">(-36%)</font>**
+## Behringer DD600 delay pedal
 
 ![DD600](http://www.americanmusical.com/ItemImages/Large/78578.jpg)
 
