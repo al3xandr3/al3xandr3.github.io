@@ -1,11 +1,11 @@
 ---
 layout: page
-title: For Sale - Big Giveaway
+title: For Sale
 intro: "for sale"
 sidebar: "<h3>Contact</h3>email <a href='mailto:al3xandr3@gmail.com?Subject=For%20Sale'>al3xandr3@gmail.com</a><br>skype <a href='skype:al3x.martins?userinfo'>al3x.martins</a><h3>Music</h3><a href='https://soundcloud.com/al3x-andr3'>soundcloud</a><br><a href='http://www.youtube.com/user/alexandrenotebook/videos'>youtube</a><br>"
 ---
 
-## Orange Tiny Terror
+## Orange Tiny Terror **<font color="red">(-30% !!!)</font>**
 
 ![tt](http://www.orangeamps.com/wp-content/uploads/2010/06/tiny-terror-d.jpg)
 
@@ -19,15 +19,20 @@ Bought in 2008, only used at home and not very often. Includes Gig bag, and stil
 
 <br/><br/>
 
-## PRS Santana SE Vintage Cherry
+## Behringer DD600 delay pedal **<font color="red">(-36%)</font>**
 
-![prs](http://farm6.static.flickr.com/5287/5281926702_7f98d6ac99.jpg)
+![DD600](http://www.americanmusical.com/ItemImages/Large/78578.jpg)
 
-The guitar that launched the PRS SE line, a classic solid mahogany guitar with a bound rosewood fingerboard, bound headstock, sleek 3-ply pickguard, Santana SE inlays, PRS designed humbuckers, 3-way pickup selector, volume and tone knobs and PRS designed stoptail.
+- 24-bit high-resolution 
+- stereo delay/echo/panning
+- delay time up to 2sec
+- 11 different modes
 
-Great guitar. With original PRS gig bag.
+Is as new.
 
-#### *<strike>650€(new)</strike>* **450€<font color="red"> (-30%)</font>**
+[official site](http://www.behringer.com/EN/Products/DD600.aspx) / [youtube](http://www.youtube.com/results?search_query=dd600+behringer)
+
+#### *<strike>[39€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>* **25€<font color="red"> (-36%)</font>**
 
 <br/><br/>
 
@@ -80,23 +85,6 @@ Oldie, but great sounding unit, try it out!
 [official site](http://line6.com/pod20/) / [youtube](http://www.youtube.com/results?search_query=line+6+pod+2)
 
 #### **60€**
-
-<br/><br/>
-
-## Behringer DD600 delay pedal
-
-![DD600](http://www.americanmusical.com/ItemImages/Large/78578.jpg)
-
-- 24-bit high-resolution 
-- stereo delay/echo/panning
-- delay time up to 2sec
-- 11 different modes
-
-Rarely used is as new.
-
-[official site](http://www.behringer.com/EN/Products/DD600.aspx) / [youtube](http://www.youtube.com/results?search_query=dd600+behringer)
-
-#### *<strike>[39€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>* **25€<font color="red"> (-36%)</font>**
 
 <br/><br/>
 
