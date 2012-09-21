@@ -2,86 +2,10 @@
 layout: page
 title: Twitter Quotes 
 intro: "Quotes from Twitter"
-sidebar: "<div id=\"cloud\"></div>"
+sidebar: "<img src='http://al3xandr3.github.com/img/quotes_frequency.png' alt='quotes_frequency.png'>"
 ---
 
-<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
-<script type="text/javascript" src="https://raw.github.com/jasondavies/d3-cloud/master/d3.layout.cloud.js"></script>
-<script type="text/javascript" src="http://coffeescript.org/extras/coffee-script.js"></script>
-
-<script type="text/coffeescript">
-word_counter =
-
-  _ignore: /^(i|im|me|my|myself|we|us|our|ours|ourselves|you|your|yours|yourself|yourselves|he|him|his|himself|she|her|hers|herself|it|its|itself|they|them|their|theirs|themselves|what|which|who|whom|whose|this|that|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|doing|will|would|should|can|could|ought|i'm|you're|he's|she's|it's|we're|they're|i've|you've|we've|they've|i'd|you'd|he'd|she'd|we'd|they'd|i'll|you'll|he'll|she'll|we'll|they'll|isn't|aren't|wasn't|weren't|hasn't|haven't|hadn't|doesn't|don't|dont|didn't|won't|wouldn't|shan't|shouldn't|can't|cant|cannot|couldn't|mustn't|let's|that's|who's|what's|here's|there's|when's|where's|why's|how's|a|an|the|and|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|before|after|above|below|to|from|up|upon|down|in|out|on|off|over|under|again|further|then|once|here|there|when|where|why|how|all|any|both|each|few|more|most|other|some|such|no|nor|not|only|own|same|so|than|too|very|say|says|said|shall|just|[0-9]+)$/
-
-  _punctuation: /[!'"&()*+,-\.\/:;<=>?\[\\\]^`\{|\}~]+/g
-
-  _separators: /[\s\u3031-\u3035\u309b\u309c\u30a0\u30fc\uff70]+/g
-
-  _discard: /^(@|https?:)/
-
-  count: (text)->
-    text = text.replace(/&\w+;/g, " ")
-    text = text.replace(/#/g, " ")
-    
-    words = {}
-    for word in text.toLowerCase().split(word_counter._separators)
-      word = word.replace(word_counter._punctuation, '')
-      if word is "" or word_counter._ignore.test(word) or word_counter._discard.test(word)
-        #console.log "ignoring #{word}"
-      else
-        try
-          words[word] = (words[word]+1 or 0)
-        catch error
-          console.log word + " " + error
-    return words
-
-window.word_counter = word_counter
-
-# get all text
-text = ""
-$('blockquote').each ->
-    text += $(this).text().toLowerCase()
-
-# counts the words
-words = word_counter.count(text)
-
-# select words that appear more than once
-data = []
-for word, count of words
-  data.push( {text: word, size: count*10 } ) 
-
-# viz
-fill = d3.scale.category20b();
-
-draw = (words)->
-  d3.select("#cloud")
-    .append("svg")
-      .attr("width", "100%")
-      .attr("heigth", "100%")
-    .append("g")
-      .attr("transform", "translate(125,240)")
-    .selectAll("text")
-      .data(words)
-
-    .enter().append("text")
-      .style("font-size", (d)-> d.size + "px" )
-      .attr("text-anchor", "middle")
-      .attr("transform", (d)-> "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")")
-      .text( (d)-> d.text )
-      .style("fill", (d)-> fill(d.text.toLowerCase()) )
-
-d3.layout.cloud()
-  .size([290, 450])
-  .words(data)
-  .rotate( -> 0 )
-  .padding(1)
-  .timeInterval(10)
-  .font("Helvetica")
-  .fontSize( (d)-> d.size )
-  .on("end", draw)
-  .start();
-</script>
+![http://al3xandr3.github.com/img/quotes_cloud.png](http://al3xandr3.github.com/img/quotes_cloud.png)
 
 ## 2012
 
