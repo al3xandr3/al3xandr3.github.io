@@ -17,12 +17,15 @@ dev.off()
 
 # wordcloud
 d = a.word.freq(f$content)
-png('./img/quotes_cloud.png', width=600, height=500)
+png('./img/quotes_cloud.png', width=500, height=400)
 wordcloud(d$word
           ,d$freq
           ,min.freq=2
+          ,scale=c(7,.1)
           ,max.words=50
+          ,rot.per=.15
           ,random.order=FALSE
           ,colors=brewer.pal(9,"Blues")
           )
 dev.off()
+
