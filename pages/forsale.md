@@ -15,7 +15,7 @@ Bought in 2008, only used at home and not very often. Includes Gig bag, and stil
 
 [official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/watch?v=9MpZoWsFlJQ)
 
-#### [*<strike>420€(new)</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm) **290€<font color="red"> (-30% !!!)</font>** 
+#### [*<strike>420€(new)</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm) **295€<font color="red"> (-30% !!!)</font>**
 
 <br/><br/>
 
