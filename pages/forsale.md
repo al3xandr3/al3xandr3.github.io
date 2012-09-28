@@ -32,7 +32,7 @@ Is as new.
 
 [official site](http://www.behringer.com/EN/Products/DD600.aspx) / [youtube](http://www.youtube.com/results?search_query=dd600+behringer)
 
-#### *<strike>[39€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>* **25€<font color="red"> (-36%)</font>**
+#### *<strike>[39€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>* **30€<font color="red"> (-23%)</font>**
 
 <br/><br/>
 
