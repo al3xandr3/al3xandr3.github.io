@@ -9,6 +9,26 @@ sidebar: "<img src='http://al3xandr3.github.com/img/quotes_frequency.png' alt='q
 
 ## 2012
 
+<blockquote data-day="2012-10-03">
+everything is temporary - is just a matter of time that it changes
+</blockquote>
+
+<blockquote data-day="2012-10-01">
+graph complex for yourself, graph simple for others #analyst
+</blockquote>
+
+<blockquote data-day="2012-09-30">
+touch screens are at tipping point, the touch generation is now growing up
+</blockquote>
+
+<blockquote data-day="2012-09-30">
+competition, over time, has the tendency to eliminate inefficiencies
+</blockquote>
+
+<blockquote data-day="2012-09-29">
+For the sake of evolution, patents should be instead tax on copying bad stuff, not tax on copying good stuff
+</blockquote>
+
 <blockquote data-day="2012-08-29">
 simplicity is key for scalability
 </blockquote>
