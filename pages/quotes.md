@@ -9,6 +9,22 @@ sidebar: "<img src='http://al3xandr3.github.com/img/quotes_frequency.png' alt='q
 
 ## 2012
 
+<blockquote data-day="2012-10-31">
+an economic like KPI for restaurants and chefs: by how much you multiply the value of ingredients. You sell a 30€ meal, whose ingredients cost 10€, KPI=3
+</blockquote>
+
+<blockquote data-day="2012-10-09">
+Ask good questions #analysts
+</blockquote>
+
+<blockquote data-day="2012-10-09">
+a cold earl grey tea with lemon reminds me of the ice tea soft drink. without the sugar and much healthier im betting
+</blockquote>
+
+<blockquote data-day="2012-10-09">
+wonder if music reveals personality traits, or is entirely cultural, likely is a bit of both
+</blockquote>
+
 <blockquote data-day="2012-10-03">
 everything is temporary - is just a matter of time that it changes
 </blockquote>
