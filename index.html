@@ -22,6 +22,10 @@ title: Al3xandr3
 </article>
 
 <aside>
+  <h3>new</h3>
+  {% for post in site.posts limit: 5 %}
+    <a href="{{post.url}}">{{post.title}}</a> <br>
+  {% endfor %}
   <h3>tags</h3>
   {% include cloud.html %}
 </aside>
