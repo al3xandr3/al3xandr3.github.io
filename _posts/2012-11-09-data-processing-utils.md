@@ -50,8 +50,13 @@ Especially made to interact with Excel(adapt for other apps), inside R do:
 
 - reference: [johndcook r_excel_clipboard](http://www.johndcook.com/r_excel_clipboard.html)
 
+## For each line, manipulate
 
-*[more to be added]*
+Using ruby, gets flexible to do a lot:
+
+	File.open(ARGV[0], 'r').each_line do |line| 
+	  puts line.split(",")[0].gsub('"', '')
+	end
 
 
 ### Notes:
