@@ -50,7 +50,7 @@ Especially made to interact with Excel(adapt for other apps), inside R do:
 
 - reference: [johndcook r_excel_clipboard](http://www.johndcook.com/r_excel_clipboard.html)
 
-## For each line, manipulate
+## (ruby)Script - For each line in file Do
 
 Using ruby, gets flexible to do a lot:
 
@@ -58,6 +58,27 @@ Using ruby, gets flexible to do a lot:
 	  puts line.split(",")[0].gsub('"', '')
 	end
 
+
+## Excel, confidence interval and trend 
+
+Output:
+
+	801,763  // average
+	1.74%    // 95% confidence error (±)
+	-0.27%   // trend direction(per day, when each row is a day's data)
+	801,763 [error ±1.74%] [trend: -0.27%] // everything
+
+
+Code(on cell D93, D94, D95, D96):
+
+	=AVERAGE(D3:D92)
+	=CONFIDENCE(0.05, STDEV(D3:D92), COUNT(D3:D92)) / D93
+	=SLOPE(D3:D92, ROW(D3:D92))/D93
+	=TEXT(D93,"0,0")&" [error ±"&TEXT(D94,"0.00%")&"] [trend: "&TEXT(D95,"0.00%")&"]"
+
+  - D3:D92 is the column of numbers we want to apply the calculations to.
+  - confidence interval for a 95% accuracy.
+ 
 
 ### Notes:
 
