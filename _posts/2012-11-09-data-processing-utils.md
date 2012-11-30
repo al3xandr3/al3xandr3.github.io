@@ -79,6 +79,17 @@ Code(on cell D93, D94, D95, D96):
   - D3:D92 is the column of numbers we want to apply the calculations to.
   - confidence interval for a 95% accuracy.
  
+## Convert text file encoding
+
+Many text editors support doing this, but when the file is too big use instead the command line.
+
+In windows powershell(from utf-8 to ascii)
+
+	gc -en utf8 in.txt | Out-File -en ascii out.txt 
+
+- reference(for *nix machine also): [best-way-to-convert-text-files-between-character-sets @stackoverflow](http://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
+
+
 
 ### Notes:
 
