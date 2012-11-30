@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: ebay Stock price Alert
+title: Ebay Stock Price Alert
 category: code
 tags:
   - automation
@@ -20,50 +20,30 @@ To set it up running every day, use windows Task Scheduler or CRON for linux and
 
 ## Code:
 
-Requires the ruby mailfactory gem, "gem install mailfactory".
 
-	 require 'net/http'
-	 require 'net/smtp'
-	 require 'mailfactory'
-
-	 def get_stock_quote(symbol)
-
-	    host = "finance.google.com"
-	    link = "/finance?q="+ symbol.upcase
-
-	    begin
-
-	      # Create a new HTTP connection
-	      httpCon = Net::HTTP.new( host, 80 )
-
-	      # Perform a HEAD request
-	      resp = httpCon.get( link, nil )
-
-	      value = (resp.body.scan /class="pr"[^>]*([^<]*)/).flatten.to_s.gsub(">", "").to_f
-
-	      print " current #{symbol} stock price is " + value.to_s + " (from finance.google.com)\n"
-	      return value
+	class Stock
+	  require 'net/http'
+	    def Stock::getStocks(*symbols)
+	        Hash[*(symbols.collect { |symbol| [symbol, Hash[*(Net::HTTP.get('download.finance.yahoo.com','/d?f=nl1&s='+symbol).chop.split(',').unshift("Name").insert(2,"Price"))]];}.flatten)];
 	    end
+	end
+	# puts Stock::getStocks("MSFT").inspect 
 
-	 end
-
-
-	 def send_stock_alert(subject="Ebay Stock Alert", message="Value Alert")
-
-	    begin
-	      mail = MailFactory.new()
-	      mail.to = 'myself@gmail.com'
-	      mail.from = "ebaystock@alerts.com"
-	      mail.subject = subject
-	      mail.html = message
-
-	      Net::SMTP.start('yourmailserver') do |smtp|
-	        smtp.send_message(mail.to_s(), mail.from, mail.to )
-	      end
-
-	    rescue StandardError => e
-	      puts "Error sending mail"
-	      raise e
+	class Mail
+	  require 'time'
+	  require 'net/smtp'
+	  def Mail::send(mail)
+	    msg = "Subject: #{mail[:subject]}\n\n#{mail[:body]}"
+	    smtp = Net::SMTP.new 'smtp.gmail.com', 587
+	    smtp.enable_starttls
+	    smtp.start('gmail.com', mail[:from], mail[:password], :login) do
+	      smtp.send_message(msg, mail[:from], mail[:to])
 	    end
+	  end
+	end
 
-	 end
+	Mail::send({from:     "batatas123@gmail.com", 
+	            to:       "batatas123@gmail.com", 
+	            password: "*********", 
+	            subject:  "MSFT stock",
+	            body:     "<= 26"}) if Stock::getStocks("MSFT")["MSFT"]["Price"].to_f < 26
