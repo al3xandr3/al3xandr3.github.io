@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: ebay misspells search
+title: Ebay Misspells Search
 category: code
 tags:
   - automation
