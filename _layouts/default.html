@@ -16,6 +16,10 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    body{ font:15px/26px Open Sans, Segoe UI, Helvetica Neue, Helvetica, Arial; !important}
+  </style>
 
   <script src="/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
   <script>
@@ -93,6 +97,20 @@ $(function () {
 <!-- Prettify -->
 <link href="/css/prettify.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="/js/libs/prettify.js"></script>
+<script type="text/javascript" src="/js/libs/lang-clj.js"></script>
+{% assign clj = false %}
+{% for t in page.tags %}{% if t == 'clojure' %}{% assign clj = true %}{% endif %}{% endfor %}
+<script>
+$(function () {
+  {% if clj %}
+    $('pre').addClass("prettyprint lang-clj");
+  {% else %}
+    $('pre').addClass("prettyprint");
+  {% endif %}
+  prettyPrint();
+});
+</script>
+
 
 <script src="/js/script.js"></script>
 

@@ -20,8 +20,7 @@ $(function () {
   // CSS
   //  $("#title").spanify("3", "titlenumbers");
   //  $(".titlenumbers").css('color', al3xandr3.color1);
-  $('pre').addClass("prettyprint");
-  prettyPrint();
+  
 
   $('#title').click(function(){ document.location="/";} );
 

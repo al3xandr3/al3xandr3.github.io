@@ -4,11 +4,11 @@ title: Javascript Bookmarks
 category: code
 tags:
   - javascript
-intro: "create and share little javascript scripts that augment/improve the pages you look at."
+intro: "Create and share little javascript scripts that augment/improve the pages you look at."
 ---
 
 I often use scripts that inject javascript and modify current page im looking at, mostly for inspecting/debug reasons, for example the [WhatFont](http://chengyinliu.com/whatfont.html), that reveals what fonts the page is using.
-These scripts can be triggered from a browser bookmark, so that they run with just a click(very convinient).
+These scripts can be triggered from a browser bookmark, so that they run with just a click(very convenient).
 
 ## Pretty.js
 

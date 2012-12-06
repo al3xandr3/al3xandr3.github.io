@@ -4,7 +4,7 @@ title: Data Processing Utils
 category: data
 tags:
   - data
-intro: "reference of small utils that help in data processing / filtering / spliting / etc"
+intro: "Reference of small utils that help in data processing, filtering, splitting, etc"
 ---
 
 Reference of data processing little hacks / utils / tools
