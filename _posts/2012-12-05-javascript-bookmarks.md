@@ -14,8 +14,6 @@ These scripts can be triggered from a browser bookmark, so that they run with ju
 
 Here's an example. This script finds programming code placed on a web page and makes it pretty, using the google pretiffy syntax highlight javascript lib.
 
-```javascript
-
 	// A. Add as browser bookmark:
 	// javascript:(function(){var d=document,s=d.createElement('scr'+'ipt'),b=d.body,l=d.location;s.setAttribute('src','https://raw.github.com/gist/4213877/pretty.js');b.appendChild(s)})();
 
@@ -62,7 +60,6 @@ Here's an example. This script finds programming code placed on a web page and m
 	  //when finished loading jquery load prettify.js, then run
 	  loadJS('http://al3xandr3.github.com/js/libs/prettify.js', run);
 	});
-```
 
 How it works:
 
