@@ -79,3 +79,7 @@ I have also put toguether a javascript growl type alerts as a gist, to be used i
 I imagine this is a very common pattern for this type of script, so feel free to use, re-use, modify.
 
 Kudos for the **github:gist** service! (it even includes versioning !!)
+
+
+## Note
+- Here's is a nice collection of ready made bookmarklets: [https://github.com/yaph/bookmarklets](https://github.com/yaph/bookmarklets)

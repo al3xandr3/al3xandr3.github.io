@@ -9,6 +9,14 @@ sidebar: "<img src='http://al3xandr3.github.com/img/quotes_frequency.png' alt='q
 
 ## 2012
 
+<blockquote data-day="2013-01-03">
+facebook is my google for people
+</blockquote>
+
+<blockquote data-day="2013-01-02">
+interacting with a small child on a daily basis naturally improves your negotiation skills many fold - on candy negotiation that is
+</blockquote>
+
 <blockquote data-day="2012-10-31">
 an economic like KPI for restaurants and chefs: by how much you multiply the value of ingredients. You sell a 30€ meal, whose ingredients cost 10€, KPI=3
 </blockquote>

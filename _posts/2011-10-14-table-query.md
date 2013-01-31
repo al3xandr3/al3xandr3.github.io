@@ -21,7 +21,9 @@ Leverages the power of sql for data analyses inside ruby with a minimal API:
 	[[4]]
 
 Features:
+
  - automatically infers the data type (numeric vs text)
+ 
  - shortcut to get a column
 
 		> tbl = Table.new ["user", "value"], [["bob", 3], ["eve", 1]], "tbl"

@@ -15,7 +15,8 @@ Bought in 2008, only used at home and not very often. Includes Gig bag, and stil
 
 [official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/watch?v=9MpZoWsFlJQ)
 
-#### [*<strike>420€(new)</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm) **295€<font color="red"> (-30% !!!)</font>**
+- original price: [*<strike>420€ ( new )</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm)
+- selling for:  **295€** ( <font color="red">30% discount</font> )
 
 <br/><br/>
 
@@ -28,23 +29,27 @@ Bought in 2008, only used at home and not very often. Includes Gig bag, and stil
 - delay time up to 2sec
 - 11 different modes
 
-Is as new.
+As new.
 
 [official site](http://www.behringer.com/EN/Products/DD600.aspx) / [youtube](http://www.youtube.com/results?search_query=dd600+behringer)
 
-#### *<strike>[39€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>* **30€<font color="red"> (-23%)</font>**
+
+- original price: *<strike>[40€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>*
+- selling for:  **29€** ( <font color="red">23% discount</font> )
+
 
 <br/><br/>
 
 ## <font color="red">[*SOLD*] </font> <strike> Line6 M9 Stomp Box </strike>
 
-![m9](http://www.musicencyclopedia2004.com/eng/lessonsreviews/line6_m9_stompbox_modeler.jpg)
+![m9](http://mos.musicradar.com/images/Product%20News/Guitar/sept09/line6-mnine-460-100-460-70.jpg)
 
 Bought in 2010, only used at home and not very often, almost as new
 
 [official site](http://line6.com/m9/) / [youtube](http://www.youtube.com/results?search_query=line6+m9)
 
-#### *<strike>385€(new)</strike>* **250€<font color="red"> (-35%)</font>**
+- original price: *<strike>385€(new)</strike>*
+- selling for:  **250€** ( <font color="red">35% discount</font> )
 
 <br/><br/>
 
@@ -58,9 +63,9 @@ Bought in 2008, only used at home and not very often, almost as new
 
 [official site](http://www.framus.de/modules/produkte/produkt.php?submenuID=14172&katID=11076&cl=EN) / [youtube](www.youtube.com/results?search_query=Framus+FR212)
 
-
-#### *<strike>[409€(new)](http://www.thomann.de/de/framus_fr212_cb.htm)</strike>* **215€<font color="red"> (-47%)</font>**
-
+- original price: *<strike>[409€(new)](http://www.thomann.de/de/framus_fr212_cb.htm)</strike>*
+- selling for: **215€** ( <font color="red">47% discount</font> )
+ 
 <br/><br/>
 
 ##  <font color="red">[*SOLD*] </font> <strike>Boss ME-30 multi-effects unit</strike>
@@ -94,7 +99,9 @@ Oldie, but great sounding unit, try it out!
 
 Bought in 2008, rarelly used. 10-channel Compact Mixer with 2 Mono Mic/Line Inputs, 4 Stereo Inputs, and 1 Aux Send. 2x 48v Phantom Power for professional-level condenser microphones.
 
-#### *<strike>58€(new)</strike>* **35€<font color="red"> (-40%)</font>**
+- original price: *<strike>58€(new)</strike>*
+- selling for: **25€** ( <font color="red">40% discount</font> )
+
 
 <br/><br/>
 

@@ -59,15 +59,7 @@ Using ruby, gets flexible to do a lot:
 	end
 
 
-## Excel, confidence interval and trend 
-
-Output:
-
-	801,763  // average
-	1.74%    // 95% confidence error (±)
-	-0.27%   // trend direction(per day, when each row is a day's data)
-	801,763 [error ±1.74%] [trend: -0.27%] // everything
-
+## Excel: confidence interval and trend 
 
 Code(on cell D93, D94, D95, D96):
 
@@ -78,7 +70,30 @@ Code(on cell D93, D94, D95, D96):
 
   - D3:D92 is the column of numbers we want to apply the calculations to.
   - confidence interval for a 95% accuracy.
- 
+
+Output:
+
+	801,763  // average
+	1.74%    // 95% confidence error (±)
+	-0.27%   // trend direction(per day, when each row is a day's data)
+	801,763 [error ±1.74%] [trend: -0.27%] // everything
+
+
+## Excel: time hh:mm to minutes(or hours)
+
+To minutes(there's 1440 minutes(24 hours) in a day, excel keeps time fraction between 0 and 1), so for minutes:
+
+	=1440*mod(A1,1)
+
+- If you are working with time from a single cell only, be a bit careful. A hh:mm format will indicate only the fractional part of the DATE stored in the cell. That is, 0.24 an 1.24 and 18,000.24 will all display the same. To make sure you are getting only the fractional part (if that is what you want) use mod.
+- Can also get the hour by doing: =24*mod(A1,1)
+
+Output:
+
+	| before   | after  |
+	| 01:47:41 | 107.68 |
+
+
 ## Convert text file encoding
 
 Many text editors support doing this, but when the file is too big use instead the command line.
@@ -90,9 +105,7 @@ In windows powershell(from utf-8 to ascii)
 - reference(for *nix machine also): [best-way-to-convert-text-files-between-character-sets @stackoverflow](http://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
 
-
-### Notes:
+### References:
 
 - command line Unix like tools in windows can be found for example in: [Git for Windows shell](http://msysgit.github.com/) (bundles minGW)
-
-
+- [Top 10 Unix Command Line Utilities 2012](http://blog.coldflake.com/posts/2012-12-30-Top-10-Unix-Command-Line-Utilities-2012.html)
