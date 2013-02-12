@@ -1,9 +1,10 @@
 --- 
 layout: post
 title: Data Processing Utils
-category: data
+category: cheatsheet
 tags:
   - data
+  - statistics
 intro: "Reference of small utils that help in data processing, filtering, splitting, etc"
 ---
 

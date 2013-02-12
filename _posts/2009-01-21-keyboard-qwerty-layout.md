@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Why my keyboard has a QWERTY layout?
-category: abtesting
+category: data
 tags:
   - abtesting
   - keyboard

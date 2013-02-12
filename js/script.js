@@ -42,4 +42,28 @@ $(function () {
       return this.href.replace("al3xandr3.github.com", "localhost:4000");
     });
   }
+
+
+  /*
+  // Cheat Sheets
+  if (location.pathname.indexOf('/cs/') !== -1) {
+
+   $("h3").each(function( index ) {
+     
+    var elearr = $(this).nextUntil('h3');
+    //elearr.push(this);
+    var paragraph = $(this).add(elearr);
+
+     if (index%2 === 0) {
+        paragraph.wrapAll('<div class="item"></div>');
+     } else {
+        paragraph.wrapAll('</div><div class="item marg">');
+     }
+  });
+   */
+
+  }
+
+
+
 });
