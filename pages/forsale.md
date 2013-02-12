@@ -5,21 +5,6 @@ intro: "for sale"
 sidebar: "<h3>Contact</h3>email <a href='mailto:al3xandr3@gmail.com?Subject=For%20Sale'>al3xandr3@gmail.com</a><br>skype <a href='skype:al3x.martins?userinfo'>al3x.martins</a><h3>Music</h3><a href='https://soundcloud.com/al3x-andr3'>soundcloud</a><br><a href='http://www.youtube.com/user/alexandrenotebook/videos'>youtube</a><br>"
 ---
 
-## Orange Tiny Terror
-
-![tt](http://www.orangeamps.com/wp-content/uploads/2010/06/tiny-terror-d.jpg)
-
-All valve, 15 watt portable guitar head. Featuring a unique two stage pre-amp which has a massive tonal range using just three controls. When driven, this little amp has almost as much gain as most four stage lead channels!
-
-Bought in 2008, only used at home and not very often. Includes Gig bag, and still with original box.
-
-[official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/watch?v=9MpZoWsFlJQ)
-
-- original price: [*<strike>420€ ( new )</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm)
-- selling for:  **295€** ( <font color="red">30% discount</font> )
-
-<br/><br/>
-
 ## Behringer DD600 delay pedal
 
 ![DD600](http://www.americanmusical.com/ItemImages/Large/78578.jpg)
@@ -37,8 +22,23 @@ As new.
 - original price: *<strike>[40€(new)](http://www.thomann.de/de/behringer_dd600.htm)</strike>*
 - selling for:  **29€** ( <font color="red">23% discount</font> )
 
+<br/><br/>
+
+## <font color="red">[*SOLD*] </font> <strike> Orange Tiny Terror </strike>
+
+![tt](http://www.orangeamps.com/wp-content/uploads/2010/06/tiny-terror-d.jpg)
+
+All valve, 15 watt portable guitar head. Featuring a unique two stage pre-amp which has a massive tonal range using just three controls. When driven, this little amp has almost as much gain as most four stage lead channels!
+
+Bought in 2008, only used at home and not very often. Includes Gig bag, and still with original box.
+
+[official site](http://www.orangeamps.com/tiny-terror-head/) / [youtube](http://www.youtube.com/watch?v=9MpZoWsFlJQ)
+
+- original price: [*<strike>420€ ( new )</strike>*](http://www.thomann.de/de/orange_tiny_terror.htm)
+- selling for:  **270€** ( <font color="red">35% discount</font> )
 
 <br/><br/>
+
 
 ## <font color="red">[*SOLD*] </font> <strike> Line6 M9 Stomp Box </strike>
 
