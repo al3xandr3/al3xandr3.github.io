@@ -5,7 +5,7 @@ intro: "for sale"
 sidebar: "<h3>Contact</h3>email <a href='mailto:al3xandr3@gmail.com?Subject=For%20Sale'>al3xandr3@gmail.com</a><br>skype <a href='skype:al3x.martins?userinfo'>al3x.martins</a><h3>Music</h3><a href='https://soundcloud.com/al3x-andr3'>soundcloud</a><br><a href='http://www.youtube.com/user/alexandrenotebook/videos'>youtube</a><br>"
 ---
 
-## Behringer DD600 delay pedal
+## <font color="red">[*SOLD*] </font> <strike>Behringer DD600 delay pedal</strike>
 
 ![DD600](http://www.americanmusical.com/ItemImages/Large/78578.jpg)
 
