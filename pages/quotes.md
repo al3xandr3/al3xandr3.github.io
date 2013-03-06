@@ -2,12 +2,20 @@
 layout: page
 title: Twitter Quotes 
 intro: "Quotes from Twitter"
-sidebar: "<img src='http://al3xandr3.github.com/img/quotes_frequency.png' alt='quotes_frequency.png'>"
+sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 ---
 
-![http://al3xandr3.github.com/img/quotes_cloud.png](http://al3xandr3.github.com/img/quotes_cloud.png)
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://raw.github.com/jasondavies/d3-cloud/master/d3.layout.cloud.js"></script>
 
-## 2012
+<div id="quote_cloud">
+</div>
+
+## 2013
+
+<blockquote data-day="2013-03-01">
+Is not that my memory is bad is more like lazy. Anything that is a google / bing search away is not worth the trouble.
+</blockquote>
 
 <blockquote data-day="2013-01-03">
 facebook is my google for people
@@ -16,6 +24,8 @@ facebook is my google for people
 <blockquote data-day="2013-01-02">
 interacting with a small child on a daily basis naturally improves your negotiation skills many fold - on candy negotiation that is
 </blockquote>
+
+## 2012
 
 <blockquote data-day="2012-10-31">
 an economic like KPI for restaurants and chefs: by how much you multiply the value of ingredients. You sell a 30€ meal, whose ingredients cost 10€, KPI=3

@@ -8,7 +8,7 @@ tags:
 intro: "analysis"
 ---
 
----
+machine learning is great to find the formula given the examples, - its all that is to it. That how it "learns"
 
 ### types of Data Analysis Questions
 - Descriptive: Describe a set of data ex: census
@@ -109,3 +109,25 @@ Macro - Indentifying the Macro purpose of the data collected is key. What enviro
   - http://www.ashmaurya.com/2010/06/pivot-before-productmarket-fit-optimize-after/
   - http://www.ashmaurya.com/2010/07/3-rules-to-actionable-metrics/
   - http://news.ycombinator.com/item?id=5198187 - importance of excel discussion
+
+# Reporting Charts
+
+- Inference Analysis is great to find what explains the major changes
+
+- Top Impact - quantifies what final impact(revenue for example) had a change in percent, ex:
+ A, change: -10%, impact: 5$
+ B, change: -2%, impact: 1k$
+So B is actually more important althought that is not evident from the change.
+Then order by order of importance
+
+- Relative Change chart, to see the relative change over time of a specific metric
+
+# Metrics in an organization
+
+1. Learn the context and ecosystem: what products, activities exist, what is important money vs users vs... 
+2. Who are the stakeholders, that can act on insight, and their understanding on stats.
+3. Data step 1: Build a daily/weekly report. What happened. Level 1: sales change. Level 2: what product changed. Level 3: specific country change ?
+ - the data background here in secondary not primary, and the tool to display it also. Just tools most important is end result. Excel is excelent to cretae an agile dashboard.
+ - this might also reveal gaps with data insfrastructure
+2. Data step X: Actionable insights for each stakeholder. Guidance, and this might vary by stakeholder.
+

@@ -2,7 +2,7 @@
 layout: page
 title: Code
 intro: "al3xandr3's Code"
-sidebar: "<h4>my <a href='https://github.com/al3xandr3/'>github</a> account</h4>"
+sidebar: "<h4>my <a href='https://github.com/al3xandr3/'>github</a></h4>"
 ---
 
 ## Dashboard Builder
