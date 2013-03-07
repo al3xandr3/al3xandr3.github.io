@@ -126,6 +126,21 @@ al3xandr3.wordcloud = function(placement, words) {
           return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
         })
         .text(function(d) { return d.text; });
+
+    var anima = function () {
+          d3.select(this).transition()
+          .duration(500)
+          .attr("transform", function(d) { return "translate(" + [d.x, d.y] + ")rotate(" + (d.rotate+15) + ")"; })
+          .style("font-size", function(d) { return (d.size-3) + "px"; })
+        .transition()
+          .delay(500)
+          .attr("transform", function(d) { return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")"; })
+          .style("font-size", function(d) { return d.size + "px"; });
+    };
+
+    var text = d3.select(placement).selectAll("text");
+    text.on("mouseover", anima);
+
   }
 };
 
