@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Analysis
-category: cheetsheet
+category: cheatsheet
 tags:
   - statistics
   - data
