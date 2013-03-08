@@ -93,10 +93,10 @@ body{ font:16px/26px Segoe UI, Helvetica Neue, Helvetica, Arial; }
 
 #title{ 
 	color:#333534; 
-	font-size: 64px;
+	/*font-size: 64px;*/
 	font-weight: 300;
 	letter-spacing: -2px;
-	margin: .6em 0 .5em 0;
+	margin: .5em 0 .5em 0;
 }
 
 ::-moz-selection { background:  #F5B401; color: black; text-shadow: none; }

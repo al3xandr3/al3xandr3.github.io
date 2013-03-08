@@ -2,6 +2,9 @@
   Alexandre Martins
 */
 
+// CSS
+//  $("#title").spanify("3", "titlenumbers");
+//  $(".titlenumbers").css('color', al3xandr3.color1);
 (function ($) {
   $.fn.spanify = function (str, aclass) {
     var regex = new RegExp(str, "gi");
@@ -14,59 +17,11 @@
   };
 }(jQuery));
 
-//On Document Ready
-$(function () {
 
-  // CSS
-  //  $("#title").spanify("3", "titlenumbers");
-  //  $(".titlenumbers").css('color', al3xandr3.color1);
 
-  $('#title').click(function(){ document.location="/";} );
-
-  // Jump to Top
-  $('.jump').click(function () {
-    $('html, body').animate({scrollTop: 0}, 'slow');
-  });
-
-  /* for images in localhost */
-  if (location.host === "localhost:4000") {
-    $("img").attr('src', function () {
-      return this.src.replace("al3xandr3.github.com", "localhost:4000");
-    });
-  }
-
-  /* for links in localhost */
-  if (location.host === "localhost:4000") {
-    $("a").attr('href', function () {
-      return this.href.replace("al3xandr3.github.com", "localhost:4000");
-    });
-  }
-
-/*
-  // Cheat Sheets
-  if (location.pathname.indexOf('/cs/') !== -1) {
-
-   $("h3").each(function( index ) {
-     
-    var elearr = $(this).nextUntil('h3');
-    //elearr.push(this);
-    var paragraph = $(this).add(elearr);
-
-     if (index%2 === 0) {
-        paragraph.wrapAll('<div class="item"></div>');
-     } else {
-        paragraph.wrapAll('</div><div class="item marg">');
-     }
-  });
-  }
+/* 
+  Wordcloud
 */
-
-  if (location.pathname === "/pages/quotes.html") {
-    al3xandr3.wordcloud("#quote_cloud", al3xandr3.get_quotes_count());
-  }
-});
-
-// Wordcloud
 
 // http://jsfiddle.net/shaydoc/rxcHA/
 var al3xandr3 = al3xandr3 || {};
@@ -143,5 +98,91 @@ al3xandr3.wordcloud = function(placement, words) {
 
   }
 };
-
 // al3xandr3.wordcloud("#quote_cloud", al3xandr3.get_quotes_count());
+
+
+/* 
+  Animated Title
+*/
+al3xandr3.title = function () {
+  var fill = d3.scale.category20();
+  d3.select("#title").append("svg")
+      .attr("width", 350)
+      .attr("height", 65)
+    .append("g")
+    .selectAll("text")
+      .data(['A', 'L', '3', 'X', 'A', 'N', 'D', 'R','3'])
+    .enter().append("text")
+      .attr("text-anchor", "top")
+      .attr("transform", function(d, i) {
+          return "translate(" + [i*33, 60] + ")rotate(" + 0 + ")";
+       })
+      .style("opacity", 0.8)
+      .style("font-size", function(d) { return "54px"; })
+      .attr("vertical-align", "middle")
+      .text(function(d) { return d; });
+
+  d3.select("#title").selectAll("text").transition()
+      .duration(20000)
+      .delay(function(d, i) { return i * 10; })
+    .style("fill", function(d, i) { return fill(i); })
+    .attr("transform", function(d, i) { return "translate(" + [i*35, 60] + ")rotate(" +  (~~(Math.random() * 2) * 90) + ")"; });
+
+};
+
+
+/* 
+  On Document Ready
+*/
+
+$(function () {
+
+  // animated title
+  al3xandr3.title();
+  // link click  
+  $('#title').click(function(){ document.location="/";} );
+
+  // Jump to Top
+  $('.jump').click(function () {
+    $('html, body').animate({scrollTop: 0}, 'slow');
+  });
+
+  /* for images in localhost */
+  if (location.host === "localhost:4000") {
+    $("img").attr('src', function () {
+      return this.src.replace("al3xandr3.github.com", "localhost:4000");
+    });
+  }
+
+  /* for links in localhost */
+  if (location.host === "localhost:4000") {
+    $("a").attr('href', function () {
+      return this.href.replace("al3xandr3.github.com", "localhost:4000");
+    });
+  }
+
+  // wordcloud animation
+  if (location.pathname === "/pages/quotes.html") {
+    al3xandr3.wordcloud("#quote_cloud", al3xandr3.get_quotes_count());
+  }
+
+/*
+  // Cheat Sheets
+  if (location.pathname.indexOf('/cs/') !== -1) {
+
+   $("h3").each(function( index ) {
+     
+    var elearr = $(this).nextUntil('h3');
+    //elearr.push(this);
+    var paragraph = $(this).add(elearr);
+
+     if (index%2 === 0) {
+        paragraph.wrapAll('<div class="item"></div>');
+     } else {
+        paragraph.wrapAll('</div><div class="item marg">');
+     }
+  });
+  }
+*/
+
+});

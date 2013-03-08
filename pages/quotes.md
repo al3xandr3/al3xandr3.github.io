@@ -5,9 +5,6 @@ intro: "Quotes from Twitter"
 sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 ---
 
-<script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
-<script src="http://www.jasondavies.com/wordcloud/d3.layout.cloud.js" type="text/javascript"></script>
-
 <div id="quote_cloud"></div>
 
 ## 2013
