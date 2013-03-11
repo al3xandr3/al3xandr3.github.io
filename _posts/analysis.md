@@ -8,7 +8,11 @@ tags:
 intro: "analysis"
 ---
 
-machine learning is great to find the formula given the examples, - its all that is to it. That how it "learns"
+Getting handle on project:
+- 1 Create a main KPI dashboard. 
+- 2 Slow down the daily running, do long term.
+
+Machine learning is great to find the formula given the examples, - its all that is to it. That how it "learns"
 
 ### types of Data Analysis Questions
 - Descriptive: Describe a set of data ex: census

@@ -7,6 +7,8 @@ tags:
 intro: "learning how to learn"
 ---
 
+## How to Learn
+
 ### Deconstruction: 
 - Reduce content to its minimal moving parts (deconstruct, simplify, zoom out, distill).
 - Start with the outcome; start at the end and work your way backwards
@@ -16,6 +18,7 @@ intro: "learning how to learn"
 - Finding simple commonalities in a domain that can serve as a key to accelerate learning
 
 ### Selection: analyse and find the common features (80/20)
+- Choose the 20% that covers the 80%
 - The Minimal Effective Dose (MED): "The lowest volume, the lowest frequency, the fewest changes that get us our desired result."
 - The what(material) is more important than the how(method)
 
@@ -38,6 +41,12 @@ intro: "learning how to learn"
 ### Encoding: zip  / memorization tricks
 - Find ways to associate the knowledge and skills with what you already know.
 
+---
+
+### Notes
+- Explaining to others, forces to find clear explanations and interiorize the learnings
+- Writting often helps thinking and developing subject further
+- When learning be pro-activity, especially by asking many questions
 
 #### References
 - The 4-Hour Chef Book
