@@ -106,6 +106,14 @@ In windows powershell(from utf-8 to ascii)
 - reference(for *nix machine also): [best-way-to-convert-text-files-between-character-sets @stackoverflow](http://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
 
+### Excel: pivot table count distinct
+
+Insert a column and in Cell C2 paste this formula:
+
+	=IF(SUMPRODUCT(($A$2:$A2=A2)*($B$2:$B2=B2))>1,0,1)
+
+Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-count-unique-values
+
 ### References:
 
 - command line Unix like tools in windows can be found for example in: [Git for Windows shell](http://msysgit.github.com/) (bundles minGW)

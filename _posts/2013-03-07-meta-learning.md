@@ -43,6 +43,25 @@ intro: "learning how to learn"
 
 ---
 
+### Do a plan
+
+Take into account the above rules of thumb to define a plan on how to tackle:
+
+ - What to study
+   - Look at the ideal end goals, deconstruct the area - to define what to study
+   - Apply 80/20 selection and MED
+   - Find ideal the material, interview Pro's
+ 
+ - When to study it & Expected Outcomes
+   - Look into the sequencing principles - organize an ideal "growth" sequence.
+   - Define clear dates & outcomes for the sequence - applies the stakes principle.
+
+ - During the study (and afterwards when practicing)
+   - Summarize learnings in cheat-sheets - keep forever refining them, the older and more refined the better they will be.
+   - Potencially use memorization / encoding tricks if/when required.
+
+---
+
 ### Notes
 - Explaining to others, forces to find clear explanations and interiorize the learnings
 - Writting often helps thinking and developing subject further

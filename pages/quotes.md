@@ -9,6 +9,14 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2013
 
+<blockquote data-day="2013-03-13">
+Extremes are bad. Choose sides, but avoid going 100%. Keep some balance. Eg: don't be too rude, but also don't be too nice
+</blockquote>
+
+<blockquote data-day="2013-03-13">
+Better than quick-and-dirty is quick-and-not-dirty
+</blockquote>
+
 <blockquote data-day="2013-03-01">
 Is not that my memory is bad is more like lazy. Anything that is a google / bing search away is not worth the trouble.
 </blockquote>
@@ -56,7 +64,7 @@ competition, over time, has the tendency to eliminate inefficiencies
 </blockquote>
 
 <blockquote data-day="2012-09-29">
-For the sake of evolution, patents should be instead tax on copying bad stuff, not tax on copying good stuff
+For the sake of evolution, patents should be instead tax on copying bad stuff, not tax on copying good stuff. Its the other way around guys...
 </blockquote>
 
 <blockquote data-day="2012-08-29">
