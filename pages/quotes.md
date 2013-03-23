@@ -10,6 +10,10 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 ## 2013
 
 <blockquote data-day="2013-03-13">
+Whenever there's someone too friendly as cashier i always think is their first day on the job, or the last... Guess that is valid for any job
+</blockquote>
+
+<blockquote data-day="2013-03-13">
 Extremes are bad. Choose sides, but avoid going 100%. Keep some balance. Eg: don't be too rude, but also don't be too nice
 </blockquote>
 

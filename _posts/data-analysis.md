@@ -1,26 +1,12 @@
 ---
 layout: post
-title: Analysis
+title: Data Analysis
 category: cheatsheet
 tags:
   - statistics
   - data
-intro: "analysis"
+intro: "Data Analysis Guidelines"
 ---
-
-### Types Data Analysis Questions (Breakdown)
-
-- Descriptive: Describe a set of data ex: census
-
-- Exploratory: Find relationships you didn't know about. Find relationships in variables(covariation) ex: see what areas of brain lights for given a certain activity.
- 
-- Inferential: Use a small sample of data to say something about a bigger population. ex: air polution vs life expectancy
-
-- Predictive: To use the data on some objects to predict values for another object. ex: outcame of the elections, figure out who is patterns given on purchase patterns
-
-- Causal: To find out what happens to one variable when you make another variable change. ex: medical drug testing
-
-- Mechanistic: understand the exact changes in variables that lead to changes in other variables for individual objects. ex: how pavement tiles interact.
 
 ### An Analysis Task
 
@@ -54,50 +40,13 @@ Macro - Indentifying the Macro purpose of the data collected is key. What enviro
   - Work out ways to validate/test numbers - often different points of view on same data ofter reveals gaps
   - Predict whats going to happen - from deep understanding
 
-### Reporting & Charting
+--- 
 
-- Inference Analysis is great to find what explains the major changes. Visual drilldown, of what variables most contributed to the top level change.
-
-- Top Impact - quantifies what final impact(revenue for example) had a change in percent, ex:
- A, change: -10%, impact: 5$
- B, change: -2%, impact: 1k$
-So B is actually more important althought that is not evident from the change.
-Then order by order of importance
-
-- Relative change chart, to see the relative change over time of a specific metric.
-
-### Machine learning
-
-Is all about creating a model of some observed function. Usefull to have programs automating a process and for predicting.
-
-Ex, simple: by your email history of classifying mails with "buy this" as spam, i can guess that the next one "buy this" is also spam (An average is model, simple and naive)
-Ex, complex: by recording the way you drive your car given the road ahead, i can learn and also drive a car in same way.
-
-Tipically is also said that all models are wrong but try to get the closer as possible (the elast means squeare error)
-
-Andre Ng machine learning classes are excelent.
-
-### Metrics in an Organization
-
-1. Learn the context and ecosystem: what products, activities exist, what is important money, users, downloads, etc..
-2. Who are the stakeholders, that can act on insight, and their understanding on stats.
-3. Data step 1: Build a daily/weekly report. What happened. With drilldown levels: lvl.1: sales change. lvl.2: what product changed. lvl.3: specific country change, etc...
-Lvl.1 some say should be up to 3 KPIs
- - The data backend systems are secondary and the tool to display it also. Excel is excelent to cretae an agile dashboard.
- - This exercise might also reveal gaps with data insfrastructure/
-4. Data step X: Actionable insights for each stakeholder. Guidance, and this might vary by stakeholder.
-5. AB testing
-5. Prediction
-
-Choosing KPIs: Actionable, that put some pressure on something, and the pressure pushes things in right direction. Bit like economic changing action.
-
----
-
-### Job of an analyst
+### Job of an Analyst
 
 1) Always ask, “In what ways can we challenge what we are doing?” or “How can I break this process”? No gain comes from doing things the exact same way you have been doing them.
 
-2) Read, grow, look beyond your group. Know that you have never found the right answer, and the search is more impor­tant than the actual answer.
+2) Read, grow, look beyond your group. Know that you have never found the right answer, and the search is more important than the actual answer.
 
 3) Define success up front. This is not just the goals your boss sets for you, but more importantly what it is that will define a successful program?
 
@@ -115,14 +64,54 @@ Choosing KPIs: Actionable, that put some pressure on something, and the pressure
 
 10) Most importantly, change all the rules, and challenge all the rules, not to be difficult, but because you only get better by making others around you better.
 
-
 One of the most famous psychological studies in the last few years is the Dunning-Kruger Effect. Its best description is:
-
-The Dunning–Kruger effect is a cognitive bias in which unskilled people make poor decisions and reach erroneous conclusions, but their incompetence denies them the metacognitive ability to recognize their mistakes. The unskilled therefore suffer from illusory superiority, rating their ability as above average, much higher than it actually is, while the highly skilled underrate their own abilities, suffering from illusory inferiority. To put simply, when you don’t know what you don’t know, you have no ability to differentiate what is right or wrong.
+> The Dunning–Kruger effect is a cognitive bias in which unskilled people make poor decisions and reach erroneous conclusions, but their incompetence denies them the metacognitive ability to recognize their mistakes. The unskilled therefore suffer from illusory superiority, rating their ability as above average, much higher than it actually is, while the highly skilled underrate their own abilities, suffering from illusory inferiority. To put simply, when you don’t know what you don’t know, you have no ability to differentiate what is right or wrong.
 
 Reference: http://blogs.adobe.com/digitalmarketing/personalization/conversion-optimization/why-we-do-what-we-do-dunning-kruger-effect/
 
 ---
+
+### Metrics in an Organization(or on any application)
+
+1. Learn the context and ecosystem: what products, activities exist, what is important money, users, downloads, etc..
+2. Who are the stakeholders, that can act on insight, and their understanding on stats.
+3. Define the metrics framework (like REAN) and the KPIs
+4. Data step 1: Build a daily/weekly report. What happened. With drilldown levels: lvl.1: sales change. lvl.2: what product changed. lvl.3: specific country change, etc...
+Lvl.1 some say should be up to 3 KPIs
+ - The data backend systems are secondary and the tool to display it also. Excel is excelent to cretae an agile dashboard.
+ - This exercise might also reveal gaps with data insfrastructure/
+5. Data step X: Actionable insights for each stakeholder. Guidance, and this might vary by stakeholder.
+6. AB testing / Optimize
+7. Prediction
+
+Choosing KPIs: Actionable, that put some pressure on something, and the pressure pushes things in right direction. Bit like economic changing action.
+
+---
+
+### Machine learning
+
+Is all about creating a model of some observed function. Usefull to have programs automating a process and for predicting(guessing).
+
+Ex, simple: by your email history of classifying mails with "buy this" as spam, i can guess that the next one "buy this" is also spam (An average is model, simple and naive)
+Ex, complex: by recording the way you drive your car given the road ahead, i can learn and also drive a car in same way.
+
+Tipically is also said that all models are wrong but try to get the closer as possible (the least square errors)
+
+Andre Ng machine learning classes are excelent.
+
+---
+
+### Reporting & Charting
+
+- Inference Analysis is great to find what explains the major changes. Visual drilldown, of what variables most contributed to the top level change.
+
+- Top Impact - quantifies what final impact(revenue for example) had a change in percent, ex:
+ A, change: -10%, impact: 5$
+ B, change: -2%, impact: 1k$
+So B is actually more important althought that is not evident from the change.
+Then order by order of importance
+
+- Relative change chart, to see the relative change over time of a specific metric.
 
 ### Analysis tecniques
 - Correlation
@@ -133,13 +122,6 @@ Reference: http://blogs.adobe.com/digitalmarketing/personalization/conversion-op
 - Sample size guidelines
 - AB testing - sample size, t-test
 - How to check 2 different sets of numbers average is really statistically different 
-
----
-
-### Excel
-  - Name table as a variable: select an excel table and give it a name, easier to use in other sheets
-  - Take advantage of hidding columns/rows to clean up the final results: Possible to hide tabs, minimize columns, hide columns.
-  - Useful function to read up on if you don't know them: Index, Match, Sumif, Sumifs, Iferror, Vlookup, Hlookup, Offset, Correl , Forecast, Confidence.norm , Norm.inv, Subtotal, Camera.
 
 ---
 
