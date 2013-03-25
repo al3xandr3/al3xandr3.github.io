@@ -41,6 +41,8 @@ intro: "learning how to learn"
 ### Encoding: zip  / memorization tricks
 - Find ways to associate the knowledge and skills with what you already know.
 
+- reference: Memorizing a programming language using spaced repetition software http://sivers.org/srs
+
 ---
 
 ### Do a plan

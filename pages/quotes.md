@@ -9,8 +9,16 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2013
 
+<blockquote data-day="2013-03-25">
+I like the no excuses model, its either done or not done, no excuses. Is harsh an unfair at times, but forces right direction and sometimes creative solutions
+</blockquote>
+
 <blockquote data-day="2013-03-13">
 Whenever there's someone too friendly as cashier i always think is their first day on the job, or the last... Guess that is valid for any job
+</blockquote>
+
+<blockquote data-day="2013-03-13">
+Extremes are unbalanced by definition
 </blockquote>
 
 <blockquote data-day="2013-03-13">
