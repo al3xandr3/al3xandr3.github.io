@@ -28,7 +28,7 @@ Macro - Indentifying the Macro purpose of the data collected is key. What enviro
   - hide the unhelpfull data, think from final viewer pov. Remove the None's / empty's values...
   - the end audience don't care the amount of work, only if it addresses well or not their questions - no point of putting everything you found on the output.
   - simple correct english
-  - simple gaphs
+  - simple graphs
   - put it into perspective/compare with similar/total
   - callout: trends, outliers, counter-intuitive facts
 
