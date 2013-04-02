@@ -73,10 +73,11 @@ Read the log file and create a semicolon separated file:
     ggplot(data=d, aes(y=time, x=date)) + geom_point(aes(color=status), alpha=0.6) +  scale_x_datetime(major = "1 days") + scale_y_datetime(major = "1 hours")
     
 ![Random Person](http://al3xandr3.github.com/img/others_random_person.png)        
- - 10-Sep is Saturday and 11-Sep is Sunday, means skype was off on the weekend
- - start of workday between 9h-11h
- - end of workday between 18h-19h
- - skype is offline after working hours, except on night of Monday 05-Sep
+
+- 10-Sep is Saturday and 11-Sep is Sunday, means skype was off on the weekend
+- start of workday between 9h-11h
+- end of workday between 18h-19h
+- skype is offline after working hours, except on night of Monday 05-Sep
 
 ## Online Activity Patterns
 

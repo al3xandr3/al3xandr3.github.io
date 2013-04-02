@@ -13,6 +13,7 @@ intro: "learning how to learn"
 - Reduce content to its minimal moving parts (deconstruct, simplify, zoom out, distill).
 - Start with the outcome; start at the end and work your way backwards
 - Viewing the subject from a variety of perspectives 
+- Walk from the end goal backwards, recursively asking "Why?"
 - Looking at what successful outliers are doing 
 - Probing the minds of experts through interviews
 - Finding simple commonalities in a domain that can serve as a key to accelerate learning
@@ -45,13 +46,13 @@ intro: "learning how to learn"
 
 ---
 
-### Do a plan
+### Do a Plan
 
 Take into account the above rules of thumb to define a plan on how to tackle:
 
  - What to study
-   - Look at the ideal end goals, deconstruct the area - to define what to study
-   - Apply 80/20 selection and MED
+   - Look at the end goals and deconstruct - to define what to study
+   - Select: apply 80/20 rule for selection and MED
    - Find ideal the material, interview Pro's
  
  - When to study it & Expected Outcomes
@@ -59,8 +60,8 @@ Take into account the above rules of thumb to define a plan on how to tackle:
    - Define clear dates & outcomes for the sequence - applies the stakes principle.
 
  - During the study (and afterwards when practicing)
-   - Summarize learnings in cheat-sheets - keep forever refining them, the older and more refined the better they will be.
-   - Potencially use memorization / encoding tricks if/when required.
+   - Summarize learnings in cheat-sheets, can be part of the expected outcomes - keep refining them
+   - Potencially use memorization / encoding tricks if/when required
 
 ---
 

@@ -8,6 +8,33 @@ tags:
 intro: "Data Analysis Guidelines"
 ---
 
+
+### Why Analysis?
+
+> 1. Improve something 
+  - eg: a process, a strategy in a company, government, health
+  - skills: domain knowledge: digital marketing, business processes
+
+> 2. By changing the (current) way things are done
+  - eg: Do Y instead of X. Test Y instead of X
+  - skills: AB testing
+
+> 3.  Because of an insight / revelation
+  - eg: From our Analysis we found that Y is better than X
+  - skills: Ask good questions, be curious, distill what is important
+
+> 4. (An Insight) That was presented in a clear way
+  - skills: visualization, communication, rhetoric, human behavior
+  
+> 5. (An Insight) That was analysed in a correct way
+  - skills: statistics, probabilities, counting, estimating, correlation, regression, modeling, etc...
+
+> 6. (An Insight) That had data available
+  - skills: SQL, scripting, google analytics, databases, etc...
+
+Data Analysis is the science behind change.
+
+
 ### An Analysis Task
 
 - *Before*
