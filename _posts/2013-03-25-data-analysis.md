@@ -9,33 +9,45 @@ intro: "Data Analysis Guidelines"
 ---
 
 
-### Why Analysis?
+## Why Analysis?
 
-> 1. Improve something 
-  - eg: a process, a strategy in a company, government, health
-  - skills: domain knowledge: digital marketing, business processes
+**1. Improve something**
 
-> 2. By changing the (current) way things are done
-  - eg: Do Y instead of X. Test Y instead of X
-  - skills: AB testing
+eg: a process, a strategy in a company, government, health
 
-> 3.  Because of an insight / revelation
-  - eg: From our Analysis we found that Y is better than X
-  - skills: Ask good questions, be curious, distill what is important
+skills: domain knowledge: digital marketing, business processes
 
-> 4. (An Insight) That was presented in a clear way
-  - skills: visualization, communication, rhetoric, human behavior
+
+**2. By changing the (current) way things are done**
+
+eg: Do Y instead of X. Test Y instead of X
+
+skills: AB testing
+
+
+**3. Because of an insight / revelation**
+
+eg: From our Analysis we found that Y is better than X
+
+skills: Ask good questions, be curious, distill what is important
+
+**4. (An Insight) That was presented in a clear way**
   
-> 5. (An Insight) That was analysed in a correct way
-  - skills: statistics, probabilities, counting, estimating, correlation, regression, modeling, etc...
+skills: visualization, communication, rhetoric, human behavior
+  
+**5. (An Insight) That was analysed in a correct way**
 
-> 6. (An Insight) That had data available
-  - skills: SQL, scripting, google analytics, databases, etc...
+skills: statistics, probabilities, counting, estimating, correlation, regression, modeling, etc...
+
+**6. (An Insight) That had data available**
+
+skills: SQL, scripting, google analytics, databases, etc...
 
 Data Analysis is the science behind change.
 
+--- 
 
-### An Analysis Task
+## An Analysis Task
 
 - *Before*
   - What is the Macro of the activity? ex: a payment flow
@@ -69,7 +81,7 @@ Macro - Indentifying the Macro purpose of the data collected is key. What enviro
 
 ---
 
-### Metrics in an Organization(or on any application)
+## Metrics in an Organization(or on any application)
 
 1. Learn the context and ecosystem: activities exist, what products, what are the end goals: usage, money, user count, downloads, etc..
 2. Who are the stakeholders, that can act on recomendations, and their understanding on stats.
@@ -85,7 +97,7 @@ Choosing KPIs: Actionable, that put some pressure on something, and the pressure
 
 --- 
 
-### Machine learning
+## Machine learning
 
 Is all about creating a model of some observed function. Usefull to have programs automating a process and for predicting(guessing).
 
