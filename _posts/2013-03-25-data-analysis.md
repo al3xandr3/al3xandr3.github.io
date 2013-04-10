@@ -45,8 +45,7 @@ skills: statistics, probabilities, counting, estimating, correlation, regression
 
 skills: SQL, programming, google analytics, databases, etc...
 
-Improve something* - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of changes and find the exact changes that will work positively. Very often the organization current status is a result of lucky or unlucky (external random) events mixed with internal changes at the right or wrong time. Typically the process of change is a sequence of trial and errors until something works out. So, instead of choosing changes "blindly", Data Analysis can help with narrowing down the search space of potentially useful changes and in pointing the focus in the right direction.
-
+Improve something* - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of lucky or unlucky (external random) events mixed with internal changes at the right or wrong time. Typically the process of change(improvement) is a sequence of trial and errors until something works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of potentially useful changes and in guiding the focus in the right direction.
 
 
 ---
