@@ -45,28 +45,31 @@ skills: statistics, probabilities, counting, estimating, correlation, regression
 
 skills: SQL, programming, google analytics, databases, etc...
 
-Improve something* - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of lucky or unlucky (external random) events mixed with internal changes at the right or wrong time. Typically the process of change(improvement) is a sequence of trial and errors until something works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of potentially useful changes and in guiding the focus in the right direction.
+Improve something* - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of lucky or unlucky (external random) events mixed with internal changes at the right or wrong time. Typically the process of change(improvement) is a sequence of trial and errors until something works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in pointing the focus in the right direction.
 
 
 ---
 
-## Presentation
-
-- The "1 in every 45" is an intuitive way to display a ratio.
-- Sugarcoating and eye candy can make the good great. But it won't help a poor insight.
-- Graphics and presentation should have a hierarchy to be quickly understood. 
-  - Start with 1. Summary top view then allow for 2. Drill-Down view
-
-Tools: Excel, R(ggplot2), D3.js
-
-## Find Insights
+## [Find Insights]
 
 Useful metrics examples:
 
 - Price of digital media entertainment per hour - http://gigaom.com/2013/02/10/cost-per-hour-a-new-metric-for-paid-content/
 - Food price per kg - because package size varies, the price per kilogram is a clear way to compare prices across foods and packages sizes.
 
-## Analysis
+
+## [Presentation]
+
+- The "1 in every 45" is an intuitive way to display a ratio.
+- Sugarcoating and eye candy can make the good great, but it won't help a poor insight.
+- Graphics and presentation should have a hierarchy to be quickly understood. 
+  - Start with 1. Summary top view then allow for 2. Drill-Down view
+- Is said that a bar and line charts can cover almost anything needed to be visualized, it has less impact as a visually stunning infographic, but with about the same representation value and quicker to get done.
+
+Tools: Excel, R(ggplot2), D3.js
+
+
+## [Analysis]
 
  - Whenever an average value is presented and analysed, it should have a confidence measure (standard deviation for example, also confirm for normality)
 
@@ -78,7 +81,7 @@ Useful metrics examples:
 
  - Regression, to model the data, typically over simplifies, but often is good enough.
 
-## Data
+## [Data]
 
  - The central data structure is the table structure: databases, spreadsheets, csv, R's data.frame, etc...
 
@@ -134,6 +137,22 @@ Choosing KPIs: Actionable, that put some pressure on something, and the pressure
 
 --- 
 
+## Web Analytics [Domain]
+
+ - WA = Web Analytics
+
+- WA is a measuring tool and central for the Digital Marketing.
+
+ - Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
+
+- Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
+
+- Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
+
+- How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
+
+---
+
 ## Machine learning
 
 Is about creating a model of an observed function. Useful to have programs automating a process and for predicting(guessing).
@@ -147,3 +166,4 @@ Example complex: by recording all the details in how a person drives a car given
 Andre Ng machine learning classes are excellent.
 
 Latest trend, big on the start of 2013 is probabilistic programming, also called model-based machine learning: http://probabilistic-programming.org/wiki/Home
+
