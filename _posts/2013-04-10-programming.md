@@ -26,6 +26,22 @@ Reference:
 ### Apps
   - Make things runnable on command line as standalone bin, easier to integrate with other apps later on.
   - Make it accessable from a url endpoint, as api (close enough) as a standalone, json seems to be the norm these days, but data format have changed overtime, and will probably continue changing. CSV is a good fit to data analysis + tools support + easy to work with.
-  - GUIs are not composable. But they can be extendable with plug-ins.
+  - GUIs are not composable. But they can be extendable with plug-ins. And they are easier to use (compared to command line), and the current standard for applications
 
 
+### Functional Programming
+- Functions as values, that can be passed to arguments of other function. Functions as 1st class citizens.
+- Avoid shared state. Avoid variables outside of functions.
+- Design functions that take other functions as argument, makes them much more generic and useful in the long term.
+- Iterate with map and reduce and fold, avoid iteration where state changes.
+
+### Current Tools of Choice
+- These are likely to change a over time
+- There is a lot of overlap between each tool but follow rule: choose the best tool for the job.
+- Use functional programming principles in the language chosen for the task. More important than tool is to know and apply good practices.
+
+- Ruby - quick scripting
+- Clojure - applications
+- R - number crunching, trying out algorithms
+- Excel - data analysis(EDA), data dashboard prototypes
+- Javascript - mandatory because of browser

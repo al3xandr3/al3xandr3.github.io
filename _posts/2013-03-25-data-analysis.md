@@ -139,17 +139,19 @@ Choosing KPIs: Actionable, that put some pressure on something, and the pressure
 
 ## Web Analytics [Domain]
 
- - WA = Web Analytics
+  - WA = Web Analytics
 
-- WA is a measuring tool and central for the Digital Marketing.
+  - WA is a measuring tool and central for the Digital Marketing.
 
- - Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
+  - Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
 
-- Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
+  - Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
 
-- Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
+  - Performance Marketing - optimize ROI of web experience over the long term. Rather than trying to go after awards or idealized theories of good design, it advocates performance-driven design. Seeks to identity the ideal mix of creativity and data that drives long-term business benefits.
 
-- How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
+  - Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
+
+  - How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
 
 ---
 
@@ -166,4 +168,5 @@ Example complex: by recording all the details in how a person drives a car given
 Andre Ng machine learning classes are excellent.
 
 Latest trend, big on the start of 2013 is probabilistic programming, also called model-based machine learning: http://probabilistic-programming.org/wiki/Home
+Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
 
