@@ -10,12 +10,13 @@ intro: "Data Analysis Guidelines"
 
 ## Why Analysis?
 
+Insight (Data + Analysis + Presentation) > Action > Improvement
+
 **1. End Goal: Improve something* - [Domain]**
 
 e.g. a business process, a strategy in a company, government, health
 
 skills: domain knowledge: digital marketing, company processes
-
 
 **2. By changing the (current) way things are done - [Action]**
 
@@ -23,23 +24,19 @@ e.g. Do Y instead of X. Test Y instead of X
 
 skills: AB testing
 
-
 **3. Because of an insight / revelation - [Find Insights]**
 
 e.g. We found that Y is better than X. 
 
-skills: Ability to ask good questions(Why you have a site?), be curious, distill what is important, common sense, define metrics and KPIs
-
+skills: Ability to ask good questions(Why you have a site?), be curious, distill what is important, common sense, this defines the metrics and KPIs
 
 **4. (An Insight) That was presented in a clear way - [Presentation]**
   
 skills: visualization, communication, rhetoric, human behavior
-
   
 **5. (An Insight) That was analysed in a correct way - [Analysis]**
 
 skills: statistics, probabilities, counting, estimating, correlation, regression, modeling, etc...
-
 
 **6. (An Insight) That had adequate data available - [Data]**
 

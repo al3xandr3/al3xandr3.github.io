@@ -10,7 +10,7 @@ intro: "Programming Best Practices"
 ### Precepts
 
   - State is the root of all evil, avoid global variables, and shared state.
-  - Go for pure functions with well defined interfaces(for the same input always same output). Create building blocks using pure functions, not methods with state, that are composable and reusable, also makes for better testing.
+  - Go for pure functions with well defined interfaces (for the same input always same output). Create building blocks using pure functions, that are composable and reusable, also makes for better testing.
   - Analyse and Design up front, ideally away from computer, figure out what is needed and how to tackle it, trade-offs between tools and approaches, don't start coding right away - Hammock driven development
   - Constructs vs Artifacts - its not about how pretty and short the programming language is (the constructs), but more about how well it solves the problem, maintenance, scalability (the artifacts). Different task will focus / prioritize different artifacts. - See Simple-Made-Easy talk.
   - Write tests, because they can often be a life saver! Well crafted tests. But beware that test are not ultimate warranty that all code is bug free.
