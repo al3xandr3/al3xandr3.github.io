@@ -8,27 +8,25 @@ tags:
 intro: "Data Analysis Guidelines"
 ---
 
-## Why Analysis?
-
-Insight (Data + Analysis + Presentation) > Action > Improvement
+## Why Data Analysis?
 
 **1. End Goal: Improve something* - [Domain]**
 
 e.g. a business process, a strategy in a company, government, health
 
-skills: domain knowledge: digital marketing, company processes
+skills: domain knowledge(digital marketing, company processes), ask big scope questions to distill what is important (what is the purpose of this? What happens if we don't have it?)
 
 **2. By changing the (current) way things are done - [Action]**
 
-e.g. Do Y instead of X. Test Y instead of X
+e.g. Do Y instead of X see if improves against measures(KPIs)
 
-skills: AB testing
+skills: 1st need to know the current baseline: Dashboard (for KPIs monitoring), 2nd use AB testing to optimize.
 
 **3. Because of an insight / revelation - [Find Insights]**
 
-e.g. We found that Y is better than X. 
+e.g. We found that Y is more likely better than X. 
 
-skills: Ability to ask good questions(Why you have a site?), be curious, distill what is important, common sense, this defines the metrics and KPIs
+skills: Be curious, play around, ability to ask good questions, distill what is important, common sense, this can contribute to metrics(KPIs to monitor) but should be more focused on the ideas for change.
 
 **4. (An Insight) That was presented in a clear way - [Presentation]**
   
@@ -42,8 +40,38 @@ skills: statistics, probabilities, counting, estimating, correlation, regression
 
 skills: SQL, programming, google analytics, databases, etc...
 
-Improve something* - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of lucky or unlucky (external random) events mixed with internal changes at the right or wrong time. Typically the process of change(improvement) is a sequence of trial and errors until something works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in pointing the focus in the right direction.
+Improve something* - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in focusing in the right direction.
 
+*Insight* triggers *Action* that allows for *Improvement*
+
+--
+
+## How? The Data Analysis Process for Improvements
+
+Step 1. Be aware of where you are:
+ 1.1 Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What is the end goal? - Domain
+ 1.2 Break it down to the important key metrics - KPIs
+ 1.3 What data needs to exist to allow to see the KPIs (the big scope questions). How up to date is required? When needs to be checked? - Dashboard
+ 
+Step 2. Optimize - Find Insights that improve what we see in step 1.
+ 2.1 Analysis: Be curious with the data and domain, play around, ask questions, learn the fine details, play with data, question current way, explore, try correlations, plot and visualize the data, compare to similar and external.
+ 2.2 Summarize and communicate the findings as recommendations for change(= Insights) 
+ 2.3 AB test the Insights
+
+The 2.1 step is a fun and somewhat creative(harder to mechanize), computers try automate this for example by checking strong correlations of every combination of variables, but often needs external information not existing directly in data, part of the domain know-how.
+
+## Metrics in an Organization
+
+1. Learn the domain and ecosystem: activities exist, what products, what are the end goals: usage, money, user count, downloads, etc..
+2. Who are the stakeholders, that can act on recommendations, and their understanding on stats.
+3. Define the metrics framework and the KPIs
+4. Data step 1: Build a daily / weekly report, what happened. With drill-down levels: level.1: sales change. level.2: what products changed the most. level.3: what countries sales changed more, etc... (Level.1 some say should be up to 3 KPIs)
+ - The data back-end systems are secondary and the tool to display it also. Excel is a great tool to create an agile dashboard.
+ - This exercise might also reveal gaps with data infrastructure.
+5. Data step 2: Actionable insights(recommendations) for each stakeholder. Guidance, and this will vary by stakeholder role.
+5.0. Be curious with the data, ask good questions, explore ideas, correlations
+5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs
+5.2. Prediction Models can help see where we headed, can help automate process.
 
 ---
 
@@ -84,7 +112,7 @@ Tools: Excel, R(ggplot2), D3.js
 
 --- 
 
-## An Analysis Task
+## An Ad-Hoc Analysis Task
 
 - **Before**
   - What is the Macro of the activity? ex: a payment flow
@@ -118,52 +146,42 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
 
 ---
 
-## Metrics in an Organization
+## Tool: Machine learning
 
-1. Learn the domain and ecosystem: activities exist, what products, what are the end goals: usage, money, user count, downloads, etc..
-2. Who are the stakeholders, that can act on recommendations, and their understanding on stats.
-3. Define the metrics framework and the KPIs
-4. Data step 1: Build a daily / weekly report, what happened. With drill-down levels: level.1: sales change. level.2: what products changed the most. level.3: what countries sales changed more, etc... (Level.1 some say should be up to 3 KPIs)
- - The data back-end systems are secondary and the tool to display it also. Excel is a great tool to create an agile dashboard.
- - This exercise might also reveal gaps with data infrastructure.
-5. Data step 2: Actionable insights(recommendations) for each stakeholder. Guidance, and this will vary by stakeholder role.
-6. AB testing / Optimize
-7. Prediction Models
+A program that learns (creates a model) from the existing data, useful for:
+ - Predicting (guessing / inferring) future from the past
+ - Automating things - a program that learns is then able to do new things without being explicitly programmed.
 
-Choosing KPIs: Actionable, that put some pressure on something, and the pressure pushes things in right direction. Bit like economic changing action.
-
---- 
-
-## Web Analytics [Domain]
-
-  - WA = Web Analytics
-
-  - WA is a measuring tool and central for the Digital Marketing.
-
-  - Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
-
-  - Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
-
-  - Performance Marketing - optimize ROI of web experience over the long term. Rather than trying to go after awards or idealized theories of good design, it advocates performance-driven design. Seeks to identity the ideal mix of creativity and data that drives long-term business benefits.
-
-  - Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
-
-  - How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
-
----
-
-## Machine learning
-
-Is about creating a model of an observed function. Useful to have programs automating a process and for predicting(guessing).
-
-Example simple: by noticing that from email history the spam emails almost always have the keywords "buy this", is possible to infer that the next email with "buy this" is likely spam also. (An average is a model, simple and naive)
+Example simple: by noticing that from email history the spam emails almost always have the keywords "buy this", is possible to infer that the next email with "buy this" is likely spam also and computer can automatically filter them. 
 
 Example complex: by recording all the details in how a person drives a car given the road ahead, a model can "learn" to drive a car in the same way.
 
-> Is also said that all models are wrong but try to get the closer as possible (minimize least square errors).
+> An average is a model, simple but naive and fails with outliers.
+
+> A regression line is like an average for 2 dimensions, also a model.
+
+> Is also said that all models are wrong but try to get the closer as possible (e.g.minimizing the least square errors).
 
 Andre Ng machine learning classes are excellent.
 
-Latest trend, big on the start of 2013 is probabilistic programming, also called model-based machine learning: http://probabilistic-programming.org/wiki/Home
+Latest big trend, on the start of 2013 is probabilistic programming, also called model-based machine learning: http://probabilistic-programming.org/wiki/Home
+
 Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
 
+--- 
+
+## Tool: Web Analytics
+
+- WA = Web Analytics
+
+- WA is a measuring tool and central for the Digital Marketing.
+
+- Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
+
+- Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
+
+- Performance Marketing - optimize ROI of web experience over the long term. Rather than trying to go after awards or idealized theories of good design, it advocates performance-driven design. Seeks to identity the ideal mix of creativity and data that drives long-term business benefits.
+
+- Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
+
+- How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?

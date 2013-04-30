@@ -5,11 +5,29 @@ intro: "al3xandr3's Code"
 sidebar: "<h4>my <a href='https://github.com/al3xandr3/'>github</a></h4>"
 ---
 
+## Picsort - a picture organizer
+
+After downloading photos from a camera, this application organizes the pictures into folders.
+
+[code](https://github.com/al3xandr3/picsort) - [web](https://github.com/al3xandr3/picsort) - _January 2013_ - Tools: Clojure
+
+<br/>
+
+## In Page Debug tool
+
+A visual way to inspect custom tracking code placed in the different html elements of a web page, to ease the debugging of tracking code.
+
+Its fairly custom and not generic enough to be re-used directly but the general solution used is very good for this type of applications, i explain most of it in [javascript bookmarks](http://al3xandr3.github.io/2012/12/05/javascript-bookmarks.html).
+
+[code](https://gist.github.com/al3xandr3/3665292) - [web](http://al3xandr3.github.io/2012/12/05/javascript-bookmarks.html) - _August 2012_ - Tools: javascript
+
+<br/>
+
 ## Dashboard Builder
 
 A framework for building up interactive html dashboards in ruby. Contains
 implementation of both simple & multivariate regression for visualizing
-trends, supports fetching email attachments/content as data sources, allows
+trends, supports fetching email attachments / content as data sources, allows
 for posting the end result onto a confluence wiki page.
 
 [code][1] - [web][2] - _June 2011_ - Tools: ruby, javascript, html
@@ -34,7 +52,7 @@ _March 2011_ - Tools: R
 
 A clojure, selenium based web crawler with a couple of variations that i found
 useful. Cov3 crawls pages with the intention of executing
-(javascript)tests/validations on each of the pages it opens. The original idea
+(javascript)tests / validations on each of the pages it opens. The original idea
 of a web crawler is that given an initial page it keeps on following all links
 it finds in the same domain until all pages are visited. I added a couple of
 variations: Given a sitemap.xml it randomly samples part of it(useful for big
