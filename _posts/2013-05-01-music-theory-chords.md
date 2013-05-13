@@ -80,7 +80,7 @@ Get reasonable fingerings.
 | aug | augmented   |  
 
 
-## Online
+## My Music Online
 
 - [soundcloud account](https://soundcloud.com/al3x-andr3)
 - [youtube account](http://www.youtube.com/user/alexandrenotebook)

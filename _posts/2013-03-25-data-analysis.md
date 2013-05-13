@@ -85,6 +85,8 @@ Useful metrics examples:
 
 ## [Presentation]
 
+> summarizing / compacting data into a easy digestable format 
+
 - The "1 in every 45" is an intuitive way to display a ratio.
 - Sugarcoating and eye candy can make the good great, but it won't help a poor insight.
 - Graphics and presentation should have a hierarchy to be quickly understood. 
@@ -185,3 +187,4 @@ Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programmin
 - Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
 
 - How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
+
