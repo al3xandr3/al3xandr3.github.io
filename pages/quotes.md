@@ -9,16 +9,25 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2013
 
+<blockquote data-day="2013-05-23">
+Prefer the point of view of "everything has a reason to be". The reason is often not known, but exists. Someone was so rude just now, im going to be rude back! No.Probably has nothing to do with you, think instead why that was: stress? misunderstanding? culture gap?
+</blockquote>
+
+<blockquote data-day="2013-05-23">
+Beware: "Having stuff isn't happy, getting stuff is – It's the act of acquisition that triggers feeling of happy." - http://bit.ly/10LYLkO
+</blockquote>
+
+
 <blockquote data-day="2013-03-25">
-I like the no excuses model, its either done or not done, no excuses. Is harsh and unfair at times, but forces right direction and sometimes creative solutions
+I like the no excuses model, its either done or not done, no excuses. Is harsh and unfair at times, but forces right direction and incentivates creative solutions
 </blockquote>
 
 <blockquote data-day="2013-03-13">
-Whenever there's someone too friendly as cashier i always think is their first day on the job, or the last... Guess that is valid for any job
+Whenever there's someone too friendly as cashier i always think is their first day on the job (or the last...) Guess that is valid for any job
 </blockquote>
 
 <blockquote data-day="2013-03-13">
-Extremes are unbalanced by definition
+Extremes are unbalanced by definition, that can't be good.
 </blockquote>
 
 <blockquote data-day="2013-03-13">

@@ -10,7 +10,7 @@ intro: "Data Analysis Guidelines"
 
 ## Why Data Analysis?
 
-**1. End Goal: Improve something* - [Domain]**
+**1. End Goal: Improve something** - [Domain]**
 
 e.g. a business process, a strategy in a company, government, health
 
@@ -40,11 +40,11 @@ skills: statistics, probabilities, counting, estimating, correlation, regression
 
 skills: SQL, programming, google analytics, databases, etc...
 
-Improve something* - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in focusing in the right direction.
+**Improve something - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in focusing efforts in the right direction.
 
 *Insight* triggers *Action* that allows for *Improvement*
 
---
+---
 
 ## How? The Data Analysis Process for Improvements
 
