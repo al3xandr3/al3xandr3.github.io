@@ -49,16 +49,24 @@ skills: SQL, programming, google analytics, databases, etc...
 ## How? The Data Analysis Process for Improvements
 
 Step 1. Be aware of where you are:
+
  1.1 Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What is the end goal? - Domain
+
  1.2 Break it down to the important key metrics - KPIs
+
  1.3 What data needs to exist to allow to see the KPIs (the big scope questions). How up to date is required? When needs to be checked? - Dashboard
  
 Step 2. Optimize - Find Insights that improve what we see in step 1.
+
  2.1 Analysis: Be curious with the data and domain, play around, ask questions, learn the fine details, play with data, question current way, explore, try correlations, plot and visualize the data, compare to similar and external.
+
  2.2 Summarize and communicate the findings as recommendations for change(= Insights) 
+
  2.3 AB test the Insights
 
 The 2.1 step is a fun and somewhat creative(harder to mechanize), computers try automate this for example by checking strong correlations of every combination of variables, but often needs external information not existing directly in data, part of the domain know-how.
+
+---
 
 ## Metrics in an Organization
 
