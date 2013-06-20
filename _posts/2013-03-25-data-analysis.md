@@ -26,7 +26,7 @@ skills: 1st need to know the current baseline: Dashboard (for KPIs monitoring), 
 
 e.g. We found that Y is more likely better than X. 
 
-skills: Be curious, play around, ability to ask good questions, distill what is important, common sense, this can contribute to metrics(KPIs to monitor) but should be more focused on the ideas for change.
+skills: Be curious, play around, make observations, question a lot, distill what is important, common sense, this can contribute to metrics(KPIs to monitor) but should be more focused on the ideas for change.
 
 **4. (An Insight) That was presented in a clear way - [Presentation]**
   

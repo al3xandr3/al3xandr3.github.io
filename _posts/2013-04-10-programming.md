@@ -43,5 +43,6 @@ Reference:
 - Ruby - quick scripting
 - Clojure - applications
 - R - number crunching, trying out algorithms
-- Excel - data analysis(EDA), data dashboard prototypes
 - Javascript - mandatory because of browser
+- Excel - data analysis(EDA), data dashboard prototypes
+- Powerpoint - Infographics & story telling

@@ -27,6 +27,20 @@ Split **file.csv** in files of size **1000** lines each
 
 Usefull if you need to open a file in excel that is bigger that excel allows. Split it into multiple files.
 
+## count lines
+
+		$ cat file.txt | wc -l
+
+## show the first(and last) lines of a big file
+
+Show the 1st 5 lines in file.txt
+
+		$ head -5 file.txt
+
+Show the last 5 lines of a file
+
+		$ head -5 file.txt
+
 ## R <-> Excel via clipboard
 
 Especially made to interact with Excel(adapt for other apps), inside R do:
