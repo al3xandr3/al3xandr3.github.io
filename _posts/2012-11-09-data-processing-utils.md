@@ -39,7 +39,7 @@ Show the 1st 5 lines in file.txt
 
 Show the last 5 lines of a file
 
-		$ head -5 file.txt
+		$ tail -5 file.txt
 
 ## R <-> Excel via clipboard
 
