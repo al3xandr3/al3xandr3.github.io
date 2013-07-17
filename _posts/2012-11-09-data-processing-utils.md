@@ -74,6 +74,12 @@ Using ruby, gets flexible to do a lot:
 	end
 
 
+## regular expressions 
+
+Some might not always exactly as they are depending on tool
+
+^\n - lines starting with newline = empty lines
+
 ## Excel: confidence interval and trend 
 
 Code(on cell D93, D94, D95, D96):

@@ -34,3 +34,8 @@ Reference:
 - Avoid shared state. Avoid variables outside of functions.
 - Design functions that take other functions as argument, makes them much more generic and useful in the long term.
 - Iterate with map and reduce and fold, avoid iteration where state changes.
+
+
+#### References
+
+- Writting documentation: http://jacobian.org/writing/great-documentation/what-to-write/

@@ -76,3 +76,4 @@ Take into account the above rules of thumb to define a plan on how to tackle:
 - http://theelearningcoach.com/elearning_design/isd/metalearning/
 - http://theelearningcoach.com/elearning_design/chunking-information/
 - http://marc-edwards.com/2013/01/6-steps-to-learn-master-anything/
+- http://domenicodefelice.blogspot.it/2013/06/best-ways-to-learn-foreign-language.html
