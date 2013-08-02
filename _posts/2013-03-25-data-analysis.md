@@ -10,13 +10,13 @@ intro: "Data Analysis Guidelines"
 
 ## Why Data Analysis?
 
-**1. End Goal: Improve something** - [Domain]**
+**1. End Goal: Improve something\* - [Domain]**
 
 e.g. a business process, a strategy in a company, government, health
 
 skills: domain knowledge(digital marketing, company processes), ask big scope questions to distill what is important (what is the purpose of this? What happens if we don't have it?)
 
-**2. By changing the (current) way things are done - [Action]**
+**2. By doing something new/different - [Action]**
 
 e.g. Do Y instead of X see if improves against measures(KPIs)
 
@@ -40,15 +40,15 @@ skills: statistics, probabilities, counting, estimating, correlation, regression
 
 skills: SQL, programming, google analytics, databases, etc...
 
-**Improve something - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in focusing efforts in the right direction.
+\*Improve something - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in focusing efforts in the right direction.
 
-*Insight* triggers *Action* that allows for *Improvement*
+**Insight** triggers **Action** that creates **Improvement**
 
 ---
 
 ## How? The Data Analysis Process for Improvements
 
-Step 1. Be aware of where you are:
+**Step 1.** Be aware of where you are:
 
  1.1 Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What is the end goal? - Domain
 
@@ -56,7 +56,7 @@ Step 1. Be aware of where you are:
 
  1.3 What data needs to exist to allow to see the KPIs (the big scope questions). How up to date is required? When needs to be checked? - Dashboard
  
-Step 2. Optimize - Find Insights that improve what we see in step 1.
+**Step 2.** Optimize - Find Insights that improve what we see in step 1.
 
  2.1 Analysis: Be curious with the data and domain, play around, ask questions, learn the fine details, play with data, question current way, explore, try correlations, plot and visualize the data, compare to similar and external.
 
@@ -95,7 +95,7 @@ Useful metrics examples:
 
 > summarizing / compacting data into a easy digestable format 
 
-- The "1 in every 45" is an intuitive way to display a ratio.
+- The "1 in every 45" is an intuitive way to display a ratio. (Odds notation)
 - Sugarcoating and eye candy can make the good great, but it won't help a poor insight.
 - Graphics and presentation should have a hierarchy to be quickly understood. 
   - Start with 1. Summary top view then allow for 2. Drill-Down view

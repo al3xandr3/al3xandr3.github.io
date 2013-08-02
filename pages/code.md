@@ -5,9 +5,19 @@ intro: "al3xandr3's Code"
 sidebar: "<h4>my <a href='https://github.com/al3xandr3/'>github</a></h4>"
 ---
 
+## Stock - a stock price monitor
+
+Waiting for a stock price to rise to a certain value to sell it? or waiting for the price to drop to a certain value to buy it? But don't want to be checking it every day? Here's a little automation that check it for you.
+
+This script will send you an email when stock price is outside the defined thresholds.
+
+[code](https://github.com/al3xandr3/stock) - [web](https://github.com/al3xandr3/stock) - _July 2013_ - Tools: Clojure
+
+<br/>
+
 ## Picsort - a picture organizer
 
-After downloading photos from a camera, this application organizes the pictures into folders.
+After downloading photos from a camera, this application organizes the pictures into folders, so that you/me don't have to do that manually. 
 
 [code](https://github.com/al3xandr3/picsort) - [web](https://github.com/al3xandr3/picsort) - _January 2013_ - Tools: Clojure
 
@@ -15,9 +25,9 @@ After downloading photos from a camera, this application organizes the pictures 
 
 ## In Page Debug tool
 
-A visual way to inspect custom tracking code placed in the different html elements of a web page, to ease the debugging of tracking code.
+A visual debug tool to inspect custom tracking code placed in the different html elements of a web page, to ease the debugging of web analytics tracking code.
 
-Its fairly custom and not generic enough to be re-used directly but the general solution used is very good for this type of applications, i explain most of it in [javascript bookmarks](http://al3xandr3.github.io/2012/12/05/javascript-bookmarks.html).
+The general solution of injecting javascript into a page from a bookmark, is very usefull for many applications, especially if when combined with javascript online hosting, i explain most of the solution i used in [javascript bookmarks](http://al3xandr3.github.io/2012/12/05/javascript-bookmarks.html).
 
 [code](https://gist.github.com/al3xandr3/3665292) - [web](http://al3xandr3.github.io/2012/12/05/javascript-bookmarks.html) - _August 2012_ - Tools: javascript
 
