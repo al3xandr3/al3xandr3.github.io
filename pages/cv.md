@@ -67,7 +67,7 @@ Migration of a CRM application from Oracle Forms to MS Windows Forms:
 | Contact    | http://www.ist.utl.pt
                                      
 #### Main activities and responsibilities
-- Development of a Java flow chart user interface for a digital circuit software simulator used in the *Computer's (Internal) Architecture* course of IST University.
+- Development of a circuit board like user interface for a digital circuit software simulator used in the class *Computer's Architecture* of Instituto Superior Tecnico University. The software is also an integral part of a book with the same name ["Arquitectura de Computadores"](http://www.fca.pt/cgi-bin/fca_main.cgi/?op=2&isbn=978-972-722-666-5), i was not involved in the writting of the book, but am mentioned in the thank you notes.
 
 
 | Dates | **February 2003 - August 2003 (6 months)**

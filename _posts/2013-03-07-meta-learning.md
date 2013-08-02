@@ -9,7 +9,7 @@ intro: "learning how to learn"
 
 ## How to Learn
 
-### Deconstruction: 
+### Deconstruction:
 - Reduce content to its minimal moving parts (deconstruct, simplify, zoom out, distill).
 - Start with the outcome; start at the end and work your way backwards
 - Viewing the subject from a variety of perspectives 
@@ -77,3 +77,4 @@ Take into account the above rules of thumb to define a plan on how to tackle:
 - http://theelearningcoach.com/elearning_design/chunking-information/
 - http://marc-edwards.com/2013/01/6-steps-to-learn-master-anything/
 - http://domenicodefelice.blogspot.it/2013/06/best-ways-to-learn-foreign-language.html
+- http://ankisrs.net/ - Remembering things: Space repetition software

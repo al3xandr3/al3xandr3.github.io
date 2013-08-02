@@ -30,8 +30,8 @@ task :server do
 	#Rake::Task["quotes"].execute
   system "ruby tags.rb"
   system "ruby cloud.rb"
-  system "launchy http://localhost:4000/"
-  system "jekyll --server"
+  system "start http://localhost:4000/"
+  system "jekyll serve --watch"
 end
 
 # rake ci msg="message"

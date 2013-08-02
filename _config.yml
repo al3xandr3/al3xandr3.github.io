@@ -1,5 +1,4 @@
 permalink: /:year/:month/:day/:title.html
-auto: true
 markdown: rdiscount
 author: al3xandr3
 title: al3xandr3

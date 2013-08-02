@@ -116,17 +116,17 @@ al3xandr3.title = function () {
       .attr("text-anchor", "top")
       .attr("transform", function(d, i) {
           return "translate(" + [i*33, 60] + ")rotate(" + 0 + ")";
-       })
+      })
       .style("opacity", 0.8)
       .style("font-size", function(d) { return "54px"; })
       .attr("vertical-align", "middle")
       .text(function(d) { return d; });
 
   d3.select("#title").selectAll("text").transition()
-      .duration(20000)
+      .duration(10000)
       .delay(function(d, i) { return i * 10; })
     .style("fill", function(d, i) { return fill(i); })
-    .attr("transform", function(d, i) { return "translate(" + [i*35, 60] + ")rotate(" +  (~~(Math.random() * 2) * 90) + ")"; });
+    //.attr("transform", function(d, i) { return "translate(" + [i*35, 60] + ")rotate(" +  (~~(Math.random() * 2) * 90) + ")"; });
 
 };
 
@@ -138,7 +138,7 @@ al3xandr3.title = function () {
 $(function () {
 
   // animated title
-  al3xandr3.title();
+   al3xandr3.title();
   // link click  
   $('#title').click(function(){ document.location="/";} );
 
