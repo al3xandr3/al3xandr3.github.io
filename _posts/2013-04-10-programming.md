@@ -22,6 +22,7 @@ Reference:
   - http://www.infoq.com/presentations/Simple-Made-Easy - define simplicity, recognize complexity, tackling problems only scales when handling with simplicity. Tools to simplify and avoid complexity in coding.
   - http://www.youtube.com/watch?v=f84n5oFoZBc - Hammock Driven Development - Rich Hickey
   - https://github.com/thomasdavis/best-practices
+  - http://www.infoq.com/presentations/Design-Composition-Performance - Rich Hickey
 
 ### Apps
   - Make things runnable on command line as standalone bin, easier to integrate with other apps later on.

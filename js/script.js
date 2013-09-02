@@ -125,7 +125,7 @@ al3xandr3.title = function () {
   d3.select("#title").selectAll("text").transition()
       .duration(10000)
       .delay(function(d, i) { return i * 10; })
-    .style("fill", function(d, i) { return fill(i); })
+    //.style("fill", function(d, i) { return fill(i); })
     //.attr("transform", function(d, i) { return "translate(" + [i*35, 60] + ")rotate(" +  (~~(Math.random() * 2) * 90) + ")"; });
 
 };
