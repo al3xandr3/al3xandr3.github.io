@@ -46,3 +46,7 @@ Good example google search box, the most usefull and simple(to use) application 
 
 - Interface is in javascript so that can run both on cloud, desktop and mobile devices.
 
+
+## References
+- [Jeff Bezos (Amazon) 25 quotes](http://www.fool.com/investing/general/2013/09/09/the-25-smartest-things-jeff-bezos-has-ever-said.aspx)
+

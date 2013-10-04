@@ -10,16 +10,19 @@ intro: "And Back-of-the-Envelope estimations"
 
 ## Odds Notation
 
-A:B describes how much A we get for every B
+Notation "A:B" describes how much A we get for every B.
+example: "1:4" means 1 in 4.
 
 Odds are more intuitive than percentages:
 
-- 1 in 2  = 50%
+- 1 in 2  = 50%  (= 1/2 * 100)
 - 1 in 3  = 33%
 - 1 in 4  = 25%
 - 1 in 5  = 20%
 - 1 in 6  = 16.66%
 - 1 in 7  = 14%
+- 1 in 8  = 12.5%
+- 1 in 9  = 11.11%
 - 1 in 10 = 10%
 etc...
 

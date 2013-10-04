@@ -65,7 +65,7 @@ Especially made to interact with Excel(adapt for other apps), inside R do:
 
 - reference: [johndcook r_excel_clipboard](http://www.johndcook.com/r_excel_clipboard.html)
 
-## (ruby)Script - For each line in file Do
+## (ruby)Script - For each line in file Do (something)
 
 Using ruby, gets flexible to do a lot:
 
@@ -133,6 +133,16 @@ Insert a column and in Cell C2 paste this formula:
 	=IF(SUMPRODUCT(($A$2:$A2=A2)*($B$2:$B2=B2))>1,0,1)
 
 Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-count-unique-values
+
+### Excel Hacks
+
+- Renaming a field in pivot table is not allowed "PivotTable field name already exists": add a space at start (or end).
+ ex: "Sum of MyField" -> " MyField"
+
+- Pivot Table field has a "(blank)" or some other thing you don't want in final report: 
+ 1. rename it to a space (" ")
+ 2. order the column so that spaces appear at end of start
+ 
 
 ### References:
 
