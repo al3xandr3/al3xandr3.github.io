@@ -154,6 +154,28 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
   - Work out ways to validate / test numbers - often different points of view on same data ofter reveals gaps
   - Predict whats going to happen - from deep understanding
 
+
+---
+
+## Data Stack
+
+Data Stack: Instrumentation, Reporting, Analysis.
+
+1. Instrumentation: is a mix of technical and analytical: by knowing comprehensively the technical details of how tool works, design a instrumentation solution to allow useful analysis.
+2. Reporting: Automated recurrent (daily/weekly) documents showing the KPI's. Requires analysis up front to figure out what are the KPI's to put on dashboard, and to pick the most actionable metrics.
+3. Analysis: Look into the data, explore, identify trends, find the  most interesting actionable bits.
+
+The output of this work is a report. That either:
+- Is used to monitor performance and is used baseline for changes. - typically a recurring report.
+- Reveals new information that can be used to define strategies and future changes.
+
+#### Recurring vs Ad-hoc reports: 
+Recurring reports are fully automated, no need to touch them, the automation part is often tricky and imposes many limitation on the final report (visualizations, extra calculations, etc…). Recurring reports are often simpler than Ad-hoc ones.
+Ad-hoc's are a one time only, involve quite a bit of manual data calculations, but are the most flexible.
+
+A somewhat useful mixed solution is to do ad-hoc reports that are almost fully automated. Ex: just copy paste a table of data into one excel sheet and all rest of report updates by itself. 
+
+
 ---
 
 ## Tool: Machine learning

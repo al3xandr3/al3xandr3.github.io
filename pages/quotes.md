@@ -8,9 +8,16 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 <div id="quote_cloud"></div>
 
 ## 2013
+<blockquote data-day="2013-10-05">
+3d printers are like lisp macros, as in they allow to build your own tools. Tools to make tools (meta-tools)
+</blockquote>
+
+<blockquote data-day="2013-08-17">
+We have better quality of life (comfortable) than probably kings and queens just a century ago
+</blockquote>
 
 <blockquote data-day="2013-05-23">
-Prefer the point of view of "everything has a reason to be". The reason is often not known, but exists. Someone was so rude just now, im going to be rude back! No.Probably has nothing to do with you, think instead why that was: stress? misunderstanding? culture gap?
+Prefer the point of view of "everything has a reason to be". The reason is often not known, but exists. Someone was so rude just now, i'm going to be rude back! No. Probably has nothing to do with you, think instead why that was: stress? misunderstanding? culture gap?
 </blockquote>
 
 <blockquote data-day="2013-05-23">
@@ -19,7 +26,7 @@ Beware: "Having stuff isn't happy, getting stuff is – It's the act of acquisit
 
 
 <blockquote data-day="2013-03-25">
-I like the no excuses model, its either done or not done, no excuses. Is harsh and unfair at times, but forces right direction and incentivates creative solutions
+I like the no excuses model, its either done or not done, no excuses. Is harsh and unfair at times, but forces right direction and pushes for creative solutions.
 </blockquote>
 
 <blockquote data-day="2013-03-13">
