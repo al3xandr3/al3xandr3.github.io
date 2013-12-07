@@ -13,6 +13,8 @@ intro: "Practical examples on tagging up a site with RDFa tags, then extract and
 
 Practical examples on how to get onto the semantic web and on using it. 
 
+<div class="toc"></div>
+
 ## Getting in There
 
 Start by creating a semantic web personal online profile using the Friend-Of-A-Friend (FOAF) vocabulary. The FOAF has became the standard for personal profiles on the semantic web, and as the name implies, it also lets you link to people you know.
@@ -133,7 +135,7 @@ I use jquery .ajax to go fetch the data of the sparql query defined above, do so
 
 Look at the source code of this page, to see how it works.
 
-### Quotes per day of the week:
+## Quotes per day of the week:
 
 <br />
 <br />
@@ -238,7 +240,7 @@ $.ajax({
 
 <br />
 
-#### References
+## References
 
 - [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html)
 - [foaf-a-matic online tool](http://www.ldodds.com/foaf/foaf-a-matic)

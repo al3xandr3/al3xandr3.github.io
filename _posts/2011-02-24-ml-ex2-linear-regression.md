@@ -61,6 +61,8 @@ For example, the data we use here are boys ages and their corresponding
 heights, so when we get the mathematical model we will be able to guess the
 boys height from his age.
 
+<div class="toc"></div>
+
 ## Data
 
     
@@ -228,7 +230,7 @@ And finally we see how well the line(model) fits the data:
 
 ![http://al3xandr3.github.com/img/ml-ex2-fit.png][7]
 
-#### References
+## References
 
 - [MATLAB / R Reference, by David Hiebeler][8]
 - [Short Math Guide for LaTex(.pdf)][9]

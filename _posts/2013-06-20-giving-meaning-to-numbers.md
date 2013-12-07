@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Giving meaning to numbers
-category: cheatsheet
+category: statistics
 tags:
   - statistics
   - data
 intro: "And Back-of-the-Envelope estimations"
 ---
+
+<div class="toc"></div>
 
 ## Odds Notation
 
@@ -65,7 +67,7 @@ You looking at a table of numbers, and comparing 2 numbers, wondering by how muc
 (in this case 2)
 1 out of 200
 
-### Reference
+## Reference
 
 - "Odds require less computation (than percentages)": http://betterexplained.com/articles/understanding-bayes-theorem-with-ratios/
 

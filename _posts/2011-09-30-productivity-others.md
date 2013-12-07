@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Monitoring Productivity II - the Others
-category: data
+category: statistics
 tags:
   - data
   - productivity
@@ -11,6 +11,8 @@ tags:
   - R
 intro: "In previous Monitoring Productivity Experiment I looked into the hours I spent in computer, now I look into the hours others spend in computer, which is far more interesting"
 ---
+
+<div class="toc"></div>
 
 In previous Monitoring Productivity Experiment [post](http://al3xandr3.github.com/2010/10/20/monitoring-productivity-experiment.html) I looked into the hours I spent in computer, now I look into the hours **Others** spend in computer, which is far more interesting :) To find things like what day people spend more time on computer, how many hours they work, and general activity patterns.
 

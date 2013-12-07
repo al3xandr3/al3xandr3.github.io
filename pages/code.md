@@ -5,6 +5,8 @@ intro: "al3xandr3's Code"
 sidebar: "<h4>my <a href='https://github.com/al3xandr3/'>github</a></h4>"
 ---
 
+<div class="toc"></div>
+
 ## Stock - a stock price monitor
 
 Waiting for a stock price to rise to a certain value to sell it? or waiting for the price to drop to a certain value to buy it? But don't want to be checking it every day? Here's a little automation that check it for you.

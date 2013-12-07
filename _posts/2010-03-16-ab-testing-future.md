@@ -9,7 +9,6 @@ tags:
 intro: "A view on AB testing tools of the future"
 ---
 
-
 A view on AB testing tools of the future.
 
 ## How it works:

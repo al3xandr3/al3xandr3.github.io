@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Music Theory Chords
-category: cheatsheet
+category: other
 tags:
   - music
   - guitar
@@ -10,16 +10,18 @@ intro: "Music Theory Chords"
 
 <link rel="stylesheet" href="http://al3xandr3.github.com/css/cv.css" type="text/css" media="screen, projection" />
 
+<div class="toc"></div>
+
 ## Notes
 
-| C    | C# | D    | D# | E | F     | F# | G | G# | B     | C |  
-| -    | -  | -    | -  | - | -     | -  | - | -  | -     | - |  
-| r(1) | .  | 2(9) | .  | 3 | 4(11) | .  | 5 | .  | 6(13) | 7 |  
+| C    | C# | D    | D# | E | F     | F# | G | G# | B     | C |
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
+| r(1) | .  | 2(9) | .  | 3 | 4(11) | .  | 5 | .  | 6(13) | 7 |
 
 ## Guitar Fretboard
 
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |  
-| - | - | - | - | - | - | - | - | - | - | -  | -  | -  | -  | -  | -  |  
+|*0*|*1*|*2*|*3*|*4*|*5*|*6*|*7*|*8*|*9*|*10*|*11*|*12*|*13*|*14*|*15*|
+|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|:--|
 | 3 | 4 | . | 5 | . | 6 | . | 7 | 1 | . | 2  | .  | 3  | 4  | .  | 5  |  
 | 7 | 1 | . | 2 | . | 3 | 4 | . | 5 | . | 6  | .  | 7  | 1  | .  | 2  |  
 | 5 | . | 6 | . | 7 | 1 | . | 2 | . | 3 | 4  | .  | 5  | .  | 6  | .  |  
@@ -35,7 +37,7 @@ intro: "Music Theory Chords"
 ## Chords Triads (1-3-5)
 
 |     | I | III | V  |  
-| -   | - | -   | -  |  
+|:--   |:-- |:--   |:--  | 
 | maj | r | 3   | 5  |  
 | m   | r | b3  | 5  |  
 | dim | r | b3  | b5 |  
@@ -45,7 +47,7 @@ intro: "Music Theory Chords"
 ## 7's
 
 | name         |           |  
-| -            | -         |  
+|:--            |:--         |  
 | (dominant) 7 | maj + b7  |  
 | maj7         | maj + 7   |  
 | m7           | m + b7    |  
@@ -55,10 +57,13 @@ intro: "Music Theory Chords"
 
 ## Extentions
 
-Add the 9, 11, and 13th. Theoretically they are piled up, as in examples bellow, but in practice some notes are omited when adding these extensions. Otherwise they become dissonant or even impossible to play(depending on instrument). Examples:
+
+Add the 9, 11, and 13th. Theoretically they are piled up, as in examples bellow, but in practice some notes are omited when adding these extensions. Otherwise they become dissonant or even impossible to play(depending on instrument). 
+
+Examples:
 
 | name |          |  
-| -    | -        |  
+|:--|:---        |  
 | maj9 | maj7 + 9 |  
 | m11  | m9 + 11  |  
 | 13   | 11 + 13  |  
@@ -73,7 +78,7 @@ Get reasonable fingerings.
 ## Naming
 
 | name |        |   
-| -   | -           |   
+|:--   |:--           |   
 | maj | major       |   
 | m   | minor       |   
 | dim | diminuished |  

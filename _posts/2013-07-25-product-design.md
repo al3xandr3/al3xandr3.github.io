@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Product and Application Design
-category: cheatsheet
+category: other
 tags:
   - product
   - application

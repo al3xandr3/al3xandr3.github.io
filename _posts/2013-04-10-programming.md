@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Programming
-category: cheatsheet
+category: code
 tags:
   - programming
 intro: "Programming Best Practices"
 ---
+
+<div class="toc"></div>
 
 ### Precepts
 

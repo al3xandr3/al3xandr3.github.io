@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Favorite Talks
-category: cheatsheet
+category: code
 tags:
   - learning
   - programming

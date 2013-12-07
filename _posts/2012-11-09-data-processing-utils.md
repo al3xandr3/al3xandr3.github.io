@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Data Processing Utils
-category: cheatsheet
+category: data
 tags:
   - data
   - statistics
@@ -9,6 +9,8 @@ intro: "Reference of small utils that help in data processing, filtering, splitt
 ---
 
 Reference of data processing little hacks / utils / tools
+
+<div class="toc"></div>
 
 ## filter
 
@@ -126,7 +128,7 @@ In windows powershell(from utf-8 to ascii)
 - reference(for *nix machine also): [best-way-to-convert-text-files-between-character-sets @stackoverflow](http://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
 
-### Excel: pivot table count distinct
+## Excel: pivot table count distinct
 
 Insert a column and in Cell C2 paste this formula:
 
@@ -134,7 +136,7 @@ Insert a column and in Cell C2 paste this formula:
 
 Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-count-unique-values
 
-### Excel Hacks
+## Excel Hacks
 
 - Renaming a field in pivot table is not allowed "PivotTable field name already exists": add a space at start (or end).
  ex: "Sum of MyField" -> " MyField"
@@ -144,7 +146,7 @@ Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-cou
  2. order the column so that spaces appear at end of start
  
 
-### References:
+## References:
 
 - command line Unix like tools in windows can be found for example in: [Git for Windows shell](http://msysgit.github.com/) (bundles minGW)
 - [Top 10 Unix Command Line Utilities 2012](http://blog.coldflake.com/posts/2012-12-30-Top-10-Unix-Command-Line-Utilities-2012.html)

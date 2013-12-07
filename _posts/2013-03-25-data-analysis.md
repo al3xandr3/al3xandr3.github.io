@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Data Analysis
-category: cheatsheet
+category: data
 tags:
   - statistics
   - data
 intro: "Data Analysis Guidelines"
 ---
+
+<div class="toc"></div>
 
 ## Why Data Analysis?
 
@@ -46,6 +48,45 @@ skills: SQL, programming, google analytics, databases, etc...
 
 ---
 
+### Find Insights
+
+Useful metrics examples:
+
+- Price of digital media entertainment per hour - http://gigaom.com/2013/02/10/cost-per-hour-a-new-metric-for-paid-content/
+- Food price per kg - because package size varies, the price per kilogram is a clear way to compare prices across foods and packages sizes.
+
+
+### Presentation
+
+> summarizing / compacting data into a easy digestable format 
+
+- The "1 in every 45" is an intuitive way to display a ratio. (Odds notation)
+- Sugarcoating and eye candy can make the good great, but it won't help a poor insight.
+- Graphics and presentation should have a hierarchy to be quickly understood. 
+  - Start with 1. Summary top view then allow for 2. Drill-Down view
+- Is said that a bar and line charts can cover almost anything needed to be visualized, it has less impact as a visually stunning infographic, but with about the same representation value and quicker to get done.
+
+Tools: Excel, R(ggplot2), D3.js
+
+
+### Analysis
+
+ - Whenever an average value is presented and analysed, it should have a confidence measure (standard deviation for example, also confirm for normality)
+
+ - Prefer conclusions from relative percentages, instead from absolute numbers. e.g. in a funnel traffic analysis, the absolute values of a drop-off step are going up, is tempting to infer immediate that drop-off is going up, but is not mandatory true. It could be because the overall input of traffic is also increasing and the drop-off rate is actually constant. Calculate relative percentage = drop-off / total.
+
+ - Histogram, to see the distribution of the data. - check if normal distributed
+
+ - Correlation, to find relations between variables
+
+ - Regression, to model the data, typically over simplifies, but often is good enough.
+
+### Data
+
+ - The central data structure is the table structure: databases, spreadsheets, csv, R's data.frame, etc...
+
+---
+
 ## How? The Data Analysis Process for Improvements
 
 **Step 1.** Be aware of where you are:
@@ -74,53 +115,14 @@ The 2.1 step is a fun and somewhat creative(harder to mechanize), computers try 
 2. Who are the stakeholders, that can act on recommendations, and their understanding on stats.
 3. Define the metrics framework and the KPIs
 4. Data step 1: Build a daily / weekly report, what happened. With drill-down levels: level.1: sales change. level.2: what products changed the most. level.3: what countries sales changed more, etc... (Level.1 some say should be up to 3 KPIs)
- - The data back-end systems are secondary and the tool to display it also. Excel is a great tool to create an agile dashboard.
- - This exercise might also reveal gaps with data infrastructure.
+  - The data back-end systems are secondary and the tool to display it also. Excel is a great tool to create an agile dashboard.
+  - This exercise might also reveal gaps with data infrastructure.
 5. Data step 2: Actionable insights(recommendations) for each stakeholder. Guidance, and this will vary by stakeholder role.
-5.0. Be curious with the data, ask good questions, explore ideas, correlations
-5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs
-5.2. Prediction Models can help see where we headed, can help automate process.
+7.0. Be curious with the data, ask good questions, explore ideas, correlations.
+7.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
+7.2. Prediction Models can help see where we headed, can help automate process.
 
 ---
-
-## [Find Insights]
-
-Useful metrics examples:
-
-- Price of digital media entertainment per hour - http://gigaom.com/2013/02/10/cost-per-hour-a-new-metric-for-paid-content/
-- Food price per kg - because package size varies, the price per kilogram is a clear way to compare prices across foods and packages sizes.
-
-
-## [Presentation]
-
-> summarizing / compacting data into a easy digestable format 
-
-- The "1 in every 45" is an intuitive way to display a ratio. (Odds notation)
-- Sugarcoating and eye candy can make the good great, but it won't help a poor insight.
-- Graphics and presentation should have a hierarchy to be quickly understood. 
-  - Start with 1. Summary top view then allow for 2. Drill-Down view
-- Is said that a bar and line charts can cover almost anything needed to be visualized, it has less impact as a visually stunning infographic, but with about the same representation value and quicker to get done.
-
-Tools: Excel, R(ggplot2), D3.js
-
-
-## [Analysis]
-
- - Whenever an average value is presented and analysed, it should have a confidence measure (standard deviation for example, also confirm for normality)
-
- - Prefer conclusions from relative percentages, instead from absolute numbers. e.g. in a funnel traffic analysis, the absolute values of a drop-off step are going up, is tempting to infer immediate that drop-off is going up, but is not mandatory true. It could be because the overall input of traffic is also increasing and the drop-off rate is actually constant. Calculate relative percentage = drop-off / total.
-
- - Histogram, to see the distribution of the data. - check if normal distributed
-
- - Correlation, to find relations between variables
-
- - Regression, to model the data, typically over simplifies, but often is good enough.
-
-## [Data]
-
- - The central data structure is the table structure: databases, spreadsheets, csv, R's data.frame, etc...
-
---- 
 
 ## An Ad-Hoc Analysis Task
 
@@ -157,7 +159,7 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
 
 ---
 
-## Data Stack
+## The Data Stack
 
 Data Stack: Instrumentation, Reporting, Analysis.
 
@@ -166,10 +168,13 @@ Data Stack: Instrumentation, Reporting, Analysis.
 3. Analysis: Look into the data, explore, identify trends, find the  most interesting actionable bits.
 
 The output of this work is a report. That either:
+
 - Is used to monitor performance and is used baseline for changes. - typically a recurring report.
+
 - Reveals new information that can be used to define strategies and future changes.
 
 #### Recurring vs Ad-hoc reports: 
+
 Recurring reports are fully automated, no need to touch them, the automation part is often tricky and imposes many limitation on the final report (visualizations, extra calculations, etc…). Recurring reports are often simpler than Ad-hoc ones.
 Ad-hoc's are a one time only, involve quite a bit of manual data calculations, but are the most flexible.
 

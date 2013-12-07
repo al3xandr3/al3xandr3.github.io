@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Weight Loss Predictor
-category: data
+category: statistics
 tags: 
   - data
   - R
@@ -14,9 +14,9 @@ intro: "Diet and Predicting when I am going to be healthy"
 
 ![http://al3xandr3.github.com/img/diet.jpeg][1] 
 
-Got for 2010 Xmas a very cool
-book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who
-write a previous favorite of mine about productivity, the 4 hour work week.
+<div class="toc"></div>
+
+Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
 
 I like the book's approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results… Notice the similar principles of AB testing, as in, try things out and measure results, and see if they work for you.
 
@@ -238,13 +238,13 @@ But as you see the slow carb diet seems to work, even without exercise. Tim's
 book is great, focusing on the smallest things possible for the bigger
 results(=efficiency).
 
-## _Update_
+## Update
 
 Got to 75.0kg on 25 March. Thats 67 days (aprox. 9 weeks) for a 9kg loss,
 thus aprox. 1kg per week. Which is within the recommended(0.9kg per week)
 weight loss recommendations. Thus am now within normal [BMI values][6].
 
-### References
+## References
 
  * Hard drive occupation prediction with R: [part 1][8] and [part 2][9], and thanks to Leandro Penz on the feedback. 
  * Big thanks for Jose and Tim, on jumpstarting this experiment! 

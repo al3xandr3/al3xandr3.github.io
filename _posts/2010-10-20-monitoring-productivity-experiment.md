@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Monitoring Productivity Experiment
-category: data
+category: statistics
 tags:
   - data
   - productivity
@@ -26,6 +26,8 @@ replying Email. In average.
 This is overly simplified, but the tools i'm using work specially well for
 this, including automatic data collection without the need for manual data
 entry.
+
+<div class="toc"></div>
 
 ## Tracking Time
 
