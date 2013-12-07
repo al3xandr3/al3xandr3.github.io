@@ -32,8 +32,14 @@ Properties of sound:
 
 ## Microphone
 
-Microphone cardio design influences how wide are area they capture sound from.
+Types:
+- Dynamic: rugged, for live loud stage usage, has a fairly small, typically directional. ex: shure SM57, SM58 
+- Condenser: very sensitive, not for live stage, better for studios, pickup a 
 
+Microphone polar pattern is about the area they pickup around the microphone, typically the Dynamic have smaller area than condenser, SM58: cardio shaped polar pattern.
+Condenser often are less directional, and more likely to have omni directional, or more wide range polar pattern.
+
+A wider polar pattern captures more from room, environment, that can be very useful, depending on application.
 
 ## Noise
 
@@ -41,11 +47,22 @@ All electronic devices have a transformer that works at a specific frequency, wh
 
 ## DAW 
 
-### Basic Settings
+### Project Checklist:
+- Proper project tracks and location 
+- Digital Audio preferences and Hardware Setup (see Basic Settings)
+- File recording: all uncompressed
 
+
+### Audio Settings
+- Name individual tracks, the recording are often named after the track
 - 48,000Hz, 24bit, 128 (less if possible) buffer size.
 
-### When too many plugins (CPU having a hard time)
+### Individual tracking checklist 
+ - Name individual tracks, the recording are often named after the track
+ - Mono vs stereo
+ - set the level
+
+### When too many plug-ins (CPU having a hard time)
 
 - Render the audio into a 2nd track.
 - Disable the original track with effects - but don’t delete, to be able to re-amp (fine tune) the FX's again later.
@@ -74,6 +91,15 @@ Very common that volume of track is not same for the whole track, do track autom
 
 http://forum.cockos.com/showthread.php?t=82459
 
+## MIDI
+
+MIDI often triggers either a sampled instrument or an synth algorithmic one.
+
+Velocity is the intensity then note was played, lower to make it quieter.
+
+Quantization, good trick to fix performance, use quantization to the notes that were played, quarter notes, eight notes etc...
+
+Quantization strength: do at 20%, check if good enough, if not then 20% again, etc... it keeps the human feel to it.
 
 ## Equalizer
 
@@ -101,22 +127,27 @@ EQ reference guide: http://www.idmforums.com/showthread.php?t=18237
 
 ## Dynamics
 
-Effects that act on volume, very important.
-
-Should always mix / play at same volume level always, volume influences our natural ears eq.
+Effects that act on volume, very important. Maybe a bit abused nowadays in dance music.
 
 Types of Dynamic Effects:
 
-- Compressor - rides the wave, lowers the highs, augments the quiets. Made an analyzer that by taking averages of, x samples creates a simplified wave shape called envelope that is used to update the volume knob. The envelope curve goes up the volume goes down in case of a compressor.
-- Limiter - is a compressor with a high ratio 10:1 or more
-- Gates - noise gate, is a typical usage, cuts the signal, when below a certain threshold
-- Expander -
+- Compressor - reduces the level of the loud peaks (the transients). Removes dynamic range. 1st bring down the transients. 2nd raise the gain up. At the end means increased volume of quiet moments
+
+- Limiter - Original to cut the sound above a specific threshold. Works like a compressor, but automatically increases gain. Is essentially a compressor with a high ratio 10:1 or more. Loudness maximizers are limiters.
+
+- Gate - is a compressor at a very high ratio with a very fast attack. Its used to cut noise bellow the threshold.
+
+Parameters:
+- Threshold - reduce the level when volume goes above threshold.
+- Knee - blunts the threshold hit points, soften the transition
+- Ratio - input to output compression ratio: 2:1, means output is half the input. Defines how much the volume comes down when it hits the threshold.
+- Attack and Release: Control how fast does the compressor/limiter kicks in.
+
+Compressor application - rides the wave, lowers the highs, augments the quiets. Imagine following the voice track (actually very common), when gets lower then raise it up, when very loud then lower volume a bit. a Compressor does this automatically its an analyzer that by taking averages of x samples creates a simplified wave shape called envelope that is used to update the volume knob. The envelope curve goes up the volume goes down in case of a compressor.
 
 Transients are the peaks in sound wave.
 
-Random Idea:
-Most of the effects we see nowadays in computer are a replication of existing hardware effects, but actually the computer could potentially be used for much more sophisticated effects, with sophisticated on-line calculations like moving averages, exponential smoothing, etc... 
-
+Should always mix / play at same volume level always, volume influences our natural ears eq.
 
 ## Space (depth) in a stereo mix
 
