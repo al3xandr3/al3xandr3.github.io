@@ -33,7 +33,9 @@ Properties of sound:
 ## Microphone
 
 Types:
+
 - Dynamic: rugged, for live loud stage usage, has a fairly small, typically directional. ex: shure SM57, SM58 
+
 - Condenser: very sensitive, not for live stage, better for studios, pickup a 
 
 Microphone polar pattern is about the area they pickup around the microphone, typically the Dynamic have smaller area than condenser, SM58: cardio shaped polar pattern.
@@ -47,7 +49,7 @@ All electronic devices have a transformer that works at a specific frequency, wh
 
 ## DAW 
 
-### Project Checklist:
+### Project Checklist
 - Proper project tracks and location 
 - Digital Audio preferences and Hardware Setup (see Basic Settings)
 - File recording: all uncompressed
@@ -75,7 +77,9 @@ Saves processing power.
 ### Several Takes, merge the best bits (audio photoshop)
 
 Do several takes for same track like rhythm guitar then take then best form each and merge into 1:
+
 - Do very short crossfades, between each segment to avoid sound clipping. (reaper seems to do that by default)
+
 - Do a track freeze (or merge), that renders it all into 1 audio track.
 
 ### Track Automations
@@ -87,7 +91,7 @@ Very common that volume of track is not same for the whole track, do track autom
 - Video (FFmpeg encoder) MKV container:
  - HUFFYUV video codec, 24 bit PCM audio
  - 640 x 360
-- http://handbrake.fr
+- Convert to desired format with http://handbrake.fr
 
 http://forum.cockos.com/showthread.php?t=82459
 
@@ -127,7 +131,7 @@ EQ reference guide: http://www.idmforums.com/showthread.php?t=18237
 
 ## Dynamics
 
-Effects that act on volume, very important. Maybe a bit abused nowadays in dance music.
+Effects that act on volume, very important. Maybe a bit abused nowadays where there is little dynamics and volumes are maximized.
 
 Types of Dynamic Effects:
 
@@ -138,9 +142,13 @@ Types of Dynamic Effects:
 - Gate - is a compressor at a very high ratio with a very fast attack. Its used to cut noise bellow the threshold.
 
 Parameters:
+
 - Threshold - reduce the level when volume goes above threshold.
+
 - Knee - blunts the threshold hit points, soften the transition
+
 - Ratio - input to output compression ratio: 2:1, means output is half the input. Defines how much the volume comes down when it hits the threshold.
+
 - Attack and Release: Control how fast does the compressor/limiter kicks in.
 
 Compressor application - rides the wave, lowers the highs, augments the quiets. Imagine following the voice track (actually very common), when gets lower then raise it up, when very loud then lower volume a bit. a Compressor does this automatically its an analyzer that by taking averages of x samples creates a simplified wave shape called envelope that is used to update the volume knob. The envelope curve goes up the volume goes down in case of a compressor.
@@ -148,22 +156,6 @@ Compressor application - rides the wave, lowers the highs, augments the quiets. 
 Transients are the peaks in sound wave.
 
 Should always mix / play at same volume level always, volume influences our natural ears eq.
-
-## Space (depth) in a stereo mix
-
-Properties that affect Perception of deep in a mix:
-
-- Volume - the closer the louder
-- High End - long distances loose high end became duller
-- Reverb - the closer the mic the less gets from room, the less reverb
-- Stereo with - low sound on 1 ear is very close, as it gets further start to hear a small delay on the other ear, when very far no separation of left from right.
-
-The main focal point should be at the center, thus widening a certain track or instrument can give space for another central point. For example guitar rhythm on stereo wide  and guitar solo centered.
-The center can then be filled with instruments across all frequencies, typically: low kick, bass, guitar, vocals and high hat
-
-Important is that left and right are in balance.
-
-Triangle shape balance strategy: low end is central and the high end can be spread wide.
 
 ## Delay & Reverb
 
@@ -181,10 +173,26 @@ Long delay is better if time synced with track.
 
 Long delay, better when left different than right, for a ping pong effect.
 
-Best reverbs are convolution, but they can't be fined tuned as much as the algorithmic ones, typically algorithmic one the goal is to best simulate a space.
+Best (most realistic) reverbs are convolution, but they can't be fined tuned as much as the algorithmic ones, typically algorithmic one the goal is to best simulate a space.
 
 Getting the right sounding reverb often involves a lot of trial and error.
 
+
+## Space (depth) in a stereo mix
+
+Properties that affect Perception of deep in a mix:
+
+- Volume - the closer the louder
+- High End - long distances loose high end became duller
+- Reverb - the closer the mic the less gets from room, the less reverb
+- Stereo with - low sound on 1 ear is very close, as it gets further start to hear a small delay on the other ear, when very far no separation of left from right.
+
+The main focal point should be at the center, thus widening a certain track or instrument can give space for another central point. For example guitar rhythm on stereo wide  and guitar solo centered.
+The center can then be filled with instruments across all frequencies, typically: low kick, bass, guitar, vocals and high hat
+
+Important is that left and right are in balance.
+
+Triangle shape balance strategy: low end is central and the high end can be spread wide.
 
 ## Synths 
 
@@ -193,6 +201,7 @@ Synths purpose is to engineer instrument sound.  A model of instrument sound. Th
 Works by first generating some kind of simple wave, then applying several filters to it, including time based filters, like oscillating ones, that for example create vibrato.
 
 Building Blocks:
+
 - Oscillator - simple sound generator, sine wave, square wave, square wave, etc
 - Filter - low pass, high pass, band pass
 - Amplifier - volume knob, really works together with the envelope

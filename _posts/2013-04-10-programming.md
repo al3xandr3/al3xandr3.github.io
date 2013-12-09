@@ -42,3 +42,4 @@ Reference:
 #### References
 
 - Writting documentation: http://jacobian.org/writing/great-documentation/what-to-write/
+- How Software Companies Die (half joking): http://www.cs.cmu.edu/~chuck/jokepg/joke_19970213_01.txt
