@@ -14,8 +14,6 @@ intro: "Diet and Predicting when I am going to be healthy"
 
 ![http://al3xandr3.github.com/img/diet.jpeg][1] 
 
-<div class="toc"></div>
-
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
 
 I like the book's approach, it doesn't just say do this do that and you'll be healthy, it actually says: I(Tim Ferriss) have tried this, exactly with these steps, during this time, this is how i measured, these are the results i got and by looking at most up-to-date medical research this is the most likely explanation for these results… Notice the similar principles of AB testing, as in, try things out and measure results, and see if they work for you.

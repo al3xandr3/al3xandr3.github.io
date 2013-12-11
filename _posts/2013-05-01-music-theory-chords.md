@@ -8,9 +8,7 @@ tags:
 intro: "Music Theory Chords"
 ---
 
-<link rel="stylesheet" href="http://al3xandr3.github.com/css/cv.css" type="text/css" media="screen, projection" />
-
-<div class="toc"></div>
+<link rel="stylesheet" href="/css/cv.css" type="text/css" media="screen, projection" />
 
 ## Notes
 
@@ -34,7 +32,8 @@ intro: "Music Theory Chords"
 - 6 = 13
 
 
-## Chords Triads (1-3-5)
+## Chords Triads
+
 
 |     | I | III | V  |  
 |:--   |:-- |:--   |:--  | 

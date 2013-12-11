@@ -27,8 +27,6 @@ This is overly simplified, but the tools i'm using work specially well for
 this, including automatic data collection without the need for manual data
 entry.
 
-<div class="toc"></div>
-
 ## Tracking Time
 
 I'm using the [RescueTime][3] application that tracks when there's user

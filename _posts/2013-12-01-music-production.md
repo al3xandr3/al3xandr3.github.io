@@ -9,8 +9,6 @@ tags:
 intro: "Music Production"
 ---
 
-<div class="toc"></div>
-
 ## Sound
 
 > Sound is a mechanical wave that is an oscillation of pressure transmitted through some medium (like air or water), composed of frequencies which are within the range of hearing.
@@ -56,13 +54,13 @@ All electronic devices have a transformer that works at a specific frequency, wh
 
 
 ### Audio Settings
-- Name individual tracks, the recording are often named after the track
 - 48,000Hz, 24bit, 128 (less if possible) buffer size.
 
 ### Individual tracking checklist 
+
  - Name individual tracks, the recording are often named after the track
  - Mono vs stereo
- - set the level
+ - Set the level
 
 ### When too many plug-ins (CPU having a hard time)
 

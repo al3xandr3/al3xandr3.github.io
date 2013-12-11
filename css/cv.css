@@ -1,5 +1,4 @@
 
-
 img {
   float:left;
   margin-right:0.5em;
@@ -7,10 +6,6 @@ img {
   box-shadow: 0 0 4px #CCCCCC;
   clear: left;
   padding: 0!important;
-}
-
-h1 {
-  margin-bottom: 1.2em;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong {

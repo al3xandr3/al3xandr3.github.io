@@ -1,10 +1,17 @@
-permalink: /:year/:month/:day/:title.html
-author: al3xandr3
-title: al3xandr3
+permalink: /:title.html
+title: Al3xandr3
+description: "Al3xandr3's Blog"
 keywords: programming, data, machine learning, alexandre martins, al3xandr3
-url: http://al3xandr3.github.com
-paginate: 6
+production_url: http://al3xandr3.github.io
 pygments: false
 markdown: redcarpet
 redcarpet:
   extensions: ["tables","with_toc_data", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+author :
+  name : Alexandre Matos Martins
+  github : al3xandr3
+  twitter : al3xandr3
+  email: al3xandr3@gmail.com
+  linkedin: al3xandr3
+disqus_shortname: al3xandr3
+analytics: UA-39542235-1

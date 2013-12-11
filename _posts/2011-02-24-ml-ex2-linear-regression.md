@@ -61,7 +61,6 @@ For example, the data we use here are boys ages and their corresponding
 heights, so when we get the mathematical model we will be able to guess the
 boys height from his age.
 
-<div class="toc"></div>
 
 ## Data
 

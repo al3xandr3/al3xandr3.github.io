@@ -13,8 +13,6 @@ intro: "Practical examples on tagging up a site with RDFa tags, then extract and
 
 Practical examples on how to get onto the semantic web and on using it. 
 
-<div class="toc"></div>
-
 ## Getting in There
 
 Start by creating a semantic web personal online profile using the Friend-Of-A-Friend (FOAF) vocabulary. The FOAF has became the standard for personal profiles on the semantic web, and as the name implies, it also lets you link to people you know.

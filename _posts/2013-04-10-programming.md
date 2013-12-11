@@ -7,8 +7,6 @@ tags:
 intro: "Programming Best Practices"
 ---
 
-<div class="toc"></div>
-
 ### Precepts
 
   - State is the root of all evil, avoid global variables, and shared state.

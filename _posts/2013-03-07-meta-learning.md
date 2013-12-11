@@ -7,8 +7,6 @@ tags:
 intro: "learning how to learn"
 ---
 
-<div class="toc"></div>
-
 ## How to Learn
 
 ### Deconstruction:

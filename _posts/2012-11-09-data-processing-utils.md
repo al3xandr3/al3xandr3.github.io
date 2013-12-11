@@ -10,8 +10,6 @@ intro: "Reference of small utils that help in data processing, filtering, splitt
 
 Reference of data processing little hacks / utils / tools
 
-<div class="toc"></div>
-
 ## filter
 
 Exclude lines from **file.csv** that contain a "." and output the result into **file2.csv**

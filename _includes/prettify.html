@@ -1,0 +1,16 @@
+<!-- Prettify -->
+<link href="/css/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/js/libs/prettify.js"></script>
+<script type="text/javascript" src="/js/libs/lang-clj.js"></script>
+{% assign clj = false %}
+{% for t in page.tags %}{% if t == 'clojure' %}{% assign clj = true %}{% endif %}{% endfor %}
+<script type="text/javascript">
+$(function () {
+  {% if clj %}
+    $('pre').addClass("prettyprint lang-clj");
+  {% else %}
+    $('pre').addClass("prettyprint");
+  {% endif %}
+  prettyPrint();
+});
+</script>

@@ -8,8 +8,6 @@ tags:
 intro: "And Back-of-the-Envelope estimations"
 ---
 
-<div class="toc"></div>
-
 ## Odds Notation
 
 Notation "A:B" describes how much A we get for every B.

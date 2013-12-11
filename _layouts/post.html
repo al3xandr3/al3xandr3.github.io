@@ -1,20 +1,26 @@
 ---
-layout: default
+layout: layout
 ---
 
+{% include prettify.html %}
+
 <article>
-  <section>
-  <h1>{{page.title}}</h1>
-  {{ content }}
+  <h1>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </h1>
+
+  {% unless page.hide %}
+  <section class="byline">
+    {{ page.date | date: "%B %e, %Y" }}
   </section>
-  <footer>
+  {% endunless %}
+
+  {% include toc.html %}
+
+  {{ content }}
+  
+
+  {% include twitter.html %}
+  <hr>
   {% include disqus.html %}
-  </footer>
 </article>
-
-<aside>
-  <h4>{{page.date|date_to_string}}</h4>
-  <span style="opacity:.85;font-size: 100%;">{% for tag in page.tags %}<a href="/tags/{{tag}}.html">#{{tag}}</a> &nbsp;{% endfor %}</span>
-</aside>
-
-

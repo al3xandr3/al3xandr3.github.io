@@ -8,8 +8,6 @@ tags:
 intro: "Data Analysis Guidelines"
 ---
 
-<div class="toc"></div>
-
 ## Why Data Analysis?
 
 **1. End Goal: Improve something\* - [Domain]**
@@ -46,7 +44,6 @@ skills: SQL, programming, google analytics, databases, etc...
 
 **Insight** triggers **Action** that creates **Improvement**
 
----
 
 ### Find Insights
 
@@ -85,7 +82,6 @@ Tools: Excel, R(ggplot2), D3.js
 
  - The central data structure is the table structure: databases, spreadsheets, csv, R's data.frame, etc...
 
----
 
 ## How? The Data Analysis Process for Improvements
 
@@ -107,7 +103,6 @@ Tools: Excel, R(ggplot2), D3.js
 
 The 2.1 step is a fun and somewhat creative(harder to mechanize), computers try automate this for example by checking strong correlations of every combination of variables, but often needs external information not existing directly in data, part of the domain know-how.
 
----
 
 ## Metrics in an Organization
 
@@ -122,7 +117,6 @@ The 2.1 step is a fun and somewhat creative(harder to mechanize), computers try 
 7.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
 7.2. Prediction Models can help see where we headed, can help automate process.
 
----
 
 ## An Ad-Hoc Analysis Task
 
@@ -157,7 +151,6 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
   - Predict whats going to happen - from deep understanding
 
 
----
 
 ## The Data Stack
 
@@ -181,9 +174,25 @@ Ad-hoc's are a one time only, involve quite a bit of manual data calculations, b
 A somewhat useful mixed solution is to do ad-hoc reports that are almost fully automated. Ex: just copy paste a table of data into one excel sheet and all rest of report updates by itself. 
 
 
----
+## Telling Stories with Data
 
-## Tool: Machine learning
+- Maps are great tools, for a stats covering the whole world
+
+### How to Lie with statistics
+
+- A too precise average statistic is suspicious, normally, there's some decimal points.
+- Average can be a mean, a mode or a median
+- Testing, guarantee an adequate sample size. To lie just use small sample size and try many times, eventually one group will show a good result. 
+- Charts without axis labels and numbering are meaningless. 
+
+- Common sense is required while reading numbers, nevertheless. But is better assume reader wont really know.
+
+Reference: 
+- Book: how to lie with statistics
+- http://mathwithbaddrawings.com/2013/12/02/headlines-from-a-mathematically-literate-world/
+
+
+## Machine learning
 
 A program that learns (creates a model) from the existing data, useful for:
  - Predicting (guessing / inferring) future from the past
@@ -205,9 +214,9 @@ Latest big trend, on the start of 2013 is probabilistic programming, also called
 
 Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
 
---- 
 
-## Tool: Web Analytics
+
+## Web Analytics
 
 - WA = Web Analytics
 
@@ -223,3 +232,18 @@ Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programmin
 
 - How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
 
+### Instrumentation
+
+Tracking Instrumentation should be on the API's not on the Interface! - for simpler maintenance
+So that when building the front end the API's are used and will already include tracking instrumentation.
+
+(not the reality unfortunately)
+
+## Tools
+
+- Math: basic arithmetic, statistical and probability know-how.
+- Excel: very practical and quick numbers manipulation and charting
+- SQL: to get data out (and into) of databases.
+- Python: ETL (string processing), fetch data, automations, build applications.
+- R: apply most sophisticated data algorithms (machine learning, statistics, etc...).
+- Javascript: for sharing visualizations on web (web: current information share platform).
