@@ -38,11 +38,13 @@ article, .content {
    /* text-align: justify; */
 }
 
-
-
 article img, .content img {
     display: block;
     margin: 0px;
     max-height: 70%;
     max-width: 70%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none;
 }

@@ -8,6 +8,19 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 <div id="quote_cloud"></div>
 
 ## 2013
+
+<blockquote data-day="2013-12-05">
+Data mining / analysis is about being able to see, to reveal facts that are already there. And if you can see, then you will know better which direction to follow.
+</blockquote>
+
+<blockquote data-day="2013-12-04">
+A big part of life and growing up is about tolerating bigger levels of pain overtime to keep evolving to achieve bigger things. Keep expanding the confort zone.
+</blockquote>
+
+<blockquote data-day="2013-12-01">
+Coders that love coding just for coding enjoyment are very passionate and picky about language (the majority), the ones who care mostly about final product will be more tolerant to choose the best language (tool) for the job.
+</blockquote>
+
 <blockquote data-day="2013-10-05">
 3d printers are like lisp macros, as in they allow to build your own tools. Tools to make tools (meta-tools)
 </blockquote>
