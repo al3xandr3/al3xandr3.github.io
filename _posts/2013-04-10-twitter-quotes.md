@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Twitter Quotes Visualized
-intro: "Quotes from Twitter"
+title: Twitter Quotes Visualized 
+intro: "Quotes from Twitter Visualized"
 sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 ---
 
@@ -9,8 +9,12 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2013
 
+<blockquote data-day="2013-12-13">
+Upper managemement is mostly about politics.
+</blockquote>
+
 <blockquote data-day="2013-12-05">
-Data mining / analysis is about being able to see, to reveal facts that are already there. And if you can see, then you will know better which direction to follow.
+Data Analysis is about being able to see reality, it reveals the facts that were already there but you could not see.
 </blockquote>
 
 <blockquote data-day="2013-12-04">

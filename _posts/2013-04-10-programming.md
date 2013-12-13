@@ -7,7 +7,7 @@ tags:
 intro: "Programming Best Practices"
 ---
 
-### Precepts
+### Precepts of Programming
 
   - State is the root of all evil, avoid global variables, and shared state.
   - Go for pure functions with well defined interfaces (for the same input always same output). Create building blocks using pure functions, that are composable and reusable, also makes for better testing.
@@ -25,19 +25,68 @@ Reference:
   - http://www.infoq.com/presentations/Design-Composition-Performance - Rich Hickey
 
 ### Apps
-  - Make things runnable on command line as standalone bin, easier to integrate with other apps later on.
-  - Make it accessable from a url endpoint, as api (close enough) as a standalone, json seems to be the norm these days, but data format have changed overtime, and will probably continue changing. CSV is a good fit to data analysis + tools support + easy to work with.
-  - GUIs are not composable. But they can be extendable with plug-ins. And they are easier to use (compared to command line), and the current standard for applications
+
+- Make things runnable on command line as standalone bin, easier to integrate with other apps later on.
+- Event better make it accessable from a url endpoint (a service), as an api, as a standalone, json seems to be the norm these days, but data format have changed overtime, and will probably continue changing. CSV is a good fit to data analysis + tools support + easy to work with.
+- GUIs are not composable. But they can be extendable with plug-ins. And they are easier to use (compared to command line), and the current standard for applications
 
 
 ### Functional Programming
+
 - Functions as values, that can be passed to arguments of other function. Functions as 1st class citizens.
 - Avoid shared state. Avoid variables outside of functions.
 - Design functions that take other functions as argument, makes them much more generic and useful in the long term.
 - Iterate with map and reduce and fold, avoid iteration where state changes.
 
+Underscore.js and its migrations to different languages seem to be a standard for having the functional programming building blocks as a library to any programming language.
 
 #### References
 
 - Writting documentation: http://jacobian.org/writing/great-documentation/what-to-write/
 - How Software Companies Die (half joking): http://www.cs.cmu.edu/~chuck/jokepg/joke_19970213_01.txt
+
+
+
+## Programming languages
+
+Biased and Opinionated list.
+
+> Programming languages are tools, choose best tool for the job at hand.
+
+
+> Coders that love coding just for coding enjoyment are very passionate and picky about language (the majority ?), the ones who's goal is just about final product will be more tolerant to choose the best language (tool) for the job.
+
+### C/C++
+Old languages, although C++ tries hard to keep up.
+C is small and nice, but very low level, is close to the machine architecture (which is limiting, because you'll have to mix and fit computer architecture to the solution of your problem, they should be abstracted and be different problems)
+C++ big, complex, a natural growth of C, also the most used language, because is fast, and it was maybe the 1st modern language. Is so complex that who uses it has hard time taking critics on it, because of investment already made.
+
+### R
+Excellent for data analysis, but very clunky programming language, probably result of many years of bolting on features (im guessing even by different people), instead of a clean designed planning.
+
+### Javascript
+Love/hate with this one, love the powerful constructs that trump abilities of  big players like Java.
+But inconsistent, and with many holes, that requires some overhead to avoid shooting yourself in the foot. 
+Think it had the luck to be in the right place at the right time, with just the right amount of interesting features to make developers pick it up. Been growing a lot recently, has one of the most distributed language interpreter in history ? (the browser) 
+Is cross platform, better solution, than developing platform dependent things.
+
+### Ruby
+Simple but powerful, does not get on the way.
+Perfect scripting and prototyping language, for small scale. Great to text processing, gluing different systems/apps together.
+Downside, smaller lib ecosystem than python (that fits in about the same target audience)
+
+### Python
+Ruby's older brother, more users, bigger ecosystem and libraries, but not as pretty as ruby (I might be biased)
+Excellent scripting languages, good for fast developing, people find ways to fit it into every style and to cover more and more ground with the things it can do.
+
+### Java
+Designed to be safe, to scale, designed to be dumbed down (so that is safe), so has grown a lot, maybe 2nd(3rd) biggest language in use? 
+Known to drive people slightly crazy, has a huge overhead of configurations, setup, libraries dependencies, files, etc…
+Very portable.
+Very scalable.
+The richest (or at least in top 3 richest) libraries ecosystem.
+
+### Clojure
+
+Allows for creativity, the basic syntax is super simple, so allows and incentives creativity in abstraction and composition, like a clean slate.
+Incentivates for functional programming, no state (or very little in reality).

@@ -8,84 +8,66 @@ tags:
 intro: "Data Analysis Guidelines"
 ---
 
-## Why Data Analysis?
+## Why, whats the point?
 
-**1. End Goal: Improve something\* - [Domain]**
+**1. End Goal: Improve something**
 
 e.g. a business process, a strategy in a company, government, health
 
 skills: domain knowledge(digital marketing, company processes), ask big scope questions to distill what is important (what is the purpose of this? What happens if we don't have it?)
 
-**2. By doing something new/different - [Action]**
+**2. By doing something new / different**
 
 e.g. Do Y instead of X see if improves against measures(KPIs)
 
 skills: 1st need to know the current baseline: Dashboard (for KPIs monitoring), 2nd use AB testing to optimize.
 
-**3. Because of an insight / revelation - [Find Insights]**
+**3. Because of an insight / revelation**
 
 e.g. We found that Y is more likely better than X. 
 
 skills: Be curious, play around, make observations, question a lot, distill what is important, common sense, this can contribute to metrics(KPIs to monitor) but should be more focused on the ideas for change.
 
-**4. (An Insight) That was presented in a clear way - [Presentation]**
+**4. (An Insight) That was presented in a clear way**
   
 skills: visualization, communication, rhetoric, human behavior
   
-**5. (An Insight) That was analysed in a correct way - [Analysis]**
+**5. (An Insight) That was analysed in a correct way**
 
 skills: statistics, probabilities, counting, estimating, correlation, regression, modeling, etc...
 
-**6. (An Insight) That had adequate data available - [Data]**
+**6. (An Insight) That had adequate data available**
 
 skills: SQL, programming, google analytics, databases, etc...
 
-\*Improve something - Particularly in big systems and organizations, that have many moving parts(variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of (potentially useful) changes and in focusing efforts in the right direction.
-
-**Insight** triggers **Action** that creates **Improvement**
+Particularly in big organizations, that have many moving parts (variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of potential choices and in focusing efforts in the right direction.
 
 
-### Find Insights
-
-Useful metrics examples:
-
-- Price of digital media entertainment per hour - http://gigaom.com/2013/02/10/cost-per-hour-a-new-metric-for-paid-content/
-- Food price per kg - because package size varies, the price per kilogram is a clear way to compare prices across foods and packages sizes.
 
 
-### Presentation
-
-> summarizing / compacting data into a easy digestable format 
-
-- The "1 in every 45" is an intuitive way to display a ratio. (Odds notation)
-- Sugarcoating and eye candy can make the good great, but it won't help a poor insight.
-- Graphics and presentation should have a hierarchy to be quickly understood. 
-  - Start with 1. Summary top view then allow for 2. Drill-Down view
-- Is said that a bar and line charts can cover almost anything needed to be visualized, it has less impact as a visually stunning infographic, but with about the same representation value and quicker to get done.
-
-Tools: Excel, R(ggplot2), D3.js
 
 
-### Analysis
-
- - Whenever an average value is presented and analysed, it should have a confidence measure (standard deviation for example, also confirm for normality)
-
- - Prefer conclusions from relative percentages, instead from absolute numbers. e.g. in a funnel traffic analysis, the absolute values of a drop-off step are going up, is tempting to infer immediate that drop-off is going up, but is not mandatory true. It could be because the overall input of traffic is also increasing and the drop-off rate is actually constant. Calculate relative percentage = drop-off / total.
-
- - Histogram, to see the distribution of the data. - check if normal distributed
-
- - Correlation, to find relations between variables
-
- - Regression, to model the data, typically over simplifies, but often is good enough.
-
-### Data
-
- - The central data structure is the table structure: databases, spreadsheets, csv, R's data.frame, etc...
 
 
-## How? The Data Analysis Process for Improvements
 
-**Step 1.** Be aware of where you are:
+
+## How?
+
+### Tasks
+
+In practice the data analyst tasks are:
+
+- Revealing the facts, insights not known before.
+- Optimization, once you know the facts you try to optimize them, AB testing. (the hypothesis are domain specific).
+- Monitoring, keep observing the updated performance and optimization results.
+- Estimating / Predicting Future, by observing the past.
+- Defining whats important to keep an eye on, the KPIs. (this is domain specific).
+- Telling a Story, communicating the findings and recommendations.
+
+
+### The Process
+
+**Step 1.** Be aware of where you are
 
  1.1 Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What is the end goal? - Domain
 
@@ -101,24 +83,202 @@ Tools: Excel, R(ggplot2), D3.js
 
  2.3 AB test the Insights
 
-The 2.1 step is a fun and somewhat creative(harder to mechanize), computers try automate this for example by checking strong correlations of every combination of variables, but often needs external information not existing directly in data, part of the domain know-how.
+The 2.1 step is a fun and somewhat creative (harder to mechanize), computers try automate this for example by checking strong correlations of every combination of variables, but often needs external information not existing directly in data, part of the domain know-how.
 
 
-## Metrics in an Organization
+### The Data Analysis Stack
 
-1. Learn the domain and ecosystem: activities exist, what products, what are the end goals: usage, money, user count, downloads, etc..
+Data Stack: Collecting data, Finding Insights and then Telling a good story around it.
+
+1. Collecting data: requires a mix of technical and analytical: by knowing comprehensively the technical details of how tool works, designing a instrumentation solution to allow useful analysis.
+3. Finding Insights: Look into the data, explore, identify trends, find the  most interesting actionable bits.
+2. Telling a good story: Automated recurrent (daily/weekly) documents showing the KPI's. Requires analysis up front to figure out what are the KPI's to put on dashboard, and to pick the most actionable metrics.
+
+The output of this work is a report. That either:
+
+- Is used to monitor performance and is used baseline for changes. - typically a recurring report.
+
+- Reveals new information that can be used to define strategies and future changes.
+
+### In an Organization
+
+1. Learn the domain and ecosystem: activities exist, what products, what are the end goals: usage, money, user count, downloads, etc...
+
 2. Who are the stakeholders, that can act on recommendations, and their understanding on stats.
-3. Define the metrics framework and the KPIs
-4. Data step 1: Build a daily / weekly report, what happened. With drill-down levels: level.1: sales change. level.2: what products changed the most. level.3: what countries sales changed more, etc... (Level.1 some say should be up to 3 KPIs)
-  - The data back-end systems are secondary and the tool to display it also. Excel is a great tool to create an agile dashboard.
-  - This exercise might also reveal gaps with data infrastructure.
-5. Data step 2: Actionable insights(recommendations) for each stakeholder. Guidance, and this will vary by stakeholder role.
-7.0. Be curious with the data, ask good questions, explore ideas, correlations.
-7.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
-7.2. Prediction Models can help see where we headed, can help automate process.
+
+3. Define the metrics framework and the KPIs. What indicators are important to keep an eye on.
+
+3.1. Be curious with the data, ask good questions, explore ideas, correlations.
+
+4. Data 1st step: Build a daily / weekly report, with what happened. With drill-down levels: level.1: sales change. level.2: what products changed the most. level.3: what countries sales changed more, etc... (Level.1 some say should be up to 3 KPIs mac). (this exercise might also reveal gaps with data infrastructure)
+
+5. Data 2nd step: Actionable insights(recommendations) for each stakeholder. Guidance, and this will vary by stakeholder role.
+
+5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
+
+5.2. Prediction Models can help see where we headed.
 
 
-## An Ad-Hoc Analysis Task
+
+
+
+
+
+
+## Data Infrastructure
+
+The industry standard for data format is a table, either csv, relational database table. Recent formats also include key->value (JSON, hadoop).
+
+### Instrumentation
+
+Tracking Instrumentation should be on the API's not on the Interface! - for simpler maintenance
+So that when building the front end the API's are used and will already include tracking instrumentation.
+
+### Data Repository
+
+Traditionally there's 2 types:
+- Operational repository, live / production databases, data is raw (not optimal for analysis), and require high availability so not recommended for analysis experimenting.
+- Analytical repository, to be used by data analysts.
+
+Nowadays, is being more common (maybe because of growing importance of data) dedicated data infrastructures that include: collection, repository and query. That is, the instrumentation sends data directly into them and their whole purpose is to be the infrastructure for data analysis.
+
+### Big Data
+
+Google, for their search engine, as a need to be able to handle massive data, created a tool, based on distributed file system that run parallel MapReduce jobs, the big thing is being able to run query's in parallel. 
+Hadoop is the outside-of-google copy of this.
+
+More recently google created a 2nd tool called dremmel, that is faster and better for data analysis EDA. Supports SQL, like a relational database.
+This is the BigQuery, can be used as service online.
+
+
+
+
+
+
+
+
+
+
+## EDA - Exploratory Data Analysis
+
+a.k.a Looking for insights
+
+> Data Validation:
+Having 2 sources of data allows to calibrate if 1 data is looking good.
+
+### Understanding a measured value (1 variable)
+
+ - Histogram, to see the distribution of the data. - check if normal distributed
+
+ - Regression, to model the data, typically over simplifies, but often is good enough.
+
+
+### Try out correlations
+
+A way to find insights is to look for correlations
+Plot 2 variables against each other and see if any patterns appears, use a scatter plot.
+To see the pattern you often need to smooth the noise into a line that shows the pattern
+Smoothing (line) is about getting the right balance between smoothness and accuracy.
+Loess is a topical method (confirm a good fit from the residuals)
+Other tools for revealing patterns in plots:
+- Logarithmic scale, shows power laws, for data with many orders of magnitude
+- banking, turns humans recognize more easily curve slopes, when they are at a 45 degree angle
+
+Linear regression is best to find formula for prediction. It really only works when the process generating the data really is a linear function: we have a set of inputs and we measure a set of outputs.
+It only works if data can be described in a straight line.
+Does quite a few assumptions and it produces a summary / aggregation only.
+
+### Time Series
+
+Time series, is a bivariable (2 variables) representation with a couple added properties.
+
+Components of time series: trend, seasonality, noise, other ( missing values, outliers, etc...)
+
+> Data Validation:  
+Is the data fair for the whole time period is representing ? Or for example some definitions changed in the meanwhile, i.e. the rules of the game that generated data changed and could be biasing it?
+In practice is hard to make it work for many years in a row because of constant rules changes.
+ 
+
+> Data Validation:
+Data by Week: Comparing data by week, might be fairer than by day, because of weekly cycles, so removes daily bias.
+
+A time series tasks is typically about: 
+
+- description: past, trend, seasonality, changes in behavior 
+- prediction: future, forecasting
+- control: present, monitoring over time
+
+Smoothing is a way to eliminate noise. 
+Running averages: weighted average is better than non-weighted. Use Gaussian weight functions.
+Exponential smoothing is even better, and allows forecasting (moving average do not). Use holts-winters method.
+
+Beware of aggregated functions over non adjusted time periods. For example sum of sales in February is lower 10%. And business days, some months include 5 weekends, sum of sales on that month will look lower.
+
+Correlation function, good for revealing how much memory is in data, and to reveal periodicity.
+(Wonder if i could build a periodic automatic indicator from a time series chart.)
+
+Interesting enough, most machinery developed for DSP matches the same applications as time series operations. Signal is the time series, filters are operators like, smoothing, differentiating.
+And convolution: combining 2 sequences to yield a third one. Applying smoothing function to a chart is like convolution, augmenting a chart with a smoothed line, to produce a 3rd aggregated signal.
+
+
+### Back of the envelope estimations
+
+When there is a hypothesis, about the data find back of envelope estimations to prove it, or to estimate is about right.
+Ex, When observing that Feb sales are lower and raising the idea (hypothesis) that is that is probably because of a shorter month.
+Calculate how big should be the drop, with 3 less days?  3 days is about 10% of 30, so sales drop should match 10% , to fortify the theory, and more important to not fail it.
+
+
+
+
+
+
+
+
+## Telling Stories with Data
+
+summarizing / compacting data into a easy digestible format.
+
+> Tip:
+The "1 in every 45" is an intuitive way to display a ratio. (Odds notation)
+Sugarcoating and eye candy can make the good great, but it won't help a 
+poor insight.
+Start with 1. Summary top view then allow for 2. Drill-Down view
+Is said that a bar and line charts can cover almost anything needed to be visualized, it has less impact as a visually stunning infographic, but with about the same representation value and quicker to get done.
+
+> Tools:
+Excel, R (ggplot2), D3.js
+
+> Tip:
+Prefer conclusions from relative percentages, instead from absolute numbers. e.g. in a funnel traffic analysis, the absolute values of a drop-off step are going up, is tempting to infer immediate that drop-off is going up, but is not mandatory true. It could be because the overall input of traffic is also increasing and the drop-off rate is actually constant. Calculate relative percentage = drop-off / total.
+
+### KPI's
+
+Examples
+- Price of digital media entertainment per hour - http://gigaom.com/2013/02/10/cost-per-hour-a-new-metric-for-paid-content/
+- Food price per kg - because package size varies, the price per kilogram is a clear way to compare prices across foods and packages sizes.
+
+### Reports
+
+> Data Validation:
+Whenever an average value is presented and analysed, it should have a confidence measure (standard deviation for example, also confirm for normality)
+
+#### Recurring vs Ad-Hoc reports
+
+Recurring reports are fully automated, no need to touch them, the automation part is often tricky and imposes many limitation on the final report (visualizations, extra calculations, etc…). Recurring reports are often simpler than Ad-hoc ones.
+Ad-hoc's are a one time only, involve quite a bit of manual data calculations, but are the most flexible.
+
+A somewhat useful mixed solution is to do ad-hoc reports that are almost fully automated. Ex: just copy paste a table of data into one excel sheet and all rest of report updates by itself. 
+
+#### The Inspection View
+
+Often the important is the final rate of something, but when that rate drops massively then it requires investigation to understand why.
+So in parallel of the view (chart, table) of the total rate is probably good idea to also have a view of several points that participate on that total flow, the inspection view. When the Inspection view is setup then is very quick to quickly inspect what points changed that have influenced the final rate. In web analytics the inspection view is for example a view of the flow of pages that lead to a conversion, and having every point of that flow measured in a report view.
+
+#### Maps
+
+Maps are great tools, for a stats covering the whole world
+
+### An Ad-Hoc Analysis Task Checklist
 
 - **Before**
   - What is the Macro of the activity? ex: a payment flow
@@ -151,33 +311,6 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
   - Predict whats going to happen - from deep understanding
 
 
-
-## The Data Stack
-
-Data Stack: Instrumentation, Reporting, Analysis.
-
-1. Instrumentation: is a mix of technical and analytical: by knowing comprehensively the technical details of how tool works, design a instrumentation solution to allow useful analysis.
-2. Reporting: Automated recurrent (daily/weekly) documents showing the KPI's. Requires analysis up front to figure out what are the KPI's to put on dashboard, and to pick the most actionable metrics.
-3. Analysis: Look into the data, explore, identify trends, find the  most interesting actionable bits.
-
-The output of this work is a report. That either:
-
-- Is used to monitor performance and is used baseline for changes. - typically a recurring report.
-
-- Reveals new information that can be used to define strategies and future changes.
-
-#### Recurring vs Ad-hoc reports: 
-
-Recurring reports are fully automated, no need to touch them, the automation part is often tricky and imposes many limitation on the final report (visualizations, extra calculations, etc…). Recurring reports are often simpler than Ad-hoc ones.
-Ad-hoc's are a one time only, involve quite a bit of manual data calculations, but are the most flexible.
-
-A somewhat useful mixed solution is to do ad-hoc reports that are almost fully automated. Ex: just copy paste a table of data into one excel sheet and all rest of report updates by itself. 
-
-
-## Telling Stories with Data
-
-- Maps are great tools, for a stats covering the whole world
-
 ### How to Lie with statistics
 
 - A too precise average statistic is suspicious, normally, there's some decimal points.
@@ -187,12 +320,46 @@ A somewhat useful mixed solution is to do ad-hoc reports that are almost fully a
 
 - Common sense is required while reading numbers, nevertheless. But is better assume reader wont really know.
 
-Reference: 
+- Average of rates is not same as rates of averages, avoid the 1st.
+
+*Reference*
 - Book: how to lie with statistics
 - http://mathwithbaddrawings.com/2013/12/02/headlines-from-a-mathematically-literate-world/
 
 
-## Machine learning
+
+
+
+
+
+## AB testing
+
+- A/A test technique: comparing a test against itself, expect that values match. Should be made several times to get the distribution chart.
+
+
+
+
+
+## Disciplines
+
+### Web Analytics
+
+- WA = Web Analytics
+
+- WA is a measuring tool and central for the Digital Marketing.
+
+- Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
+
+- Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
+
+- Performance Marketing - optimize ROI of web experience over the long term. Rather than trying to go after awards or idealized theories of good design, it advocates performance-driven design. Seeks to identity the ideal mix of creativity and data that drives long-term business benefits.
+
+- Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
+
+- How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
+
+
+### Machine learning
 
 A program that learns (creates a model) from the existing data, useful for:
  - Predicting (guessing / inferring) future from the past
@@ -215,35 +382,3 @@ Latest big trend, on the start of 2013 is probabilistic programming, also called
 Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
 
 
-
-## Web Analytics
-
-- WA = Web Analytics
-
-- WA is a measuring tool and central for the Digital Marketing.
-
-- Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
-
-- Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
-
-- Performance Marketing - optimize ROI of web experience over the long term. Rather than trying to go after awards or idealized theories of good design, it advocates performance-driven design. Seeks to identity the ideal mix of creativity and data that drives long-term business benefits.
-
-- Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
-
-- How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
-
-### Instrumentation
-
-Tracking Instrumentation should be on the API's not on the Interface! - for simpler maintenance
-So that when building the front end the API's are used and will already include tracking instrumentation.
-
-(not the reality unfortunately)
-
-## Tools
-
-- Math: basic arithmetic, statistical and probability know-how.
-- Excel: very practical and quick numbers manipulation and charting
-- SQL: to get data out (and into) of databases.
-- Python: ETL (string processing), fetch data, automations, build applications.
-- R: apply most sophisticated data algorithms (machine learning, statistics, etc...).
-- Javascript: for sharing visualizations on web (web: current information share platform).
