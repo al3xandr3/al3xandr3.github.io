@@ -144,6 +144,15 @@ Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-cou
  2. order the column so that spaces appear at end of start
  
 
+## Download a site
+
+	wget --wait=2 -r -p -U Mozilla http://www.stupidsite.com/restricedplace.html
+
+- To pause 2 seconds between retrievals: --wait 
+- to tell the site you are using some commonly accepted browser: -p -U Mozilla
+- Recursivelly fetch the site, that is linked pages from it : -r
+- To guarantees wget will not download anything from the folders beneath the folder you want to acquire is: --no-parent
+
 ## References:
 
 - command line Unix like tools in windows can be found for example in: [Git for Windows shell](http://msysgit.github.com/) (bundles minGW)

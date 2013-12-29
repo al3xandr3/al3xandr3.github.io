@@ -42,7 +42,11 @@ intro: "learning how to learn"
 ### Encoding: zip  / memorization tricks
 - Find ways to associate the knowledge and skills with what you already know.
 
-- reference: Memorizing a programming language using spaced repetition software http://sivers.org/srs
+Also called space-repetition program. A practical way to do this is to create space-repetition decks and put them into a spaced repetition software, and just practice with the a few minutes every day.
+
+reference: 
+- Memorizing a programming language using spaced repetition software: http://sivers.org/srs
+- Space-repetition for win8 phone: http://www.kleio.info/
 
 ---
 

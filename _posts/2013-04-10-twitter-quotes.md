@@ -9,6 +9,15 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2013
 
+<blockquote data-day="2013-12-29">
+I expect life to be more confortable for each next generation. Better medical care, better technologies, better nutrition, better education, better equality, etc... This should be the objective goal of a civilization.
+</blockquote>
+
+<blockquote data-day="2013-12-16">
+download the internet: 
+> wget -r http://google.com 
+</blockquote>
+
 <blockquote data-day="2013-12-13">
 Upper managemement is mostly about politics.
 </blockquote>
