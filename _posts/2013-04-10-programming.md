@@ -105,7 +105,13 @@ Incentivizes functional programming, no state (or very little in reality).
 
 ### Julia
 - Function: Appears to be best designed language for data crunching. (the new Fortran). Python was adapted, Java was adapted, Julia was designed for data crunching.
-- Opinion: not mature yet (needs more libs). Hard to compete with python, if all libs needed already exist in python.
+- Opinion: not mature yet (in 2013). Hard to compete with python, if all libs needed already exist in python.
 
 Reference: 
 - http://blog.redowlanalytics.com/post/67465127385/tools-for-the-data-science-craftsman
+
+### Haskell
+- Function: General Purpuse, Expanding programmers skill and know how about programming. Expand the programming field research boundaries.
+- Opinion: from the math world, thus clean and cirurgical, born in academic grounds, viewed as a very noble and a holy grail of a language. The functional language.
+
+reference: http://www.haskell.org/haskellwiki/Haskell_in_industry

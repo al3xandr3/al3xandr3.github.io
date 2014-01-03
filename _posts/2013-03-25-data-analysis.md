@@ -287,6 +287,10 @@ Ad-hoc's are a one time only, involve quite a bit of manual data calculations, b
 
 A somewhat useful mixed solution is to do ad-hoc reports that are almost fully automated. Ex: just copy paste a table of data into one excel sheet and all rest of report updates by itself. 
 
+#### Dashboards
+
+reference: http://tomgermeau.com/2013/12/behind-the-scenes-of-a-dashboard-design/
+
 #### The Inspection View
 
 > Tip:
