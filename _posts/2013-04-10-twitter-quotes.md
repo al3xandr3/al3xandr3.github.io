@@ -33,7 +33,7 @@ Data Analysis is about being able to see reality, it reveals the facts that were
 </blockquote>
 
 <blockquote data-day="2013-12-04">
-A big part of life and growing up is about tolerating bigger levels of pain overtime to keep evolving to achieve bigger things. Keep expanding the confort zone.
+A big part of life and growing up is about tolerating bigger levels of pain overtime to keep evolving to achieve new things.  To keep expanding the confort zone.
 </blockquote>
 
 <blockquote data-day="2013-12-01">
@@ -322,7 +322,27 @@ al3xandr3.get_quotes_count = function () {
   if (typeof $ === "undefined") {
     throw "missing jQuery";
   }
-  var text = $('blockquote').text();
+//  var text = $('blockquote').text();
+
+  function eliminateDuplicates(arr) {
+    var i,
+        len=arr.length,
+        out=[],
+        obj={};
+
+    for (i=0;i<len;i++) {
+      obj[arr[i]]=0;
+    }
+    for (i in obj) {
+      out.push(i);
+    }
+    return out;
+  }
+
+ var text = "";
+  $('blockquote').each( function() {
+    text += eliminateDuplicates($( this ).text().toLowerCase().split(' ')).join(' ');
+  });
 
   text_clean = text.replace(/[€!,?.":;\-\#\(\)\&\/]/g,' ').split(" ");
 

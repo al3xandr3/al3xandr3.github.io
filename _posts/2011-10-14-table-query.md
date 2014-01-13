@@ -9,7 +9,7 @@ tags:
 intro: "A small ruby class inspired by R's sqldf"
 ---
 
-A small ruby class inspired by R's [**sqldf**](http://code.google.com/p/sqldf/)
+A small library that given a set of data it transparently inserts it into a sqlite database and then allows for very flexible querying (SQL). Usefull for ad-hoc data tasks that read data from some file or api that require quick analysis. Adding data into a sqlite database will also allow for the data to be bigger than memory can fit. Inspired by R's [**sqldf**](http://code.google.com/p/sqldf/).
 
 **Use Case:** Parse data from a log file or a web service and then need to do some data manipulation and summaries like: joining with other data, filtering, pivoting (group by), augment data with calculated columns, calculate sums, counts, averages, etc...
 

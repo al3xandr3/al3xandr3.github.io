@@ -44,6 +44,7 @@ Underscore.js and its migrations to different languages seem to be a standard fo
 
 - Writting documentation: http://jacobian.org/writing/great-documentation/what-to-write/
 - How Software Companies Die (half joking): http://www.cs.cmu.edu/~chuck/jokepg/joke_19970213_01.txt
+- State of affairs 2014: https://www.tbray.org/ongoing/When/201x/2014/01/01/Software-in-2014
 
 
 

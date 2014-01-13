@@ -27,13 +27,15 @@ Reference:
 
 How would my main target audience use it use it? Does the UI makes sense and is obvious, could things be simplified further.
 
-### Easy and simple to use
+### UI: Easy and simple to use
 
 Must be easy and get out of the way, user does not need to know internal technology details.
 
 Good example google search box, the most useful and simple (to use) application ever ?
 
 - If app has many commands make them search-able (example: lightTable or sublime_text find command). Use  search box instead of endless nested menus, so that users only need to have a vague idea how it was named, don't make them learn endless nested menus or shortcuts.
+
+UI is a key thing, needs constant constant curation and re-thinking, it should enable a good workflow, should be a multiplier of the program core abilities, UI is not just a way for user to reach its core abilities, think of Ableton live UI, that even breaks with the original paradigm of the music production and mixing, when needed, and takes advantage of computer abilities to make for a better workflow.
 
 ## Program Architecture
 

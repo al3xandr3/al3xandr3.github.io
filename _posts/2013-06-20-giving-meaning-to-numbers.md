@@ -68,4 +68,5 @@ You looking at a table of numbers, and comparing 2 numbers, wondering by how muc
 ## Reference
 
 - "Odds require less computation (than percentages)": http://betterexplained.com/articles/understanding-bayes-theorem-with-ratios/
+- Reference: http://lifehacker.com/practical-math-shortcuts-for-everyday-life-1495337792
 
