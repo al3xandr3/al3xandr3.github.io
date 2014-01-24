@@ -359,6 +359,10 @@ A representation of an existing behaviour. Never perfect, but an atempt to be cl
 Can then be used to perdict future behaviour.
 Also to be used for optimization.
 
+### Statistical distributions
+
+a distribution is a way to summarize a dataset.
+
 ### Simulations
 
 This is a great way to test out models / hyphothesis / behaviour by generating random and (on purpose) biased data to test, evaluate formulas, algorithms, theories.

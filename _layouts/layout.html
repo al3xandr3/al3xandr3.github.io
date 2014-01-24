@@ -31,7 +31,9 @@
 
 <body>
   {% include navbar.html %}
-
+  {% if page.hero %} 
+  <div class="hero" style="background-image: url({{ page.hero }});"></div>
+  {% endif %}
   <div class="container">
     {{ content }}
   </div>
