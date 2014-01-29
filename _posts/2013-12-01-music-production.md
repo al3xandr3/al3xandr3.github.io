@@ -84,7 +84,7 @@ Do several takes for same track like rhythm guitar then take then best form each
 
 Very common that volume of track is not same for the whole track, do track automations to change volume over time. This is very useful to make things standout / hide when required.
 
-### Reaper video export
+### Reaper video export reference settings
 
 - Video (FFmpeg encoder) MKV container:
  - HUFFYUV video codec, 24 bit PCM audio
@@ -159,7 +159,8 @@ Should always mix / play at same volume level always, volume influences our natu
 
 Short slapback delay can often do same function, and is cleaner than a more complex noisy reverb. A short slapback simulates a 1 time reflexion. A reverb is a fairly more complex (and noisy) slapback. 
 
-Try slapback ( left:80ms, rigth:90ms, with left right crossover and wet at 30%) see if good enough to replace reverb.
+> Guitar Tip
+Try slapback ( left:80ms, rigth:90ms, with left right crossover and wet at 30%) see if good enough to replace reverb. As a cleaner and tighter reverb.
 
 Use reverb to give the impression of a room, of a certain space the instruments are in, thus often good idea to apply a whole track reverb. When reverb is applied to individual tracks then is like they were in different rooms or at different distances.
 
@@ -191,6 +192,9 @@ The center can then be filled with instruments across all frequencies, typically
 Important is that left and right are in balance.
 
 Triangle shape balance strategy: low end is central and the high end can be spread wide.
+
+> Guitar Tip
+Having left (or right) channel delayed up to 20ms, gives a close impression of doubled guitar. Somewhat similar to recording 2 takes of same lick, panned left and right.
 
 ## Synths 
 

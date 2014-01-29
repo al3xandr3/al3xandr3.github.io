@@ -47,6 +47,27 @@ UI is a key thing, needs constant constant curation and re-thinking, it should e
 
 - Interface is in javascript so that can run both on cloud, desktop and mobile devices.
 
+
+## API product
+
+An API style of product is a product made to be re-used (as all should be), and that requires  proper references on information how to use it:
+- Online documentation, maybe a getting started quick doc.
+- Ready made examples
+- Online video training, setup, examples, walkthroughs.
+
+## Community
+Keeping in touch with the product community and maintaining an active community is key.
+
+- Forum, to communicate bidirectionally with users and solve common FAQ's.
+- Maybe a dedicated FAQ section.
+- Regular news means a lively, active (& trustworthy) product.
+- Youtube videos, with demos, news, walkthroughs.
+- Social Media, keep a page and feed on: FB, TW, etc...
+
+## Branding
+The visuals of how the product is exposed to end users, logo, brand design, colors, styles, approach that should be always consistent recognizable and associated to the product. 
+Helps to make a stronger consistent product.
+
 ## References
 - [Jeff Bezos (Amazon) 25 quotes](http://www.fool.com/investing/general/2013/09/09/the-25-smartest-things-jeff-bezos-has-ever-said.aspx)
 
