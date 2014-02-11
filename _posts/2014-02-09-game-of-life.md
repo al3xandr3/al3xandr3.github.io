@@ -21,6 +21,7 @@ Make no mistake about it, you are a random event of nature, whose purpose, like 
 > whats the life purpose of a lion ? of a ant ? of a flower ?
 
 So you are somewhat optimized for that, examples of bugs in the "matrix":
+
 - Sex drive overrules rational thinking. People do extremely stupid things to get laid.
 - Kids takes your time / money / sleep / relationship / fun away, but you still can't stop yourself from forgiving, loving and wanting them.
 
@@ -46,6 +47,7 @@ And be aware that is common it changes over time.
 ## The Game
 
 Briefing:
+
 - What is the goal (what makes you feel good) ?
 - Your resources:
     - Basic Resources:
