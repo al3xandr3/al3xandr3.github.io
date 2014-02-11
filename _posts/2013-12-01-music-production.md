@@ -28,6 +28,13 @@ Properties of sound:
 
 - Timbre, relates to the type of sound. A sine wave is about the simplest sound wave possible, real live sounds are actually an aggregation of several waves together, that aggregation defines the timbre. (Could i use a FFT to break a timbre into its composing parts?)
 
+> Frequency of a guitar:
+Guitar strings are E2=82.41Hz, A2=110Hz, D3=146.8Hz, G3=196Hz, B3=246.9Hz, E4=329.6Hz
+
+Drop D tunning: D2=73.42 hz
+
+and the highest on guitar, the 24th fret on the high E string = 1318.4 hz
+
 ## Microphone
 
 Types:
@@ -213,6 +220,14 @@ Building Blocks:
 Example:
 Tremolo is a triangular LFO changing the volume over time.
 Compressor is like a, dynamic envelope, that in real time averages the volume dynamically.
+
+## Guitars
+
+### Woods
+Mentioned often times as good woods combination for an electric guitar:
+
+- Light body: Basswood back, maple top
+- Dense wood neck
 
 
 ## Reference

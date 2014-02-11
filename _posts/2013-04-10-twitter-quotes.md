@@ -9,6 +9,10 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2014
 
+<blockquote data-day="2014-02-09">
+If you see life as a game, then maybe you can use strategic thinking to optimize it.
+</blockquote>
+
 <blockquote data-day="2014-01-02">
 Microsoft Excel is an agile tool, probably best oriented for ad-hoc tasks.
 </blockquote>

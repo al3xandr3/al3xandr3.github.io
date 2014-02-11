@@ -48,9 +48,10 @@ UI is a key thing, needs constant constant curation and re-thinking, it should e
 - Interface is in javascript so that can run both on cloud, desktop and mobile devices.
 
 
-## API product
+## API product tutorials
 
 An API style of product is a product made to be re-used (as all should be), and that requires  proper references on information how to use it:
+
 - Online documentation, maybe a getting started quick doc.
 - Ready made examples
 - Online video training, setup, examples, walkthroughs.
