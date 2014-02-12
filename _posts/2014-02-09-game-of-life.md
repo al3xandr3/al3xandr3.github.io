@@ -69,6 +69,10 @@ You can develop further skills to open up new possibilities and maybe achieve th
 But your basic resources are limited, and you will have to trade off some resources to be able to develop a new skill.
 So pick wisely, similar to investing money.
 
+Learning english opens up many coutries you can go to, many new literature and information resources you will be able to access. Is in fact the closest to a standard language (in the western world).
+Computer programming skills can get you a (nice) job almost anywhere in the world.
+Being nice and understading people can help make new friends.
+
 And some new skills might take you nowhere closer to your goals.
 
 ### Phases of the game
@@ -81,12 +85,12 @@ And some new skills might take you nowhere closer to your goals.
 
 Over the years, resources availability will naturally vary:
 
-- Kids don't have any money.
-- Parents don't have any time.
+- Kids don't have money.
+- Parents don't have time.
 - Old's don't have (good) health.
 
 So there's the need to plan to optimize experience.
 
 ## Reference
 - http://oliveremberton.com/2014/life-is-a-game-this-is-your-strategy-guide/
-
+- The Science Behind a Happy Relationship: http://d24w6bsrhbeh9d.cloudfront.net/photo/a09nZ7z_700b_v3.jpg
