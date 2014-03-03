@@ -39,7 +39,9 @@ Feeling good and happy is what you been trying to get to all along.
 Although people feel good about many of the same things (like sex, food, entertainment, peer recognition), it also happens that what you feel good about is very much influenced by your upbringing, life experience and expectations.
 Plus, it changes over your lifetime.
 
-The scientist who does a theoretical breakthrough, a biologist who discovers a new bug specie, owning a Ferrari, owning a car, playing a concert, working in IT. These achievements might be received as extremely happy, less happy, neutral or even unhappy  depending on the person.
+( And this is a good thing in the sense of limited resources competition, if people are happy different about different things, then they don't need to run over each other for the same thing. ex: money has this problem now. )
+
+The scientist who does a theoretical breakthrough, a biologist who discovers a new bug specie, owning a Ferrari, owning a car, playing a concert, working in IT, traveling around. These achievements / events might be received as extremely happy, less happy, neutral or even unhappy  depending on the person.
 
 So go figure out what things makes you feel good and set it as your end goal. 
 And be aware that is common it changes over time.
@@ -69,9 +71,9 @@ You can develop further skills to open up new possibilities and maybe achieve th
 But your basic resources are limited, and you will have to trade off some resources to be able to develop a new skill.
 So pick wisely, similar to investing money.
 
-Learning english opens up many coutries you can go to, many new literature and information resources you will be able to access. Is in fact the closest to a standard language (in the western world).
-Computer programming skills can get you a (nice) job almost anywhere in the world.
-Being nice and understading people can help make new friends.
+- Learning english opens up many coutries you can go to, many new literature and information resources you will be able to access. Is in fact the closest to a standard language (in the western world).
+- Computer programming skills can get you a (nice) job almost anywhere in the world.
+- Being nice and understading people can help make new friends.
 
 And some new skills might take you nowhere closer to your goals.
 
@@ -89,7 +91,7 @@ Over the years, resources availability will naturally vary:
 - Parents don't have time.
 - Old's don't have (good) health.
 
-So there's the need to plan to optimize experience.
+So there's the need to plan, to optimize experience.
 
 ## Reference
 - http://oliveremberton.com/2014/life-is-a-game-this-is-your-strategy-guide/

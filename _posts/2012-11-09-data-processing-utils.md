@@ -146,7 +146,7 @@ Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-cou
 
 ## Download a site
 
-	wget --wait=2 -r -p -U Mozilla http://www.stupidsite.com/restricedplace.html
+	wget --wait=2 -r -p -U Mozilla http://www.randomsite.com/page.html
 
 - To pause 2 seconds between retrievals: --wait 
 - to tell the site you are using some commonly accepted browser: -p -U Mozilla

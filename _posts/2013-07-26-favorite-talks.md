@@ -23,6 +23,8 @@ Written Language, math notation revolutionized human progress, becuase they intr
 - The Future of programming, Bret Victor, 2013: http://vimeo.com/71278954
 The 60's and 70's was fertile period for the field of computer programming, the computer was new and hot and a lot of brilliant ideas were being tried out, but somehow many of those ideas got forgotten over time and in many ways we went a step back. There is a natural resistance to change, and that is a big part of the reason, but more importantly the newest generations never were exposed to those ideas, so there is the risk that many things will be lost, and need to be rediscovered again.
 
+- Sonic Pi: Teaching computer science with music. http://www.youtube.com/watch?v=KYO9N4kDK_o Computers should be used in a cyborg way, to extend the human powers, thats why kids should learn to program. Sam has developed a musical system on the Rasperi Pi, that allows kids to produce music by using simple programming. Talk includes Clojure and Ruby programming languages.
+
 ### Improving life with numbers
 
 - Knowledge Tracking - http://quantifiedself.com/2011/11/roger-craig-on-knowledge-tracking/
