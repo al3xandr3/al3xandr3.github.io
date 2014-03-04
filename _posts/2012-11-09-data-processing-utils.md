@@ -146,12 +146,13 @@ Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-cou
 
 ## Download a site
 
-	wget --wait=2 -r -p -U Mozilla http://www.randomsite.com/page.html
+	    wget -m -p -E -k -K -np http://www.somesite.com/
 
-- To pause 2 seconds between retrievals: --wait 
-- to tell the site you are using some commonly accepted browser: -p -U Mozilla
-- Recursivelly fetch the site, that is linked pages from it : -r
-- To guarantees wget will not download anything from the folders beneath the folder you want to acquire is: --no-parent
+- "-m" mirror site.
+- "-E" put .html on unrecognized fiels.
+- "-k" convert the links in the document to make them suitable for local viewing.
+- "-K" When converting a file, back up the original version with a ‘.orig’ suffix.
+- "-np" Do not ever ascend to the parent directory when retrieving recursively.
 
 ## References:
 
