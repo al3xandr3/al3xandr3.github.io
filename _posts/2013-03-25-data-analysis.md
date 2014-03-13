@@ -66,28 +66,27 @@ In practice the data analyst tasks are:
 
 
 ### The Process
+ 
+What are you trying to do ? What is the goal, once that is clear, then:
 
-0. What are you trying to do ? What is the goal
-Once that is clear, then:
-
-1. Baseline - where you are now?
+Baseline - where you are now?
 
 - what KPI’s are important to look at given the goal? Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What do i need to look at to know the end goal is improving?
 - Do I have this data ? Need to add more instrumentation ?
 - Setup reports / dashboards
 
-2. Formulate hypothesis on what to change to get to the goal
+Formulate hypothesis on what to change to get to the goal
 
 - play with the data, to came up with theories and hypothesis to test, try correlations, plot, visualize, from different angles, maybe use also external data if possible
 
-3. Test (A/B test)
+Test (A/B test)
 
 - do a change and see its impact on the KPI’s.
 - output a story, communicate, put in slides if needed, the results
 
-4. Iterate:
+Iterate
 
-- Go back to 1.  We using the right KPI’s ? (often the 1st ones are not great)
+- Go back to Baseline and start again.  We using the right KPI’s ? (often the 1st ones are not great)
 - more hypothesis, more tests (once in a while might find something worthwhile … )
 
 
