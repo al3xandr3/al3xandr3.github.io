@@ -18,7 +18,7 @@ skills: domain knowledge(digital marketing, company processes), ask big scope qu
 
 **2. By doing something new / different**
 
-e.g. Do Y instead of X see if improves against measures(KPIs)
+e.g. Do Y instead of X see if improves against measures (KPIs)
 
 skills: 1st need to know the current baseline: Dashboard (for KPIs monitoring), 2nd use AB testing to optimize.
 
@@ -67,23 +67,28 @@ In practice the data analyst tasks are:
 
 ### The Process
 
-**Step 1.** Be aware of where you are
+0. What are you trying to do ? What is the goal
+Once that is clear, then:
 
- 1.1 Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What is the end goal? - Domain
+1. Baseline - where you are now?
 
- 1.2 Break it down to the important key metrics - KPIs
+- what KPI’s are important to look at given the goal? Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What do i need to look at to know the end goal is improving?
+- Do I have this data ? Need to add more instrumentation ?
+- Setup reports / dashboards
 
- 1.3 What data needs to exist to allow to see the KPIs (the big scope questions). How up to date is required? When needs to be checked? - Dashboard
- 
-**Step 2.** Optimize - Find Insights that improve what we see in step 1.
+2. Formulate hypothesis on what to change to get to the goal
 
- 2.1 Analysis: Be curious with the data and domain, play around, ask questions, learn the fine details, play with data, question current way, explore, try correlations, plot and visualize the data, compare to similar and external.
+- play with the data, to came up with theories and hypothesis to test, try correlations, plot, visualize, from different angles, maybe use also external data if possible
 
- 2.2 Summarize and communicate the findings as recommendations for change(= Insights) 
+3. Test (A/B test)
 
- 2.3 AB test the Insights
+- do a change and see its impact on the KPI’s.
+- output a story, communicate, put in slides if needed, the results
 
-The 2.1 step is a fun and somewhat creative (harder to mechanize), computers try automate this for example by checking strong correlations of every combination of variables, but often needs external information not existing directly in data, part of the domain know-how.
+4. Iterate:
+
+- Go back to 1.  We using the right KPI’s ? (often the 1st ones are not great)
+- more hypothesis, more tests (once in a while might find something worthwhile … )
 
 
 ### The Data Analysis Stack
@@ -166,8 +171,22 @@ This is the BigQuery, can be used as service online.
 
 a.k.a Looking for insights
 
+### Rules of Thumb
+
 > Data Validation:
-Having 2 sources of data allows to calibrate if 1 data is looking good.
+Having 2 (or multiple) sources of data allows to calibrate if 1 data is looking good.
+
+> Data Validation:
+Mixing data from 2 different tracking systems is typically a no no. They will very likely be slightly different in absolute volume. A better way to compare is to check instead if trends are consistent.
+
+> Data Validation:
+To confirm an observation, re-run analysis from a different angle (in a different way) to see if they consistently match. (and try many angles, the more angles the higher the confidence). A form of data QA.
+
+> Getting to data:
+When having a problem to get the data, maybe there's a different way to get to the same data? what is the closest data proxy to it ? although not perfect, but a useful / workable approximation. Don't give up right away, there is often a way.
+
+> Getting Meaning:
+Is not the totals that matter the most, is instead the relative power they have. Prefer trends instead of absolute numbers. An absolute number is only meaningful when put in context (in a valid compassion).
 
 ### Understanding a measured value (1 variable)
 
@@ -320,7 +339,7 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
   - Clear clear clear(include screen-shots if needed), 
   - Target an audience without any knowledge of the matter
   - Report not everything, just the conclusion. optimal, just 1 chart / diagram or 1 table. Can have different levels of drill-down
-  - Hide the unhelpful data, think from final viewer pov. Remove the None's / empty's values...
+  - Hide the unhelpful data, think from final viewer pov. Remove the None's / empty values...
   - The end audience don't care the amount of work, only if it addresses well or not their questions - no point of putting everything you found on the output.
   - Simple correct English
   - Simple graphs
@@ -424,19 +443,45 @@ Reference: http://conductrics.com/intelligent-agents-ab-testing-user-targeting-a
 
 ### Web Analytics
 
-- WA = Web Analytics
+A tool for Improving a web site activities by doing better “Informed” decisions.
 
-- WA is a measuring tool and central for the Digital Marketing.
+> Aha, this is what's happening with my site, right, I will then do something differently (or this actually confirms what I'm doing is already good).
 
-- Quote: "WA is a thermometer for the health of your website" - As in monitoring site health
+> What if I do this? What will happen to my sales ? To my site engagement?
 
-- Digital Marketing and engagement: When a user leaves in the middle of the payment flow, then WA can help try understanding the exact step they got stuck on and the problem they encountered. Send them an email after helping out, clarifying, reminding to try again, help them to convert.
+#### Used on
 
-- Performance Marketing - optimize ROI of web experience over the long term. Rather than trying to go after awards or idealized theories of good design, it advocates performance-driven design. Seeks to identity the ideal mix of creativity and data that drives long-term business benefits.
+- Digital Marketing - ROI from marketing online campaigns (original use ?)
+- Understanding User Engagement – how many users, what's happening overtime. Are users - getting stuck in payment flow ? What step of the payment flow.
+- Front End Optimization – finding the ideal layout, messaging, ideal page flow, conversion - buttons. (A/B testing)
+- “Informed” Change – I want to change my site, what's the impact ? 
+
+#### Digital Marketing
 
 - Tracking mail marketing flow: email -> page -> conversion funnel. Identify if maybe a step is specially bad at converting and go optimize that. e.g. Maybe that week a particular page in the conversion funnel was broken and the mail campaign didn't convert as well as expected.
 
+#### Understand the Audience
+
+Who uses my product? And how?
+Use the audience data into next iterations of my product, to target it better:
+
+- Why have site in 30 languages if most of the interest is from US anyway?
+- Where do users drop off from my site? Is it a broken link? Bad messaging? Non working form ?
+- Do I need to support old browsers ?
+- What browsers should my QA process test on ?
+- What screen size can I develop my app for ?
+- Is the interest growing over time ? (traffic volume)
 - How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
+- Etc …
+
+#### Optimization - Data Driven Change
+
+- Is introducing a new page with FAQ on a product result in improving sales ?
+- Is providing an alternative FB login on the login page, translating into more new users ?
+- Having a trusted logo on the credit card capture page improving sales ?
+- What is a better messaging for the site to use ?
+- Bigger Buttons ? Color of buttons, placement of the buttons, etc…
+
 
 
 ### Machine learning

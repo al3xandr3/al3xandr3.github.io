@@ -49,7 +49,7 @@ Coders that love coding just for coding enjoyment are very passionate and picky 
 </blockquote>
 
 <blockquote data-day="2013-08-17">
-We have better quality of life (comfortable) than probably kings and queens just a century ago
+Today's middle class has better quality of life (comfortable) than probably kings and queens just a century ago.
 </blockquote>
 
 <blockquote data-day="2013-05-23">

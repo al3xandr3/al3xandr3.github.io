@@ -73,7 +73,7 @@ Making results of work visible, might open up new possibilities, eventually more
 - Allocate a max of time per day/ week for pointless tasks
 - Simple planning, half a day for each tasks
 - Avoid meetings
-- Identifying what is important is key !
+- Identifying what is important (and especially what is not) is key !
 
 ## References:
 

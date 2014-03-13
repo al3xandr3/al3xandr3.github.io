@@ -24,7 +24,7 @@ Anyway, i decided to web scrape it for my own reference, and posting here if som
 
 ## Web Scraping it
 
-### Step 1. Download the Internet to your computer (or just the site in this case)
+### Step 1. Download the Internet to your computer (or, in this case, just the site)
 
     wget -m -p -E -k -K -np http://www.webanalyticsdictionary.com/
 
@@ -58,7 +58,7 @@ Step one has made a local copy of the site. Now we need to extract the useful da
     for key, value in results.items():
         out.write(key + ", \"" + value + '\"\n')
 
-I'm using the anaconda python all in one installation package to both install python and the libraries i need.
+I'm using the anaconda python all in one installation package to install both python and the libraries required.
 
 ## Web Analytics Dictionary
 
