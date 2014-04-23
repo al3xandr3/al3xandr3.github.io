@@ -10,11 +10,15 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 ## 2014
 
 <blockquote data-day="2014-02-09">
+"What is the truth?" is an excelent rule of thumb to guide the data analysis practice.
+</blockquote>
+
+<blockquote data-day="2014-02-09">
 If you see life as a game, then maybe you can use strategic thinking to optimize it.
 </blockquote>
 
 <blockquote data-day="2014-01-02">
-Microsoft Excel is an agile tool, probably best oriented for ad-hoc tasks.
+Microsoft Excel is an agile tool, one of the best for oriented for ad-hoc tasks(?) data exploration.
 </blockquote>
 
 ## 2013

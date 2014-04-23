@@ -8,6 +8,7 @@ tags:
 intro: "Data Analysis Guidelines"
 ---
 
+
 ## Why, whats the point?
 
 **1. End Goal: Improve something**
@@ -43,7 +44,7 @@ skills: SQL, programming, google analytics, databases, etc...
 Particularly in big organizations, that have many moving parts (variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of potential choices and in focusing efforts in the right direction.
 
 
-
+> "What is the truth?" is an excelent rule of thumb to guide the data analysis practice.
 
 
 
@@ -63,7 +64,6 @@ In practice the data analyst tasks are:
 - Estimating / Predicting Future, by observing the past.
 - Defining whats important to keep an eye on, the KPIs. (this is domain specific).
 - Telling a Story, communicating the findings and recommendations.
-
 
 ### The Process
  
@@ -187,6 +187,8 @@ When having a problem to get the data, maybe there's a different way to get to t
 > Getting Meaning:
 Is not the totals that matter the most, is instead the relative power they have. Prefer trends instead of absolute numbers. An absolute number is only meaningful when put in context (in a valid compassion).
 
+### Data Quality
+
 ### Understanding a measured value (1 variable)
 
  - Histogram, to see the distribution of the data. - check if normal distributed
@@ -253,6 +255,8 @@ When there is a hypothesis, about the data find back of envelope estimations to 
 Ex, When observing that Feb sales are lower and raising the idea (hypothesis) that is that is probably because of a shorter month.
 Calculate how big should be the drop, with 3 less days?  3 days is about 10% of 30, so sales drop should match 10% , to fortify the theory, and more important to not fail it.
 
+### Reference
+http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/
 
 
 
@@ -433,6 +437,17 @@ Reference: http://conductrics.com/intelligent-agents-ab-testing-user-targeting-a
 
 
 
+## Tools
+
+> Tool is just the means to an end choose the best tool for the job at hand.
+
+Excel - excelent prototyping tool, analysis, EDA, almost all can be done with it ? (Data Smart book)
+
+Python - Automate things into production / products
+
+R - Run the most starte of the art, gold standard algorithms
+
+
 
 
 
@@ -508,3 +523,7 @@ Latest big trend, on the start of 2013 is probabilistic programming, also called
 Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
 
 
+## Examples
+
+### How to test a change has caused impacted ?
+Best is to have it as an AB test, so can compare side by side (excluding potencial other factors), and run a hypothesis test, for improved confidence.

@@ -7,11 +7,9 @@ tags:
 intro: "day to day practical implementation of goals"
 ---
 
-## Monitoring goals
-
-Once we define what is important we end up with a mix of things we want to achieve in long term.
+Once in a while we realize (think of) goals we wish for.
 But how to map those things for day to day? 
-How to make sure we don't forget them? (And avoid getting pulled into the day to day rat race).
+How to make sure we don't forget them? (And avoid getting pulled into the daily to day rat race).
 How to make sure we keep working on the right things and keep making progress?
 
 ## Define the main goals
@@ -36,11 +34,14 @@ If you do your own evaluation, try to be harsh and cruel (excuses wont work).
 
 So define what are you going to be evaluated on?
 
-Time spent on a project is a good correlation of work done (at least for me)
+Sometimes time spent on a project is a good correlation of work done, but not best way.
+
 But define also other concrete goals and accomplishments.
 
 Example:
 Play Guitar: learn and record a new music every other week. At end of month i need to have four musics that are enjoyable and keep getting better. If that does not happen, then it wont get me any better in my musical career, and i should drop it altogether.
+
+In general the bigger the pressure (the stakes) the more likelly is to make progress.
 
 ## Track time down
 If time spent is a good metric, then need to be able to monitor it.
@@ -69,7 +70,7 @@ Making results of work visible, might open up new possibilities, eventually more
 
 - Block time, Set timeouts
 - Quiet time, remove distractions
-- Spend long periods on the same thing, is also less tiring
+- Its a balancing act, but avoid jumping frequently between things (no multitasking)
 - Allocate a max of time per day/ week for pointless tasks
 - Simple planning, half a day for each tasks
 - Avoid meetings

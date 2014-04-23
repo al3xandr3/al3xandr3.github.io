@@ -25,6 +25,8 @@ The 60's and 70's was fertile period for the field of computer programming, the 
 
 - Sonic Pi: Teaching computer science with music. http://www.youtube.com/watch?v=KYO9N4kDK_o Computers should be used in a cyborg way, to extend the human powers, thats why kids should learn to program. Sam has developed a musical system on the Rasperi Pi, that allows kids to produce music by using simple programming. Talk includes Clojure and Ruby programming languages.
 
+- Alan Kay - The Future Doesn't Have to Be Incremental: https://www.youtube.com/watch?v=gTAghAJcO1o But anything by Alan Kay is good !
+
 ### Improving life with numbers
 
 - Knowledge Tracking - http://quantifiedself.com/2011/11/roger-craig-on-knowledge-tracking/
@@ -32,3 +34,9 @@ The 60's and 70's was fertile period for the field of computer programming, the 
 - Quantifying Seat Time - http://quantifiedself.com/2013/07/mark-leavitt-on-tracking-and-hacking-sitting/
 
 - Spaced Repetition and Anki - http://quantifiedself.com/2013/06/roger-craig-on-spaced-repetition-and-anki/
+
+### Others
+
+- Inheritance - radiolab podcast
+
+- How doctors want to die - radiolab podcast
