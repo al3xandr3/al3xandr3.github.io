@@ -40,3 +40,5 @@ The 60's and 70's was fertile period for the field of computer programming, the 
 - Inheritance - radiolab podcast
 
 - How doctors want to die - radiolab podcast
+
+- emergence - radiolad podcast

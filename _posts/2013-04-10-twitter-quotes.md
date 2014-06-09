@@ -9,6 +9,14 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2014
 
+<blockquote data-day="2014-05-26">
+Beware of the KPI rabbit hole: KPIs are incentives, and is fairly impossible to predict fully all effects of an incentive up front. Thus too narrow focus, especially on single KPIs can easily become counter-productive. => Use multiple KPIs, don't forget common sense.
+</blockquote>
+
+<blockquote data-day="2014-05-05">
+Achievements are measured by the difference between the starting point and the achievement, not just the final achievement alone.
+</blockquote>
+
 <blockquote data-day="2014-02-09">
 "What is the truth?" is an excelent rule of thumb to guide the data analysis practice.
 </blockquote>
@@ -18,7 +26,7 @@ If you see life as a game, then maybe you can use strategic thinking to optimize
 </blockquote>
 
 <blockquote data-day="2014-01-02">
-Microsoft Excel is an agile tool, one of the best for oriented for ad-hoc tasks(?) data exploration.
+Microsoft Excel is an agile tool, one of the best for oriented for ad-hoc data tasks, data exploration.
 </blockquote>
 
 ## 2013
@@ -57,7 +65,7 @@ Today's middle class has better quality of life (comfortable) than probably king
 </blockquote>
 
 <blockquote data-day="2013-05-23">
-Prefer the point of view of "everything has a reason to be". The reason is often not known, but exists. Someone was so rude just now, i'm going to be rude back! No. Probably has nothing to do with you, think instead why that was: stress? misunderstanding? culture gap?
+Prefer the point of view of "everything has a reason to be". The reason is often not known, but exists, Science!. Someone was so rude just now, with no apparent reason, I'm going to be rude back ! No, wait, maybe has nothing to do with you... was it a misunderstanding? did i touch a nerve?
 </blockquote>
 
 <blockquote data-day="2013-05-23">

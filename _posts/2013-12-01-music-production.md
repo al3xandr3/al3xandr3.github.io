@@ -35,6 +35,26 @@ Drop D tunning: D2=73.42 hz
 
 and the highest on guitar, the 24th fret on the high E string = 1318.4 hz
 
+## Signal level & DI
+
+The term dB (decibel) by itself means the amount a signal level changes in relation to wherever it started. When you see gear specs that say "-10 dBv" or "+4 dBu", they are telling you how much lower or higher the average output is relative to a specific fixed reference voltage.  That voltage is usually either 1.0 V, referred to as "0 dBv", or 0.78 V, referred to as "0 dBu".
+
+Common Types:
+Line level - processors, racks, pedal effects ? 2 kinds
+
+ - professional: +4dBu
+ - consumer audio: -10dBv
+
+Instrument level: -20 dBu
+
+Microphone level - -30 dBu
+
+Guitar signal is high impedance, -20, unbalanced (degrades faster over long cables)
+
+A DI box converts guitar signal (-20 dBu) to microphone level (-30 dBu), also converts it into a balanced (better on long distances)
+
+Reference: http://www.ovnilab.com/articles/linelevel.shtml
+
 ## Microphone
 
 Types:
@@ -58,7 +78,6 @@ All electronic devices have a transformer that works at a specific frequency, wh
 - Proper project tracks and location 
 - Digital Audio preferences and Hardware Setup (see Basic Settings)
 - File recording: all uncompressed
-
 
 ### Audio Settings
 - 48,000Hz, 24bit, 128 (less if possible) buffer size.
@@ -90,15 +109,6 @@ Do several takes for same track like rhythm guitar then take then best form each
 ### Track Automations
 
 Very common that volume of track is not same for the whole track, do track automations to change volume over time. This is very useful to make things standout / hide when required.
-
-### Reaper video export reference settings
-
-- Video (FFmpeg encoder) MKV container:
- - HUFFYUV video codec, 24 bit PCM audio
- - 640 x 360
-- Convert to desired format with http://handbrake.fr
-
-http://forum.cockos.com/showthread.php?t=82459
 
 ## MIDI
 
@@ -181,8 +191,7 @@ Long delay, better when left different than right, for a ping pong effect.
 
 Best (most realistic) reverbs are convolution, but they can't be fined tuned as much as the algorithmic ones, typically algorithmic one the goal is to best simulate a space.
 
-Getting the right sounding reverb often involves a lot of trial and error.
-
+Getting the right sounding reverb often involves trial and error.
 
 ## Space (depth) in a stereo mix
 
@@ -205,7 +214,7 @@ Having left (or right) channel delayed up to 20ms, gives a close impression of d
 
 ## Synths 
 
-Synths purpose is to engineer instrument sound.  A model of instrument sound. They have a nice modular design that is combined together to recreate an instrument timbre sound.
+Synths purpose is to engineer an instrument's sound.  A model of instrument sound. They have a nice modular design that is combined together to recreate an instrument timbre sound.
 
 Works by first generating some kind of simple wave, then applying several filters to it, including time based filters, like oscillating ones, that for example create vibrato.
 
@@ -229,6 +238,7 @@ Mentioned often times as good woods combination for an electric guitar:
 - Light body: Basswood back, maple top
 - Dense wood neck
 
+But there is a good deal of taste, and even the same wood can be of different quality.
 
 ## Reference
 

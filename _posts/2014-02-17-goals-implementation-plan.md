@@ -14,17 +14,22 @@ How to make sure we keep working on the right things and keep making progress?
 
 ## Define the main goals
 
+### Work it out backwards
 To help decide what the goals should be, an idea is to work it out backwards, start with the outcome, think of what life you want, the setup / work / activities that make you the happiest. imagine what the typical day would be and extract from there the goals.
 
+### Question it
 Once set on a goal, re-examine it again. Question the goals thoroughly, to reach a clearer understanding:
 - Why spend time on this? Imagine somebody you care about asks why to spend time on this, what would you say? 
 - What I want to see happening? What i expect the future to be on this ?
+
+A mind map can be usefull to layout things and help think it trought, as well as writing a text on it.
 
 Example Goal: I want to play guitar
 Why ? 
 :. I enjoy it, as a pause from school / work, this makes me feel good and i really like to make my own songs.
 Whats the Future ?
 :. Play in a band, do a live concert, record an original song, record a full album.
+
 
 ## Evaluation (the stakes)
 

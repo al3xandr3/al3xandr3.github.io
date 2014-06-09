@@ -1,14 +1,14 @@
 --- 
 layout: post
-title: Data Processing Utils
+title: Data Processing Techniques
 category: data
 tags:
   - data
   - statistics
-intro: "Reference of small utils that help in data processing, filtering, splitting, etc"
+intro: "Reference of techniques that help in data processing, filtering, splitting, etc"
 ---
 
-Reference of data processing little hacks / utils / tools
+Reference of data processing techniques.
 
 ## filter
 

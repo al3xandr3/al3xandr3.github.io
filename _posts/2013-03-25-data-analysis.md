@@ -8,7 +8,6 @@ tags:
 intro: "Data Analysis Guidelines"
 ---
 
-
 ## Why, whats the point?
 
 **1. End Goal: Improve something**
@@ -284,6 +283,8 @@ Viz aesthetics: chart standout the important elements, lighten in color, the les
 Excel, R (ggplot2), D3.js
 
 ### KPI's
+
+> Beware of the KPI rabbit hole: KPIs are incentives, and is fairly impossible to predict fully all effects of an incentive up front. Thus too narrow focus, especially on single KPIs can easily become counter-productive. => Use multiple KPIs, don't forget common sense.
 
 Examples
 

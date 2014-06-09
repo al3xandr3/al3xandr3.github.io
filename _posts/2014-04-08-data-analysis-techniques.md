@@ -1,0 +1,76 @@
+---
+layout: post
+title: Data Analysis Techniques
+category: data
+tags:
+  - statistics
+  - data
+intro: "Data Analysis Techniques"
+---
+
+Techniques to transform data and interpret data in a useful way.
+
+
+
+## Quantify Impact
+
+### I want to
+Understand how big is a change.
+(i.e.  calculate the relative change)
+
+### How
+Lets say a bank raised a rate from 3% to 5%, difference is 2% but is ambiguous to say "the rate was increased by 2%". It looks like a very small increase, from a +2 increase from an original of 3.
+
+- Absolute change was 2% but 
+
+- Relative change (5 - 3) / 3 = 0.66(6), so rate was increased by 66%.
+
+Relative calculation general formula:  (new - reference) / reference
+
+
+
+
+## Data Quality: confidence interval
+
+When estimating a parameter like a mean from random samples, confidence interval helps quantify uncertainty, giving an interval in which we can expect the value to be most of the time.
+
+Prepared Excel: [confidence_interval.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJySjUyclgzX3RqM1k/edit?usp=sharing)
+
+
+
+
+## Data Quality: hypothesis testing
+
+### I want to
+Make sure the results i got are significant (and not due to chance).
+
+### How
+
+- Comparing Population Proportions 1 - https://www.youtube.com/watch?v=a1Ye5RcWOqg
+- Comparing Population Proportions 2 - https://www.youtube.com/watch?v=MNbat1lrJW4
+- Hypothesis Test Comparing Population Proportions (part 3) - https://www.youtube.com/watch?v=dvSa_tx04hw
+
+Prepared Excel: [ab_testing_significance.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyaGxqc1lLVTkxa1k/edit?usp=sharing)
+
+
+
+## Data Quality: Get an idea on the dispersion of the data
+
+### I want to
+Get an idea on the dispersion of the data, what values are more common, what values are outliers.
+
+### Histogram
+
+Shows the distribution of the data, what are the most (and least) frequent values
+
+https://www.youtube.com/watch?v=asEuFvWGJDs
+
+Prepared Excel: [histogram.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyRWFBbEFPRk11TEE/edit?usp=sharing)
+
+
+### Boxplot
+
+https://www.youtube.com/watch?v=DNpvSg2X0xQ
+https://www.youtube.com/watch?v=ZFbPnwKwVWk
+
+Prepared Excel: [boxplot.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyM1JtVlh0Tnp6UWs/edit?usp=sharing)
