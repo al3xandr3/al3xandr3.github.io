@@ -41,7 +41,7 @@ Starting with the premise that extroverts and introverts have the same likelihoo
 
 This means that more often bad ideas / solutions will win and prevail because they were argued by extroverts.
 
-#### Reference
+Reference
 - Book "Quiet: the Power of the Introverts"
 
 
