@@ -9,6 +9,10 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2014
 
+<blockquote data-day="2014-06-11">
+Statistics is fundamentally about reality — It’s about getting to know the man behind the curtain by studying the bumps and waves on the velvet. (@evanmiller.org)
+</blockquote>
+
 <blockquote data-day="2014-05-26">
 Beware of the KPI rabbit hole: KPIs are incentives, and is fairly impossible to predict fully all effects of an incentive up front. Thus too narrow focus, especially on single KPIs can easily become counter-productive. => Use multiple KPIs, don't forget common sense.
 </blockquote>

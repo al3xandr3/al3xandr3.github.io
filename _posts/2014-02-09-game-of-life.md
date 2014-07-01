@@ -44,7 +44,7 @@ Plus, it changes over your lifetime.
 The scientist who does a theoretical breakthrough, a biologist who discovers a new bug specie, owning a Ferrari, owning a car, playing a concert, working in IT, traveling around. These achievements / events might be received as extremely happy, less happy, neutral or even unhappy  depending on the person.
 
 So go figure out what things makes you feel good and set it as your end goal. 
-And be aware that is common it changes over time.
+And be aware that it might change over time.
 
 ## The Game
 

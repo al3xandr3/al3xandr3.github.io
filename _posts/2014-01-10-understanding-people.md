@@ -5,7 +5,7 @@ category: other
 tags:
   - learning
   - life
-intro: "Understanding People and Personalities"
+intro: "Understanding People"
 ---
 
 > Someone was so rude just now, with no apparent reason, I'm going to be rude back ! No, wait, maybe has nothing to do with you... was it a misunderstanding? did i touch a nerve?
@@ -43,9 +43,6 @@ This means that more often bad ideas / solutions will win and prevail because th
 
 Reference
 - Book "Quiet: the Power of the Introverts"
-
-
-
 
 ## Categorizing people in 4 areas
 

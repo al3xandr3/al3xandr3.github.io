@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Data Analysis
+title: Data Analysis Introduction
 category: data
 tags:
   - statistics
   - data
-intro: "Data Analysis Guidelines"
+intro: "Data Analysis Introduction"
 ---
 
 ## Why, whats the point?
@@ -53,45 +53,23 @@ Particularly in big organizations, that have many moving parts (variables) it ca
 
 ## How?
 
+Given a certain problem, its all about using data to generate new knowledge, that adresses the given problem.
+
 ### Tasks
 
 In practice the data analyst tasks are:
 
-- Revealing the facts, insights not known before.
+- Revealing the facts, knowledge not known before.
 - Optimization, once you know the facts you try to optimize them, AB testing. (the hypothesis are domain specific).
 - Monitoring, keep observing the updated performance and optimization results.
 - Estimating / Predicting Future, by observing the past.
 - Defining whats important to keep an eye on, the KPIs. (this is domain specific).
 - Telling a Story, communicating the findings and recommendations.
 
-### The Process
- 
-What are you trying to do ? What is the goal, once that is clear, then:
-
-Baseline - where you are now?
-
-- what KPI’s are important to look at given the goal? Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What do i need to look at to know the end goal is improving?
-- Do I have this data ? Need to add more instrumentation ?
-- Setup reports / dashboards
-
-Formulate hypothesis on what to change to get to the goal
-
-- play with the data, to came up with theories and hypothesis to test, try correlations, plot, visualize, from different angles, maybe use also external data if possible
-
-Test (A/B test)
-
-- do a change and see its impact on the KPI’s.
-- output a story, communicate, put in slides if needed, the results
-
-Iterate
-
-- Go back to Baseline and start again.  We using the right KPI’s ? (often the 1st ones are not great)
-- more hypothesis, more tests (once in a while might find something worthwhile … )
-
 
 ### The Data Analysis Stack
 
-Data Stack: Collecting data, Finding Insights and then Telling a good story around it.
+Data Stack: Collecting data, Finding insights and then telling a good story around it.
 
 1. Collecting data: requires a mix of technical and analytical: by knowing comprehensively the technical details of how tool works, designing a instrumentation solution to allow useful analysis.
 3. Finding Insights: Look into the data, explore, identify trends, find the  most interesting actionable bits.
@@ -105,22 +83,22 @@ The output of this work is a report. That either:
 
 ### In an Organization
 
-1. Learn the domain and ecosystem: activities exist, what products, what are the end goals: usage, money, user count, downloads, etc...
-
-2. Who are the stakeholders, that can act on recommendations, and their understanding on stats.
-
-3. Define the metrics framework and the KPIs. What indicators are important to keep an eye on.
-
-3.1. Be curious with the data, ask good questions, explore ideas, correlations.
-
-4. Data 1st step: Build a daily / weekly report, with what happened. With drill-down levels: level.1: sales change. level.2: what products changed the most. level.3: what countries sales changed more, etc... (Level.1 some say should be up to 3 KPIs mac). (this exercise might also reveal gaps with data infrastructure)
-
-5. Data 2nd step: Actionable insights(recommendations) for each stakeholder. Guidance, and this will vary by stakeholder role.
-
-5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
-
-5.2. Prediction Models can help see where we headed.
-
+  1. Learn the domain and ecosystem: activities exist, what products, what are the end goals:   usage, money, user count, downloads, etc...
+  
+  2. Who are the stakeholders, that can act on recommendations, and their understanding on   stats.
+  
+  3. Define the metrics framework and the KPIs. What indicators are important to keep an eye   on.
+  
+  3.1. Be curious with the data, ask good questions, explore ideas, correlations.
+  
+  4. Data 1st step: Build a daily / weekly report, with what happened. With drill-down levels:   level.1: sales change. level.2: what products changed the most. level.3: what countries sales   changed more, etc... (Level.1 some say should be up to 3 KPIs mac). (this exercise might also   reveal gaps with data infrastructure)
+  
+  5. Data 2nd step: Actionable insights(recommendations) for each stakeholder. Guidance, and   this will vary by stakeholder role.
+  
+  5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
+  
+  5.2. Prediction Models can help see where we headed.
+  
 
 
 
@@ -371,6 +349,7 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
 - Average of rates is not same as rates of averages, avoid the 1st.
 
 *Reference*
+
 - Book: how to lie with statistics
 - http://mathwithbaddrawings.com/2013/12/02/headlines-from-a-mathematically-literate-world/
 
@@ -398,6 +377,29 @@ This also allows for optimization, plot the convergence over time, see if possib
 
 ## Optimization
 
+### Optimization Process
+ 
+Baseline - where you are now?
+
+- what KPI’s are important to look at given the goal? Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What do i need to look at to know the end goal is improving?
+- Do I have this data ? Need to add more instrumentation ?
+- Setup reports / dashboards
+
+Formulate hypothesis on what to change to get to the goal
+
+- play with the data, to came up with theories and hypothesis to test, try correlations, plot, visualize, from different angles, maybe use also external data if possible
+
+Test (A/B test)
+
+- do a change and see its impact on the KPI’s.
+- output a story, communicate, put in slides if needed, the results
+
+Iterate
+
+- Go back to Baseline and start again.  We using the right KPI’s ? (often the 1st ones are not great)
+- more hypothesis, more tests (once in a while might find something worthwhile … )
+
+
 ### AB testing
 
 - A/B testing: comparing version A vs version B.
@@ -409,7 +411,7 @@ reference: sample sizes http://camdp.com/blogs/number-samples-needed-b-test
 
 Amazingly, Optimization, AB & Multivariate Testing, Behavioral Targeting, Attribution, Predictive Analytics, … can all be recast as components of a simple, yet powerful framework borrowed from the field of Artificial Intelligence, the intelligent agent.
 
-#### basics
+#### Artificial inteliigence Optimization Process
 
 The goals are what the agent wants to achieve, what it is striving to do.
 
@@ -522,9 +524,3 @@ Andre Ng machine learning classes are excellent.
 Latest big trend, on the start of 2013 is probabilistic programming, also called model-based machine learning: http://probabilistic-programming.org/wiki/Home
 
 Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
-
-
-## Examples
-
-### How to test a change has caused impacted ?
-Best is to have it as an AB test, so can compare side by side (excluding potencial other factors), and run a hypothesis test, for improved confidence.
