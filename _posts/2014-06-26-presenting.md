@@ -11,7 +11,7 @@ intro: "Structured Presenting"
 This documents, for my own reference, a training on how to do presentations.
 
 
-## Communications rely on 3 questions:
+## Communications rely on 3 questions
 - What you want them to know ?
 - What you want them to do ?
 - How you want them to feel ? (emotional connection is an advantage)
@@ -67,6 +67,7 @@ Everyone will be a bit different and need to work on their weak spots.
 ### The Skeptical System
 
 Break the presentation in a sequence of 4 parts, answering the "skeptical" audience questions:
+
 - Why should i listen to you?
  - Credibility: i have many years of doing this ... Part of a specialized team, etc..
  - Context, history

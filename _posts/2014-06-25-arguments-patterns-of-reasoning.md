@@ -65,6 +65,7 @@ A dispute of fact turns on what is true, or on what has occurred. Such disagreem
 The typical questions of science are disputes of fact.
 
 Stock issues for disputes of fact:
+
 - What is a reasonable truth condition?
 - Is that truth condition satisfied?
 
@@ -72,6 +73,7 @@ Stock issues for disputes of fact:
 Disputes of definition occur when there is a particular way we want to label something, and we expect that that label will be contested.
 
 Stock issues with disputes of definition:
+
 - Does this definition make a meaningful distinction?
 - How well does this definition fit with prior ideas?
 - What, if any, are the reasonable alternatives, and why is this one better?
@@ -82,6 +84,7 @@ When we are concerned with judging something, the dispute is one of value. For e
 Which is more important, customer satisfaction or customer lifetime value? We often have to justify a judgment call.
 
 For disputes of value, the stock issues are:
+
 - How do our goals determine which values are the most important for this argument?
 - Has the value been properly applied in this situation?
 
@@ -90,6 +93,7 @@ Disputes of policy occur whenever we want to answer the question, “Is this the
 Should we be reaching out to paying members more often by email? Should the Parks Department do more tree trimming?
 
 Stock issues of disputes of policy are:
+
 - Is there a problem?
 - Where is credit or blame due?
 - Will the proposal solve it?
@@ -130,4 +134,5 @@ Patterns of argument building that pop up in settings where we are using data pr
 
 
 ## Reference 
+
 - Thinking with Data, Max Shron

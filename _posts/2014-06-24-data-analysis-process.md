@@ -8,13 +8,13 @@ tags:
 intro: "The Data Analysis Process"
 ---
 
-## COnVO
+## CoNVO
 
-COnVO is a structured way to tackle data analysis problems.
+CoNVO is a structured way to tackle data analysis problems.
 Uses a few steps to decompose the problem, structure the analysis, sketch out a solution and envision how is going to be acted upon.
 Is essentially looking first at the big picture and then rationally walk towards a solution to the problem.
 
-A written down COnVo is done before start implementing a data analysis solution.
+A written down CoNVO is done before start implementing a data analysis solution.
 
 ### Context
 
@@ -103,9 +103,9 @@ organization and what will happen once is there. How will it be used?
 
 
 
-## Implementing COnVO
+## Implementing CoNVO
 
-After the written down COnVO, we then go into applying the sketched out vision:
+After the written down CoNVO, we then go into applying the sketched out vision:
 
 - Define timeline for each task, don't let a particular one go on forever. Beware of rabbit holes. Do a Gantt chart, for example.
 - The implementation should all be focused on the argument (and mockup) defined. Should be about trying to find evidence to support the argument claim.
