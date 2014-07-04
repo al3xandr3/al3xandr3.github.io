@@ -122,6 +122,9 @@ Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-cou
  1. rename it to a space (" ")
  2. order the column so that spaces appear at end of start
  
+ - Format a number to have thousands (K) and Millions as (M). 7.6M instead of 7,592,712. works also for thousands (K)
+
+    [>=1000000] $#,##0.0,,"M";[<1000000] $#,##0.0,"K";General
 
 ## Download a site
 
