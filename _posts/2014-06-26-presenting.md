@@ -14,7 +14,7 @@ This documents, for my own reference, a training on how to do presentations.
 ## Communications rely on 3 questions
 - What you want them to know ?
 - What you want them to do ?
-- How you want them to feel ? (emotional connection is an advantage)
+- How you want them to feel ? (emotional connection increases pontencial of message to stick)
 
 
 ## BodyLanguage
@@ -24,7 +24,7 @@ This documents, for my own reference, a training on how to do presentations.
 - Legs (stable solid position):
   - Feet a shoulder apart (see Obama, James Bond, etc..), even when sitting down
   - Don't move around, moving is associated with fleeing, beware of that.
-  - No strange positions and movements, bobby, bouncer, etc...
+  - No strange positions and movements, bobby, bouncer, elvis knees (when sitting), etc...
 - Arms:
   - BBC presenter hands.
   - Palms down - certainty, for sure, absolutely, decisive, conclusive. End of a negotiation.
@@ -66,6 +66,8 @@ Everyone will be a bit different and need to work on their weak spots.
 
 ### The Skeptical System
 
+Works by answering tipical skeptical questions from audience, how expert presenter is in the matter (establishing credibility), whats in it for me, etc...
+
 Break the presentation in a sequence of 4 parts, answering the "skeptical" audience questions:
 
 - Why should i listen to you?
@@ -86,8 +88,9 @@ To do the presentation, write a A4 paper separated into 4 areas, with the trigge
 
 ### The Problem System
 
-Another way of structuring a presentation
+Another way of structuring a presentation.
 This one is very often found in tv advertisement, even movies.
+Works by starting with creating the problem, create the need to be resolved and then serving the solution.
 
 - Problem
  - I would like to make you aware of a problem...

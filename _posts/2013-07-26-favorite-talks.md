@@ -42,3 +42,6 @@ The 60's and 70's was fertile period for the field of computer programming, the 
 - How doctors want to die - radiolab podcast
 
 - emergence - radiolad podcast
+
+- Peek prosperity accelerated crash course: https://www.youtube.com/watch?v=pYyugz5wcrI. We currently live in a non-scalable manner: oil is a finite matter but we are fully dependent on it. World population is growing exponentially, we are bound to hit a breaking point where we wont be able to get more oil. We should start finding alternatives, to be less dependent on it. Interesting: Really nice exponential growth and curve fitting explanations.
+

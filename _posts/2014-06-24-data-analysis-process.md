@@ -117,4 +117,5 @@ After the written down CoNVO, we then go into applying the sketched out vision:
 - Communicate message in a polished way. Eye candy and selling presentation skills matters for the final output.
 
 ## Reference 
-- Thinking with Data, Max Shron
+
+- Thinking with Data, Max Shron: http://vimeo.com/98768831. And http://blog.mortardata.com/post/91270402361/max-shron-thinking-with-data-talk

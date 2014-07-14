@@ -74,9 +74,14 @@ Prepared Excel: [histogram.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyRW
 - Inspect data for Outliers.
 
 https://www.youtube.com/watch?v=DNpvSg2X0xQ
+
 https://www.youtube.com/watch?v=ZFbPnwKwVWk
 
 Prepared Excel: [boxplot.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyM1JtVlh0Tnp6UWs/edit?usp=sharing)
+
+Boxplot also is very usefull when comparing 2 data sets directly:
+
+Here is an excel with 2 box plot side by side: [boxplot2.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyRk83bDFHUUljRXM/edit?usp=sharing)
 
 
 ### Simulations

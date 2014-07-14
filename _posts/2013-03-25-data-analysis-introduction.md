@@ -524,3 +524,5 @@ Andre Ng machine learning classes are excellent.
 Latest big trend, on the start of 2013 is probabilistic programming, also called model-based machine learning: http://probabilistic-programming.org/wiki/Home
 
 Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
+
+Markov chains explained: http://techeffigy.wordpress.com/2014/06/30/markov-chains-explained/

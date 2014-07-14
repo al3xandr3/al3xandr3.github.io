@@ -44,6 +44,7 @@ This means that more often bad ideas / solutions will win and prevail because th
 Reference
 - Book "Quiet: the Power of the Introverts"
 
+
 ## Categorizing people in 4 areas
 
 Take this with a grain of salt, is a strong simplification / model. Models are always wrong to a certain degree, but can be useful if applied to right situation.
@@ -57,3 +58,30 @@ Every person has always a bit of each category, but some people will be more hea
 
 #### reference
 - discover insights survey product
+
+
+# Body Language
+
+There are common traits that our body does naturally when happy, sad, scared, etc...
+But everybody might be by default slightly different, so is very important first to understand the normal baseline.
+And then look for changes to that baseline, those will be the tell signs.
+
+## Eyes
+
+- Open up when: happy, welcoming, want see more of it.
+- Closing (squinting): hiding something, not liking someone, lying.
+- Not looking: avoiding, very unpleasant.
+
+## Arms
+
+- Crossed arms signals defense, not being comfortable, not liking something, position of strength.
+
+## Lips
+- press lips = protection, discomfort
+
+## Head
+
+Massaging head is used to calm down, is often a signal of discomfort (calming from discomfort).
+
+- itching head = discomfort
+- rub back of the neck = discomfort

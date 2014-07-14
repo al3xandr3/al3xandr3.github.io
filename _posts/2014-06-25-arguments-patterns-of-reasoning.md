@@ -135,4 +135,4 @@ Patterns of argument building that pop up in settings where we are using data pr
 
 ## Reference 
 
-- Thinking with Data, Max Shron
+- Thinking with Data, Max Shron: http://vimeo.com/98768831. And http://blog.mortardata.com/post/91270402361/max-shron-thinking-with-data-talk
