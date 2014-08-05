@@ -135,7 +135,7 @@ This is a key part of doing data analysis. Keep it in mind and keep reminding it
 As the analysis gets more involved, as more emotions came into play, as people argue on different sides of it, as politics plays starts to influence sides, etc... The truth is the fixed solid ground that the analyst can (and should) hold on to and safely pursue.
 
 
-### Behavior Traps
+### Set Behavior Traps
 
 > Teach the garden to weed itself
 
@@ -183,7 +183,7 @@ Investment science, is about buying into many properties and expect some of them
 
 ## Guesstimate 
 
-Imagine you toying around with some idea and come up with a new question, whats the size of that, whats the total impact, could this be relevant, i wonder how many times this happen.
+Imagine you toying around with some idea and come up with a new question, whats the size of that, whats the total impact, could this be relevant, i wonder how many times this happens ?
 
 "I would imagine to be very low" - For example. This is a guesstimate, even if very somewhat vague, is the quickest, intuition driven way to size up something.
 
