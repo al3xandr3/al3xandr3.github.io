@@ -338,6 +338,7 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
 
 
 ### How to Lie with statistics
+(And how to identify we're being lied to with statistics)
 
 - A too precise average statistic is suspicious, normally, there's some decimal points.
 - Average can be a mean, a mode or a median

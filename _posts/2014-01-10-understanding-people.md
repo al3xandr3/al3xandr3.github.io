@@ -81,7 +81,7 @@ And then look for changes to that baseline, those will be the tell signs.
 
 ## Head
 
-Massaging head is used to calm down, is often a signal of discomfort (calming from discomfort).
+Massaging head is used to calm down, is often a signal of discomfort (to calm down from discomfort).
 
 - itching head = discomfort
 - rub back of the neck = discomfort

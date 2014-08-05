@@ -5,10 +5,10 @@ category: data
 tags:
   - data
   - arguments
-intro: "The Data Analysis Process"
+intro: "The Data Analysis (Structured) Process"
 ---
 
-## CoNVO
+## Structured Data Analysis: CoNVO
 
 CoNVO is a structured way to tackle data analysis problems.
 Uses a few steps to decompose the problem, structure the analysis, sketch out a solution and envision how is going to be acted upon.
@@ -114,6 +114,7 @@ After the written down CoNVO, we then go into applying the sketched out vision:
   - Be sure to check the assumptions.
   - After each step, validate is correct (like QE)
   - Check frequently with stakeholders that it is meeting their needs.
+  - *pre-Mortem exercise*: In contrast to the post-Mortem where you try figure out what went wrong after something went wrong, the pre-Mortem is a preventive simulation. Start the thought process as: Image the project went bad, what are the most likely causes of where it went bad, what are the weakest links, that should be strengthen up?
 - Communicate message in a polished way. Eye candy and selling presentation skills matters for the final output.
 
 ## Reference 

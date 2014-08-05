@@ -10,7 +10,6 @@ intro: "Structured Presenting"
 
 This documents, for my own reference, a training on how to do presentations.
 
-
 ## Communications rely on 3 questions
 - What you want them to know ?
 - What you want them to do ?

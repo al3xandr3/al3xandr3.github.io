@@ -132,7 +132,21 @@ Patterns of argument building that pop up in settings where we are using data pr
 - Cost/Benefit Analysis: In a cost/benefit analysis, each possible outcome from a decision or group of decisions is put in terms of a common unit, like time, money, or lives saved. The justification is that the right decision is the one that maximizes the benefit (or minimizes the cost).
 
 
-
-## Reference 
+### Reference
 
 - Thinking with Data, Max Shron: http://vimeo.com/98768831. And http://blog.mortardata.com/post/91270402361/max-shron-thinking-with-data-talk
+
+
+## (Identifying) Weak Reasoning
+
+A fallacy is an argument that uses poor reasoning. An argument can be fallacious whether or not its conclusion is true.
+
+http://en.wikipedia.org/wiki/Fallacy
+
+Cognitive biases are tendencies to think in certain ways. Cognitive biases can lead to systematic deviations from a standard of rationality or good judgment, and are often studied in psychology and behavioral economics.
+
+http://en.wikipedia.org/wiki/List_of_cognitive_biases
+
+https://bookofbadarguments.com/#
+
+
