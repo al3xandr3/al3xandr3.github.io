@@ -110,6 +110,7 @@ After the written down CoNVO, we then go into applying the sketched out vision:
 - Define timeline for each task, don't let a particular one go on forever. Beware of rabbit holes. Do a Gantt chart, for example.
 - The implementation should all be focused on the argument (and mockup) defined. Should be about trying to find evidence to support the argument claim.
   - Go collect the data, summarize it and confirm it supports the argument claim.
+  - On each step, wrote down the summary of the findings, is a way to clear up the result in the head and to layout next steps, often realizations come from this practice. Also good to avoid forgetting all the context, next time we need to look at it.
 - Include Validations steps:
   - Be sure to check the assumptions.
   - After each step, validate is correct (like QE)

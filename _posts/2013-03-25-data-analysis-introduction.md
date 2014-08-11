@@ -527,3 +527,5 @@ Latest big trend, on the start of 2013 is probabilistic programming, also called
 Nice video explaining: http://radar.oreilly.com/2013/04/probabilistic-programming.html
 
 Markov chains explained: http://techeffigy.wordpress.com/2014/06/30/markov-chains-explained/
+
+Other ML techniques: https://scottlocklin.wordpress.com/2014/07/22/neglected-machine-learning-ideas/

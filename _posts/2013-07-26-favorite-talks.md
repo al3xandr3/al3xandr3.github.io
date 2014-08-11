@@ -35,6 +35,11 @@ The 60's and 70's was fertile period for the field of computer programming, the 
 
 - Spaced Repetition and Anki - http://quantifiedself.com/2013/06/roger-craig-on-spaced-repetition-and-anki/
 
+
+### Data Analysis 
+
+- Beyond Freakonomics: New Musings on the Economics of Everyday Life - https://www.youtube.com/watch?v=Tmo9YsNXWCc Steven Levitt
+
 ### Others
 
 - Inheritance - radiolab podcast
