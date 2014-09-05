@@ -5,13 +5,13 @@ category: code
 tags:
   - automation
   - ruby
-intro: "a script that given an ebay search term, creates misspells alternatives and then executes an (ebay)search. becuase sometimes great bargains can be found from misspells items"
+intro: "a script that given an ebay search term, creates misspells alternatives and then executes an (ebay)search. because sometimes great bargains can be found from misspells items"
 ---
 
 A small ruby script that does searches in ebay. Is able to:
 
  - introducing some misspells in order to find those misspelled items that might be a great bargain(because nobody else is able to find them)
- - abble to search in more than one ebay store.
+ - able to search in more than one ebay store.
 
 Prints out to console the search results. Of course because is in ruby, is easy to modify and play around :)
 

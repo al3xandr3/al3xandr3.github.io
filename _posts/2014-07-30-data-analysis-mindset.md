@@ -9,8 +9,6 @@ intro: "Getting into the Data Analysis Mindset"
 
 ## Analytics MindSet
 
-
-
 ### Be constantly curious
 
 Ask questions, 

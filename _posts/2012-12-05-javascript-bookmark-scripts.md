@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Javascript Bookmarks
+title: Javascript Bookmark Scripts
 category: code
 tags:
   - javascript

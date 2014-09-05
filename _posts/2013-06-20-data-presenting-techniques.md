@@ -69,3 +69,19 @@ Is often useful to put it into perspective.
 For example: "The speed improvement was in the same order as having Husain Bolt going instead at speed of a cheeta"
 
 Caveat: Be sure to make valid enough comparisons. Some things are just not the same.
+
+
+## Rates Caveats
+
+Rates are excellent to use in general, as a relative measure (instead of absolute) to measure progression over time, use for comparison to other rates, etc...
+
+But they could sometimes miss to give the whole view, example:
+lets say we looking at a web site login success rate, imagine that login success rate drops massively overnight, although nothing has changed on the login itself, what happened ?
+
+Typically we might have a situation where a new predominant link somewhere has started to send loads more traffic, that might not all be that interested in login, and even be there my misunderstanding. Thus the input traffic will grow massively but the number of logins might not grow at same volume, as users realize they are in wrong place and leave.
+
+So in this case the rate alone, will hint that login is performing much worse, while the actual net effect is positive.
+
+A way around this is to include with the rate the input volumes, especially if they are trended.
+
+So we can say we login rate dropped, but this is because of a massive influx of unqualified traffic hitting the login page.

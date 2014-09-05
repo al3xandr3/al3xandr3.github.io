@@ -140,3 +140,4 @@ Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-cou
 
 - command line Unix like tools in windows can be found for example in: [Git for Windows shell](http://msysgit.github.com/) (bundles minGW)
 - [Top 10 Unix Command Line Utilities 2012](http://blog.coldflake.com/posts/2012-12-30-Top-10-Unix-Command-Line-Utilities-2012.html)
+- http://datavu.blogspot.com/2014/08/useful-unix-commands-for-exploring-data.html

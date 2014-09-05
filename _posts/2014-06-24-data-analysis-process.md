@@ -116,7 +116,7 @@ After the written down CoNVO, we then go into applying the sketched out vision:
   - After each step, validate is correct (like QE)
   - Check frequently with stakeholders that it is meeting their needs.
   - *pre-Mortem exercise*: In contrast to the post-Mortem where you try figure out what went wrong after something went wrong, the pre-Mortem is a preventive simulation. Start the thought process as: Image the project went bad, what are the most likely causes of where it went bad, what are the weakest links, that should be strengthen up?
-- Communicate message in a polished way. Eye candy and selling presentation skills matters for the final output.
+- Communicate message in a polished way. Eye candy and selling presentation skills matters for the final output. Note, this is a whole separate phase from previous EDA (Exploratory data analysis), the EDA phase has the purpose of showing what things to focus one, most of exploration end up nowhere and are throwed away, this phase focus on best way of communicating things the EDA found.
 
 ## Reference 
 
