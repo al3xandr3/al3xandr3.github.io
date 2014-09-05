@@ -157,7 +157,7 @@ Reference:
 
 
 
-## Test of Means
+#### Test of Means
 
 Comparing non-fractional values that follow a normal distribution (e.g. Average Order Value, Time Spent on Page etc.) is done with a Two-sample unpaired t-test.
 
