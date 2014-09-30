@@ -113,18 +113,47 @@ Insert a column and in Cell C2 paste this formula:
 
 Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-count-unique-values
 
-## Excel Hacks
+## Excel: Finding the last filled row, for a given column
 
-- Renaming a field in pivot table is not allowed "PivotTable field name already exists": add a space at start (or end).
+Usefull for automating excel reports, imagine keep adding rows to an existing table to add in more data, often a report need to calculate a value considering all exiting rows.
+
+A way to do this, for column B:
+
+  =MAX((B1:B1000<>"")*(ROW(B1:B1000)))
+
+Looks at rows 1 up to 1000 and finds the last filled value.
+Does an array calculation, from 1 to 1000. Calculates a vector of true or false (whether is empty or not) and then multiplies with another vector that contains the row numbers obtaining a vector with the row numbers of the filled values. Then gets the Max out of that.
+
+Enter this formula and then do: Shift + Ctrl + Enter
+This last command is required becuase this is an array calculation, instead of a call calculation (the most common).
+
+## Excel: value of a cell given a text coordinate
+
+    =INDIRECT("E"&C7)
+
+Returns the value in cel EX, where x is a value inside cell C7.
+Usefull when calculating dynamic ranges, for automatic updating reports.
+
+**Reference:** http://www.analyticsvidhya.com/blog/2014/09/automate-excel-models-reporting-dynamic-range/
+
+## Excel: Pivot Tables
+
+Renaming a field in pivot table is not allowed "PivotTable field name already exists": add a space at start (or end).
  ex: "Sum of MyField" -> " MyField"
 
-- Pivot Table field has a "(blank)" or some other thing you don't want in final report: 
+Pivot Table field has a "(blank)" or some other thing you don't want in final report: 
  1. rename it to a space (" ")
  2. order the column so that spaces appear at end of start
  
- - Format a number to have thousands (K) and Millions as (M). 7.6M instead of 7,592,712. works also for thousands (K)
+## Excel: Better number formatting
+
+Format a number to have thousands (K) and Millions as (M). 7.6M instead of 7,592,712. works also for thousands (K)
 
     [>=1000000] $#,##0.0,,"M";[<1000000] $#,##0.0,"K";General
+
+
+
+
 
 ## Download a site
 

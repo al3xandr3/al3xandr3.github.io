@@ -9,6 +9,10 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2014
 
+<blockquote data-day="2014-09-29">
+How well each does for himself in adapting to his social environment is not the same thing as how satisfactory a social environment they collectively create for themselves. (@ Thomas Schelling)
+</blockquote>
+
 <blockquote data-day="2014-06-11">
 Statistics is fundamentally about reality — It’s about getting to know the man behind the curtain by studying the bumps and waves on the velvet. (@evanmiller.org)
 </blockquote>
