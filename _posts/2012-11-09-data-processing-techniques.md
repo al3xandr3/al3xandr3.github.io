@@ -45,23 +45,23 @@ Show the last 5 lines of a file
 
 Especially made to interact with Excel(adapt for other apps), inside R do:
   
-  ### Column
-  # read from clipboard a column of strings into array x
-  x = readClipboard()
+    ### Column
+    # read from clipboard a column of strings into array x
+    x = readClipboard()
 
-  # read from console input a column of numbers into array x
-  x = scan()
+    # read from console input a column of numbers into array x
+    x = scan()
 
-  # send clipboard a column of strings in x
-  writeClipboard( as.character(x) )
+    # send clipboard a column of strings in x
+    writeClipboard( as.character(x) )
 
 
-  ### Table
-  # read from clipboard into table x
-  x = read.DIF(file='clipboard', header=TRUE, transpose=TRUE)
+    ### Table
+    # read from clipboard into table x
+    x = read.DIF(file='clipboard', header=TRUE, transpose=TRUE)
 
-  # write table x to clipboard
-  write.table(x, "clipboard", sep="\t", row.names=FALSE, col.names=TRUE)
+    # write table x to clipboard
+    write.table(x, "clipboard", sep="\t", row.names=FALSE, col.names=TRUE)
 
 - reference: [johndcook r_excel_clipboard](http://www.johndcook.com/r_excel_clipboard.html)
 
@@ -69,9 +69,9 @@ Especially made to interact with Excel(adapt for other apps), inside R do:
 
 Using ruby, gets flexible to do a lot:
 
-  File.open(ARGV[0], 'r').each_line do |line| 
-    puts line.split(",")[0].gsub('"', '')
-  end
+    File.open(ARGV[0], 'r').each_line do |line| 
+      puts line.split(",")[0].gsub('"', '')
+    end
 
 
 ## regular expressions 
@@ -84,15 +84,15 @@ Some might not always exactly as they are depending on tool
 
 To minutes(there's 1440 minutes(24 hours) in a day, excel keeps time fraction between 0 and 1), so for minutes:
 
-  =1440*mod(A1,1)
+    =1440*mod(A1,1)
 
 - If you are working with time from a single cell only, be a bit careful. A hh:mm format will indicate only the fractional part of the DATE stored in the cell. That is, 0.24 an 1.24 and 18,000.24 will all display the same. To make sure you are getting only the fractional part (if that is what you want) use mod.
 - Can also get the hour by doing: =24*mod(A1,1)
 
 Output:
 
-  | before   | after  |
-  | 01:47:41 | 107.68 |
+    | before   | after  |
+    | 01:47:41 | 107.68 |
 
 
 ## Convert text file encoding
@@ -101,7 +101,7 @@ Many text editors support doing this, but when the file is too big use instead t
 
 In windows powershell(from utf-8 to ascii)
 
-  gc -en utf8 in.txt | Out-File -en ascii out.txt 
+    gc -en utf8 in.txt | Out-File -en ascii out.txt 
 
 - reference(for *nix machine also): [best-way-to-convert-text-files-between-character-sets @stackoverflow](http://stackoverflow.com/questions/64860/best-way-to-convert-text-files-between-character-sets)
 
@@ -109,32 +109,43 @@ In windows powershell(from utf-8 to ascii)
 
 Insert a column and in Cell C2 paste this formula:
 
-  =IF(SUMPRODUCT(($A$2:$A2=A2)*($B$2:$B2=B2))>1,0,1)
+    =IF(SUMPRODUCT(($A$2:$A2=A2)*($B$2:$B2=B2))>1,0,1)
 
 Reference: http://stackoverflow.com/questions/11876238/simple-pivot-table-to-count-unique-values
 
 ## Excel: Finding the last filled row, for a given column
 
-Usefull for automating excel reports, imagine keep adding rows to an existing table to add in more data, often a report need to calculate a value considering all exiting rows.
+Useful for automating excel reports, imagine keep adding rows to an existing table to add in more data, often a report need to calculate a value considering all exiting rows.
 
 A way to do this, for column B:
 
-  =MAX((B1:B1000<>"")*(ROW(B1:B1000)))
+    =MAX((B1:B1000<>"")*(ROW(B1:B1000)))
 
 Looks at rows 1 up to 1000 and finds the last filled value.
 Does an array calculation, from 1 to 1000. Calculates a vector of true or false (whether is empty or not) and then multiplies with another vector that contains the row numbers obtaining a vector with the row numbers of the filled values. Then gets the Max out of that.
 
 Enter this formula and then do: Shift + Ctrl + Enter
-This last command is required becuase this is an array calculation, instead of a call calculation (the most common).
+This last command is required because this is an array calculation, instead of a call calculation (the most common).
 
 ## Excel: value of a cell given a text coordinate
 
     =INDIRECT("E"&C7)
 
-Returns the value in cel EX, where x is a value inside cell C7.
-Usefull when calculating dynamic ranges, for automatic updating reports.
+Returns the value in cell EX, where x is a value inside cell C7.
+Useful when calculating dynamic ranges, for automatic updating reports.
 
-**Reference:** http://www.analyticsvidhya.com/blog/2014/09/automate-excel-models-reporting-dynamic-range/
+## Excel: Using dynamic ranges for charts/ pivot tables, etc..
+
+Great for automating Excel Reports.
+
+See here: http://www.analyticsvidhya.com/blog/2014/09/automate-excel-models-reporting-dynamic-range/
+
+- Create named dynamic ranges. ex:
+
+        =INDIRECT("Steps!$D$12:$D$"&INDIRECT("Steps!$C$8"))
+
+- Reference them in charts for example. (use to list them to use F3)
+
 
 ## Excel: Pivot Tables
 
