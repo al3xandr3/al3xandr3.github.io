@@ -12,9 +12,11 @@ Techniques used to better communicate the meaning of a result number.
 
 ## Reports
 
+The report should be optimized for the problem at hand and updated if needed during the project to highlight problems and new findings as the project develops (agile). There is no single report view that is ideal for every kind of data analysis chalenge.
+
 - Minimum possible to "report" the situation, remove what not absolutely needed.
 - 1st thing to show in left, top corner is the key info, normally a table with summary: metric (or KPI), last Day, prev. Day, %Change, Trend. Others if needed.
-	- then on the right of that, or bellow or in other tabs should be possible to do further drill-down and go into further details.
+	- then on the right of that, or bellow, or in other tabs should be possible to do further drill-down and go into further details.
 - Red, green (and) yellow typically translate into good/bad/so-so, avoid using them to represent information that is neither. Go instead of neutral, like gray.
 	- Do use red green, when presenting results, like day change and month change, color red is lower, color green if higher.
 - Diagrams:
@@ -22,8 +24,6 @@ Techniques used to better communicate the meaning of a result number.
  - use rectangular arrows instead of direct arrows.
  - be consistent, same color and same shapes for the same purpose, don't mix, consistency helps with message.
 - Rates, calculated values, total values, etc... should be colored (and shaped) differently.
-
-
 
 ## Odds Notation
 

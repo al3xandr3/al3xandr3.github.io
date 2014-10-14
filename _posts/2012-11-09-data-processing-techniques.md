@@ -134,6 +134,18 @@ This last command is required because this is an array calculation, instead of a
 Returns the value in cell EX, where x is a value inside cell C7.
 Useful when calculating dynamic ranges, for automatic updating reports.
 
+## Excel: sum the last 30 rows for a given column (dynamically, when data is added to bottom)
+    
+1. Find the Index of the last row not empty:
+
+    =MAX((B1:B1000<>"")*(ROW(B1:B1000)))
+
+place in cell Q2 (for calculation bellow)
+
+2. For column B, sum last 30
+
+    =SUM(INDIRECT("N"&(Q2-30)&":N"&Q2))
+
 ## Excel: Using dynamic ranges for charts/ pivot tables, etc..
 
 Great for automating Excel Reports.
