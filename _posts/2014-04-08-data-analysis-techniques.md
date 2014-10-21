@@ -57,7 +57,7 @@ Give out some certainty on the average number i am giving out, by adding a range
 ### How
 When estimating a parameter like a mean from random samples, confidence interval helps quantify uncertainty, giving an interval in which we can expect the value to be most of the time.
 
-Prepared Excel: [confidence_interval.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJySjUyclgzX3RqM1k/edit?usp=sharing)
+Prepared Excel: [confidence_interval.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyREE2SHl2U29uVFU/view?usp=sharing)
 
 Python:
 
@@ -144,9 +144,9 @@ For example, to test two campaigns each with a 1000 displays, 32 and 54 conversi
 
 The p-value is less than 0.05, so we can reject the hypothesis that conversion rates are equal and assume the second group has a higher rate.
 
-Prepared Excel: [hypothesis_testing_proportion.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyaGxqc1lLVTkxa1k/edit?usp=sharing)
+Prepared Excel: [hypothesis_testing_proportion.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyby1XVTJGNk40c2M/view?usp=sharing)
 
-Prepared Excel: [hypothesis testing proportion_Chi-squared.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyREY2cUNWS25PSGc/edit?usp=sharing)
+Prepared Excel: [hypothesis testing proportion_Chi-squared.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyM21mMF8wODhvckU/view?usp=sharing)
 
 
 Reference:
@@ -225,7 +225,7 @@ Shows the distribution of the data, what are the most (and least) frequent value
 
 https://www.youtube.com/watch?v=asEuFvWGJDs
 
-Prepared Excel: [histogram.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyRWFBbEFPRk11TEE/edit?usp=sharing)
+Prepared Excel: [histogram.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyQTMtZzJRc0U2OHc/view?usp=sharing)
 
 ### Boxplot
 
@@ -238,11 +238,11 @@ https://www.youtube.com/watch?v=DNpvSg2X0xQ
 
 https://www.youtube.com/watch?v=ZFbPnwKwVWk
 
-Prepared Excel: [boxplot.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyM1JtVlh0Tnp6UWs/edit?usp=sharing)
+Prepared Excel: [boxplot.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJydnNqaU1KUVNIVkU/view?usp=sharing)
 
 Boxplot also is very useful when comparing 2 data sets directly:
 
-Here is an excel with 2 box plot side by side: [boxplot2.xlsx](https://drive.google.com/file/d/0B3ypY27pPCJyRk83bDFHUUljRXM/edit?usp=sharing)
+Here is an excel with 2 box plot side by side: [boxplot2.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJySlllN05ZNFJuZFk/view?usp=sharing)
 
 
 
