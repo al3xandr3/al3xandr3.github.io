@@ -12,11 +12,12 @@ intro: "Getting into the Data Analysis Mindset"
 ### Be constantly curious
 
 Ask questions, 
-Don't be afraid to ask strange questions (if they offend, keep them to yourself but question anyway), in data analysis is good to ask somewhat obvious questions, to question the established way.
+Don't be afraid to ask strange questions (if they offend, keep them to yourself but question anyway), in data analysis is good to ask, the apparetly  obvious things, to question the established way and the assumptions.
+Assumptions/limitations/status change over time, questions if existing assumptions still stand.
 Think child like: why why why.
 
 Frequently ask: I wonder what..., I wonder how...
-Have a real wish to understand things and to have fun with it.
+Have a real wish to understand things.
 
 
 
@@ -83,7 +84,7 @@ Lower the salaries for school teachers -> they will move to a better paying job 
 
 
 
-### Root Causes
+### Find Root Causes
 
 Look for Root causes, not symptoms. Where is it coming from, where are the incentives, whats the past history on it, what influenced it, try to surface real background root causes.
 

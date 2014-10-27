@@ -83,9 +83,7 @@ Python:
 ### I want to
 Make sure the results i got are statistically significant (and not due to chance).
 
-### How
-
-#### Test of Proportion
+### Test of Proportion
 
 For comparing percentages metrics like Conversion Rate, Click-through Rate etc, use a proportion test.
 
@@ -157,7 +155,7 @@ Reference:
 
 
 
-#### Test of Means
+### Test of Means
 
 Comparing non-fractional values that follow a normal distribution (e.g. Average Order Value, Time Spent on Page etc.) is done with a Two-sample unpaired t-test.
 
@@ -207,7 +205,7 @@ Reference:
 
 - http://www.marketingdistillery.com/2014/08/03/ab-tests-in-marketing-sample-size-and-significance-using-r/
 - http://www.evanmiller.org/ab-testing/t-test.html
-
+- http://stattrek.com/hypothesis-test/hypothesis-testing.aspx
 
 
 
@@ -229,13 +227,11 @@ Prepared Excel: [histogram.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyQT
 
 ### Boxplot
 
-### I want to
-
+Good for
 - Check if distribution is symmetrical around the average.
 - Inspect data for Outliers.
 
 https://www.youtube.com/watch?v=DNpvSg2X0xQ
-
 https://www.youtube.com/watch?v=ZFbPnwKwVWk
 
 Prepared Excel: [boxplot.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJydnNqaU1KUVNIVkU/view?usp=sharing)
@@ -247,15 +243,14 @@ Here is an excel with 2 box plot side by side: [boxplot2.xlsm](https://drive.goo
 
 
 
-### Simulations
-
-### I want to
+## Simulations
 
 Simulate the behavior, this can be useful for: 
 
 - Generate random data
 - Try to guess what should it look like.
 - Predict the future (based on the historical observations)
+- Simulate theories, instead of complex math: hypothesis testing alternative, resampling
 
 Sometimes in paper is enough. Paper is costly (especially in time) to run many simulations. To get for example the distribution of the solutions. 
 For more than a few executions, use a computer (Excel, Python, Ruby, R, etc...).
@@ -269,13 +264,12 @@ Example:
 Python Code: [simulate.py](http://github.com/al3xandr3/python/blob/master/simulate.py)
 
 
+http://en.wikipedia.org/wiki/Resampling_(statistics)
 
 
 
 
-## I want to
-
-Find impacting features in a specific goal.
+## Analysis: Reveal impacting features in a specific goal.
 
 Lets say i am looking at a web site new user registration flow, and i want to find areas that can be improved, for example i might find that users in mobile devices in Portugal are having a hard time to register and that consequently might lead to the finding that a page in that flow is incorrectly translated.
 
@@ -288,25 +282,46 @@ This is also useful to pin down performance problems or even outliers.
 - Decide on the main goal to use, for example, the registration rate (completed registration / started registration)
 - Create (probably multiple) break downs by all the variables available to you (Country, Operating System, Device, Browser, Entry Page, Channel, referrer domain, etc...)
 
-*When doing breakdowns*
+*When doing breakdowns:*
+
 - Keep in mind the context of the data, what dimensions make sense to look into and which ones it does not, start there.
 - Discard dimensions - Find if there's enough volume in that dimension to be worth pursuing or not.
 - Discard dimensions values lower than a significant volume (rows of a dimension, keep only the top 100, or 1k, etc...), not worth the investment of fix for Antarctic where there's only 1 person getting stuck in the registration. For example a column in Excel named Worth looking at? =IF(AND(G41>100, H41< 40%), TRUE, FALSE) - that is enough volume and bad performing, then label with True.
 - Play around with the breakdowns, try combining in different orders, find generalizations, example mobile vs non-mobile users, instead of looking at operating systems list (in case they are significant enough). Find the simplest breakdown possible to find strong signal, look to simplify. End up with a couple of high level dimensions, containing only a few values (mobile vs non-mobile and natural vs paid search, for example).
 - Choose dimensions and the way to analyze them on the way they can be acted upon, example android failing to register will mean a fix in the android dedicated web flow. For a bad performing referrer domain maybe makes more sense to pick up only the very successful ones and try to incentive those more, the bad performing ones, nothing much can be fixed there. - varies a lot on situation.
 
+## Data Cleaning: Fill in missing values
 
+Python and Pandas:
+
+You may use reindex() method of DataFrame:
+
+	x = pd.date_range('2013-01-01','2013-01-07',freq='D')
+	y = range(7)
+	df=pd.DataFrame(index=x,data=y,columns=['value'])
+
+To add missing days (like holidays) you need to reindex it:
+
+	x2= pd.date_range('2013-01-01','2013-01-07',freq='4H')
+	df2=df.reindex(x2)
+
+Then you may fill the gaps in values using interpolate() method of Series (different interpolation methods are available):
+
+	df2.value=df2.value.interpolate(method='linear')
+
+Reference: 
+http://stackoverflow.com/questions/20240749/pandas-dataframe-interpolating-missing-days
 
 
 ## Tools
 
 > Choose best tool for the job
 
-Excel is the notepad for data, great for a quick look, quick chart, prototype, final UI for a ad-hoc analysis, mostly used for EDA phase. Handles well small dashboards and reports, and some data manipulation, but from a certain size/complexity starts getting too time consuming and better to move on to next tool.
+**Excel** is the notepad for data, great for a quick look, quick chart, prototype, final UI for a ad-hoc analysis, mostly used for EDA phase. Handles well small dashboards and reports, and some data manipulation, but from a certain size/complexity starts getting too time consuming and better to move on to next tool.
 
-Python, is great on data ETL, data automation, handles building a data product with increasing complexity and size (as opposed to Excel) but also not too bad for EDA, especially with IPython.
+**Python**, is great on data ETL, data automation, handles building a data product with increasing complexity and size (as opposed to Excel) but also not too bad for EDA, especially with IPython.
 Fully automated dashboard that creates and html report, sends email to people, runs in a server by itself, with very low maintenance.
 Allows reproducible data analysis.
 Might miss all the absolute latest most complex machine learning algorithms.
 
-R is the most complete statistical and machine learning algorithm collection available (?). Better for running algorithms that do a specific thing, not to good to build complex automations and logic on top (compared to python).
+**R** is the most complete statistical and machine learning algorithm collection available (?). Better for running algorithms that do a specific thing, not to good to build complex automations and logic on top (compared to python).
