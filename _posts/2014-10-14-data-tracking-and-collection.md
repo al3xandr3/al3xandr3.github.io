@@ -98,7 +98,7 @@ Some care should go into adding Telemetry.
 
 ### URL get/post (includes Javascript telemetry)
 
-Here i include Javascript and other telemetries mechanisms that work by doing a post/get request to a url with data parameters.
+Here i include Javascript and other telemetries mechanisms that work by doing a post/get request to a url with data as parameters.
 A very common one is javascript in web analytics.
 
 **Caveats** 
@@ -122,7 +122,7 @@ Google, for their search engine, as a need to be able to handle massive data, cr
 Hadoop is the outside-of-google same approach of that technology.
 
 More recently Google created a 2nd tool called dremmel, that is faster and better for data analysis EDA. Supports SQL natively.
-It also exists a a online service from Google, called the BigQuery.
+It also exists as an online service from Google, called the BigQuery.
 
 
 
