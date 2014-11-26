@@ -217,29 +217,7 @@ Reference:
 ### I want to
 Get an idea on the dispersion of the data, what values are more common, what values are outliers.
 
-### Histogram
-
-Shows the distribution of the data, what are the most (and least) frequent values
-
-https://www.youtube.com/watch?v=asEuFvWGJDs
-
-Prepared Excel: [histogram.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyQTMtZzJRc0U2OHc/view?usp=sharing)
-
-### Boxplot
-
-Good for
-- Check if distribution is symmetrical around the average.
-- Inspect data for Outliers.
-
-https://www.youtube.com/watch?v=DNpvSg2X0xQ
-https://www.youtube.com/watch?v=ZFbPnwKwVWk
-
-Prepared Excel: [boxplot.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJydnNqaU1KUVNIVkU/view?usp=sharing)
-
-Boxplot also is very useful when comparing 2 data sets directly:
-
-Here is an excel with 2 box plot side by side: [boxplot2.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJySlllN05ZNFJuZFk/view?usp=sharing)
-
+See chart type Histogram and Boxplot from: http://al3xandr3.github.io/data-visualization-techniques.html
 
 
 
@@ -289,6 +267,10 @@ This is also useful to pin down performance problems or even outliers.
 - Discard dimensions values lower than a significant volume (rows of a dimension, keep only the top 100, or 1k, etc...), not worth the investment of fix for Antarctic where there's only 1 person getting stuck in the registration. For example a column in Excel named Worth looking at? =IF(AND(G41>100, H41< 40%), TRUE, FALSE) - that is enough volume and bad performing, then label with True.
 - Play around with the breakdowns, try combining in different orders, find generalizations, example mobile vs non-mobile users, instead of looking at operating systems list (in case they are significant enough). Find the simplest breakdown possible to find strong signal, look to simplify. End up with a couple of high level dimensions, containing only a few values (mobile vs non-mobile and natural vs paid search, for example).
 - Choose dimensions and the way to analyze them on the way they can be acted upon, example android failing to register will mean a fix in the android dedicated web flow. For a bad performing referrer domain maybe makes more sense to pick up only the very successful ones and try to incentive those more, the bad performing ones, nothing much can be fixed there. - varies a lot on situation.
+
+
+
+
 
 ## Data Cleaning: Fill in missing values
 
