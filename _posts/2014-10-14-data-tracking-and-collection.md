@@ -18,9 +18,7 @@ Therefore, each organization will have the need to:
 - Put in place the telemetry that can measure and capture data.
 - Reconcile and aggregate all the data points into a consumable format.
 
-Once the data is in a consumable format, analysts can then start querying the data and revealing insights of reality that better inform the organization future strategies/actions.
-
-Here i have a small intro to those systems.
+Once the data from several sources is in a consumable format, analysts can then start querying the data and revealing insights of the reality that better inform the organization future strategies/actions.
 
 ## Data repositories
 
@@ -32,7 +30,7 @@ Here i have a small intro to those systems.
 
 **Data Analysis repositories**
 
-Then for the purposes of doing analysis this production systems data is then collected, cleaned and aggregated into separate data repositories that are optimized for analysis work, that can generate reports automatically, navigate data more easily, simplified and aggregated data that is more easily consumable.
+Then for the purposes of doing analysis this production systems data is then collected, cleaned and aggregated into a separate data repository optimized for analysis work, that can generate reports automatically, navigate data more easily, i.e simplified and aggregated data that is more easily consumable.
 
 
 ### Dedicated Analytics Telemetry & Collection
@@ -40,8 +38,7 @@ Then for the purposes of doing analysis this production systems data is then col
 Increasingly more common is to have also a dedicated telemetry and collection system that are placed explicitly in the "critical" points we need and that captures the exact data we define.
 This allows for more specific data measuring, and makes available data that does not exist from default systems (or is too cumbersome to use). 
 
-It requires somewhat more effort from the organization: add the 
-telemetry to product (into the critical points), have extra mechanisms and support to handle telemetry and data collection systems.
+It requires somewhat more effort from the organization: add the telemetry to product (into the critical points), have extra mechanisms and support to handle telemetry and data collection systems.
 
 
 **Dedicated vs default, what to choose ?**
@@ -54,7 +51,7 @@ UI Click-stream data is "the" typical dataset that requires dedicated telemetry 
 ## Data structures
 
 The industry standard for data representation is a table, in .csv or very often a relational database table. Recent formats also include key->value paradigm (JSON, Hadoop).
-For consumable data, the relational table format seems to still persist as the most successful one (hint: Hive on top of Hadoop). But this is a continuously moving landscape.
+For consumable data, the relational table format seems to still persist as the most successful one (hint: Hive on top of Hadoop).
 
 
 ## Realtime vs non-Realtime

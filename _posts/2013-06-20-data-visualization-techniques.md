@@ -20,6 +20,9 @@ To be really actionable they need to have:
 1. Recommendations for Action. - What to do next
 1.  Business Impact. - What happens if we-don't-act / we-act
 
+They should tie to the outcomes of the business. (Increase revenue, Increase customer loyalty, Reduce costs, Increase user count, etc...)
+
+
 ### Reference:
 
 - http://www.kaushik.net/avinash/digital-dashboards-strategic-tactical-best-practices-tips-examples/#comment-682950

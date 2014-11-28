@@ -9,6 +9,10 @@ sidebar: "<h4>my <a href='https://twitter.com/al3xandr3'>twitter</a></h4>"
 
 ## 2014
 
+<blockquote data-day="2014-11-26">
+Internet makes business world wide. Your potential client size has just exploded. Even small niche business can have enough clients wordwide to support it.
+</blockquote>
+
 <blockquote data-day="2014-09-29">
 How well each does for himself in adapting to his social environment is not the same thing as how satisfactory a social environment they collectively create for themselves. (@ Thomas Schelling)
 </blockquote>

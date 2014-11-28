@@ -12,9 +12,11 @@ intro: "Data Analysis Introduction"
 
 **1. End Goal: Improve something**
 
-e.g. a business process, a strategy in a company, government, health
+In business: increase revenue, customer loyalty, reduce costs, increase user count, avoid fraud.
+In government: increase business creation, reduce tax invasion, identify terrorism beforehand.
+Health: avoid diseases, prolong lifespan, increase general well being.
 
-skills: domain knowledge(digital marketing, company processes), ask big scope questions to distill what is important (what is the purpose of this? What happens if we don't have it?)
+skills: domain knowledge(digital marketing, business internals), ask big scope questions to distill what is important: what is the purpose of this? What happens if we don't have it?
 
 **2. By doing something new / different**
 
@@ -377,6 +379,9 @@ Iterate
 
 ### AB testing
 
+Hypothesize how to make to make it better, ab test it.
+Assist product changes by ab testing it, and measuring its consequences...
+
 - A/B testing: comparing version A vs version B.
 - A/A test technique: comparing a test against itself, expect that values match. Should be made several times to get the distribution chart. - A bit like the simulations idea.
 
@@ -443,10 +448,11 @@ A tool for Improving a web site activities by doing better “Informed” decisi
 
 #### Used on
 
-- Digital Marketing - ROI from marketing online campaigns (original use ?)
-- Understanding User Engagement – how many users, what's happening overtime. Are users - getting stuck in payment flow ? What step of the payment flow.
-- Front End Optimization – finding the ideal layout, messaging, ideal page flow, conversion - buttons. (A/B testing)
-- “Informed” Change – I want to change my site, what's the impact ? 
+- Digital Marketing - ROI from marketing online campaigns.
+- Understanding User Engagement – How many users, is site growing, do users keep coming back (a proxy for user loyalty).
+- Front End Optimization – Finding the ideal layout, messaging, page flow, conversion buttons. (A/B testing)
+- “Informed” Change – I need/want to change the site, what's going to be the impact ? 
+- eCommerce - Optimize the online payment flow, find where users are getting stuck (keep an eye on mobile users), how to improve it further to increase conversions.
 
 #### Digital Marketing
 
@@ -457,14 +463,21 @@ A tool for Improving a web site activities by doing better “Informed” decisi
 Who uses my product? And how?
 Use the audience data into next iterations of my product, to target it better:
 
-- Why have site in 30 languages if most of the interest is from US anyway?
 - Where do users drop off from my site? Is it a broken link? Bad messaging? Non working form ?
 - Do I need to support old browsers ?
 - What browsers should my QA process test on ?
-- What screen size can I develop my app for ?
+- What screen size should I develop my app for ?
 - Is the interest growing over time ? (traffic volume)
 - How are users reaching the site? brand search? are they looking for something specific? are the search traffic trends changing over time? should the site adapt to reflect the users searches?
-- Etc …
+- etc...
+
+#### eCommerce
+
+Money is the #1 of any business, the web pages that support this process are central to it, and should get a good amount of attention.
+
+Couple of idea to explore:
+- Look into the visitor days-to-purchase metric change when changing prices, probably it grows bigger.
+- If days-to-purchase are very big then means, users could be better informed up front. Make site better and measure again.
 
 #### Optimization - Data Driven Change
 
