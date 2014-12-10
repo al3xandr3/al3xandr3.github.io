@@ -30,13 +30,16 @@ Reference:
 - http://en.wikipedia.org/wiki/Song_structure_(popular_music)
 
 
+
 ## Setup for recording
 
 ### Audio Settings
+
 - File recording: all uncompressed
 - 48,000Hz, 24bit, 128 (less if possible) buffer size.
 
 ### Recording Raw
+
 Recording unprocessed instrument is the most flexible for audio mastering editing. All the processing then happens in software plug-ins on top of already recorded instrument.
 See re-amping.
 
@@ -47,20 +50,22 @@ See re-amping.
 
 ### Widening
 
-Best to record to 2 tracks with the same part, then pan (80-95%) one right and the other one left.
-This produces an a wider sound, less central and more stereo spread.
-Some people do even 4 recordings for an even bigger effect.
+- Record the same part 2 times into different tracks and pan one to right and the other one to left (80-95%). The very small differences in playing makes them sound big. But only sounds good if they are really close.
+- Record this with different sounds, different amplifier/cabinet combination.
 
-### Fake Widening 
+This produces an a wider sound, less central and more stereo spread and bigger sound in general.
+Some people even 4 recordings for an even bigger effect.
 
-Use a stereo widening plug-in that adds a delay to either right of left channel to simulate space, and give a wider stereo sound. (http://www.kvraudio.com/product/adt_by_vacuumsound)
 
 #### (Fake) stereo with a delay
-Delay one channel (either left or right) by about 20-30 ms, this will produce a wide stereo effect.
-Similar to what happens in reality that a sound reflecting on a wall  reaches the other ear a few milliseconds after.
+
+- Delay one channel (either left or right) by about 20-30 ms, this will produce a wide stereo effect. Similar to what happens in reality that a sound reflecting on a wall  reaches the other ear a few milliseconds after.
 
 
-### EQ'ing
+- Use a stereo widening plug-in that adds a delay to either right of left channel to simulate space, and give a wider stereo sound. (http://www.kvraudio.com/product/adt_by_vacuumsound)
+
+
+### Mixing EQ
 
 Guitars especially with distortion tend to fill in a wide spectrum, so the idea in EQ'ing guitars is all about subtracting: 
 
@@ -76,12 +81,11 @@ Alternatively this can be done with a Multi-band compressor, for a more adaptive
 
 Is easy for the Solo to get muddy when added on top of existing tracks of the same instrument (or the same frequency range).
 
-Automate in DAW the lowering of the volume of the already recorded instruments of the same frequency range, when doing the solo, this helps the solo to stand out, example, lower the volume of the rhythm guitars parts when doing the guitar solo. Fairly easy to do in a DAW as a audio mastering technique.
-Leave the rest of the instruments at the same level.
-
-An alternative and maybe more intuitive is to increase volume of solo instrument, but this does not always work.
+- Automate in DAW the lowering of the volume of the already recorded instruments of the same frequency range, when doing the solo, this helps the solo to stand out, example, lower the volume of the rhythm guitars parts when doing the guitar solo. Fairly easy to do in a DAW as a audio mastering technique. Leave the rest of the instruments at the same level.
+- Punch holes in the frequency range of song, to open up space for the soloing instrument. Find the frequency the soloing instrument uses and then compress those in the rest of the mix.
 
 ### Mastering (Guitar)
+
 - Compression
 - Saturation
 - Chorus & Delay, a light chorus can make guitar sound fatter, fuller, add delay to taste.
@@ -93,15 +97,19 @@ An alternative and maybe more intuitive is to increase volume of solo instrument
 Accentuate the effect of music from one section to other, or to make a more natural transition.
 
 ### Brief Mute
+
 Right before a heavy hitting section mute completely for a few  milliseconds (on the previous section), it accentuates the hit of the heavy section.
 
 ### Volume roll in
+
 To make a transition from quiet to loud dense sections, a good trick is to make the volume of the dense section, start low (at same level of quiet part) and raise up progressively to full. Start to end fairly quick, 1 sec max ?
 
 ### Stutter Effect
+
 Gaps in audio in fast rhythmic intervals
 
 ### Tape slow down and speed up
+
 Simulating a slow down like a old Cassette player loosing their batteries ?
 
 
@@ -114,9 +122,11 @@ Use delay between (80-90ms), like left:80ms, rigth:90ms, with left right crossov
 ### Mastering (Whole Mix)
 
 - Compression
-  - Feathering Technique
+  - Feathering Technique: a sequence of light compression is sometimes better than a single strong compression.
 
-- Saturation
+- Saturation: existed in analog devices, and our ears are so used to hear. Often used to make a somewhat sterile (all computer based) recording sound more realistic. Light saturation.
+
+
 
 
 
@@ -138,3 +148,4 @@ I want to convert the final audio or video into different formats, for different
 - Video (FFmpeg encoder) MKV container
 - HUFFYUV video codec, 24 bit PCM audio
 - Set: "Get native video settings"
+
