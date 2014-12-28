@@ -1,2 +1,2 @@
-cd C:\Users\amatos\Dropbox\my\blog
+cd %UserProfile%\Dropbox\my\blog
 rake 

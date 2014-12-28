@@ -149,3 +149,10 @@ I want to convert the final audio or video into different formats, for different
 - HUFFYUV video codec, 24 bit PCM audio
 - Set: "Get native video settings"
 
+## Sound Quality Characteristics
+
+### Overdrive, Distortion, Fuzz
+
+
+- Rat: drive up to half, more than that starts to loose definition. To get more gain, use a cleaner (low drive) tube screamer to push it.
+- OCD should be more used as overdrive, too much drive start to loose definition. Works great with a BBpreamp pushing it.

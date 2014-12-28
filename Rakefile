@@ -17,3 +17,12 @@ task :ci do
   system "git commit -a -m \"#{message}\""
   system "git push"
 end
+
+## to install gems needed for run jekyll in local PC
+# rake install
+desc "install"
+task :install do
+	system "gem install bundler"
+	system "gem 'github-pages'"
+	system "bundle install"
+end
