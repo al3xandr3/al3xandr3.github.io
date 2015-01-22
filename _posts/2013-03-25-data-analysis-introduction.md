@@ -34,7 +34,7 @@ skills: Be curious, play around, make observations, question a lot, distill what
   
 skills: visualization, communication, rhetoric, human behavior
   
-**5. (An Insight) That was analysed in a correct way**
+**5. (An Insight) That was analyzed in a correct way**
 
 skills: statistics, probabilities, counting, estimating, correlation, regression, modeling, etc...
 
@@ -45,21 +45,12 @@ skills: SQL, programming, google analytics, databases, etc...
 Particularly in big organizations, that have many moving parts (variables) it can be very hard / impossible to predict the impact of a change. Very often the organization current status is a result of random lucky / unlucky events (and often external) at the right / wrong time. Typically the process of change(improvement) is a sequence of trial and errors until a change works out. So, instead of choosing changes "blindly", data analysis can help with narrowing down the search space of potential choices and in focusing efforts in the right direction.
 
 
-> "What is the truth?" is an excelent rule of thumb to guide the data analysis practice.
+## How ?
+
+> "What is the truth?" is an excellent rule of thumb to guide the data analysis practice.
 
 
-
-
-
-
-
-## How?
-
-Given a certain problem, its all about using data to generate new knowledge, that adresses the given problem.
-
-### Tasks
-
-In practice the data analyst tasks are:
+### Data Analysis top level typical tasks
 
 - Revealing the facts, knowledge not known before.
 - Optimization, once you know the facts you try to optimize them, AB testing. (the hypothesis are domain specific).
@@ -69,9 +60,7 @@ In practice the data analyst tasks are:
 - Telling a Story, communicating the findings and recommendations.
 
 
-### The Data Analysis Stack
-
-Data Stack: Collecting data, Finding insights and then telling a good story around it.
+### Typical flow of an Analysis piece
 
 1. Collecting data: requires a mix of technical and analytical: by knowing comprehensively the technical details of how tool works, designing a instrumentation solution to allow useful analysis.
 3. Finding Insights: Look into the data, explore, identify trends, find the  most interesting actionable bits.
@@ -85,21 +74,24 @@ The output of this work is a report. That either:
 
 ### In an Organization
 
-  1. Learn the domain and ecosystem: activities exist, what products, what are the end goals:   usage, money, user count, downloads, etc...
-  
-  2. Who are the stakeholders, that can act on recommendations, and their understanding on   stats.
-  
-  3. Define the metrics framework and the KPIs. What indicators are important to keep an eye   on.
-  
-  3.1. Be curious with the data, ask good questions, explore ideas, correlations.
-  
-  4. Data 1st step: Build a daily / weekly report, with what happened. With drill-down levels:   level.1: sales change. level.2: what products changed the most. level.3: what countries sales   changed more, etc... (Level.1 some say should be up to 3 KPIs mac). (this exercise might also   reveal gaps with data infrastructure)
-  
-  5. Data 2nd step: Actionable insights(recommendations) for each stakeholder. Guidance, and   this will vary by stakeholder role.
-  
-  5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
-  
-  5.2. Prediction Models can help see where we headed.
+Most often the data analysis work takes places in specific context within an organization.
+That requires a couple of specific initiatives to best make it work:
+
+1. Learn the domain and ecosystem: activities exist, what products, what are the end goals:   usage, money, user count, downloads, etc...
+
+2. Who are the stakeholders, that can act on recommendations, and their understanding on   stats.
+
+3. Define the metrics framework and the KPIs. What indicators are important to keep an eye   on.
+
+3.1. Be curious with the data, ask good questions, explore ideas, correlations.
+
+4. Data 1st step: Build a daily / weekly report, with what happened. With drill-down levels:   level.1: sales change. level.2: what products changed the most. level.3: what countries sales   changed more, etc... (Level.1 some say should be up to 3 KPIs mac). (this exercise might also   reveal gaps with data infrastructure)
+
+5. Data 2nd step: Actionable insights(recommendations) for each stakeholder. Guidance, and   this will vary by stakeholder role.
+
+5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
+
+5.2. Prediction Models can help see where we headed.
   
 
 
@@ -172,7 +164,7 @@ Then use standard confidence intervals calculation to check if that relation has
 
 ### Time Series
 
-Time series, is a bivariable (2 variables) representation with a couple added properties.
+Time series, is a bi-variable (2 variables) representation with a couple added properties.
 
 Components of time series: trend, seasonality, noise, other ( missing values, outliers, etc...)
 
@@ -217,223 +209,24 @@ http://www.gregreda.com/2014/03/23/principles-of-good-data-analysis/
 
 
 
-## Telling Stories with Data
-
-summarizing / compacting data into a easy digestible format.
-
-### Presentation
-
-> Tip:
-Sugarcoating and eye candy can make the good great, but it won't help a 
-poor insight.
-
-> Tip:
-Is said that a bar and line charts can cover almost anything needed to be visualized, it has less impact as a visually stunning infographic, but with about the same representation value and quicker to get done.
-
-> Tip:
-Viz aesthetics: chart standout the important elements, lighten in color, the less important ones.
-
-> Tools:
-Excel, R (ggplot2), D3.js
-
-### KPI's
-
-> Beware of the KPI rabbit hole: KPIs are incentives, and is fairly impossible to predict fully all effects of an incentive up front. Thus too narrow focus, especially on single KPIs can easily become counter-productive. => Use multiple KPIs, don't forget common sense.
-
-Examples
-
-- Price of digital media entertainment per hour - http://gigaom.com/2013/02/10/cost-per-hour-a-new-metric-for-paid-content/
-
-- Food price per kg - because package size varies, the price per kilogram is a clear way to compare prices across foods and packages sizes.
-
-### Reports
-
-> Tip:
-The "1 in every 45" is an intuitive way to display a ratio. (Odds notation)
-
-> Tip:
-Prefer conclusions from relative percentages, instead from absolute numbers. e.g. in a funnel traffic analysis, the absolute values of a drop-off step are going up, is tempting to infer immediate that drop-off is going up, but is not mandatory true. It could be because the overall input of traffic is also increasing and the drop-off rate is actually constant. Calculate relative percentage = drop-off / total.
-
-> Data Validation:
-Whenever an average value is presented and analysed, it should have a confidence measure (standard deviation for example, also confirm for normality)
-
-#### Recurring vs Ad-Hoc reports
-
-Recurring reports are fully automated, no need to touch them, the automation part is often tricky and imposes many limitation on the final report (visualizations, extra calculations, etc…). Recurring reports are often simpler than Ad-hoc ones.
-Ad-hoc's are a one time only, involve quite a bit of manual data calculations, but are the most flexible.
-
-A somewhat useful mixed solution is to do ad-hoc reports that are almost fully automated. Ex: just copy paste a table of data into one excel sheet and all rest of report updates by itself. 
-
-#### Dashboards
-
-reference: http://tomgermeau.com/2013/12/behind-the-scenes-of-a-dashboard-design/
-
-#### The Inspection View
-
-> Tip:
-Start with 1. Summary top view then allow for 2. Drill-Down view
-
-Often the important is the final rate of something, but when that rate drops massively then it requires investigation to understand why.
-So in parallel of the view (chart, table) of the total rate is probably good idea to also have a view of several points that participate on that total flow, the inspection view. When the Inspection view is setup then is very quick to quickly inspect what points changed that have influenced the final rate. In web analytics the inspection view is for example a view of the flow of pages that lead to a conversion, and having every point of that flow measured in a report view.
-
-#### Maps
-
-Maps are great tools, for a stats covering the whole world
-
-### An Ad-Hoc Analysis Task Checklist
-
-- **Before**
-  - What is the Macro of the activity? ex: a payment flow
-    - What is the goal of this analysis how it relates to the Macro?
-    ex: how users pay
-  - Understand how the tracking and data is collected: beware of data bias, data collected in duplicated, sessions, unique visits, etc...
-    - If is page flow, sometimes useful to visually layout the screen-shots and how tracking and page sequence happens.
-  - Define and agree with stakeholders what is the output & communicate the constrains / limitation / impediments.
-
-Macro - Identifying the Macro purpose of the data collected is key. What environment where data is from, how it was collected, if its from a web page, what does the page does, whats it purpose? etc...
-
-- **During**
-  - Final output short and simple as possible, 
-  - Clear clear clear(include screen-shots if needed), 
-  - Target an audience without any knowledge of the matter
-  - Report not everything, just the conclusion. optimal, just 1 chart / diagram or 1 table. Can have different levels of drill-down
-  - Hide the unhelpful data, think from final viewer pov. Remove the None's / empty values...
-  - The end audience don't care the amount of work, only if it addresses well or not their questions - no point of putting everything you found on the output.
-  - Simple correct English
-  - Simple graphs
-  - Put it into perspective / compare with similar / total
-  - Point out: trends, outliers, counter-intuitive facts
-
-- **After**
-  - Is the output answering the original question properly? Is it really contributing to something ?
-  - What have we learned?
-  - Have an opinion / recommendation - having an opinion means the numbers are understood well enough, and you can see what should be next steps.
-  - Beware of short term data view, zoom out to get whole picture, example: a week worth of data might not be telling the whole story.
-  - Work out ways to validate / test numbers - often different points of view on same data ofter reveals gaps
-  - Predict whats going to happen - from deep understanding
 
 
-### How to Lie with statistics
-(And how to identify we're being lied to with statistics)
 
-- A too precise average statistic is suspicious, normally, there's some decimal points.
-- Average can be a mean, a mode or a median
-- Testing, guarantee an adequate sample size. To lie just use small sample size and try many times, eventually one group will show a good result. 
-- Charts without axis labels and numbering are meaningless. 
 
-- Common sense is required while reading numbers, nevertheless. But is better assume reader wont really know.
 
-- Average of rates is not same as rates of averages, avoid the 1st.
 
-*Reference*
-
-- Book: how to lie with statistics
-- http://mathwithbaddrawings.com/2013/12/02/headlines-from-a-mathematically-literate-world/
 
 
 
 ## Modeling
 
-A representation of an existing behaviour. Never perfect, but an atempt to be close.
-Can then be used to perdict future behaviour.
+A representation of an existing behavior. Never perfect, but an attempt to be close.
+Can then be used to predict future behavior.
 Also to be used for optimization.
 
 ### Statistical distributions
 
 a distribution is a way to summarize a dataset.
-
-### Simulations
-
-This is a great way to test out models / hyphothesis / behaviour by generating random and (on purpose) biased data to test, evaluate formulas, algorithms, theories.
-And this is something that computers are great at, and that a few years ago was not possible to do.
-
-This also allows for optimization, plot the convergence over time, see if possible to make the algol converge faster, plot the simulation progression over time.
-
-
-
-
-## Optimization
-
-### Optimization Process
- 
-Baseline - where you are now?
-
-- what KPI’s are important to look at given the goal? Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What do i need to look at to know the end goal is improving?
-- Do I have this data ? Need to add more instrumentation ?
-- Setup reports / dashboards
-
-Formulate hypothesis on what to change to get to the goal
-
-- play with the data, to came up with theories and hypothesis to test, try correlations, plot, visualize, from different angles, maybe use also external data if possible
-
-Test (A/B test)
-
-- do a change and see its impact on the KPI’s.
-- output a story, communicate, put in slides if needed, the results
-
-Iterate
-
-- Go back to Baseline and start again.  We using the right KPI’s ? (often the 1st ones are not great)
-- more hypothesis, more tests (once in a while might find something worthwhile … )
-
-
-### AB testing
-
-Hypothesize how to make to make it better, ab test it.
-Assist product changes by ab testing it, and measuring its consequences...
-
-- A/B testing: comparing version A vs version B.
-- A/A test technique: comparing a test against itself, expect that values match. Should be made several times to get the distribution chart. - A bit like the simulations idea.
-
-reference: sample sizes http://camdp.com/blogs/number-samples-needed-b-test
-
-### Intelligent Agents Model
-
-Amazingly, Optimization, AB & Multivariate Testing, Behavioral Targeting, Attribution, Predictive Analytics, … can all be recast as components of a simple, yet powerful framework borrowed from the field of Artificial Intelligence, the intelligent agent.
-
-#### Artificial inteliigence Optimization Process
-
-The goals are what the agent wants to achieve, what it is striving to do.
-
-When the agent achieves a goal, it gets a reward based on the value of the goal. 
-
-Given that the agent has a set of goals and allowable actions, the agent’s task is to learn what actions to take given its observations of the environment – so what it ‘sees’, ‘hears’, ‘feels’, etc...  Assuming the agent is trying to maximize the total value of its goals over time, then it needs to select the action that maximizes this value, based on its observations.
-
-So how does the agent determine how to act based on what it observes? The agent accomplishes this by taking the following basic steps:
-
-1. Observe the environment to determine its current situation. You can think of this as data collection.
-
-2. Refer to its internal model of the environment to select an action from the collection of allowable actions.
-
-3. Take an action.
-
-4. Observe of the environment again to determine its new situation. So, another round of data collection.
-
-5. Evaluate the ‘goodness’ of its new situation – did it reach a goal, if not, does it seem closer or further away from reaching a goal then before it took the past action.
-
-6. Update its internal model on how taking that action ‘moved’ it in the environment and if it helped it get or get closer to a goal. This is the learning step.
-
-By repeating this process, the agent’s internal model of how the environment responses to each action continuously improves and better approximates each actions actual impact.
-
-Reference: http://conductrics.com/intelligent-agents-ab-testing-user-targeting-and-predictive-analytics/
-
-
-
-
-## Tools
-
-> Tool is just the means to an end choose the best tool for the job at hand.
-
-Excel - excelent prototyping tool, analysis, EDA, almost all can be done with it ? (Data Smart book)
-
-Python - Automate things into production / products
-
-R - Run the most starte of the art, gold standard algorithms
-
-
-
-
-
 
 
 ## Disciplines
@@ -486,8 +279,6 @@ Couple of idea to explore:
 - Having a trusted logo on the credit card capture page improving sales ?
 - What is a better messaging for the site to use ?
 - Bigger Buttons ? Color of buttons, placement of the buttons, etc…
-
-
 
 ### Machine learning
 

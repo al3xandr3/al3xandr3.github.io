@@ -90,6 +90,16 @@ Hints:
  - Can be useful to work backwards from the solution to find what is needed.
  - Simulate end user interaction with the mockup solution, see if it works.
 
+#### KPI's
+
+> Beware of the KPI rabbit hole: KPIs are incentives, and is fairly impossible to predict fully all effects of an incentive up front. Thus too narrow focus, especially on single KPIs can easily become counter-productive. => Use multiple KPIs, don't forget common sense.
+
+Examples:
+
+- Price of digital media entertainment per hour - http://gigaom.com/2013/02/10/cost-per-hour-a-new-metric-for-paid-content/
+- Food price per kg - because package size varies, the price per kilogram is a clear way to compare prices across foods and packages sizes.
+
+
 
 ### Outcome
 

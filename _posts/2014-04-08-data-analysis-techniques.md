@@ -221,9 +221,21 @@ See chart type Histogram and Boxplot from: http://al3xandr3.github.io/data-visua
 
 
 
+
+
+
+
+
+
+
 ## Simulations
 
-Simulate the behavior, this can be useful for: 
+This is a great way to test out models / hypothesis / behavior by generating random and (on purpose) biased data to test, evaluate formulas, algorithms, theories.
+And this is something that computers are great at, and that a few years ago was not possible to do.
+
+This also allows for optimization, plot the convergence over time, see if possible to make the algol converge faster, plot the simulation progression over time.
+
+Specifically, can be useful for: 
 
 - Generate random data
 - Try to guess what should it look like.
@@ -243,6 +255,15 @@ Python Code: [simulate.py](http://github.com/al3xandr3/python/blob/master/simula
 
 
 http://en.wikipedia.org/wiki/Resampling_(statistics)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -272,6 +293,11 @@ This is also useful to pin down performance problems or even outliers.
 
 
 
+
+
+
+
+
 ## Data Cleaning: Fill in missing values
 
 Python and Pandas:
@@ -295,9 +321,98 @@ Reference:
 http://stackoverflow.com/questions/20240749/pandas-dataframe-interpolating-missing-days
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Optimization
+
+### Optimization Process
+ 
+Baseline - where you are now?
+
+- what KPI’s are important to look at given the goal? Learn the domain, ask the big scope questions: what is the purpose of this? Why this exists? What do i need to look at to know the end goal is improving?
+- Do I have this data ? Need to add more instrumentation ?
+- Setup reports / dashboards
+
+Formulate hypothesis on what to change to get to the goal
+
+- play with the data, to came up with theories and hypothesis to test, try correlations, plot, visualize, from different angles, maybe use also external data if possible
+
+Test (A/B test)
+
+- do a change and see its impact on the KPI’s.
+- output a story, communicate, put in slides if needed, the results
+
+Iterate
+
+- Go back to Baseline and start again.  We using the right KPI’s ? (often the 1st ones are not great)
+- more hypothesis, more tests (once in a while might find something worthwhile … )
+
+
+### AB testing
+
+Hypothesize how to make to make it better, ab test it.
+Assist product changes by ab testing it, and measuring its consequences...
+
+- A/B testing: comparing version A vs version B.
+- A/A test technique: comparing a test against itself, expect that values match. Should be made several times to get the distribution chart. - A bit like the simulations idea.
+
+reference: sample sizes http://camdp.com/blogs/number-samples-needed-b-test
+
+### Intelligent Agents Model
+
+Amazingly, Optimization, AB & Multivariate Testing, Behavioral Targeting, Attribution, Predictive Analytics, … can all be recast as components of a simple, yet powerful framework borrowed from the field of Artificial Intelligence, the intelligent agent.
+
+#### Artificial inteliigence Optimization Process
+
+The goals are what the agent wants to achieve, what it is striving to do.
+
+When the agent achieves a goal, it gets a reward based on the value of the goal. 
+
+Given that the agent has a set of goals and allowable actions, the agent’s task is to learn what actions to take given its observations of the environment – so what it ‘sees’, ‘hears’, ‘feels’, etc...  Assuming the agent is trying to maximize the total value of its goals over time, then it needs to select the action that maximizes this value, based on its observations.
+
+So how does the agent determine how to act based on what it observes? The agent accomplishes this by taking the following basic steps:
+
+1. Observe the environment to determine its current situation. You can think of this as data collection.
+
+2. Refer to its internal model of the environment to select an action from the collection of allowable actions.
+
+3. Take an action.
+
+4. Observe of the environment again to determine its new situation. So, another round of data collection.
+
+5. Evaluate the ‘goodness’ of its new situation – did it reach a goal, if not, does it seem closer or further away from reaching a goal then before it took the past action.
+
+6. Update its internal model on how taking that action ‘moved’ it in the environment and if it helped it get or get closer to a goal. This is the learning step.
+
+By repeating this process, the agent’s internal model of how the environment responses to each action continuously improves and better approximates each actions actual impact.
+
+Reference: http://conductrics.com/intelligent-agents-ab-testing-user-targeting-and-predictive-analytics/
+
+
+
+
+
+
+
+
+
+
+
+
 ## Tools
 
-> Choose best tool for the job
+> Tool is just the means to an end choose the best tool for the job at hand.
 
 **Excel** is the notepad for data, great for a quick look, quick chart, prototype, final UI for a ad-hoc analysis, mostly used for EDA phase. Handles well small dashboards and reports, and some data manipulation, but from a certain size/complexity starts getting too time consuming and better to move on to next tool.
 
@@ -307,3 +422,5 @@ Allows reproducible data analysis.
 Might miss all the absolute latest most complex machine learning algorithms.
 
 **R** is the most complete statistical and machine learning algorithm collection available (?). Better for running algorithms that do a specific thing, not to good to build complex automations and logic on top (compared to python).
+
+
