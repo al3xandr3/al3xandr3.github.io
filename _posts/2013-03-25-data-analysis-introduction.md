@@ -132,8 +132,6 @@ When having a problem to get the data, maybe there's a different way to get to t
 > Getting Meaning:
 Is not the totals that matter the most, is instead the relative power they have. Prefer trends instead of absolute numbers. An absolute number is only meaningful when put in context (in a valid compassion).
 
-### Data Quality
-
 ### Understanding a measured value (1 variable)
 
  - Histogram, to see the distribution of the data. - check if normal distributed
