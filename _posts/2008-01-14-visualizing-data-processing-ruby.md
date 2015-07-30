@@ -42,9 +42,9 @@ possible, this will influence the way all design will be done. I had to repeat
 initial steps a couple of times as the visualization ideas developed, like re-
 agregating all the data and calculate new fields.
 
-So in an warehouse fashion lets choose the facts and dimensions:
+So in an warehouse fashion lets choose the measures and dimensions:
 
-Facts:
+measures:
 
  * number of vegetarians. 
 
@@ -53,7 +53,7 @@ Dimensions:
  * Time. 
  * Localization(country). 
 
-_facts:_ are generally numeric data that captures specific values.
+_measures:_ are generally numeric data that captures specific values.
 
 _dimensions:_ contain the reference information that gives each transaction
 its context. When dimensions are created they should be as enriched with most
