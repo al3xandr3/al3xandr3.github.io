@@ -69,12 +69,16 @@ Some people even 4 recordings for an even bigger effect.
 
 Guitars especially with distortion tend to fill in a wide spectrum, so the idea in EQ'ing guitars is all about subtracting: 
 
-- Clean the Low Thumps:  High-pass filter  <150 Hz
-- Clean the High Fizziness:  Low-pass filter   >5 KHz
-- 'Cardboard Zone': Band pass filter 500Hz - 800Hz
-- Muddy Lows: Band pass filter 300Hz - 500Hz - use to taste, these can contribute to muddiness, better used on very specific frequencies with a narrow band. 
+1. Don't pile up instruments in the same range. Instead assign each instrument its own frequency range (typically an octave per instrument).
+2. Apply high-pass filters to every single instrument. Shave off all the unnecesary bass frequencies below each sound.
+3. Sometimes overlapping instruments is innevitable (e.g. bassline and kick drum). To separate overlapping instruments, use 'inverted EQ': apply a boost and a cut to the first instrument. Then copy that same EQ to the second instrument, but invert it - where you boosted by 2db, now cut by 2db. And where you cut by 2db, now boost by 2db.
+4. Since all instruments overlap in the midrange, you can go through every instrument and cut slightly between the 200-500Hz range. This is a small effect on each instrument, but really adds up and results in a much cleaner mix.
 
 Alternatively this can be done with a Multi-band compressor, for a more adaptive 'fix'.
+
+#### Reference:
+
+- HOW TO CREATE A CLEAN MIX / ARRANGEMENT: https://www.youtube.com/watch?v=G8lFAaANnhs
 
 
 ### Soloing

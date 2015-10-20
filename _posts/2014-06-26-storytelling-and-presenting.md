@@ -1,29 +1,64 @@
 ---
 layout: post
-title: Presenting
+title: Storytelling and Presenting
 category: data
 tags:
   - data
   - presenting
-intro: "Structured Presenting"
+intro: "Structured Presenting and Storytelling"
 ---
 
-This documents, for my own reference, a training on how to do presentations.
+## Effective Communications and Storytelling 
 
-## Communications rely on 3 questions
+aka: The Minto Pyramid
+
+Good for "elevator pitch" also:
+
+- Start with the conclusion: "We should do this ...".
+- Breakdown the support points: "Because 1,2,3".
+- Organize / structure thoughts as a Hierarchical structure (aka one sided mind map)
+- Breakdown each of the support points again if needed "1 is true because of 1.1, 1.2 and 1.3", continue going down the hierarchy until no more questions appear.
+- Don't use more than 5 supporting points (ideally 3 really).
+- In fact before doing the conclusion is better to do a bit of context, using the "The Problem System" described bellow.
+
+### The hierarchical structure
+
+- Meta structures: 
+  - Cause & Effect: top is *effect* because of *cause 1,2,3*.
+  - Divide the whole into parts: top is *total* that is *composed by 1,2,3*.
+  - Classify: top is *animal kingdom* that is split into then *Mammals,Fish,Reptiles*.
+  - Logical Order, like time: top is *result* for that to happen then we need *1,2,3*.
+  - Questions, Why? How?: these are very common, they fit into previous classifications.
+  - Decision trees function in the same way.
+
+### Document using Hierarchical structure
+
+Top level is the main title, each subsequent level is a section, then subsection, etc...
+
+
+### Reference:
+- http://www.barbaraminto.com/
+- http://www.slideshare.net/shachihp/minto-pyramid-presentation
+
+
+
+
+## Presenting
+
+### Communications rely on 3 questions
 - What you want them to know ?
 - What you want them to do ?
-- How you want them to feel ? (emotional connection increases pontencial of message to stick)
+- How you want them to feel ? (emotional connection increases potentiality of message to stick)
 
 
-## BodyLanguage
+### BodyLanguage
 
 - Posture (Confident attitude):
   - Stern up (chest), even when sitting down 
 - Legs (stable solid position):
   - Feet a shoulder apart (see Obama, James Bond, etc..), even when sitting down
   - Don't move around, moving is associated with fleeing, beware of that.
-  - No strange positions and movements, bobby, bouncer, elvis knees (when sitting), etc...
+  - No strange positions and movements, bobby, bouncer, Elvis knees (when sitting), etc...
 - Arms:
   - BBC presenter hands.
   - Palms down - certainty, for sure, absolutely, decisive, conclusive. End of a negotiation.
@@ -40,7 +75,7 @@ Everyone will be a bit different and need to work on their weak spots.
 
 
 
-## Voice
+### Voice
 
 - Pitch
  - Avoid monotone voice, try keep some variation in voice.
@@ -61,11 +96,11 @@ Everyone will be a bit different and need to work on their weak spots.
 
 
 
-## Structured Presentations
+### Structured Presentations Systems
 
-### The Skeptical System
+#### The Skeptical System
 
-Works by answering tipical skeptical questions from audience, how expert presenter is in the matter (establishing credibility), whats in it for me, etc...
+Works by answering typical skeptical questions from audience, how expert presenter is in the matter (establishing credibility), whats in it for me, etc...
 
 Break the presentation in a sequence of 4 parts, answering the "skeptical" audience questions:
 
@@ -85,10 +120,10 @@ Break the presentation in a sequence of 4 parts, answering the "skeptical" audie
 To do the presentation, write a A4 paper separated into 4 areas, with the trigger words in each section, to guide the presentation.
 
 
-### The Problem System
+#### The Problem System
 
 Another way of structuring a presentation.
-This one is very often found in tv advertisement, even movies.
+This one is very often found in TV advertisement, even movies.
 Works by starting with creating the problem, create the need to be resolved and then serving the solution.
 
 - Problem
@@ -111,18 +146,18 @@ Works by starting with creating the problem, create the need to be resolved and 
 
 
 
-## During presentation
+### During presentation
 
 - Anchoring:
   - Associate common gestures or expressions with anchors, of bad vs good, that can be used later on.
-  - Energy balls. Left down is bad, right up is good. Presenter needs to mirror the audience, so presenter right=bad, left=good.
+  - Energy balls. Left down is bad, right up is good. Presenter needs to mirror the audience, so presenter right = bad, left = good.
 - Timeline: 
    - Hands moving left to right show timeline. Presenter needs to mirror audience.
 - Big and small
   - Open including all audience means big things. (like the gain from the solution)
   - 2 pinched fingers (thumb and index finger), means small meaningless cost.
 
-## Powerpoints
+### Powerpoints
 
 - The person is the central point of the presentation, not the powerpoint.
 - Don't just read what on the slide. (otherwise can just email the slides).
@@ -134,7 +169,7 @@ Works by starting with creating the problem, create the need to be resolved and 
 
 
 
-## Handling objections
+### Handling Objections
 
 - Empathize
  - I understand your problem

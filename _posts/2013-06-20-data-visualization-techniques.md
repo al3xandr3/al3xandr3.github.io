@@ -69,6 +69,12 @@ A somewhat useful mixed solution is to do ad-hoc reports that are almost fully a
 
 
 
+
+
+
+
+
+
 ## An Ad-Hoc Analysis Task Checklist
 
 - **Before**
@@ -103,23 +109,45 @@ Macro - Identifying the Macro purpose of the data collected is key. What environ
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## How to Lie with statistics
 
-And, more importantly, how to identify we're being lied to, with statistics
+And, more importantly, how to identify we're being lied to, with statistics.
+Take this with a grain of salt, they essencially should be look at like things to avoid doing.
 
 - A too precise average statistic is suspicious, normally, there's some decimal points.
 - Average can be a mean, a mode or a median
 - Testing, guarantee an adequate sample size. To lie just use small sample size and try many times, eventually one group will show a good result. 
 - Charts without axis labels and numbering are meaningless. 
-
 - Common sense is required while reading numbers, nevertheless. But is better assume reader wont really know.
-
 - Average of rates is not same as rates of averages, avoid the 1st.
 
 *Reference*
 
 - Book: how to lie with statistics
 - http://mathwithbaddrawings.com/2013/12/02/headlines-from-a-mathematically-literate-world/
+
+
+
+
+
+
+
 
 
 
@@ -192,6 +220,12 @@ etc...
 
 
 
+
+
+
+
+
+
 ## Put it into perspective, add context
 
 Lets say some process had a significant speed improvement, measure in milliseconds, for example the speed of a web page loading, sometimes just giving out the number might no be ideal, because is hard for an audience to fully grasp its significance, milliseconds are small and many people don't often manipulate them. 
@@ -202,6 +236,17 @@ Is often useful to put it into perspective.
 For example: "The speed improvement was in the same order as having Husein Bolt going instead at speed of a cheetah"
 
 Caveat: Be sure to make valid enough comparisons. Some things are just not the same.
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## On Rates
@@ -251,6 +296,17 @@ https://www.youtube.com/watch?v=asEuFvWGJDs
 Prepared Excel: [histogram.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyQTMtZzJRc0U2OHc/view?usp=sharing)
 
 
+
+
+
+
+
+
+
+
+
+
+
 ### Boxplot
 
 Good for
@@ -267,11 +323,32 @@ Boxplot also is very useful when comparing 2 data sets directly:
 Here is an excel with 2 box plot side by side: [boxplot2.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJySlllN05ZNFJuZFk/view?usp=sharing)
 
 
+
+
+
+
+
+
+
+
+
+
 ### Treemap
 
 Good to compare the size of a collection of items in 1 picture, easy understand their size, good to put it into perspective.
 
 Can build nice looking ones at http://infogr.am/
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Streamgraph
@@ -285,6 +362,13 @@ To build them:
 
 - http://research.microsoft.com/en-us/projects/msrdatavis/streamgraph.aspx
 - d3.js: http://bl.ocks.org/WillTurman/4631136
+
+
+
+
+
+
+
 
 
 ### Maps

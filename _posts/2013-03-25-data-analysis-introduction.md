@@ -74,26 +74,34 @@ The output of this work is a report. That either:
 
 ### In an Organization
 
-Most often the data analysis work takes places in specific context within an organization.
+What is a data job in an organization? it can have several applications, but the business Analytics goals:
+- Understand 'complete' reality of Biz and Product.
+- Be clear on what are the org goals. Always put data analysis into context of the org goals.
+- 'Learn not measure'. Pumping out dashboard does not translate directly into usefullness to company, we should always ask, what we learned, what can we do ?
+- Work on the things that might bring the most return to the company, the most important.
+
 That requires a couple of specific initiatives to best make it work:
 
 1. Learn the domain and ecosystem: activities exist, what products, what are the end goals:   usage, money, user count, downloads, etc...
 
 2. Who are the stakeholders, that can act on recommendations, and their understanding on   stats.
 
-3. Define the metrics framework and the KPIs. What indicators are important to keep an eye   on.
+3. Define the metrics framework and the KPIs. What indicators are important to keep an eye on. Based on the company goals.
 
 3.1. Be curious with the data, ask good questions, explore ideas, correlations.
 
-4. Data 1st step: Build a daily / weekly report, with what happened. With drill-down levels:   level.1: sales change. level.2: what products changed the most. level.3: what countries sales   changed more, etc... (Level.1 some say should be up to 3 KPIs mac). (this exercise might also   reveal gaps with data infrastructure)
+4. Data 1st step: Build a daily / weekly report, with what happened. With drill-down levels:   
+	- level.1: sales change
+	- level.2: what products changed the most
+	- level.3: what countries sales changed more, etc... (Level.1 some say should be up to 3 KPIs mac). (this exercise might also   reveal gaps with data infrastructure)
 
-5. Data 2nd step: Actionable insights(recommendations) for each stakeholder. Guidance, and   this will vary by stakeholder role.
+5. Data 2nd step: Actionable insights (recommendations) for each stakeholder. Guidance, and this will vary by stakeholder role.
 
 5.1. AB testing / Optimize - test changes and see how impact bottom line KPIs.
 
 5.2. Prediction Models can help see where we headed.
   
-
+Reference: http://www.analyticsvidhya.com/blog/2015/10/productivity-hacks-data-scientists-business-analysts/
 
 
 
