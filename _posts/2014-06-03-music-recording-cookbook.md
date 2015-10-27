@@ -65,7 +65,7 @@ Some people even 4 recordings for an even bigger effect.
 - Use a stereo widening plug-in that adds a delay to either right of left channel to simulate space, and give a wider stereo sound. (http://www.kvraudio.com/product/adt_by_vacuumsound)
 
 
-### Mixing EQ
+### Mixing
 
 Guitars especially with distortion tend to fill in a wide spectrum, so the idea in EQ'ing guitars is all about subtracting: 
 
@@ -81,18 +81,20 @@ Alternatively this can be done with a Multi-band compressor, for a more adaptive
 - HOW TO CREATE A CLEAN MIX / ARRANGEMENT: https://www.youtube.com/watch?v=G8lFAaANnhs
 
 
-### Soloing
-
-Is easy for the Solo to get muddy when added on top of existing tracks of the same instrument (or the same frequency range).
-
-- Automate in DAW the lowering of the volume of the already recorded instruments of the same frequency range, when doing the solo, this helps the solo to stand out, example, lower the volume of the rhythm guitars parts when doing the guitar solo. Fairly easy to do in a DAW as a audio mastering technique. Leave the rest of the instruments at the same level.
-- Punch holes in the frequency range of song, to open up space for the soloing instrument. Find the frequency the soloing instrument uses and then compress those in the rest of the mix.
-
 ### Mastering (Guitar)
 
 - Compression
 - Saturation
 - Chorus & Delay, a light chorus can make guitar sound fatter, fuller, add delay to taste.
+
+
+### Soloing
+
+Is easy for the Solo to get muddy when added on top of existing tracks of the same instrument (or the same frequency range).
+
+- Automate in DAW the lowering of the volume of the already recorded instruments of the same frequency range, when doing the solo, this helps the solo to stand out, example, lower the volume of the rhythm guitars parts when doing the guitar solo. Fairly easy to do in a DAW as a audio mastering technique. Leave the rest of the instruments at the same level.
+- Punch holes in the frequency range of song, to open up space for the soloing instrument. Find the frequency the soloing instrument uses and then compress those in the rest of the mix. Trick of the inverse EQ, mentioned in "Mixing" section
+
 
 
 
