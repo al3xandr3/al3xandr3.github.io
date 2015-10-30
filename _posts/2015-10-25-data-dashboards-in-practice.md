@@ -20,11 +20,13 @@ The Idea
 Transform: 
 
 | date | users | clicks | money | ranking |
+|:--|:--|:--|:--|:--|
 | 1   |  50   | 100    | 12EUR |       1 |
 
 into: 
 
 | date | metric  | metric_value  |            
+|:--|:--|:--|
 | 1   | users   | 50            | 
 | 1   | clicks  | 100           |  
 | 1   | money   | 12EUR         |    
@@ -55,6 +57,7 @@ Example:
 Imagine in same month I've traveled between Estonia and Portugal, then data extract should look like:
 
 |date | metric| metric_value | country |
+|:--|:--|:--|:--|:--|:--|
 | month1 | users | 1 | Portugal |
 | month1 | users | 1 | Estonia |
 | month1 | users | 1 | All |
