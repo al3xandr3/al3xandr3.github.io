@@ -81,12 +81,32 @@ Alternatively this can be done with a Multi-band compressor, for a more adaptive
 - HOW TO CREATE A CLEAN MIX / ARRANGEMENT: https://www.youtube.com/watch?v=G8lFAaANnhs
 
 
-### Mastering (Guitar)
+### Mastering
 
-- Compression
-- Saturation
-- Chorus & Delay, a light chorus can make guitar sound fatter, fuller, add delay to taste.
+Learn from existing music examples, even in when mastering, keep a example at hand to compare to.
 
+1. Center vs Sides
+1.1 Force the low frequencies to be in center.
+1.2 Widen the sides a little bit, volume higher for sides.
+
+2. EQ
+2.1 Clean: remove frequencies
+2.2 EQ boost the top end
+
+3. Compress, guing things toguether
+Dynamic, multiband compressor: 
+Maybe more top eq, especially on the sides
+
+4. Color
+Add Subtle warm saturation: sides vs mid. Push sides highs up
+
+5. Make it loud
+Maximizer and limiter at the end
+
+
+Reference:
+- https://www.youtube.com/watch?v=FzNweEPg-2U
+- https://www.youtube.com/watch?v=Bah367_iLBg
 
 ### Soloing
 
