@@ -122,7 +122,6 @@ More recently Google created a 2nd tool called dremmel, that is faster and bette
 It also exists as an online service from Google, called the BigQuery.
 
 
+## Reference
 
-
-
-
+Data Tools Ecosystem: http://insightdataengineering.com/blog/new-ecosystem/
