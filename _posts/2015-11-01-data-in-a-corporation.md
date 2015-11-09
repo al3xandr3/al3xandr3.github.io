@@ -11,9 +11,6 @@ intro: "The data analyst role inside a business."
 
 ## Baseline
 
-The necessary baseline:
-
-
 ### What is the business about?
 
 Understand What is its core mission, what value it offers to users.
@@ -23,7 +20,7 @@ Also, who are the competition, how are they doing, and how is this business bett
 
 
 
-### What data setup is required?
+### What data is required?
 
 Define the necessary infrastructure to allow measure the business:
 
@@ -51,8 +48,7 @@ Define the necessary infrastructure to allow measure the business:
 
 ## Accompanying the business on its day-to-day activities
 
-Once is clear what is the business about, where it should be going (the goals), how is it doing and how to measure it, there's the need to accompany the business on its daily activities:
-
+Once is clear what is the business about, how is it doing and where it should be going (the goals) then there's the need to accompany the business on its daily activities:
 
 ### What should the business be doing?
 
@@ -96,12 +92,6 @@ Data analysis can reveal new insights that can then lead to hypothesis for new a
 
 
 
-## Publishing numbers publicly
-
-When publishing numbers publicly, publish also the definitions of the metrics, otherwise is hard to tell what they truly represent. And impossible to compare to the metrics of other companies.
-
-In the finance world this is solved, for example, revenue, profit have very precise definitions. And every company reports them in same way.
-
 
 
 
@@ -115,9 +105,6 @@ Questions to ask, when a data requests comes in:
   - 1. Is the activity measured properly? ( where is the documentation? )
   - 2. Is this an Ad-hoc analysis or recurring dashboard?
 - For when is it needed ? is there a hard deadline, like launch date ?
-
-
-
 
 
 
@@ -142,3 +129,9 @@ Techniques:
 
 
 
+
+## Publishing numbers publicly
+
+When publishing numbers publicly, publish also the definitions of the metrics, otherwise is hard to tell what they truly represent. And impossible to compare to the metrics of other companies.
+
+In the finance world this is solved, for example, revenue, profit have very precise definitions. And every company reports them in same way.
