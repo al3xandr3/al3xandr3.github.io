@@ -56,14 +56,14 @@ And equally important, what it should not be doing. Includes:
 
 - Guide teams on creating the hypothesis of the ROI for each planned activity. Its a hard thing to do, also it should leverage the learning from the previous activities.
 - Argue that we should working on the right things, aka the activities that potentially contribute the most to the set goals. And avoid wasting resources on the activities that don't contribute as much.
-   - Understand if incentives are pointing towards right direction or not. If there's a conflict then raise it up.
+   - Understand if incentives are pointing towards right direction or not. If not, then there's a conflict, that needs to be resolved.
 - Be a data advocate and educate on measuring and being data driven, communicate the frameworks defined in "What data setup is required?" to help the organization be data smarter, for example how to run an AB test to evaluate the activity hypothesis.
 
 
 
 ### Did the activity help?
 
-Oon each activity answer: did it (the activity) help towards the goal? And by how much?
+On each activity answer: did it (the activity) help towards the goal? And by how much?
 
 - When activity is not helping (towards the goal) then data analysts are responsible to raise it with adequate communication, to allow for timely course correction.
 - "And by how much?", is essentially the contribution of the individual activity towards the end goal, often hard to measure, but key.
@@ -89,29 +89,10 @@ Data analysis can reveal new insights that can then lead to hypothesis for new a
 
 
 
-
-
-
-
-
-
-## Tackling Data requests
-
-Questions to ask, when a data requests comes in:
-
-- What is the request?
-- Why are we doing it? What is the hypothesis on yearly goals impact?
-- Tackling the request: 
-  - 1. Is the activity measured properly? ( where is the documentation? )
-  - 2. Is this an Ad-hoc analysis or recurring dashboard?
-- For when is it needed ? is there a hard deadline, like launch date ?
-
-
-
-
 ## Data Science Techniques
 
 Here are a collection of Data Science Techniques that can be used for more sophisticated data analysis:
+
  - For day-to-day improved insights.
  - For estimation the evolution of the business given its history.
  - Generate new activities.
@@ -126,6 +107,20 @@ Techniques:
 - Profiling: aka behavior description, if a high value user is deviating his behavior, maybe we could reach out to him.
 - Link prediction: recommendations, friend of a friend.
 - AB testing, how to scientifically (accurately) test an hypothesis ?
+
+
+
+## Tackling Data requests
+
+Questions to ask, when a data request comes in:
+
+- What is the request?
+- Is it worth ad-hoc analysis resources? What is the hypothesis on yearly goals impact?
+- Tackling the request: 
+  - 1. Is it measured properly? ( where is the documentation? )
+  - 2. Is this an Ad-hoc analysis or recurring dashboard?
+- For when is it needed ? is there a hard deadline, like launch date ?
+
 
 
 
