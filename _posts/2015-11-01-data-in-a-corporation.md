@@ -4,16 +4,15 @@ title: Data in a Corporation
 category: data
 tags:
   - data
-intro: "Data in a Corporation"
+intro: "The data analyst role inside a business."
 ---
-
-The data analyst role inside a business.
 
 
 
 ## Baseline
 
 The necessary baseline:
+
 
 ### What is the business about?
 
@@ -34,11 +33,11 @@ Define the necessary infrastructure to allow measure the business:
    - Collecting and processing data
    - Testing hypotheses (AB testing)
    - Analyzing data techniques (Churn, Survival, ARPU, Stickiness)
-- Reporting Infrastructure
+- Reporting Infrastructure.
 
 
 
- ### How is the business doing?
+### How is the business doing?
 
  Answer this, By understanding the top-level reality of the business. This is very tied to the previous step, but also involves:
 
@@ -86,9 +85,10 @@ Once we have the numbers on by how much did the activity help, create an opinion
 ### New activities from data insights
 
 Data analysis can reveal new insights that can then lead to hypothesis for new activities.
-   - Are there specific cohorts / markets that we are not targeting today, but that the data is telling are high value?
-   - Are there specific usage characteristics that churning users have that we could be targeting to avoid them from churning?
-   - Famous example: buying specific items, could reveal, with a certain probability that you are pregnant and thus we could be suggesting more items that are typically bought by pregnant woman.
+
+- Are there specific cohorts / markets that we are not targeting today, but that the data is telling are high value?
+- Are there specific usage characteristics that churning users have that we could be targeting to avoid them from churning?
+- Famous example: buying specific items, could reveal, with a certain probability that you are pregnant and thus we could be suggesting more items that are typically bought by pregnant woman.
 
 
 
@@ -110,7 +110,7 @@ In the finance world this is solved, for example, revenue, profit have very prec
 Questions to ask, when a data requests comes in:
 
 - What is the request?
-- Why are we doing it? The hypothesis on yearly goals impact
+- Why are we doing it? What is the hypothesis on yearly goals impact?
 - Tackling the request: 
   - 1. Is the activity measured properly? ( where is the documentation? )
   - 2. Is this an Ad-hoc analysis or recurring dashboard?
