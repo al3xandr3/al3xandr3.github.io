@@ -17,7 +17,7 @@ intro: "Skill Set of an Data Analyst"
 - Basic understanding of dimensions and facts in a data warehouse and data-stores in general.
 - Relational databases and SQL querying.
 - Big data tools: hadoop, hive.
-- python
+- Python
 
 
 ### Data Analysis Methods

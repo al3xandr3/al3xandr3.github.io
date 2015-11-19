@@ -102,6 +102,7 @@ In Python: pandas.melt
 
 “Month on Month Growth” in power pivot DAX language:
 
+
 	Last Month:=CALCULATE(SUM(‘MYDATA’[metric_value]))
 
 	Prev. Month:=CALCULATE(SUM('‘MYDATA’[metric_value]),DATEADD('‘MYDATA’[Month],-1,MONTH))
