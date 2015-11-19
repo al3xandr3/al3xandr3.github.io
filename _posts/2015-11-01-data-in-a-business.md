@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data in a Corporation
+title: Data in a Business
 category: data
 tags:
   - data
@@ -23,10 +23,10 @@ Define the necessary infrastructure to allow measure the business:
 
 - Choosing and defining the metrics that allow to measure the business (the KPIs).
 - Create / Define the frameworks and standards, for:
-   - Measuring (telemetry guidelines)
-   - Collecting and processing data
+   - Measuring (telemetry guidelines): What are the events we need capture? and how ? How to document it ? 
+   - Collecting and processing data: What aggregations need to be done? How to document it ?
    - Testing hypotheses (AB testing)
-   - Re-usable Analyzing data techniques (Churn, Survival, ARPU, Stickiness)
+   - Re-usable data techniques and methods (Churn, Survival, ARPU, Stickiness)
 - Reporting Infrastructure.
 
 
@@ -46,6 +46,7 @@ Define the necessary infrastructure to allow measure the business:
 
 Once is clear what is the business about, how is it doing and where it should be going there's the need to accompany the business on its daily activities.
 
+
 ### What should the business be doing?
 
 And equally important, what it should not be doing. Includes:
@@ -54,6 +55,7 @@ And equally important, what it should not be doing. Includes:
 - Advocate that we should working on the right things, aka the activities that potentially contribute the most to the set goals. And avoid wasting resources on the activities that don't contribute as much. 
   - Guide teams on creating the hypothesis of the ROI for each planned activity. Guessing the ROI of an hypothesis is a hard thing, but it should leverage the learnings from the previous activities.
 - To be able to fairly and scientifically evaluate the activities, there's the need to be a constant data advocate and educate business on measuring and being data driven. For example argue that every activity should include an AB test.
+
 
 
 
@@ -82,42 +84,45 @@ Once we have the numbers on by how much did the activity help, create an opinion
   - Communicate using best practices: tell stories instead of dumping numbers, be straight to the point (see minto pyramid).
 
 
+
+
 ### What new activities we can create from data ?
 
-Data analysis can reveal new insights that can then lead to hypothesis for new activities.
+Data analysis can reveal new insights that can then lead to hypothesis creation for new activities.
 
 - Are there specific cohorts / markets that we are not targeting today, but that the data is telling are high value?
 - Are there specific usage characteristics that churning users have that we could be targeting to avoid them from churning?
-- Famous example: buying specific items, could reveal, with a certain probability that you are pregnant and thus we could be suggesting more items that are typically bought by pregnant woman.
-
-
-
-
-## Data Science Techniques
-
-Here are a collection of data science techniques that can came in handy:
-
-- For day-to-day better data insights
-- For estimations
-- To generate new activities
-
-Techniques:
-
-- Back-of-envelope calculations (an estimation technique): the art of guess estimating can be very useful to quickly run numbers on what is going to happen, or impact, etc... 
-- Classification: Is this a high value user or not? Create a classification, so that we enrich the data set with a new useful property to analyze the rest of the data with.
-- Regression: (as an estimation technique) what results are we getting in 3 months if this trend continues? When are we getting to result XYZ?
-- Similarity matching: Find what characteristics users that churned have, find the similar users from your user-base, hypothesize that they are at risk of churning, and do activities to help churning.
-- Clustering: what characteristics have our most engaged user base has? How we can incentive the rest of user-base in same direction?
-- Profiling: aka behavior description, if a high value user is deviating his behavior, maybe we could reach out to him.
-- Link prediction: recommendations, friend of a friend.
-- AB testing, how to scientifically (accurately) test an hypothesis?
 
 
 
 
 
+## On Measuring Impact
 
-## Publishing numbers publicly
+To measure impact of an hypothesis a solution is to use an Experiment (A/B test).
+
+Once the A/B test is showing positive impact, the hypothesis is then deployed fully.
+
+*How we then quantify the final real impact ?*
+
+I general we can look at the top level KPIs and see if trends change to have an idea if it really changed things or not. 
+
+But in order to quantify it somewhat, an approach is to compare the time period before and after deployment and see what is the difference.
+
+The _big_ caveat with this approach is that there can be other external confounding factors influencing it, like seasonality holidays, weekend vs week days, other deployments happening at the same time, etc...
+
+So this approach has to be carefully planned for and in general: try find ways to exclude out as many potentiality influencing external variables as possible.
+
+When results show a small difference we are less confident about the results, because the external influences could be biasing somewhat it to either direction.
+
+A small difference is more easily influenced by external variables than a big difference can be(influenced). Big differences can also be influenced but we can normally tell a big external influencing factor anyway (like a country holiday) and we can then try use analytical methods to try exclude/include the biased/unbiased cohorts.
+
+So we can only really tell when we observe a big difference and we know we are excluding the big external influencing factors.
+
+
+
+
+## Publishing Numbers Publicly
 
 When publishing numbers publicly, publish also the definitions of the metrics, otherwise is hard to tell what they truly represent. And impossible to compare to the metrics of other companies.
 
