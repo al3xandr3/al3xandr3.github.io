@@ -39,7 +39,7 @@ Define the necessary infrastructure to allow measure the business:
 
 
 
-## Accompanying the business on its day-to-day activities
+## The Essential Questions, part 2: day-to-day activities
 
 Once is clear what is the business about, how is it doing and where it should be going there's the need to accompany the business on its daily activities.
 
@@ -84,13 +84,6 @@ Once we have the numbers on by how much did the activity help, create an opinion
 
 
 
-## Use data analysis for:
-
-- Product Usage; Understand and make a mental model of how users are using the product, learn insight into this, it feedbacks into where next to invest.
-- Optimization; Example, are there specific usage characteristics that churning users have that we could be targeting to avoid them from churning?
-- New opportunities; are there specific cohorts / markets that we are not targeting today, but the data is telling are high value?
-
-
 
 
 
@@ -118,6 +111,7 @@ Reference: Lean Analytics
 - Also depend on the current company phase, where goals in a startup company are different from mature company.
 
 Reference: Lean Analytics
+
 
 
 
@@ -154,6 +148,8 @@ Reference: Lean Analytics
 
 Also note, very important, when new activities are being planned they should clearly state its hypothesis on "what user behavior is it changing" so that it will result in KPI impact.
 
+
+
 ### How to measure ?
 
 #### Hypothesis Experiment (AB test)
@@ -173,15 +169,4 @@ But in order to quantify it somewhat, an approach is to compare the time period 
 The caveat with this approach is that there can be other external confounding factors influencing it, like seasonality holidays, weekend vs week days, other deployments happening at the same time, etc... So this approach has to be carefully planned for and in general: try find ways to exclude out as many potentiality influencing external variables as possible.
 
 When results show a small difference we are less confident about the results, because the external influences could be biasing somewhat it to either direction.
-
-
-
-
-
-
-## Publishing Numbers Publicly
-
-When publishing numbers publicly, publish also the definitions of the metrics, otherwise is hard to tell what they truly represent. And impossible to compare to the metrics of other companies.
-
-In the finance world this is solved, for example, revenue, profit have very precise definitions. And every company reports them in same way.
 
