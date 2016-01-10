@@ -80,43 +80,12 @@ Alternatively this can be done with a Multi-band compressor, for a more adaptive
 
 - HOW TO CREATE A CLEAN MIX / ARRANGEMENT: https://www.youtube.com/watch?v=G8lFAaANnhs
 
-
-### Mastering
-
-Learn from existing music examples, even in when mastering, keep a example at hand to compare to.
-
-1. Center vs Sides
-1.1 Force the low frequencies to be in center.
-1.2 Widen the sides a little bit, volume higher for sides.
-
-2. EQ
-2.1 Clean: remove frequencies
-2.2 EQ boost the top end
-
-3. Compress, guing things toguether
-Dynamic, multiband compressor: 
-Maybe more top eq, especially on the sides
-
-4. Color
-Add Subtle warm saturation: sides vs mid. Push sides highs up
-
-5. Make it loud
-Maximizer and limiter at the end
-
-
-Reference:
-- https://www.youtube.com/watch?v=FzNweEPg-2U
-- https://www.youtube.com/watch?v=Bah367_iLBg
-
 ### Soloing
 
 Is easy for the Solo to get muddy when added on top of existing tracks of the same instrument (or the same frequency range).
 
 - Automate in DAW the lowering of the volume of the already recorded instruments of the same frequency range, when doing the solo, this helps the solo to stand out, example, lower the volume of the rhythm guitars parts when doing the guitar solo. Fairly easy to do in a DAW as a audio mastering technique. Leave the rest of the instruments at the same level.
 - Punch holes in the frequency range of song, to open up space for the soloing instrument. Find the frequency the soloing instrument uses and then compress those in the rest of the mix. Trick of the inverse EQ, mentioned in "Mixing" section
-
-
-
 
 ## Song Sections Transitions
 
@@ -140,17 +109,44 @@ Simulating a slow down like a old Cassette player loosing their batteries ?
 
 
 
-## Audio Mastering
+## Mixing
+
 
 ### "Cleaner" Reverb
 Use delay between (80-90ms), like left:80ms, rigth:90ms, with left right crossover and wet at 30%, add in as much (or as little) repeats as needed.
 
-### Mastering (Whole Mix)
 
-- Compression
-  - Feathering Technique: a sequence of light compression is sometimes better than a single strong compression.
 
-- Saturation: existed in analog devices, and our ears are so used to hear. Often used to make a somewhat sterile (all computer based) recording sound more realistic. Light saturation.
+## Mastering
+
+Learn from existing music examples, even in when mastering, keep a example at hand to compare to.
+
+1. Center vs Sides
+
+1.1 Force the low frequencies to be in center.
+1.2 Widen the sides a little bit, volume higher for sides.
+
+2. EQ
+
+2.1 Clean: remove frequencies
+2.2 EQ boost the top end
+
+3. Compress, guing things toguether
+
+Dynamic, multiband compressor: 
+Maybe more top eq, especially on the sides
+
+4. Color
+
+Add Subtle warm saturation: sides vs mid. Push sides highs up
+
+5. Make it loud
+Maximizer and limiter at the end
+
+
+Reference:
+- https://www.youtube.com/watch?v=FzNweEPg-2U
+- https://www.youtube.com/watch?v=Bah367_iLBg
 
 
 

@@ -19,34 +19,36 @@ What goes on behind the scenes? We use (0) a variety of tools to normalize data 
 I liked a lot this quote, specially because seems to me is really almost a recipe on how to apply data science methods to a business in a very practical and useful way, breaking it down with my own view:
 
 
-### (0) Normalizing 
+### 0. Normalizing 
 
-Normalizing is sometimes a needed step before applying a data method. Is important to be aware of it and know when to use it.
+Normalizing is often a needed step before applying a data method. Is important to be aware of it and know when and how to use it.
 
 
-### (1) Create classifications 
+### 1. Create classifications 
 
 Create classifications (a classification task) that augments the existing data with new dimensions, allowing to look at data in a new useful way and also, that are needed to build a statistical model. For example classify what users are the highly active ones vs low active ones, and then this can then be used as the outcome variable of a model, that models high active users.
 
 
-### (2) Model
+### 2. Model
 
 Given the business goal (growth, user activity, retention, revenue, etc...) create statistical models that reveal what features / behaviors strongly correlate to the business goals. This essentially answers the question: "What is driving the business goals right now?" -> Maybe we should do more of that.
 
 
-### (3) Hypothesis
+### 3. Hypothesis
 
 This step goes hand-in-hand with step 2): once we have a model showing what features / are driving the most the current business goal (strong correlations), then create an Hypothesis of a new activity that leverages that feature to drive further the business goals.
 
-### (4) Experiment
+(By impacting a certain user behavior change)
+
+### 4. Experiment
 
 Because correlation does not (always) imply causation we then need to run Experiments (A/B tests) that measure the impact of the hypothesis created in 3). Accelerate the testing by using multivariate A/B tests, where in a single experiment multiple features get tested at the same time.
-
 
 
 There are other ways to apply data science methods in a business, specially with creating a new product based on a data applications / method / finding. But process above is fairly solid and i it see became a standard.
 
  
+
  
 
 ## Data Science Techniques and Applications
@@ -57,13 +59,18 @@ There are other ways to apply data science methods in a business, specially with
 The art of guess estimating can be very useful to quickly run numbers on what is going to happen, or impact, etc... 
 
 
+## Simulations
+
+Simulate what happens as time goes by, calculate what happens in the extremes, so we can then tell what happens in middle.
+Put yourself in the shoes of other and simulate their experience at a fast pace.
+
 
 ### Classification
 
 Create a classification, so that we enrich the data set with new useful features to analyze the rest of the data with.
 Also to use as modeling parameters.
 
-This could include classifying for example: user behaviors, user value, etc///
+This could include classifying for example: user behaviors, user value, etc...
 
 
 
@@ -84,9 +91,18 @@ For example, what contributes more to a movie final revenue is it the movie budg
 Here we can build a regression model that exactly quantifies how much these contribute to the revenue, given a set of historical data.
 
 
+
+
+
+
+
 ### Clustering and Similarity matching
 
 Find what characteristics users that churned have (a churn model), then look for similar users cohorts from your user base that have similar characteristics and thus potentially at the risk of churning, create hypotheses on activities to help reduce churning.
+
+
+
+
 
 
 
@@ -105,12 +121,4 @@ We essentially need 4 data points, these 2 metrics for each group:
  - Success group size (at the end of experiment)
 
 We need to assure the experiment runs for enough amount of time so that we can be sure of the results (statistical significance). Apply a proportion test for example (https://www.khanacademy.org/math/probability/statistics-inferential/hypothesis-testing/v/large-sample-proportion-hypothesis-testing).
-
-
-
-
-
-
-
-
 

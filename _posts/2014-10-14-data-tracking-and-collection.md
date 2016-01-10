@@ -9,7 +9,7 @@ intro: "A description of the collection of methods used to track and collect dat
 
 ## Motivation
 
-To understand what is going on with a product/organization/strategy we need to measure and quantify the critical points of its structure. 
+To understand what is going on with a product/organization/strategy we need to place probes in specific points of its structure to be able to measure them in detail. 
 Often there are several data points generating data, that need to be reconciled, cleaned up, and aggregated into a consumable format.
 
 Therefore, each organization will have the need to:
