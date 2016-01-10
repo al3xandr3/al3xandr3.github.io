@@ -83,9 +83,8 @@ Once we have the numbers on by how much did the activity help, create an opinion
 
 
 
-### What new activities we can create from data ?
 
-Use data analysis for:
+## Use data analysis for:
 
 - Product Usage; Understand and make a mental model of how users are using the product, learn insight into this, it feedbacks into where next to invest.
 - Optimization; Example, are there specific usage characteristics that churning users have that we could be targeting to avoid them from churning?
@@ -132,24 +131,19 @@ Reference: Lean Analytics
 ### What to measure ?
 
 1. Does it work? And how well ? (Quality and Latency)
-
   - % usage attempts with error
   - Speed/quality of usage
 
 2. Is the feature being used ? (Usage Volumes)
-
   - Volumes of clicks, pageViews, sessions, etc...
 
 3. How many people are using it ?
-
   - Unique users using it
 
 4. How are people affected? Has it changed behaviors ?
-
   - Whats the behavior change in retention / engagement / acquisition?
 
 5. Is it helping the business goals?
-
    - What the overall business Impact ?
 
 
