@@ -12,11 +12,12 @@ Techniques to transform and interpret data in a useful way.
 
 ## Quantify Impact
 
-### I want to
-Understand how big is a change.
+### I want to, Understand how big is a change.
+
 (i.e.  calculate the relative change)
 
 ### How
+
 Lets say a bank raised a rate from 3% to 5%, difference is 2% but is ambiguous to say "the rate was increased by 2%". It looks like a very small increase, from a +2 increase from an original of 3.
 
 - Absolute change was 2% but 
@@ -27,8 +28,7 @@ Relative calculation general formula:  (new - reference) / reference
 
 
 
-### I want to 
-Understand how much is one number bigger than other
+### I want to, Understand how much is one number bigger than other
 
 You looking at a table of numbers, and comparing 2 numbers, wondering by how much one is bigger than the other ?
 
@@ -46,15 +46,20 @@ You looking at a table of numbers, and comparing 2 numbers, wondering by how muc
 (in this case 2)
 1 out of 200
 
+### I want to, quickly size up something to see how important it might be
+
+The art of guess estimating can be very useful to quickly run numbers on what is going to happen, or impact, etc... 
 
 
 
 ## Data Quality: confidence interval
 
 ### I want to
+
 Give out some certainty on the average number i am giving out, by adding a range to where is this number is expected to fall into, most of the time.
 
 ### How
+
 When estimating a parameter like a mean from random samples, confidence interval helps quantify uncertainty, giving an interval in which we can expect the value to be most of the time.
 
 Prepared Excel: [confidence_interval.xlsm](https://drive.google.com/file/d/0B3ypY27pPCJyREE2SHl2U29uVFU/view?usp=sharing)
@@ -80,8 +85,7 @@ Python:
 
 ## Data Quality: hypothesis testing
 
-### I want to
-Make sure the results i got are statistically significant (and not due to chance).
+### I want to, Make sure the results i got are statistically significant (and not due to chance).
 
 ### Test of Proportion
 
@@ -227,7 +231,6 @@ See chart type Histogram and Boxplot from: http://al3xandr3.github.io/data-visua
 
 
 
-
 ## Simulations
 
 This is a great way to test out models / hypothesis / behavior by generating random and (on purpose) biased data to test, evaluate formulas, algorithms, theories.
@@ -292,7 +295,42 @@ This is also useful to pin down performance problems or even outliers.
 
 
 
+### Classification
 
+Create a classification, so that we enrich the data set with new useful features to analyze the rest of the data with.
+Also to use as modeling parameters.
+
+This could include classifying for example: user behaviors, user value, etc...
+
+
+
+
+
+
+
+## Clustering and Similarity matching
+
+Find what characteristics users that churned have (a churn model), then look for similar users cohorts from your user base that have similar characteristics and thus potentially at the risk of churning, create hypotheses on activities to help reduce churning.
+
+
+
+
+
+## Regression
+
+
+### Regression as an estimation / prediction technique
+
+What results are we getting in 3 months if this trend continues? When are we getting to result XYZ?
+
+
+### Regression as a causal modeling technique (aka correlation finder)
+
+Regression can be used in explaining how one or many (using multivariate regression) factors affect an outcome of interest.
+
+For example, what contributes more to a movie final revenue is it the movie budget size or the viewers rating? Likely both things influence it... For example a movie with a very low budget can't compete with a huge budget movie in general, but a big budget movie can also end up not being liked by viewers. So which of those 2 variables contribute the most to the final movie revenue ?
+
+Here we can build a regression model that exactly quantifies how much these contribute to the revenue, given a set of historical data.
 
 
 
@@ -319,8 +357,6 @@ Then you may fill the gaps in values using interpolate() method of Series (diffe
 
 Reference: 
 http://stackoverflow.com/questions/20240749/pandas-dataframe-interpolating-missing-days
-
-
 
 
 
@@ -361,25 +397,44 @@ Iterate
 
 ### AB testing
 
-Hypothesize how to make to make it better, ab test it.
+Because correlation does not (always) imply causation, this is the way to test an hypothesis created from an observed data correlation. (output from a previous data science method).
+
+This also, for example, the approach that the medical community uses to tests whether a new medication is effective or not. And is a fairly common solid scientific method.
+
+Hypothesize how to make to make it better, run an experiment to validate it.
 Assist product changes by ab testing it, and measuring its consequences...
 
-- A/B testing: comparing version A vs version B.
-- A/A test technique: comparing a test against itself, expect that values match. Should be made several times to get the distribution chart. - A bit like the simulations idea.
+The setup of an experiment is to compare 2 groups where the variable we want to test is different for each group, while keeping all the other variables (possible confounding factors) the exact same. (see also https://en.wikipedia.org/wiki/Ceteris_paribus)
 
-reference: sample sizes http://camdp.com/blogs/number-samples-needed-b-test
+We essentially need 4 data points, these 2 metrics for each group:
+ - Test group size (at the start of experiment)
+ - Success group size (at the end of experiment)
+
+We need to assure the experiment runs for enough amount of time so that we can be sure of the results (statistical significance). Apply a proportion test for example (https://www.khanacademy.org/math/probability/statistics-inferential/hypothesis-testing/v/large-sample-proportion-hypothesis-testing).
+
+references: sample sizes http://camdp.com/blogs/number-samples-needed-b-test
+
+
+
+
+
+
+
 
 ### Intelligent Agents Model
 
 Amazingly, Optimization, AB & Multivariate Testing, Behavioral Targeting, Attribution, Predictive Analytics, … can all be recast as components of a simple, yet powerful framework borrowed from the field of Artificial Intelligence, the intelligent agent.
 
-#### Artificial inteliigence Optimization Process
+
+
+
+#### Artificial intelligence Optimization Process
 
 The goals are what the agent wants to achieve, what it is striving to do.
 
 When the agent achieves a goal, it gets a reward based on the value of the goal. 
 
-Given that the agent has a set of goals and allowable actions, the agent’s task is to learn what actions to take given its observations of the environment – so what it ‘sees’, ‘hears’, ‘feels’, etc...  Assuming the agent is trying to maximize the total value of its goals over time, then it needs to select the action that maximizes this value, based on its observations.
+Given that the agent has a set of goals and allowable actions, the agents task is to learn what actions to take given its observations of the environment – so what it ‘sees’, ‘hears’, ‘feels’, etc...  Assuming the agent is trying to maximize the total value of its goals over time, then it needs to select the action that maximizes this value, based on its observations.
 
 So how does the agent determine how to act based on what it observes? The agent accomplishes this by taking the following basic steps:
 
