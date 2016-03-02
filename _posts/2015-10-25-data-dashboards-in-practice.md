@@ -9,7 +9,6 @@ intro: "Guidelines and tips for building Data Dashboards"
 
 <link rel="stylesheet" href="/css/cv.css" type="text/css" media="screen, projection" />
 
-
 ## Motivation
 
 Approach dashboard building in a structured way, so that building new dashboards is just following a recipe and it can thus scale up well.

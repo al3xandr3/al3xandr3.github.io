@@ -31,7 +31,7 @@ For example: Normalization of ratings means adjusting values measured on differe
 
 Given the business goals, identify the users that are already ideal cases versus the ones who are not, for example if the company goal is to have highly engaged active users, identify the power users versus the rest.
 
-Augment the existing user data with that information, this will create the goals to create statistical models on.
+Augment the existing user data with that "classification" information, this will create the goals to create statistical models on.
 
 As time goes by and as the first classifications and learnings are collected, that then feeds back into the next set of classifications to create. So over time, the classifications will tend to be more sophisticated and closer to real user behaviors.
 

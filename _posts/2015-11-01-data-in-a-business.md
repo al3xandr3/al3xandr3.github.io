@@ -9,11 +9,13 @@ intro: "The data analyst role inside a business."
 
 ## The Essential Questions
 
+
 ### What is the business about?
 
 Understand What is its core mission, what value it offers to users.
 
 Also, who are the competition, how are they doing, and how is this business better than the competition ?
+
 
 
 ### What data is required?
@@ -29,13 +31,13 @@ Define the necessary infrastructure to allow measure the business:
 - Reporting Infrastructure.
 
 
+
 ### How is the business doing?
 
  Answer this, By understanding the top-level reality of the business. This is very tied to the previous step, but also involves:
 
 - Know what are the business goals. Be part of the discussion on defining the business goals if needed. These are key, this is how we evaluate the business health, each business activity and even each individual contribution.
 - Setting up, analyzing, digesting and sharing frequently the top metrics.
-
 
 
 

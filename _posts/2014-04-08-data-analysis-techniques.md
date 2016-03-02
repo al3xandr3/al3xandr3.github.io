@@ -22,9 +22,11 @@ Lets say a bank raised a rate from 3% to 5%, difference is 2% but is ambiguous t
 
 - Absolute change was 2% but 
 
-- Relative change (5 - 3) / 3 = 0.66(6), so rate was increased by 66%.
+- Relative change (5 - 3) / abs(3) = 0.66(6), so rate was increased by 66%.
 
-Relative calculation general formula:  (new - reference) / reference
+Relative calculation general formula:  (new - reference) / abs(reference)
+
+For negative numbers needs that denominator to have abs(), to force negative number into a positive one.
 
 
 
