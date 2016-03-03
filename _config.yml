@@ -4,9 +4,7 @@ description: "Al3xandr3's Blog"
 keywords: programming, data, machine learning, alexandre martins, al3xandr3
 production_url: http://al3xandr3.github.io
 pygments: false
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables","with_toc_data", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+markdown: kramdown
 author :
   name : Alexandre Matos Martins
   github : al3xandr3
