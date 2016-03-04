@@ -20,11 +20,18 @@ Each business has naturally specific strengths and might even want to target on 
 
 ## Acquisition
 
+
 ## Activation
+
 
 ## Retention and Stickiness
 
-## Virality and Growth
+
+## Growth
+
+Virality 
+
+Net Promoter Score - tool that can be used to gauge the loyalty of a firm's customer relationships. It serves as an alternative to traditional customer satisfaction research
 
 
 ## Churn
@@ -75,4 +82,7 @@ In an extreme example: the money invested in reducing churn from 3% to 1%, if ap
 
 
 ## Revenue
+
+
+## Quality & Performance
 

@@ -7,6 +7,27 @@ tags:
 intro: "Skill Set of an Data Analyst"
 ---
 
+
+## Values
+
+These might vary with company culture, but are fairly common:
+
+### Company Culture
+
+- Customer Focus - In a product that provides a service, its all about the end customer, you need be helping the end customer in a useful way, don't hurt the view that the customer has on you.
+- Take Ownership - Its your baby, everything about it, is on you, make sure the project goes all the way through to completion.
+- Sense of Urgency - Move in an agile way, plan, monitor, re-think, but move onwards at a good pace.
+- Highest Standards - Produce work you are proud of.
+- Humility - Everybody makes mistakes, everybody has different views and these augment an idea into something bigger, listen to others.
+- Exposure points - think what part of your work gets exposed to others, that helps prioritize what is important and what really makes a contribution.
+
+
+### Data Analyst
+
+- What is the truth? - The job is to reveal the truth, its OK to have an opinion but do be on the lookout of biases influencing you(from you or others).
+- Macro picture thinking - analyst needs to constantly asking "so what?", what does this really means to the bottom line
+
+
 ## Data Analyst 'Hard' Skills
 
 ### Data Collection and Manipulation
