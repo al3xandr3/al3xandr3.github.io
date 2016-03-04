@@ -53,7 +53,7 @@ Churns is all about "customer retention".
 	- Breakdown by country, platforms, etc...
 	 
   - How and Why users Churn? -> Deep dive Compare non-churning users to churning users
-      - # platforms used
+      - number of platforms used
       - Do 1st day events have impact in churn (short/medium/long term)?
       - Does regular product feature usage (or lack of) have impact in churn?
       - Just before churning (and comparing to a previous time), is there a:
