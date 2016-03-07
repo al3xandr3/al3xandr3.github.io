@@ -11,11 +11,13 @@ The "User Lifecycle Analytics Framework" is a structured way to look at a metric
 
 Different business might need somewhat different frameworks, but an important realization is that having a framework is useful, gives structure, reveals measures to look at and insights that ultimately help the business.
 
-A business will naturally go through different stages and will have different needs depending on the stage that is in. For example, might not have enough users, and thus needs to invest on acquisition, or instead it has enough users but the revenue is not realized yet. So the Business might over time to shift focus and zoom in on a specific topic at a time, while never loosing attention on the business as a whole.
+A business will naturally go through different stages and will have different needs depending on the stage that is in. For example, a business might not have enough users, and thus needs to invest on acquisition, or instead it has enough users but the revenue is not realized yet. 
+
+So in general the Business might need over time to shift focus and zoom in on a specific topic at a time, while never loosing attention on the business as a whole.
 
 This framework is about the user lifecycle, it considers that within a business the user has a specific lifetime and different phases of maturity, from first discovering the product, to becoming an active user, to using it consistently, to potentially influencing others to join in, etc... all the way to stop using it.
 
-Each business has naturally specific strengths and might even want to target on specific strengths.
+Each business has naturally specific user lifecycle strengths and might even want to target on specific strengths.
 
 
 ## Acquisition
@@ -53,7 +55,7 @@ Churns is all about "customer retention".
 	- Breakdown by country, platforms, etc...
 	 
   - How and Why users Churn? -> Deep dive Compare non-churning users to churning users
-      - number of platforms used
+      - Number of platforms used
       - Do 1st day events have impact in churn (short/medium/long term)?
       - Does regular product feature usage (or lack of) have impact in churn?
       - Just before churning (and comparing to a previous time), is there a:
@@ -64,7 +66,7 @@ Churns is all about "customer retention".
       - Can we predict a user is churning soon, given his recent usage?
       - etc... all kind of breakdowns we could think of...
 
-   - (From the How and Why users Churn? insights) Suggestion on the opportunities for the business to invest on
+   - (From the How and Why users Churn? insights) Suggestion on the opportunities for the business to invest on.
 
 Similar structure can be used for other topics, like acquisition, retention, etc...
 
@@ -85,4 +87,26 @@ In an extreme example: the money invested in reducing churn from 3% to 1%, if ap
 
 
 ## Quality & Performance
+
+
+## Business *Scorecard*
+
+Once the frameworks and its definitions and metrics are agreed upon, we can build a scorecard that includes all of the framework's metrics so we can have a view of the business end-to-end.
+
+A funnel or an approximation of it is commonly used approach.
+
+This can be generated as a recurring report for: Week on Week, Month on Month, Year on year, etc...
+
+Besides the framework metrics, we need include also the defined top level business goals metrics, they might have been defined outside of the user life-cycle model context.
+
+### Measuring activity impact
+
+This scorecard can also be used for another application, which is measuring impact of a product change: 
+- Run an AB test
+- Apply scorecard to users affected by the new change and compare to the scorecard of the users not affected by change.
+- See whether the product change has had a successful impact in overall business.
+
+The scorecard applied in this way, should be answering 2 questions:
+- Does the change impacts to business goals? (the top level business goals)
+- Why? What user behaviors are we changing that contributes to that? -> we can see by looking at what part of the scorecard (user lifecycle) changed the most.
 

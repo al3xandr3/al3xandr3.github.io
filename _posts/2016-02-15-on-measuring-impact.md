@@ -12,7 +12,9 @@ intro: "Impact Evaluation"
 
 Impact evaluation is structured to answer the question: "how would outcomes such as the participants well-being have changed if the intervention had not been undertaken?" This involves counter-factual analysis, that is, “a comparison between what actually happened and what would have happened in the absence of the intervention.”
 
- The key challenge in impact evaluation is that the counter factual cannot be directly observed and must be approximated with reference to a comparison group. There are a range of accepted approaches to determining an appropriate comparison group for counter-factual analysis, using either:
+A secondary question that normally comes imediatly after is "why?". What behaviours did we change that explain the observed impact of the intervention?
+
+The key challenge in impact evaluation is that the counter factual cannot be directly observed and must be approximated with reference to a comparison group. There are a range of accepted approaches to determining an appropriate comparison group for counter-factual analysis, using either:
  - Prospective (ex ante), selection of treatment vs control
  - Retrospective (ex post) evaluation design. 
 
@@ -30,6 +32,17 @@ However, there remain applications to which this design is relevant, for example
 - Experimental evaluation takes time.
 - Experimentation might not be possible.
 
+#### On product launch 
+
+*How we then quantify the final real impact ?*
+
+I general we can look at the top level KPIs and see if trends change to have an idea if it really changed things or not. 
+
+But in order to quantify it somewhat, an approach is to compare the time period before and after deployment and see what is the difference.
+
+The caveat with this approach is that there can be other external confounding factors influencing it, like seasonality holidays, weekend vs week days, other deployments happening at the same time, etc... So this approach has to be carefully planned for and in general: try find ways to exclude out as many potentiality influencing external variables as possible.
+
+When results show a small difference we are less confident about the results, because the external influences could be biasing somewhat it to either direction.
 
 
 #### Methods
@@ -37,6 +50,8 @@ However, there remain applications to which this design is relevant, for example
 - Quasi-experimental (non-random) methods can be used to construct controls when it is not possible to obtain treatment and comparison groups through experimental design. With constructed controls, individuals to whom the intervention is applied (the treatment group) are matched with an “equivalent” group from which the intervention is withheld and the average value of the outcome indicator for the target population is compared with the average of that for the constructed control.
 
 - Another nonrandom method of obtaining control involves reflexive comparisons when participants who receive the intervention are compared to themselves before and after receiving the intervention. -> Beware of selection bias.
+
+
 
 
 
