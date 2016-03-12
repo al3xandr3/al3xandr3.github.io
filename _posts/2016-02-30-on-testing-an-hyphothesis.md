@@ -118,3 +118,11 @@ Not all experiments will result in a success. And it can happen that the busines
 - Bigger returns likely only to happen in more radical tests. Ex: changing color of button has less potential return, than changing the whole user flow.
 
 Some experiments might have as hypothesis that impact is only visible in long term. So run the experiment, turn it off, look at the affected cohort users after 3/6 months.
+
+
+References:
+
+- <http://www.unofficialgoogledatascience.com/2016/01/variance-and-significance-in-large.html> 
+- <https://www.optimizely.com/statistics/>
+- <http://blog.sumall.com/journal/optimizely-got-me-fired.html>
+- <https://medium.com/managing-digital-products/start-here-statistics-for-a-b-testing-5f5c7e02ce1e#.wwa0kkc1s>

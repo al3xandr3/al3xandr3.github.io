@@ -17,7 +17,9 @@ So in general the Business might need over time to shift focus and zoom in on a 
 
 This framework is about the user lifecycle, it considers that within a business the user has a specific lifetime and different phases of maturity, from first discovering the product, to becoming an active user, to using it consistently, to potentially influencing others to join in, etc... all the way to stop using it.
 
-Each business has naturally specific user lifecycle strengths and might even want to target on specific strengths.
+Each business has natural specific user lifecycle strengths and might even want to target on specific strengths.
+
+
 
 
 ## Acquisition
@@ -99,6 +101,8 @@ This can be generated as a recurring report for: Week on Week, Month on Month, Y
 
 Besides the framework metrics, we need include also the defined top level business goals metrics, they might have been defined outside of the user life-cycle model context.
 
+
+
 ### Measuring activity impact
 
 This scorecard can also be used for another application, which is measuring impact of a product change: 
@@ -108,5 +112,31 @@ This scorecard can also be used for another application, which is measuring impa
 
 The scorecard applied in this way, should be answering 2 questions:
 - Does the change impacts to business goals? (the top level business goals)
-- Why? What user behaviors are we changing that contributes to that? -> we can see by looking at what part of the scorecard (user lifecycle) changed the most.
+- Why? What user behaviors are we changing that contributes to that? -> we can see by looking at what part of the scorecard (user life-cycle) changed the most.
 
+
+## Metrics: Active Users
+
+A fairly standard metric (industry standard) is the user activity in the application (in-app activity), for example:
+
+- DAU, daily active* user
+- WAU, weekly active user
+- MAU, monthly active user
+
+*Activity is defined by user explicit interactions with the application. For example, open the application, browsing application content, using application features, etc... similar definition to a web user session.
+Note that notifications that reach the user but are not interacted with, should not trigger an AU signal.
+
+The AU metric in the User life cycle:
+
+- Acquisition (installs/DAU, registrations/DAU, trials/DAU): is a measure of new users, how much of the DAU is from registration, or from installs, or from trials...
+- Retention (or Survival), if after installation user still active in application, for Day1, Day2, Day3, etc... Week1, W2, W3, etc... Month1, Month2, etc...
+- Engagement (DAU/MAU), DAU divided by MAU, ex: 50% means that for 15 days in a month (30 days) the user was active.
+- Growth (or Virality): K-Factor, = Viral_Installs / Total_Installs, or = Viral_AU / Total_AU
+- Revenue: Average Revenue per DAU
+
+Other metrics:
+- There will be other application specific metrics to use. These are dependent on application type.
+- Meaning of different metric trends: ex: MAU is growing but DAU is flat, what it means? that there's loads of churn, many users using the application, but they don't stay, so they don't accrue to DAU.
+
+Reference: 
+http://www.slideshare.net/agarimella/social-gaming-metrics

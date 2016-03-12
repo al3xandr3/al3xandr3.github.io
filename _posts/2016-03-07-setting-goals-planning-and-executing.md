@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Setting goals Planning and Executing
+title: Setting Goals, Planning and Executing
 category: data
 tags:
   - data
-intro: "Setting goals Planning and Executing"
+intro: "Setting Goals, Planning and Executing"
 ---
 
 ## Setting Goals
@@ -24,6 +24,13 @@ Metrics should cover the customer life-cycle stages, look at how a user interact
 - Also depend on the current company phase, where goals in a startup company are different from mature company.
 
 Reference: Lean Analytics
+
+
+
+
+
+
+
 
 
 
