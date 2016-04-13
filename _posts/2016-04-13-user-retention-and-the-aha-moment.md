@@ -9,8 +9,11 @@ intro: "User retention and the Aha! moment"
 
 ## What is the _Aha!_ moment ?
 
+Its the moment they decide they are continuing to use the product.
 
+Aha moment is when users "get" the value preposition that the product offers to them.
 
+It is not trivial to find the exact aha event of the users, but knowing it is  key, and is tightly linked to the product core value proposition.
 
 Examples:
     - Twitter: you see the feed of your first contacts and read something interesting
