@@ -50,6 +50,7 @@ And That is the even that you need to get all new users to do.
 ## Metrics
 
 Its about retention
+
  1. They accept to take it for a test drive.
  2. They keep using it long term (survival)
 
@@ -63,7 +64,7 @@ Don't overly spam users, don't keep telling them to do something or other all th
 
 
 
-Most important question to start with: **What is your product Aha Moment ?**
+Most important question to start with and to really understand: **What is your product Aha Moment ?**
 
 
 
