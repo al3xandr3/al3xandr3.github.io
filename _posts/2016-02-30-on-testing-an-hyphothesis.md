@@ -51,6 +51,25 @@ For example: Lets say we can only run the test on a particular country, so first
 
 If  we get same results we know we can run a fair experiment on that country, that we can then use to extrapolate results for all the world.
 
+### How long to run a test for ?
+
+Power is a measure of how well you can distinguish the difference you are detecting from no difference at all. So running an underpowered test is the equivalent of not being able to make strong declarations of whether your variations are actually winning or losing.
+
+ When your test has a low conversion rate for a given sample size, it means that there is not yet enough evidence to conclude that the effect you're seeing is due to a real difference between the baseline and variation instead of due to chance: in statistical terms, your test is underpowered.
+
+References:
+
+- <https://help.optimizely.com/hc/en-us/articles/200133789> 
+- <https://help.optimizely.com/hc/en-us/articles/200133789-How-long-to-run-a-test> 
+
+
+
+## How to check results are trustworthy ?
+
+Statistical significance answers the question, “How likely is it that my test results will say I have a winner when I actually don’t?” Generally we talk about this as 95% statistical significance. A different way to say the same thing is that we will accept a 5% false positive rate, where the result is not real (100% - 5% = 95%).
+
+
+Reference: <https://help.optimizely.com/hc/en-us/articles/200133789>
 
 
 
