@@ -9,7 +9,7 @@ intro: "User retention and the Aha! moment"
 
 ## What is the _Aha!_ moment ?
 
-Its the moment they decide they are continuing to use the product.
+Its the moment users decide they are continuing to use the product.
 
 Aha moment is when users "get" the value preposition that the product offers to them.
 
