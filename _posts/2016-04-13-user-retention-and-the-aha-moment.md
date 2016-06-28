@@ -30,7 +30,7 @@ The more time spent without Aha moment, the more likely the user is not coming b
 
 Product/Market fit: Satisfy market demand for a solution to a specific problem
 
-- The Market: target audience 
+- The Market: target audience
 - The Value: what is user getting out of it ? (value preposition to the user)
 - The Fit: How well it delivers the product value preposition to market.
 
@@ -39,13 +39,13 @@ Failing to convey your solution increases uncertainty ( a users that are not ret
 
 ### Finding it from data
 
-Go look into the data and compare the users who survive (keep using the product) versus the ones who don't... 
+Go look into the data and compare the users who survive (keep using the product) versus the ones who don't...
 
 What are the actions, the usage, they did of the product when they were new users?
 
-Are there actions that the survivors did often and the non-survivors don't? thats the event that gets them to the aha moment.
+Are there actions that the survivors did often and the non-survivors don't? that's the event that gets them to the aha moment.
 
-And That is the even that you need to get all new users to do.
+And That is the event that you need to get all new users to do.
 
 ## Metrics
 
@@ -73,4 +73,3 @@ Most important question to start with and to really understand: **What is your p
 - <https://www.youtube.com/watch?v=raIUQP71SBU>
 - <https://www.youtube.com/watch?v=n_yHZ_vKjno>
 - <https://www.youtube.com/watch?v=8qwV-sAHsG8>
-
