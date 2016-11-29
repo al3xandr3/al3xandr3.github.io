@@ -113,40 +113,33 @@ Simulating a slow down like a old Cassette player loosing their batteries ?
 
 
 ### "Cleaner" Reverb
-Use delay between (80-90ms), like left:80ms, rigth:90ms, with left right crossover and wet at 30%, add in as much (or as little) repeats as needed.
+Use delay between (80-90ms), like left: 80ms, rigth: 90ms, with left right crossover and wet at 30%, add in as much (or as little) repeats as needed.
 
 
 
 ## Mastering
 
-Learn from existing music examples, even in when mastering, keep a example at hand to compare to.
+When mastering use a commercial audio track as a reference to what is the ideal sound, A/B between the 2.
 
-1. Center vs Sides
-
-1.1 Force the low frequencies to be in center.
-1.2 Widen the sides a little bit, volume higher for sides.
-
-2. EQ
-
-2.1 Clean: remove frequencies
-2.2 EQ boost the top end
-
-3. Compress, guing things toguether
-
-Dynamic, multiband compressor: 
-Maybe more top eq, especially on the sides
-
-4. Color
-
-Add Subtle warm saturation: sides vs mid. Push sides highs up
-
-5. Make it loud
-Maximizer and limiter at the end
+1. EQ Clean: remove ugly frequencies: 
+1.1 Remove rumble bellow 50Hz
+1.2 Look for specific resonances to remove
+2. Split: Center + Sides
+2.1 Remove highs from the center using a low pass filter, avoid a floppy low end.
+2.2 Remove lows from the sides, using a high pass filter, widen the sides a little by increasing volume.
+3. Compress, glue things together (Vladg/sound Molot)
+5.1 Even better with a Dynamic, multiband compressor, to work on different regions
+4. EQ, give a little bump to 4Khz and 10KHz for that extra sizzle (lkjb Luftikus, TDR VOS Slick EQ)
+4.1 EQ like hifi, little color stronger low end, stronger high end (TDR VOS Slick EQ)
+5. Color: Add Subtle warm saturation. Push sides highs up 
+6. Make it loud: Maximizer and limiter at the end (Vladg/sound Limiter No6)
 
 
 Reference:
-- https://www.youtube.com/watch?v=FzNweEPg-2U
+
 - https://www.youtube.com/watch?v=Bah367_iLBg
+- https://www.youtube.com/watch?v=FzNweEPg-2U
+
 
 
 
