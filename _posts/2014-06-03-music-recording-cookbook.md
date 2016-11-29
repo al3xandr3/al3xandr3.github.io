@@ -122,15 +122,15 @@ Use delay between (80-90ms), like left: 80ms, rigth: 90ms, with left right cross
 When mastering use a commercial audio track as a reference to what is the ideal sound, A/B between the 2.
 
 1. EQ Clean: remove ugly frequencies: 
-1.1 Remove rumble bellow 50Hz
-1.2 Look for specific resonances to remove
+  1.1 Remove rumble bellow 50Hz
+  1.2 Look for specific resonances to remove
 2. Split: Center + Sides
-2.1 Remove highs from the center using a low pass filter, avoid a floppy low end.
-2.2 Remove lows from the sides, using a high pass filter, widen the sides a little by increasing volume.
+  2.1 Remove highs from the center using a low pass filter, avoid a floppy low end.
+  2.2 Remove lows from the sides, using a high pass filter, widen the sides a little by increasing volume.
 3. Compress, glue things together (Vladg/sound Molot)
-5.1 Even better with a Dynamic, multiband compressor, to work on different regions
+  3.1 Even better with a Dynamic, multi-band compressor, to work on different regions
 4. EQ, give a little bump to 4Khz and 10KHz for that extra sizzle (lkjb Luftikus, TDR VOS Slick EQ)
-4.1 EQ like hifi, little color stronger low end, stronger high end (TDR VOS Slick EQ)
+  4.1 EQ like hifi, little color stronger low end, stronger high end (TDR VOS Slick EQ)
 5. Color: Add Subtle warm saturation. Push sides highs up 
 6. Make it loud: Maximizer and limiter at the end (Vladg/sound Limiter No6)
 
