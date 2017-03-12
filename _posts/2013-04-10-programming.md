@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Programming
+category: project
 tags:
   - programming
 intro: "Programming Best Practices"
