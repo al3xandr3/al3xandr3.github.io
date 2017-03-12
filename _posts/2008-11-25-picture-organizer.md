@@ -6,6 +6,7 @@ tags:
   - automation
   - ruby
   - python
+  - project
 intro: "Script to organize pictures into folders by the day they were taken"
 ---
 
@@ -98,3 +99,10 @@ Code:
                     os.mkdir(picDate(file).strftime("%Y-%m-%d"))
                 os.rename(file, dir + '/' + file)
 
+
+
+# Clojure Version:
+
+[code](https://github.com/al3xandr3/picsort)
+
+January 2013 - Tools: Clojure

@@ -5,6 +5,7 @@ category: project
 tags:
   - automation
   - clojure
+  - project
 intro: "Have your clojure test-is results posted on twitter automatically as they run"
 ---
 

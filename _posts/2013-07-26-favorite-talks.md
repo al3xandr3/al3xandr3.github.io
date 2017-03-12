@@ -5,6 +5,7 @@ category: life
 tags:
   - learning
   - programming
+  - life
 intro: "Talks, presentations that i found very interesting"
 ---
 

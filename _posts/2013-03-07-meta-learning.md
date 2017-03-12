@@ -4,6 +4,7 @@ title: Meta Learning
 category: life
 tags:
   - learning
+  - life
 intro: "learning how to learn"
 ---
 

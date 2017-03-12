@@ -5,6 +5,7 @@ category: project
 tags:
   - ruby
   - automation
+  - project
 intro: "Script to automate updating content of a confluence wiki, both page content and page attachments"
 ---
 

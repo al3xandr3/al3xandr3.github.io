@@ -6,6 +6,7 @@ tags:
   - abtesting
   - keyboard
   - idea
+  - life
 intro: "Keyboard layout design and optimization ideas"
 ---
 

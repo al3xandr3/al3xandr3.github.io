@@ -5,6 +5,7 @@ category: project
 tags:
   - automation
   - ruby
+  - project
 intro: "a script that given an ebay search term, creates misspells alternatives and then executes an (ebay)search. because sometimes great bargains can be found from misspells items"
 ---
 

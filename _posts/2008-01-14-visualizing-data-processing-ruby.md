@@ -4,6 +4,7 @@ title: Visualizing Data, with Processing and JRuby
 category: data
 tags: 
   - data
+  - project
   - visualization
   - statistics
   - ruby

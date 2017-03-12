@@ -7,9 +7,11 @@ hide: true
 <section class="content">
   <ul class="listing">
     {% for post in site.posts %}
-    {% if post.category == 'data' %}
+    {% if post.tags contains 'data' %}
     <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}" title="{{ post.intro}} - {{ post.content.size | divided_by:1000}}k word count">{{ post.title }}</a>
+            <span>{{ post.date | date: "%e %b, %Y" }}</span>
+      <span><i>({{ post.tags | join: ', '}})&nbsp;&nbsp;&nbsp;&nbsp;</i></span>
+      <a href="{{ post.url }}" title="{{ post.intro}} - {{ post.content.size | divided_by:1000}}k word count">{{ post.title }}</a>
     </li>
     {% endif %}
     {% endfor %}

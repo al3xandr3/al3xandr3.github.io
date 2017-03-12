@@ -1,9 +1,9 @@
 --- 
 layout: post
 title: Big Brother Google
-category: data
+category: life
 tags:
-  - data
+  - life
 intro: "Google, data nirvana and grandmother's birthday"
 ---
 

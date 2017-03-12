@@ -5,6 +5,8 @@ category: data
 tags:
   - web analytics
   - python
+  - data
+  - project
 intro: "Web Analytics Dictionary"
 ---
 

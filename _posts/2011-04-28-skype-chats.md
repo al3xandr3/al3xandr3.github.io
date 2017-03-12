@@ -7,6 +7,7 @@ tags:
   - visualization
   - statistics
   - ruby
+  - project
 intro: "From my Skype chat history, a visualization of the counts of chats by (anonymised) user"
 ---
 

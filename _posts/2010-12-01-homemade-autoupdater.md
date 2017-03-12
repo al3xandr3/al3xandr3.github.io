@@ -5,6 +5,7 @@ category: project
 tags:
   - automation
   - emacs
+  - project
 intro: "Script to update an application to the last version. It automates the process of downloading and installing the app"
 ---
 

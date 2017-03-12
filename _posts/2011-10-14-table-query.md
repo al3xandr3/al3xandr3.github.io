@@ -6,6 +6,7 @@ tags:
   - data
   - ruby
   - SQL
+  - project
 intro: "A small ruby class inspired by R's sqldf"
 ---
 

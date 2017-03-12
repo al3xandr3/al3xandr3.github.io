@@ -4,11 +4,13 @@ title: Javascript Bookmark Scripts
 category: project
 tags:
   - javascript
+  - project
 intro: "Create and share little javascript scripts that augment/improve the pages you look at."
 ---
 
 I often use scripts that inject javascript and modify current page im looking at, mostly for inspecting/debug reasons, for example the [WhatFont](http://chengyinliu.com/whatfont.html), that reveals what fonts the page is using.
 These scripts can be triggered from a browser bookmark, so that they run with just a click(very convenient).
+
 
 ## Pretty.js
 
@@ -83,3 +85,14 @@ Kudos for the **github:gist** service! (it even includes versioning !!)
 
 ## Note
 - Here's is a nice collection of ready made bookmarklets: [https://github.com/yaph/bookmarklets](https://github.com/yaph/bookmarklets)
+
+
+
+# In Page Debug tool - August 2012
+
+
+A visual debug tool to inspect custom tracking code placed in the different html elements of a web page, to ease the debugging of web analytics tracking code.
+
+The general solution of injecting javascript into a page from a bookmark, is very usefull for many applications, especially if when combined with javascript online hosting, i explain most of the solution i used in [javascript bookmarks](/javascript-bookmarks.html).
+
+[code](https://gist.github.com/al3xandr3/3665292)

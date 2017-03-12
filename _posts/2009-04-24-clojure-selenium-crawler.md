@@ -6,6 +6,7 @@ tags:
   - automation
   - clojure
   - webcrawler
+  - project
 intro: "I needed a crawler to go around a list of pages, invoke some javascript(tests) and collect the output"
 ---
 

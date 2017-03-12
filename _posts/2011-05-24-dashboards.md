@@ -10,6 +10,7 @@ tags:
   - dashboard
   - javascript
   - statistics
+  - project
 intro: "An important part of being data driven is to have a daily feedback on data, here's a couple of automated dashboards i've built recently"
 ---
 

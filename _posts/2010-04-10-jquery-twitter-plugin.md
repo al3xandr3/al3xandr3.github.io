@@ -4,6 +4,7 @@ title: jQuery Twitter 'mini' plugin
 category: project
 tags:
   - javascript
+  - project
 intro: "A jQuery plugin for displaying a twitter feed into a web page"
 ---
 

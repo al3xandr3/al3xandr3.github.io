@@ -6,6 +6,7 @@ tags:
   - automation
   - clojure
   - webcrawler
+  - project
 intro: "A selenium 2 based web crawler library called cov3, in clojure"
 ---
 

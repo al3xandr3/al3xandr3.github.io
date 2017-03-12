@@ -5,6 +5,7 @@ category: data
 tags:
   - machinelearning
   - R
+  - project
 intro: "Implementation using gradient descent"
 ---
 

@@ -6,6 +6,7 @@ tags:
   - automation
   - ruby
   - emacs
+  - project
 intro: "Automating reports from my (emacs org-mode)TODO list"
 ---
 

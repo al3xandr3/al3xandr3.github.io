@@ -6,6 +6,7 @@ tags:
   - product
   - application
   - startup
+  - project
 intro: "How to Create a new software product"
 ---
 

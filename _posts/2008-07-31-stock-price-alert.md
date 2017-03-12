@@ -5,6 +5,7 @@ category: project
 tags:
   - automation
   - ruby
+  - project
 intro: "Waiting for a stock price to rise to a certain value to sell it? or waiting for the price to drop to a certain value to buy it? But don't want to be checking it every day? Here's a little automation that raises alerts to email inbox."
 ---
 
@@ -47,3 +48,12 @@ To set it up running every day, use windows Task Scheduler or CRON for linux and
 	            password: "*********", 
 	            subject:  "MSFT stock",
 	            body:     stock}) if stock <= 26 or stock > 28
+
+
+# Update July 2013
+
+And now in Clojure:
+
+[code](https://github.com/al3xandr3/stock) - [web](https://github.com/al3xandr3/stock)
+
+July 2013 - Tools: Clojure

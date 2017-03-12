@@ -1,9 +1,9 @@
 --- 
 layout: post
 title: Lem-E-Tweakit and Logic programming
-category: data
+category: project
 tags:
-  - SQL
+  - project
 intro: "Prolog vs SQL"
 ---
 

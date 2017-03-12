@@ -9,6 +9,8 @@ tags:
   - visualization
   - ruby
   - R
+  - project
+  - data
 intro: "In previous Monitoring Productivity Experiment I looked into the hours I spent in computer, now I look into the hours others spend in computer, which is far more interesting"
 ---
 

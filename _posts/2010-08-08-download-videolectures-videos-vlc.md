@@ -4,6 +4,7 @@ title: How to download videolectures.net videos with VLC
 category: project
 tags:
   - automation
+  - project
 intro: "videolectures.net has very good content, here's a way to download its videos"
 ---
 

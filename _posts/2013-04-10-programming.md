@@ -4,6 +4,7 @@ title: Programming
 category: project
 tags:
   - programming
+  - project
 intro: "Programming Best Practices"
 ---
 
