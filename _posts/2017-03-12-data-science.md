@@ -10,7 +10,7 @@ hero: http://lh3.googleusercontent.com/-8VfQ9VnnICA/U-nCNseScgI/AAAAAAAAG08/YyGP
     <li>
       <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}" title="{{ post.intro}} - {{ post.content.size | divided_by:1000}}k word count">{{ post.title }}</a>
     </li>
-    {% endunless %}
+    {% endif %}
     {% endfor %}
   </ul>
 </section>

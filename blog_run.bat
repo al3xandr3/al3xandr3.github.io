@@ -1,2 +1,2 @@
 cd %UserProfile%\Dropbox\my\blog
-rake 
+bundle exec jekyll serve
