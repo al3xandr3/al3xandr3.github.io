@@ -5,9 +5,6 @@ category: data
 tags:
   - data
   - semanticweb
-  - javascript
-  - statistics
-  - visualization
 intro: "Practical examples on tagging up a site with RDFa tags, then extract and use the semantic web data"
 ---
 

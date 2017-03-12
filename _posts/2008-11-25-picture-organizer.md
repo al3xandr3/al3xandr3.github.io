@@ -101,7 +101,7 @@ Code:
 
 
 
-# Clojure Version:
+## Clojure Version
 
 [code](https://github.com/al3xandr3/picsort)
 
