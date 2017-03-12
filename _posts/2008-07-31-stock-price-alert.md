@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Stock Price Alert
-category: code
+category: project
 tags:
   - automation
   - ruby

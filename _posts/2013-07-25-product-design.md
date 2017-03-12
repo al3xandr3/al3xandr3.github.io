@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Product and Application Design
-category: other
+category: project
 tags:
   - product
   - application

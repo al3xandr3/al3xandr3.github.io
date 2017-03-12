@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Programming
-category: code
 tags:
   - programming
 intro: "Programming Best Practices"

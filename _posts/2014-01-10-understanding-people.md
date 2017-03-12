@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding People
-category: other
+category: life
 tags:
   - learning
   - life

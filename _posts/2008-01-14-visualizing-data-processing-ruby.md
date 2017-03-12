@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Visualizing Data, with Processing and JRuby
-category: visualization
+category: data
 tags: 
   - data
   - visualization

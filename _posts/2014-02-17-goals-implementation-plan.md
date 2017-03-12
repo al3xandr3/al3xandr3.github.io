@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Goals Implementation Plan
-category: other
+category: life
 tags:
   - learning
 intro: "day to day practical implementation of goals"

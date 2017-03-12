@@ -2,7 +2,7 @@
 layout: post
 title: Quotes
 intro: "Selected Quotes"
-hide: true
+category: life
 ---
 
 <div id="quote_cloud"></div>

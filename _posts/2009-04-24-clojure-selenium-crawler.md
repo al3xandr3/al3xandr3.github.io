@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Clojure and Selenium
-category: code
+category: project
 tags:
   - automation
   - clojure

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Music Production
-category: other
+category: music
 tags:
   - learning
   - music

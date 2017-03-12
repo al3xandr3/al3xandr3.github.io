@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Who Chats the Most?
-category: visualization
+category: project
 tags:
   - data
   - visualization

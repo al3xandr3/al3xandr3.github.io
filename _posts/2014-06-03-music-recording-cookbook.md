@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Music Recording Cookbook
-category: other
+category: music
 tags:
   - music
   - guitar

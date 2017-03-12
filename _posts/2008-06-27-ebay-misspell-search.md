@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Ebay Misspells Search
-category: code
+category: project
 tags:
   - automation
   - ruby

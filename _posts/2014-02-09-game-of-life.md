@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Game of Life
-category: other
+category: life
 tags:
   - learning
   - life

@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Machine Learning Ex2 - Linear Regression
-category: statistics
+category: data
 tags:
   - machinelearning
   - R

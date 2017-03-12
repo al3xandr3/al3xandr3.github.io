@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Dashboarding
-category: code
+category: project
 tags:
   - data
   - visualization

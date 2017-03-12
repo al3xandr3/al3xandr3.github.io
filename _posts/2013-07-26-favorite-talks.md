@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Favorite Talks
-category: code
+category: life
 tags:
   - learning
   - programming

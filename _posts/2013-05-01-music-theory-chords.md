@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Music Theory Chords
-category: other
+category: music
 tags:
   - music
   - guitar

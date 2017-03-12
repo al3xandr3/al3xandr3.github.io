@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Monitoring Productivity Experiment
-category: statistics
+category: data
 tags:
   - data
   - productivity

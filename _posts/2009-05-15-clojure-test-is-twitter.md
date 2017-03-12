@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Clojure test-is results in twitter
-category: code
+category: project
 tags:
   - automation
   - clojure

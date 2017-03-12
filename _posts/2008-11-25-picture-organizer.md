@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Photo organizer
-category: code
+category: project
 tags:
   - automation
   - ruby

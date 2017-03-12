@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Visualization and Presentation techniques
-category: statistics
+category: data
 tags:
   - statistics
   - data

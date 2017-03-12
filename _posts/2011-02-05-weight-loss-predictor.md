@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Weight Loss Predictor
-category: statistics
+category: data
 tags: 
   - data
   - R

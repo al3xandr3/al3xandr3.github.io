@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Confluence automation
-category: code
+category: project
 tags:
   - ruby
   - automation

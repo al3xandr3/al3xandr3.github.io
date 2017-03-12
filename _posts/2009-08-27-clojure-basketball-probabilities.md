@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Probability simulation of basketball throws
-category: statistics
+category: data
 tags:
   - montecarlo
   - statistics

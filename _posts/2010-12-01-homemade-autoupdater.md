@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Homemade Auto-Updater
-category: code
+category: project
 tags:
   - automation
   - emacs

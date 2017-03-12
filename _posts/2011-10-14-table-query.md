@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Table.query
-category: code
+category: project
 tags:
   - data
   - ruby

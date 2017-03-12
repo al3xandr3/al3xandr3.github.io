@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Meta Learning
-category: other
+category: life
 tags:
   - learning
 intro: "learning how to learn"

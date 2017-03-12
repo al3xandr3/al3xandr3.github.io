@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Clojure and Selenium part ii - cov3
-category: code
+category: project
 tags:
   - automation
   - clojure

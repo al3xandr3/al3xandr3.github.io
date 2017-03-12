@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Automating todo tasks reports with org-mode
-category: code
+category: project
 tags:
   - automation
   - ruby

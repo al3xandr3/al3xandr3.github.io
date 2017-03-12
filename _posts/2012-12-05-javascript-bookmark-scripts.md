@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: Javascript Bookmark Scripts
-category: code
+category: project
 tags:
   - javascript
 intro: "Create and share little javascript scripts that augment/improve the pages you look at."
