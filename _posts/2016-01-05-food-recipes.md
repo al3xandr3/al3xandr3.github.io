@@ -1,14 +1,13 @@
 
 --- 
 layout: post
-title: Food recipes (idea)
+title: Food recipes idea
 category: data
 tags:
   - data
   - idea
-intro: "Food recipes (idea)"
+intro: "Food recipes idea"
 ---
-
 
 
 <div class="photo-wrapper-inner">![Food recipes (idea)Get a machine learning algorithm to learn what the most common pairing of ingredients in existing recipes are.
