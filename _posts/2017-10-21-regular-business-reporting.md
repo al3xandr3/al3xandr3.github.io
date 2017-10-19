@@ -31,7 +31,7 @@ Good thing is, a change of trends, can only be (typically) a handful of things:
 
 ## What to Report
 
-Besides the regular charts of trends over time and change over week, consider also including other potentially insightful views, like the [Funnel of the Customer lifecycle](http://al3xandr3.github.io/user-lifecycle-analytics-framework.html):
+Besides the regular charts of trends, consider also including other potentially insightful views, like the [Customer lifecycle funnel](http://al3xandr3.github.io/user-lifecycle-analytics-framework.html) that helps to quickly pinpoint the leaking bucket in the customer journey:
 
 ![Funnel of the Customer lifecycle](https://drive.google.com/uc?id=0B3ypY27pPCJyNlFqU0V1V195NzQ)
 
