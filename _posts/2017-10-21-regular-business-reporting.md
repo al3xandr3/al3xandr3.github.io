@@ -9,11 +9,13 @@ intro: "Regular Business Reporting"
 
 ## Regular Business Reporting
 
-Part of running a business is to produce regular updates on what the business is doing and how is it trending, week over week, month over month.
+An essencial part of running a business is to have regular updates on how the business is doing and trending, week over week, month over month.
 
-Having some tools in place even before the top level numbers reaches the analyst, lets him know ahead what to expect and have some answers ready.
+This tipically involves a collection of charts that show the main metrics over time, and their change compared to last week/month/year.
 
-## A change in the Business
+Having extra tools and processes in place helps both antecipate what the results will be like (before they hit the charts), and also quickly investigate causes for the changes.
+
+## A change in the Metrics
 
 1. **Goal**: “What’s going on with the business?, is it trending up or down? and if it changed direction: why is that?”
 2. Every insight statement needs to be proven. Imagine that every statement will get questioned with: “What makes you say that? It could be a number of things… have you considered XYZ”.
@@ -23,15 +25,15 @@ Having some tools in place even before the top level numbers reaches the analyst
 
 Good thing is, a change of trends, can only be (typically) a handful of things:
 
-![Regular reporting proof](https://lh3.googleusercontent.com/rMzZSeEdSdrijIkSxOVMc4ud61ATZ8Fe7AzK2YdMGTKMtEKe7tyuRTdo0rhtZSZ5r9J2HdczAaKThnc=w2560-h1282-rw)
+![Regular reporting proof](https://drive.google.com/uc?id=0B3ypY27pPCJyTjU4NzZWbDlOOGc)
 
-> * Seasonality Charts like https://research.fb.com/prophet-forecasting-at-scale/   tells us expected seasonality over a year/month/week upfront, thus is very straightforward to tell what seasonality effect is coming up next.
+> *Seasonality Charts like https://research.fb.com/prophet-forecasting-at-scale/   tells us expected seasonality over a year/month/week upfront, thus is very straightforward to tell what seasonality effect is coming up next.
 
 ## What to Report
 
-Besides the regular chart, of the trending of the business KPI's, consider also other potentially insightful views, like the [Funnel of the Customer lifecycle](http://al3xandr3.github.io/user-lifecycle-analytics-framework.html):
+Besides the regular charts of trends over time and change over week, consider also including other potentially insightful views, like the [Funnel of the Customer lifecycle](http://al3xandr3.github.io/user-lifecycle-analytics-framework.html):
 
-![Funnel of the Customer lifecycle](https://lh6.googleusercontent.com/JOnPkCi3W9IKBkXSnCdMOz4djEcRtY3v8vfctiZFl6Ymf2DHwkBmeWUI2qUSvafGOOdiGCm9S8TGSGI=w2560-h1282-rw)
+![Funnel of the Customer lifecycle](https://drive.google.com/uc?id=0B3ypY27pPCJyNlFqU0V1V195NzQ)
 
 
 
