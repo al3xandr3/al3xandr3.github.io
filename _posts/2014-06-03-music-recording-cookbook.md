@@ -164,6 +164,9 @@ I want to convert the final audio or video into different formats, for different
 - HUFFYUV video codec, 24 bit PCM audio
 - Set: "Get native video settings"
 
+#### Reaper and better codecs
+supported out of the box currently
+
 ## Sound Quality Characteristics
 
 ### Overdrive, Distortion, Fuzz
