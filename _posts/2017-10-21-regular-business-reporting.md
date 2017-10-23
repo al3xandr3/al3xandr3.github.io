@@ -9,11 +9,11 @@ intro: "Regular Business Reporting"
 
 ## Regular Business Reporting
 
-An essencial part of running a business is to have regular updates on how the business is doing and trending, week over week, month over month.
+An essential part of running a business is to have regular updates on how the business is doing and trending, week over week, month over month.
 
-This tipically involves a collection of charts that show the main metrics over time, and their change compared to last week/month/year.
+This typically involves a collection of charts that show the main metrics over time, and their change compared to last week/month/year.
 
-Having extra tools and processes in place helps both antecipate what the results will be like (before they hit the charts), and also quickly investigate causes for the changes.
+Having extra tools and processes in place helps both anticipate what the results will be like (before they hit the charts), and also quickly investigate the root causes for the changes.
 
 ## A change in the Metrics
 
