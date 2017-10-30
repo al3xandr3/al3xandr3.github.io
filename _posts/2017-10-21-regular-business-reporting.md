@@ -21,6 +21,7 @@ Having extra tools and processes in place helps both anticipate what the results
 2. Every insight statement needs to be proven. Imagine that every statement will get questioned with: “What makes you say that? It could be a number of things… have you considered XYZ”.
 3. Thus each of the statements need to include a chart/view, that gives high confidence on statement, a proof.
 
+
 ### How to prove it? 
 
 Good thing is, a change of trends, can only be (typically) a handful of things:
@@ -28,6 +29,9 @@ Good thing is, a change of trends, can only be (typically) a handful of things:
 ![Regular reporting proof](https://drive.google.com/uc?id=0B3ypY27pPCJyTjU4NzZWbDlOOGc)
 
 > *Seasonality Charts like https://research.fb.com/prophet-forecasting-at-scale/   tells us expected seasonality over a year/month/week upfront, thus is very straightforward to tell what seasonality effect is coming up next.
+
+One thing that is missing from above is: "Were there significant Marketing campaigns that might create a spike in influx of users ?" 
+
 
 ## What to Report
 
