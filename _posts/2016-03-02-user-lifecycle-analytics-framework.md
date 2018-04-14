@@ -117,8 +117,12 @@ The scorecard applied in this way, should be answering 2 questions:
 
 ## Metrics: Active Users
 
-A fairly standard metric (industry standard) is the user activity in the application (in-app activity), for example:
+A popular metric in the last few years is the Active user measure.
+I suspect Facebook made it grow in popularity.
+It fits some businesses better than others, its a good fit for Facebook for example, because is essencially about same as Web analytics sessions, the default metric for web apps, and more importantly correlates directly with FB main business model of selling ads.
+i.e. once a user enters the app, is exposed to an ad, and gets counted as an Active User.
 
+Tipical cuts:
 - DAU, daily active* user
 - WAU, weekly active user
 - MAU, monthly active user

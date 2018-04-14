@@ -9,6 +9,8 @@ intro: "Regular Business Reporting"
 
 ## Regular Business Reporting
 
+Also known as Rythm Of the Business (RoB)
+
 An essential part of running a business is to have regular updates on how the business is doing and trending, week over week, month over month.
 
 This typically involves a collection of charts that show the main metrics over time, and their change compared to last week/month/year.
@@ -30,7 +32,9 @@ Good thing is, a change of trends, can only be (typically) a handful of things:
 
 > *Seasonality Charts like https://research.fb.com/prophet-forecasting-at-scale/   tells us expected seasonality over a year/month/week upfront, thus is very straightforward to tell what seasonality effect is coming up next.
 
-One thing that is missing from above is: "Were there significant Marketing campaigns that might create a spike in influx of users ?" 
+Other items to take into consideration: 
+- Were there significant Marketing campaigns that might create a spike in influx of users ?Or a pause in them creating a sudden drop
+- Fraud Activities change
 
 
 ## What to Report
