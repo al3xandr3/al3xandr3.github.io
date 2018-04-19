@@ -80,7 +80,7 @@ Finding nodes with the shortest distance to all other nodes inside a cluster(of 
 
 Knowing influencer, bridges, groups, FoF, densities, distances etc... Allows to understand how information spreads, how fast , who play's what roles, how people are really using the app, and what for.... At the end of the day it translates into a competitor advantage on how to optimize a network.
 
-__Other__
+#### Other
 
 The application of SNA varies a lot, if we study a political network we will focus on different aspects compared to a social network and these translate into different uses, but above are typical concepts that illustrate potential.
 
