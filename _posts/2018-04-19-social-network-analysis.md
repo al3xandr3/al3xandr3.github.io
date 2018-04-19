@@ -96,5 +96,5 @@ Naturally many new applications are appearing and some of the bigger gems happen
 
 - https://en.wikipedia.org/wiki/Social_network_analysis
 - Book: Social Network Analysis for Startups,  Alexander Kouznetsov and Maksim Tsvetovat
-- Using Palantir to Address Information Security and Insider Threat in the Enterprise,  Video Demo: https://www.youtube.com/watch?v=dGPDLD0tJxI&list=PLCA98B156F7EFD6A0 
-- An Introduction to Graph Theory and Network Analysis (with Python)https://www.analyticsvidhya.com/blog/2018/04/introduction-to-graph-theory-network-analysis-python-codes/
+- Using Palantir to Address Information Security and Insider Threat in the Enterprise,  Video Demo:  https://www.youtube.com/watch?v=dGPDLD0tJxI&list=PLCA98B156F7EFD6A0 
+- An Introduction to Graph Theory and Network Analysis (with Python) https://www.analyticsvidhya.com/blog/2018/04/introduction-to-graph-theory-network-analysis-python-codes/
