@@ -9,11 +9,11 @@ intro: "Social Network Analysis"
 
 ##  Social Network Analysis
 
-![SNA](https://drive.google.com/uc?id=0B3ypY27pPCJyd1NtemM1WE5RMU0)
+![SNA](https://drive.google.com/uc?id=1lwtZz_eokmIdFFfhtmjvPDRbipLuUouL)
 
 ### What it SNA ?
 
-Social Network Analysis(SNA) boils to one concept: our relationships, taken together, define who we are and how we act. Our personality, education, background, race, ethnicity all interact with our pattern of relationships that we are embed in and leave marks on it. Observing and studying these patterns we can answer many questions about our sociality.
+Social Network Analysis(__SNA__) boils to one concept: our relationships, taken together, define who we are and how we act. Our personality, education, background, race, ethnicity all interact with our pattern of relationships that we are embed in and leave marks on it. Observing and studying these patterns we can answer many questions about our sociality.
 
 SNA is the study of human relationships by means of graph theory.
 
@@ -33,13 +33,16 @@ Social actions happening in digital form, make it possible to collect as data fo
 
 ### SNA "for Fun and Profit" (aka SNA Applications)
 
-_Who in a network is an influencer_ 
+
+> Who in a network is an influencer?
 
 If you find in the network who everybody else listens to, you can then predict some of the future dynamics of the network, including virality.
 
 Advertisers and Marketers can estimate the biggest bang for the marketing buck by routing their message through the most influential people in a Social Network.
 
-_Who bridges between groups_
+
+
+> Who bridges between groups?
 
 The node that bridges between groups holds an important position as the communications bottlenecks and gets filtered by this person. Is a special type of influencer too.
 Terrorists cells are known to operate in this way, as part of the information filtering.
@@ -48,28 +51,33 @@ Also If this person leaves the network these 2 groups will become separate and t
 
  If you have a commercial product you can infer that with this person leaving, the loss is more significant (than with a non-bridge) and you'll want to re-enforce the network to not depend on 1 bridge only.
 
-_What different groups are there_
+
+> What different groups are there?
 
 Separate clusters of users are an indication of different interests/behaviors/cultures.
 This enables more personalized (and effective) marketing and/or targeted content in the commercial space.
 
 Also people in groups influence each other, and they often move together, imagine the case of joining an app or leaving an app, whole groups will move.
 
-_Friend of a Friend_
+
+> Friend of a Friend
 
 Typical in a commercial social app, to have recommendations like: "John is a friend with 2 of your friends, maybe you want to get in touch with John too".
 
 Friend of friend tend to have close interests/cultural profile, so there's similarity inferences to be made here.
 
-_Shortest route between A and B_
+
+> Shortest route between A and B
 
 Imagine you want to move a message between A and B, the graph view can calculate the shortest path.
 
 Finding nodes with the shortest distance to all other nodes inside a cluster(of nodes), means is the most efficient way to spread a message. Like, "Linda is the one talking to everyone in the social circle and organizing the night out's."
 
-_How does an org really works_
+
+> How does an org really works
 
 Knowing influencer, bridges, groups, FoF, densities, distances etc... Allows to understand how information spreads, how fast , who play's what roles, how people are really using the app, and what for.... At the end of the day it translates into a competitor advantage on how to optimize a network.
+
 
 __Other__
 
