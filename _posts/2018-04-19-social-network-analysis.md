@@ -35,7 +35,7 @@ Social actions happening in digital form, make it possible to collect as data fo
 
 
 
-> Who in a network is an influencer?
+#### Who in a network is an influencer?
 
 If you find in the network who everybody else listens to, you can then predict some of the future dynamics of the network, including virality.
 
@@ -43,7 +43,7 @@ Advertisers and Marketers can estimate the biggest bang for the marketing buck b
 
 
 
-> Who bridges between groups?
+#### Who bridges between groups?
 
 The node that bridges between groups holds an important position as the communications bottlenecks and gets filtered by this person. Is a special type of influencer too.
 Terrorists cells are known to operate in this way, as part of the information filtering.
@@ -54,7 +54,7 @@ Also If this person leaves the network these 2 groups will become separate and t
 
 
 
-> What different groups are there?
+#### What different groups are there?
 
 Separate clusters of users are an indication of different interests/behaviors/cultures.
 This enables more personalized (and effective) marketing and/or targeted content in the commercial space.
@@ -62,21 +62,21 @@ This enables more personalized (and effective) marketing and/or targeted content
 Also people in groups influence each other, and they often move together, imagine the case of joining an app or leaving an app, whole groups will move.
 
 
-> Friend of a Friend
+#### Friend of a Friend
 
 Typical in a commercial social app, to have recommendations like: "John is a friend with 2 of your friends, maybe you want to get in touch with John too".
 
 Friend of friend tend to have close interests/cultural profile, so there's similarity inferences to be made here.  
 
 
-> Shortest route between A and B
+#### Shortest route between A and B
 
 Imagine you want to move a message between A and B, the graph view can calculate the shortest path.
 
 Finding nodes with the shortest distance to all other nodes inside a cluster(of nodes), means is the most efficient way to spread a message. Like, "Linda is the one talking to everyone in the social circle and organizing the night out's."
 
 
-> How does an org really works
+#### How does an org really works
 
 Knowing influencer, bridges, groups, FoF, densities, distances etc... Allows to understand how information spreads, how fast , who play's what roles, how people are really using the app, and what for.... At the end of the day it translates into a competitor advantage on how to optimize a network.
 
