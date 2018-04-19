@@ -12,7 +12,7 @@ intro: "Impact Evaluation"
 
 Impact evaluation is structured to answer the question: "how would outcomes such as the participants well-being have changed if the intervention had not been undertaken?" This involves counter-factual analysis, that is, “a comparison between what actually happened and what would have happened in the absence of the intervention.”
 
-A secondary question that normally comes imediatly after is "why?". What behaviours did we change that explain the observed impact of the intervention?
+A secondary question that normally comes immediately after is "why?". What behaviors did we change that explain the observed impact of the intervention?
 
 The key challenge in impact evaluation is that the counter factual cannot be directly observed and must be approximated with reference to a comparison group. There are a range of accepted approaches to determining an appropriate comparison group for counter-factual analysis, using either:
  - Prospective (ex ante), selection of treatment vs control

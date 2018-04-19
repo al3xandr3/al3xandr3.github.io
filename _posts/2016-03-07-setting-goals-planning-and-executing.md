@@ -12,7 +12,7 @@ intro: "Setting Goals, Planning and Executing"
 The Goals depend on 2 main factors:
 
 - The type of business, product, market. (example: e-commerce goals are different than SaaS goals)
-- The phase (or the goal) the company is in right now. Example: startups goals are different than a mature company goals, do we need more users now, or instead we have enought users, but we need revenue?
+- The phase (or the goal) the company is in right now. Example: startups goals are different than a mature company goals, do we need more users now, or instead we have enough users, but we need revenue?
 
 Metrics should cover the customer life-cycle stages, look at how a user interacts with the product/service, from finding the product all the way to buying something (depending on type of business) and create a funnel that looks at each of the stages, typically: acquisition > activation > retention (and churn) > revenue.  
 
