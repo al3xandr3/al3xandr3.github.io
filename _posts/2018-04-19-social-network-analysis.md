@@ -54,7 +54,7 @@ Also If this person leaves the network these 2 groups will become separate and t
 
 ### What different groups are there?
 
-Separate clusters of users are an indication of different interests/behaviors/cultures.
+Separate groups of users are an indication of different interests/behaviors/cultures.
 This enables more personalized (and effective) marketing and/or targeted content in the commercial space.
 
 Also people in groups influence each other, and they often move together, imagine the case of joining an app or leaving an app, whole groups will move.
@@ -71,10 +71,10 @@ Friend of friend tend to have close interests/cultural profile, so there's simil
 
 Imagine you want to move a message between A and B, the graph view can calculate the shortest path.
 
-Finding nodes with the shortest distance to all other nodes inside a cluster(of nodes), means is the most efficient way to spread a message. Like, "Linda is the one talking to everyone in the social circle and organizing the night out's."
+Finding nodes with the shortest distance to all other nodes inside a group(of nodes), means is the most efficient way to spread a message. Like, "Linda is the one talking to everyone in the social circle and organizing the night out's."
 
 
-### How does an org really works
+### How does an Network really works
 
 Knowing influencer, bridges, groups, FoF, densities, distances etc... Allows to understand how information spreads, how fast , who play's what roles, how people are really using the app, and what for.... At the end of the day it translates into a competitor advantage on how to optimize a network.
 
