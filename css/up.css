@@ -41,19 +41,22 @@ article, .content {
 article img, .content img {
     display: block;
     margin: 0px;
-    max-height: 80%;
-    max-width: 80%;
+    max-height: 70%;
+    max-width: 70%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  text-transform: none;
+  border-top: none;
+  margin-top: 2em;
   font-weight: 700;
   font-style: normal;
-  font-size: 34px;
   margin-left: -2.13px;
   line-height: 1.15;
   letter-spacing: -.015em;
 }
+
 
 p {
   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
