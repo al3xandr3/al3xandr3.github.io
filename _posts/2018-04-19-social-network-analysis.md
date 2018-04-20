@@ -23,14 +23,15 @@ __SNA__  formalizes human interactions (and/or relations) and allows to infer in
 Internet scaled up the number of human interactions significantly, we are no longer cooperating only with the group of people living physically in same area. Also it has deepened the reach, is equally as easy to talk to a close relative as it is to a distant acquaintance.
 
 A piece of information can now spread faster than ever across a network of people and is only getting faster.
-And the wisdom of the crowds (Many Are Smarter Than the Few) potential is only getting bigger.
+And the potential of wisdom of the crowds ("Many Are Smarter Than the Few")  is only getting bigger.
 
 Social actions in digital form most often reflect non-digital life, who you network with and what personality/culture you emerged in.
 
 Social actions happening in digital form, make it possible to collect as data for analysis.
 
-## SNA "for Fun and Profit" (aka Applications)
+## SNA "for Fun and Profit" 
 
+i.e. __SNA__  Applications
 
 
 ### Who in a network is an influencer?
@@ -38,8 +39,6 @@ Social actions happening in digital form, make it possible to collect as data fo
 If you find in the network who everybody else listens to, you can then predict some of the future dynamics of the network, including virality.
 
 Advertisers and Marketers can estimate the biggest bang for the marketing buck by routing their message through the most influential people in a Social Network.
-
-
 
 ### Who bridges between groups?
 
@@ -51,7 +50,6 @@ Also If this person leaves the network these 2 groups will become separate and t
  If you have a commercial product you can infer that with this person leaving, the loss is more significant (than with a non-bridge) and you'll want to re-enforce the network to not depend on 1 bridge only.
 
 
-
 ### What different groups are there?
 
 Separate groups of users are an indication of different interests/behaviors/cultures.
@@ -59,19 +57,17 @@ This enables more personalized (and effective) marketing and/or targeted content
 
 Also people in groups influence each other, and they often move together, imagine the case of joining an app or leaving an app, whole groups will move.
 
-
 ### Friend of a Friend
 
 Typical in a commercial social app, to have recommendations like: "John is a friend with 2 of your friends, maybe you want to get in touch with John too".
 
 Friend of friend tend to have close interests/cultural profile, so there's similarity inferences to be made here.  
 
-
 ### Shortest route between A and B
 
 Imagine you want to move a message between A and B, the graph view can calculate the shortest path.
 
-Finding nodes with the shortest distance to all other nodes inside a group(of nodes), means is the most efficient way to spread a message. Like, "Linda is the one talking to everyone in the social circle and organizing the night out's."
+Finding nodes with the shortest distance to all other nodes inside a group (of nodes), means is the most efficient way to spread a message. Like, "Linda is the one talking to everyone in the social circle and organizing the night out's."
 
 
 ### How does an Network really works
@@ -95,5 +91,6 @@ Naturally many new applications are appearing and some of the bigger gems happen
 
 - https://en.wikipedia.org/wiki/Social_network_analysis
 - Book: Social Network Analysis for Startups,  Alexander Kouznetsov and Maksim Tsvetovat
+- https://en.wikipedia.org/wiki/Twitter_Revolution
 - Using Palantir to Address Information Security and Insider Threat in the Enterprise,  Video Demo:  https://www.youtube.com/watch?v=dGPDLD0tJxI&list=PLCA98B156F7EFD6A0 
 - An Introduction to Graph Theory and Network Analysis (with Python) https://www.analyticsvidhya.com/blog/2018/04/introduction-to-graph-theory-network-analysis-python-codes/
