@@ -40,9 +40,12 @@ If you find in the network who everybody else listens to, you can then predict s
 
 Advertisers and Marketers can estimate the biggest bang for the marketing buck by routing their message through the most influential people in a Social Network.
 
+Google page rank algorithm represents the html web pages connections as a network and finds what pages are the _authorities_ on a specific topic, these are the ones to show up first in a results of a search.
+
 ### Who bridges between groups?
 
 The node that bridges between groups holds an important position as the communications bottlenecks and gets filtered by this person. Is a special type of influencer too.
+
 Terrorists cells are known to operate in this way, as part of the information filtering.
 
 Also If this person leaves the network these 2 groups will become separate and the network weaker in consequence.
@@ -91,6 +94,7 @@ Naturally many new applications are appearing and some of the bigger gems happen
 
 - https://en.wikipedia.org/wiki/Social_network_analysis
 - Book: Social Network Analysis for Startups,  Alexander Kouznetsov and Maksim Tsvetovat
+- https://medium.com/@himanshubeniwal/a-network-analysis-of-game-of-thrones-73360505e541
 - https://en.wikipedia.org/wiki/Twitter_Revolution
 - Using Palantir to Address Information Security and Insider Threat in the Enterprise,  Video Demo:  https://www.youtube.com/watch?v=dGPDLD0tJxI&list=PLCA98B156F7EFD6A0 
 - An Introduction to Graph Theory and Network Analysis (with Python) https://www.analyticsvidhya.com/blog/2018/04/introduction-to-graph-theory-network-analysis-python-codes/
