@@ -70,7 +70,7 @@ Imagine you want to move a message between A and B, the graph view can calculate
 Finding nodes with the shortest distance to all other nodes inside a group (of nodes), means is the most efficient way to spread a message. Like, "Linda is the one talking to everyone in the social circle and organizing the night out's."
 
 
-### How does an Network really works
+### How does a network really works ?
 
 Knowing influencer, bridges, groups, FoF, densities, distances etc... Allows to understand how information spreads, how fast , who play's what roles, how people are really using the app, and what for.... At the end of the day it translates into a competitor advantage on how to optimize a network.
 
