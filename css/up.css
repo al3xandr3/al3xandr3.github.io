@@ -46,11 +46,22 @@ article img, .content img {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   text-transform: none;
   border-top: none;
   margin-top: 2em;
 }
 
+
+p {
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+}
 
 .hero {
   background: #333 no-repeat center center;
