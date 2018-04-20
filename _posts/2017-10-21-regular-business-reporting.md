@@ -7,8 +7,6 @@ tags:
 intro: "Regular Business Reporting"
 ---
 
-## Regular Business Reporting
-
 Also known as Rhythm Of the Business (RoB)
 
 An essential part of running a business is to have regular updates on how the business is doing and trending, week over week, month over month.
