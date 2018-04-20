@@ -9,7 +9,7 @@ intro: "Social Network Analysis"
 
 ##  Social Network Analysis
 
-![SNA](https://drive.google.com/uc?id=1lwtZz_eokmIdFFfhtmjvPDRbipLuUouL)
+![SNA](https://drive.google.com/uc?id=1MM0BKiRiQ1NrgMwAtuJp787l3JQdY5Am)
 
 ### What it SNA ?
 
