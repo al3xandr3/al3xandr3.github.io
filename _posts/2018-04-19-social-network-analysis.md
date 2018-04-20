@@ -15,7 +15,7 @@ Social Network Analysis (__SNA__) boils to one concept: our relationships, taken
 
 __SNA__ is the study of human relationships by means of graph theory.
 
-Is a tool that formalizes human interactions (and/or relations) and allows to infer insights, in the same way that statistical tools allow us to project the future given the past observations.
+__SNA__  formalizes human interactions (and/or relations) and allows to infer insights, in the same way that statistical tools allow us to project the future given the past observations.
 
 
 ## Why is SNA timely ?
@@ -29,7 +29,7 @@ Social actions in digital form most often reflect non-digital life, who you netw
 
 Social actions happening in digital form, make it possible to collect as data for analysis.
 
-## SNA "for Fun and Profit" (aka SNA Applications)
+## SNA "for Fun and Profit" (aka Applications)
 
 
 
