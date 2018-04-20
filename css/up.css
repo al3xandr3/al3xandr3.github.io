@@ -30,7 +30,7 @@
 }
 
 body {
-  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family:  Charter, medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
   font-weight: 400;
   font-style: normal;
@@ -57,7 +57,7 @@ article img, .content img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-family:  "Kievit", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
   text-transform: none;
   border-top: none;
   margin-top: 2em;
