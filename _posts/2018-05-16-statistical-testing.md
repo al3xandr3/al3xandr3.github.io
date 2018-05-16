@@ -63,4 +63,4 @@ Tool: Result is average x, but with expected variation of: [x-1.96*std, x+1.96
 
 Isolate potential cases as hypothesis and test them.
 
-A/B testing moto: isolate/randomize every other factor, like seasonality, time of day, type of user, etc.. except the hypothesis being tested, like a user UX change, so that when a significant change has happened we know is because of UX change.
+A/B testing moto: isolate/randomize every other factor, like seasonality, time of day, type of user, etc.. except the hypothesis being tested, like a user UX change, so that when a significant change has happened we know is surely caused by UX change.
