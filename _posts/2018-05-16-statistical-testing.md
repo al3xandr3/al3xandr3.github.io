@@ -6,14 +6,12 @@ tags:
   - data
 intro: "Statistical Significance"
 ---
-## Statistical Significance
 
-
-### WHY
+## WHY
 
 A numeric result has statistical significance when it is very unlikely to have occurred by natural variation (aka chance)
 
-### WHEN
+## WHEN
 
 In general, required on every numeric result, e.g.:
 
@@ -21,7 +19,7 @@ In general, required on every numeric result, e.g.:
 -   A measure change (is it natural variation or real shift in a metric?)
 -   Summarization of data: average, median
 
-### HOW
+## HOW
 
 *UseCase1*
 
@@ -61,7 +59,7 @@ Average is x, but variation within the original list of values is big, so how co
 
 Tool: Result is average x, but with expected variation of: [x-1.96*std, x+1.96*std]
 
-### WHAT CAUSED IT ?
+## WHAT CAUSED IT ?
 
 Isolate potential cases as hypothesis and test them.
 
