@@ -60,3 +60,9 @@ Tool: <https://www.evanmiller.org/ab-testing/sample-size.html>
 Average is x, but variation within the original list of values is big, so how confidence we are on it ?
 
 Tool: Result is average x, but with expected variation of: [x-1.96*std, x+1.96*std]
+
+### WHAT CAUSED IT ?
+
+Isolate potential cases as hypothesis and test them.
+
+A/B testing moto: isolate/randomize every other factor, like seasonality, time of day, type of user, etc.. except the hypothesis being tested, like a user UX change, so that when a significant change has happened we know is because of UX change.
