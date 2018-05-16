@@ -57,7 +57,7 @@ Tool: <https://www.evanmiller.org/ab-testing/sample-size.html>
 
 Average is x, but variation within the original list of values is big, so how confidence we are on it ?
 
-Tool: Result is average x, but with expected variation of: [x-1.96*std, x+1.96*std]
+Tool: Result is average x, but with expected variation of: [x-1.96\*std, x+1.96\*std]
 
 ## WHAT CAUSED IT ?
 
