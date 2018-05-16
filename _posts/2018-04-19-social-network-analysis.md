@@ -9,7 +9,7 @@ intro: "Social Network Analysis"
 
 ![SNA](https://drive.google.com/uc?id=1MM0BKiRiQ1NrgMwAtuJp787l3JQdY5Am)
 
-## What it SNA ?
+## What is SNA ?
 
 Social Network Analysis (__SNA__) boils to one concept: our relationships, taken together, define who we are and how we act. Our personality, education, background, race, ethnicity all interact with our pattern of relationships that we are embed in and leave marks on it. Observing and studying these patterns we can answer many questions about our sociality.
 
