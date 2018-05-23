@@ -45,7 +45,7 @@ Tool: Is trend change significant? Time Series Analysis: [CausalImpact ](http
 
 CohortA median is higher than CohortB median, but is it stat. significant ?
 
-Tool: Wilcoxon <http://www.real-statistics.com/non-parametric-tests/wilcoxon-rank-sum-test/> (or Mann-Whitney for >2 groups <http://www.real-statistics.com/non-parametric-tests/mann-whitney-test/>)
+Tool: **Moods** http://www.real-statistics.com/non-parametric-tests/moods-median-test-two-samples/ or **Wilcoxon** http://www.real-statistics.com/non-parametric-tests/wilcoxon-rank-sum-test/ (or **Mann-Whitney** for >2 groups http://www.real-statistics.com/non-parametric-tests/mann-whitney-test/) 
 
 #### UseCase5
 
@@ -63,4 +63,4 @@ Tool: Result is average x, but with expected variation of: [x-1.96\*std, x+1.9
 
 Isolate potential cases as hypothesis and test them.
 
-A/B testing moto: isolate/randomize every other factor, like seasonality, time of day, type of user, etc.. except the hypothesis being tested, like a user UX change, so that when a significant change has happened we know is surely caused by UX change.
+A/B testing method: isolate/randomize every other factor, like seasonality, time of day, type of user, etc.. except the hypothesis being tested, like a user UX change, so that when a significant change has happened we know is surely caused by UX change.

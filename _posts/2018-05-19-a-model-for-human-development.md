@@ -7,9 +7,8 @@ tags:
 intro: "A Model of Human Development"
 ---
 
-**Spiral Dynamics** *by Clare W. Graves*
-
 ![](https://cdn-images-1.medium.com/max/1200/1*FTlZgLIPSh_iGhpWRL2c9w.jpeg)
+**Spiral Dynamics** *by Clare W. Graves*
 
 <br/>
 **John** is alone, hungry and looking for food. Still healing a wound from the last food chase. On the lookout for dangerous lions, every day is a battle for survival. [Beige]
@@ -27,8 +26,12 @@ intro: "A Model of Human Development"
 *Some time after, *John realizes these fixed rules take equality too far, we should reward more the individuals who figure out how to make something faster, cheaper and better. Competition is born, free markets and science. Rules and beliefs exist, but are superseded when better ones are found. Inequality among individuals starts to grow.  [**Orange**]
 
 <br/>
-*Some time after,* The focus on individual achievements brings materialism, concentration of power and puts all the wealth in a small group, with the rest struggling. John decides to dial down individualism, rise empathy, strives for diversity and global equality. Even at the cost of slowing down (getting work done" takes longer).  [**Green**]
+*Some time after,* The focus on individual achievements brings materialism, concentration of power and puts all the wealth in a small group, with the rest struggling. John decides to dial down individualism, rise empathy, strives for diversity and global equality. Even at the cost of slowing down (getting work done takes longer).  [**Green**]
 
 <br/>
 *Some time after,* Out of frustration of the inability (or slow pace) for solving the complex problems that humanity is faced with (the global consensus takes time and energy). John finds himself with the need to break out of the group and to offer his unique contribution in a complete independent and free way. John is an instrument for the greater whole (authentic systemic thinking), some goals are made that are unlikely to be seen in his lifetime. [**Yellow**]
+<br/><br/>
+
+<br/>
+*Some time after,* Out of frustration of the inability (or slow pace) for solving the complex problems that humanity is faced with (the global consensus takes time and energy). John finds himself with the need to break out of the group and to offer his unique contribution in a complete independent and free way. John is an instrument for the greater whole (authentic systemic thinking), so much so that some goals he sets are unlikely to be seen in his lifetime. [**Yellow**]
 <br/><br/>
