@@ -7,7 +7,7 @@ tags:
 intro: "Cohorts Machine"
 ---
 
-### Tackling the "did it improve?" question
+## Tackling the "did it improve?" question
 
 When developing a product, we are often faced with questions like:
 
@@ -18,7 +18,7 @@ When developing a product, we are often faced with questions like:
 
 Having a mechanism ready to use to tackle these questions will speed up analysis, as opposed to approaching it in an ad-hoc way every time. Also, the maturity of a curated mechanism gives confidence and consistency in the results. Enter the **Cohorts Machine.**
 
-### Cohorts Machine
+## Cohorts Machine
 
 A machine that takes as input a **Treatment** Cohort, a **Control** Cohort and outputs whether there's a significance change in a KPI.
 
@@ -26,17 +26,17 @@ A machine that takes as input a **Treatment** Cohort, a **Control** Cohort and o
 
 Cohorts Machine
 
-### Technical breakdown
+## Technical breakdown
 
 ![](https://cdn-images-1.medium.com/max/900/1*q97GhbprWpxc89No9ZOOQg.png)
 
-#### Cohorts scripts
+### Cohorts scripts
 
 These scripts function is to build a list of **User id**'s. Most commonly, it generates 2 sets of users, the ***Treatment* **cohort and the ***Control*** cohort, with following requirement
 <br/><br/>
 **Req1.** The user id column needs to be named in a consistent way.
 
-#### Analysis scripts
+### Analysis scripts
 
 Build a separate script for each **Analysis** view, i.e. a script for engagement, another for retention, user life cycle funnel, etc... with following requirements:
 <br/><br/>
@@ -108,6 +108,6 @@ The outliers are the users who's KPI is ≥ 3 standard deviation away from the m
 
 Include in the **report** Output whether the difference observed (on the last date, if there are multiple) between Treatment and Control is statistical significant. See here the [>>Tests to Use<<](http://al3xandr3.github.io/statistical-testing.html)
 
-### Community Effort
+## Community Effort
 
 Any member of team can contribute with an Analysis or Cohort script, that then becomes available for rest of team to leverage. For example, update an existing ad-hoc analysis with the structure detailed above and then add into the repository of the Cohorts machine scripts.
