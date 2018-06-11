@@ -74,11 +74,9 @@ This helps with interpretation, automation and with the adding/removing of new s
 
 ![](https://cdn-images-1.medium.com/max/900/1*LKkgxqMqZVsquqZlizhq_w.png)
 
-1.
 
 ![](https://cdn-images-1.medium.com/max/900/1*sLWIDn2PCB2Z6X95bHcxCg.png)
 
-2.
 <br/>
 **Req.4** Allow to run analysis for a range of date (when makes sense). To enable cohorts analysis trending over time.
 <br/>
