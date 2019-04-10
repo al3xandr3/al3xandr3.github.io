@@ -54,7 +54,7 @@ tr:nth-child(even) {
 
 <br/><br/>
 
-# Contact me
+## Contact me
 
  - mail: al3xandr3@gmail.com
  - skype: al3x.martins
