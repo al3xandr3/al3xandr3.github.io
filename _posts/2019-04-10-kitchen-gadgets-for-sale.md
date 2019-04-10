@@ -42,15 +42,15 @@ tr:nth-child(even) {
 
 ##  BPA Free 3HP 2200W Heavy Duty Commercial Blender
 
-
 ![blender](https://i5.wal.co/asr/522d0ea8-359d-4c50-a1c4-bb8169b15f61_1.995114d5b7113bb49eecf64f818700ac.jpeg?odnWidth=180&odnHeight=180&odnBg=ffffff)
 
-- A copy of Vitamix, very powerfull.
+- A copy of Vitamix, very powerful
+-  With a brand new cup, I bought 2 cups at the time, so 1 is still as New.
 
 <br/>
 
 - New: [*<strike>130€</strike>*](https://www.vitality4life.co.uk/oscar-900/)
-- For Sale: **90€**     (<font color="red">30% discount</font>)
+- For Sale: **90€** (<font color="red">30% discount</font>)
 
 <br/><br/>
 
