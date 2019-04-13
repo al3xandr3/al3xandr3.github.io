@@ -49,8 +49,8 @@ tr:nth-child(even) {
 
 <br/>
 
-- New: [*<strike>130€</strike>*](https://www.vitality4life.co.uk/oscar-900/)
-- For Sale: **90€** (<font color="red">30% discount</font>)
+- New: [*<strike>115€</strike>*](https://www.vitality4life.co.uk/oscar-900/)
+- For Sale: **80€** (<font color="red">30% discount</font>)
 
 <br/><br/>
 
