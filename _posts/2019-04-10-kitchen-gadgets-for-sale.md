@@ -24,19 +24,19 @@ tr:nth-child(even) {
 </style>
  
 
-##  Oscar 900 cold press juice
+##  Oscar VitalMax 900 cold press juice
 
 
 ![oscar](https://www.vitality4life.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/o/s/oscar_900_juicer_chrome_2_2.jpg)
 
 <br/>
 
-- In original box, well taken care of.
+- In original box.
 
 <br/>
 
-- New: [*<strike>270€</strike>*](https://www.vitality4life.co.uk/oscar-900/)
-- For Sale: **180€**     (<font color="red">30% discount</font>)
+- New: [*<strike>310€</strike>*](https://www.vitality4life.co.uk/oscar-900/)
+- For Sale: **220€**     (<font color="red">30% discount</font>)
 
 <br/><br/>
 
@@ -49,10 +49,11 @@ tr:nth-child(even) {
 
 <br/>
 
-- New: [*<strike>115€</strike>*](https://www.vitality4life.co.uk/oscar-900/)
+- New: *<strike>115€</strike>*
 - For Sale: **80€** (<font color="red">30% discount</font>)
 
 <br/><br/>
+
 
 ## Contact me
 
