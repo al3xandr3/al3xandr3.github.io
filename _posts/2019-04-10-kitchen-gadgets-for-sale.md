@@ -42,7 +42,7 @@ tr:nth-child(even) {
 
 ##  BPA Free 3HP 2200W Heavy Duty Commercial Blender
 
-![blender](https://i5.wal.co/asr/522d0ea8-359d-4c50-a1c4-bb8169b15f61_1.995114d5b7113bb49eecf64f818700ac.jpeg?odnWidth=180&odnHeight=180&odnBg=ffffff)
+![blender](https://drive.google.com/uc?id=1j_c102Xj6pZXuCvGRaQ3lIEu5R6btTkF)
 
 - A copy of Vitamix, very powerful
 -  With a brand new cup, I bought 2 cups at the time, so 1 is still as New.
@@ -51,6 +51,20 @@ tr:nth-child(even) {
 
 - New: *<strike>115€</strike>*
 - For Sale: **70€** (<font color="red">40% discount</font>)
+
+<br/><br/>
+
+##  Odelo Pressure Cooker
+
+
+![odelo](https://drive.google.com/uc?id=1D0HpoSsv4RCvOV5porc2omsW30bVZhho)
+
+- Easy to use pressure cooker
+
+<br/>
+
+- New: *<strike>50€</strike>*
+- For Sale: **30€** (<font color="red">40% discount</font>)
 
 <br/><br/>
 
