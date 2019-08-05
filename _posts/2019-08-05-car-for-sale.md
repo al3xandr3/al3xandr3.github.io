@@ -28,17 +28,17 @@ tr:nth-child(even) {
 
 ![car](https://drive.google.com/uc?id=1Oa_3MQtDFGEPFstxfWSbLN8wVci9_baA)
 
-</br>
+<br/>
 
 - Set of 4 disk brakes replaced in July 2019
 - Includes a set of winter tires with studs (spikes)
 - Has cruise control
 - I can give the car away at start of October 2019
-</br></br>
+<br/>
 - New (2010): *<strike>15,012€</strike>*
 - For Sale: **4,000€**  (<font color="red">73% discount</font>)
 
-</br>
+<br/>
 
 ![car](https://drive.google.com/uc?id=1WeacxXvSKtLHJ1uVP6V3w0DKgCtlgDEl)
 
