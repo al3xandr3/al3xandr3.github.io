@@ -29,6 +29,7 @@ tr:nth-child(even) {
 ![car](https://drive.google.com/uc?id=1Oa_3MQtDFGEPFstxfWSbLN8wVci9_baA)
 
 </br>
+
 <font size="+1">
 
 - Set of 4 disk brakes replaced in July 2019
