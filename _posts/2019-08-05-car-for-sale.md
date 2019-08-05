@@ -30,8 +30,6 @@ tr:nth-child(even) {
 
 </br>
 
-<font size="+1">
-
 - Set of 4 disk brakes replaced in July 2019
 - Includes a set of winter tires with studs (spikes)
 - Has cruise control
@@ -39,7 +37,6 @@ tr:nth-child(even) {
 </br></br>
 - New (2010): *<strike>15,012€</strike>*
 - For Sale: **4,000€**  (<font color="red">73% discount</font>)
-</font>
 
 </br>
 
