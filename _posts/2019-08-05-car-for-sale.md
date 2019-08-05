@@ -41,8 +41,6 @@ tr:nth-child(even) {
 - For Sale: **4,000€**  (<font color="red">73% discount</font>)
 </font>
 
-</p>
-
 </br>
 
 ![car](https://drive.google.com/uc?id=1WeacxXvSKtLHJ1uVP6V3w0DKgCtlgDEl)
