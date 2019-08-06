@@ -30,6 +30,7 @@ tr:nth-child(even) {
 
 <br/>
 
+- 100,000 km
 - Set of 4 disk brakes replaced in July 2019
 - Includes a set of winter tires with studs (spikes)
 - Has cruise control
