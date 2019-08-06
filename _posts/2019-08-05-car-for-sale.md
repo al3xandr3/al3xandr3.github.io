@@ -24,7 +24,7 @@ tr:nth-child(even) {
 </style>
  
 
-##  Ford Focus Trend 1.6 Duratec 16V PFI 100PS Sigma 74kW
+##  Ford Focus 1.6 Duratec 16V PFI 100PS Sigma 74kW
 
 ![car](https://drive.google.com/uc?id=1Oa_3MQtDFGEPFstxfWSbLN8wVci9_baA)
 
