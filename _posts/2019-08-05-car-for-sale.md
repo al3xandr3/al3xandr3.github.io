@@ -33,6 +33,7 @@ tr:nth-child(even) {
 - Set of 4 disk brakes replaced in July 2019
 - Includes a set of winter tires with studs (spikes)
 - Has cruise control
+- Manual Gearbox
 - I can give the car away at start of October 2019
 <br/>
 - New (2010): *<strike>15,012€</strike>*
@@ -44,15 +45,9 @@ tr:nth-child(even) {
 
 ![car](https://drive.google.com/uc?id=1DbGmOOke7OX_K_bVbJoHtAgSLTUQwZe5)
 
-
-
-
 ![car1](https://drive.google.com/uc?id=1apSsArBJFklwW39RP2BLtgl3I2DCdibk)
 
-
 ![car2](https://drive.google.com/uc?id=1KaSuJsnNa452XKg2HrdCYj_7yQ_Ftmkn)
-
-
 
 ![car](https://drive.google.com/uc?id=1myVQLgHuvOLhx3uh20tUVdFKjxAkKO9M)
 
