@@ -217,3 +217,5 @@ about 15% gain, i.e. 150 gain from an original 1000 investment.
 <br>
 
 ## Project updates hosted in github: [https://github.com/al3xandr3/T ](https://github.com/al3xandr3/T )
+
+<br>

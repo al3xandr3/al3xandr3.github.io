@@ -75,3 +75,5 @@ Calculate the mean's confidence interval. It includes plotting it.
 <br>
 
 ## Project updates hosted in github:  [https://github.com/al3xandr3/T ](https://github.com/al3xandr3/T )
+
+<br>
