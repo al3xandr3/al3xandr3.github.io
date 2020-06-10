@@ -16,27 +16,27 @@ Included now into the T library: [https://github.com/al3xandr3/T](https://github
 
 ## Basic Usage
 
-Lets use the S&P500 index as the stick we invest in
+Lets use the S&P500 index as the stock to invest in
 
-    sp500 = t.get_quotes_close(['^GSPC'], date_from = '2018-06-14')
-    sp500 = sp500.reset_index()
+    >>> sp500 = t.get_quotes_close(['^GSPC'], date_from = '2018-06-14')
+    >>> sp500 = sp500.reset_index()
 
 
 Lets say we have 1000 to invest
 
-    capital = 1000
+    >>> capital = 1000
 
 
 What happens if we invest everything on the 1st day ?
 
-    bulk1 = pd.DataFrame()
-    bulk1["date"] = sp500["date"]
-    bulk1["order_size"] = 0
-    bulk1.loc[t.where(bulk1, "date", datetime.strptime('2018-06-14', '%Y-%m-%d'), op.eq).index[0], "order_size"] = 1000
-    out1 = t.backtest_strategy(sp500, bulk1, capital)
-    out1["transactions"]
+    >>> bulk1 = pd.DataFrame()
+    >>> bulk1["date"] = sp500["date"]
+    >>> bulk1["order_size"] = 0
+    >>> bulk1.loc[t.where(bulk1, "date", datetime.strptime('2018-06-14', '%Y-%m-%d'), op.eq).index[0], "order_size"] = 1000
+    >>> out1 = t.backtest_strategy(sp500, bulk1, capital)
+    >>> out1["transactions"]
 
-
+<font size="2" face="Courier New" >
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -199,10 +199,16 @@ What happens if we invest everything on the 1st day ?
     </tr>
   </tbody>
 </table>
+</font>
+
+<br>
+<br>
 
 And the overall percent gain/loss
 
-    out1["lift"]
+    >>> out1["lift"]
+
+    0.153
 
 about 15% gain, i.e. 150 gain from an original 1000 investment.
 
