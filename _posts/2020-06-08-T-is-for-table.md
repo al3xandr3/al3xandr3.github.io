@@ -42,6 +42,7 @@ Filter the rows that have the value "post" and from that select the columns "use
 ```python
 >>> t.select( t.where(df, "period", "post"), "user", "kpi")
 ```
+
 |**.** |**user**|**kpi**|
 |-----|-----|-----|
 |0|k|43|
@@ -60,7 +61,8 @@ Calculate the mean's confidence interval. It includes plotting it.
 
 ## More Examples
 
-https://github.com/al3xandr3/Data-Science-ipynb/blob/master/t%20is%20for%20table%20version2.ipynb
+[https://github.com/al3xandr3/Data-Science-ipynb/blob/master/t%20is%20for%20table%20version2.ipynb](https://github.com/al3xandr3/Data-Science-ipynb/blob/master/t%20is%20for%20table%20version2.ipynb)
+
 
 
 ## Run Tests
@@ -72,4 +74,4 @@ https://github.com/al3xandr3/Data-Science-ipynb/blob/master/t%20is%20for%20table
 <br>
 <br>
 
-### Project updates hosted in github: https://github.com/al3xandr3/T
+### Project updates hosted in github:  [https://github.com/al3xandr3/T ](https://github.com/al3xandr3/T )
