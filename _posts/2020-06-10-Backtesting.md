@@ -27,7 +27,7 @@ Lets say we have 1000 to invest
     >>> capital = 1000
 
 
-What happens if we invest everything on the 1st day ?
+What are the gain/losses if we had invested 1000 in S&P in 2018-06-14 ?
 
     >>> bulk1 = pd.DataFrame()
     >>> bulk1["date"] = sp500["date"]
@@ -210,7 +210,7 @@ And the overall percent gain/loss
 
     0.153
 
-about 15% gain, i.e. 150 gain from an original 1000 investment.
+about 15% gain, i.e. +152 gain from the original 1000 investment.
 
 
 <br>
