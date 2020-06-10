@@ -7,6 +7,7 @@ tags:
 intro: "Python table manipulation library"
 ---
 
+<br>
 
 ![tookie](https://drive.google.com/uc?id=1Izd0GONLY-G-gHa_1SPr2ujVmrFg9UYX)
 
@@ -27,24 +28,24 @@ Create a plain data frame
     })
 ```
 
-**.** |**user**|**period**|**kpi**
-:-----:|:-----:|:-----:|:-----:
-0|k|pre|13
-1|j|pre|12
-2|k|pre|2
-3|t|pre|12
-4|k|post|43
-5|j|post|34
+|**.** |**user**|**period**|**kpi**|
+|-----|-----|-----|-----|
+|0|k|pre|13|
+|1|j|pre|12|
+|2|k|pre|2|
+|3|t|pre|12|
+|4|k|post|43|
+|5|j|post|34|
 
 Filter the rows that have the value "post" and from that select the columns "user" and "kpi"
 
 ```python
 >>> t.select( t.where(df, "period", "post"), "user", "kpi")
 ```
-**.** |**user**|**kpi**
-:-----:|:-----:|:-----:
-0|k|43
-1|j|34
+|**.** |**user**|**kpi**|
+|-----|-----|-----|
+|0|k|43|
+|1|j|34|
 
 
 Calculate the mean's confidence interval. It includes plotting it.
@@ -71,4 +72,4 @@ https://github.com/al3xandr3/Data-Science-ipynb/blob/master/t%20is%20for%20table
 <br>
 <br>
 
-## Project updates hosted in github: https://github.com/al3xandr3/T
+### Project updates hosted in github: https://github.com/al3xandr3/T
