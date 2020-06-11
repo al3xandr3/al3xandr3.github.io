@@ -34,7 +34,7 @@ Create a plain data frame
 <table border="1">
 <thead>
 <tr>
-<th align="center"><strong>.</strong></th>
+<th align="center"><strong> </strong></th>
 <th align="center"><strong>user</strong></th>
 <th align="center"><strong>period</strong></th>
 <th align="center"><strong>kpi</strong></th>
@@ -80,6 +80,7 @@ Create a plain data frame
 </tbody>
 </table>
 </font>
+<br>
 
 Filter the rows that have the value "post" and from that select the columns "user" and "kpi"
 
@@ -110,6 +111,7 @@ Filter the rows that have the value "post" and from that select the columns "use
 </tbody>
 </table>
 </font>
+<br>
 
 Calculate the mean's confidence interval. It includes plotting it.
 
