@@ -11,6 +11,8 @@ intro: "Python table manipulation library"
 
 ![tookie](https://drive.google.com/uc?id=1Izd0GONLY-G-gHa_1SPr2ujVmrFg9UYX)
 
+<br>
+
 T extends Pandas Dataframes with a collection of table manipulation functions as well as statistical, machine learning, finantial and EDA methods. 
 
 For example it integrates Bootstrap ReSampling statistical methods (a.k.a [Hacker Statistics](https://speakerdeck.com/jakevdp/statistics-for-hackers))
@@ -28,14 +30,56 @@ Create a plain data frame
     })
 ```
 
-|**.** |**user**|**period**|**kpi**|
-|-----|-----|-----|-----|
-|0|k|pre|13|
-|1|j|pre|12|
-|2|k|pre|2|
-|3|t|pre|12|
-|4|k|post|43|
-|5|j|post|34|
+<font size="2" face="Courier New" >
+<table border="1">
+<thead>
+<tr>
+<th align="center"><strong>.</strong></th>
+<th align="center"><strong>user</strong></th>
+<th align="center"><strong>period</strong></th>
+<th align="center"><strong>kpi</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">k</td>
+<td align="center">pre</td>
+<td align="center">13</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">j</td>
+<td align="center">pre</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">k</td>
+<td align="center">pre</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">t</td>
+<td align="center">pre</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">k</td>
+<td align="center">post</td>
+<td align="center">43</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">j</td>
+<td align="center">post</td>
+<td align="center">34</td>
+</tr>
+</tbody>
+</table>
+</font>
 
 Filter the rows that have the value "post" and from that select the columns "user" and "kpi"
 
@@ -43,11 +87,29 @@ Filter the rows that have the value "post" and from that select the columns "use
 >>> t.select( t.where(df, "period", "post"), "user", "kpi")
 ```
 
-|**.** |**user**|**kpi**|
-|-----|-----|-----|
-|0|k|43|
-|1|j|34|
-
+<font size="2" face="Courier New" >
+<table border="1">
+<thead>
+<tr>
+<th align="center"><strong>.</strong></th>
+<th align="center"><strong>user</strong></th>
+<th align="center"><strong>kpi</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">k</td>
+<td align="center">43</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">j</td>
+<td align="center">34</td>
+</tr>
+</tbody>
+</table>
+</font>
 
 Calculate the mean's confidence interval. It includes plotting it.
 

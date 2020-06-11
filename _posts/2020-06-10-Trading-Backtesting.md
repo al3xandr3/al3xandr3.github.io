@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Backtesting
+title: Trading Backtesting
 category: data
 tags:
   - data
-intro: "Backtesting"
+intro: "Trading Backtesting python function in the T library"
 ---
 
 <br>
-
 
 Backtesting is the process of applying a trading strategy or analytical method to historical data to see how accurately the strategy or method would have predicted actual results.
 
