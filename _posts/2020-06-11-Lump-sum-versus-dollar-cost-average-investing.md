@@ -117,7 +117,8 @@ We get:
 <br>
 <br>
 
-## Code:
+## Code
+
 - [DCA simulations](https://github.com/al3xandr3/Data-Science-ipynb/blob/master/FI/Dollar%20cost%20averaging.py)
 - T library, that includes the backtesting function: [https://github.com/al3xandr3/T ](https://github.com/al3xandr3/T )
 
