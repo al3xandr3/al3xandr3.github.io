@@ -88,6 +88,15 @@ Filter the rows that have the value "post" and from that select the columns "use
 >>> t.select( t.where(df, "period", "post"), "user", "kpi")
 ```
 
+Note that alternativelly we can also use the Pandas pipe operator to chain functions, with the same result
+I've renamed "pipe" to "p" when the T library is included:
+
+```python
+(df
+  .p(t.where, "period", "post")
+  .p(t.select, "user", "kpi"))
+```
+
 <font size="2" face="Courier New" >
 <table border="1">
 <thead>
