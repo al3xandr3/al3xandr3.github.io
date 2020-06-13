@@ -9,12 +9,12 @@ intro: "Lump sum versus dollar-cost average investing"
 
 <br>
 
-As the market fluctuates, the moment you invest is important. Investing all the saving at the wrong time could result in big losses.
+As the market fluctuates, the moment you invest is important. Investing all the savings at the wrong time could result in big losses.
 
 An alternative approach is to spread out the investment over time, so sometimes the investment is done at a high value, while some other times at a low value, but overtime it averages out, this approach is called dollar-cost averaging investing (DCA).
 DCA also has the nice property of the investor not having to worry about selecting the right time for investing.
 
-Investing all the money at once (the lump sum aproach) and as early as possible has time on its side, the earlier you invest the more time you are allowing money to grow as an investment (compounding effect).
+Investing all the money at once (the lump sum aproach) and early, has time on its side, the earlier the investment the longer it has to grow, leveraging the compounding effect.
 
 So what is best, invest all the money as earlier as possible or  instead invest in smaller quantities spread overtime?
 
@@ -22,9 +22,9 @@ So what is best, invest all the money as earlier as possible or  instead invest 
 
 A simulation can show what would happen for each strategy.
 
-Simulation does not include the trading costs and the tax on gains.
+These simulations do not include the trading costs and the tax on gains.
 
-The full code used in simulations is linked at the end.
+The full code used in these simulations is linked at the end.
 
 
 ## Starting point
@@ -38,13 +38,13 @@ From Feb 2018 to Feb 2020
 Notes:
 - This time period excludes major economic crisis
 -  S&P 500 is an index containing 500 big company stocks and thus has different properties/behaviours than other types of indexes or individual stocks migth have.
-- Even for the S&P 500 index this period of time is unique and there is no guarantee that in future it will behave in same way, but i will use the assumption that outside of a major economic crisis the S&P has in general this behaviour.
+- Even for the S&P 500 index this period of time is unique and there is no guarantee that in future investments will behave in same way, but i will use the assumption that outside of a major economic crisis the S&P has in general this behaviour.
 
 
 
 ## Case 1  - What happens when investing all the money right away?
 
-Investing all the money on the first day possible yelds the following gains (logic implemented in the simulations in the script):
+Investing all the money on the first day possible yelds the following gains (logic is implemented in the simulations in the script):
 
 - Gain: 20.5%
 - Total: 1204.6  (i.e. a 204.6 profit)
@@ -60,7 +60,7 @@ Pick a random date within this period and invest everything. Simulate doing this
 
 It varies depending on the date we choose, but naturally a date later should be worse, so what if we use only earlier dates?
 
-## Case 3 - What happens if we pick a random date to invest everything *within the first 60 days* ?
+## Case 3 - What happens if we pick a random date to invest everything within the first 60 days ?
 
 Pick a random date within the first 60 days and invest everything. Simulate doing this 100 times and check the average.
 
@@ -85,7 +85,7 @@ When investing a value of 50 every 7 days, but doing it later (first 140 days wi
 - Gain: 5.7%
 - Total: 1056.6
 
-We again that earlier investing worked better.
+Earlier investing worked better.
 
 ## Case 6 - How about early ADC investing using a different volume and frequency?
 
@@ -103,18 +103,18 @@ Simulated 100 times.
 We get: 
 
 - Gain: 19.8%
-- Total: 1198,  with a 95% confidence interval between[1197.3 , 1198.7]
+- Total: 1198,  with a 95% confidence interval between [1197.3 , 1198.7]
 
 
 ## Takeaways
 
-- Best results on 1, 3 and 7
-- Shows that investing early resulted in better gains (note for this index and for this time period).
-- There's a slight advantage for lump sum investing (case 1, but note that is very time sensitive and the early ADC yeld nearly sam returns. 
-- Changing the volume and period of ADC didn't change considerably the gains, more important was to do it earlier. (but would be worth to investigate this further)
+- Best results on #1, #3 and #7
+- Shows that investing early resulted in better gains (note this is for this particular index and for this time period)
+- There is a slight advantage for lump sum investing (# 1), but note that lump sum investing is time sensitive and the early ADC yeld nearly the same returns (#7)
+- Changing the volume and period of ADC didn't change considerably the gains, more important was to do it earlier. (but would be worth to investigate this further).
+- Winner? As long as investment is early, this is not showing a big difference between approaches.
+- Maybe worth trying a smarter variation of ADC that takes into account the market direction and adjusts investment volume and frequency accordingly.
 
-
-<br>
 <br>
 
 ## Code
