@@ -70,7 +70,7 @@ Pick a random date within the first 60 days and invest everything. Simulate doin
 Much better.
 
 
-## Case 4 - How about early ADC investing?
+## Case 4 - How about early DCA investing?
 
 When investing a value of 50 every 7 days, starting right away, we get:
 
@@ -78,7 +78,7 @@ When investing a value of 50 every 7 days, starting right away, we get:
 - Total: 1183.8
 
 
-## Case 5 - How about late ADC investing?
+## Case 5 - How about late DCA investing?
 
 When investing a value of 50 every 7 days, but doing it later (first 140 days without investing).
 
@@ -87,7 +87,7 @@ When investing a value of 50 every 7 days, but doing it later (first 140 days wi
 
 Earlier investing worked better.
 
-## Case 6 - How about early ADC investing using a different volume and frequency?
+## Case 6 - How about early DCA investing using a different volume and frequency?
 
 When investing a value of 100 every 28 days, starting right away, we get:
 
@@ -95,7 +95,7 @@ When investing a value of 100 every 28 days, starting right away, we get:
 - Total: 1177.5
 
 
-## Case 7 - Random ADC investing, within the first 60 days
+## Case 7 - Random DCA investing, within the first 60 days
 
 A random quantity up to 50 on a random day within the first 60 days of this period until the money runs out.
 Simulated 100 times.
@@ -110,10 +110,10 @@ We get:
 
 - Best results on #1, #3 and #7
 - Shows that investing early resulted in better gains (note this is for this particular index and for this time period)
-- There is a slight advantage for lump sum investing (# 1), but note that lump sum investing is time sensitive and the early ADC yeld nearly the same returns (#7)
-- Changing the volume and period of ADC didn't change considerably the gains, more important was to do it earlier. (but would be worth to investigate this further).
+- There is a slight advantage for lump sum investing (# 1), but note that lump sum investing is time sensitive and the early DCA yeld nearly the same returns (#7)
+- Changing the volume and period of DCA didn't change considerably the gains, more important was to do it earlier. (but would be worth to investigate this further).
 - Winner? As long as investment is early, this is not showing a big difference between approaches.
-- Maybe worth trying a smarter variation of ADC that takes into account the market direction and adjusts investment volume and frequency accordingly.
+- Maybe worth trying a smarter variation of DCA that takes into account the market direction and adjusts investment volume and frequency accordingly.
 
 <br>
 
