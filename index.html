@@ -4,6 +4,7 @@ title: "Posts"
 hero: http://lh3.googleusercontent.com/-8VfQ9VnnICA/U-nCNseScgI/AAAAAAAAG08/YyGPXPsrta4/w931-h508-no/beach.jpg
 ---
 <section class="content">
+  
   <ul class="listing">
     {% for post in site.posts limit:15 %}
     {% unless post.hide %}
@@ -14,5 +15,10 @@ hero: http://lh3.googleusercontent.com/-8VfQ9VnnICA/U-nCNseScgI/AAAAAAAAG08/YyGP
     </li>
     {% endunless %}
     {% endfor %}
+    <li>
+      <span></span>
+      <a href=""> </a>
+      <span><i>(previous articles in dedicated sections on top)</i></span> 
+    </li>
   </ul>
 </section>
