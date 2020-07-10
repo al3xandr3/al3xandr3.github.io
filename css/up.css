@@ -49,6 +49,10 @@ article, .content {
    /* text-align: justify; */
 }
 
+article, .content, li {
+  margin: 5px;
+}
+
 article img, .content img {
     display: block;
     margin: 0px;
