@@ -6,7 +6,13 @@ category: mental_models
 hide: true
 ---
 
-A Mental model is an insights that you can apply to new situations. For example gravity, you know that if you fall down it is going to hurt, or that pushing something heavy uphill is harder than on flat ground, etc...
+
+![mental_models](https://upload.wikimedia.org/wikipedia/commons/3/3e/Smycka3eng.png)
+
+
+<br>
+
+A Mental model is an insight that you can apply to new situations. For example gravity, you know that if you fall down it is going to hurt, or that pushing something heavy uphill is harder than on flat ground, etc...
 Popularized by Charlie Munger (investment wizard), as a way to better evaluate situations and make better decisions a.k.a. practical wisdom.
 It applies to all areas, from human psychology to money investment.
 
@@ -17,7 +23,6 @@ It applies to all areas, from human psychology to money investment.
 
 # Grass is always greener on other side
 
-
 # What is reality
 
 # Inversion
@@ -27,5 +32,6 @@ It applies to all areas, from human psychology to money investment.
 # References
 
 - https://fs.blog/mental-models/
+- https://en.wikipedia.org/wiki/Mental_model
 
 <br>
