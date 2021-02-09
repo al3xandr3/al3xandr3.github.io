@@ -1,7 +1,7 @@
 ---
 layout: layout
 title: "Data Posts"
-hero: http://lh3.googleusercontent.com/-8VfQ9VnnICA/U-nCNseScgI/AAAAAAAAG08/YyGPXPsrta4/w931-h508-no/beach.jpg
+hero: https://drive.google.com/uc?id=1y_3zhQQfCgBLKHwjwsImerQLxgbMhrht
 hide: true
 ---
 <section class="content">
