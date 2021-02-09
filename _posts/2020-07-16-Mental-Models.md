@@ -54,11 +54,10 @@ The following serves as a compilation of mental models i came across and want to
 - https://www.anup.io/2020/07/20/invert-always-invert/
 
 
-# Out of our control
-- Realize that only a few things are within a persons control
-- Don't take a bet on things out of your control
-- Make goals on things that are part of your control
-
+# Circles of control
+- Realize that only a few things are within a persons control.
+- Don't take a bet on things out of your control, instead set goals on things that are part of your control.
+- Control is not necessarily binary, our own actions are fully controllable, other's actions are not controllable, but they are somewhat influenceable, so there's the idea of circles of control
 
 # Goals
 - Not having a goal, translates into random drifting, sometimes you hit good things, sometimes not. Goals (and planing) lets you hit what you are trying to get to more often.
