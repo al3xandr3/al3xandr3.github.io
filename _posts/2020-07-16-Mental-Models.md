@@ -3,6 +3,8 @@ layout: post
 title: Mental Models
 intro: "Mental Models"
 category: mental_models
+tags:
+  - mental models
 hide: false
 ---
 
