@@ -3,7 +3,7 @@ layout: post
 title: Mental Models
 intro: "Mental Models"
 category: mental_models
-hide: true
+hide: false
 ---
 
 ![mental_models](https://upload.wikimedia.org/wikipedia/commons/3/3e/Smycka3eng.png)
@@ -62,8 +62,6 @@ The following serves as a compilation of mental models i came across and want to
 # Goals
 - Not having a goal, translates into random drifting, sometimes you hit good things, sometimes not. Goals (and planing) lets you hit what you are trying to get to more often.
 - Goals, planing allows to hit the ground running and getting things done faster
-
-
 
 # References
 
