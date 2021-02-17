@@ -31,6 +31,6 @@ Original thinking and interpretation of history.
 ### Lex friedman podcasts
 Not every interview is great, but some are
 
-### 15 Secrets Successful People Know About Time Management: The Productivity Habits of 7 Billionaires, 13 Olympic Athletes, 29 Straight-A Students, and 239 Entrepreneurs
+### 15 Secrets Successful People Know About Time Management 
 Loads of practical advice. Some are recycling from other sources, but i appreciated the focus on time management. Morning routines.
 
