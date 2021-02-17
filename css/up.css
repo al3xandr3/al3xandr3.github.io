@@ -80,3 +80,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: inset 3px 3px 20px rgba(0,0,0,0.5);
   margin-bottom: 20px;
 }
+
+table {
+  max-width: 90%;
+  margin-bottom: 20px;
+  border: 1px solid #dedede;
+}
