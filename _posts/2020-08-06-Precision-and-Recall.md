@@ -70,14 +70,19 @@ Accuracy = (TruePositives + True Negative) / Total
 Fbeta = ((1 + beta^2) * Precision * Recall) / (beta^2 * Precision + Recall)
 
 F1, means beta=1
+
 F1 = ((1 + 1^2) * Precision * Recall) / (1^2 * Precision + Recall)
+
 F1 = (2 * Precision * Recall) / (Precision + Recall)
 
 F0.5, means beta=0.5 
+
 F0.5 = ((1 + 0.5^2) * Precision * Recall) / (0.5^2 * Precision + Recall)
+
 F0.5 = (1.25 * Precision * Recall) / (0.25 * Precision + Recall)
 
 F2 = ((1 + 2^2) * Precision * Recall) / (2^2 * Precision + Recall)
+
 F2 = (5 * Precision * Recall) / (4 * Precision + Recall)
 
 
