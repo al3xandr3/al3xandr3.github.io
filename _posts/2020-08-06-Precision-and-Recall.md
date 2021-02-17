@@ -81,6 +81,8 @@ F0.5 = ((1 + 0.5^2) * Precision * Recall) / (0.5^2 * Precision + Recall)
 
 F0.5 = (1.25 * Precision * Recall) / (0.25 * Precision + Recall)
 
+F2, means beta=2 
+
 F2 = ((1 + 2^2) * Precision * Recall) / (2^2 * Precision + Recall)
 
 F2 = (5 * Precision * Recall) / (4 * Precision + Recall)
