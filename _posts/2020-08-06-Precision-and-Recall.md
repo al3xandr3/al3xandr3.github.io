@@ -21,6 +21,7 @@ Gods are saying that a sacrifice will help with the crops, are we really sure? t
 Prefer to only commit when super sure.
 
 Hunting Intuition
+
 Let’s consider the situation where you’re hunting for deer but there are elks also. You see something resembling deer and you shoot at it. Precision is the ratio of deer you’ve catched agains the number of total kills (elk + deer). It measures how "precise" was your hunting from the total catches. It does not take into account the total population of deer.
 
 
@@ -36,6 +37,7 @@ Humans have high recall rates regarding survival
 Prefer to be wrong more often but always check.
 
 Hunting Intuition (continued)
+
 Let’s now consider you first lure them by deer calls and you shoot anything that responds. Recall is the ratio of deers that "responded" to that call, against the total population of deer. Response sounds almost like recall, and is measured against the total population that could’ve replied to the lure. It does not take into account the percentage of elk that responded.
 
 
@@ -49,9 +51,11 @@ The Fbeta-measure is a generalization of the F-measure that adds a configuration
 
 ## Confusion Matrix
 
+
 |                           |  Prediction: Positive | Prediction: Negative  |
 | Actual: Positive  | True Positive (TP)     | False Negative (FN)   |
 | Actual: Negative | False Positive (FP)    | True Negative (TN)    |
+
 
 Precision = TruePositives / (TruePositives + FalsePositives)
 
@@ -73,6 +77,7 @@ F0.5 = (1.25 * Precision * Recall) / (0.25 * Precision + Recall)
 
 F2 = ((1 + 2^2) * Precision * Recall) / (2^2 * Precision + Recall)
 F2 = (5 * Precision * Recall) / (4 * Precision + Recall)
+
 
 ## As a mental model
 
