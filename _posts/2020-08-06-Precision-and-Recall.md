@@ -53,6 +53,7 @@ The Fbeta-measure is a generalization of the F-measure that adds a configuration
 
 
 |                           |  Prediction: Positive | Prediction: Negative  |
+|-------|--------|---------|
 | Actual: Positive  | True Positive (TP)     | False Negative (FN)   |
 | Actual: Negative | False Positive (FP)    | True Negative (TN)    |
 
