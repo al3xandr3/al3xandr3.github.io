@@ -77,7 +77,7 @@ F1, F0.5 and F2 are f-measures that help prioritize the patterns
 
 ### Reference
 
-Diff Patterns has a different origin (i.e. developed separately), but interestingly enough is very very similar to Minesweeper at Facebook: (https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/)[https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/]
+Diff Patterns has a different origin (i.e. developed separately), but interestingly enough is very very similar to Minesweeper at Facebook: [https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/](https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/)
 
 <br>
 <br>
