@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diff Patterns function
+title: Diff Patterns for RCA
 category: data
 tags:
   - data
@@ -9,7 +9,7 @@ intro: "Diff Patterns function python function in the T library"
 
 <br>
 
-Diff Patterns automates root cause analysis discovery.
+Diff Patterns automates root cause analysis (RCA) discovery.
 
 It looks through all the combinations of values and surfaces the patterns most often associated with failure (or for a given value).
 
@@ -71,17 +71,13 @@ And get:
 | {'user:k', 'cohort:control'}                  |    2 |    3 |    2 |    1 |    0.5      |      0.4 |      0.375 | 0.4 | 0.48  | 0.43 |
 
 
-Telling us the the "period:before" is the one most associated with failures.
+Telling us the the "period:before" is the pattern most associated with failures on this data.
 
 F1, F0.5 and F2 are f-measures that help prioritize the patterns
 
-### Reference:
+### Reference
 
-Diff Patterns has a different origin (i.e. developed separately), but interestingly enough is very very similar to Minesweeper at Facebook: https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/
+Diff Patterns has a different origin (i.e. developed separately), but interestingly enough is very very similar to Minesweeper at Facebook: (https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/)[https://engineering.fb.com/2021/02/09/developer-tools/minesweeper/]
 
 <br>
-<br>
-
-### Project updates hosted in github: [https://github.com/al3xandr3/T ](https://github.com/al3xandr3/T )
-
 <br>
