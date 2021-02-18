@@ -11,11 +11,9 @@ intro: "Diff Patterns function python function in the T library"
 
 Diff Patterns automates root cause analysis discovery.
 
-It looks through all the combinations of values and surfaces the patterns most often associated with failure (or a given value).
+It looks through all the combinations of values and surfaces the patterns most often associated with failure (or for a given value).
 
-Leverages the Apriori algorithm for frequent item set mining and association rule learning.
-
-But then uses a non-traditional way to prioritizing the patterns found using precision, recall and the F-measure.
+Leverages the Apriori algorithm for frequent item set mining and association rule learning. But then uses a non-traditional way to prioritizing the patterns found using precision, recall and the F-measure.
 
 Included now into the T library: [https://github.com/al3xandr3/T](https://github.com/al3xandr3/T)
 
@@ -60,17 +58,17 @@ output = t.diff_patterns(Dataset, Column, ClassificationA, ClassificationB)
 And get: 
 
 
-| antecedents                                              |   TP |   FN |   FP |   TN |   precision |   recall |   accuracy |       f1 |      f05 |       f2 |
-:|:---------------------------------------------------------|-----:|-----:|-----:|-----:|------------:|---------:|-----------:|---------:|---------:|---------:|
-| frozenset({'period:before'})                             |    4 |    1 |    1 |    2 |    0.8      |      0.8 |      0.75  | 0.8      | 0.8      | 0.8      |
-| frozenset({'period:before', 'cohort:control'})           |    4 |    1 |    1 |    2 |    0.8      |      0.8 |      0.75  | 0.8      | 0.8      | 0.8      |
-| frozenset({'cohort:control'})                            |    5 |    0 |    3 |    0 |    0.625    |      1   |      0.625 | 0.769231 | 0.675676 | 0.892857 |
-| frozenset({'user:j'})                                    |    2 |    3 |    1 |    2 |    0.666667 |      0.4 |      0.5   | 0.5      | 0.588235 | 0.434783 |
-| frozenset({'user:j', 'cohort:control'})                  |    2 |    3 |    1 |    2 |    0.666667 |      0.4 |      0.5   | 0.5      | 0.588235 | 0.434783 |
-| frozenset({'user:k', 'period:before'})                   |    2 |    3 |    1 |    2 |    0.666667 |      0.4 |      0.5   | 0.5      | 0.588235 | 0.434783 |
-| frozenset({'user:k', 'period:before', 'cohort:control'}) |    2 |    3 |    1 |    2 |    0.666667 |      0.4 |      0.5   | 0.5      | 0.588235 | 0.434783 |
-| frozenset({'user:k'})                                    |    2 |    3 |    2 |    1 |    0.5      |      0.4 |      0.375 | 0.444444 | 0.47619  | 0.416667 |
-| frozenset({'user:k', 'cohort:control'})                  |    2 |    3 |    2 |    1 |    0.5      |      0.4 |      0.375 | 0.444444 | 0.47619  | 0.416667 |
+| Pattern                                              |   TP |   FN |   FP |   TN |   precision |   recall |   accuracy |       f1 |      f05 |       f2 |
+:|:---------------------------------------|-----:|-----:|-----:|-----:|------------:|---------:|-----------:|---------:|---------:|---------:|
+| {'period:before'}                             |    4 |    1 |    1 |    2 |    0.8      |      0.8 |      0.75  | 0.8      | 0.8      | 0.8      |
+| {'period:before', 'cohort:control'}           |    4 |    1 |    1 |    2 |    0.8      |      0.8 |      0.75  | 0.8      | 0.8      | 0.8      |
+| {'cohort:control'}                            |    5 |    0 |    3 |    0 |    0.63    |      1   |      0.63 | 0.77 | 0.68 | 0.89 |
+| {'user:j'}                                    |    2 |    3 |    1 |    2 |    0.67 |      0.4 |      0.5   | 0.5      | 0.59 | 0.4 |
+| {'user:j', 'cohort:control'}                  |    2 |    3 |    1 |    2 |    0.67 |      0.4 |      0.5   | 0.5      | 0.59 | 0.4 |
+| {'user:k', 'period:before'}                   |    2 |    3 |    1 |    2 |    0.67 |      0.4 |      0.5   | 0.5      | 0.59 | 0.4 |
+| {'user:k', 'period:before', 'cohort:control'} |    2 |    3 |    1 |    2 |    0.67 |      0.4 |      0.5   | 0.5      | 0.59 | 0.43 |
+| {'user:k'}                                    |    2 |    3 |    2 |    1 |    0.5      |      0.4 |      0.38 | 0.44 | 0.48  | 0.43 |
+| {'user:k', 'cohort:control'}                  |    2 |    3 |    2 |    1 |    0.5      |      0.4 |      0.375 | 0.4 | 0.48  | 0.43 |
 
 
 Telling us the the "period:before" is the one most associated with failures.
