@@ -90,6 +90,6 @@ F2 = (5 * Precision * Recall) / (4 * Precision + Recall)
 
 ## As a mental model
 
-Confusion Matrix, Precision, Recall, Accuracy, F-measure, can be considered as a tool ( a mental model) to evaluate how good is a method in being correct (or accurate) and as a measure to compare methods. 
+Confusion Matrix, Precision, Recall, Accuracy, F-measure, can be considered as a tool (a mental model) to evaluate how good is a method in being correct (or accurate) and as a measure to compare methods. 
 
 As long as we can map / represent our problem into a confusion matrix, saying how many predicted true false, and out of those how many were actually true or false, then we can build the F-measure.
