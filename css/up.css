@@ -114,3 +114,8 @@ thead tr, thead th {
 tbody tr:nth-child(2n) td, tbody tr.odd td {
   background: none repeat scroll 0 0 #F0F0F0;
 }
+
+table, th, td {
+  font:13px/26px Courier New;
+  !important
+}
