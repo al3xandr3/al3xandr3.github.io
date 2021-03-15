@@ -30,6 +30,7 @@ t2 = pd.DataFrame({'user':['k','k','j','k','t','k','j','j'] \
         })
 ```
 
+<font size="2" face="Courier New" >
 |	user	|period	|cohort|	isLabel|
 |-------|--------|---------|--|--|
 |k	|before	|control |	success |
@@ -40,6 +41,7 @@ t2 = pd.DataFrame({'user':['k','k','j','k','t','k','j','j'] \
 |k	|after	|control	| success|
 |j	|after	|control	| success|
 |j	|after	|control	| failure|
+</font>
 
 And we want to identify what patterns are often associated with failure. This process helps us do RCA i.e help pin point the conditions where failures happen (bugs).
 
@@ -57,7 +59,7 @@ output = t.diff_patterns(Dataset, Column, ClassificationA, ClassificationB)
 
 And get: 
 
-
+<font size="2" face="Courier New" >
 | Pattern                                              |   TP |   FN |   FP |   TN |   precision |   recall |   accuracy |       f1 |      f05 |       f2 |
 :|:---------------------------------------|-----:|-----:|-----:|-----:|------------:|---------:|-----------:|---------:|---------:|---------:|
 | {'period:before'}                             |    4 |    1 |    1 |    2 |    0.8      |      0.8 |      0.75  | 0.8      | 0.8      | 0.8      |
@@ -69,7 +71,7 @@ And get:
 | {'user:k', 'period:before', 'cohort:control'} |    2 |    3 |    1 |    2 |    0.67 |      0.4 |      0.5   | 0.5      | 0.59 | 0.43 |
 | {'user:k'}                                    |    2 |    3 |    2 |    1 |    0.5      |      0.4 |      0.38 | 0.44 | 0.48  | 0.43 |
 | {'user:k', 'cohort:control'}                  |    2 |    3 |    2 |    1 |    0.5      |      0.4 |      0.375 | 0.4 | 0.48  | 0.43 |
-
+</font>
 
 Telling us the the "period:before" is the pattern most associated with failures on this data.
 
