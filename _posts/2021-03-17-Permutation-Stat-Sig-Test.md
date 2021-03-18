@@ -14,7 +14,7 @@ Here's a method that I enjoy a lot for significance testing, it is based of the 
 
 It allows to check if the difference between 2 datasets summarized with a custom metric are significantly different or in fact belong to the same distribution.
 
-This gets used a lot by a data scientist, for example to check if the results of an AB test are significantly different.
+This gets used a lot by data scientists, for example to check if the results of an AB test are significantly different.
 Or if the January results are significantly diferent than the ones from February for example.
 
 There's several existing methods to do this type of test, but they require careful selection depending on the shape of the data, sample equivalency between data sets, large data vs small, previously known information, whether for mean or for median, etc.
@@ -30,7 +30,7 @@ Included now into the T library: [https://github.com/al3xandr3/T](https://github
 
 ```python
 # Generic permutation test, using a custom function
-hyp = t.hypothesis_perm_diff([2,3,1,2,3,1], [1,2,3,4,5], np.median, int(1e4))
+t.hypothesis_perm_diff([2,3,1,2,3,1], [1,2,3,4,5], np.median, int(1e4))
 ```
       {'Observed Difference': -1.0,
       'func(sample1)': 2.0,
