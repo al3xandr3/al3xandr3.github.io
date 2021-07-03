@@ -1,10 +1,9 @@
 --- 
-layout: post
 title: Big Brother Google
 category: life
 tags:
   - life
-intro: "Google, data nirvana and grandmother's birthday"
+excerpt: "Google, data nirvana and grandmother's birthday"
 ---
 
 **(A)Tipical Day?**: Its morning, you get to your computer, go check the gmail, ah there's some some news fotos on web picasa from a friend, lets check them out...

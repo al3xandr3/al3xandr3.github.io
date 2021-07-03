@@ -1,12 +1,12 @@
 --- 
-layout: post
+
 title: Confluence automation
 category: project
 tags:
   - ruby
   - automation
   - project
-intro: "Script to automate updating content of a confluence wiki, both page content and page attachments"
+excerpt: "Script to automate updating content of a confluence wiki, both page content and page attachments"
 ---
 
 Here's a script that i use to automate updating an Confluence wiki content. Posting it here in case is usefull for someone else. I developed it on Windows7 and with ruby 1.9.3.

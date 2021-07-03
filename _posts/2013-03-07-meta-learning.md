@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Meta Learning
 category: life
 tags:
   - learning
   - life
-intro: "learning how to learn"
+excerpt: "learning how to learn"
 ---
 
 ## How to Learn

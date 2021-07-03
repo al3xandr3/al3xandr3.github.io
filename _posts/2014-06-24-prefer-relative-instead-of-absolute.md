@@ -1,10 +1,10 @@
 --- 
-layout: post
+
 title: Relative to (instead of) Absolute
 category: data
 tags:
   - data
-intro: "Relative to (instead of) Absolute"
+excerpt: "Relative to (instead of) Absolute"
 ---
 
 ## Patterns of Analysis: Prefer Relative to (instead of) Absolute

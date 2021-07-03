@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: Data Processing Techniques
 category: data
 tags:
   - data
   - statistics
-intro: "Reference of techniques that help in data processing, filtering, splitting, etc"
+excerpt: "Reference of techniques that help in data processing, filtering, splitting, etc"
 ---
 
 Reference of data processing techniques.

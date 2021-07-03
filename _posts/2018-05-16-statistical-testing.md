@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Statistical Significance
 category: data
 tags:
   - data
-intro: "Statistical Significance"
+excerpt: "Statistical Significance"
 ---
 
 ## WHY

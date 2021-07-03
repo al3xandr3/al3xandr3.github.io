@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Game of Life
 category: life
 tags:
   - learning
   - life
-intro: "If you see life as a game, then maybe you can use strategic thinking to optimize it."
+excerpt: "If you see life as a game, then maybe you can use strategic thinking to optimize it."
 ---
 
 ( This is not about the [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life), although there are here some overlapping theories )

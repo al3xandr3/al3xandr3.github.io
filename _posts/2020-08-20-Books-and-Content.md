@@ -1,8 +1,8 @@
 ---
-layout: post
+
 title: Books and Content
 category: data, life, all
-intro: "Books and Content"
+excerpt: "Books and Content"
 hide: true
 ---
 
@@ -34,3 +34,16 @@ Not every interview is great, but some are
 ### 15 Secrets Successful People Know About Time Management 
 Loads of practical advice. Some are recycling from other sources, but i appreciated the focus on time management. Morning routines.
 
+### Atomic habits
+Confirm some ideas i had on the topic and goes deeper: 
+- Goals are about the results you want to achieve. Systems are about the processes that lead to those results.
+- You do not rise to the level of your goals. You fall to the level of your systems.
+- Systems > Goals: System/process/routine in some ways is better than goals, creates the space to put in the work
+- 1% improvement from a routine compounds over time to big returns,outcomes are a lagging measure of habits
+- Habits are automatic behaviors, a model of triggers: cue, craving, response and reward.
+- Notice own bad habits (wasting time, eating bad, etc.), see how they are triggered and replace with better ones.
+- Environment > Motivation: Defaults and environment matter, motivation is not the best way, make it easy to do a better habit, start small
+- Clarity > Motivation:  “Many people think they lack motivation when what they really lack is clarity. It is not always obvious when and where to take action. Some people spend their entire lives waiting for the time to be right to make an improvement.”
+- Schedule time for key things, otherwise I wont ever get to it
+- People settle into habits within a certain environment, be aware of that, analyse and change when needed.
+https://www.sloww.co/atomic-habits-james-clear/ 

@@ -1,10 +1,10 @@
 --- 
-layout: post
+
 title: Behavioral Science Nudges
 category: data
 tags:
   - life
-intro: "Behavioral Science Nudges"
+excerpt: "Behavioral Science Nudges"
 ---
 
 

@@ -1,0 +1,12 @@
+# Site navigation links
+main:
+- title: Posts
+  url: /
+- title: Data Science
+  url: /tags/#data-science
+- title: Projects
+  url: /tags/#project
+- title: Books
+  url: /Books-and-Content/
+- title: About Me
+  url: /about/

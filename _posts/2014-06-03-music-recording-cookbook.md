@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Music Recording Cookbook
 category: music
 tags:
   - music
   - guitar
-intro: "Music Recording Cookbook"
+excerpt: "Music Recording Cookbook"
 ---
 
 Start with the [music production](http://al3xandr3.github.io/music-production.html) for general intro.

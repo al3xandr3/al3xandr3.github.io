@@ -1,0 +1,118 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$serif      : Georgia, Times, serif;
+$sans-serif : "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace  : Monaco, Consolas, "Lucida Console", monospace;
+$mine: Open Sans, Segoe UI, Helvetica Neue, Helvetica, Arial;
+
+$title1: "PT Sans Narrow",sans-serif;
+$body1: "PT Serif",serif;
+
+$title2: Helvetica, Arial, sans-serif;
+$body2: sans-serif;
+
+$body3: Verdana;
+
+$global-font-family : $mine;
+$header-font-family : $mine;
+
+
+.author__bio {
+  margin: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+thead tr, thead th {
+  background: none repeat scroll 0 0 #F0F0F0;
+}
+
+tbody tr:nth-child(2n) td, tbody tr.odd td {
+  background: none repeat scroll 0 0 #F0F0F0;
+}
+
+table, th, td {
+  font:13px/26px monospace;
+  margin-bottom: 2em;
+  width: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-color: #CCCCCC;
+  border-style: none;
+  border-width: 1px;
+  page-break-inside: avoid;
+}
+
+
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+
+// https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-326809412
+html {
+  font-size: 15px; // originally 16px
+  @include breakpoint($medium) {
+      font-size: 15px; // originally 18px
+  }
+
+  @include breakpoint($large) {
+      font-size: 15px; // originally 20px
+  }
+
+  @include breakpoint($x-large) {
+      font-size: 15px; // originally 22px
+  }
+}
+
+.masthead__inner-wrap {
+  font-size: 1.2em;
+  font-family: Open Sans, Segoe UI, Helvetica Neue, Helvetica, Arial;
+  font-weight: 100;
+}
+
+.sidebar {
+  font-size: 1.2em;
+}
+
+
+h2.archive__item-title.no_toc {
+  margin: 1.2em 0 0.5em;
+}
+
+h3.archive__subtitle {
+  margin: 1.414em 0 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.1em;
+  color: #646769;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+
+.greedy-nav .visible-links {
+  justify-content: flex-start;
+  @include breakpoint($medium) {
+    margin: 0em 0em;
+  }
+
+  @include breakpoint($large) {
+    margin: 0em 3em;
+  }
+
+  @include breakpoint($x-large) {
+    margin: 0em 9em;
+  }
+}
+
+.page_content {
+  line-height: 1.58;
+}
+
+.archive__item-excerpt {
+  margin-top: 0;
+  font-size: 0.9em;
+}

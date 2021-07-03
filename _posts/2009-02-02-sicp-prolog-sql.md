@@ -1,13 +1,13 @@
 --- 
-layout: post
+
 title: Lem-E-Tweakit and Logic programming
 category: project
 tags:
   - project
-intro: "Prolog vs SQL"
+excerpt: "Prolog vs SQL"
 ---
 
-![http://al3xandr3.github.com/img/tweakit.png][1] 
+![/assets/images/tweakit.png][1] 
 
 While watching the SICP
 lectures 8a & 8b, one thing that i realized is that this logic programming
@@ -39,6 +39,6 @@ SQL does not have recursion built into it. This is a severe Handicap. However
 there is a way to overcome this problem by invoking multiple SQL queries from
 a host language like C Or Java. SQL3 has begun supporting recursion.
 
-   [1]: http://al3xandr3.github.com/img/tweakit.png
+   [1]: /assets/images/tweakit.png
    [2]: http://search.cpan.org/dist/AI-Prolog/lib/AI/Prolog/Article.pod
 

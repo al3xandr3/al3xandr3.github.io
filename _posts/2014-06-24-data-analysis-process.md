@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Data Analysis Process
 category: data
 tags:
   - data
   - arguments
-intro: "The Data Analysis (Structured) Process"
+excerpt: "The Data Analysis (Structured) Process"
 ---
 
 ## Structured Data Analysis: CoNVO

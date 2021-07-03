@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Table.query
 category: project
 tags:
@@ -7,7 +7,7 @@ tags:
   - ruby
   - SQL
   - project
-intro: "A small ruby class inspired by R's sqldf"
+excerpt: "A small ruby class inspired by R's sqldf"
 ---
 
 A small library that given a set of data it transparently inserts it into a sqlite database and then allows for very flexible querying (SQL). Usefull for ad-hoc data tasks that read data from some file or api that require quick analysis. Adding data into a sqlite database will also allow for the data to be bigger than memory can fit. Inspired by R's [**sqldf**](http://code.google.com/p/sqldf/).

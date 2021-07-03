@@ -1,12 +1,12 @@
 --- 
-layout: post
+
 title: Ebay Misspells Search
 category: project
 tags:
   - automation
   - ruby
   - project
-intro: "a script that given an ebay search term, creates misspells alternatives and then executes an (ebay)search. because sometimes great bargains can be found from misspells items"
+excerpt: "a script that given an ebay search term, creates misspells alternatives and then executes an (ebay)search. because sometimes great bargains can be found from misspells items"
 ---
 
 A small ruby script that does searches in ebay. Is able to:

@@ -1,7 +1,7 @@
 ---
-layout: post
+
 title: Mental Models
-intro: "Mental Models"
+excerpt: "Mental Models"
 category: mental_models
 tags:
   - mental models
@@ -64,6 +64,11 @@ The following serves as a compilation of mental models i came across and want to
 # Goals
 - Not having a goal, translates into random drifting, sometimes you hit good things, sometimes not. Goals (and planing) lets you hit what you are trying to get to more often.
 - Goals, planing allows to hit the ground running and getting things done faster
+
+
+# Failure
+What is failure? Its really only failure if that is the last thing you do, otherwise is instead a lesson along the way.
+
 
 # References
 

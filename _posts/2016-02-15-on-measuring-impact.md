@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Impact Evaluation
 category: data
 tags:
   - data
-intro: "Impact Evaluation"
+excerpt: "Impact Evaluation"
 ---
 
 

@@ -1,2 +1,2 @@
-cd %UserProfile%\Dropbox\my\blog
-bundle exec jekyll serve
+cd %UserProfile%\Google Drive\my\blog
+bundle exec jekyll serve --incremental

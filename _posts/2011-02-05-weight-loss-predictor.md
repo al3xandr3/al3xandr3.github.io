@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Weight Loss Predictor
 category: data
 tags: 
@@ -9,10 +9,10 @@ tags:
   - montecarlo
   - statistics
   - visualization
-intro: "Diet and Predicting when I am going to be healthy"
+excerpt: "Diet and Predicting when I am going to be healthy"
 ---
 
-![http://al3xandr3.github.com/img/diet.jpeg][1] 
+![/assets/images/diet.jpeg][1] 
 
 Got for 2010 Xmas a very cool book called the "4 Hour Body"(thanks Jose Santos) written by Tim Ferriss who write a previous favorite of mine about productivity, the 4 hour work week.
 
@@ -78,7 +78,7 @@ diet).
     ggplot(beforediet, aes(x=timestamp, y=kg)) + geom_point() + geom_smooth() 
     
 
-![http://al3xandr3.github.com/img/w-loss-normal.png][3]
+![/assets/images/w-loss-normal.png][3]
 
 Weight has been mostly(in average) 80.5kg, but in 2nd half of 2010 we see a
 big jump. Also note that middle of year(summer here) appears to be where jumps
@@ -177,7 +177,7 @@ is, by comparing it with a expected normal distribution:
     gghist(data.frame(kg=mcWeightWeek), "kg")
     
 
-![http://al3xandr3.github.com/img/w-loss-week.png][4]
+![/assets/images/w-loss-week.png][4]
 
 ## And when am i getting to 75kg?
     
@@ -226,7 +226,7 @@ And the cumulative distribution:
                          hjust=-0.04)
     
 
-![http://al3xandr3.github.com/img/w-loss-75.png][5]
+![/assets/images/w-loss-75.png][5]
 
 Also note that, weight loss is faster at the beginning of a diet, it tends to
 slow down over time, so to keep the predictions valid we need to continue
@@ -247,11 +247,11 @@ weight loss recommendations. Thus am now within normal [BMI values][6].
  * Hard drive occupation prediction with R: [part 1][8] and [part 2][9], and thanks to Leandro Penz on the feedback. 
  * Big thanks for Jose and Tim, on jumpstarting this experiment! 
 
-   [1]: http://al3xandr3.github.com/img/diet.jpeg
+   [1]: /assets/images/diet.jpeg
    [2]: http://www.wolframalpha.com/input/?i=body+mass+index&a=*C.body+mass+index-_*Formula.dflt-&a=*FS-_**BodyMassIndex.BMI-.*BodyMassIndex.H-.*BodyMassIndex.W--&f3=75+kg&x=11&y=4&f=BodyMassIndex.W_75+kg&f4=176+cm&f=BodyMassIndex.H_176+cm&a=*FVarOpt.1-_**-.***BodyMassIndex.S---.*--
-   [3]: http://al3xandr3.github.com/img/w-loss-normal.png
-   [4]: http://al3xandr3.github.com/img/w-loss-week.png
-   [5]: http://al3xandr3.github.com/img/w-loss-75.png
+   [3]: /assets/images/w-loss-normal.png
+   [4]: /assets/images/w-loss-week.png
+   [5]: /assets/images/w-loss-75.png
    [6]: http://www.wolframalpha.com/input/?i=bmi+75kg+1.76m
    [7]: http://www.southbeachdiet.com/sbd/publicsite/index.aspx
    [8]: http://lpenz.github.com/articles/df0pred-1/index.html

@@ -1,12 +1,12 @@
 
 --- 
-layout: post
+
 title: Food recipes idea
 category: data
 tags:
   - data
   - idea
-intro: "Food recipes idea"
+excerpt: "Food recipes idea"
 ---
 
 

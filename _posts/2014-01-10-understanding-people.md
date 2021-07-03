@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Understanding People
 category: life
 tags:
   - learning
   - life
-intro: "Understanding People"
+excerpt: "Understanding People"
 ---
 
 > Someone was so rude just now, with no apparent reason, I'm going to be rude back ! No, wait, maybe has nothing to do with you... was it a misunderstanding? did i touch a nerve?

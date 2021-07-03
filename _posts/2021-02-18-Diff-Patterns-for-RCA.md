@@ -1,13 +1,10 @@
 ---
-layout: post
 title: Diff Patterns for RCA
 category: data
 tags:
   - data
-intro: "Diff Patterns function python function in the T library"
+excerpt: "Diff Patterns function python function in the T library"
 ---
-
-<br>
 
 Diff Patterns automates root cause analysis (RCA) discovery.
 

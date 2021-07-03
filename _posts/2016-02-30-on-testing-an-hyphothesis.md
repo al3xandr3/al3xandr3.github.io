@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Testing an Hypothesis
 category: data
 tags:
   - data
-intro: "Testing an Hypothesis"
+excerpt: "Testing an Hypothesis"
 ---
 
 A collection of notes on running AB tests in practice.

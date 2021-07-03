@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Why my keyboard has a QWERTY layout?
 category: life
 tags:
@@ -7,10 +7,10 @@ tags:
   - keyboard
   - idea
   - life
-intro: "Keyboard layout design and optimization ideas"
+excerpt: "Keyboard layout design and optimization ideas"
 ---
 
-![http://al3xandr3.github.com/img/keyb.png][1]
+![/assets/images/keyb.png][1]
 
 The most common keyboard layout in use today is called QWERTY, it takes its
 name from the first six characters seen in the far left of the keyboard's top
@@ -90,6 +90,6 @@ words.
 
 **Touch screens** with a touch screen there's a whole new level of layout possibilities, we could make more frequent keys bigger than others for example, play with different keyboard shapes, that can adapt to each person real hands sizes for example, etc...
 
-   [1]: http://al3xandr3.github.com/img/keyb.png
+   [1]: /assets/images/keyb.png
    [2]: http://klausler.com/evolved.html
 

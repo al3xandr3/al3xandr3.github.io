@@ -1,7 +1,7 @@
 ---
-layout:  post
+
 title:   Kitchen Gadgets for Sale
-intro:   "Kitchen Gadgets for Sale"
+excerpt:   "Kitchen Gadgets for Sale"
 hide:    true
 ---
 

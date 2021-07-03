@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: User Lifecycle Analytics Framework
 category: data
 tags:
   - data
-intro: "User Lifecycle Analytics Framework"
+excerpt: "User Lifecycle Analytics Framework"
 ---
 
 The "User Lifecycle Analytics Framework" is a structured way to look at a metrics of a business to help understand its current status, measure evolution, find opportunities, etc... 

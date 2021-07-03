@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: jQuery Twitter 'mini' plugin
 category: project
 tags:
   - javascript
   - project
-intro: "A jQuery plugin for displaying a twitter feed into a web page"
+excerpt: "A jQuery plugin for displaying a twitter feed into a web page"
 ---
 
 Here's a little jQuery plugin for displaying a twitter feed into a web page.

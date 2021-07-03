@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Data Analysis Skill Set
 category: data
 tags:
   - data
-intro: "Skill Set of an Data Analyst"
+excerpt: "Skill Set of an Data Analyst"
 ---
 
 

@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Data Tracking and Collection
 category: data
 tags:
   - data
-intro: "A description of the collection of methods used to track and collect data for analysis"
+excerpt: "A description of the collection of methods used to track and collect data for analysis"
 ---
 
 ## Motivation

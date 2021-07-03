@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Supervised and Unsupervised ML interplay
 category: data
 tags:

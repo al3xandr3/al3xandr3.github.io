@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Clojure and Selenium part ii - cov3
 category: project
 tags:
@@ -7,14 +7,14 @@ tags:
   - clojure
   - webcrawler
   - project
-intro: "A selenium 2 based web crawler library called cov3, in clojure"
+excerpt: "A selenium 2 based web crawler library called cov3, in clojure"
 ---
 
 Have been playing around with selenium and clojure for a while, and now that
 selenium 2 is in beta ended up making a little web crawler library called
 cov3.
 
-![http://al3xandr3.github.com/img/crawler.png][1]
+![/assets/images/crawler.png][1]
 
 It has 3 flavors of crawling:
 
@@ -43,18 +43,18 @@ on windows), Chrome or HtmlUnit(a GUI-Less browser).
     
     ;; then (:ff is short for firefox, use :hu for HtmlUnit, 
     ;; :ch for Chrome, and :ie for Internet Explorer)
-    (cov3/crawl :ff "http://al3xandr3.github.com/" '("document.title"))
+    (cov3/crawl :ff "http://al3xandr3.github.io/" '("document.title"))
     
     ;; or (10 is the sample size to pick from sitemap.xml)
-    (cov3/sitemap-crawl :ff "http://al3xandr3.github.com/sitemap.xml" "" "" 10 '("document.title"))
+    (cov3/sitemap-crawl :ff "http://al3xandr3.github.io/sitemap.xml" "" "" 10 '("document.title"))
     
     ;; or (assuming you have a csv file with the steps to take, see more on documentation)
-    ;; for example the line: http://al3xandr3.github.com/,"document.title",,
+    ;; for example the line: http://al3xandr3.github.io/,"document.title",,
     (cov3/step-crawl :ff "data/steps.csv")
     
 
 Is available from github: [http://github.com/al3xandr3/cov3][2]
 
-   [1]: http://al3xandr3.github.com/img/crawler.png
+   [1]: /assets/images/crawler.png
    [2]: http://github.com/al3xandr3/cov3
 

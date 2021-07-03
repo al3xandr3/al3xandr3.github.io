@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Arguments, tools and patterns of reasoning
 category: data
 tags:
   - data
   - arguments
-intro: "Arguments, tools and patterns of reasoning"
+excerpt: "Arguments, tools and patterns of reasoning"
 ---
 
 This structures how we build arguments, common strategies used, and what kind of questions to tackle when building arguments.

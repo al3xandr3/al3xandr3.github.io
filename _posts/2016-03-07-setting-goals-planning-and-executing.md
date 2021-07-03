@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Setting Goals, Planning and Executing
 category: data
 tags:
   - data
-intro: "Setting Goals, Planning and Executing"
+excerpt: "Setting Goals, Planning and Executing"
 ---
 
 ## Setting Goals

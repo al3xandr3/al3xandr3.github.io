@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Data Visualization and Presentation techniques
 category: data
 tags:
   - statistics
   - data
-intro: "Techniques for telling Stories with Data."
+excerpt: "Techniques for telling Stories with Data."
 ---
 
 Visualization and presentation techniques to better communicate the meaning of the results.

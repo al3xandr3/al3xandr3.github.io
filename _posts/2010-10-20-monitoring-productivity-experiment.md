@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Monitoring Productivity Experiment
 category: data
 tags:
@@ -9,7 +9,7 @@ tags:
   - visualization
   - emacs
   - R
-intro: "Looking at time spent in computer and how much of it is actually productive"
+excerpt: "Looking at time spent in computer and how much of it is actually productive"
 ---
 
 [![prod-intro.jpeg][1]][2] 
@@ -91,7 +91,7 @@ I'll look here at a full year(52 weeks worth of data).
     print(qqp, vp = subvp)
     
 
-![http://al3xandr3.github.com/img/prod-hist-total.png][4]
+![/assets/images/prod-hist-total.png][4]
 
     
     his = pl + 
@@ -105,7 +105,7 @@ I'll look here at a full year(52 weeks worth of data).
     print(qqp, vp = subvp)
     
 
-![http://al3xandr3.github.com/img/prod-hist-prod.png][5]
+![/assets/images/prod-hist-prod.png][5]
 
     
     his = pl + 
@@ -119,7 +119,7 @@ I'll look here at a full year(52 weeks worth of data).
     print(qqp, vp = subvp)
     
 
-![http://al3xandr3.github.com/img/prod-hist-dist.png][6]
+![/assets/images/prod-hist-dist.png][6]
 
 For the exception of a couple loose ends, we see that the data follows the
 normal distribution quite well. Which allows for a few assumptions when
@@ -175,7 +175,7 @@ lower.
     plotmatrix(mydata[2:4]) + geom_smooth(method="lm")
     
 
-![http://al3xandr3.github.com/img/prod-corr.png][7]
+![/assets/images/prod-corr.png][7]
 
     
     cor(mydata[2:4])        
@@ -211,7 +211,7 @@ more likely to increase productivity time then the distracting time.
       geom_smooth(aes(y = distracting, colour = "distracting"))
     
 
-![http://al3xandr3.github.com/img/prod-trend.png][8]
+![/assets/images/prod-trend.png][8]
 
 The big drop towards the end is a 2 week vacation, where i barely used
 computer.
@@ -232,13 +232,13 @@ This doc was written in (Aqua)Emacs using Orgmode. R as the statistics
 toolbox, loaded with the nice ggplot2 graphics package. This allows for a very
 smooth work flow for creating this type of documents and it works very well :)
 
-   [1]: http://al3xandr3.github.com/img/prod-intro.jpeg
+   [1]: /assets/images/prod-intro.jpeg
    [2]: http://thechive.com/2010/08/10/girl-quits-her-job-on-dry-erase-board-emails-entire-office-33-photos/
    [3]: https://www.rescuetime.com/
-   [4]: http://al3xandr3.github.com/img/prod-hist-total.png
-   [5]: http://al3xandr3.github.com/img/prod-hist-prod.png
-   [6]: http://al3xandr3.github.com/img/prod-hist-dist.png
-   [7]: http://al3xandr3.github.com/img/prod-corr.png
-   [8]: http://al3xandr3.github.com/img/prod-trend.png
+   [4]: /assets/images/prod-hist-total.png
+   [5]: /assets/images/prod-hist-prod.png
+   [6]: /assets/images/prod-hist-dist.png
+   [7]: /assets/images/prod-corr.png
+   [8]: /assets/images/prod-trend.png
    [9]: http://orgmode.org/worg/org-contrib/babel/
 

@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: Clickstream Analysis
 category: data
 tags:
   - data
   - clistream
-intro: "Clickstream Analysis"
+excerpt: "Clickstream Analysis"
 ---
 
 

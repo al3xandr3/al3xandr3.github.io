@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Principles
 category: life
 tags:
   - life
-intro: "Principles"
+excerpt: "Principles"
 ---
 
 When going through life, each person acts and decides in a certain way. And why someone decides one way instead of another is defined by their Principles. In a way Principles are the key rules of the Human internal “operating system”.

@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: Users Flow Diagrams
 category: data
 tags:
   - data
   - visualization
-intro: "Users Flow Diagrams"
+excerpt: "Users Flow Diagrams"
 ---
 
 

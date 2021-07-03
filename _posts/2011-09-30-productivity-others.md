@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Monitoring Productivity II - the Others
 category: data
 tags:
@@ -8,10 +8,10 @@ tags:
   - statistics
   - R
   - project
-intro: "In previous Monitoring Productivity Experiment I looked into the hours I spent in computer, now I look into the hours others spend in computer, which is far more interesting"
+excerpt: "In previous Monitoring Productivity Experiment I looked into the hours I spent in computer, now I look into the hours others spend in computer, which is far more interesting"
 ---
 
-In previous Monitoring Productivity Experiment [post](http://al3xandr3.github.com/2010/10/20/monitoring-productivity-experiment.html) I looked into the hours I spent in computer, now I look into the hours **Others** spend in computer, which is far more interesting :) To find things like what day people spend more time on computer, how many hours they work, and general activity patterns.
+In previous Monitoring Productivity Experiment [post](http://al3xandr3.github.io/2010/10/20/monitoring-productivity-experiment.html) I looked into the hours I spent in computer, now I look into the hours **Others** spend in computer, which is far more interesting :) To find things like what day people spend more time on computer, how many hours they work, and general activity patterns.
 
 ## Collecting data
 
@@ -71,7 +71,7 @@ Read the log file and create a semicolon separated file:
 
     ggplot(data=d, aes(y=time, x=date)) + geom_point(aes(color=status), alpha=0.6) +  scale_x_datetime(major = "1 days") + scale_y_datetime(major = "1 hours")
     
-![Random Person](http://al3xandr3.github.com/img/others_random_person.png)        
+![Random Person](/assets/images/others_random_person.png)        
 
 - 10-Sep is Saturday and 11-Sep is Sunday, means skype was off on the weekend
 - start of workday between 9h-11h
@@ -85,7 +85,7 @@ Plotting all sign-in's and sign-out's over each weekday we can get a feeling for
     ggplot(data, aes(x=time,..density..)) + geom_histogram() + facet_grid(weekday ~ .)
 
 
-![Daily Activity](http://al3xandr3.github.com/img/others_daily_activity.png)
+![Daily Activity](/assets/images/others_daily_activity.png)
     
  - Night time has less activity, and gets progressively smaller as night goes by
  - Around 9am activity spikes (people start work?)
@@ -121,7 +121,7 @@ Then, the first activity after 6am is start of work, and the last activity chang
     al3x.load() # my own collection of R functions
     al3x.hist(dt, "totalhours")
 
-![Total Hours](http://al3xandr3.github.com/img/others_totalhours.png)
+![Total Hours](/assets/images/others_totalhours.png)
 
 Workday total hours are mostly between 6 and 12 hours, most common being the 8.5 hours/day.
 
@@ -137,7 +137,7 @@ We can try counting the amount of sign-in's/sign-out's changes per day, means pe
                order by sum(time) DESC")
     ggplot(d, aes(x=weekday,y=amount)) + geom_bar(stat="identity")
     
-![What day most active?](http://al3xandr3.github.com/img/others_day_activity.png)
+![What day most active?](/assets/images/others_day_activity.png)
 
 As the above could be biased in a number of ways lets use another way to measure it and if the results match then original estimate should be ok.
 

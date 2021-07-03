@@ -1,8 +1,8 @@
 ---
-layout: post
+
 title: Statistical Tools in Excel
 category: project
-intro: "Statistical Tools in Excel"
+excerpt: "Statistical Tools in Excel"
 tags:
   - data
   - project

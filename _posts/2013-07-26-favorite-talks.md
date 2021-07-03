@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Favorite Talks
 category: life
 tags:
   - learning
   - life
-intro: "Talks, presentations that i found very interesting"
+excerpt: "Talks, presentations that i found very interesting"
 ---
 
 ### Computers can/should augment humans abilities manyfold

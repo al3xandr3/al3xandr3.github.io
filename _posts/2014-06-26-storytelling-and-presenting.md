@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Storytelling and Presenting
 category: data
 tags:
   - data
   - presenting
-intro: "Structured Presenting and Storytelling"
+excerpt: "Structured Presenting and Storytelling"
 ---
 
 ## Effective Communications and Storytelling 

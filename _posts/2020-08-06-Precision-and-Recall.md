@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Precision, Recall and the Fbeta-measure
 category: data
 tags:
   - data
-intro: "Precision, Recall and the Fbeta-measure"
+excerpt: "Precision, Recall and the Fbeta-measure"
 ---
 
 Intuition of model evaluation measures: Precision, Recall and the Fbeta-measure.

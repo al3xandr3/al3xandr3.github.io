@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: A/B test with Clickstream data
 category: data
 tags:
   - data
   - ab-testing
-intro: "A/B test with Clickstream data"
+excerpt: "A/B test with Clickstream data"
 ---
 
 

@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Dashboards Toolkit
 category: project
 tags:
@@ -9,15 +9,15 @@ tags:
   - dashboard
   - javascript
   - project
-intro: "An important part of being data driven is to have a daily feedback on data, here's a couple of automated dashboards i've built recently"
+excerpt: "An important part of being data driven is to have a daily feedback on data, here's a couple of automated dashboards i've built recently"
 ---
 
 An important part of being data driven is to have a daily feedback on data,
 here's a couple of **automated dashboards** i've built recently:
 
-![http://al3xandr3.github.com/img/dash2.png][1]
+![/assets/images/dash2.png][1]
 
-![http://al3xandr3.github.com/img/dash1.png][2]
+![/assets/images/dash1.png][2]
 
 In these most of the data is displayed as is, next iteration could enrich the data further with:
 
@@ -235,8 +235,8 @@ A few bits:
     print c
     
 
-   [1]: http://al3xandr3.github.com/img/dash2.png
-   [2]: http://al3xandr3.github.com/img/dash1.png
+   [1]: /assets/images/dash2.png
+   [2]: /assets/images/dash1.png
    [3]: http://vis.stanford.edu/protovis/ex/index-chart.html
    [4]: https://github.com/al3xandr3/Dashboard
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Product and Application Design
 category: project
 tags:
@@ -7,7 +7,7 @@ tags:
   - application
   - startup
   - project
-intro: "How to Create a new software product"
+excerpt: "How to Create a new software product"
 ---
 
 ## Product

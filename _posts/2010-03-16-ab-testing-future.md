@@ -1,12 +1,12 @@
 --- 
-layout: post
+
 title: AB testing tools in the Future
 category: data
 tags:
   - data
   - abtesting
   - idea
-intro: "A view on AB testing tools of the future"
+excerpt: "A view on AB testing tools of the future"
 ---
 
 A view on AB testing tools of the future.

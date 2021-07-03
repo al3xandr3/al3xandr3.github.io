@@ -1,11 +1,10 @@
 ---
-layout: post
 title: Statistical Significance test using Permutation
 category: data
 tags:
   - data
   - montecarlo
-intro: "Statistical Significance test using Permutation"
+excerpt: "Statistical Significance test using Permutation"
 ---
 
 <br>

@@ -1,12 +1,12 @@
 --- 
-layout: post
+
 title: Homemade Auto-Updater
 category: project
 tags:
   - automation
   - emacs
   - project
-intro: "Script to update an application to the last version. It automates the process of downloading and installing the app"
+excerpt: "Script to update an application to the last version. It automates the process of downloading and installing the app"
 ---
 
 Here's a script that i use frequently to update an application to the last

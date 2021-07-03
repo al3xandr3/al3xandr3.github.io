@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Data in a Business
 category: data
 tags:
   - data
-intro: "The data analyst role inside a business."
+excerpt: "The data analyst role inside a business."
 ---
 
 ## The Essential Questions

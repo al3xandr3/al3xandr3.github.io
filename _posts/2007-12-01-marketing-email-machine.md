@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Marketing Email machine
 category: project
 tags:
@@ -7,7 +6,7 @@ tags:
   - ruby
   - jruby
   - clojure
-intro: "Marketing Email machine"
+excerpt: "Marketing Email machine"
 ---
 
 ## Marketing Email machine

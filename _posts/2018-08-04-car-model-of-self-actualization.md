@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: The Car Model of Self-Actualization
 category: life
 tags:
   - life
-intro: "The Car Model of Self-Actualization"
+excerpt: "The Car Model of Self-Actualization"
 ---
 
 ![](https://cdn-images-1.medium.com/max/1280/1*LB_DX51ZHFaGQkpNa3Rx5w.jpeg)

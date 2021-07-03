@@ -1,7 +1,7 @@
 ---
-layout:  post
+
 title:   Car for Sale
-intro:   "Car for Sale"
+excerpt:   "Car for Sale"
 hide:    true
 ---
 

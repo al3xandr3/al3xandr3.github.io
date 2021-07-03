@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Trading Backtesting function
 category: data
 tags:
   - data
-intro: "Trading Backtesting python function in the T library"
+excerpt: "Trading Backtesting python function in the T library"
 ---
 
 <br>

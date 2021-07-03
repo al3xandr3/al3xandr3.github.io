@@ -1,15 +1,15 @@
 --- 
-layout: post
+
 title: Data, Data, Data!
 category: data
 tags:
   - data
   - semanticweb
   - idea
-intro: "A view on a data driven future and the need for the semantic web"
+excerpt: "A view on a data driven future and the need for the semantic web"
 ---
 
-![SemanticWeb](http://al3xandr3.github.com/img/data.jpg)
+![SemanticWeb](/assets/images/data.jpg)
 
 ## Once Upon a Time... 
 

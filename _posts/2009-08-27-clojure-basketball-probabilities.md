@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Probability simulation of basketball throws
 category: data
 tags:
@@ -7,7 +7,7 @@ tags:
   - statistics
   - clojure
   - data
-intro: "A probability simulation from the book Resampling: The New Statistics, using Clojure and Incanter"
+excerpt: "A probability simulation from the book Resampling: The New Statistics, using Clojure and Incanter"
 ---
 
 A little probability simulation from the book _Resampling: The New
@@ -68,7 +68,7 @@ its not absolutely needed.
     (view (bar-chart (keys throws-count) (vals throws-count)))
     
 
-![http://al3xandr3.github.com/img/basketball-1throw.png][1]
+![/assets/images/basketball-1throw.png][1]
 
 Results make sense, its an 1/4 (25%) of probabilities of making the basket, so
 simulations seems to be working correctly.
@@ -98,4 +98,4 @@ total simulation.
 Result is 0.10283, so there's only a ~10% chance of that basketball player
 making 3 or more baskets in a 5 throws sequence.
 
-   [1]: http://al3xandr3.github.com/img/basketball-1throw.png
+   [1]: /assets/images/basketball-1throw.png

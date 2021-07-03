@@ -3,9 +3,9 @@
       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
       xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="http://al3xandr3.github.com/#me">
-  <foaf:maker rdf:resource="http://al3xandr3.github.com/#me"/>
-  <foaf:primaryTopic rdf:resource="http://al3xandr3.github.com/#me"/>
+<foaf:PersonalProfileDocument rdf:about="http://al3xandr3.github.io/#me">
+  <foaf:maker rdf:resource="http://al3xandr3.github.io/#me"/>
+  <foaf:primaryTopic rdf:resource="http://al3xandr3.github.io/#me"/>
   <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
   <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
 </foaf:PersonalProfileDocument>
@@ -16,8 +16,8 @@
 <foaf:family_name>Matos Martins</foaf:family_name>
 <foaf:nick>al3xandr3</foaf:nick>
 <foaf:mbox_sha1sum>b3794bef125b9d257769668f216919dc8d77ce87</foaf:mbox_sha1sum>
-<foaf:homepage rdf:resource="http://al3xandr3.github.com/"/>
-<foaf:depiction rdf:resource="http://al3xandr3.github.com/img/alex.png"/>
+<foaf:homepage rdf:resource="http://al3xandr3.github.io/"/>
+<foaf:depiction rdf:resource="/assets/images/alex.png"/>
 <foaf:workplaceHomepage rdf:resource="http://www.skype.com"/>
 <foaf:schoolHomepage rdf:resource="http://www.ist.utl.pt/"/>
 <foaf:knows>

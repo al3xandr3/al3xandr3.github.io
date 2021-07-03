@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Regular Business Reporting
 category: data
 tags:
   - data
-intro: "Regular Business Reporting"
+excerpt: "Regular Business Reporting"
 ---
 
 Also known as Rhythm Of the Business (RoB)

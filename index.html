@@ -1,25 +1,10 @@
 ---
-layout: layout
-title: "Posts"
-hero: https://drive.google.com/uc?id=1y_3zhQQfCgBLKHwjwsImerQLxgbMhrht
+layout: home
+author_profile: true
+excerpt: "This is the homepage and blog of Alexandre Matos Martins"
+tags: [blog]
+header:
+    overlay_image: https://drive.google.com/uc?id=1y_3zhQQfCgBLKHwjwsImerQLxgbMhrht
+    overlay_filter: 0.3 # same as adding an opacity of 0.5 to a black background
+    overlay_filter: rgba(211,211,211, 0.2)
 ---
-<section class="content">
-
-  <ul class="listing">
-    {% for post in site.posts limit:15 %}
-    {% unless post.hide %}
-    <li>
-      <span>{{ post.date | date: "%e %b, %Y" }}</span>
-      <span><i>({{ post.tags | join: ', '}})&nbsp;&nbsp;&nbsp;&nbsp;</i></span>
-      <a href="{{ post.url }}" title="{{ post.intro}} - {{ post.content.size | divided_by:1000}}k word count">{{
-        post.title }}</a>
-    </li>
-    {% endunless %}
-    {% endfor %}
-    <li>
-      <span></span>
-      <a href="">&nbsp;</a>
-      <span><i>(previous articles in dedicated sections in top)</i></span>
-    </li>
-  </ul>
-</section>

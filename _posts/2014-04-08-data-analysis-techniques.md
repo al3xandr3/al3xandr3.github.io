@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Data Analysis Techniques
 category: data
 tags:
   - statistics
   - data
-intro: "Data Analysis Techniques And Tools"
+excerpt: "Data Analysis Techniques And Tools"
 ---
 
 Techniques to transform and interpret data in a useful way.

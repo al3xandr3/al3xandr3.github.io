@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Automating todo tasks reports with org-mode
 category: project
 tags:
@@ -7,7 +7,7 @@ tags:
   - ruby
   - emacs
   - project
-intro: "Automating reports from my (emacs org-mode)TODO list"
+excerpt: "Automating reports from my (emacs org-mode)TODO list"
 ---
 
 Here's the geek automation of the week, its for helping creating reports from

@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Goals Implementation Plan
 category: life
 tags:
   - learning
   - life
-intro: "day to day practical implementation of goals"
+excerpt: "day to day practical implementation of goals"
 ---
 
 Once in a while we realize (think of) goals we wish for.

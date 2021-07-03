@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: A Model of Human Development
 category: life
 tags:
   - life
-intro: "A Model of Human Development"
+excerpt: "A Model of Human Development"
 ---
 
 ![](https://cdn-images-1.medium.com/max/1200/1*FTlZgLIPSh_iGhpWRL2c9w.jpeg)

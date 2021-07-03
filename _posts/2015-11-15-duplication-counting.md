@@ -1,10 +1,10 @@
 --- 
-layout: post
+
 title: Duplication (a.k.a. overcounting) in Segmented data
 category: data
 tags:
   - data
-intro: "Duplication (a.k.a. overcounting) in Segmented data"
+excerpt: "Duplication (a.k.a. overcounting) in Segmented data"
 ---
 
 ##  Duplication (a.k.a. overcounting) in Segmented data

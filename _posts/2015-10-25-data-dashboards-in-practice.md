@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Data Dashboard in Practice
 category: data
 tags:
   - data
-intro: "Guidelines and tips for building Data Dashboards"
+excerpt: "Guidelines and tips for building Data Dashboards"
 ---
 
 <link rel="stylesheet" href="/css/cv.css" type="text/css" media="screen, projection" />

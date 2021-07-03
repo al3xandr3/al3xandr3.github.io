@@ -1,12 +1,12 @@
 --- 
-layout: post
+
 title: Stock Price Alert
 category: project
 tags:
   - automation
   - ruby
   - project
-intro: "Waiting for a stock price to rise to a certain value to sell it? or waiting for the price to drop to a certain value to buy it? But don't want to be checking it every day? Here's a little automation that raises alerts to email inbox."
+excerpt: "Waiting for a stock price to rise to a certain value to sell it? or waiting for the price to drop to a certain value to buy it? But don't want to be checking it every day? Here's a little automation that raises alerts to email inbox."
 ---
 
 Waiting for a stock price to rise to a certain value to sell it? or waiting for the price to drop to a certain value to buy it? But don't want to be checking it every day? Here's a little automation that sends an alert to email inbox.

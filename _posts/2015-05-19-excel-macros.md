@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: Excel Macros
 category: data
 tags:
   - project
   - data
-intro: "Excel Macros"
+excerpt: "Excel Macros"
 ---
 
 

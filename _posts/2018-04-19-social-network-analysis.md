@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Social Network Analysis
 category: data
 tags:
   - data
-intro: "Social Network Analysis"
+excerpt: "Social Network Analysis"
 ---
 
 ![SNA](https://drive.google.com/uc?id=1MM0BKiRiQ1NrgMwAtuJp787l3JQdY5Am)

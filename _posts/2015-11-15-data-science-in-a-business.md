@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Data Science in a Business
 category: data
 tags:
   - data
-intro: "Data Science in a Business"
+excerpt: "Data Science in a Business"
 ---
 
 ## Data Science Recipe

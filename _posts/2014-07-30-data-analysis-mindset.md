@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Data Analysis Mindset
 category: data
 tags:
   - data
-intro: "Getting into the Data Analysis Mindset"
+excerpt: "Getting into the Data Analysis Mindset"
 ---
 
 ## Analytics MindSet

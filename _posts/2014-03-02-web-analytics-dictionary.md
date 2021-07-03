@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Web Analytics Dictionary
 category: data
 tags:
@@ -7,7 +7,7 @@ tags:
   - python
   - data
   - project
-intro: "Web Analytics Dictionary"
+excerpt: "Web Analytics Dictionary"
 ---
 
 <link rel="stylesheet" href="/css/cv.css" type="text/css" media="screen, projection" />

@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Who Chats the Most?
 category: project
 tags:
@@ -8,13 +8,13 @@ tags:
   - statistics
   - ruby
   - project
-intro: "From my Skype chat history, a visualization of the counts of chats by (anonymised) user"
+excerpt: "From my Skype chat history, a visualization of the counts of chats by (anonymised) user"
 ---
 
 From my Skype chat history, a visualization of the counts of chats by
 (anonymised) user.
 
-![http://al3xandr3.github.com/img/contacts.png][1]
+![/assets/images/contacts.png][1]
 
 
 ## Code
@@ -62,4 +62,4 @@ From my Skype chat history, a visualization of the counts of chats by
     File.open("contacts.svg", "w+").write vis.to_svg
     
 
-   [1]: http://al3xandr3.github.com/img/contacts.png
+   [1]: /assets/images/contacts.png

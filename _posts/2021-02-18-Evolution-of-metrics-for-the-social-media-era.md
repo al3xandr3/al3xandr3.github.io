@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Evolution of metrics for the social media era
 category: data
 tags:
   - data
-intro: "Evolution of metrics for the social media era"
+excerpt: "Evolution of metrics for the social media era"
 ---
 
 <br>

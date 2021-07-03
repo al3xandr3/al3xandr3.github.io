@@ -1,10 +1,10 @@
 --- 
-layout: post
+
 title: Segment, segment, segment
 category: data
 tags:
   - data
-intro: "Segment, segment, segment"
+excerpt: "Segment, segment, segment"
 ---
 
 

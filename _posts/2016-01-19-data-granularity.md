@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Data Granularity
 category: data
 tags:
   - data
   - idea
-intro: "Data Granularity"
+excerpt: "Data Granularity"
 ---
 ## Weekly vs Daily Aggregations
 

@@ -1,10 +1,10 @@
 --- 
-layout: post
+
 title: Data Quality Control
 category: data
 tags:
   - data
-intro: "Data Quality Control"
+excerpt: "Data Quality Control"
 ---
 
 

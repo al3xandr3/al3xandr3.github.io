@@ -1,11 +1,11 @@
 
 --- 
-layout: post
+
 title: Visualization pattern - Trended Funnel
 category: data
 tags:
   - data
-intro: "Visualization pattern - Trended Funnel"
+excerpt: "Visualization pattern - Trended Funnel"
 ---
 
 ## Visualization pattern - Trended Funnel

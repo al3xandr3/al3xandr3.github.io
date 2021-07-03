@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: How to get into the Semantic Web
 category: data
 tags:
   - data
   - semanticweb
-intro: "Practical examples on tagging up a site with RDFa tags, then extract and use the semantic web data"
+excerpt: "Practical examples on tagging up a site with RDFa tags, then extract and use the semantic web data"
 ---
 
 Practical examples on how to get onto the semantic web and on using it. 
@@ -14,13 +14,13 @@ Practical examples on how to get onto the semantic web and on using it.
 
 Start by creating a semantic web personal online profile using the Friend-Of-A-Friend (FOAF) vocabulary. The FOAF has became the standard for personal profiles on the semantic web, and as the name implies, it also lets you link to people you know.
 
-I used the [foaf-a-matic online tool](http://www.ldodds.com/foaf/foaf-a-matic) and then uploaded the results to my site's [foaf.rdf](http://al3xandr3.github.com/foaf.rdf). Easy.
+I used the [foaf-a-matic online tool](http://www.ldodds.com/foaf/foaf-a-matic) and then uploaded the results to my site's [foaf.rdf](http://al3xandr3.github.io/foaf.rdf). Easy.
 
 With this, can already use the semantic web query language, called SPARQL, to inquire about what it knows about me:
 
     PREFIX foaf: <http://xmlns.com/foaf/0.1/>
     SELECT ?property ?value
-    FROM <http://al3xandr3.github.com/foaf.rdf>
+    FROM <http://al3xandr3.github.io/foaf.rdf>
     WHERE { 
       ?me foaf:name "Alexandre Matos Martins" .
       ?me ?property ?value .
@@ -56,7 +56,7 @@ For example, on the **About** section of my site, we can define rdfa tags saying
   Html:
 
     <h2>About</h2>
-    <div about="http://al3xandr3.github.com/#me" typeof="foaf:Person" property="rdfs:seeAlso" content="http://al3xandr3.github.com/foaf.rdf">
+    <div about="http://al3xandr3.github.io/#me" typeof="foaf:Person" property="rdfs:seeAlso" content="http://al3xandr3.github.io/foaf.rdf">
       <a rel="foaf:OnlineAccount" href="http://twitter.com/al3xandr3">twitter</a>
       <a rel="foaf:skypeID" href="skype:al3x.martins?userinfo">skype</a>
     </div>
@@ -75,9 +75,9 @@ For example, to find the topics of a site(whats the site about), just aument the
 
     PREFIX dcterms: <http://purl.org/dc/terms/>
     SELECT ?subject 
-    FROM <http://www.w3.org/2007/08/pyRdfa/extract?uri=http://al3xandr3.github.com/>
+    FROM <http://www.w3.org/2007/08/pyRdfa/extract?uri=http://al3xandr3.github.io/>
     WHERE {
-     <http://al3xandr3.github.com> ?predicate ?subject . 
+     <http://al3xandr3.github.io> ?predicate ?subject . 
      ?s dcterms:subject ?subject .
     }
 
@@ -89,16 +89,16 @@ For example, to find the topics of a site(whats the site about), just aument the
 
 ## Using It
 
-Why is all this data useful? well for a more futuristic good use case check the [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html).
+Why is all this data useful? well for a more futuristic good use case check the [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.io/2011/12/18/data.html).
 
 But in the meanwhile, we can already play around with more mundane things, for example, predicting how likely is it, that i will write a twitter quote for any given day.
 
-I collected a few of my twitter quotes on the [quotes page](http://al3xandr3.github.com/pages/quotes.html) and each quote has an rdfa date on it.
+I collected a few of my twitter quotes on the [quotes page](http://al3xandr3.github.io/pages/quotes.html) and each quote has an rdfa date on it.
 
   Html:
 
     <blockquote about="{{page.url}}#2011-12-21" property="dcterms:date" datatype="xsd:date" content="2011-12-21">
-    <p property='dcterms:description'>data,data,data! a #semanticweb use case on Xmas: <a href='http://al3xandr3.github.com/2011/12/18/data.html'>al3xandr3.github.com</a>
+    <p property='dcterms:description'>data,data,data! a #semanticweb use case on Xmas: <a href='http://al3xandr3.github.io/2011/12/18/data.html'>al3xandr3.github.com</a>
     </p></blockquote>
 
     <blockquote about="{{page.url}}#2012-01-10" property="dcterms:date" datatype="xsd:date" content="2012-01-10">
@@ -111,7 +111,7 @@ So we can use the following sparql query to fetch directly from the quotes page,
 
     PREFIX dcterms: <http://purl.org/dc/terms/>
     SELECT ?date (count(?subject) AS ?total)
-    FROM <http://www.w3.org/2007/08/pyRdfa/extract?uri=http://al3xandr3.github.com/pages/quotes.html>
+    FROM <http://www.w3.org/2007/08/pyRdfa/extract?uri=http://al3xandr3.github.io/pages/quotes.html>
     WHERE { 
       ?subject dcterms:date ?date .
     }
@@ -137,12 +137,12 @@ Look at the source code of this page, to see how it works.
 <script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
 <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
 
-<div id="chart"><img alt='SemanticWebQuotes' id="backup" src='http://al3xandr3.github.com/img/semanticweb_quotes.png'/></div>
+<div id="chart"><img alt='SemanticWebQuotes' id="backup" src='/assets/images/semanticweb_quotes.png'/></div>
 <script type="text/javascript">
 var count = "                                  \
   PREFIX  dcterms: <http://purl.org/dc/terms/> \
   SELECT ?date (count(?subject) AS ?total)     \
-  FROM <http://www.w3.org/2007/08/pyRdfa/extract?uri=http://al3xandr3.github.com/pages/quotes.html> \
+  FROM <http://www.w3.org/2007/08/pyRdfa/extract?uri=http://al3xandr3.github.io/pages/quotes.html> \
   WHERE {                         \
   ?subject dcterms:date ?date .   \
   }                               \
@@ -237,7 +237,7 @@ $.ajax({
 
 ## References
 
-- [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.com/2011/12/18/data.html)
+- [Data, Data, Data! semantic web use case on Xmas](http://al3xandr3.github.io/2011/12/18/data.html)
 - [foaf-a-matic online tool](http://www.ldodds.com/foaf/foaf-a-matic)
 - [rdfa cheat sheet pdf](http://t.co/4bhVAHfV)
 - [Firefox rdfa debug](http://rdfadev.sourceforge.net/)

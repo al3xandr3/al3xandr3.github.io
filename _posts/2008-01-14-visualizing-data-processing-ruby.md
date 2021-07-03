@@ -1,5 +1,4 @@
 --- 
-layout: post
 title: Visualizing Data, with Processing and JRuby
 category: data
 tags: 
@@ -8,16 +7,16 @@ tags:
   - visualization
   - statistics
   - ruby
-intro: "A data visualization experiment, including a mini data warehouse, to visualize amount of vegetarians around the word"
+excerpt: "A data visualization experiment, including a mini data warehouse, to visualize amount of vegetarians around the word"
 ---
 
 Here's a data visualization experiment including a mini data warehouse, to
 visualize the amount of vegetarians around the word.
-![http://al3xandr3.github.com/img/vis-visual.png][1]
+![/assets/images/vis-visual.png][1]
 
 I planned the following:
 
-![http://al3xandr3.github.com/img/vis-mmap.png][2]
+![/assets/images/vis-mmap.png][2]
 
 It goes like this, imagine looking at world map, with each country showing the
 number of vegetarians, you should be able to zoom in to europe for example, to
@@ -63,7 +62,7 @@ information as possible (and calculated values).
 Next Step is to build the warehouse, for this is used a plain database where i
 created 3 tables:
 
-![http://al3xandr3.github.com/img/vis-dw.png][3]
+![/assets/images/vis-dw.png][3]
 
 **Dimension Country:**
 
@@ -134,11 +133,11 @@ Made some stuff clickable:
 
 And here's what it looks like:
 
-![http://al3xandr3.github.com/img/vis-visual.png][1]
+![/assets/images/vis-visual.png][1]
 
 When Zoomed in, and showing Portugal stats on the bottom:
 
-![http://al3xandr3.github.com/img/vis-visual-zoom.png][4]
+![/assets/images/vis-visual-zoom.png][4]
 
 Ended up with 584 lines of code, with a big chunk of repeated code, on the
 visualization part.
@@ -178,8 +177,8 @@ Processing is great, has also huge potential, had a couple of troubles with 1
 or 2 plugins i tried, but i end up using base distribution and that works and
 feels 100%. I look forward to do more stuff with it, it is fun!
 
-   [1]: http://al3xandr3.github.com/img/vis-visual.png
-   [2]: http://al3xandr3.github.com/img/vis-mmap.png
-   [3]: http://al3xandr3.github.com/img/vis-dw.png
-   [4]: http://al3xandr3.github.com/img/vis-visual-zoom.png
+   [1]: /assets/images/vis-visual.png
+   [2]: /assets/images/vis-mmap.png
+   [3]: /assets/images/vis-dw.png
+   [4]: /assets/images/vis-visual-zoom.png
 

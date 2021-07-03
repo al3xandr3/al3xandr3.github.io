@@ -1,8 +1,8 @@
 ---
-layout: post
+
 title: Guitar Tools in Excel
 category: project
-intro: "Guitar Tools in Excel"
+excerpt: "Guitar Tools in Excel"
 tags:
   - music
   - project

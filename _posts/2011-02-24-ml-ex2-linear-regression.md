@@ -1,50 +1,15 @@
 --- 
-layout: post
+
 title: Machine Learning Ex2 - Linear Regression
 category: data
 tags:
   - machinelearning
   - R
   - project
-intro: "Implementation using gradient descent"
+excerpt: "Implementation using gradient descent"
 ---
-
-<script type="text/javascript" src="http://www.mathjax.org/mathjax/MathJax.js">
-    MathJax.Hub.Config({
-            jax: ["input/TeX", "output/HTML-CSS"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
-                     "TeX/noUndefined.js"],
-        tex2jax: {
-            inlineMath: [ ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
-            skipTags: ["script","noscript","style","textarea","pre","code"],
-            ignoreClass: "tex2jax_ignore",
-            processEscapes: false,
-            processEnvironments: true,
-            preview: "TeX"
-        },
-        showProcessingMessages: true,
-        displayAlign: "left",
-        displayIndent: "2em",
- 
-        "HTML-CSS": {
-             scale: 100,
-             availableFonts: ["STIX","TeX"],
-             preferredFont: "TeX",
-             webFont: "TeX",
-             imageFont: "TeX",
-             showMathMenu: true,
-        },
-        MMLorHTML: {
-             prefer: {
-                 MSIE:    "MML",
-                 Firefox: "MML",
-                 Opera:   "HTML",
-                 other:   "HTML"
-             }
-        }
-    });
-</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
 Andrew Ng has posted introductory machine learning lessons on the
@@ -92,7 +57,7 @@ boys height from his age.
            xlab('Age in years')
     
 
-![http://al3xandr3.github.com/img/ml-ex2-data.png][3]
+![/assets/images/ml-ex2-data.png][3]
 
 ## Theory
 
@@ -101,15 +66,15 @@ so:
 
 Setting \\(x_0 = 1\\):
 
-<script type="math/tex; mode=display">
+
 h_\theta(x) = \theta_0 x_0 + \theta_1 x_1 + \theta_2 x_2 + ...
-</script>
+
 
 That can be summarized by (last is matrix notation):
 
-<script type="math/tex; mode=display">
+
 h_\theta(x) = \sum_{i=0}^n \theta_i x_i = \theta^T x
-</script>
+
 
 Matrix representation is useful because has good support in software tools.
 
@@ -117,9 +82,9 @@ Goal is to get the line closest to observed data points as possible, thus we
 can define a cost function that returns the difference of the real data vs
 myModel:
 
-<script type="math/tex; mode=display">
+
 J(\theta) = \frac{1}{2m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})^2
-</script>
+
 
 where i is each data example we have and m is their total.
 
@@ -131,21 +96,21 @@ exactly what the [gradient descent algorithm does][4]: starting with an
 initial guess it iterates to smaller and smaller values of a given function by
 following the [direction of the derivative][5]:
 
-<script type="math/tex; mode=display">
+
 x_i := x_{i-1} - \epsilon f^' (x_{i-1})
-</script>
+
 
 Applying to our J:
 
-<script type="math/tex; mode=display">
+
 \theta_j := \theta_j - \alpha \frac{\delta}{\delta \theta_j} J(\theta)
-</script>
+
 
 And doing a bit of calculus on derivatives we get:
 
-<script type="math/tex; mode=display">
+
 \theta_j := \theta_j - \alpha \frac{1}{m} \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)}) x^{(i)}
-</script>
+
 
 Where alpha defines the size of steps of the convergence to \\(\\theta\\).
 
@@ -181,9 +146,9 @@ replace the sum in the equation with a transpose matrix multiplication(like
 done with the line equation):
 
 
-<script type="math/tex; mode=display">
+
 \theta := \theta - \alpha \frac{1}{m} x^T (x\theta^T - y)
-</script>
+
 
 
 So we can get a full matrix implementation:
@@ -228,7 +193,7 @@ And finally we see how well the line(model) fits the data:
     ex2plot + geom_abline(intercept=theta[1], slope=theta[2])
     
 
-![http://al3xandr3.github.com/img/ml-ex2-fit.png][7]
+![/assets/images/ml-ex2-fit.png][7]
 
 ## References
 
@@ -239,11 +204,11 @@ And finally we see how well the line(model) fits the data:
 
    [1]: http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning
    [2]: http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex2/ex2.html
-   [3]: http://al3xandr3.github.com/img/ml-ex2-data.png
+   [3]: /assets/images/ml-ex2-data.png
    [4]: http://mathworld.wolfram.com/MethodofSteepestDescent.html
    [5]: http://www.wolframalpha.com/input/?i=Plot[{x^2,+2+x},+{x,+0,+2.2}]
    [6]: http://openclassroom.stanford.edu/MainFolder/courses/MachineLearning/exercises/ex2materials/ex2.m
-   [7]: http://al3xandr3.github.com/img/ml-ex2-fit.png
+   [7]: /assets/images/ml-ex2-fit.png
    [8]: http://www.math.umaine.edu/~hiebeler/comp/matlabR.html
    [9]: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
    [10]: http://wims.unice.fr/wims/en_tool~linear~matmult.en.html

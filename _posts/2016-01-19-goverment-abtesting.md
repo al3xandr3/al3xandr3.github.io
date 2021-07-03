@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Government should do AB testing
 category: data
 tags:
   - data
   - idea
-intro: "Government should do AB testing"
+excerpt: "Government should do AB testing"
 ---
 
 ## Government should do AB testing

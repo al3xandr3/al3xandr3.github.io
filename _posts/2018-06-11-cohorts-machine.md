@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Cohorts Machine
 category: data
 tags:
   - data
-intro: "Cohorts Machine"
+excerpt: "Cohorts Machine"
 ---
 
 ## Tackling the "did it improve?" question

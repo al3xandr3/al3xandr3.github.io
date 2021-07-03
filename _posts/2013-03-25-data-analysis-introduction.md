@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Data Analysis Introduction
 category: data
 tags:
   - statistics
   - data
-intro: "Data Analysis Introduction"
+excerpt: "Data Analysis Introduction"
 ---
 
 ## Why, whats the point?

@@ -1,11 +1,11 @@
 ---
-layout: post
+
 title: Programming
 category: project
 tags:
   - programming
   - project
-intro: "Programming Best Practices"
+excerpt: "Programming Best Practices"
 ---
 
 ### Precepts of Programming

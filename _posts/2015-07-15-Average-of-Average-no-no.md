@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: The Average of Averages is a No No
 category: data
 tags:
   - data
   - statistics
-intro: "The Average of Averages is a No No"
+excerpt: "The Average of Averages is a No No"
 ---
 
 

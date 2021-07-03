@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Fame, Fortune and Machiavelli
 category: life
 tags:
   - life
-intro: "Fame, Fortune and Machiavelli"
+excerpt: "Fame, Fortune and Machiavelli"
 ---
 
 In [“What do you want out of life?” article](https://qz.com/584874/you-probably-know-to-ask-yourself-what-do-i-want-heres-a-way-better-question/) is raised the argument that getting to fame and fortune is directly related to the amount of pain you are willing to endure to get it.

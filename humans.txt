@@ -4,9 +4,9 @@
 
 /* TEAM */
   Developer: alexandre
-  Site: http://al3xandr3.github.com
+  Site: http://al3xandr3.github.io
   Twitter: al3xandr3
-  Location: tallinn, estonia
+  Location: Seattle
 
 /* THANKS */
   Names (& URL):

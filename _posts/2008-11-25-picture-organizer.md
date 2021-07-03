@@ -1,5 +1,5 @@
 --- 
-layout: post
+
 title: Photo organizer
 category: project
 tags:
@@ -7,7 +7,7 @@ tags:
   - ruby
   - python
   - project
-intro: "Script to organize pictures into folders by the day they were taken"
+excerpt: "Script to organize pictures into folders by the day they were taken"
 ---
 
 Place this script file in a folder full of pictures, run it, and it will organize

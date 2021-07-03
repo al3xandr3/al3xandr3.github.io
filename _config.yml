@@ -1,16 +1,47 @@
+theme: minimal-mistakes-jekyll
 permalink: /:title.html
-title: Al3xandr3
-description: "Al3xandr3's Blog"
+title: AL3XANDR3
 keywords: programming, data, machine learning, alexandre martins, al3xandr3
 production_url: http://al3xandr3.github.io
 highlighter: false
-markdown: kramdown
 author :
   name : Alexandre Matos Martins
-  github : al3xandr3
-  twitter : al3xandr3
-  email: al3xandr3@gmail.com
-  linkedin: al3xandr3
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "*Data Scientist with background in Computer Science*" # Note: Markdown is allowed
+  location: "Seattle"
+  links:
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    url: "https://www.linkedin.com/in/al3xandr3/"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/al3xandr3"
+  - label: "Email"
+    icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:al3xandr3@gmail.com"
+  - label: "Instagram"
+    icon: "fab fa-fw fa-instagram"
+    url: "https://instagram.com/i.am.alex.mm"
+  - label: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: "https://twitter.com/al3xandr3"
 disqus_shortname: al3xandr3
 analytics: UA-39542235-1
 repository: al3xandr3.github.io
+plugins: [jekyll-include-cache]
+remote_theme: "mmistakes/minimal-mistakes@4.23.0"
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: false
+      related: true

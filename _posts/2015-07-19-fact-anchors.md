@@ -1,10 +1,10 @@
 --- 
-layout: post
+
 title: Facts Anchors
 category: data
 tags:
   - data
-intro: "Facts Anchors"
+excerpt: "Facts Anchors"
 ---
 
 ## Patterns of Analysis: Facts “Anchors”

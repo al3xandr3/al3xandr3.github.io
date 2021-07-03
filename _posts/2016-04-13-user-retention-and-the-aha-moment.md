@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: User Retention and the Aha! moment
 category: data
 tags:
   - data
-intro: "User Retention and the Aha! moment"
+excerpt: "User Retention and the Aha! moment"
 ---
 
 ## What is the _Aha!_ moment ?

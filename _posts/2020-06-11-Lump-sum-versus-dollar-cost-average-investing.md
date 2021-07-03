@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: Lump sum versus dollar-cost average investing
 category: data
 tags:
   - data
-intro: "Lump sum versus dollar-cost average investing"
+excerpt: "Lump sum versus dollar-cost average investing"
 ---
 
 <br>

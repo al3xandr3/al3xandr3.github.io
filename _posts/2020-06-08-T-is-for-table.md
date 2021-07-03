@@ -1,10 +1,10 @@
 ---
-layout: post
+
 title: T is for Table
 category: data
 tags:
   - data
-intro: "Python table manipulation library"
+excerpt: "Python table manipulation library"
 ---
 
 <br>

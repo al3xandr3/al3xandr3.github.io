@@ -1,11 +1,11 @@
 --- 
-layout: post
+
 title: Javascript Bookmark Scripts
 category: project
 tags:
   - javascript
   - project
-intro: "Create and share little javascript scripts that augment/improve the pages you look at."
+excerpt: "Create and share little javascript scripts that augment/improve the pages you look at."
 ---
 
 I often use scripts that inject javascript and modify current page im looking at, mostly for inspecting/debug reasons, for example the [WhatFont](http://chengyinliu.com/whatfont.html), that reveals what fonts the page is using.
@@ -50,7 +50,7 @@ Here's an example. This script finds programming code placed on a web page and m
 	// C. main function to run after js files are loaded
 	var run = function () {
 	  // include pretiffy.css
-	  $('head').append('<link rel="stylesheet" href="http://al3xandr3.github.com/css/prettify.css" type="text/css" />');
+	  $('head').append('<link rel="stylesheet" href="http://al3xandr3.github.io/css/prettify.css" type="text/css" />');
 	  // find all elements with pre (typically where code is)
 	  $('pre').addClass("prettyprint");
 	  // make pretty !!
@@ -60,7 +60,7 @@ Here's an example. This script finds programming code placed on a web page and m
 	// D. jquery and take it from there
 	loadJS('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function () {
 	  //when finished loading jquery load prettify.js, then run
-	  loadJS('http://al3xandr3.github.com/js/libs/prettify.js', run);
+	  loadJS('http://al3xandr3.github.io/js/libs/prettify.js', run);
 	});
 
 How it works:

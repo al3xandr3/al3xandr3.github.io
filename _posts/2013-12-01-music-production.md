@@ -1,12 +1,12 @@
 ---
-layout: post
+
 title: Music Production
 category: music
 tags:
   - learning
   - music
   - guitar
-intro: "Music Production"
+excerpt: "Music Production"
 ---
 
 ## Sound
