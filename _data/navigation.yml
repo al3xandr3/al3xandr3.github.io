@@ -6,7 +6,7 @@ main:
   url: /tags/#data-science
 - title: Projects
   url: /tags/#project
-- title: Books
-  url: /Books-and-Content/
+- title: Books.html
+  url: /Books
 - title: About Me
-  url: /about/
+  url: /about.html

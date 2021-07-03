@@ -6,7 +6,6 @@ tags:
 excerpt: "Evolution of metrics for the social media era"
 ---
 
-<br>
 
 Money returns is ultimately the equalizing metric but in the era of social media products the social capital i.e. the number of users has become a central metric.
 

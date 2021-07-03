@@ -7,8 +7,6 @@ tags:
 excerpt: "Statistical Significance test using Permutation"
 ---
 
-<br>
-
 Here's a method that I enjoy a lot for significance testing, it is based of the monte carlo sampling family of methods.
 
 It allows to check if the difference between 2 datasets summarized with a custom metric are significantly different or in fact belong to the same distribution.
