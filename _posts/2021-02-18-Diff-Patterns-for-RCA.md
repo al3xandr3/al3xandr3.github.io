@@ -1,5 +1,5 @@
 ---
-title: Diff Patterns for RCA
+title: Diff Patterns for Root Cause Analysis
 category: data
 tags:
   - data
