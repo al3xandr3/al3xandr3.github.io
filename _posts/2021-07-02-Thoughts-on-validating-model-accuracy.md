@@ -19,17 +19,20 @@ Where we compare to an existing "ground truth" classification.
 
 This is typical of supervised learning, where we have upfront what we know for certain is the ground truth so we can compare how accurate is our model versus the labeled data we have.
 
-But can also be done for unsupervised learning 
+But can also be done for unsupervised learning, e.g. user surveys, registration form question, etc.
 
 ### Manual Evaluation
 "manual" evaluation by a human expert.
-Use common sense do the results make sense, for example in a clustering exercise, do the clusters make intuitive sense, past experience, or they are a complete mess and scramble ? 
-i.e. can we clearly find things that can't happen by manual inspecting ?
+
+Use common sense do the results make sense, for example in a clustering exercise, do the clusters make intuitive sense (from what we know about the topic)? or they are a scrambled untangled mess ? 
+
+i.e. can we clearly find things that can't be possible(faults) by manual inspecting ?
 
 ### Business Application
 
 By evaluating the utility of the model in its intended application.
 - Does it solve the original intended use? 
-- Can its current form be used ? - sometimes in this step it makes sense to think and design the interface to the end users, consider simplification of the output into a yes or no, etc..
-- Is it scalable to compute? for the frequency required for its use?
+- Can its current form be used ? - sometimes in this step it makes sense to think and design the interface to the end users, consider simplification of the output into a yes or no, etc.. Maybe only use results with a high degree of certainty
+- Is it scalable to compute? for the frequency required for its use? Can be recalculated on a daily basis, is it reliable enougth?
+- Could data delays make it unavailable some days? how frequently ?
 - etc..

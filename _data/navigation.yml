@@ -3,7 +3,7 @@ main:
 - title: Posts
   url: /
 - title: Data Science
-  url: /tags/#data-science
+  url: /tags/#data
 - title: Projects
   url: /tags/#project
 - title: Books
